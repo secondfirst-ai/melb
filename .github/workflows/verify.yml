@@ -2,7 +2,7 @@ name: Verify dataset PR
 
 on:
   pull_request_target:
-    types: [opened, synchronize, reopened, ready_for_review]
+    types: [opened, synchronize, reopened, ready_for_review, edited]
 
 permissions:
   contents: write
@@ -16,6 +16,10 @@ jobs:
   verify:
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    outputs:
+      data_only: ${{ steps.prepare.outputs.data_only }}
+      trusted: ${{ steps.prepare.outputs.trusted }}
+      verified: ${{ steps.verify.outcome }}
     defaults:
       run:
         working-directory: trusted
@@ -36,7 +40,7 @@ jobs:
           PR_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
         run: |
           [[ "$PR_HEAD_SHA" =~ ^[a-f0-9]{40}$ ]]
-          git fetch --no-tags --depth=1 origin "$PR_HEAD_SHA"
+          git fetch --no-tags origin "$PR_HEAD_SHA"
           node scripts/prepare-pr.mjs
       - name: Install base dependencies and PDF tools
         if: steps.prepare.outputs.data_only == 'true'
@@ -81,11 +85,31 @@ jobs:
           name: verify-report
           path: verify-report.md
           if-no-files-found: ignore
-      - name: Merge only a fully verified member PR at this exact head
-        if: success() && steps.prepare.outputs.data_only == 'true' && steps.prepare.outputs.trusted == 'true' && steps.verify.outcome == 'success' && !github.event.pull_request.draft
+  merge:
+    needs: verify
+    if: needs.verify.result == 'success' && needs.verify.outputs.data_only == 'true' && needs.verify.outputs.trusted == 'true' && needs.verify.outputs.verified == 'success' && !github.event.pull_request.draft
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    # 核对可并行，但自动合并必须串行；每次临合并再核 main/base/head。
+    concurrency:
+      group: melb-merge-main
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          path: trusted
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Merge only the verified main and PR head
         env:
+          GITHUB_TOKEN: ${{ github.token }}
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
+          PR_BASE_SHA: ${{ github.event.pull_request.base.sha }}
           PR_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
-        run: gh pr merge "$PR_NUMBER" --squash --match-head-commit "$PR_HEAD_SHA"
+        working-directory: trusted
+        run: node scripts/merge-pr.mjs

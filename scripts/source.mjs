@@ -1,7 +1,7 @@
-import { lookup } from 'node:dns/promises';
-import net from 'node:net';
 import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
+import { publicURL, pinnedFetch, browserProxy } from './network.mjs';
+export { publicURL } from './network.mjs';
 
 export const FETCH_TIMEOUT_MS = 15_000;
 export const MIN_PAGE_TEXT = 200;
@@ -12,21 +12,6 @@ export function normalize(s) {
 }
 export function htmlText(html) {
   return execFileSync('python3', [fileURLToPath(new URL('./html-text.py', import.meta.url))], { input: html, encoding: 'utf8', timeout: 15_000, maxBuffer: MAX_BYTES, stdio: ['pipe', 'pipe', 'pipe'] });
-}
-function publicIP(address) {
-  if (net.isIPv4(address)) {
-    const [a, b] = address.split('.').map(Number);
-    return !(a === 0 || a === 10 || a === 127 || a >= 224 || (a === 169 && b === 254) || (a === 172 && b >= 16 && b <= 31) || (a === 192 && (b === 168 || b === 0)) || (a === 100 && b >= 64 && b <= 127) || (a === 198 && (b === 18 || b === 19)));
-  }
-  // 只接受全球单播 IPv6；IPv4 映射和本地/链路地址不在这个范围内。
-  return net.isIPv6(address) && /^[23][0-9a-f]{3}:/i.test(address);
-}
-export async function publicURL(raw) {
-  const u = new URL(raw);
-  if (u.protocol !== 'https:' || u.username || u.password || u.port) throw Error('出处地址不是公开 https URL');
-  const host = u.hostname.replace(/^\[|\]$/g, '');
-  const ips = net.isIP(host) ? [{ address: host }] : await lookup(host, { all: true });
-  if (!ips.length || ips.some(({ address }) => !publicIP(address))) throw Error('出处不能指向本机或私有网络');
 }
 function usable(text) {
   const n = normalize(text);
@@ -43,17 +28,22 @@ async function bytes(response) {
 }
 
 export class Sources {
-  constructor({ fetchImpl = fetch, checkURL = publicURL, browserFactory, timeout = FETCH_TIMEOUT_MS } = {}) {
+  constructor({ fetchImpl = pinnedFetch, checkURL = publicURL, browserFactory, timeout = FETCH_TIMEOUT_MS } = {}) {
     this.fetch = fetchImpl; this.checkURL = checkURL; this.browserFactory = browserFactory; this.timeout = timeout;
-    this.cache = new Map(); this.browserPromise = null;
+    this.cache = new Map(); this.browserPromise = null; this.proxy = null;
   }
   async browser() {
-    if (!this.browserPromise) this.browserPromise = this.browserFactory ? this.browserFactory() : import('playwright').then(({ chromium }) => chromium.launch({ headless: true }));
+    if (!this.browserPromise) this.browserPromise = this.browserFactory ? this.browserFactory() : (async () => {
+      const { chromium } = await import('playwright');
+      this.proxy = await browserProxy();
+      return chromium.launch({ headless: true, proxy: { server: this.proxy.server }, args: ['--proxy-bypass-list=<-loopback>', '--disable-quic', '--force-webrtc-ip-handling-policy=disable_non_proxied_udp'] });
+    })();
     return this.browserPromise;
   }
   async readBrowser(url) {
     const browser = await this.browser(), context = await browser.newContext({ userAgent: UA, serviceWorkers: 'block', acceptDownloads: false });
     try {
+      await context.routeWebSocket('**/*', (socket) => socket.close());
       await context.route('**/*', async (route) => {
         try {
           if (['image', 'media', 'font'].includes(route.request().resourceType())) return await route.abort();
@@ -78,8 +68,8 @@ export class Sources {
     const signal = AbortSignal.timeout(this.timeout);
     let current = url;
     for (let redirects = 0; redirects <= 5; redirects++) {
-      await this.checkURL(current);
-      const response = await this.fetch(current, { redirect: 'manual', signal, headers: { 'user-agent': UA, accept: 'text/html,application/pdf;q=0.9,*/*;q=0.5' } });
+      const resolved = await this.checkURL(current);
+      const response = await this.fetch(current, { redirect: 'manual', signal, headers: { 'user-agent': UA, accept: 'text/html,application/pdf;q=0.9,*/*;q=0.5' } }, resolved);
       if ([301, 302, 303, 307, 308].includes(response.status)) {
         const target = response.headers.get('location');
         await response.body?.cancel();
@@ -110,7 +100,8 @@ export class Sources {
     return { texts, errors };
   }
   async close() {
-    if (this.browserPromise) { const browser = await this.browserPromise.catch(() => null); await browser?.close(); }
+    try { if (this.browserPromise) { const browser = await this.browserPromise.catch(() => null); await browser?.close(); } }
+    finally { await this.proxy?.close(); }
   }
 }
 

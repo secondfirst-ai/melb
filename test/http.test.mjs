@@ -6,6 +6,26 @@ import path from 'node:path';
 import { Claude, sentences } from '../scripts/model.mjs';
 import { Sources } from '../scripts/source.mjs';
 import { verify, report } from '../scripts/verify.mjs';
+import { browserProxy } from '../scripts/network.mjs';
+
+test('本地浏览器代理拒绝 loopback/metadata CONNECT 和普通 HTTP', async (t) => {
+  let proxy;
+  try { proxy = await browserProxy(); }
+  catch (e) { if (['EPERM', 'EACCES'].includes(e.code)) { t.skip(`沙箱不准起代理：${e.code}`); return; } throw e; }
+  try {
+    for (const authority of ['127.0.0.1:443', '169.254.169.254:443', '[::1]:443', 'example.com:80']) {
+      const code = await new Promise((resolve, reject) => {
+        const req = http.request(proxy.server, { method: 'CONNECT', path: authority, agent: false });
+        req.once('connect', (res, socket) => { socket.destroy(); resolve(res.statusCode); });
+        req.once('response', res => { res.resume(); resolve(res.statusCode); });
+        req.once('error', reject); req.setTimeout(2000, () => req.destroy(Error('proxy test timeout'))); req.end();
+      });
+      assert.equal(code, 403);
+    }
+    const response = await fetch(proxy.server);
+    assert.equal(response.status, 403); await response.body.cancel();
+  } finally { await proxy.close(); }
+});
 
 test('本地 HTTP 假 Anthropic：yes/partial/no、坏 JSON、超时；实际三题 fixture 差分', async (t) => {
   let mode = 'yes', calls = 0, pages = 0;

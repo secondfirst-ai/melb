@@ -50,7 +50,7 @@ export class Claude {
         for (const [i, s] of verdict.sentences.entries()) if (s.verdict !== 'yes') issues.push({ text: `句 ${i + 1} [${s.verdict}] ${s.text} — ${s.why}` });
         if (verdict.translation.verdict !== 'yes') issues.push({ text: `中文一致性 [${verdict.translation.verdict}] ${verdict.translation.why}` });
         return { status: issues.length ? 'fail' : 'pass', issues, verdict };
-      } catch (e) { error = safeError(e); }
+      } catch (e) { error = safeError(e).replaceAll(this.key, '[redacted]'); }
     }
     return { status: 'unable', issues: [{ text: `逐句核对重试一次仍失败：${error}` }] };
   }

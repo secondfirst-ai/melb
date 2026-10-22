@@ -13,6 +13,11 @@ export async function prepare({ cwd, base, head, destination, association, baseB
   const nonData = files.filter((p) => !p.startsWith('data/') || !DATA_FILE.test(p.slice(5)));
   const trusted = ['OWNER', 'MEMBER', 'COLLABORATOR'].includes(association);
   if (baseBranch !== 'main' || nonData.length || !files.length) return { dataOnly: false, trusted, reason: '改了 data 以外的文件，要人看（只接受对 main 的 data/*.json PR；不跑 Claude、不自动合并）。' };
+  try {
+    execFileSync('git', ['merge-base', '--is-ancestor', base, head], { cwd, stdio: 'ignore' });
+  } catch {
+    return { dataOnly: false, trusted, reason: '未合并：PR 分支没有包含当前 main。须同步 main 并重新核对；本轮不跑 Claude。' };
+  }
   // 不 checkout/解包 PR。只读 100644 blob，名字限一层 JSON，拒绝 symlink/submodule。
   const tree = execFileSync('git', ['ls-tree', '-rz', head, '--', 'data'], { cwd, encoding: 'utf8', maxBuffer: 1024 * 1024 }).split('\0').filter(Boolean);
   const entries = [];
