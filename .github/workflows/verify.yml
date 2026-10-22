@@ -2,18 +2,17 @@ name: Verify dataset PR
 
 on:
   pull_request_target:
-    types: [opened, synchronize, reopened, ready_for_review, edited]
+    # 不监听 edited：改标题/描述时整轮 skipped 会被 GitHub 当成通过，红的 check 会变灰；改了 base 的 PR 在合并前另有拦截。
+    types: [opened, synchronize, reopened, ready_for_review]
 
 permissions: {}
 
 concurrency:
-  # 只改标题/描述的 edited 使用单独 group，既不取消核对，也不挤掉 pending run。
-  group: melb-verify-${{ github.event.pull_request.number }}-${{ github.event.action == 'edited' && !github.event.changes.base && github.run_id || 'active' }}
+  group: melb-verify-${{ github.event.pull_request.number }}
   cancel-in-progress: true
 
 jobs:
   literal:
-    if: github.event.action != 'edited' || github.event.changes.base
     runs-on: ubuntu-latest
     permissions: {}
     timeout-minutes: 30

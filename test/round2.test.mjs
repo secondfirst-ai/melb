@@ -137,11 +137,11 @@ test('提示词按事实含义判中文，不要求逐字；保留数值/条件�
   assert.equal((await model.check(r, [])).status, 'pass'); assert.equal(calls, 1);
 });
 
-test('workflow 抓取 job 无 token/key/checkout；edited 标题与正文不挤掉核对', async () => {
+test('workflow 抓取 job 无 token/key/checkout；不监听 edited（skipped 会把红 check 变灰）', async () => {
   const workflow = await fs.readFile('.github/workflows/verify.yml', 'utf8');
   const literalJob = workflow.split('  literal:')[1].split('\n  semantic:')[0];
   assert.match(literalJob, /permissions: \{\}/); assert.doesNotMatch(literalJob, /secrets\.|github\.token|actions\/checkout|GITHUB_TOKEN/);
-  assert.match(workflow, /github\.event\.changes\.base/); assert.match(workflow, /!github\.event\.changes\.base && github\.run_id/);
+  assert.doesNotMatch(workflow, /\bedited\b(?![：:])/); assert.match(workflow, /types: \[opened, synchronize, reopened, ready_for_review\]/);
   assert.match(await fs.readFile('scripts/source.mjs', 'utf8'), /chromiumSandbox: true/);
 });
 
