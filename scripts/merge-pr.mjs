@@ -1,13 +1,14 @@
 import { execFileSync } from 'node:child_process';
 import { pathToFileURL } from 'node:url';
 import { api, comment } from './comment-pr.mjs';
+import { trustedAuthor } from './trusted.mjs';
 
 export function mergeReason({ base, head, main, pr }) {
   if (main !== base) return 'main 在本轮核对后已经更新';
   if (pr.base?.ref !== 'main' || pr.base?.sha !== base) return 'PR 的目标分支/base 已改变';
   if (pr.head?.sha !== head) return 'PR 的 head 已改变';
   if (pr.draft || pr.state !== 'open') return 'PR 已不是可合并的 open 非 draft 状态';
-  if (!['OWNER', 'MEMBER', 'COLLABORATOR'].includes(pr.author_association)) return 'PR 作者不是成员';
+  if (!trustedAuthor(pr.author_association, pr.user?.login)) return 'PR 作者不是成员';
   return null;
 }
 export async function mergeVerified({ base, head, number }, io) {

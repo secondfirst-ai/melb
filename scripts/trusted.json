@@ -1,0 +1,4 @@
+{
+  "notes": "GitHub 账号名单：这些账号开的 PR 算成员（跑 Claude 逐句核对、全过自动合并）。组织成员身份不公开时，GitHub 事件里的 author_association 会写成 CONTRIBUTOR，所以另列一份。只从 main 读，PR 改不了。",
+  "logins": ["2nd1st"]
+}

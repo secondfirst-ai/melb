@@ -3,15 +3,16 @@ import path from 'node:path';
 import { execFileSync } from 'node:child_process';
 import { pathToFileURL } from 'node:url';
 import { DATA_FILE, MAX_FILE_BYTES } from './format.mjs';
+import { trustedAuthor } from './trusted.mjs';
 
 export function changedPaths(cwd, base, head) {
   return execFileSync('git', ['diff', '--name-only', '-z', '--no-renames', base, head, '--'], { cwd, encoding: 'utf8', maxBuffer: 1024 * 1024 }).split('\0').filter(Boolean);
 }
-export async function prepare({ cwd, base, head, destination, association, baseBranch = 'main' }) {
+export async function prepare({ cwd, base, head, destination, association, login, baseBranch = 'main' }) {
   for (const sha of [base, head]) if (!/^[a-f0-9]{40}$/.test(sha)) throw Error('base/head 不是 commit SHA');
   const files = changedPaths(cwd, base, head);
   const nonData = files.filter((p) => !p.startsWith('data/') || !DATA_FILE.test(p.slice(5)));
-  const trusted = ['OWNER', 'MEMBER', 'COLLABORATOR'].includes(association);
+  const trusted = trustedAuthor(association, login);
   if (baseBranch !== 'main' || nonData.length || !files.length) return { dataOnly: false, trusted, reason: '改了 data 以外的文件，要人看（只接受对 main 的 data/*.json PR；不跑 Claude、不自动合并）。' };
   try {
     execFileSync('git', ['merge-base', '--is-ancestor', base, head], { cwd, stdio: 'ignore' });
@@ -41,7 +42,7 @@ export async function prepare({ cwd, base, head, destination, association, baseB
 }
 async function main() {
   const event = JSON.parse(await fs.readFile(process.env.GITHUB_EVENT_PATH, 'utf8')), pr = event.pull_request;
-  const prepared = await prepare({ cwd: process.cwd(), base: pr.base.sha, head: pr.head.sha, destination: path.resolve('../candidate'), association: pr.author_association, baseBranch: pr.base.ref });
+  const prepared = await prepare({ cwd: process.cwd(), base: pr.base.sha, head: pr.head.sha, destination: path.resolve('../candidate'), association: pr.author_association, login: pr.user?.login, baseBranch: pr.base.ref });
   await fs.appendFile(process.env.GITHUB_OUTPUT, `data_only=${prepared.dataOnly}\ntrusted=${prepared.trusted}\n`);
   if (!prepared.dataOnly) await fs.writeFile('../verify-report.md', `<!-- melb-verify -->\n# melb verification\n\n${prepared.reason}\n`);
   console.log(prepared.reason);
