@@ -12,7 +12,7 @@ export async function mapLimit(items, fn, limit = 4) {
   }));
   return results;
 }
-const escape = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/[\\`*_[\]{}|]/g, '\\$&').replace(/\r?\n/g, ' ');
+const escape = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/[\\`*_[\]{}|]/g, '\\$&').replace(/\r?\n/g, ' ').replace(/@/g, '@\u200b');  // 不让 PR 里的 @某人 在机器人评论里真的去 @ 人
 const labels = { pass: '过', fail: '不过', unable: '无法核对' };
 export function report(result) {
   const lines = ['<!-- melb-verify -->', '# melb verification', '', `范围：${result.scope}。模式：${result.literalOnly ? '只做格式和字面；没有跑逐句核对，不能自动合并' : '格式 + 字面 + Claude 逐句核对'}。`, '', `格式：${result.errors.length ? '不过' : '过'}。旧数据集 ${result.legacyFiles} 个 / ${result.legacyRecords} 条仅检查 JSON 和 id；问答共 ${result.total} 条，本次核 ${result.results.length} 条。`];
