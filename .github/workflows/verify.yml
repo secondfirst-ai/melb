@@ -4,29 +4,89 @@ on:
   pull_request_target:
     types: [opened, synchronize, reopened, ready_for_review, edited]
 
-# 权限按 job 给：核对 job 会打开 PR 里给的网页，只拿读 repo + 写评论；只有合并 job 能写 repo。
 permissions: {}
 
 concurrency:
-  group: melb-verify-${{ github.event.pull_request.number }}
+  # 只改标题/描述的 edited 使用单独 group，既不取消核对，也不挤掉 pending run。
+  group: melb-verify-${{ github.event.pull_request.number }}-${{ github.event.action == 'edited' && !github.event.changes.base && github.run_id || 'active' }}
   cancel-in-progress: true
 
 jobs:
-  verify:
+  literal:
+    if: github.event.action != 'edited' || github.event.changes.base
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      pull-requests: write
+    permissions: {}
     timeout-minutes: 30
     outputs:
-      data_only: ${{ steps.prepare.outputs.data_only }}
-      trusted: ${{ steps.prepare.outputs.trusted }}
-      verified: ${{ steps.verify.outcome }}
+      eligible: ${{ steps.literal.outputs.eligible }}
+      trusted: ${{ steps.literal.outputs.trusted }}
     defaults:
       run:
         working-directory: trusted
     steps:
-      # 只 checkout 已信任的 base commit；PR 的 scripts/workflow 永不执行。
+      # 公共仓库匿名下载，不能让 checkout 的默认 token 进入抓网页 job。
+      - name: Fetch trusted base and data blobs anonymously
+        working-directory: ${{ github.workspace }}
+        env:
+          REPOSITORY: ${{ github.repository }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          [[ "$REPOSITORY" =~ ^[a-zA-Z0-9_.-]+/[a-zA-Z0-9_.-]+$ ]]
+          [[ "$BASE_SHA" =~ ^[a-f0-9]{40}$ && "$HEAD_SHA" =~ ^[a-f0-9]{40}$ ]]
+          git init trusted
+          git -C trusted remote add origin "https://github.com/$REPOSITORY.git"
+          git -C trusted fetch --no-tags origin "$BASE_SHA" "$HEAD_SHA" main:refs/remotes/origin/main
+          git -C trusted checkout --detach "$BASE_SHA"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install trusted dependencies and PDF tools
+        run: |
+          npm ci --ignore-scripts --no-audit --no-fund
+          sudo apt-get update
+          sudo apt-get install -y poppler-utils python3
+      - name: Cache Chromium
+        id: browser-cache
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/ms-playwright
+          key: ${{ runner.os }}-playwright-1.63.0-sandbox
+      - name: Install browser system dependencies
+        run: npx --no-install playwright install-deps chromium
+      - name: Install Chromium
+        if: steps.browser-cache.outputs.cache-hit != 'true'
+        run: npx --no-install playwright install chromium
+      - name: Format and literal checks without credentials
+        id: literal
+        run: node scripts/pipeline.mjs literal
+      - name: Keep literal evidence and report
+        if: always() && !cancelled()
+        uses: actions/upload-artifact@v4
+        with:
+          name: literal-evidence-${{ github.run_id }}
+          overwrite: true
+          path: |
+            literal.json
+            verify-report.md
+          if-no-files-found: warn
+          retention-days: 30
+
+  semantic:
+    needs: literal
+    if: always() && !cancelled() && needs.literal.result != 'skipped'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+      actions: read  # 读取 bot 评论指向的上一轮缓存 artifact。
+    timeout-minutes: 30
+    outputs:
+      proof_sha: ${{ steps.semantic.outputs.proof_sha }}
+    defaults:
+      run:
+        working-directory: trusted
+    steps:
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.event.pull_request.base.sha }}
@@ -36,85 +96,110 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Read PR data blobs using base scripts
-        id: prepare
+      - name: Fetch immutable PR commit and main history
         env:
-          PR_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
         run: |
-          [[ "$PR_HEAD_SHA" =~ ^[a-f0-9]{40}$ ]]
-          git fetch --no-tags origin "$PR_HEAD_SHA"
-          node scripts/prepare-pr.mjs
-      - name: Install base dependencies and PDF tools
-        if: steps.prepare.outputs.data_only == 'true'
-        run: |
-          npm ci --ignore-scripts --no-audit --no-fund
-          sudo apt-get update
-          sudo apt-get install -y poppler-utils python3
-      - name: Cache Chromium
-        if: steps.prepare.outputs.data_only == 'true'
-        id: browser-cache
-        uses: actions/cache@v4
+          [[ "$HEAD_SHA" =~ ^[a-f0-9]{40}$ ]]
+          git fetch --no-tags origin "$HEAD_SHA" main:refs/remotes/origin/main
+      - uses: actions/download-artifact@v4
         with:
-          path: ~/.cache/ms-playwright
-          key: ${{ runner.os }}-playwright-1.63.0
-      - name: Install browser system dependencies
-        if: steps.prepare.outputs.data_only == 'true'
-        run: npx --no-install playwright install-deps chromium
-      - name: Install Chromium
-        if: steps.prepare.outputs.data_only == 'true' && steps.browser-cache.outputs.cache-hit != 'true'
-        run: npx --no-install playwright install chromium
-      - name: Verify changed questions
-        if: steps.prepare.outputs.data_only == 'true'
-        id: verify
+          name: literal-evidence-${{ github.run_id }}
+          path: incoming
+      - name: Keep initial report for manual cases
+        run: cp ../incoming/verify-report.md ../verify-report.md
+      - name: Meaning checks from literal evidence only
+        if: needs.literal.result == 'success' && needs.literal.outputs.eligible == 'true' && needs.literal.outputs.trusted == 'true'
+        id: semantic
         env:
-          # 外部作者没有 key；secret 不放在 job/global env，也不交给 PR 的代码。
-          ANTHROPIC_API_KEY: ${{ steps.prepare.outputs.trusted == 'true' && secrets.ANTHROPIC_API_KEY || '' }}
-          TRUSTED_AUTHOR: ${{ steps.prepare.outputs.trusted }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node scripts/pipeline.mjs semantic
+      - name: Mark literal failures and human review red
+        if: needs.literal.result != 'success' || needs.literal.outputs.eligible != 'true' || needs.literal.outputs.trusted != 'true'
         run: |
-          args=()
-          if [[ "$TRUSTED_AUTHOR" != "true" ]]; then args+=(--literal-only); fi
-          node scripts/verify --base-dir data --data-dir ../candidate --report ../verify-report.md "${args[@]}"
-      - name: Update one PR comment
+          echo '要人看：字面/格式失败或非自动合并范围；未调用 Claude。' >> ../verify-report.md
+          exit 1
+      - name: Preserve paid verdict cache, including failed checks
+        if: always() && !cancelled()
+        id: cache
+        uses: actions/upload-artifact@v4
+        with:
+          name: semantic-cache-${{ github.run_id }}-${{ github.run_attempt }}
+          path: trusted/.cache/semantic-cache.json
+          include-hidden-files: true
+          if-no-files-found: ignore
+          retention-days: 90
+      - name: Preserve merge proof
+        if: always() && !cancelled() && steps.semantic.outputs.proof_sha != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: semantic-proof-${{ github.run_id }}
+          overwrite: true
+          path: trusted/.cache/semantic-proof.json
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 30
+      - name: Update one PR comment and cache pointer
         if: always() && !cancelled()
         env:
           GITHUB_TOKEN: ${{ github.token }}
-          PR_NUMBER: ${{ github.event.pull_request.number }}
-        run: node scripts/comment-pr.mjs
+          CACHE_ARTIFACT_ID: ${{ steps.cache.outputs.artifact-id }}
+        run: node scripts/pipeline.mjs finish
       - name: Keep full report
         if: always() && !cancelled()
         uses: actions/upload-artifact@v4
         with:
-          name: verify-report
+          name: verify-report-${{ github.run_id }}
+          overwrite: true
           path: verify-report.md
           if-no-files-found: ignore
+
   merge:
-    needs: verify
+    needs: [literal, semantic]
+    if: needs.semantic.result == 'success' && needs.semantic.outputs.proof_sha != '' && !github.event.pull_request.draft
+    runs-on: ubuntu-latest
     permissions:
       contents: write
       pull-requests: write
-    if: needs.verify.result == 'success' && needs.verify.outputs.data_only == 'true' && needs.verify.outputs.trusted == 'true' && needs.verify.outputs.verified == 'success' && !github.event.pull_request.draft
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-    # 核对可并行，但自动合并必须串行；每次临合并再核 main/base/head。
-    concurrency:
-      group: melb-merge-main
-      cancel-in-progress: false
+      actions: read
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
         with:
           ref: ${{ github.event.pull_request.base.sha }}
           path: trusted
+          fetch-depth: 0
           persist-credentials: false
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Merge only the verified main and PR head
+      - uses: actions/download-artifact@v4
+        with:
+          name: semantic-proof-${{ github.run_id }}
+          path: proof
+      - name: Wait for repository merge lock without dropping pending PRs
+        id: lock
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ github.event.pull_request.number }}
+        working-directory: trusted
+        run: node scripts/merge-lock.mjs acquire
+      - name: Recheck combined latest-main format and merge
         env:
           GITHUB_TOKEN: ${{ github.token }}
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
           PR_NUMBER: ${{ github.event.pull_request.number }}
-          PR_BASE_SHA: ${{ github.event.pull_request.base.sha }}
           PR_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          PROOF_SHA: ${{ needs.semantic.outputs.proof_sha }}
+          LOCK_SHA: ${{ steps.lock.outputs.sha }}
         working-directory: trusted
         run: node scripts/merge-pr.mjs
+      - name: Release only this run's merge lock
+        if: always() && steps.lock.outputs.sha != ''
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          LOCK_SHA: ${{ steps.lock.outputs.sha }}
+        working-directory: trusted
+        run: node scripts/merge-lock.mjs release

@@ -37,30 +37,20 @@ test('HTTPS 固定已验 IP；客户端不会再把域名解析成内网，保�
   options.lookup('rebind.example', { all: true }, (error, addresses) => { assert.equal(error, null); assert.deepEqual(addresses, [{ address: '1.1.1.1', family: 4 }]); });
 });
 
-test('临合并核 main/base/head/作者/草稿；main 前进、改 base、改 head 都不调 gh', async () => {
-  const base = 'a'.repeat(40), head = 'b'.repeat(40), advanced = 'c'.repeat(40);
+test('临合并允许 main 前进，只重跑格式；改 base/head/草稿/作者拦住', async () => {
+  const head = 'b'.repeat(40), base = 'a'.repeat(40), advanced = 'c'.repeat(40);
   const pr = { base: { ref: 'main', sha: base }, head: { sha: head }, author_association: 'MEMBER', state: 'open', draft: false };
-  for (const changes of [{ main: advanced }, { pr: { ...pr, base: { ref: 'other', sha: base } } }, { pr: { ...pr, head: { sha: advanced } } }, { pr: { ...pr, draft: true } }, { pr: { ...pr, author_association: 'NONE' } }]) {
-    let calls = 0, comment;
-    const result = await mergeVerified({ base, head, number: 7 }, { main: async () => changes.main ?? base, pr: async () => changes.pr ?? pr, merge: async () => { calls++; }, comment: async (s) => { comment = s; } });
-    assert.equal(result, 1); assert.equal(calls, 0); assert.match(comment, /未合并/); assert.match(comment, /同步 main 并重新核对/);
+  for (const change of [{ base: { ref: 'other' } }, { head: { sha: advanced } }, { draft: true }, { author_association: 'NONE' }]) {
+    let merged = false, commented = false;
+    assert.equal(await mergeVerified({ head, number: 7 }, { main: async () => base, pr: async () => ({ ...pr, ...change }), format: async () => {}, merge: async () => { merged = true; }, comment: async () => { commented = true; } }), 1);
+    assert.equal(merged, false); assert.equal(commented, true);
   }
+  let n = 0, formats = 0, merged = 0;
+  assert.equal(await mergeVerified({ head, number: 7 }, { main: async () => ++n === 1 ? base : advanced, pr: async () => pr, format: async () => { formats++; }, merge: async () => { merged++; }, comment: async () => assert.fail('不该卡住落后分支') }), 0);
+  assert.equal(formats, 2); assert.equal(merged, 1);
   let calls = 0;
-  assert.equal(await mergeVerified({ base, head, number: 7 }, { main: async () => base, pr: async () => pr, merge: async (number, sha) => { assert.equal(number, 7); assert.equal(sha, head); calls++; }, comment: async () => { throw Error('should not comment'); } }), 0);
-  assert.equal(calls, 1);
-});
-
-test('PR 分支落后事件 base 时不提取数据，不把 main 已有新 id 漏掉', async (t) => {
-  await fs.mkdir('.cache', { recursive: true }); const cwd = await fs.mkdtemp(path.resolve('.cache/ancestry-'));
-  t.after(() => fs.rm(cwd, { recursive: true, force: true }));
-  const git = (...args) => execFileSync('git', args, { cwd, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }).trim();
-  git('init', '-b', 'main'); git('config', 'user.name', 'test'); git('config', 'user.email', 'test@example.invalid');
-  await fs.mkdir(path.join(cwd, 'data')); await fs.writeFile(path.join(cwd, 'data/base.json'), '{}'); git('add', '.'); git('commit', '-m', 'base'); const original = git('rev-parse', 'HEAD');
-  git('checkout', '-b', 'pr-b'); await fs.writeFile(path.join(cwd, 'data/b.json'), '{"records":[{"id":"same"}]}'); git('add', '.'); git('commit', '-m', 'b'); const head = git('rev-parse', 'HEAD');
-  git('checkout', 'main'); await fs.writeFile(path.join(cwd, 'data/a.json'), '{"records":[{"id":"same"}]}'); git('add', '.'); git('commit', '-m', 'a'); const current = git('rev-parse', 'HEAD');
-  assert.notEqual(current, original);
-  const result = await prepare({ cwd, base: current, head, destination: path.join(cwd, 'candidate'), association: 'OWNER' });
-  assert.equal(result.dataOnly, false); assert.match(result.reason, /同步 main/); await assert.rejects(fs.stat(path.join(cwd, 'candidate')));
+  assert.equal(await mergeVerified({ head, number: 7 }, { main: async () => base, pr: async () => pr, format: async () => { throw Error('id 重复'); }, merge: async () => { calls++; }, comment: async s => assert.match(s, /id 重复/) }), 1);
+  assert.equal(calls, 0);
 });
 
 test('错误 JSON 的 parse 错误也不会把 API key 带进报告', async () => {

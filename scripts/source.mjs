@@ -36,7 +36,12 @@ export class Sources {
     if (!this.browserPromise) this.browserPromise = this.browserFactory ? this.browserFactory() : (async () => {
       const { chromium } = await import('playwright');
       this.proxy = await browserProxy();
-      return chromium.launch({ headless: true, proxy: { server: this.proxy.server }, args: ['--proxy-bypass-list=<-loopback>', '--disable-quic', '--force-webrtc-ip-handling-policy=disable_non_proxied_udp'] });
+      try {
+        return await chromium.launch({ headless: true, chromiumSandbox: true, proxy: { server: this.proxy.server }, args: ['--proxy-bypass-list=<-loopback>', '--disable-quic', '--force-webrtc-ip-handling-policy=disable_non_proxied_udp'] });
+      } catch (e) {
+        const why = String(e.message).split('\n').find(s => /sandbox|namespace|Operation not permitted/i.test(s) && !s.includes('<launching>')) ?? safeError(e);
+        throw Error(`Chromium sandbox 开启失败（不自动降级）：${why.slice(0, 300)}`);
+      }
     })();
     return this.browserPromise;
   }
@@ -88,16 +93,16 @@ export class Sources {
     return this.cache.get(url);
   }
   async load(url, quotes) {
-    const texts = [], errors = [];
+    const texts = [], errors = []; let browserFailed = false;
     try { texts.push(await this.readFetch(url)); } catch (e) { errors.push(`fetch：${safeError(e)}`); }
     if (!texts.length || quotes.some((q) => !texts[0].includes(normalize(q)))) {
       try {
         await this.checkURL(url);
         const text = await this.readBrowser(url);
         if (!texts.includes(text)) texts.push(text);
-      } catch (e) { errors.push(`Playwright：${safeError(e)}`); }
+      } catch (e) { browserFailed = true; errors.push(`Playwright：${safeError(e)}`); }
     }
-    return { texts, errors };
+    return { texts, errors, browserFailed };
   }
   async close() {
     try { if (this.browserPromise) { const browser = await this.browserPromise.catch(() => null); await browser?.close(); } }
@@ -119,7 +124,10 @@ export function literal(record, pages) {
       continue;
     }
     const text = page.texts.find((t) => t.includes(quote));
-    if (!text) { issues.push({ status: 'fail', text: `quote ${i + 1} 不在页面上：${s.quote}（${s.url}）` }); continue; }
+    if (!text) {
+      issues.push({ status: page.browserFailed ? 'unable' : 'fail', text: page.browserFailed ? `quote ${i + 1} 不在 fetch 文字里，浏览器又未能核对：${page.errors.join('；')}（${s.url}）` : `quote ${i + 1} 不在页面上：${s.quote}（${s.url}）` });
+      continue;
+    }
     const at = text.indexOf(quote);
     excerpts.push({ url: s.url, quote: s.quote, text: text.slice(Math.max(0, at - 2500), at + quote.length + 2500) });
   }

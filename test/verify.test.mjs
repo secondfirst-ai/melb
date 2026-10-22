@@ -113,7 +113,7 @@ test('端到端差分 3 题：错数题字面过、逐句不过；外部模式�
   const dir = await temporary(t); await fs.mkdir(path.join(dir, 'data')); await fs.mkdir(path.join(dir, 'base'));
   const old = record('old'), a = record('seed-a'), b = record('seed-b'), c = record('seed-bad'); c.answer.en += ' It costs $99.';
   await fs.writeFile(path.join(dir, 'base/old.json'), JSON.stringify(doc([old])));
-  await fs.writeFile(path.join(dir, 'data/new.json'), JSON.stringify(doc([old, a, b, c])));
+  await fs.writeFile(path.join(dir, 'data/daily-life.json'), JSON.stringify(doc([old, a, b, c])));
   let requests = 0, pages = 0;
   const deps = () => ({ sources: new Sources({ checkURL: async () => {}, fetchImpl: async () => { pages++; return new Response(`<p>${'normal reference '.repeat(30)}Tap water is safe. Every drop met the guidelines.</p>`); } }), model: new Claude({ key: 'fake', fetchImpl: async (_url, opts) => {
     requests++; const input = JSON.parse(opts.body), p = input.messages[0].content, data = JSON.parse(p.match(/BEGIN_SOURCE_MATERIAL_[^\n]+\n([^\n]+)\nEND_/)[1]);
@@ -139,12 +139,12 @@ test('并发始终不超过四；结果保留输入顺序', async () => {
 test('PR 安全：只提取普通 JSON blob；代码改动/路径穿越/symlink 不运行 API', async (t) => {
   const cwd = await temporary(t), git = (...args) => execFileSync('git', args, { cwd, encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] }).trim();
   git('init', '-b', 'main'); git('config', 'user.name', 'test'); git('config', 'user.email', 'test@example.invalid');
-  await fs.mkdir(path.join(cwd, 'data')); await fs.writeFile(path.join(cwd, 'data/base.json'), JSON.stringify(doc([record('old')])));
+  await fs.mkdir(path.join(cwd, 'data')); await fs.writeFile(path.join(cwd, 'data/everyday.json'), JSON.stringify(doc([record('old')])));
   git('add', '.'); git('commit', '-m', 'base'); const base = git('rev-parse', 'HEAD');
-  await fs.writeFile(path.join(cwd, 'data/new.json'), JSON.stringify(doc([record('new')]))); git('add', '.'); git('commit', '-m', 'data'); const head = git('rev-parse', 'HEAD');
+  await fs.writeFile(path.join(cwd, 'data/daily-life.json'), JSON.stringify(doc([record('new')]))); git('add', '.'); git('commit', '-m', 'data'); const head = git('rev-parse', 'HEAD');
   const output = path.join(cwd, 'candidate');
-  assert.deepEqual(await prepare({ cwd, base, head, destination: output, association: 'NONE' }), { dataOnly: true, trusted: false, reason: '外部 PR：只核格式和字面，不使用 secret，不自动合并。' });
-  assert.deepEqual(await fs.readdir(output), ['base.json', 'new.json']);
+  const plan = await prepare({ cwd, base, head, destination: output, association: 'NONE' }); assert.equal(plan.autoEligible, true); assert.equal(plan.trusted, false);
+  assert.deepEqual(await fs.readdir(output), ['daily-life.json', 'everyday.json']);
   assert.equal(gitData(base, cwd).size, 1);
   await fs.writeFile(path.join(cwd, 'danger.sh'), 'exit 99'); git('add', 'danger.sh'); git('commit', '-m', 'code');
   assert.equal((await prepare({ cwd, base, head: git('rev-parse', 'HEAD'), destination: path.join(cwd, 'denied'), association: 'OWNER' })).dataOnly, false);
