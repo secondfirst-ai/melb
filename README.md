@@ -1,14 +1,36 @@
 # melb
 
-Everyday questions about Melbourne and Victoria, for AI agents. [data.melb.si](https://data.melb.si) is built from these JSON files. The project is maintained by [melb.si](https://melb.si), a business of SecondFirst Pty Ltd.
+Everyday questions about Melbourne and Victoria, answered from official sources, in English and Simplified Chinese. Built for AI agents: an agent can look up "Is Melbourne tap water safe to drink?" or "Can I tap on with my bank card instead of a myki?" and get a short answer, the official page it came from, the exact sentence on that page, and the date someone checked it.
 
-AI helps collect and organise the data. Each answer has official sources and a date when it was checked. An answer says only what those sources support. Missing information means we do not have a checked answer. This is a public reference dataset, not personal medical, legal or migration advice.
+These JSON files are the source of [data.melb.si](https://data.melb.si). The project is run by [melb.si](https://melb.si).
+
+- Every answer says only what its quoted sources support. If a question is not here, we do not have a checked answer for it.
+- AI helps collect and organise the data. Every new question must pass two checks before it is merged (see [Verification](#verification)).
+- This is a public reference, not personal medical, legal or migration advice.
+
+## Use the data
+
+Free, read-only, no key.
+
+| Way in | Where |
+|---|---|
+| REST API | `https://data.melb.si/v1` lists the datasets. [OpenAPI](https://data.melb.si/openapi.json) |
+| MCP server | `https://data.melb.si/mcp` (Streamable HTTP, read-only tools, no session) |
+| Agent skill | [SKILL.md](https://data.melb.si/skill/SKILL.md) or [melb-si.zip](https://data.melb.si/skill/melb-si.zip) |
+| Raw files | `data/*.json` in this repository |
+
+```sh
+curl 'https://data.melb.si/v1/everyday?q=myki&lang=en'
+curl 'https://data.melb.si/v1/holidays?date=2026-11-03'
+```
+
+If you show an answer to someone, show its source link and `checked` date too. Please credit melb.si (see [Licence](#licence-and-contact)).
 
 ## Data
 
-The starting files are `about`, `ai_help`, `ai_rules`, `events`, `holidays` and `everyday` in `data/`. The first five have older formats. New question sets use the same format as `everyday.json`.
+`data/` starts with six files: `about`, `ai_help`, `ai_rules`, `events`, `holidays` and `everyday`. The first five use older formats. Every new question file uses the `everyday.json` format.
 
-New sets cover these categories. Read existing questions first: another wording of the same question is still a duplicate.
+New question files cover these categories. Before adding a question, read the existing ones: the same question in other words is a duplicate.
 
 | File id | Subject |
 |---|---|
@@ -46,9 +68,11 @@ Each question record has these fields:
 | `valid_until` | Optional expiry date, `YYYY-MM-DD`, for facts such as fares or deadlines |
 | `note` | Optional extra context, with `en` and `zh` strings |
 
-Use `everyday.json` as the complete example. New questions need real quotes: a search snippet or a null quote is not enough. Numbers, prices and dates in the answer must be supported by a quote. Dates must be real calendar dates. Existing records are kept, including past events; the API can filter them when serving a request.
+`everyday.json` is the full example. Every quote must be copied from the page itself; a search snippet or an empty quote does not count. Any number, price or date in an answer must appear in a quote. Dates must be real calendar dates. Old records stay in the files, past events included; the API filters them when it answers.
 
 ## Add questions
+
+We welcome new questions and corrections. Pull requests from people outside the maintainers get the format and literal checks and are not merged automatically; a maintainer looks at them.
 
 1. Choose a category. For a seed batch, start with about 70 common questions and keep about 50 that have clear official answers. Questions may come from public FAQs or common forum questions, but do not copy posts, usernames or forum links into this dataset. For `chinese-services`, start with the Chinese question.
 2. Read the official pages yourself. Government, councils and statutory bodies are good sources. A service operator may describe its own service. Do not use blogs, search snippets, news articles or law firms as evidence.
@@ -77,7 +101,7 @@ No base ref means `--all`. `--base <commit-or-ref>` checks only new or changed r
 The two evidence checks are:
 
 - **Literal:** Fetch each source once per run, with a browser user agent and a 15-second timeout. If it is blocked, too short or missing a quote, try an isolated headless Chromium session. PDF pages use `pdftotext`. Curly quotes, hyphens, non-breaking spaces, whitespace and case are normalised before checking quotes. Unreadable sources are **unable to verify**, never a pass. Code and style text are removed from HTML; HTML entities are decoded with Python's standard HTML parser. HTTPS requests connect to a checked, fixed public IP for each redirect. Chromium uses a temporary local CONNECT proxy that only connects to checked public IPs on port 443, including redirects; loopback bypass, QUIC and non-proxied WebRTC UDP are disabled, and page WebSockets are blocked. The proxy closes with the browser, does not decrypt TLS, and is not a deployed service.
-- **Meaning:** Claude (`claude-sonnet-5-5`) checks every English answer sentence against excerpts around each quote, and checks that the original Chinese means exactly the same. Any `partial` or `no` fails. Chinese is judged by factual meaning, not word-for-word correspondence: natural implicit wording is allowed, but missing facts, conditions, numbers or certainty still fail. This clarification adds no extra model calls. Bad or incomplete JSON is retried once, then marked unable to verify. At most four requests run at once. No web search tools are enabled. The prompt follows Jian's seed review prompt and labels all source and draft text as untrusted data.
+- **Meaning:** Claude (`claude-sonnet-5-5`) checks every English answer sentence against excerpts around each quote, and checks that the original Chinese means exactly the same. Any `partial` or `no` fails. Chinese is judged by factual meaning, not word-for-word correspondence: natural implicit wording is allowed, but missing facts, conditions, numbers or certainty still fail. This clarification adds no extra model calls. Bad or incomplete JSON is retried once, then marked unable to verify. At most four requests run at once. No web search tools are enabled. The prompt labels all source and draft text as untrusted data.
 
 Set `ANTHROPIC_API_KEY` in your environment or your local secret manager; never commit it. The maintainers supply it as a repository secret for the Action. A missing key cannot pass the meaning check. `--literal-only` does not call Claude, and does not qualify for automatic merging. `ANTHROPIC_BASE_URL` can point to a test Messages endpoint; HTTP is accepted only on loopback. It is not a PR-controlled setting.
 
@@ -101,7 +125,7 @@ The workflow uses `pull_request_target`. It checks out the exact **base commit o
 - **Forcing a fresh meaning check.** A cached verdict (pass or fail) is reused until the record changes. The model is not fully deterministic, so a borderline record can be failed once and stay failed. To re-check: fix the record if the verdict is right; otherwise a maintainer deletes the bot comment on the PR and re-runs the workflow (or pushes an empty commit). That drops the cache for the whole PR, so every record in it is checked again and paid for again (a few US cents per question).
 - Successful meaning checks produce a content-bound proof artifact whose SHA-256 is passed directly as a trusted job output. Merge jobs acquire an atomic GitHub ref lock (`refs/heads/melb-merge-lock`) and wait up to 12 minutes, so GitHub does not discard intermediate pending merge jobs. The lock commit identifies the run, attempt and PR, authored as melb.si. An always step releases only its own lock. A hard-killed runner can leave a lock; waiting jobs turn red after the deadline. A maintainer must confirm its owning run has stopped before deleting a stale lock and rerunning the checks; the script never steals or deletes another run's lock. They reconstruct latest main plus the PR, re-run **format only**, validate the proof, and check that the current PR is open, not draft, from a trusted author, targets main and still has the verified head. Main advancing during this check repeats format checks (at most three times), never Claude. Same-file conflicts or new duplicate ids are red. `gh pr merge --squash --match-head-commit` also locks the head.
 - New pushes cancel the older run for that PR. Editing the title, description or base does not start a run (a skipped run would show as passing). A PR whose base was changed away from main is refused at merge; push a commit to re-run. The report updates one bot comment, with full evidence/report artifacts available in Actions. Literal or manual-review failures are red.
-- Main-branch publishing happens outside GitHub. This repository does not hold a Cloudflare token or deploy the site.
+- Publishing from main to data.melb.si happens outside GitHub. This repository does not hold a Cloudflare token or deploy the site.
 
 The merge lock is a coordination branch, not dataset content; never merge it into main. For stale-lock recovery, read `git/ref/heads/melb-merge-lock` and its commit message via the GitHub API, check the recorded run has stopped, then delete `git/refs/heads/melb-merge-lock` and rerun the waiting jobs. Do not delete it while its holder is running. Repository rules must allow the Actions token to create/delete this coordination branch; otherwise merging fails red without bypassing those rules.
 
