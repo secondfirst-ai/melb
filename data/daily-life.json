@@ -1,0 +1,89 @@
+{
+  "dataset": "melb-seed-fixture",
+  "title": {
+    "en": "Verifier fixture — do not merge",
+    "zh": "核对测试，不能合并"
+  },
+  "updated": "2026-10-22",
+  "notes": [],
+  "records": [
+    {
+      "id": "seed-fixture-tap-water",
+      "question": {
+        "en": "Is tap water drinkable in Melbourne?",
+        "zh": "墨尔本的自来水能直接喝吗？"
+      },
+      "aliases": [
+        "Is tap water drinkable in Melbourne?",
+        "墨尔本的自来水能直接喝吗？"
+      ],
+      "answer": {
+        "en": "In Melbourne, tap water is safe to drink straight from the tap.",
+        "zh": "在墨尔本，自来水可以直接从水龙头饮用。"
+      },
+      "sources": [
+        {
+          "url": "https://www.yvw.com.au/node/2680",
+          "quote": "In Melbourne, tap water is safe to drink straight from the tap."
+        }
+      ],
+      "tags": [
+        "water",
+        "seed-fixture"
+      ],
+      "checked": "2026-10-22"
+    },
+    {
+      "id": "seed-fixture-water-guidelines",
+      "question": {
+        "en": "Did the supplied water meet the guidelines?",
+        "zh": "供应的水达到了饮用水指南吗？"
+      },
+      "aliases": [
+        "Did the supplied water meet the guidelines?",
+        "供应的水达到了饮用水指南吗？"
+      ],
+      "answer": {
+        "en": "Every drop met our Australian Drinking Water Guidelines, which is our national standard for safe, high quality drinking water.",
+        "zh": "每一滴水都达到了澳大利亚饮用水指南，这是全国安全、优质饮用水的标准。"
+      },
+      "sources": [
+        {
+          "url": "https://www.yvw.com.au/node/2680",
+          "quote": "Every drop met our Australian Drinking Water Guidelines, which is our national standard for safe, high quality drinking water."
+        }
+      ],
+      "tags": [
+        "water",
+        "seed-fixture"
+      ],
+      "checked": "2026-10-22"
+    },
+    {
+      "id": "seed-fixture-wrong-price",
+      "question": {
+        "en": "Is tap water safe, and what does it cost?",
+        "zh": "自来水安全吗，多少钱？"
+      },
+      "aliases": [
+        "Is tap water safe, and what does it cost?",
+        "自来水安全吗，多少钱？"
+      ],
+      "answer": {
+        "en": "In Melbourne, tap water is safe to drink straight from the tap. It costs exactly A$0.01 per litre.",
+        "zh": "在墨尔本，自来水可以直接从水龙头饮用。价格恰好是每升 0.01 澳元。"
+      },
+      "sources": [
+        {
+          "url": "https://www.yvw.com.au/node/2680",
+          "quote": "In Melbourne, tap water is safe to drink straight from the tap."
+        }
+      ],
+      "tags": [
+        "water",
+        "seed-fixture"
+      ],
+      "checked": "2026-10-22"
+    }
+  ]
+}
