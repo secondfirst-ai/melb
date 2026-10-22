@@ -1,0 +1,37 @@
+{
+  "dataset": "melb-seed-fixture",
+  "title": {
+    "en": "Verifier fixture — do not merge",
+    "zh": "核对测试，不能合并"
+  },
+  "updated": "2026-10-22",
+  "notes": [],
+  "records": [
+    {
+      "id": "seed-fixture-tap-water",
+      "question": {
+        "en": "Is tap water drinkable in Melbourne?",
+        "zh": "墨尔本的自来水能直接喝吗？"
+      },
+      "aliases": [
+        "Is tap water drinkable in Melbourne?",
+        "墨尔本的自来水能直接喝吗？"
+      ],
+      "answer": {
+        "en": "In Melbourne, tap water is safe to drink straight from the tap.",
+        "zh": "在墨尔本，自来水可以安全地直接从水龙头饮用。"
+      },
+      "sources": [
+        {
+          "url": "https://www.yvw.com.au/node/2680",
+          "quote": "In Melbourne, tap water is safe to drink straight from the tap."
+        }
+      ],
+      "tags": [
+        "water",
+        "seed-fixture"
+      ],
+      "checked": "2026-10-22"
+    }
+  ]
+}
