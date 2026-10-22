@@ -42,6 +42,7 @@ test('差分按 id：不核移动/重排字段，只核 3 条新题和真正改�
 
 test('HTML5 实体、script/style、各种引号和连字符', () => {
   assert.equal(normalize(htmlText('<style>BAD</style><script>BAD</script><p>‘Tap’&nbsp;water &amp; &#x2014; safe &hellip; &ldquo;yes&rdquo;</p>')), `'tap' water & - safe … "yes"`);
+  assert.equal(normalize(htmlText('<p>use the <a href="#">Auto-Registration system</a>. Next</p><ul><li>one</li><li>two</li></ul>')), 'use the auto-registration system. next one two');
 });
 
 test('一次 url 只抓一次；缓存涵盖同页不同 quote；不存在为不过', async () => {
