@@ -1,0 +1,10 @@
+{
+  "name": "melb",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": { "verify": "node scripts/verify", "test": "node --test" },
+  "dependencies": { "playwright": "1.63.0" },
+  "license": "MIT"
+}

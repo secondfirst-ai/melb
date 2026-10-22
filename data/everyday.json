@@ -1,0 +1,1327 @@
+{
+ "dataset": "melb-everyday",
+ "title": {
+  "en": "Everyday questions about Melbourne, answered from official sources",
+  "zh": "墨尔本日常问答（答案来自官方出处）"
+ },
+ "updated": "2026-10-22",
+ "notes": [
+  {
+   "en": "Each answer is limited to what the cited official page says, with a verbatim quote and the date we checked it. If a question isn't here, we don't have a checked answer.",
+   "zh": "每条答案只说出处原文支持的内容，附原句和核对日期。这里没有的问题，就是我们还没有核过的答案。"
+  }
+ ],
+ "records": [
+  {
+   "id": "melbourne-tap-water-safe",
+   "question": {
+    "en": "Is Melbourne tap water safe to drink?",
+    "zh": "墨尔本的自来水可以直接喝吗？"
+   },
+   "aliases": [
+    "Can I drink water from the tap in Melbourne?",
+    "Do I need to boil or filter tap water in Melbourne?",
+    "墨尔本自来水能直接喝吗",
+    "墨尔本水龙头的水要烧开吗"
+   ],
+   "answer": {
+    "en": "Yes. Yarra Valley Water, one of Melbourne's water retailers, says tap water in Melbourne is safe to drink straight from the tap. It says every drop it supplied in 2024-25 met the Australian Drinking Water Guidelines. This source covers Yarra Valley Water's area; other retailers publish their own results.",
+    "zh": "可以。墨尔本供水公司之一 Yarra Valley Water 表示，墨尔本的自来水可以直接从水龙头饮用，其 2024-25 年供应的水全部达到澳大利亚饮用水指南标准。该来源针对 Yarra Valley Water 的供水区域，其他供水公司各自公布水质结果。"
+   },
+   "sources": [
+    {
+     "url": "https://www.yvw.com.au/node/2680",
+     "quote": "In Melbourne, tap water is safe to drink straight from the tap."
+    },
+    {
+     "url": "https://www.yvw.com.au/node/2680",
+     "quote": "Every drop met our Australian Drinking Water Guidelines, which is our national standard for safe, high quality drinking water."
+    }
+   ],
+   "tags": [
+    "water",
+    "health"
+   ],
+   "checked": "2026-10-22"
+  },
+  {
+   "id": "victoria-restricted-trading-days",
+   "question": {
+    "en": "What days are shops closed in Victoria by law (restricted trading days)?",
+    "zh": "维多利亚州哪些日子法律规定商店必须关门（限制营业日）？"
+   },
+   "aliases": [
+    "Are shops closed on Good Friday in Melbourne?",
+    "Are there trading hour laws in Victoria?",
+    "Which shops can open on Christmas Day in Victoria?",
+    "墨尔本耶稣受难日商店开门吗",
+    "维州商店营业时间有法律规定吗"
+   ],
+   "answer": {
+    "en": "Victorian law has two-and-a-half restricted trading days a year: Good Friday, Christmas Day, and Anzac Day from 12:01am to 1:00pm. On those days only exempt shops can open. The source does not give general Sunday opening hours, so check the individual shop for ordinary Sundays.",
+    "zh": "维多利亚州法律规定每年有两天半“限制营业日”：耶稣受难日、圣诞节，以及 Anzac Day（4 月 25 日）当天 0:01 至 13:00。这些时段只有获豁免的商店可以营业。该来源没有给出普通周日的营业时间，平常的周日请向具体商店确认。"
+   },
+   "sources": [
+    {
+     "url": "https://ablis.business.gov.au/service/vic/operating-your-business-on-a-public-holiday-restricted-trading-days-/24307",
+     "quote": "Under Victorian law there are two-and-a-half restricted trading days each year:"
+    },
+    {
+     "url": "https://ablis.business.gov.au/service/vic/operating-your-business-on-a-public-holiday-restricted-trading-days-/24307",
+     "quote": "Anzac Day between 12:01am and 1:00pm"
+    },
+    {
+     "url": "https://ablis.business.gov.au/service/vic/operating-your-business-on-a-public-holiday-restricted-trading-days-/24307",
+     "quote": "On these days, only exempt shops are permitted to open."
+    }
+   ],
+   "tags": [
+    "shopping",
+    "time"
+   ],
+   "checked": "2026-10-22"
+  },
+  {
+   "id": "get-and-top-up-myki",
+   "question": {
+    "en": "How do I get and top up a myki in Melbourne?",
+    "zh": "在墨尔本怎么买和充值 myki 卡？"
+   },
+   "aliases": [
+    "Where can I buy a myki card?",
+    "How do I add money to myki?",
+    "Where to top up myki in Melbourne",
+    "myki 卡在哪里买",
+    "myki 怎么充值"
+   ],
+   "answer": {
+    "en": "You need a myki to travel on most of Melbourne's trains, trams and buses. It is a re-usable smart card that stores value. The City of Melbourne lists these places to buy and top up: 7-Eleven stores and other retailers with the myki sign, major train stations such as Flinders Street and Southern Cross, and myki machines at metropolitan train stations. You can also do it online with Public Transport Victoria or an Android phone via Google Pay. Touch on at the start of each trip and touch off at the end.",
+    "zh": "在墨尔本乘坐大多数火车、电车和巴士都需要 myki，这是一张可反复使用、储值付费的智能卡。墨尔本市政府列出的购买和充值地点包括：有 myki 标志的 7-Eleven 等零售店、Flinders Street 和 Southern Cross 等主要火车站，以及市区火车站的 myki 机器；也可以通过 Public Transport Victoria 网站在线办理，或用安卓手机通过 Google Pay。每次出行开始时在读卡器上“touch on”，下车或出站时“touch off”。"
+   },
+   "sources": [
+    {
+     "url": "https://whatson.melbourne.vic.gov.au/visitor-info/getting-around/public-transport",
+     "quote": "You’ll need a myki to travel on most of Melbourne's trains, trams and buses. It is a re-usable smart card that stores value to pay your public transport fare."
+    },
+    {
+     "url": "https://whatson.melbourne.vic.gov.au/visitor-info/getting-around/public-transport",
+     "quote": "7-Eleven stores and other retailers where you see the myki sign"
+    },
+    {
+     "url": "https://whatson.melbourne.vic.gov.au/visitor-info/getting-around/public-transport",
+     "quote": "major train stations, such as Flinders Street Station and Southern Cross Station"
+    },
+    {
+     "url": "https://whatson.melbourne.vic.gov.au/visitor-info/getting-around/public-transport",
+     "quote": "All you need to do is touch on at the myki reader (at entry / exit points at train stations and on board trams and buses) at the start of each trip."
+    }
+   ],
+   "tags": [
+    "transport",
+    "money"
+   ],
+   "checked": "2026-10-22"
+  },
+  {
+   "id": "tap-on-with-bank-card-phone",
+   "question": {
+    "en": "Can I tap on with my bank card or phone instead of a myki in Melbourne?",
+    "zh": "在墨尔本可以用银行卡或手机直接刷卡乘车，不用 myki 吗？"
+   },
+   "aliases": [
+    "Does Melbourne have contactless payment on trams and trains?",
+    "Can I use Apple Pay on Melbourne trams?",
+    "Tap and go Melbourne public transport",
+    "墨尔本电车能用信用卡刷吗",
+    "墨尔本公共交通可以用手机支付吗"
+   ],
+   "answer": {
+    "en": "Yes, as of mid-2026 per Victorian Government releases. Tap and go with a bank card, smartphone or smartwatch was switched on across myki-enabled train stations and on every tram (21 June 2026), and was being rolled out on all Melbourne bus routes by 26 July 2026. Concession, senior and under-18 passengers were told to keep using their concession or Youth myki. Regional V/Line stations without readers were to be switched on later in 2026. These are dated releases, so confirm current status on the PTV site.",
+    "zh": "可以，依据维多利亚州政府 2026 年年中的新闻稿：用银行卡、手机或智能手表“tap and go”已在所有带 myki 的火车站和全部电车上开通（2026 年 6 月 21 日），墨尔本所有巴士线路在 2026 年 7 月 26 日前陆续开通。持优惠票、老年人和 18 岁以下乘客仍应使用优惠 myki 或 Youth myki。部分尚无读卡器的区域 V/Line 车站要到 2026 年晚些时候才开通。以上为带日期的新闻稿内容，最新状态请以 PTV 官网为准。"
+   },
+   "sources": [
+    {
+     "url": "https://www.premier.vic.gov.au/tap-and-go-arrives-trams",
+     "quote": "From today, passengers will be able to pay for their journey on every tram using a bank card, smartphone or smartwatch."
+    },
+    {
+     "url": "https://www.premier.vic.gov.au/tap-and-go-arrives-trams",
+     "quote": "The expansion follows the rollout of tap and go payments across every myki-enabled train station in Victoria."
+    },
+    {
+     "url": "https://www.premier.vic.gov.au/tap-and-go-rolling-out-buses",
+     "quote": "Following this rollout, passengers at every myki enabled train station, tram and bus will be able to tap on and travel using a bank card, smartphone or smartwatch."
+    },
+    {
+     "url": "https://www.premier.vic.gov.au/tap-and-go-rollout-expands-regional-victoria",
+     "quote": "Concession passengers, seniors and those under 18 should continue using their concession or Youth myki."
+    }
+   ],
+   "tags": [
+    "transport",
+    "money"
+   ],
+   "note": {
+    "en": "Based on dated Victorian Government releases (June–July 2026), not a live status page.",
+    "zh": "依据维州政府 2026 年 6–7 月的新闻稿，不是实时状态页。"
+   },
+   "checked": "2026-10-22"
+  },
+  {
+   "id": "free-tram-zone-melbourne",
+   "question": {
+    "en": "Where is the Free Tram Zone in Melbourne?",
+    "zh": "墨尔本的免费电车区（Free Tram Zone）在哪里？"
+   },
+   "aliases": [
+    "Are trams free in Melbourne CBD?",
+    "Do I need a myki in the city centre?",
+    "Free Tram Zone boundaries",
+    "墨尔本市中心电车免费吗",
+    "免费电车区范围"
+   ],
+   "answer": {
+    "en": "The Free Tram Zone covers the central city and Docklands, bounded by Spring Street, Flinders Street and La Trobe Street, and also includes Victoria Street, William Street and Elizabeth Street around the Queen Victoria Market. If you only travel inside the zone you do not need a myki. Trains and buses still need a valid ticket.",
+    "zh": "免费电车区覆盖市中心和 Docklands，边界为 Spring Street、Flinders Street 和 La Trobe Street，并包括 Queen Victoria Market 周边的 Victoria Street、William Street 和 Elizabeth Street。只在区内乘电车不需要 myki；乘火车或巴士仍需有效车票。"
+   },
+   "sources": [
+    {
+     "url": "https://whatson.melbourne.vic.gov.au/visitor-info/getting-around/public-transport",
+     "quote": "Melbourne’s free tram zone includes the central city and Docklands, bounded by Spring Street, Flinders Street and La Trobe Street."
+    },
+    {
+     "url": "https://whatson.melbourne.vic.gov.au/visitor-info/getting-around/public-transport",
+     "quote": "If you’re only travelling in this zone, you don’t need a myki, but travelling by train or bus still requires a valid ticket."
+    }
+   ],
+   "tags": [
+    "transport"
+   ],
+   "checked": "2026-10-22"
+  },
+  {
+   "id": "myki-daily-fare-cap-2026",
+   "question": {
+    "en": "What is the myki daily fare cap for a full fare in 2026?",
+    "zh": "2026 年 myki 全价票的每日封顶票价是多少？"
+   },
+   "aliases": [
+    "How much is the max I pay per day on myki?",
+    "myki daily cap Melbourne",
+    "Is public transport half price in Victoria?",
+    "myki 一天最多收多少钱",
+    "维州公共交通半价到什么时候"
+   ],
+   "answer": {
+    "en": "Under the Victorian Government's half-price scheme, public transport is half price for everyone from 1 June 2026 until 1 January 2027. During that time the maximum Full Fare daily cost is $5.70, down from $11.40; concession is $2.85, down from $5.70. Fares for 2027 were not stated on this page.",
+    "zh": "根据维多利亚州政府的半价政策，2026 年 6 月 1 日至 2027 年 1 月 1 日期间，全州公共交通对所有人半价。此期间全价票每日封顶为 $5.70（原为 $11.40），优惠票为 $2.85（原为 $5.70）。该页面未说明 2027 年的票价。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vic.gov.au/half-price-travel",
+     "quote": "Public transport is half price across the state for everyone, every day, from Monday 1 June 2026 until 1 January 2027."
+    },
+    {
+     "url": "https://www.vic.gov.au/half-price-travel",
+     "quote": "During this time, the maximum cost of Full Fare daily travel will go from $11.40 to $5.70, while concession fares will drop from $5.70 to $2.85, delivering immediate cost-of-living relief."
+    }
+   ],
+   "tags": [
+    "transport",
+    "money"
+   ],
+   "valid_until": "2027-01-01",
+   "checked": "2026-10-22"
+  },
+  {
+   "id": "tipping-in-australia",
+   "question": {
+    "en": "Do you need to tip in Melbourne or Australia?",
+    "zh": "在墨尔本/澳大利亚需要给小费吗？"
+   },
+   "aliases": [
+    "Is tipping expected in Australia?",
+    "How much should I tip at a restaurant in Melbourne?",
+    "Do Australians tip?",
+    "澳洲吃饭要给小费吗",
+    "墨尔本餐厅小费给多少"
+   ],
+   "answer": {
+    "en": "No. Tourism Australia says hotels and restaurants do not add service charges and tipping is always your choice. At upmarket restaurants it is common to tip waiters 10 per cent of the bill for good service.",
+    "zh": "不需要。澳大利亚旅游局表示，酒店和餐厅不会在账单上加收服务费，是否给小费完全由你决定。在高档餐厅，服务好时通常会给服务员账单的 10% 作为小费。"
+   },
+   "sources": [
+    {
+     "url": "https://www.australia.com/en-nz/facts-and-planning/about-australia/useful-tips.html",
+     "quote": "Hotels and restaurants do not add service charges to your bill, and tipping is always your choice. In upmarket restaurants, it is common to tip waiters 10 per cent of the bill for good service."
+    }
+   ],
+   "tags": [
+    "etiquette",
+    "money"
+   ],
+   "checked": "2026-10-22"
+  },
+  {
+   "id": "read-melbourne-parking-signs",
+   "question": {
+    "en": "How do I read parking signs in Melbourne (2P, Meter, No Stopping)?",
+    "zh": "墨尔本的停车标志怎么看（2P、Meter、禁止停车）？"
+   },
+   "aliases": [
+    "What does 2P Meter mean?",
+    "What does 1P mean on a parking sign?",
+    "Do parking signs apply on public holidays in Melbourne?",
+    "2P 停车牌是什么意思",
+    "墨尔本公共假期停车限制"
+   ],
+   "answer": {
+    "en": "The number before P is the time limit, e.g. 1P is 1 hour. A sign saying meter or ticket means you must pay and obey the time limit; paying does not start, restart or extend the limit. In a No Stopping area you cannot stop for any reason, even for a moment. Check every panel on the sign. A sign that names a day of the week does not apply on public holidays. This is City of Melbourne guidance; clearway signs are not covered by this record.",
+    "zh": "P 前面的数字是最长停车时间，例如 1P 是 1 小时。标着 meter 或 ticket 的要付费，也要守时限；付了钱不会重新计时，也不会延长时限。No Stopping（禁止停车）的地方，任何原因都不能停，一会儿也不行。一块标志上有几块牌子的，每块都要看。写了星期几的牌子，公众假期不适用。以上是墨尔本市政府的说明，本条不含 clearway 标志。"
+   },
+   "sources": [
+    {
+     "url": "https://www.melbourne.vic.gov.au/parking-signs-and-rules",
+     "quote": "If a parking sign states 'meter' or 'ticket' you must pay for parking and obey any time limit."
+    },
+    {
+     "url": "https://www.melbourne.vic.gov.au/parking-signs-and-rules",
+     "quote": "You must park for no longer than the time limit shown on a parking sign (for example, '1P' = 1 hour)."
+    },
+    {
+     "url": "https://www.melbourne.vic.gov.au/parking-signs-and-rules",
+     "quote": "Making payment is a separate requirement. It does not start, re-start or extend the time limit."
+    },
+    {
+     "url": "https://www.melbourne.vic.gov.au/parking-signs-and-rules",
+     "quote": "You must not stop a vehicle for any reason, even for a moment, in a No Stopping area."
+    },
+    {
+     "url": "https://www.melbourne.vic.gov.au/parking-signs-and-rules",
+     "quote": "If any day of the week is stated on the parking sign, that sign doesn't apply on a public holiday."
+    }
+   ],
+   "tags": [
+    "driving"
+   ],
+   "checked": "2026-10-22"
+  },
+  {
+   "id": "what-is-a-hook-turn",
+   "question": {
+    "en": "What is a hook turn in Melbourne and how do I do one?",
+    "zh": "墨尔本的 hook turn（钩形右转）是什么，怎么转？"
+   },
+   "aliases": [
+    "How do I turn right at a hook turn sign?",
+    "Why do Melbourne drivers turn right from the left lane?",
+    "Right turn from left only meaning",
+    "hook turn 怎么做",
+    "墨尔本市中心右转为什么要从左边转"
+   ],
+   "answer": {
+    "en": "At an intersection with traffic lights and a hook turn only sign, a driver turning right must make a hook turn. Enter from the far left of the road you are leaving, move forward keeping to the left of the intersection and clear of any marked foot crossing, and stop near the far side of the road you are entering. Stay there until the traffic lights on that road turn green, then turn right. Source is the Road Safety Road Rules 2017 (rule 34), authorised version from 2020.",
+    "zh": "在有红绿灯、并竖着「hook turn only」标志的路口，右转必须走 hook turn：从你所在道路的最左边进入路口，靠左往前开，别挡住人行横道，一直开到尽量靠近要驶入那条路的对面一侧停下；等那条路的红绿灯变绿，再右转。出处是《2017 年道路安全规则》第 34 条（2020 年授权版本）。"
+   },
+   "sources": [
+    {
+     "url": "https://content.legislation.vic.gov.au/sites/default/files/2020-11/17-41sra009%20authorised.pdf",
+     "quote": "A driver turning right at an intersection with traffic lights and a hook turn only sign must turn right by making a hook turn in accordance with this rule."
+    },
+    {
+     "url": "https://content.legislation.vic.gov.au/sites/default/files/2020-11/17-41sra009%20authorised.pdf",
+     "quote": "Step 3 Remain at the position reached under step 2 until the traffic lights on the road that the driver is entering change to green."
+    },
+    {
+     "url": "https://content.legislation.vic.gov.au/sites/default/files/2020-11/17-41sra009%20authorised.pdf",
+     "quote": "Step 4 Turn right into that road."
+    }
+   ],
+   "tags": [
+    "driving"
+   ],
+   "checked": "2026-10-22"
+  },
+  {
+   "id": "find-bin-collection-day-melbourne",
+   "question": {
+    "en": "How do I find my bin collection day in Melbourne?",
+    "zh": "怎么查墨尔本我家的垃圾桶收集日？"
+   },
+   "aliases": [
+    "What day is bin day?",
+    "How do I check my rubbish collection day?",
+    "Recycling bin collection schedule Melbourne",
+    "垃圾收集日怎么查",
+    "墨尔本哪天收垃圾"
+   ],
+   "answer": {
+    "en": "It depends on your local council. Look it up on your own council's website. For example, City of Boroondara has an address lookup that also gives a downloadable calendar, and City of Melbourne publishes 2026-27 collection calendars and a collection days map. In City of Melbourne, place bins out between 6pm the night before and 6am on collection day.",
+    "zh": "垃圾收集日由所在市政府（council）决定，请在你所属 council 的官网查询。例如 Boroondara 市有地址查询工具并可下载日历；墨尔本市（City of Melbourne）公布了 2026-27 年收集日历和收集日地图。在墨尔本市，垃圾桶需在收集日前一晚 6 点至当天早上 6 点之间放出。"
+   },
+   "sources": [
+    {
+     "url": "https://www.boroondara.vic.gov.au/waste-environment/bins/find-your-bin-day",
+     "quote": "To find out when your bins are collected, start typing the address with the street number then select from dropdown list."
+    },
+    {
+     "url": "https://www.boroondara.vic.gov.au/waste-environment/bins/find-your-bin-day",
+     "quote": "Looking up your address will also show your waste collection calendar for download."
+    },
+    {
+     "url": "https://www.melbourne.vic.gov.au/bins-and-collections",
+     "quote": "Select an area on the map below to see the collection day for that area."
+    },
+    {
+     "url": "https://www.melbourne.vic.gov.au/bins-and-collections",
+     "quote": "Place bins out for collection between 6pm the night before collection and 6am on your bin collection day."
+    }
+   ],
+   "tags": [
+    "waste"
+   ],
+   "checked": "2026-10-22"
+  },
+  {
+   "id": "tourist-refund-scheme-gst",
+   "question": {
+    "en": "How does the Tourist Refund Scheme (GST refund at the airport) work?",
+    "zh": "旅客退税计划（机场 GST 退税）怎么运作？"
+   },
+   "aliases": [
+    "How do I claim GST back as a tourist in Australia?",
+    "Minimum spend for tourist GST refund",
+    "Tourist Refund Scheme 60 days $300",
+    "澳洲机场退税条件",
+    "澳洲旅客退税最低消费"
+   ],
+   "answer": {
+    "en": "If you are leaving Australia, you can claim back GST on goods you take with you if you spent at least A$300 (including GST) in total from one supplier with the same ABN, bought within 60 days of leaving. You need a valid paper tax invoice in English (originals only, no photos or copies), and you claim in person at the TRS Facility on your departure day, showing your passport, boarding pass, goods and invoices, at least 30 minutes before your flight. Be ready to take the goods on board as carry-on if asked.",
+    "zh": "离开澳洲时，带走的商品可以退 GST：在同一个商家（同一个 ABN）一共花满 A$300（含 GST），而且是离境前 60 天内买的。要有英文的纸质税务发票（只收原件，不收照片和复印件）。离境当天，在航班起飞至少 30 分钟前，到机场的 TRS 柜台本人办理，出示护照、登机牌、商品和发票。被要求时，商品要能作为随身行李带上飞机。"
+   },
+   "sources": [
+    {
+     "url": "https://www.abf.gov.au/entering-and-leaving-australia/tourist-refund-scheme",
+     "quote": "spend at least AUD300, including GST, in total from a supplier with the same Australian Business Number (ABN) registered to collect GST"
+    },
+    {
+     "url": "https://www.abf.gov.au/entering-and-leaving-australia/tourist-refund-scheme",
+     "quote": "buy the goods within 60 days of leaving Australia"
+    },
+    {
+     "url": "https://www.abf.gov.au/entering-and-leaving-australia/tourist-refund-scheme",
+     "quote": "at least 30 minutes before the scheduled departure of your flight at an airport"
+    },
+    {
+     "url": "https://www.abf.gov.au/entering-and-leaving-australia/tourist-refund-scheme",
+     "quote": "be prepared to take all your goods on board as carry-on luggage if asked"
+    }
+   ],
+   "tags": [
+    "money",
+    "shopping"
+   ],
+   "checked": "2026-10-22"
+  },
+  {
+   "id": "free-interpreter-at-gp",
+   "question": {
+    "en": "How can I get a free interpreter when I see a GP in Melbourne?",
+    "zh": "在墨尔本看全科医生（GP）时怎么获得免费翻译？"
+   },
+   "aliases": [
+    "Can I get an interpreter at the doctor in Australia?",
+    "Free interpreting service for Medicare patients",
+    "Chinese interpreter at the doctor",
+    "看医生有免费中文翻译吗",
+    "澳洲看病免费口译服务"
+   ],
+   "answer": {
+    "en": "The Australian Government's Free Interpreting Service, delivered by TIS National, is for limited English speakers who are eligible for Medicare. Private medical practitioners including GPs can register for it, so ask the practice to book an interpreter for you. Options include immediate phone interpreting, pre-booked phone interpreting and on-site interpreting. The source does not list which languages are available.",
+    "zh": "澳大利亚政府的“免费口译服务”（Free Interpreting Service，由 TIS National 提供）面向符合 Medicare 资格、英语有限的人士。包括全科医生在内的私人执业医生可以注册使用，所以可以请诊所为你安排口译员。服务形式有即时电话口译、预约电话口译和现场口译。该来源未列出具体支持的语言。"
+   },
+   "sources": [
+    {
+     "url": "https://www.tisnational.gov.au/en/Free-Interpreting-service",
+     "quote": "The Free Interpreting Service (FIS) helps eligible limited English speakers and non-government service providers to communicate through free access to TIS National interpreting services."
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Free-Interpreting-service",
+     "quote": "The FIS is available to limited English speakers in Australia who are eligible for Medicare."
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Free-Interpreting-service",
+     "quote": "private medical practitioners"
+    }
+   ],
+   "tags": [
+    "health"
+   ],
+   "checked": "2026-10-22"
+  },
+  {
+   "id": "emergency-and-non-urgent-police-numbers",
+   "question": {
+    "en": "What number do I call in an emergency, and for non-urgent police in Victoria?",
+    "zh": "紧急情况打什么电话？维多利亚州非紧急报警打哪里？"
+   },
+   "aliases": [
+    "What is the emergency number in Australia?",
+    "Police non-emergency number Melbourne",
+    "How to report a minor crime in Victoria",
+    "澳洲报警电话",
+    "墨尔本非紧急警察电话"
+   ],
+   "answer": {
+    "en": "In an emergency call Triple Zero (000). For non-urgent crimes and events or general enquiries, call the Victoria Police Police Assistance Line on 131 444 (open 24 hours) or report online. Do not use 131 444 when a crime is in progress, someone is injured or there is a risk to public safety.",
+    "zh": "紧急情况请拨打 Triple Zero（000）。非紧急案件、事件或一般咨询，可拨打维多利亚州警方的 Police Assistance Line 131 444（24 小时）或在线报案。如果犯罪正在发生、有人受伤或危及公共安全，不要打 131 444，应拨 000。"
+   },
+   "sources": [
+    {
+     "url": "https://www.police.vic.gov.au/contact-us",
+     "quote": "In an emergency, always call Triple Zero (000)."
+    },
+    {
+     "url": "https://www.police.vic.gov.au/police-assistance-line-and-online-reporting",
+     "quote": "Report non-urgent crimes and events online anytime, or call 131 444."
+    },
+    {
+     "url": "https://www.police.vic.gov.au/police-assistance-line-and-online-reporting",
+     "quote": "Do not call the Police Assistance Line in an emergency. This includes when a crime is in progress, someone has been injured or there is a risk to public safety."
+    }
+   ],
+   "tags": [
+    "safety"
+   ],
+   "checked": "2026-10-22"
+  },
+  {
+   "id": "victoria-daylight-saving-dates",
+   "question": {
+    "en": "When does daylight saving start and end in Victoria?",
+    "zh": "维多利亚州夏令时什么时候开始和结束？"
+   },
+   "aliases": [
+    "When do the clocks change in Melbourne?",
+    "Daylight saving Victoria October April",
+    "墨尔本夏令时几号",
+    "墨尔本什么时候调时钟"
+   ],
+   "answer": {
+    "en": "Daylight saving in Victoria starts at 2am on the first Sunday in October, when clocks go forward 1 hour. It ends at 2am (3am daylight saving time) on the first Sunday in April, when clocks go back 1 hour.",
+    "zh": "维多利亚州夏令时从 10 月第一个周日凌晨 2 点开始，时钟拨快 1 小时；到 4 月第一个周日凌晨 2 点（夏令时 3 点）结束，时钟拨慢 1 小时。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vic.gov.au/ical",
+     "quote": "begins at 2am on the first Sunday in October when clocks are put forward 1 hour"
+    },
+    {
+     "url": "https://www.vic.gov.au/ical",
+     "quote": "ends at 2am (3am daylight saving time) on the first Sunday in April when clocks are put back 1 hour"
+    }
+   ],
+   "tags": [
+    "time"
+   ],
+   "checked": "2026-10-22"
+  },
+  {
+   "id": "victoria-container-deposit-scheme",
+   "question": {
+    "en": "How does the container deposit scheme work in Victoria and how much do I get per can or bottle?",
+    "zh": "维多利亚州的容器押金回收计划怎么运作？每个罐子/瓶子退多少钱？"
+   },
+   "aliases": [
+    "How much is the refund for cans and bottles in Victoria?",
+    "Where can I return bottles for 10 cents?",
+    "CDS Vic",
+    "维州空瓶回收10分",
+    "易拉罐回收退钱"
+   ],
+   "answer": {
+    "en": "Buy a drink, then return the empty container to one of over 600 refund points across Victoria and receive a 10-cent refund for every suitable eligible container. You can keep the money or donate it to a participating charity or community group. Refund points include reverse vending machines, depots and over-the-counter collection points.",
+    "zh": "买饮料后，把空容器送到维州 600 多个退款点之一，每个符合条件的容器可获得 10 分（10 cent）退款。你可以自己留着，也可以捐给参与的慈善机构或社区团体。退款点包括自动回收机、回收站和柜台收集点。"
+   },
+   "sources": [
+    {
+     "url": "https://www.epa.vic.gov.au/how-cds-vic-works",
+     "quote": "Participants return their empty drink container to one of over 600 refund points across Victoria."
+    },
+    {
+     "url": "https://www.epa.vic.gov.au/how-cds-vic-works",
+     "quote": "Participants receive a 10-cent refund for every suitable eligible container they return."
+    },
+    {
+     "url": "https://www.epa.vic.gov.au/how-cds-vic-works",
+     "quote": "reverse vending machines"
+    }
+   ],
+   "tags": [
+    "waste",
+    "money"
+   ],
+   "checked": "2026-10-22"
+  },
+  {
+   "id": "drinking-age-and-alcohol-in-melbourne-cbd",
+   "question": {
+    "en": "What is the drinking age and can I drink alcohol in public in the Melbourne CBD?",
+    "zh": "维多利亚州的法定饮酒年龄是多少？可以在墨尔本市中心的公共场所喝酒吗？"
+   },
+   "aliases": [
+    "Can you drink in public in Melbourne?",
+    "Is there an alcohol ban in Melbourne CBD?",
+    "Legal drinking age Victoria",
+    "墨尔本街上可以喝酒吗",
+    "维州几岁可以喝酒"
+   ],
+   "answer": {
+    "en": "The legal drinking age in Victoria is 18. In the City of Melbourne, drinking alcohol in public places in the central business district is banned 24 hours a day, 365 days a year. Responsible BYO drinking is permitted in the city's parks and gardens for individuals or groups of 50 or fewer, with extra restrictions at some locations during events such as Moomba and New Year's Eve. This record does not cover whether you must carry ID.",
+    "zh": "维多利亚州法定饮酒年龄为 18 岁。在墨尔本市中心（CBD）的公共场所，全天 24 小时、全年 365 天禁止饮酒。在墨尔本市的公园和花园里，个人或 50 人以下的团体可以自带酒水负责任地饮用，但在 Moomba、跨年夜等活动期间，部分地点有额外限制。本条未涉及是否必须随身携带身份证件。"
+   },
+   "sources": [
+    {
+     "url": "https://www.betterhealth.vic.gov.au/health/healthyliving/Alcohol-and-the-law",
+     "quote": "The legal drinking age in Victoria is 18."
+    },
+    {
+     "url": "https://www.melbourne.vic.gov.au/responsible-consumption-alcohol",
+     "quote": "Consumption of alcohol is banned in public places in the central business district 24 hours a day, 365 days a year."
+    },
+    {
+     "url": "https://www.melbourne.vic.gov.au/responsible-consumption-alcohol",
+     "quote": "Responsible consumption of BYO alcohol is permitted in the City of Melbourne’s public parks and gardens by individuals or groups of 50 people or less."
+    }
+   ],
+   "tags": [
+    "safety",
+    "etiquette"
+   ],
+   "checked": "2026-10-22"
+  },
+  {
+   "id": "swimming-at-melbourne-beaches-flags",
+   "question": {
+    "en": "Is it safe to swim at Melbourne beaches and where should I swim?",
+    "zh": "在墨尔本的海滩游泳安全吗？应该在哪里游？"
+   },
+   "aliases": [
+    "What do the red and yellow flags mean?",
+    "Should I swim at a beach with no lifeguard?",
+    "How do I find a patrolled beach in Victoria?",
+    "红黄旗是什么意思",
+    "墨尔本海滩游泳要注意什么"
+   ],
+   "answer": {
+    "en": "Victoria Police advises checking whether the beach is patrolled by lifesavers or lifeguards and swimming between the red and yellow flags, where they can see you. The flags show the supervised area and that a lifesaving service is operating. If there are no red and yellow flags, you should not go swimming.",
+    "zh": "维多利亚州警方建议先确认海滩是否有救生员巡逻，并在红黄旗之间游泳，这样救生员能看到你。红黄旗标示受监护区域，表示有救生服务在运作。如果没有红黄旗，就不要下水游泳。"
+   },
+   "sources": [
+    {
+     "url": "https://www.police.vic.gov.au/beach-and-waterways-safety",
+     "quote": "Check whether the beach is patrolled with lifesavers or lifeguards. Swim between the red and yellow flags where they can see you if you get into trouble."
+    },
+    {
+     "url": "https://www.police.vic.gov.au/beach-and-waterways-safety",
+     "quote": "The most important flags on the beach are the red and yellow flags. These show the supervised area of the beach and that a lifesaving service is operating."
+    },
+    {
+     "url": "https://www.police.vic.gov.au/beach-and-waterways-safety",
+     "quote": "If there are no red and yellow flags, you should not go swimming."
+    }
+   ],
+   "tags": [
+    "safety"
+   ],
+   "checked": "2026-10-22"
+  },
+  {
+   "id": "drive-victoria-overseas-licence-visitor-vs-resident",
+   "question": {
+    "en": "Can I drive in Victoria on an overseas driver licence, and for how long (visitor vs new permanent resident)?",
+    "zh": "我可以用海外驾照在维多利亚州开车吗？能开多久（访客和新永久居民有什么区别）？"
+   },
+   "aliases": [
+    "How long can I use my foreign driving licence in Victoria?",
+    "Do I need to convert my overseas licence to a Victorian licence?",
+    "在维多利亚州可以用外国驾照开车多久？",
+    "新移民什么时候必须把海外驾照换成维州驾照？"
+   ],
+   "answer": {
+    "en": "Yes. If you are visiting Victoria for less than six months, you can drive on your overseas licence as long as it is valid and current. If you have lived, or will live, in Victoria for six months or more, you must convert it to a Victorian licence. If your licence is not in English, carry an English translation or an international driving permit in English. You can't use your overseas licence if you have failed a driving test in Victoria or have been disqualified or suspended.",
+    "zh": "可以。如果您在维多利亚州访问不足六个月，只要海外驾照有效且未过期，就可以使用它驾驶。如果您已在维州居住或将居住六个月或以上，就必须把它换成维州驾照。如果驾照不是英文，需要同时携带英文翻译件或英文的国际驾驶许可。如果您在维州考过任何驾驶考试不合格，或曾被取消或暂扣驾驶资格，就不能使用海外驾照。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vicroads.vic.gov.au/licences/new-to-victoria/convert-your-overseas-licence",
+     "quote": "If you're visiting Victoria for less than six months you can drive on your overseas driver licence provided it is valid and current."
+    },
+    {
+     "url": "https://www.vicroads.vic.gov.au/licences/new-to-victoria/convert-your-overseas-licence",
+     "quote": "If you've been living or will be living in Victoria for six months or more you'll need to convert your overseas licence or permit to a Victorian licence."
+    },
+    {
+     "url": "https://www.vicroads.vic.gov.au/licences/convert-your-licence/driving-with-your-overseas-licence",
+     "quote": "If your licence is not in English, you'll also need to carry either:"
+    },
+    {
+     "url": "https://www.vicroads.vic.gov.au/licences/convert-your-licence/driving-with-your-overseas-licence",
+     "quote": "you've failed any kind of driving test in Victoria"
+    }
+   ],
+   "tags": [
+    "driving"
+   ],
+   "checked": "2026-10-22"
+  },
+  {
+   "id": "victoria-default-speed-limit-built-up-areas-no-sign",
+   "question": {
+    "en": "What is the default speed limit in built-up areas in Victoria if there is no sign?",
+    "zh": "在维多利亚州，建成区（市区）如果没有限速标志，默认限速是多少？"
+   },
+   "aliases": [
+    "Default speed limit on suburban streets in Victoria with no speed signs",
+    "What speed limit applies on unsigned residential streets in Melbourne?",
+    "维州没有限速牌的市区道路限速多少？",
+    "墨尔本住宅区街道没有标志时限速是多少？"
+   ],
+   "answer": {
+    "en": "The default speed limit in built-up areas in Victoria is 50 km/h. It applies on roads where no speed limit sign applies and the road is not in a speed-limited area or shared zone. Outside built-up areas, the default on country roads is 100 km/h.",
+    "zh": "维多利亚州建成区（市区）的默认限速是50公里/小时。当某段道路没有适用的限速标志，且不属于限速区域或共享区域时，就适用这个默认限速。建成区以外的乡村道路默认限速则是100公里/小时。"
+   },
+   "sources": [
+    {
+     "url": "https://transport.vic.gov.au/road-and-active-transport/road-rules-and-safety/speed-limits",
+     "quote": "This applies to all roads in suburban areas where there are no speed limit signs displayed."
+    },
+    {
+     "url": "https://classic.austlii.edu.au/au/legis/vic/consol_reg/rsrr2017208/s25.html",
+     "quote": "The default speed-limit applying to a driver for a length of road in a built-up area is 50 kilometres per hour."
+    }
+   ],
+   "tags": [
+    "driving"
+   ],
+   "checked": "2026-10-22"
+  },
+  {
+   "id": "drinking-alcohol-st-kilda-beach",
+   "question": {
+    "en": "Can I drink alcohol on the beach in St Kilda (City of Port Phillip)?",
+    "zh": "我可以在圣基尔达（St Kilda，菲利普港市）的海滩上喝酒吗？"
+   },
+   "aliases": [
+    "Is alcohol banned on St Kilda foreshore?",
+    "Can I have a drink on St Kilda beach in summer?",
+    "圣基尔达海滩可以喝酒吗？",
+    "St Kilda 海滩夏天有禁酒令吗？"
+   ],
+   "answer": {
+    "en": "From 1 November to 31 March each year you can't drink or possess any alcohol, sealed or unsealed, along the St Kilda foreshore. The foreshore covers all beaches, reserves and parkland from Langridge Street to Thackeray Street. Outside those dates, Port Phillip public spaces allow responsible drinking from 12 midday to 8 pm, and unsealed alcohol is banned from 8 pm to 12 midday. A glass ban also applies along the entire Port Phillip foreshore. Extra municipality-wide bans apply over New Year and Australia Day.",
+    "zh": "每年11月1日至3月31日，在圣基尔达海滨（St Kilda foreshore）不能饮酒，也不能持有已开封或未开封的酒类。该海滨范围包括从Langridge Street到Thackeray Street的所有海滩、保护区和公园。在这段时间之外，菲利普港的公共场所允许在中午12点至晚上8点之间适度饮酒，晚上8点至次日中午12点禁止饮用或持有已开封的酒类。整个菲利普港海滨另有玻璃容器禁令。新年和澳大利亚日期间另有全市范围的禁酒令。"
+   },
+   "sources": [
+    {
+     "url": "https://www.portphillip.vic.gov.au/council-services/health-and-safety/local-laws-and-enforcement/alcohol-bans",
+     "quote": "You cannot drink or possess sealed or unsealed containers of alcohol along the St Kilda foreshore from 1 November to 31 March."
+    },
+    {
+     "url": "https://www.portphillip.vic.gov.au/council-services/health-and-safety/local-laws-and-enforcement/alcohol-bans",
+     "quote": "The St Kilda foreshore includes all beaches, reserves and parkland from Langridge Street to Thackeray Street."
+    },
+    {
+     "url": "https://www.portphillip.vic.gov.au/council-services/health-and-safety/local-laws-and-enforcement/alcohol-bans",
+     "quote": "You can responsibly consume alcohol between 12 midday to 8 pm every day in our public parks, reserves and spaces"
+    }
+   ],
+   "tags": [
+    "safety"
+   ],
+   "checked": "2026-10-22"
+  },
+  {
+   "id": "melbourne-airport-to-cbd-public-transport",
+   "question": {
+    "en": "How do I get from Melbourne Airport (Tullamarine) to the Melbourne CBD by public transport or bus?",
+    "zh": "我要怎么从墨尔本机场（Tullamarine）坐公共交通或巴士去墨尔本市中心？"
+   },
+   "aliases": [
+    "Melbourne Airport bus to city",
+    "Is there a public bus from Melbourne Airport?",
+    "Where do I catch the 901 bus at Melbourne Airport?",
+    "墨尔本机场怎么坐公交去市区"
+   ],
+   "answer": {
+    "en": "Most buses leave from the Melbourne Airport bus interchange, on the ground floor of the domestic Terminal 4 (T4) car park. SkyBus Melbourne City Express runs between the airport and Southern Cross station. Tickets are sold online, through the SkyBus app or at e-kiosks, and you can't use myki on this service. Route 901 runs seven days a week and stops at the interchange. It serves Broadmeadows, Roxburgh Park, Epping and Greensborough, and you need a myki for it. On weekdays it comes every 15 minutes at busy times and about every 30 minutes at other times and on weekends.",
+    "zh": "大多数巴士从墨尔本机场巴士总站发车，该站位于国内航站楼 T4 停车楼的底层。SkyBus Melbourne City Express 往返于机场和 Southern Cross 车站之间，车票可在线、通过 SkyBus 应用或在自助售票亭购买，这条线路不能使用 myki。901 路每周七天运行，在该巴士总站停靠，服务 Broadmeadows、Roxburgh Park、Epping 和 Greensborough，乘坐需要 myki 卡。工作日繁忙时段约每 15 分钟一班，其他时段和周末约每 30 分钟一班。"
+   },
+   "sources": [
+    {
+     "url": "https://www.ptv.vic.gov.au/more/travelling-on-the-network/visiting-melbourne-and-victoria/airport-buses/",
+     "quote": "Most buses operate from the Melbourne Airport bus interchange, located on the ground floor of the domestic Terminal 4 (T4) car park."
+    },
+    {
+     "url": "https://www.ptv.vic.gov.au/more/travelling-on-the-network/visiting-melbourne-and-victoria/airport-buses/",
+     "quote": "On weekdays, it comes every 15 minutes during busy times and about every 30 minutes at other times and on weekends."
+    },
+    {
+     "url": "https://www.ptv.vic.gov.au/more/travelling-on-the-network/visiting-melbourne-and-victoria/airport-buses/",
+     "quote": "All public transport to and from the airport requires a myki card, other bus services have their own booking systems."
+    }
+   ],
+   "tags": [
+    "transport"
+   ],
+   "checked": "2026-10-22"
+  },
+  {
+   "id": "victoria-taxi-fares-maximum-regulated-melbourne",
+   "question": {
+    "en": "How are taxi fares set in Victoria, and is there a regulated maximum fare for taxis in Melbourne?",
+    "zh": "维多利亚州的出租车费用是怎么定的？墨尔本的出租车有没有法定最高车费？"
+   },
+   "aliases": [
+    "Is there a maximum taxi fare in Melbourne?",
+    "Who sets taxi fares in Victoria?",
+    "墨尔本出租车有封顶价格吗？",
+    "维州出租车车费由谁规定？"
+   ],
+   "answer": {
+    "en": "Yes. Maximum fares for street-hail and taxi-rank (unbooked) taxi trips in Melbourne are set by the Essential Services Commission. Drivers must use the meter for these trips, and they can charge less than the maximum but not more than the meter shows. The fares of unbooked taxi trips that begin outside the regulated zones are not regulated. The regulated zones are metropolitan Melbourne and the Urban and Large Regional Zone, which includes Dandenong, Frankston, the Mornington Peninsula, Geelong, Ballarat and Bendigo.",
+    "zh": "有。墨尔本在街边招手或在出租车站上车（非预约）的出租车，最高车费由维多利亚州基本服务委员会（Essential Services Commission）制定。这类行程司机必须使用计价器，可以收得比最高价低，但不能超过计价器显示的金额。从受管制区域以外起步的非预约出租车行程，车费不受管制。受管制区域包括大墨尔本都会区以及城市和大型区域区，其中有丹德农、弗兰克斯顿、莫宁顿半岛、吉朗、巴拉瑞特和本迪戈。"
+   },
+   "sources": [
+    {
+     "url": "https://safetransport.vic.gov.au/news/taxi-drivers-across-victoria-are-now-required-to-use-the-meter/",
+     "quote": "Maximum fare rates for unbooked services from a taxi rank or hailed from the street in Melbourne"
+    },
+    {
+     "url": "https://www.esc.vic.gov.au/sites/default/files/documents/FDP%20-%20Review%20of%20the%20maximum%20unbooked%20taxi%20fares%20and%20non-cash%20payment%20surcharges%20-%20Final%20Decision%20-%2020240814%20(003).pdf",
+     "quote": "The fares of unbooked taxi trips that begin in other areas of Victoria are not regulated."
+    }
+   ],
+   "tags": [
+    "transport",
+    "money"
+   ],
+   "checked": "2026-10-22"
+  },
+  {
+   "id": "australia-national-minimum-wage-from-1-july-2026",
+   "question": {
+    "en": "What is the national minimum wage in Australia from 1 July 2026?",
+    "zh": "从2026年7月1日起，澳大利亚的全国最低工资是多少？"
+   },
+   "aliases": [
+    "What is the minimum hourly wage in Australia in 2026-27?",
+    "How much is the National Minimum Wage per week in Australia now?",
+    "澳大利亚2026年7月起最低时薪是多少？",
+    "澳洲全国最低工资每周多少钱？"
+   ],
+   "answer": {
+    "en": "From 1 July 2026 the National Minimum Wage is $26.44 per hour, or $1,004.90 per week. These rates apply from the first full pay period starting on or after 1 July 2026. The weekly figure is based on a 38-hour week for a full-time employee. Casual employees entitled to the National Minimum Wage must get at least $33.05 per hour, which includes the 25 per cent casual loading.",
+    "zh": "从2026年7月1日起，澳大利亚全国最低工资为每小时26.44澳元，或每周1,004.90澳元。该标准从2026年7月1日或之后开始的第一个完整工资周期起适用。每周的数额按全职员工每周38小时计算。适用全国最低工资的临时工（casual）每小时至少33.05澳元，其中已包含25%的临时工津贴。"
+   },
+   "sources": [
+    {
+     "url": "https://www.fairwork.gov.au/about-us/workplace-laws/annual-wage-review/annual-wage-review-2026",
+     "quote": "These rates apply from the first full pay period starting on or after 1 July 2026."
+    },
+    {
+     "url": "https://www.fairwork.gov.au/pay-and-wages/minimum-wages",
+     "quote": "As of 1 July 2026, the National Minimum Wage is $26.44 per hour or $1004.90 per week."
+    },
+    {
+     "url": "https://www.fairwork.gov.au/newsroom/media-releases/2026-media-releases/july-2026/20260701-minimum-wage-increase-media-release",
+     "quote": "The National Minimum Wage is now $1,004.90 per week (based on a 38‑hour week for a full‑time employee), or $26.44 per hour."
+    }
+   ],
+   "tags": [
+    "work"
+   ],
+   "checked": "2026-10-22"
+  },
+  {
+   "id": "ambulance-victoria-cost-and-membership",
+   "question": {
+    "en": "Do I have to pay for an ambulance in Victoria, and what is Ambulance Victoria membership?",
+    "zh": "在维多利亚州叫救护车需要付费吗？Ambulance Victoria 会员是什么？"
+   },
+   "aliases": [
+    "Is an ambulance free in Victoria?",
+    "How much does an ambulance cost in Melbourne?",
+    "What does Ambulance Victoria membership cover?",
+    "维州救护车收费吗？",
+    "墨尔本救护车要自己付钱吗？"
+   ],
+   "answer": {
+    "en": "Yes. In Victoria you have to pay for ambulance services unless you have a membership, concession or other coverage. Road transport costs approximately $1400 in the metropolitan area and over $2000 in rural areas. An Ambulance Victoria membership protects you against the cost of ambulance transport and paramedic care, but it does not give you higher priority when you call Triple Zero (000). After joining, you wait 14 days before you are covered for non-emergency transport and any conditions you had before you started.",
+    "zh": "需要。在维多利亚州，使用救护车服务要付费，除非你有会员资格、优惠资格（concession）或其他保障。道路转运费用在墨尔本市区约为1400澳元，在乡村地区超过2000澳元。Ambulance Victoria 会员可以保护你免于承担救护车转运和急救人员护理的费用，但不会让你拨打三个零（000）时获得更高优先级。加入后要等14天，才涵盖非紧急转运和你加入前已有的病症。"
+   },
+   "sources": [
+    {
+     "url": "https://www.ambulance.vic.gov.au/transport",
+     "quote": "In Victoria, you have to pay for ambulance services."
+    },
+    {
+     "url": "https://www.ambulance.vic.gov.au/membership",
+     "quote": "An Ambulance Victoria membership protects you against costs for ambulance transport and paramedic care."
+    },
+    {
+     "url": "https://www.ambulance.vic.gov.au/membership",
+     "quote": "Road transport costs approximately $1400 in the metropolitan area and over $2000 in rural areas."
+    },
+    {
+     "url": "https://www.ambulance.vic.gov.au/membership",
+     "quote": "Having a membership does not mean you will automatically be sent an ambulance"
+    },
+    {
+     "url": "https://service.vic.gov.au/find-services/personal/ambulance-membership/become-a-member",
+     "quote": "you'll also need to wait 14 days before you're covered for non-emergency transport"
+    }
+   ],
+   "tags": [
+    "health"
+   ],
+   "checked": "2026-10-22"
+  },
+  {
+   "id": "medicare-international-visitors-students",
+   "question": {
+    "en": "Are international visitors or students covered by Medicare in Australia?",
+    "zh": "来澳大利亚的国际游客或留学生可以使用Medicare吗？"
+   },
+   "aliases": [
+    "Can overseas students use Medicare in Victoria?",
+    "Do tourists in Australia get free public hospital care?",
+    "留学生有没有Medicare？",
+    "外国游客在澳洲看病能用Medicare吗？"
+   ],
+   "answer": {
+    "en": "Most international visitors and students are not eligible for Medicare. The exception is visitors and some students from countries that have a Reciprocal Health Care Agreement with Australia, who can get cover for essential medical treatment. Having reciprocal access to Medicare does not exempt a student from needing Overseas Student Health Cover (OSHC), although some exemptions may apply to students from Sweden, Norway or Belgium. Other visitors and temporary residents are not eligible for Medicare and should arrange private health insurance.",
+    "zh": "大多数国际游客和留学生没有资格使用Medicare。例外是来自与澳大利亚签有互惠医疗协议的国家的游客和部分留学生，他们可以获得必要医疗治疗的保障。拥有互惠医疗协议下的Medicare资格并不能免除学生购买海外学生健康保险（OSHC）的要求，不过来自瑞典、挪威或比利时的学生可能适用一些豁免。其他游客和临时居民没有资格使用Medicare，应自行购买私人医疗保险。"
+   },
+   "sources": [
+    {
+     "url": "https://www.betterhealth.vic.gov.au/health/servicesandsupport/overseas-visitors-and-healthcare",
+     "quote": "Most overseas visitors are not eligible for Medicare."
+    },
+    {
+     "url": "https://privatehealth.gov.au/health_insurance/overseas/overseas_student_health_cover.htm",
+     "quote": "Having reciprocal access to Medicare does not exempt you from needing to take out OSHC."
+    },
+    {
+     "url": "https://www9.health.gov.au/mbs/fullDisplay.cfm?type=note&q=GN.3.9&qt=noteID",
+     "quote": "Other visitors and temporary residents are not eligible for Medicare and should arrange private health insurance cover."
+    }
+   ],
+   "tags": [
+    "health"
+   ],
+   "checked": "2026-10-22"
+  },
+  {
+   "id": "gst-rate-australia",
+   "question": {
+    "en": "What is the GST rate in Australia?",
+    "zh": "澳大利亚的商品及服务税（GST）税率是多少？"
+   },
+   "aliases": [
+    "How much is GST in Victoria?",
+    "Is there sales tax in Melbourne?",
+    "澳洲消费税是多少？",
+    "墨尔本买东西要交多少GST？"
+   ],
+   "answer": {
+    "en": "GST (goods and services tax) in Australia is a broad-based tax of 10% on most goods, services and other items sold or consumed in Australia. The rate has stayed at 10% since GST started in July 2000. Some things don't have GST included, and these are called GST-free sales. Businesses registered for GST include GST in the price they charge for their goods and services.",
+    "zh": "澳大利亚的商品及服务税（GST）是一种广泛征收的税，税率为10%，适用于在澳大利亚销售或消费的大多数商品、服务及其他项目。自2000年7月GST开始实施以来，税率一直是10%。有些项目的价格中不含GST，这类销售称为免GST销售。已登记GST的企业，在其商品和服务的收费价格中包含GST。"
+   },
+   "sources": [
+    {
+     "url": "https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/how-gst-works",
+     "quote": "Goods and services tax (GST) is a broad-based tax of 10% on most goods, services and other items sold or consumed in Australia."
+    },
+    {
+     "url": "https://www.ato.gov.au/about-ato/research-and-statistics/in-detail/tax-gap/a-h-tax-gaps/goods-and-services-tax-gap/overview",
+     "quote": "There has been no change to the GST rate."
+    }
+   ],
+   "tags": [
+    "money"
+   ],
+   "checked": "2026-10-22"
+  },
+  {
+   "id": "find-your-local-council-victoria",
+   "question": {
+    "en": "How do I find out which local council I live in, in Victoria?",
+    "zh": "在维多利亚州，我怎么查自己住在哪个地方议会（council）辖区？"
+   },
+   "aliases": [
+    "Which council area is my address in Victoria?",
+    "How do I look up my local council by address in Victoria?",
+    "怎么查我家属于维州哪个市政厅/地方议会？",
+    "维多利亚州如何通过地址查询所属council？"
+   ],
+   "answer": {
+    "en": "Search your address on the Victorian Electoral Commission's interactive map, which shows the council electorate covering any address in Victoria. You can also use the Parliament of Victoria's electorate map. Switch on its layers tool to show your local council and ward. Victoria has 79 local councils.",
+    "zh": "你可以在维多利亚州选举委员会（VEC）的互动地图上搜索地址，查看维州任何地址所属的地方议会选区。你也可以使用维州议会的选区地图，打开图层工具即可显示所属的地方议会和选区（ward）。维州共有79个地方议会。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vec.vic.gov.au/electoral-boundaries/which-boundaries-cover-where-i-live",
+     "quote": "Use our interactive map to find out which state and council electorates you live in."
+    },
+    {
+     "url": "https://www.vec.vic.gov.au/electoral-boundaries/local-councils",
+     "quote": "If you don't know what council you are in, you can search your address on an interactive map."
+    },
+    {
+     "url": "https://findelectorate.parliament.vic.gov.au/",
+     "quote": "You can also use the layers tool to show your Federal electorate, local council and local council ward."
+    }
+   ],
+   "tags": [
+    "government"
+   ],
+   "checked": "2026-10-22"
+  },
+  {
+   "id": "jaywalking-legal-victoria",
+   "question": {
+    "en": "Is it illegal to jaywalk or cross the road away from a crossing in Victoria?",
+    "zh": "在维多利亚州不走斑马线、在别处过马路违法吗?"
+   },
+   "aliases": [
+    "Can I cross the road anywhere in Melbourne?",
+    "Is jaywalking a fine in Victoria?",
+    "墨尔本可以随便过马路吗?",
+    "在维州乱穿马路会被罚款吗?"
+   ],
+   "answer": {
+    "en": "Pedestrians in Victoria are not allowed to cross the road within 20 metres of a pedestrian crossing, and must use the crossing instead. The Road Safety Road Rules 2017 list some exceptions, such as crossing in a shared zone or at an intersection with a 'pedestrians may cross diagonally' sign. Pedestrians also must not cross while facing an amber or red traffic or pedestrian light. They must use the shortest or most direct way to cross a road.",
+    "zh": "在维多利亚州，行人不得在距离行人过街处20米范围内过马路，而必须使用该过街处。《2017年道路安全道路规则》列出了一些例外情况，例如在共享区域过马路，或在设有“行人可斜穿”标志的路口过马路。行人面对黄灯或红灯（交通灯或行人灯）时也不得过马路。过马路必须走最短或最直接的路线。"
+   },
+   "sources": [
+    {
+     "url": "https://transport.vic.gov.au/road-and-active-transport/active-transport/pedestrians-and-walking/road-rules-for-pedestrians",
+     "quote": "cross the road within 20 metres of a pedestrian crossing - they must use the crossing"
+    },
+    {
+     "url": "https://transport.vic.gov.au/road-and-active-transport/active-transport/pedestrians-and-walking/road-rules-for-pedestrians",
+     "quote": "use the shortest or most direct way to cross a road"
+    },
+    {
+     "url": "https://classic.austlii.edu.au/au/legis/vic/consol_reg/rsrr2017208//s234.html",
+     "quote": "A pedestrian must not cross a road, or part of a road, within 20 metres of a crossing on the road, except at the crossing or another crossing"
+    }
+   ],
+   "tags": [
+    "safety"
+   ],
+   "checked": "2026-10-22"
+  },
+  {
+   "id": "bicycle-helmet-required-victoria",
+   "question": {
+    "en": "Do I have to wear a helmet when riding a bicycle in Victoria?",
+    "zh": "在维多利亚州骑自行车一定要戴头盔吗？"
+   },
+   "aliases": [
+    "Is it compulsory to wear a bike helmet in Victoria?",
+    "Is it illegal to ride a bike without a helmet in Melbourne?",
+    "在墨尔本骑自行车不戴头盔违法吗？",
+    "维多利亚州骑单车必须戴头盔吗？"
+   ],
+   "answer": {
+    "en": "Yes, in Victoria it is compulsory for adults and children to wear an approved Australian Standards helmet while riding a bicycle. The helmet must be done up securely, and the rule also applies to any passengers. The only exception the page mentions is a written exemption from VicRoads saying you do not have to wear a helmet.",
+    "zh": "需要。在维多利亚州，骑自行车时成人和儿童都必须佩戴经认可的澳大利亚标准头盔。头盔必须扣好系紧，车上的乘客同样适用这一规定。页面上提到的唯一例外，是持有VicRoads出具的书面豁免、表明无需佩戴头盔。"
+   },
+   "sources": [
+    {
+     "url": "https://www.betterhealth.vic.gov.au/health/healthyliving/bicycle-safety-and-children",
+     "quote": "it is compulsory for adults and children to wear an approved Australian Standards helmet while riding a bicycle"
+    },
+    {
+     "url": "https://www.legalaid.vic.gov.au/cycling-and-skating",
+     "quote": "must wear an approved helmet and it must be done up securely"
+    }
+   ],
+   "tags": [
+    "safety"
+   ],
+   "checked": "2026-10-22"
+  },
+  {
+   "id": "melbourne-e-scooter-rules",
+   "question": {
+    "en": "Can I ride an e-scooter in Melbourne, and what are the rules (age, speed, footpaths)?",
+    "zh": "在墨尔本可以骑电动滑板车吗？有什么规定（年龄、速度、人行道）？"
+   },
+   "aliases": [
+    "Are private e-scooters legal in Victoria?",
+    "What is the e-scooter speed limit and minimum age in Melbourne?",
+    "墨尔本骑电动滑板车可以上人行道吗？",
+    "维多利亚州电动滑板车几岁可以骑？"
+   ],
+   "answer": {
+    "en": "Yes. Privately owned e-scooters are legal in Victoria, and you can ride one on City of Melbourne streets if you follow the Victorian road rules. Riders must be at least 16 years old and must not go faster than 20 km/h. You can't ride on footpaths, except shared paths, where you must give way to pedestrians. You can ride on roads with a speed limit up to 60 km/h, in bicycle lanes and on paths. You must also wear a helmet.",
+    "zh": "可以。维多利亚州已允许私人电动滑板车合法使用，只要遵守维州道路规则，就可以在墨尔本市区的街道上骑行。骑行者必须年满16岁，时速不得超过20公里。不能在人行道上骑行，共享路径除外，在共享路径上要礼让行人。可以在限速不超过60公里/小时的道路、自行车道和自行车路径上骑行。骑行时还必须戴头盔。"
+   },
+   "sources": [
+    {
+     "url": "https://www.melbourne.vic.gov.au/e-scooters",
+     "quote": "Yes, you can still ride a privately owned e-scooter on City of Melbourne streets, complying with Victorian road rules."
+    },
+    {
+     "url": "https://www.melbourne.vic.gov.au/e-scooters",
+     "quote": "Riders must be at least 16 years of age."
+    },
+    {
+     "url": "https://www.melbourne.vic.gov.au/e-scooters",
+     "quote": "No travelling above the e-scooter 20 km/h speed limit."
+    },
+    {
+     "url": "https://www.melbourne.vic.gov.au/e-scooters",
+     "quote": "No riding on footpaths (other than shared paths)."
+    },
+    {
+     "url": "https://www.melbourne.vic.gov.au/e-scooters",
+     "quote": "Give way to pedestrians on shared paths."
+    },
+    {
+     "url": "https://www.melbourne.vic.gov.au/e-scooters",
+     "quote": "Only ride on roads up to 60 km/h speed limit, bicycle lanes and paths."
+    },
+    {
+     "url": "https://www.police.vic.gov.au/electric-powered-scooters-e-scooters",
+     "quote": "wear a helmet"
+    }
+   ],
+   "tags": [
+    "transport"
+   ],
+   "checked": "2026-10-22"
+  },
+  {
+   "id": "ses-storm-flood-emergency-number-victoria",
+   "question": {
+    "en": "What number do I call for storm or flood help (SES) in Victoria?",
+    "zh": "在维多利亚州遇到风暴或洪水需要SES帮助时应该打什么电话？"
+   },
+   "aliases": [
+    "VICSES phone number",
+    "Who do I call when a tree falls on my house in Melbourne?",
+    "墨尔本暴风雨或洪水紧急求助电话",
+    "维州SES电话号码"
+   ],
+   "answer": {
+    "en": "Call VICSES (Victoria State Emergency Service) on 132 500 from anywhere in Victoria for flood and storm emergencies. If the situation is life-threatening, call Triple Zero (000) instead.",
+    "zh": "在维多利亚州任何地方遇到洪水或风暴紧急情况，请拨打 VICSES（维多利亚州应急服务局）电话 132 500。如果情况危及生命，请改打三个零（000）。"
+   },
+   "sources": [
+    {
+     "url": "https://www.ses.vic.gov.au/about-us/contact-us",
+     "quote": "Call 132 500 from anywhere in Victoria for flood, storm, tsunami and earthquake emergency."
+    },
+    {
+     "url": "https://www.ses.vic.gov.au/plan-and-stay-safe/emergencies/storm",
+     "quote": "Remember, for storm emergency assistance from VICSES call 132 500."
+    },
+    {
+     "url": "https://www.ses.vic.gov.au/plan-and-stay-safe/emergencies/flood",
+     "quote": "If your property or house is flooding or about to flood, call VICSES on 132 500."
+    }
+   ],
+   "tags": [
+    "safety"
+   ],
+   "checked": "2026-10-22"
+  },
+  {
+   "id": "melbourne-time-zone-aest-aedt",
+   "question": {
+    "en": "What time zone is Melbourne in (AEST/AEDT, UTC offset)?",
+    "zh": "墨尔本在哪个时区？是AEST还是AEDT，和UTC相差几小时？"
+   },
+   "aliases": [
+    "Is Melbourne on AEST or AEDT?",
+    "What is Melbourne's UTC offset?",
+    "墨尔本现在是UTC+10还是UTC+11？",
+    "维多利亚州用什么时区？"
+   ],
+   "answer": {
+    "en": "Melbourne is in Victoria, which uses Australian Eastern Standard Time (AEST). AEST is UTC+10. During daylight saving, Victoria moves to Australian Eastern Daylight Time (AEDT), which is UTC+11.",
+    "zh": "墨尔本位于维多利亚州，使用澳大利亚东部标准时间（AEST），即UTC+10。在夏令时期间，维多利亚州会改用澳大利亚东部夏令时间（AEDT），即UTC+11。"
+   },
+   "sources": [
+    {
+     "url": "https://invest.vic.gov.au/understand-the-market/learn-about-infrastructure-and-connectivity/time-zones",
+     "quote": "Victoria operates on Australian Eastern Standard Time (AEST), which it 10 hours ahead of Coordinated Universal Time (UTC)."
+    },
+    {
+     "url": "https://www.australia.com/en/facts-and-planning/about-australia/time-zones.html",
+     "quote": "New South Wales, ACT, Victoria and Tasmania move from AEST to Australian Eastern Daylight Time (AEDT), UTC +11."
+    }
+   ],
+   "tags": [
+    "time"
+   ],
+   "checked": "2026-10-22"
+  },
+  {
+   "id": "compare-electricity-gas-prices-victoria",
+   "question": {
+    "en": "How can I compare electricity and gas prices in Victoria (official government comparison site)?",
+    "zh": "在维多利亚州我可以怎样比较电费和燃气价格（政府官方比价网站）？"
+   },
+   "aliases": [
+    "Victorian Energy Compare",
+    "What is the official Victorian government energy price comparison website?",
+    "维多利亚州官方能源比价网站",
+    "怎么比较维州的电和煤气价格"
+   ],
+   "answer": {
+    "en": "Use Victorian Energy Compare at compare.energy.vic.gov.au. It is the Victorian Government's free, independent tool for comparing electricity, gas and solar offers. Pick the energy type, enter details about your household or business, and give your usage from a recent bill. You can then review offers ranked by estimated annual price. If you want both electricity and gas, choose one first and add the other on the Available Offers page.",
+    "zh": "请使用 Victorian Energy Compare 网站（compare.energy.vic.gov.au）。这是维多利亚州政府支持的免费、独立的比价工具，可比较电力、燃气和太阳能方案。先选择能源类型，填写家庭或企业的基本情况，再根据近期账单提供用量。系统会按预估年费用对方案排序。如果想同时比较电和燃气，先选一种，再到“可选方案”页面添加另一种。"
+   },
+   "sources": [
+    {
+     "url": "https://www.energy.vic.gov.au/households/help-paying-your-energy-bills",
+     "quote": "VEC is Victoria’s only free and independent energy price comparison tool, backed by the Victorian Government."
+    },
+    {
+     "url": "https://compare.energy.vic.gov.au/languages/english/how-to-compare-offers-on-victoria-energy-compare",
+     "quote": "Visit the Victorian Energy Compare website at compare.energy.vic.gov.au."
+    },
+    {
+     "url": "https://compare.energy.vic.gov.au/languages/english/how-to-compare-offers-on-victoria-energy-compare",
+     "quote": "If you want to compare both electricity and gas, select one and add the other energy type when you get to the Available Offers page."
+    },
+    {
+     "url": "https://compare.energy.vic.gov.au/languages/english/how-to-compare-offers-on-victoria-energy-compare",
+     "quote": "You can now review energy offers available to you with offers ranked by their annual estimated price."
+    }
+   ],
+   "tags": [
+    "money"
+   ],
+   "checked": "2026-10-22"
+  },
+  {
+   "id": "victoria-maximum-rental-bond",
+   "question": {
+    "en": "How much bond can a landlord ask for in Victoria?",
+    "zh": "在维多利亚州，房东最多可以要求多少押金？"
+   },
+   "aliases": [
+    "What is the maximum rental bond in Victoria?",
+    "Can a landlord charge more than one month's rent as bond in Victoria?",
+    "维州租房押金上限是多少？",
+    "维多利亚州房东最多能收多少租房押金？"
+   ],
+   "answer": {
+    "en": "In most cases, a rental bond in Victoria can't be more than one month's rent. A landlord (rental provider) can only ask for a higher bond when the weekly rent is more than $900, or when VCAT has set a higher bond for the property.",
+    "zh": "在维多利亚州，大多数情况下租房押金不能超过一个月的租金。只有当每周租金超过900澳元，或者维州民事和行政仲裁庭（VCAT）为该房产核定了更高的押金时，房东（出租方）才可以要求更高的押金。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/bond/bond-amounts-and-paying-a-bond",
+     "quote": "In most cases, a bond can't be more than one month’s rent."
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/bond/bond-amounts-and-paying-a-bond",
+     "quote": "the weekly rent for the property is more than $900"
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/starting-and-changing-rental-agreements/applying-signing-and-moving-in/knowing-your-rights-when-signing-an-agreement",
+     "quote": "Usually, a rental provider cannot ask for a bond that is higher than the amount of one month’s rent."
+    }
+   ],
+   "tags": [
+    "housing",
+    "money"
+   ],
+   "checked": "2026-10-22"
+  },
+  {
+   "id": "victoria-rent-increase-frequency",
+   "question": {
+    "en": "How often can a landlord increase the rent in Victoria?",
+    "zh": "在维多利亚州，房东多久可以涨一次房租？"
+   },
+   "aliases": [
+    "How many times a year can rent go up in Victoria?",
+    "Can my landlord raise the rent anytime in Victoria?",
+    "维州房东一年可以涨几次租金？",
+    "维多利亚州租金多久可以上调一次？"
+   ],
+   "answer": {
+    "en": "In most cases in Victoria, rent cannot be increased more than once every 12 months, even if the rental agreement specifies an earlier increase. During a fixed-term agreement, the rent can only go up before the end of the agreement if the agreement allows it. For fixed-term agreements that started on or after 19 June 2019, the limit is once every 12 months, while for agreements that started before that date it is once every 6 months. Consumer Affairs Victoria says how often rent can rise depends on the type of rental agreement and when it was signed.",
+    "zh": "在维多利亚州，大多数情况下租金每12个月最多只能上调一次，即使租约写明更早涨租也不行。固定期限租约期间，只有租约允许，租金才可以在租约结束前上调。2019年6月19日或之后开始的固定期限租约，涨租间隔不得少于12个月；该日期之前开始的租约，则不得少于6个月。维州消费者事务局（Consumer Affairs Victoria）表示，涨租的频率取决于租约类型以及租约的签订时间。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/rent/rent-increases",
+     "quote": "In most cases, rent cannot be increased more than once every 12 months, even if the rental agreement specifies a rent increase before that time."
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/rent/rent-increases",
+     "quote": "How often depends on the type of rental agreement, and when the agreement was signed."
+    },
+    {
+     "url": "https://www.rdrv.vic.gov.au/resolve-dispute/excessive-rent",
+     "quote": "The law limits rent increases to once every 12 months for most agreement types."
+    }
+   ],
+   "tags": [
+    "housing",
+    "money"
+   ],
+   "checked": "2026-10-22"
+  },
+  {
+   "id": "apply-tax-file-number-newly-arrived-worker",
+   "question": {
+    "en": "How do I apply for a tax file number (TFN) if I am a newly arrived worker in Australia?",
+    "zh": "我刚到澳大利亚工作，要怎么申请税号（TFN）？"
+   },
+   "aliases": [
+    "How do I get a TFN as a new migrant or temporary visa holder in Australia?",
+    "Do I need to pay to apply for a TFN?",
+    "新移民或临时签证持有人怎么申请澳洲税号？",
+    "刚来澳洲打工怎么申请TFN？"
+   ],
+   "answer": {
+    "en": "If you hold a valid work rights visa and are in Australia, you can apply online through the ATO's Individual Auto-Registration (IAR) system. It is free to apply, and you do not need to send documents. Your TFN should arrive by post within 28 days of the ATO receiving your completed application, so don't lodge another application during that time. If you do not have a valid work rights visa, you cannot use IAR. In that case, permanent migrants can use the Australian residents TFN application, and temporary visitors can use the paper TFN application form for people living outside Australia.",
+    "zh": "如果您持有有效的工作权利签证并且人在澳大利亚，可以通过澳洲税务局（ATO）的个人自动登记系统（IAR）在线申请。申请免费，也无需寄送文件。澳洲税务局收到您完整的申请后，您应在28天内通过邮寄收到税号，期间请勿重复提交申请。如果您没有有效的工作权利签证，就不能使用IAR。在这种情况下，永久移民可以使用澳大利亚居民的税号申请，临时访客可以使用适用于居住在澳大利亚境外人士的纸质税号申请表。"
+   },
+   "sources": [
+    {
+     "url": "https://www.ato.gov.au/individuals-and-families/tax-file-number/apply-for-a-tfn/foreign-passport-holders-permanent-migrants-and-temporary-visitors-tfn-application",
+     "quote": "If you have a valid work rights visa and are located in Australia, you can apply using the Individual Auto-Registration system."
+    },
+    {
+     "url": "https://www.ato.gov.au/individuals-and-families/tax-file-number/apply-for-a-tfn/foreign-passport-holders-permanent-migrants-and-temporary-visitors-tfn-application",
+     "quote": "You will not need to send documents to us."
+    },
+    {
+     "url": "https://www.ato.gov.au/individuals-and-families/tax-file-number/apply-for-a-tfn/foreign-passport-holders-permanent-migrants-and-temporary-visitors-tfn-application",
+     "quote": "You should receive your TFN within 28 days from when we receive your completed application."
+    },
+    {
+     "url": "https://www.ato.gov.au/individuals-and-families/tax-file-number/apply-for-a-tfn/foreign-passport-holders-permanent-migrants-and-temporary-visitors-tfn-application",
+     "quote": "It is free to apply for a TFN."
+    }
+   ],
+   "tags": [
+    "work",
+    "money",
+    "government"
+   ],
+   "checked": "2026-10-22"
+  }
+ ]
+}

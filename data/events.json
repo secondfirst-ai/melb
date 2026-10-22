@@ -1,0 +1,30 @@
+{
+  "dataset": "melb-ai-events",
+  "title": {"en": "Upcoming AI events for small businesses in and around Melbourne", "zh": "墨尔本及周边给小生意的 AI 活动"},
+  "updated": "2026-10-22",
+  "notes": [{"en": "Only events whose date, place and price we read on the organiser's page. Past events are hidden by the API.", "zh": "只收日期、地点、价钱在主办方页面上核过的活动。已过的活动 API 不返回。"}],
+  "records": [
+    {"id": "2026-10-27-hobsons-bay-intro-ai", "start": "2026-10-27", "name": {"en": "Intro to AI for business", "zh": "Intro to AI for business（企业 AI 入门）"},
+     "organiser": "Hobsons Bay City Council", "where": {"en": "Altona Civic Centre", "zh": "Altona Civic Centre"}, "online": false,
+     "cost": {"en": "Price not stated on the page", "zh": "页面没写价钱"},
+     "url": "https://www.hobsonsbaybusiness.com.au/Do-Business/Opportunities-for-businesses/Workshops-and-Events",
+     "sources": [{"url": "https://www.hobsonsbaybusiness.com.au/Do-Business/Opportunities-for-businesses/Workshops-and-Events", "quote": null}], "checked": "2026-10-22"},
+    {"id": "2026-11-05-mic-future-small-business-ai-agents", "start": "2026-11-05T10:00+11:00", "end": "2026-11-05T10:45+11:00",
+     "name": {"en": "The Future of Small Business, Run by AI Agents?", "zh": "The Future of Small Business, Run by AI Agents?（小生意的未来由 AI agent 来跑？）"},
+     "organiser": "Melbourne Innovation Centre", "where": {"en": "Online webinar", "zh": "线上网课"}, "online": true,
+     "cost": {"en": "Free", "zh": "免费"},
+     "url": "https://www.melbourneinnovation.com.au/events/the-future-of-small-business-run-by-ai-agents",
+     "sources": [{"url": "https://www.melbourneinnovation.com.au/events/the-future-of-small-business-run-by-ai-agents", "quote": null}], "checked": "2026-10-22"},
+    {"id": "2026-11-09-seed-ai-intake", "start": "2026-11-09", "name": {"en": "SEED-AI free AI training: next intake starts", "zh": "SEED-AI 免费 AI 培训：下一期开课"},
+     "organiser": "Deakin University", "where": {"en": "Online", "zh": "线上"}, "online": true,
+     "cost": {"en": "Free (300 places)", "zh": "免费（每期 300 人）"},
+     "url": "https://www.monash.vic.gov.au/Business/Business-Events/SEED-AI-Free-AI-training-for-businesses-educators-and-employees",
+     "sources": [{"url": "https://www.monash.vic.gov.au/Business/Business-Events/SEED-AI-Free-AI-training-for-businesses-educators-and-employees", "quote": null}], "checked": "2026-10-22"},
+    {"id": "2026-11-11-boroondara-visible-in-ai-chats", "start": "2026-11-11T18:30+11:00", "end": "2026-11-11T20:30+11:00",
+     "name": {"en": "Get your business visible in AI chats", "zh": "Get your business visible in AI chats（让你的生意出现在 AI 对话里）"},
+     "organiser": "City of Boroondara", "where": {"en": "Camberwell Civic Centre", "zh": "Camberwell Civic Centre"}, "online": false,
+     "cost": {"en": "A$15", "zh": "A$15"},
+     "url": "https://www.boroondara.vic.gov.au/events/get-your-business-visible-ai-chats",
+     "sources": [{"url": "https://www.boroondara.vic.gov.au/events/get-your-business-visible-ai-chats", "quote": null}], "checked": "2026-10-22"}
+  ]
+}
