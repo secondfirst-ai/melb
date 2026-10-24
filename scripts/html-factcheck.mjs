@@ -13,7 +13,7 @@ const words = Object.fromEntries('zero one two three four five six seven eight n
 Object.assign(words, { twenty: 20, thirty: 30, forty: 40, fifty: 50, sixty: 60, seventy: 70, eighty: 80, ninety: 90 });
 const number = '[+-]?(?:\\d{1,3}(?:,\\d{3})+|\\d+)(?:\\.\\d+)?';
 const decimal = s => Number(s.replaceAll(',', ''));
-const quoted = () => /"([^"\n]+)"|“([^“”\n]+)”|(?<!\p{L})'((?:[^'\n]|(?<=\p{L})'(?=\p{L}))+)'(?!\p{L})|(?<!\p{L})‘((?:[^‘’\n]|(?<=\p{L})’(?=\p{L}))+)’(?!\p{L})/gu;
+const quoted = () => /"([^"\n]+)"|“([^“”\n]+)”|(?<![\p{L}\p{N}])'((?:[^'\n]|(?<=\p{L})'(?=\p{L})|(?<=[sS])'(?=\s+\p{L}))+)'(?![\p{L}\p{N}])|(?<![\p{L}\p{N}])‘((?:[^‘’\n]|(?<=\p{L})’(?=\p{L})|(?<=[sS])’(?=\s+\p{L}))+)’(?![\p{L}\p{N}])/gu;
 
 function sentences(value) {
   const boundary = new RegExp(`[.!?]["']?(?:\\s*${MARK})*\\s+(?=[^\\s\uE000])`, 'g');
@@ -23,7 +23,7 @@ function sentences(value) {
     const end = match.index + match[0].length;
     if (spans.some(([a, b]) => end > a && end < b)) continue;
     if (!match[0].includes('\uE000')) {
-      if (!/[A-Z0-9$“"‘']/u.test(value[end])) continue;
+      if (!value.slice(start, match.index).includes('\uE000') && !/[A-Z0-9$“"‘']/u.test(value[end])) continue;
       if (/\b(?:Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec|Mr|Mrs|Dr|e\.g|i\.e)\.$/i.test(value.slice(0, match.index + 1))) continue;
     }
     parts.push(value.slice(start, end)); start = end;
@@ -114,6 +114,8 @@ function contains(text, value) {
   let at = -1;
   while ((at = text.indexOf(value, at + 1)) !== -1) {
     const before = text.slice(0, at).at(-1) ?? '', after = text[at + value.length] ?? '';
+    const tail = text.slice(at + value.length), head = text.slice(0, at);
+    if ((/\d$/.test(value) && /^[.,]\d/.test(tail)) || (/\d[.,]$/.test(value) && /^\d/.test(tail)) || (/^\d/.test(value) && /\d[.,]$/.test(head)) || (/^[.,]\d/.test(value) && /\d$/.test(head))) continue;
     if ((!/^[\p{L}\p{N}]/u.test(value) || !/[\p{L}\p{N}_]/u.test(before)) && (!/[\p{L}\p{N}]$/u.test(value) || !/[\p{L}\p{N}_]/u.test(after))) return true;
   }
   return false;

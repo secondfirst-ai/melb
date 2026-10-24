@@ -87,12 +87,17 @@ test('标点/大小写近似；词边界不能把 switch 当作 switches，数�
   assert.equal((await run('One hour costs $110', 'xero', '1 hour costs $110')).status, '✓');
   assert.equal((await run("The label is 'Don't train'.", 'xero', 'Unrelated source')).status, '✗');
   assert.equal((await run("'You don't have to opt in.'", 'xero', "You don't have to opt in.")).status, '✓');
+  assert.equal((await run('‘We respect users’ privacy.’', 'xero', 'We respect users.')).status, '✗');
+  assert.equal((await run('‘We respect users’ privacy.’', 'xero', "We respect users' privacy.")).status, '✓');
+  assert.equal((await run("'Plans' or '5 hours'", 'xero', 'Plans; 5 hours')).status, '✓');
   assert.equal((await run('“Cost is $8.00”', 'xero', 'Cost is $8,00')).status, '✗');
   assert.equal((await run('“$”', 'xero', 'Unrelated source')).status, '✗');
   assert.equal((await run('Go to Settings → Privacy → Keep activity and turn it off.', 'xero', 'Keep activity')).status, '✓');
   assert.equal((await run('one hundred and five hours', 'xero', '105 hours')).status, '✓');
   assert.equal((await run('105 hours', 'xero', 'one hundred and five hours')).status, '✓');
   assert.equal((await run('“The price is $8.”', 'xero', 'The price is $8.50 per month.')).status, '✗');
+  assert.equal((await run('“The price is $8.”', 'xero', 'The price is $8.50 per month. A different product costs $8.')).status, '✗');
+  assert.equal((await run('“8 units”', 'xero', '0.8 units; elsewhere 8 items.')).status, '✗');
   assert.equal((await run('“1,000 hours”', 'xero', '1.000 hours')).status, '✗');
   assert.equal((await run('The rate is -5%.', 'xero', 'The rate is 5%.')).status, '✗');
   assert.equal((await run('A$330', 'xero', 'AI for Small Business - $330.00')).status, '✓');
@@ -105,6 +110,9 @@ test('数字或小写开头的引用句不串用前句出处，月份缩写中�
   const rows = await factcheckHTML(html, { sources: reader({ 'https://example.com/a': '$8 and 5 hours', 'https://example.com/b': '$8', 'https://example.com/c': '20 minutes' }) });
   assert.equal(rows.length, 3); assert.deepEqual(rows.map(r => r.status), ['✓', '✗', '✓']); assert.deepEqual(rows.map(r => r.refs), [['s1'], ['s2'], ['s3']]);
   assert.equal((await run('25 Oct. 2026.', 'xero', '2026-10-25')).status, '✓');
+  const beforePeriod = html.replace('is $8. <a href="#s1">[1]</a>', 'is $8 <a href="#s1">[1]</a>.').replace('5 hours included. <a href="#s2">[2]</a>', 'five hours included <a href="#s2">[2]</a>.');
+  const beforeRows = await factcheckHTML(beforePeriod, { sources: reader({ 'https://example.com/a': '$8 and 5 hours', 'https://example.com/b': '$8', 'https://example.com/c': '20 minutes' }) });
+  assert.deepEqual(beforeRows.map(r => r.status), ['✓', '✗', '✓']);
 });
 test('多出处逐 token 任一命中就够、同 URL 只抓一次；部分打不开且缺 token 为未核', async () => {
   const html = guide('$110 for five hours', [urls.xero, urls.digitalSolutions]);
