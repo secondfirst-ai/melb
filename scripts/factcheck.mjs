@@ -17,7 +17,7 @@ export function inputs(value) {
   return value;
 }
 
-export async function factcheck(value, { cdp = false, caller = 'factcheck', env = process.env, signal, sources = new Sources({ withVia: true }), officeFactory = options => new OfficeReader(options) } = {}) {
+export async function factcheck(value, { cdp = false, caller = 'factcheck', env = process.env, signal, sources = new Sources({ withVia: true, allowHTTP: true }), officeFactory = options => new OfficeReader(options) } = {}) {
   const rows = inputs(value);
   if (cdp && env.GITHUB_ACTIONS) throw new UsageError('GITHUB_ACTIONS 中拒绝 --cdp，只能本地使用');
   const groups = new Map(), pages = new Map();
@@ -34,7 +34,7 @@ export async function factcheck(value, { cdp = false, caller = 'factcheck', env 
       if (!documents.length && cdp) {
         via = 'cdp';
         office ??= officeFactory({ caller, signal });
-        try { documents.push({ text: usable(await wait(office.read(url), 120_000, signal)), via }); }
+        try { documents.push({ text: usable(await office.read(url)), via }); }
         catch (error) { if (signal?.aborted) throw signal.reason; page.errors.push('CDP：' + safeError(error)); }
       }
       pages.set(url, { documents, via, errors: page.errors });

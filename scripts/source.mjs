@@ -28,12 +28,13 @@ async function bytes(response) {
 }
 
 export class Sources {
-  constructor({ fetchImpl = pinnedFetch, checkURL = publicURL, browserFactory, timeout = FETCH_TIMEOUT_MS, withVia = false } = {}) {
+  constructor({ fetchImpl = pinnedFetch, allowHTTP = false, checkURL = allowHTTP ? url => publicURL(url, { allowHTTP: true }) : publicURL, browserFactory, timeout = FETCH_TIMEOUT_MS, withVia = false } = {}) {
     this.fetch = fetchImpl; this.checkURL = checkURL; this.browserFactory = browserFactory; this.timeout = timeout;
-    this.withVia = withVia;
+    this.withVia = withVia; this.closed = false; this.cancel = new AbortController();
     this.cache = new Map(); this.browserPromise = null; this.proxy = null;
   }
   async browser() {
+    if (this.withVia && this.closed) throw Error("Sources 已关闭");
     if (!this.browserPromise) this.browserPromise = this.browserFactory ? this.browserFactory() : (async () => {
       const { chromium } = await import('playwright');
       this.proxy = await browserProxy();
@@ -49,6 +50,7 @@ export class Sources {
   async readBrowser(url) {
     const browser = await this.browser(), context = await browser.newContext({ userAgent: UA, serviceWorkers: 'block', acceptDownloads: false });
     try {
+      if (this.withVia && this.closed) throw Error('Sources 已关闭');
       await context.routeWebSocket('**/*', (socket) => socket.close());
       await context.route('**/*', async (route) => {
         try {
@@ -74,7 +76,7 @@ export class Sources {
     return (await this.readHTTP(url)).text;
   }
   async readHTTP(url) {
-    const signal = AbortSignal.timeout(this.timeout);
+    const signal = this.withVia ? AbortSignal.any([AbortSignal.timeout(this.timeout), this.cancel.signal]) : AbortSignal.timeout(this.timeout);
     let current = url;
     for (let redirects = 0; redirects <= 5; redirects++) {
       const resolved = await this.checkURL(current);
@@ -103,7 +105,7 @@ export class Sources {
       if (this.withVia) { const document = await this.readHTTP(url); texts.push(document.text); documents.push(document); }
       else texts.push(await this.readFetch(url));
     } catch (e) { errors.push(`fetch：${safeError(e)}`); }
-    if (!texts.length || quotes.some((q) => !texts[0].includes(normalize(q)))) {
+    if (!(this.withVia && this.closed) && (!texts.length || quotes.some((q) => !texts[0].includes(normalize(q))))) {
       try {
         await this.checkURL(url);
         const text = await this.readBrowser(url);
@@ -113,6 +115,7 @@ export class Sources {
     return { texts, errors, browserFailed, ...(this.withVia ? { documents } : {}) };
   }
   async close() {
+    if (this.withVia) { this.closed = true; this.cancel.abort(); }
     try { if (this.browserPromise) { const browser = await this.browserPromise.catch(() => null); await browser?.close(); } }
     finally { await this.proxy?.close(); }
   }
