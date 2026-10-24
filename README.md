@@ -140,3 +140,23 @@ Data: [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creat
 Code: [MIT](LICENSE), copyright SecondFirst Pty Ltd.
 
 Questions or corrections: [hello@melb.si](mailto:hello@melb.si).
+
+## Standalone factcheck
+
+Check source quotes without calling an LLM. Input is a JSON array of `{ "url": "https://…", "quote": "Exact sentence…" }` objects:
+
+```sh
+node scripts/factcheck.mjs in.json
+cat in.json | node scripts/factcheck.mjs -
+node scripts/factcheck.mjs in.json --cdp --caller jian
+```
+
+Only JSON goes to stdout; one human-readable status line per quote goes to stderr. Results contain `url`, `quote`, `status` (`found`, `not_found`, `unreachable`), `via` (`curl`, `headless`, `pdf`, `cdp`) and `excerpt`; unreachable adds `error`. `curl` names the existing pinned HTTP fetch stage, rather than a separate curl subprocess. Text and quotes use the verifier's normalisation. Found excerpts include about 2,500 characters on each side; not-found excerpts show the first 2,500 characters. Each URL is loaded once per run (including any fallback stages). Exit codes: 0 all found, 1 missing/unreachable or runtime error, 2 invalid input/options; Ctrl-C returns 130.
+
+`--cdp` is local only and refused when `GITHUB_ACTIONS` is set. It runs only when HTTP/PDF and isolated headless fetching both failed to produce usable text; an absent quote in readable text never opens the office browser. It takes the office browser lock (`chrome.sh lock <caller> factcheck`), uses the existing context at `http://127.0.0.1:9333`, creates its own background tabs, closes only those tabs, disconnects and unlocks even on errors or SIGINT. A held lock reports its owner without waiting. A local atomic driver lease also prevents concurrent factcheck processes from renewing and releasing each other’s same-caller office lock. A pre-existing same-caller office lock is refused rather than taken over. The office lease renews every five minutes; renewal failure stops further navigation.
+
+The office CDP adapter uses the already-installed `playwright-core` 1.64.1+ in `/Volumes/secondfirst/team/wen/browser/tools/`, as required by that browser's README; repository and CI dependencies stay unchanged. It does not launch the office browser or create a new context. For offline tests, `FACTCHECK_LOCK_SCRIPT` can select a fake lock script and the reader accepts an injected CDP connector; tests never connect to the real office browser.
+
+Factcheck opts into public HTTP as well as HTTPS for the pinned HTTP stage; the existing isolated headless proxy remains HTTPS-only. The local CDP fallback can inspect public HTTP too. The default verifier still requires HTTPS. CDP enables target-scoped Fetch interception before navigation, checks every request/redirect URL before continuing it, bypasses service workers and blocks WebSockets on its own tab. It does not change the shared browser's proxy or DNS, so it does not provide the pinned-IP isolation of the CI fetch/headless path. Use this local, logged-in profile mode only with source URLs you trust.
+
+Local driver lease metadata live in the OS temporary directory (`secondfirst-factcheck-<uid>`). `FACTCHECK_DRIVER_DIR` selects a directory for offline tests. A hard-killed process can leave that local lease behind: the error includes its caller, PID and directory. Confirm that PID has stopped before removing that directory; the tool does not steal a possibly active lease. Normal errors and SIGINT remove it. If CDP itself stays unresponsive during target creation/cleanup, the command reports a cleanup failure rather than silently claiming the tab was closed; unlock is still attempted.
