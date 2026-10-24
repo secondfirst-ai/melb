@@ -13,7 +13,7 @@ export function normalize(s) {
 export function htmlText(html) {
   return execFileSync('python3', [fileURLToPath(new URL('./html-text.py', import.meta.url))], { input: html, encoding: 'utf8', timeout: 15_000, maxBuffer: MAX_BYTES, stdio: ['pipe', 'pipe', 'pipe'] });
 }
-function usable(text) {
+export function usable(text) {
   const n = normalize(text);
   if (n.length < MIN_PAGE_TEXT) throw Error(`页面正文不足 ${MIN_PAGE_TEXT} 字符`);
   if (/^(access denied|just a moment|attention required|verify (you are|that you are) human|checking your browser|enable javascript and cookies to continue)/.test(n) || /(?:cloudflare ray id|incapsula incident id|request (?:was )?blocked|captcha challenge)/.test(n.slice(0, 1500))) throw Error('页面是访问拦截/验证码');
@@ -28,8 +28,9 @@ async function bytes(response) {
 }
 
 export class Sources {
-  constructor({ fetchImpl = pinnedFetch, checkURL = publicURL, browserFactory, timeout = FETCH_TIMEOUT_MS } = {}) {
+  constructor({ fetchImpl = pinnedFetch, checkURL = publicURL, browserFactory, timeout = FETCH_TIMEOUT_MS, withVia = false } = {}) {
     this.fetch = fetchImpl; this.checkURL = checkURL; this.browserFactory = browserFactory; this.timeout = timeout;
+    this.withVia = withVia;
     this.cache = new Map(); this.browserPromise = null; this.proxy = null;
   }
   async browser() {
@@ -70,6 +71,9 @@ export class Sources {
     } finally { await context.close(); }
   }
   async readFetch(url) {
+    return (await this.readHTTP(url)).text;
+  }
+  async readHTTP(url) {
     const signal = AbortSignal.timeout(this.timeout);
     let current = url;
     for (let redirects = 0; redirects <= 5; redirects++) {
@@ -84,7 +88,8 @@ export class Sources {
       if (!response.ok) { await response.body?.cancel(); throw Error(`fetch HTTP ${response.status}`); }
       const data = await bytes(response), pdf = data.subarray(0, 5).toString() === '%PDF-' || /application\/pdf/i.test(response.headers.get('content-type') ?? '');
       const text = pdf ? execFileSync('pdftotext', ['-enc', 'UTF-8', '-layout', '-', '-'], { input: data, encoding: 'utf8', timeout: 20_000, maxBuffer: MAX_BYTES, stdio: ['pipe', 'pipe', 'pipe'] }) : htmlText(data.toString('utf8'));
-      return usable(text);
+      // curl 是 factcheck 对 HTTP 抓取阶段的字段名；沿用既有 pinnedFetch，不另起 curl。
+      return { text: usable(text), via: pdf ? 'pdf' : 'curl' };
     }
     throw Error('重定向超过 5 次');
   }
@@ -93,16 +98,19 @@ export class Sources {
     return this.cache.get(url);
   }
   async load(url, quotes) {
-    const texts = [], errors = []; let browserFailed = false;
-    try { texts.push(await this.readFetch(url)); } catch (e) { errors.push(`fetch：${safeError(e)}`); }
+    const texts = [], errors = [], documents = []; let browserFailed = false;
+    try {
+      if (this.withVia) { const document = await this.readHTTP(url); texts.push(document.text); documents.push(document); }
+      else texts.push(await this.readFetch(url));
+    } catch (e) { errors.push(`fetch：${safeError(e)}`); }
     if (!texts.length || quotes.some((q) => !texts[0].includes(normalize(q)))) {
       try {
         await this.checkURL(url);
         const text = await this.readBrowser(url);
-        if (!texts.includes(text)) texts.push(text);
+        if (!texts.includes(text)) { texts.push(text); documents.push({ text, via: 'headless' }); }
       } catch (e) { browserFailed = true; errors.push(`Playwright：${safeError(e)}`); }
     }
-    return { texts, errors, browserFailed };
+    return { texts, errors, browserFailed, ...(this.withVia ? { documents } : {}) };
   }
   async close() {
     try { if (this.browserPromise) { const browser = await this.browserPromise.catch(() => null); await browser?.close(); } }
@@ -113,6 +121,11 @@ export class Sources {
 export function safeError(error) {
   // 浏览器错误会附上整段启动参数；只留首行，API key 和响应正文从不进入错误报告。
   return (error?.name === 'TimeoutError' || error?.name === 'AbortError' ? '超时' : String(error?.message ?? '请求失败').split('\n')[0]).slice(0, 300);
+}
+
+export function excerpt(text, quote) {
+  const needle = normalize(quote), at = text.indexOf(needle);
+  return at < 0 ? text.slice(0, 2500) : text.slice(Math.max(0, at - 2500), at + needle.length + 2500);
 }
 
 export function literal(record, pages) {
@@ -128,8 +141,7 @@ export function literal(record, pages) {
       issues.push({ status: page.browserFailed ? 'unable' : 'fail', text: page.browserFailed ? `quote ${i + 1} 不在 fetch 文字里，浏览器又未能核对：${page.errors.join('；')}（${s.url}）` : `quote ${i + 1} 不在页面上：${s.quote}（${s.url}）` });
       continue;
     }
-    const at = text.indexOf(quote);
-    excerpts.push({ url: s.url, quote: s.quote, text: text.slice(Math.max(0, at - 2500), at + quote.length + 2500) });
+    excerpts.push({ url: s.url, quote: s.quote, text: excerpt(text, quote) });
   }
   return { status: issues.some((i) => i.status === 'fail') ? 'fail' : issues.length ? 'unable' : 'pass', issues, excerpts };
 }

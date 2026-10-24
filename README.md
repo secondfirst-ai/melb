@@ -140,3 +140,19 @@ Data: [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creat
 Code: [MIT](LICENSE), copyright SecondFirst Pty Ltd.
 
 Questions or corrections: [hello@melb.si](mailto:hello@melb.si).
+
+## Standalone factcheck
+
+Check source quotes without calling an LLM. Input is a JSON array of `{ "url": "https://…", "quote": "Exact sentence…" }` objects:
+
+```sh
+node scripts/factcheck.mjs in.json
+cat in.json | node scripts/factcheck.mjs -
+node scripts/factcheck.mjs in.json --cdp --caller jian
+```
+
+Only JSON goes to stdout; one human-readable status line per quote goes to stderr. Results contain `url`, `quote`, `status` (`found`, `not_found`, `unreachable`), `via` (`curl`, `headless`, `pdf`, `cdp`) and `excerpt`; unreachable adds `error`. `curl` names the existing pinned HTTP fetch stage, rather than a separate curl subprocess. Text and quotes use the verifier's normalisation. Found excerpts include about 2,500 characters on each side; not-found excerpts show the first 2,500 characters. Each URL is loaded once per run (including any fallback stages). Exit codes: 0 all found, 1 missing/unreachable or runtime error, 2 invalid input/options; Ctrl-C returns 130.
+
+`--cdp` is local only and refused when `GITHUB_ACTIONS` is set. It runs only when HTTP/PDF and isolated headless fetching both failed to produce usable text; an absent quote in readable text never opens the office browser. It takes the office browser lock (`chrome.sh lock <caller> factcheck`), uses the existing context at `http://127.0.0.1:9333`, creates its own background tabs, closes only those tabs, disconnects and unlocks even on errors or SIGINT. A held lock reports its owner without waiting. Do not share a caller name between concurrent runs (the office lock treats the same caller as its owner).
+
+The office CDP adapter uses the already-installed `playwright-core` 1.64.1+ in `/Volumes/secondfirst/team/wen/browser/tools/`, as required by that browser's README; repository and CI dependencies stay unchanged. It does not launch the office browser or create a new context. For offline tests, `FACTCHECK_LOCK_SCRIPT` can select a fake lock script and the reader accepts an injected CDP connector; tests never connect to the real office browser.
