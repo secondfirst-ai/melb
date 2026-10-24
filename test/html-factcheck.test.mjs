@@ -95,6 +95,8 @@ test('标点/大小写近似；词边界不能把 switch 当作 switches，数�
   assert.equal((await run('“The price is $8.”', 'xero', 'The price is $8.50 per month.')).status, '✗');
   assert.equal((await run('“1,000 hours”', 'xero', '1.000 hours')).status, '✗');
   assert.equal((await run('The rate is -5%.', 'xero', 'The rate is 5%.')).status, '✗');
+  assert.equal((await run('A$330', 'xero', 'AI for Small Business - $330.00')).status, '✓');
+  assert.equal((await run('$330', 'xero', '-$330')).status, '✗');
   assert.equal((await run('Round 3 closes at the end of 2026.', 'xero', 'Round 3 closes on 31 December 2026.')).status, '✓');
   assert.equal((await run("Settings > Privacy > Don't train", 'xero', "Don't train")).status, '✓');
 });

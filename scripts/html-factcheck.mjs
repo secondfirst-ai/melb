@@ -70,7 +70,8 @@ function numericTokens(text) {
   take(/\b(\d{4})-(\d{2})-(\d{2})\b/g, m => date(m[3], m[2], m[1]));
   take(new RegExp(`\\b(\\d{1,2})(?:st|nd|rd|th)?\\s+(${monthPattern})\\.?(?:\\s+(\\d{4}))?\\b`, 'gi'), m => date(m[1], months.findIndex(month => month.startsWith(m[2].toLowerCase())) + 1, m[3]));
   take(new RegExp(`\\b(${monthPattern})\\.?\\s+(\\d{1,2})(?:st|nd|rd|th)?(?:,?\\s+(\\d{4}))?\\b`, 'gi'), m => date(m[2], months.findIndex(month => month.startsWith(m[1].toLowerCase())) + 1, m[3]));
-  take(new RegExp(`(?<![\\p{L}\\p{N}_+\\-])([+-]?)\\s*(?:AU?\\$|\\$)\\s*(${number})(?![\\p{L}\\p{N}_]|\\.\\d)`, 'giu'), m => ({ type: 'money', value: decimal(m[1] + m[2]) }));
+  // 标题里的「课程名 - $330」是分隔号；金额前紧贴的 -$330 / $-330 才带符号。
+  take(new RegExp(`(?<![\\p{L}\\p{N}_+\\-])([+-]?)(?:AU?\\$|\\$)\\s*(${number})(?![\\p{L}\\p{N}_]|\\.\\d)`, 'giu'), m => ({ type: 'money', value: decimal(m[1] + m[2]) }));
   take(new RegExp(`(?<![\\p{L}\\p{N}_.+\\-])(${number})\\s*(?:%|per cent\\b|percent\\b)`, 'giu'), m => ({ type: 'percent', value: decimal(m[1]) }));
   take(new RegExp(`(?<![\\p{L}\\p{N}_.+\\-])(${number})(?![\\p{L}\\p{N}_]|\\.\\d)`, 'gu'), m => ({ type: 'number', value: decimal(m[1]) }));
   // 这些 one 是习语，不是待核对的数量（例如 Microsoft, for one）。
