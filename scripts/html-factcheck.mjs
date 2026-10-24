@@ -11,17 +11,21 @@ const months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 
 const monthPattern = months.map(m => `${m.slice(0, 3)}(?:${m.slice(3)})?`).join('|');
 const words = Object.fromEntries('zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen'.split(' ').map((w, i) => [w, i]));
 Object.assign(words, { twenty: 20, thirty: 30, forty: 40, fifty: 50, sixty: 60, seventy: 70, eighty: 80, ninety: 90 });
-const number = '(?:\\d{1,3}(?:,\\d{3})+|\\d+)(?:\\.\\d+)?';
+const number = '[+-]?(?:\\d{1,3}(?:,\\d{3})+|\\d+)(?:\\.\\d+)?';
 const decimal = s => Number(s.replaceAll(',', ''));
-const quoted = () => /"([^"\n]+)"|“([^“”\n]+)”|(?<!\p{L})'([^'\n]+)'(?!\p{L})|(?<!\p{L})‘([^‘’\n]+)’(?!\p{L})/gu;
+const quoted = () => /"([^"\n]+)"|“([^“”\n]+)”|(?<!\p{L})'((?:[^'\n]|(?<=\p{L})'(?=\p{L}))+)'(?!\p{L})|(?<!\p{L})‘((?:[^‘’\n]|(?<=\p{L})’(?=\p{L}))+)’(?!\p{L})/gu;
 
 function sentences(value) {
-  const boundary = new RegExp(`([.!?]["']?\\s*(?:${MARK}\\s*)*)\\s+(?=[A-Z“"])`, 'g');
+  const boundary = new RegExp(`[.!?]["']?(?:\\s*${MARK})*\\s+(?=[^\\s\uE000])`, 'g');
   const spans = [...value.matchAll(quoted())].map(m => [m.index, m.index + m[0].length]);
   const parts = []; let start = 0;
   for (const match of value.matchAll(boundary)) {
     const end = match.index + match[0].length;
     if (spans.some(([a, b]) => end > a && end < b)) continue;
+    if (!match[0].includes('\uE000')) {
+      if (!/[A-Z0-9$“"‘']/u.test(value[end])) continue;
+      if (/\b(?:Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec|Mr|Mrs|Dr|e\.g|i\.e)\.$/i.test(value.slice(0, match.index + 1))) continue;
+    }
     parts.push(value.slice(start, end)); start = end;
   }
   parts.push(value.slice(start)); return parts;
@@ -54,7 +58,7 @@ function numericTokens(text) {
   function take(regex, make) {
     rest = rest.replace(regex, (...args) => {
       const groups = args.slice(0, -2), token = make(groups, args.at(-2));
-      if (token) tokens.push({ label: groups[0], ...token });
+      if (token) tokens.push({ label: groups[0].trim(), ...token });
       return token ? ' '.repeat(groups[0].length) : groups[0];
     });
   }
@@ -66,19 +70,20 @@ function numericTokens(text) {
   take(/\b(\d{4})-(\d{2})-(\d{2})\b/g, m => date(m[3], m[2], m[1]));
   take(new RegExp(`\\b(\\d{1,2})(?:st|nd|rd|th)?\\s+(${monthPattern})\\.?(?:\\s+(\\d{4}))?\\b`, 'gi'), m => date(m[1], months.findIndex(month => month.startsWith(m[2].toLowerCase())) + 1, m[3]));
   take(new RegExp(`\\b(${monthPattern})\\.?\\s+(\\d{1,2})(?:st|nd|rd|th)?(?:,?\\s+(\\d{4}))?\\b`, 'gi'), m => date(m[2], months.findIndex(month => month.startsWith(m[1].toLowerCase())) + 1, m[3]));
-  take(new RegExp(`(?<![\\p{L}\\p{N}_])(?:AU?\\$|\\$)\\s*(${number})(?![\\p{L}\\p{N}_]|\\.\\d)`, 'giu'), m => ({ type: 'money', value: decimal(m[1]) }));
-  take(new RegExp(`(?<![\\p{L}\\p{N}_.])(${number})\\s*(?:%|per cent\\b|percent\\b)`, 'giu'), m => ({ type: 'percent', value: decimal(m[1]) }));
-  take(new RegExp(`(?<![\\p{L}\\p{N}_.])(${number})(?![\\p{L}\\p{N}_]|\\.\\d)`, 'gu'), m => ({ type: 'number', value: decimal(m[1]) }));
+  take(new RegExp(`(?<![\\p{L}\\p{N}_+\\-])([+-]?)\\s*(?:AU?\\$|\\$)\\s*(${number})(?![\\p{L}\\p{N}_]|\\.\\d)`, 'giu'), m => ({ type: 'money', value: decimal(m[1] + m[2]) }));
+  take(new RegExp(`(?<![\\p{L}\\p{N}_.+\\-])(${number})\\s*(?:%|per cent\\b|percent\\b)`, 'giu'), m => ({ type: 'percent', value: decimal(m[1]) }));
+  take(new RegExp(`(?<![\\p{L}\\p{N}_.+\\-])(${number})(?![\\p{L}\\p{N}_]|\\.\\d)`, 'gu'), m => ({ type: 'number', value: decimal(m[1]) }));
   // 这些 one 是习语，不是待核对的数量（例如 Microsoft, for one）。
   rest = rest.replace(/\b(?:for one|one of|one-on-one)\b/gi, s => ' '.repeat(s.length));
   const word = Object.keys(words).join('|');
-  take(new RegExp(`\\b(?:${word})(?:[ -]+(?:${word}|hundred|thousand))*\\b`, 'gi'), (m, offset) => {
+  take(new RegExp(`\\b(?:${word})(?:[ -]+(?:${word}|hundred(?:\\s+and)?|thousand(?:\\s+and)?))*\\b`, 'gi'), (m, offset) => {
     if (m[0].toLowerCase() === 'one' && rest.trim().toLowerCase() !== 'one') {
       const after = rest.slice(offset + m[0].length), before = rest.slice(0, offset);
       if (!/^\s+[a-z]+/i.test(after) && !/\b(?:step|round|version|chapter|day)\s*$/i.test(before) || /^\s+(?:of|who|which|that|is|was|can|will|and|or)\b/i.test(after)) return null;
     }
     let total = 0, current = 0;
     for (const w of m[0].toLowerCase().split(/[ -]+/)) {
+      if (w === 'and') continue;
       if (w === 'hundred') current *= 100;
       else if (w === 'thousand') { total += current * 1000; current = 0; }
       else current += words[w];
@@ -90,18 +95,17 @@ function numericTokens(text) {
 
 export function tokens(text) {
   const phrases = [];
-  let rest = text.replace(quoted(), (label, ...args) => {
-    const value = args.slice(0, 4).find(x => x !== undefined)?.trim();
-    if (value) phrases.push({ type: 'phrase', value: normalizeCase(value), label });
-    return ' '.repeat(label.length);
-  });
+  for (const match of text.matchAll(quoted())) {
+    const value = match.slice(1).find(x => x !== undefined)?.trim();
+    if (value) phrases.push({ type: 'phrase', value: normalizeCase(value), label: match[0] });
+  }
   // 未加引号的设置路径也取最后一级开关名；各层菜单未必在出处中连写。
-  for (const match of text.matchAll(/(?:→|›|\s>\s)\s*([^→›|.!?\n]+)(?=$|[|.!?\n])/g)) {
-    if (/["“”'‘’]/.test(match[1])) continue;
-    const value = match[1].trim().replace(/^(?:turn (?:on|off)|toggle)\s+/i, '');
+  for (const match of text.matchAll(/(?:→|›|\s>\s)\s*([^→›>|.!?\n]+)(?=$|[|.!?\n])/g)) {
+    if (quoted().test(match[1])) continue;
+    const value = match[1].trim().replace(/^(?:turn (?:on|off)|toggle)\s+/i, '').replace(/\s+(?:and|then)\s+(?:turn|switch|toggle|click|select|disable|enable)\b.*$/i, '');
     if (value) phrases.push({ type: 'phrase', value: normalizeCase(value), label: value });
   }
-  const found = [...phrases, ...numericTokens(rest)];
+  const found = [...phrases, ...numericTokens(text)];
   return found.filter((t, i) => found.findIndex(x => x.type === t.type && JSON.stringify(x.value) === JSON.stringify(t.value)) === i);
 }
 
@@ -113,14 +117,20 @@ function contains(text, value) {
   }
   return false;
 }
-const loose = s => normalizeCase(s).toLowerCase().replace(/[^\p{L}\p{N}\s]/gu, ' ').replace(/\s+/g, ' ').trim();
+const loose = s => normalizeCase(s).toLowerCase().replace(/[^\p{L}\p{N}\s]/gu, (punct, offset, value) => /[.,:/+-]/.test(punct) && /\d/.test(value[offset - 1] ?? '') && /\d/.test(value[offset + 1] ?? '') ? punct : ' ').replace(/\s+/g, ' ').trim();
 function matchToken(token, document) {
   if (token.type === 'phrase') {
     if (contains(document.text, token.value)) return 'exact';
-    if (contains(loose(document.text), loose(token.value))) return 'near';
+    const approximate = loose(token.value);
+    if (approximate && contains(loose(document.text), approximate)) return 'near';
     return 'missing';
   }
   return document.numbers.some(t => t.type === token.type && (token.type === 'date' ? t.value.day === token.value.day && t.value.month === token.value.month && (token.value.year === null || t.value.year === token.value.year) : t.value === token.value)) ? 'exact' : 'missing';
+}
+
+function sourceNumbers(text) {
+  const found = numericTokens(text);
+  return [...found, ...found.flatMap(t => t.type === 'date' ? Object.values(t.value).filter(value => value !== null).map(value => ({ type: 'number', value })) : t.type === 'number' ? [] : [{ type: 'number', value: t.value }])];
 }
 
 function sourceReader() { return new Sources({ withVia: true, allowHTTP: true, preserveCase: true }); }
@@ -150,7 +160,7 @@ export async function factcheckHTML(html, { cdp = false, caller = 'factcheck', e
       }
       if (document) {
         if (typeof document.text !== 'string' || !document.text.trim()) throw Error('出处读取器未返回正文');
-        document = { ...document, text: normalizeCase(document.text), numbers: numericTokens(document.text) };
+        document = { ...document, text: normalizeCase(document.text), numbers: sourceNumbers(document.text) };
       }
       pages.set(url, { document, error });
     }
@@ -171,7 +181,10 @@ export async function checkGuide(file, options = {}) {
   const sources = options.sources ?? sourceReader();
   let html, guideURL;
   try {
-    if (/^https?:\/\//i.test(file)) { guideURL = file; html = (await wait(sources.readHTTP(file, { html: true }), 120_000, options.signal)).html; }
+    if (/^https?:\/\//i.test(file)) {
+      const page = await wait(sources.readHTTP(file, { html: true }), 120_000, options.signal);
+      guideURL = page.url ?? file; html = page.html;
+    }
     else { if ((await fs.stat(file)).size > MAX_BYTES) throw Error('指南超过 20 MiB'); html = await fs.readFile(file, 'utf8'); }
     if (typeof html !== 'string' || !html.trim()) throw Error('指南 HTML 为空');
   } catch (e) { await sources.close(); throw Error('无法读取指南 HTML：' + safeError(e)); }

@@ -92,7 +92,7 @@ export class Sources {
       const data = await bytes(response), pdf = data.subarray(0, 5).toString() === '%PDF-' || /application\/pdf/i.test(response.headers.get('content-type') ?? '');
       if (html) {
         if (pdf) throw Error('指南输入须为 HTML，不能是 PDF');
-        return { html: data.toString('utf8'), via: 'curl' };
+        return { html: data.toString('utf8'), via: 'curl', url: current };
       }
       const text = pdf ? execFileSync('pdftotext', ['-enc', 'UTF-8', '-layout', '-', '-'], { input: data, encoding: 'utf8', timeout: 20_000, maxBuffer: MAX_BYTES, stdio: ['pipe', 'pipe', 'pipe'] }) : htmlText(data.toString('utf8'));
       // curl 是 factcheck 对 HTTP 抓取阶段的字段名；沿用既有 pinnedFetch，不另起 curl。

@@ -21,6 +21,23 @@ class Tree(HTMLParser):
         self.stack = [self.root]
 
     def handle_starttag(self, tag, attrs):
+        # HTML 允许省略这些结束标签；不把下一行/下一项误嵌进前一行。
+        def close_optional(tags, boundaries=()):
+            for i in range(len(self.stack) - 1, 0, -1):
+                if self.stack[i].tag in boundaries:
+                    return
+                if self.stack[i].tag in tags:
+                    del self.stack[i:]
+                    return
+
+        if tag in BLOCK or tag in ('table', 'ul', 'ol', 'pre', 'form', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6'):
+            close_optional({'p'})
+        if tag == 'li':
+            close_optional({'li'}, {'ul', 'ol'})
+        elif tag == 'tr':
+            close_optional({'tr'}, {'table'})
+        elif tag in ('td', 'th'):
+            close_optional({'td', 'th'}, {'tr', 'table'})
         node = Node(tag, attrs)
         self.stack[-1].children.append(node)
         if tag not in VOID:
@@ -59,7 +76,7 @@ def text(node, nested=False, row=False):
     if node.tag == 'a' and re.fullmatch(r'#s\d+', href):
         return '\ue000' + href[1:] + '\ue001'
     body = ''.join(text(c, True, row) for c in node.children)
-    return (' | ' if row and node.tag in ('td', 'th') else ' ' if node.tag == 'br' else '') + body
+    return (' | ' if row and node.tag in ('td', 'th') else ' ' if node.tag == 'br' or row and node.tag in BLOCK else '') + body
 
 
 parser = Tree()
