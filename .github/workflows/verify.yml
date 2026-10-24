@@ -17,6 +17,7 @@ jobs:
     permissions: {}
     timeout-minutes: 30
     outputs:
+      data_changed: ${{ steps.changes.outputs.data_changed }}
       eligible: ${{ steps.literal.outputs.eligible }}
       trusted: ${{ steps.literal.outputs.trusted }}
     defaults:
@@ -40,27 +41,51 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
+      - name: Compare PR data paths
+        id: changes
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          node --input-type=module <<'NODE'
+          import fs from 'node:fs';
+          import { execFileSync } from 'node:child_process';
+          const { BASE_SHA: base, HEAD_SHA: head, GITHUB_OUTPUT: output } = process.env;
+          if (![base, head].every(sha => /^[a-f0-9]{40}$/.test(sha ?? ''))) throw Error('PR base/head SHA 无效');
+          // 三点比较取 PR 自身的改动；禁用 rename 合并，两端及删除都算，NUL 分隔保留特殊文件名。
+          const files = execFileSync('git', ['diff', '--no-renames', '--name-only', '-z', `${base}...${head}`], { maxBuffer: 16 * 1024 * 1024 });
+          if (files.length && files.at(-1) !== 0) throw Error('git diff 文件列表格式不对');
+          const changed = files.toString('utf8').split('\0').some(file => file.startsWith('data/') && file.endsWith('.json'));
+          fs.appendFileSync(output, `data_changed=${changed}\n`);
+          NODE
+      - name: No question data changes
+        if: steps.changes.outputs.data_changed == 'false'
+        run: echo '没有改问答数据' | tee -a "$GITHUB_STEP_SUMMARY"
       - name: Install trusted dependencies and PDF tools
+        if: steps.changes.outputs.data_changed == 'true'
         run: |
           npm ci --ignore-scripts --no-audit --no-fund
           sudo apt-get update
           sudo apt-get install -y poppler-utils python3
       - name: Cache Chromium
+        if: steps.changes.outputs.data_changed == 'true'
         id: browser-cache
         uses: actions/cache@v4
         with:
           path: ~/.cache/ms-playwright
           key: ${{ runner.os }}-playwright-1.63.0-sandbox
       - name: Install browser system dependencies
+        if: steps.changes.outputs.data_changed == 'true'
         run: npx --no-install playwright install-deps chromium
       - name: Install Chromium
-        if: steps.browser-cache.outputs.cache-hit != 'true'
+        if: steps.changes.outputs.data_changed == 'true' && steps.browser-cache.outputs.cache-hit != 'true'
         run: npx --no-install playwright install chromium
       - name: Format and literal checks without credentials
+        if: steps.changes.outputs.data_changed == 'true'
         id: literal
         run: node scripts/pipeline.mjs literal
       - name: Keep literal evidence and report
-        if: always() && !cancelled()
+        if: always() && !cancelled() && steps.changes.outputs.data_changed == 'true'
         uses: actions/upload-artifact@v4
         with:
           name: literal-evidence-${{ github.run_id }}
@@ -86,41 +111,50 @@ jobs:
       run:
         working-directory: trusted
     steps:
+      - name: No question data changes
+        if: needs.literal.result == 'success' && needs.literal.outputs.data_changed == 'false'
+        working-directory: ${{ github.workspace }}
+        run: echo '没有改问答数据' | tee -a "$GITHUB_STEP_SUMMARY"
       - uses: actions/checkout@v4
+        if: (needs.literal.result != 'success' || needs.literal.outputs.data_changed != 'false')
         with:
           ref: ${{ github.event.pull_request.base.sha }}
           path: trusted
           fetch-depth: 0
           persist-credentials: false
       - uses: actions/setup-node@v4
+        if: (needs.literal.result != 'success' || needs.literal.outputs.data_changed != 'false')
         with:
           node-version: '22'
       - name: Fetch immutable PR commit and main history
+        if: (needs.literal.result != 'success' || needs.literal.outputs.data_changed != 'false')
         env:
           HEAD_SHA: ${{ github.event.pull_request.head.sha }}
         run: |
           [[ "$HEAD_SHA" =~ ^[a-f0-9]{40}$ ]]
           git fetch --no-tags origin "$HEAD_SHA" main:refs/remotes/origin/main
       - uses: actions/download-artifact@v4
+        if: (needs.literal.result != 'success' || needs.literal.outputs.data_changed != 'false')
         with:
           name: literal-evidence-${{ github.run_id }}
           path: incoming
       - name: Keep initial report for manual cases
+        if: (needs.literal.result != 'success' || needs.literal.outputs.data_changed != 'false')
         run: cp ../incoming/verify-report.md ../verify-report.md
       - name: Meaning checks from literal evidence only
-        if: needs.literal.result == 'success' && needs.literal.outputs.eligible == 'true' && needs.literal.outputs.trusted == 'true'
+        if: needs.literal.outputs.data_changed == 'true' && needs.literal.result == 'success' && needs.literal.outputs.eligible == 'true' && needs.literal.outputs.trusted == 'true'
         id: semantic
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           GITHUB_TOKEN: ${{ github.token }}
         run: node scripts/pipeline.mjs semantic
       - name: Mark literal failures and human review red
-        if: needs.literal.result != 'success' || needs.literal.outputs.eligible != 'true' || needs.literal.outputs.trusted != 'true'
+        if: (needs.literal.result != 'success' || needs.literal.outputs.data_changed != 'false') && (needs.literal.result != 'success' || needs.literal.outputs.eligible != 'true' || needs.literal.outputs.trusted != 'true')
         run: |
           echo '要人看：字面/格式失败或非自动合并范围；未调用 Claude。' >> ../verify-report.md
           exit 1
       - name: Preserve paid verdict cache, including failed checks
-        if: always() && !cancelled()
+        if: always() && !cancelled() && (needs.literal.result != 'success' || needs.literal.outputs.data_changed != 'false')
         id: cache
         uses: actions/upload-artifact@v4
         with:
@@ -130,7 +164,7 @@ jobs:
           if-no-files-found: ignore
           retention-days: 90
       - name: Preserve merge proof
-        if: always() && !cancelled() && steps.semantic.outputs.proof_sha != ''
+        if: always() && !cancelled() && (needs.literal.result != 'success' || needs.literal.outputs.data_changed != 'false') && steps.semantic.outputs.proof_sha != ''
         uses: actions/upload-artifact@v4
         with:
           name: semantic-proof-${{ github.run_id }}
@@ -140,13 +174,13 @@ jobs:
           if-no-files-found: error
           retention-days: 30
       - name: Update one PR comment and cache pointer
-        if: always() && !cancelled()
+        if: always() && !cancelled() && (needs.literal.result != 'success' || needs.literal.outputs.data_changed != 'false')
         env:
           GITHUB_TOKEN: ${{ github.token }}
           CACHE_ARTIFACT_ID: ${{ steps.cache.outputs.artifact-id }}
         run: node scripts/pipeline.mjs finish
       - name: Keep full report
-        if: always() && !cancelled()
+        if: always() && !cancelled() && (needs.literal.result != 'success' || needs.literal.outputs.data_changed != 'false')
         uses: actions/upload-artifact@v4
         with:
           name: verify-report-${{ github.run_id }}

@@ -1,0 +1,37 @@
+name: Test repository PR
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: melb-test-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  node-test:
+    name: node-test
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      # PR 代码只在 pull_request 的权限及缓存作用域里执行；不持久化 token、不设缓存。
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install test dependencies and PDF tools
+        run: |
+          npm ci --ignore-scripts --no-audit --no-fund
+          sudo apt-get update
+          sudo apt-get install -y poppler-utils python3
+      - name: Run repository tests
+        env:
+          ANTHROPIC_API_KEY: ''
+          GITHUB_TOKEN: ''
+          GH_TOKEN: ''
+        run: node --test
