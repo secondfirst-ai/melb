@@ -22,7 +22,7 @@ async function lockFixture(t,blocked=false){
 // 只模拟连接、自己的后台标签及浏览器里的另一张前台标签。
 function fakeBrowser({mode='ok'}={}){
  const f={events:[],targets:new Map(),waiter:null,navigating:()=>{}};
- const ctx={async newCDPSession(){return {on(event,fn){f.paused=fn;},async send(method,args){f.events.push([method,args]);if(method==='Fetch.continueRequest')f.guardComplete?.(true);if(method==='Fetch.failRequest')f.guardComplete?.(false);return {};},async detach(){}};},waitForEvent(_name,{predicate,signal}){return new Promise((resolve,reject)=>{
+ const ctx={async newCDPSession(){return {on(event,fn){f.paused=fn;},async send(method,args){f.events.push([method,args]);if(method==='Fetch.continueRequest')f.guardComplete?.(true);if(method==='Fetch.failRequest')f.guardComplete?.(false);return {};},async detach(){if(mode==='autoDetach')throw Error('Session already detached. Most likely the page has been closed.');}};},waitForEvent(_name,{predicate,signal}){return new Promise((resolve,reject)=>{
   const abort=()=>reject(signal.reason??Error('abort'));signal?.addEventListener('abort',abort,{once:true});
   f.waiter=async page=>{if(await predicate(page)){signal?.removeEventListener('abort',abort);resolve(page);}};
  });}};
@@ -156,4 +156,10 @@ test('两个真实子进程同caller：第二个拒绝，不放第一个锁，�
  const launch=mode=>{const child=spawn(process.execPath,[file,mode],{stdio:['ignore','pipe','pipe','ipc']});let out='',err='';child.stdout.on('data',x=>out+=x);child.stderr.on('data',x=>err+=x);const done=new Promise(resolve=>child.once('exit',code=>resolve({code,out,err})));const timer=setTimeout(()=>child.kill('SIGKILL'),8000);t.after(()=>{clearTimeout(timer);if(child.exitCode===null&&child.signalCode===null)child.kill('SIGKILL');});return {child,done};};
  const first=launch('hang');await new Promise(resolve=>first.child.on('message',msg=>{if(msg==='navigating')resolve();}));const blocked=await launch('ok').done;assert.equal(blocked.code,1,blocked.err);assert.match(JSON.parse(blocked.out)[0].error,/已有 factcheck/);assert.deepEqual(await lock.calls(),['lock factcheck factcheck']);first.child.kill('SIGINT');assert.equal((await first.done).code,130);
  const again=await launch('ok').done;assert.equal(again.code,0,again.err);assert.deepEqual(await lock.calls(),['lock factcheck factcheck','unlock factcheck','lock factcheck factcheck','unlock factcheck']);
+});
+
+test('确认自己的target已关闭后，自动detach的session不覆盖found结果',async t=>{
+ const lock=await lockFixture(t),f=fakeBrowser({mode:'autoDetach'});
+ const result=await factcheck(rows('https://example.gov.au'),{sources:failedSources(),cdp:true,officeFactory:o=>new OfficeReader({...o,lockScript:lock.script,checkURL:async()=>{},connectImpl:async()=>f.browser})});
+ assert.equal(result[0].status,'found');assert.equal(result[0].error,undefined);assert.ok(result[0].excerpt.includes('tap water is safe.'));assert.equal(f.targets.size,0);assert.deepEqual(await lock.calls(),['lock factcheck factcheck','unlock factcheck']);
 });

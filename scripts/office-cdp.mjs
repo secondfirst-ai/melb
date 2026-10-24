@@ -147,8 +147,12 @@ export class OfficeReader {
       return usable(text);
     } finally {
       controller.abort(); this.signal?.removeEventListener('abort', abort);
-      try { if (id) { await this.closeTarget(id); this.marks.delete(mark); } }
-      finally { if (guard) await wait(guard.detach(), this.timeout); }
+      let targetClosed = false;
+      try { if (id) { await this.closeTarget(id); this.marks.delete(mark); targetClosed = true; } }
+      finally {
+        // 关掉目标会自动断开它的 CDP session；这时 detach 拒绝不能抹掉已取到的正文。
+        if (guard) await wait(guard.detach(), this.timeout).catch(error => { if (!targetClosed) throw error; });
+      }
     }
   }
   async closeTarget(id) {
