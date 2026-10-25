@@ -11,9 +11,9 @@ function publicIP(address) {
   }
   return net.isIPv6(address) && /^[23][0-9a-f]{3}:/i.test(address);
 }
-export async function publicURL(raw) {
+export async function publicURL(raw, { allowHTTP = false } = {}) {
   const url = new URL(raw);
-  if (url.protocol !== 'https:' || url.username || url.password || url.port) throw Error('出处地址不是公开 https URL');
+  if (!(url.protocol === 'https:' || allowHTTP && url.protocol === 'http:') || url.username || url.password || url.port) throw Error(allowHTTP ? '出处地址不是公开 http/https URL' : '出处地址不是公开 https URL');
   const host = url.hostname.replace(/^\[|\]$/g, '');
   if (host === 'localhost' || /\.(localhost|local|lan|internal)$/.test(host)) throw Error('出处不能指向本机或私有网络');
   let timer;
@@ -26,7 +26,7 @@ export async function publicURL(raw) {
 }
 
 // 连接用刚校验的 IP，不让 HTTP 客户端重新解析 DNS；重定向留给上层逐跳处理。
-export function pinnedFetch(raw, { signal, headers }, resolved, request = https.request) {
+export function pinnedFetch(raw, { signal, headers }, resolved, request = new URL(raw).protocol === 'http:' ? http.request : https.request) {
   const chosen = resolved.addresses.find((a) => a.family === 4) ?? resolved.addresses[0];
   return new Promise((resolve, reject) => {
     const req = request(new URL(raw), {
