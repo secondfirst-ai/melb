@@ -140,3 +140,5 @@ Data: [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creat
 Code: [MIT](LICENSE), copyright SecondFirst Pty Ltd.
 
 Questions or corrections: [hello@melb.si](mailto:hello@melb.si).
+
+<!-- CI check test (request 148d66), will be closed without merging -->
