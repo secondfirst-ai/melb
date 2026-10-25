@@ -1,0 +1,1 @@
+Opting out will exclude your future conversations from being used for training these AI models, unless you choose to opt back in. If you are

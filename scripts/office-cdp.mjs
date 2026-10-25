@@ -49,8 +49,8 @@ async function connect(endpoint, options) {
 }
 
 export class OfficeReader {
-  constructor({ caller = 'factcheck', lockScript = process.env.FACTCHECK_LOCK_SCRIPT || LOCK_SCRIPT, leaseRoot = process.env.FACTCHECK_DRIVER_DIR || path.join(os.tmpdir(), `secondfirst-factcheck-${process.getuid?.() ?? 'user'}`), connectImpl = connect, commandImpl = command, checkURL = url => publicURL(url, { allowHTTP: true }), timeout = 15_000, signal, now = () => Date.now() } = {}) {
-    this.caller = caller; this.script = lockScript; this.connect = connectImpl; this.command = commandImpl; this.checkURL = checkURL; this.timeout = timeout; this.signal = signal; this.now = now;
+  constructor({ caller = 'factcheck', lockScript = process.env.FACTCHECK_LOCK_SCRIPT || LOCK_SCRIPT, leaseRoot = process.env.FACTCHECK_DRIVER_DIR || path.join(os.tmpdir(), `secondfirst-factcheck-${process.getuid?.() ?? 'user'}`), connectImpl = connect, commandImpl = command, checkURL = url => publicURL(url, { allowHTTP: true }), timeout = 15_000, signal, now = () => Date.now(), preserveCase = false } = {}) {
+    this.caller = caller; this.script = lockScript; this.connect = connectImpl; this.command = commandImpl; this.checkURL = checkURL; this.timeout = timeout; this.signal = signal; this.now = now; this.preserveCase = preserveCase;
     this.lease = path.join(leaseRoot, createHash('sha256').update(path.resolve(lockScript)).digest('hex'));
     this.targets = new Set(); this.marks = new Set(); this.creations = new Set(); this.locked = false; this.closed = false; this.startPromise = null; this.closePromise = null;
   }
@@ -144,7 +144,7 @@ export class OfficeReader {
         for (const node of body.querySelectorAll('script,style,noscript,template')) node.remove();
         return body.textContent;
       }), this.timeout, this.signal);
-      return usable(text);
+      return usable(text, { preserveCase: this.preserveCase });
     } finally {
       controller.abort(); this.signal?.removeEventListener('abort', abort);
       let targetClosed = false;

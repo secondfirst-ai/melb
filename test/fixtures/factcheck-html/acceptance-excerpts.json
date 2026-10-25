@@ -1,0 +1,5 @@
+{
+  "provenance": "Jian 的 cases.md 所给的出处原文片段，用来冻结验收约定；不是本次抓取的整页。当前公开页另存为 gemini.txt / microsoftFAQ.txt，确实与这两处约定存在差别。",
+  "gemini": "Keep activity",
+  "microsoftFAQ": "Opting out will exclude your future conversations from being used for training these AI models."
+}

@@ -3,9 +3,10 @@ import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { Sources, normalize, excerpt, safeError, usable } from './source.mjs';
 import { OfficeReader, wait } from './office-cdp.mjs';
+import { checkGuide, formatHTML } from './html-factcheck.mjs';
 
 class UsageError extends Error {}
-const USAGE = '用法：node scripts/factcheck.mjs in.json|- [--cdp] [--caller 名字]';
+const USAGE = '用法：node scripts/factcheck.mjs in.json|- [--cdp] [--caller 名字] 或 --html <文件或公开网址> [--cdp] [--all] [--caller 名字]';
 
 export function inputs(value) {
   if (!Array.isArray(value) || value.some(row => !row || typeof row !== 'object' || typeof row.url !== 'string' || typeof row.quote !== 'string' || !row.quote.trim())) throw new UsageError('输入要是非空url/quote对象的数组');
@@ -51,17 +52,20 @@ export async function factcheck(value, { cdp = false, caller = 'factcheck', env 
 }
 
 function options(args, env) {
-  let file, cdp = false, caller = 'factcheck';
+  let file, cdp = false, caller = 'factcheck', html = false, all = false;
   for (let i = 0; i < args.length; i++) {
     const arg = args[i];
     if (arg === '--cdp') cdp = true;
+    else if (arg === '--all') all = true;
+    else if (arg === '--html' && !file && args[i + 1] && !args[i + 1].startsWith('-')) { html = true; file = args[++i]; }
     else if (arg === '--caller' && args[i + 1] && !args[i + 1].startsWith('--')) caller = args[++i];
     else if (!file && (arg === '-' || !arg.startsWith('-'))) file = arg;
     else throw new UsageError(USAGE);
   }
   if (!file || !caller.trim() || /[\x00-\x20\x7f]/.test(caller) || caller.length > 80) throw new UsageError(USAGE);
+  if (all && !html) throw new UsageError(USAGE);
   if (cdp && env.GITHUB_ACTIONS) throw new UsageError('GITHUB_ACTIONS 中拒绝 --cdp，只能本地使用');
-  return { file, cdp, caller };
+  return { file, cdp, caller, html, all };
 }
 
 export async function main(args = process.argv.slice(2), { stdin = process.stdin, stdout = process.stdout, stderr = process.stderr, env = process.env, ...dependencies } = {}) {
@@ -70,6 +74,11 @@ export async function main(args = process.argv.slice(2), { stdin = process.stdin
   process.once('SIGINT', interrupted);
   try {
     const config = options(args, env);
+    if (config.html) {
+      const results = await checkGuide(config.file, { ...config, ...dependencies, env, signal: controller.signal });
+      stdout.write(formatHTML(results, config.all));
+      return results.some(row => ['✗', '近似', '未核'].includes(row.status)) ? 1 : 0;
+    }
     let text;
     try {
       if (config.file === '-') { text = await wait((async () => { const chunks = []; for await (const chunk of stdin) chunks.push(Buffer.from(chunk)); return Buffer.concat(chunks).toString('utf8'); })(), 120_000, controller.signal); }

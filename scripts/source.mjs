@@ -7,17 +7,18 @@ export const FETCH_TIMEOUT_MS = 15_000;
 export const MIN_PAGE_TEXT = 200;
 const MAX_BYTES = 20 * 1024 * 1024;
 const UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36';
-export function normalize(s) {
-  return s.replace(/[‘’‚‛]/g, "'").replace(/[“”„‟]/g, '"').replace(/[‐‑‒–—―−﹘﹣－]/g, '-').replace(/[\u00a0\u2007\u202f]/g, ' ').replace(/\s+/g, ' ').trim().toLowerCase();
+export function normalizeCase(s) {
+  return s.replace(/[‘’‚‛]/g, "'").replace(/[“”„‟]/g, '"').replace(/[‐‑‒–—―−﹘﹣－]/g, '-').replace(/[\u00a0\u2007\u202f]/g, ' ').replace(/\s+/g, ' ').trim();
 }
+export function normalize(s) { return normalizeCase(s).toLowerCase(); }
 export function htmlText(html) {
   return execFileSync('python3', [fileURLToPath(new URL('./html-text.py', import.meta.url))], { input: html, encoding: 'utf8', timeout: 15_000, maxBuffer: MAX_BYTES, stdio: ['pipe', 'pipe', 'pipe'] });
 }
-export function usable(text) {
+export function usable(text, { preserveCase = false } = {}) {
   const n = normalize(text);
   if (n.length < MIN_PAGE_TEXT) throw Error(`页面正文不足 ${MIN_PAGE_TEXT} 字符`);
   if (/^(access denied|just a moment|attention required|verify (you are|that you are) human|checking your browser|enable javascript and cookies to continue)/.test(n) || /(?:cloudflare ray id|incapsula incident id|request (?:was )?blocked|captcha challenge)/.test(n.slice(0, 1500))) throw Error('页面是访问拦截/验证码');
-  return n;
+  return preserveCase ? normalizeCase(text) : n;
 }
 async function bytes(response) {
   if (Number(response.headers.get('content-length')) > MAX_BYTES) throw Error('出处超过 20 MiB');
@@ -28,9 +29,9 @@ async function bytes(response) {
 }
 
 export class Sources {
-  constructor({ fetchImpl = pinnedFetch, allowHTTP = false, checkURL = allowHTTP ? url => publicURL(url, { allowHTTP: true }) : publicURL, browserFactory, timeout = FETCH_TIMEOUT_MS, withVia = false } = {}) {
+  constructor({ fetchImpl = pinnedFetch, allowHTTP = false, checkURL = allowHTTP ? url => publicURL(url, { allowHTTP: true }) : publicURL, browserFactory, timeout = FETCH_TIMEOUT_MS, withVia = false, preserveCase = false } = {}) {
     this.fetch = fetchImpl; this.checkURL = checkURL; this.browserFactory = browserFactory; this.timeout = timeout;
-    this.withVia = withVia; this.closed = false; this.cancel = new AbortController();
+    this.withVia = withVia; this.preserveCase = preserveCase; this.closed = false; this.cancel = new AbortController();
     this.cache = new Map(); this.browserPromise = null; this.proxy = null;
   }
   async browser() {
@@ -69,13 +70,13 @@ export class Sources {
         for (const node of body.querySelectorAll('script,style,noscript,template')) node.remove();
         return body.textContent;
       });
-      return usable(text);
+      return usable(text, { preserveCase: this.preserveCase });
     } finally { await context.close(); }
   }
   async readFetch(url) {
     return (await this.readHTTP(url)).text;
   }
-  async readHTTP(url) {
+  async readHTTP(url, { html = false } = {}) {
     const signal = this.withVia ? AbortSignal.any([AbortSignal.timeout(this.timeout), this.cancel.signal]) : AbortSignal.timeout(this.timeout);
     let current = url;
     for (let redirects = 0; redirects <= 5; redirects++) {
@@ -89,9 +90,13 @@ export class Sources {
       }
       if (!response.ok) { await response.body?.cancel(); throw Error(`fetch HTTP ${response.status}`); }
       const data = await bytes(response), pdf = data.subarray(0, 5).toString() === '%PDF-' || /application\/pdf/i.test(response.headers.get('content-type') ?? '');
+      if (html) {
+        if (pdf) throw Error('指南输入须为 HTML，不能是 PDF');
+        return { html: data.toString('utf8'), via: 'curl', url: current };
+      }
       const text = pdf ? execFileSync('pdftotext', ['-enc', 'UTF-8', '-layout', '-', '-'], { input: data, encoding: 'utf8', timeout: 20_000, maxBuffer: MAX_BYTES, stdio: ['pipe', 'pipe', 'pipe'] }) : htmlText(data.toString('utf8'));
       // curl 是 factcheck 对 HTTP 抓取阶段的字段名；沿用既有 pinnedFetch，不另起 curl。
-      return { text: usable(text), via: pdf ? 'pdf' : 'curl' };
+      return { text: usable(text, { preserveCase: this.preserveCase }), via: pdf ? 'pdf' : 'curl' };
     }
     throw Error('重定向超过 5 次');
   }
