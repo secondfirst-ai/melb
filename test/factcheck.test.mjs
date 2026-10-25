@@ -8,8 +8,11 @@ import { spawn, execFileSync } from 'node:child_process';
 import { factcheck, main } from '../scripts/factcheck.mjs';
 import { Sources, normalize } from '../scripts/source.mjs';
 import { OfficeReader, wait } from '../scripts/office-cdp.mjs';
+// 这里只运行注入的假 CDP；隔离测试进程的 CI 标记，拒绝真实 CI 的测试仍显式传 '1'。
+const githubActions=process.env.GITHUB_ACTIONS;
+delete process.env.GITHUB_ACTIONS;
 process.env.FACTCHECK_DRIVER_DIR=path.resolve('.cache/factcheck-drivers-'+process.pid);
-after(()=>fs.rm(process.env.FACTCHECK_DRIVER_DIR,{recursive:true,force:true}));
+after(()=>{if(githubActions===undefined)delete process.env.GITHUB_ACTIONS;else process.env.GITHUB_ACTIONS=githubActions;return fs.rm(process.env.FACTCHECK_DRIVER_DIR,{recursive:true,force:true});});
 const text='Tap water is safe. '+ 'Every drop met the guidelines. '.repeat(100);
 const rows=(...urls)=>urls.map(url=>({url,quote:'Tap water is safe.'}));
 const failedSources=()=>({read:async()=>({texts:[],documents:[],errors:['HTTP blocked','headless blocked']}),close:async()=>{}});
@@ -100,15 +103,22 @@ test('真实子进程 SIGINT：假CDP导航中断退出130，先关闭自有targ
 
 const pause=ms=>new Promise(resolve=>setTimeout(resolve,ms));
 const deferred=()=>{let resolve;const promise=new Promise(r=>resolve=r);return {promise,resolve};};
+// 被测调用提前失败、子进程提前退出或没走到预期阶段，立即失败或限时退出，不能只等一条永远不来的消息。
+const entered=(started,run)=>wait(Promise.race([started,run.then(()=>{throw Error('调用在进入预期阶段前结束');})]),5000);
+async function navigating(child,done){
+ let listener;
+ try{return await wait(Promise.race([new Promise(resolve=>{listener=msg=>{if(msg==='navigating')resolve();};child.on('message',listener);}),done.then(result=>{throw Error(`子进程在导航前退出 ${result.code}：${result.err}`);})]),5000);}
+ finally{child.off('message',listener);}
+}
 test('中断在途锁命令：等取得结果后 unlock，不会清理结束后才拿锁',async t=>{
  const lock=await lockFixture(t),c=new AbortController(),started=deferred(),finish=deferred(),commands=[];let completed=false;
  const run=factcheck(rows('https://example.gov.au'),{sources:failedSources(),cdp:true,signal:c.signal,officeFactory:o=>new OfficeReader({...o,lockScript:lock.script,checkURL:async()=>{},commandImpl:async(_s,args)=>{commands.push(args);if(args[0]==='lock'){started.resolve();await finish.promise;}},connectImpl:()=>assert.fail('aborted')})});
- run.then(()=>completed=true,()=>completed=true);await started.promise;c.abort(Error('stop'));await pause(10);assert.equal(completed,false);finish.resolve();await assert.rejects(run,/stop/);assert.deepEqual(commands,[['lock','factcheck','factcheck'],['unlock','factcheck']]);
+ t.after(()=>{c.abort(Error('test cleanup'));finish.resolve();});run.then(()=>completed=true,()=>completed=true);await entered(started.promise,run);c.abort(Error('stop'));await pause(10);assert.equal(completed,false);finish.resolve();await assert.rejects(run,/stop/);assert.deepEqual(commands,[['lock','factcheck','factcheck'],['unlock','factcheck']]);
 });
 test('URL校验中断后不会再拿锁；关闭后的reader不可复用',async t=>{
  const lock=await lockFixture(t),c=new AbortController(),started=deferred(),finish=deferred(),commands=[];let reader;
  const run=factcheck(rows('https://example.gov.au'),{sources:failedSources(),cdp:true,signal:c.signal,officeFactory:o=>reader=new OfficeReader({...o,lockScript:lock.script,checkURL:async()=>{started.resolve();await finish.promise;},commandImpl:async(_s,args)=>commands.push(args)})});
- await started.promise;c.abort(Error('stop'));await assert.rejects(run,/stop/);finish.resolve();await pause(10);assert.deepEqual(commands,[]);await assert.rejects(reader.start(),/stop|关闭/);
+ t.after(()=>{c.abort(Error('test cleanup'));finish.resolve();});await entered(started.promise,run);c.abort(Error('stop'));await assert.rejects(run,/stop/);finish.resolve();await pause(10);assert.deepEqual(commands,[]);await assert.rejects(reader.start(),/stop|关闭/);
 });
 test('同脚本不同 reader 互斥，失败的第二个不 unlock 第一个；续租失败停止导航',async t=>{
  const lock=await lockFixture(t),commands=[];let time=0,owner;
@@ -153,9 +163,10 @@ test('已有相同caller的办公室锁不接管、不unlock',async t=>{
 test('两个真实子进程同caller：第二个拒绝，不放第一个锁，释放后可重跑',async t=>{
  const lock=await lockFixture(t),dir=path.dirname(lock.script),file=path.join(dir,'concurrent.mjs');
  await fs.writeFile(file,`import assert from 'node:assert/strict';import {Readable} from 'node:stream';import {main} from '${new URL('../scripts/factcheck.mjs',import.meta.url).href}';import {OfficeReader} from '${new URL('../scripts/office-cdp.mjs',import.meta.url).href}';const fakeBrowser=${fakeBrowser.toString()};const f=fakeBrowser({mode:process.argv[2]});f.navigating=()=>process.send?.('navigating');process.exitCode=await main(['-','--cdp'],{stdin:Readable.from([${JSON.stringify(JSON.stringify(rows('https://example.gov.au')))}]),sources:(${failedSources.toString()})(),officeFactory:o=>new OfficeReader({...o,lockScript:${JSON.stringify(lock.script)},checkURL:async()=>{},connectImpl:async()=>f.browser})});`);
- const launch=mode=>{const child=spawn(process.execPath,[file,mode],{stdio:['ignore','pipe','pipe','ipc']});let out='',err='';child.stdout.on('data',x=>out+=x);child.stderr.on('data',x=>err+=x);const done=new Promise(resolve=>child.once('exit',code=>resolve({code,out,err})));const timer=setTimeout(()=>child.kill('SIGKILL'),8000);t.after(()=>{clearTimeout(timer);if(child.exitCode===null&&child.signalCode===null)child.kill('SIGKILL');});return {child,done};};
- const first=launch('hang');await new Promise(resolve=>first.child.on('message',msg=>{if(msg==='navigating')resolve();}));const blocked=await launch('ok').done;assert.equal(blocked.code,1,blocked.err);assert.match(JSON.parse(blocked.out)[0].error,/已有 factcheck/);assert.deepEqual(await lock.calls(),['lock factcheck factcheck']);first.child.kill('SIGINT');assert.equal((await first.done).code,130);
+ const launch=(mode,env=process.env)=>{const child=spawn(process.execPath,[file,mode],{env,stdio:['ignore','pipe','pipe','ipc']});let out='',err='';child.stdout.on('data',x=>out+=x);child.stderr.on('data',x=>err+=x);const done=new Promise((resolve,reject)=>{child.once('error',reject);child.once('exit',code=>resolve({code,out,err}));});const timer=setTimeout(()=>child.kill('SIGKILL'),8000);done.finally(()=>clearTimeout(timer)).catch(()=>{});t.after(()=>{clearTimeout(timer);if(child.exitCode===null&&child.signalCode===null)child.kill('SIGKILL');});return {child,done};};
+ const first=launch('hang');await navigating(first.child,first.done);const blocked=await launch('ok').done;assert.equal(blocked.code,1,blocked.err);assert.match(JSON.parse(blocked.out)[0].error,/已有 factcheck/);assert.deepEqual(await lock.calls(),['lock factcheck factcheck']);first.child.kill('SIGINT');assert.equal((await first.done).code,130);
  const again=await launch('ok').done;assert.equal(again.code,0,again.err);assert.deepEqual(await lock.calls(),['lock factcheck factcheck','unlock factcheck','lock factcheck factcheck','unlock factcheck']);
+ const denied=launch('ok',{...process.env,GITHUB_ACTIONS:'1'});await assert.rejects(navigating(denied.child,denied.done),/导航前退出 2.*GITHUB_ACTIONS/s);assert.equal((await denied.done).code,2);assert.deepEqual(await lock.calls(),['lock factcheck factcheck','unlock factcheck','lock factcheck factcheck','unlock factcheck']);
 });
 
 test('确认自己的target已关闭后，自动detach的session不覆盖found结果',async t=>{
