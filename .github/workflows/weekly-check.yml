@@ -1,0 +1,53 @@
+name: Weekly source check
+
+on:
+  schedule:
+    # 周二 02:00 AEDT（UTC+11）；冬令时为周二 01:00 AEST（UTC+10），可以接受。
+    - cron: '0 15 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: melb-weekly-source-check
+  cancel-in-progress: false
+
+jobs:
+  weekly-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install dependencies and PDF tools
+        run: |
+          npm ci --ignore-scripts --no-audit --no-fund
+          sudo apt-get update
+          sudo apt-get install -y poppler-utils python3
+      - name: Install Chromium system dependencies
+        run: npx --no-install playwright install-deps chromium
+      - name: Install Chromium
+        run: npx --no-install playwright install chromium
+      - name: Check every source without model calls
+        id: verify
+        run: node scripts/verify --all --literal-only --report "$RUNNER_TEMP/weekly-check-report.md"
+      - name: Update weekly issue even when verification failed
+        if: always()
+        uses: actions/github-script@v7
+        env:
+          VERIFY_OUTCOME: ${{ steps.verify.outcome }}
+          REPORT_FILE: ${{ runner.temp }}/weekly-check-report.md
+        with:
+          github-token: ${{ github.token }}
+          script: |
+            const { publishWeeklyIssue } = await import(`${process.env.GITHUB_WORKSPACE}/scripts/weekly-issue.mjs`);
+            const plan = await publishWeeklyIssue({ github, context, reportFile: process.env.REPORT_FILE, outcome: process.env.VERIFY_OUTCOME });
+            core.info(`Weekly issue: ${plan.action}${plan.number ? ' #' + plan.number : ''}`);
+            if (plan.failed) core.setFailed('原句有不过、无法核对，或检查本身没跑完；详见本次 issue。');

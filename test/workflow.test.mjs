@@ -106,3 +106,18 @@ test('node-test不使用secret、缓存或写权限，默认PR merge ref且不�
   assert.match(testWorkflow, /ANTHROPIC_API_KEY: ''/);
   assert.match(testWorkflow, /GITHUB_TOKEN: ''/); assert.match(testWorkflow, /GH_TOKEN: ''/);
 });
+
+test('weekly-check只定时或手动跑main字面检查，issue步即使失败仍执行', async () => {
+  const weekly = await fs.readFile('.github/workflows/weekly-check.yml', 'utf8');
+  const triggers = weekly.split('\non:\n')[1].split('\npermissions:')[0];
+  assert.deepEqual([...triggers.matchAll(/^  ([a-z_]+):/gm)].map(m => m[1]), ['schedule', 'workflow_dispatch']);
+  assert.match(triggers, /cron: '0 15 \* \* 1'/);
+  assert.match(weekly, /^permissions:\n  contents: read\n  issues: write\n\n/m);
+  assert.doesNotMatch(weekly, /secrets[.\[]|actions\/cache|cache\s*:|continue-on-error/);
+  assert.match(weekly, /ref: main\n          persist-credentials: false/);
+  assert.match(weekly, /node-version: '22'/); assert.match(weekly, /npm ci --ignore-scripts/);
+  assert.match(weekly, /poppler-utils python3/); assert.match(weekly, /playwright install-deps chromium/); assert.match(weekly, /playwright install chromium/);
+  assert.match(weekly, /id: verify\n        run: node scripts\/verify --all --literal-only --report "\$RUNNER_TEMP\/weekly-check-report.md"/);
+  assert.match(weekly, /if: always\(\)\n        uses: actions\/github-script@v7/);
+  assert.match(weekly, /github-token: \$\{\{ github.token \}\}/); assert.match(weekly, /if \(plan.failed\) core.setFailed/);
+});
