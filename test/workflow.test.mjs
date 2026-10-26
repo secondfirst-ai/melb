@@ -107,11 +107,11 @@ test('node-test不使用secret、缓存或写权限，默认PR merge ref且不�
   assert.match(testWorkflow, /GITHUB_TOKEN: ''/); assert.match(testWorkflow, /GH_TOKEN: ''/);
 });
 
-test('weekly-check只定时或手动跑main字面检查，issue步即使失败仍执行', async () => {
+test('weekly-check只手动跑main字面检查，issue步即使失败仍执行', async () => {
   const weekly = await fs.readFile('.github/workflows/weekly-check.yml', 'utf8');
   const triggers = weekly.split('\non:\n')[1].split('\npermissions:')[0];
-  assert.deepEqual([...triggers.matchAll(/^  ([a-z_]+):/gm)].map(m => m[1]), ['schedule', 'workflow_dispatch']);
-  assert.match(triggers, /cron: '0 15 \* \* 1'/);
+  assert.deepEqual([...triggers.matchAll(/^  ([a-z_]+):/gm)].map(m => m[1]), ['workflow_dispatch']);
+  assert.doesNotMatch(triggers, /schedule|cron:/);
   assert.match(weekly, /^permissions:\n  contents: read\n  issues: write\n\n/m);
   assert.doesNotMatch(weekly, /secrets[.\[]|actions\/cache|cache\s*:|continue-on-error/);
   assert.match(weekly, /ref: main\n          persist-credentials: false/);
@@ -120,4 +120,13 @@ test('weekly-check只定时或手动跑main字面检查，issue步即使失败�
   assert.match(weekly, /id: verify\n        run: node scripts\/verify --all --literal-only --report "\$RUNNER_TEMP\/weekly-check-report.md"/);
   assert.match(weekly, /if: always\(\)\n        uses: actions\/github-script@v7/);
   assert.match(weekly, /github-token: \$\{\{ github.token \}\}/); assert.match(weekly, /if \(plan.failed\) core.setFailed/);
+});
+
+
+test('verify有data时在抓网页前放开AppArmor，sandbox保持启用', () => {
+  const step = workflow.indexOf('run: sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0');
+  assert.ok(step > workflow.indexOf('name: Install Chromium'));
+  assert.ok(step < workflow.indexOf('name: Format and literal checks without credentials'));
+  assert.match(workflow, /name: Let Chromium start with its sandbox on\n        if: steps.changes.outputs.data_changed == 'true'/);
+  assert.doesNotMatch(workflow, /--no-sandbox/);
 });

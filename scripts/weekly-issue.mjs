@@ -1,4 +1,5 @@
 import fs from 'node:fs/promises';
+import { pathToFileURL } from 'node:url';
 import { readDirectory } from './format.mjs';
 
 export const TITLE = 'Weekly source check';
@@ -36,17 +37,46 @@ export function parseReport(text, outcome) {
   return { failed, problems, errors };
 }
 
+
+// 按 quote 编号合并原因和原句补充，保留没有编号的独立问题。
+export function uniqueReasons(reasons) {
+  const groups = new Map();
+  for (const reason of reasons) {
+    const match = reason.match(/^quote (\d+)(?=[ ：])/);
+    const key = match ? `quote ${match[1]}` : reason;
+    if (!groups.has(key)) groups.set(key, { number: match?.[1], reasons: [], quotes: [] });
+    const group = groups.get(key), detail = reason.match(/^quote \d+：(.+) — https?:\/\//);
+    const list = detail ? group.quotes : group.reasons;
+    const value = detail ? detail[1] : reason;
+    if (!list.includes(value)) list.push(value);
+  }
+  return [...groups.values()].map(g => {
+    if (!g.number) return g.reasons.join('；');
+    const reasons = g.reasons.map(r => r.replace(/^quote \d+[ ：]*/, ''));
+    for (const quote of g.quotes) if (!reasons.some(r => r.includes(quote))) reasons.push(`原句：${quote}`);
+    return `quote ${g.number}：${reasons.join('；')}`;
+  });
+}
+const validRunURL = value => /^https:\/\/[^\s<>]+\/actions\/runs\/\d+$/.test(value ?? '') ||
+  /^local:[a-zA-Z0-9][a-zA-Z0-9._-]{0,127}:\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d{3})?(?:Z|[+-]\d{2}:\d{2})$/.test(value ?? '');
+const runLine = value => value.startsWith('local:') ? `本次从墨尔本本机跑：${value}` : `本次 run：${value}`;
+
 export function planWeeklyIssue({ report, outcome, issues, sourceURLs = {}, runURL }) {
   if (!Array.isArray(issues) || !issues.every(i => i && typeof i.title === 'string' && Number.isSafeInteger(i.number) && i.number > 0 && ['open', 'closed'].includes(i.state))) throw Error('issue 列表格式不对');
-  if (!/^https:\/\/[^\s<>]+\/actions\/runs\/\d+$/.test(runURL ?? '')) throw Error('run 链接不对');
+  if (!validRunURL(runURL)) throw Error('run 链接不对');
   const existing = issues.filter(i => i.state === 'open' && i.title === TITLE && !i.pull_request).sort((a, b) => a.number - b.number)[0];
-  const result = parseReport(report, outcome), lines = [`本次 run：${runURL}`, ''];
+  const result = parseReport(report, outcome), lines = [runLine(runURL), ''];
   if (result.failed) {
     lines.push('本周原句检查有不过、无法核对或检查未完成的项目。');
     if (result.errors.length) lines.push('', '## 检查问题', ...result.errors.map(e => `- ${e.replace(/@(?!\u200b)/g, '@\u200b')}`));
     for (const p of result.problems) {
-      const urls = sourceURLs[p.id];
-      lines.push('', `## ${p.id} — ${labels[p.status]}`, `- 网址：${Array.isArray(urls) && urls.length ? urls.map(escape).join('；') : '报告未能对应来源，见下方原因及 run 报告'}`, ...p.reasons.map(reason => `- 原因：${reason.replace(/@(?!\u200b)/g, '@\u200b')}`));
+      const urls = [...new Set(Array.isArray(sourceURLs[p.id]) ? sourceURLs[p.id] : [])];
+      const reasons = uniqueReasons(p.reasons).map(reason => {
+        // 原因用编号引用网址，完整网址每题只列一次；长 URL 先替换，避免前缀相同互相截断。
+        for (const { url, index } of urls.map((url, index) => ({ url: escape(url), index })).sort((a, b) => b.url.length - a.url.length)) reason = reason.split(url).join(`网址${index + 1}`);
+        return reason.replace(/@(?!\u200b)/g, '@\u200b');
+      });
+      lines.push('', `## ${p.id} — ${labels[p.status]}`, `- 网址：${urls.length ? urls.map((u, i) => `[${i + 1}] ${escape(u)}`).join('；') : '报告未能对应来源，见下方原因及 run 报告'}`, ...reasons.map(reason => `- 原因：${reason}`));
     }
   } else lines.push('本周全过。');
   lines.push('');
@@ -65,9 +95,9 @@ export function splitBody(body, limit = 58_000) {
   parts.push(body); return parts;
 }
 
-export async function publishWeeklyIssue({ github, context, reportFile, outcome, dataDir = 'data' }) {
+export async function publishWeeklyIssue({ github, context, reportFile, outcome, dataDir = 'data', runURL: providedRunURL }) {
   const { owner, repo } = context.repo;
-  const runURL = `${process.env.GITHUB_SERVER_URL || 'https://github.com'}/${owner}/${repo}/actions/runs/${context.runId}`;
+  const runURL = providedRunURL ?? `${process.env.GITHUB_SERVER_URL || 'https://github.com'}/${owner}/${repo}/actions/runs/${context.runId}`;
   let report = null, sourceURLs = {};
   try {
     if ((await fs.stat(reportFile)).size <= 16 * 1024 * 1024) report = await fs.readFile(reportFile, 'utf8');
@@ -81,7 +111,7 @@ export async function publishWeeklyIssue({ github, context, reportFile, outcome,
   const issues = await github.paginate(github.rest.issues.listForRepo, { owner, repo, state: 'open', per_page: 100 });
   const plan = planWeeklyIssue({ report, outcome, issues, sourceURLs, runURL });
   if (plan.action === 'none') return plan;
-  const bodies = splitBody(plan.body).map((body, i) => i ? `本次 run：${runURL}\n\n（清单续）\n${body}` : body);
+  const bodies = splitBody(plan.body).map((body, i) => i ? `${runLine(runURL)}\n\n（清单续）\n${body}` : body);
   let number = plan.number;
   for (const body of bodies) {
     if (!number) {
@@ -92,3 +122,56 @@ export async function publishWeeklyIssue({ github, context, reportFile, outcome,
   }
   return { ...plan, number };
 }
+
+
+// 本机入口复用相同的分页、issue 选择及长正文规则；不引入第三方 GitHub client。
+const redactToken = (value, token) => token ? [...new Set([token, escape(token)])].sort((a, b) => b.length - a.length).reduce((text, secret) => text.split(secret).join('[redacted]'), String(value)) : String(value);
+
+export function localGitHub(token, fetchImpl = fetch) {
+  const scrub = value => redactToken(value, token);
+  const request = async (suffix, method = 'GET', payload) => {
+    const response = await fetchImpl(`https://api.github.com/repos/secondfirst-ai/melb${suffix}`, {
+      method, redirect: 'error', signal: AbortSignal.timeout(30_000),
+      headers: { authorization: `Bearer ${token}`, accept: 'application/vnd.github+json', 'content-type': 'application/json', 'x-github-api-version': '2022-11-28' },
+      ...(payload ? { body: JSON.stringify(payload, (_key, value) => typeof value === 'string' ? scrub(value) : value) } : {}),
+    });
+    if (!response.ok) throw Error(`GitHub HTTP ${response.status}`);
+    return response.json();
+  };
+  return {
+    rest: { issues: {
+      listForRepo: 'open-issues',
+      create: async ({ title, body }) => ({ data: await request('/issues', 'POST', { title, body }) }),
+      createComment: async ({ issue_number, body }) => ({ data: await request(`/issues/${issue_number}/comments`, 'POST', { body }) }),
+    } },
+    paginate: async () => {
+      const all = [];
+      for (let page = 1; ; page++) {
+        const rows = await request(`/issues?state=open&per_page=100&page=${page}`);
+        if (!Array.isArray(rows)) throw Error('GitHub issue 列表不是数组');
+        all.push(...rows);
+        if (rows.length < 100) return all;
+      }
+    },
+  };
+}
+
+export async function localMain(args = process.argv.slice(2), { env = process.env, fetchImpl = fetch, out = text => console.log(text), error = text => console.error(text) } = {}) {
+  const token = env.MELB_ISSUES_TOKEN;
+  const scrub = value => redactToken(value, token);
+  try {
+    if (!token?.trim()) throw Error('MELB_ISSUES_TOKEN 没配，没跑');
+    const options = {};
+    if (args[0] !== '--publish') throw Error('用法：weekly-issue.mjs --publish --report FILE --outcome success|failure --run-url URL');
+    for (let i = 1; i < args.length; i += 2) {
+      const key = { '--report': 'reportFile', '--outcome': 'outcome', '--run-url': 'runURL' }[args[i]];
+      if (!key || !args[i + 1] || Object.hasOwn(options, key)) throw Error('发布参数不对');
+      options[key] = args[i + 1];
+    }
+    if (!options.reportFile || !['success', 'failure'].includes(options.outcome) || !validRunURL(options.runURL)) throw Error('发布参数不完整或格式不对');
+    const plan = await publishWeeklyIssue({ github: localGitHub(token, fetchImpl), context: { repo: { owner: 'secondfirst-ai', repo: 'melb' } }, ...options });
+    out(scrub(`Weekly issue: ${plan.action}${plan.number ? ' #' + plan.number : ''}`));
+    return plan.failed ? 1 : 0;
+  } catch (e) { error(scrub(e.message)); return 2; }
+}
+if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) process.exitCode = await localMain();

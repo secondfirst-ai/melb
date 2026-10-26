@@ -80,6 +80,10 @@ jobs:
       - name: Install Chromium
         if: steps.changes.outputs.data_changed == 'true' && steps.browser-cache.outputs.cache-hit != 'true'
         run: npx --no-install playwright install chromium
+      - name: Let Chromium start with its sandbox on
+        if: steps.changes.outputs.data_changed == 'true'
+        # Ubuntu 24+ 的 AppArmor 禁了非特权 user namespace；放开它，Chromium sandbox 照旧开。
+        run: sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
       - name: Format and literal checks without credentials
         if: steps.changes.outputs.data_changed == 'true'
         id: literal
