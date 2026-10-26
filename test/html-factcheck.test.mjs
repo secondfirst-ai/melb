@@ -219,7 +219,7 @@ const deputyURL = 'https://www.deputy.com/au/pricing';
 const filler = 'Synthetic test filler. '.repeat(40);
 async function dynamicSource({ script = true, short = false, body, rawError = false } = {}) {
   const calls = [];
-  const html = (body ?? await fixture('deputy-http.html')).replace(/<script><\/script>/g, script ? '<script></script>' : '') + (short ? '' : `<p>${filler}</p>`);
+  const html = (body ?? '<p>Public source body.</p><script></script>').replace(/<script><\/script>/g, script ? '<script></script>' : '') + (short ? '' : `<p>${filler}</p>`);
   const sources = new Sources({ withVia: true, preserveCase: true, checkURL: async url => assert.equal(url, deputyURL), fetchImpl: async url => {
     calls.push(url);
     if (rawError && calls.length > 1) throw Error('fixture HTML metadata unavailable');
@@ -289,4 +289,36 @@ test('noscript 或明显短的 HTTP 正文也可提示/补读，CDP/HTTP token �
     async read() { controller.abort(Error('fixture aborted')); throw controller.signal.reason; }, async close() { closed++; },
   }; } }), /fixture aborted/);
   assert.equal(closed, 1); assert.equal(aborted.sources.closed, true);
+});
+
+test('Deputy 实际粘连片段里的两句多词原话直接命中，不误触发浏览器补核', async () => {
+  const text = await fixture('deputy-joined.txt');
+  const html = guide('Deputy AI is “INTRODUCTORY FREE”; “Price and availability may change”.', [deputyURL]);
+  for (const cdp of [false, true]) {
+    const sources = reader({ [deputyURL]: text });
+    const [row] = await factcheckHTML(html, { sources, cdp, env: {}, officeFactory() { assert.fail('literal phrases are already present'); } });
+    assert.equal(row.status, '✓'); assert.deepEqual(row.missing, []); assert.equal(row.mayNeedBrowser, false);
+    assert.equal(sources.calls.length, 1); assert.equal(sources.closed, 1);
+  }
+  const { sources, calls } = await dynamicSource({ body: await fixture('deputy-http.html') });
+  assert.equal((await factcheckHTML(html, { sources, cdp: true, env: {}, officeFactory() { assert.fail('no rendering needed'); } }))[0].status, '✓');
+  assert.equal(calls.length, 1);
+});
+
+test('粘连放宽只接受无数字金额的多词引文和相邻字母，单词/数字/金额/设置路径边界不变', async () => {
+  assert.equal((await run('“free trial”', 'xero', 'beforefree trialAfter')).status, '✓');
+  assert.equal((await run('“free trial”', 'xero', 'beforefree trial.')).status, '✓');
+  assert.equal((await run('“free trial”', 'xero', 'free trialAfter')).status, '✓');
+  for (const source of ['_free trial', 'free trial_']) assert.equal((await run('“free trial”', 'xero', source)).status, '近似');
+  for (const [claim, source] of [
+    ['“free”', 'freedom'], ['“switch”', 'switches'],
+    ['“free trial”', '1free trial'], ['“free trial”', 'free trial2'],
+    ['“free trial”', 'beforefree trial2'], ['“free trial”', 'beforeFree trialAfter'],
+    ['“8 units”', '0.8 units; elsewhere 8 items.'], ['“8 units”', 'before8 unitsAfter; elsewhere 8 items.'],
+    ['“v2 mode”', 'beforev2 modeAfter'], ['“２０ days free”', 'before２０ days freeAfter'],
+    ['“A$48 per month”', 'beforeA$48 per monthAfter; elsewhere A$48.'],
+    ['Settings → Privacy → Keep activity', 'beforeKeep activityAfter'],
+  ]) {
+    assert.equal((await run(claim, 'xero', source)).status, '✗', claim + ' / ' + source);
+  }
 });

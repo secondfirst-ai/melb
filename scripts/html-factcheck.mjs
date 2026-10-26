@@ -114,20 +114,22 @@ export function tokens(text) {
   return found.filter((t, i) => found.findIndex(x => x.type === t.type && JSON.stringify(x.value) === JSON.stringify(t.value)) === i);
 }
 
-function contains(text, value) {
+function contains(text, value, joinedLetters = false) {
   let at = -1;
   while ((at = text.indexOf(value, at + 1)) !== -1) {
     const before = text.slice(0, at).at(-1) ?? '', after = text[at + value.length] ?? '';
     const tail = text.slice(at + value.length), head = text.slice(0, at);
     if ((/\d$/.test(value) && /^[.,]\d/.test(tail)) || (/\d[.,]$/.test(value) && /^\d/.test(tail)) || (/^\d/.test(value) && /\d[.,]$/.test(head)) || (/^[.,]\d/.test(value) && /\d$/.test(head))) continue;
-    if ((!/^[\p{L}\p{N}]/u.test(value) || !/[\p{L}\p{N}_]/u.test(before)) && (!/[\p{L}\p{N}]$/u.test(value) || !/[\p{L}\p{N}_]/u.test(after))) return true;
+    if ((!/^[\p{L}\p{N}]/u.test(value) || !/[\p{L}\p{N}_]/u.test(before) || joinedLetters && /\p{L}/u.test(before)) && (!/[\p{L}\p{N}]$/u.test(value) || !/[\p{L}\p{N}_]/u.test(after) || joinedLetters && /\p{L}/u.test(after))) return true;
   }
   return false;
 }
 const loose = s => normalizeCase(s).toLowerCase().replace(/[^\p{L}\p{N}\s]/gu, (punct, offset, value) => /[.,:/+-]/.test(punct) && /\d/.test(value[offset - 1] ?? '') && /\d/.test(value[offset + 1] ?? '') ? punct : ' ').replace(/\s+/g, ' ').trim();
 function matchToken(token, document) {
   if (token.type === 'phrase') {
-    if (contains(document.text, token.value)) return 'exact';
+    // 相邻元素的 textContent 会粘字；多词原话逐字存在就算命中，单词和数字/金额仍守原边界。
+    const joined = token.quoted && token.value.split(/\s+/).filter(word => /\p{L}/u.test(word)).length >= 2 && !/\p{N}/u.test(token.value) && !numericTokens(token.value).length;
+    if (contains(document.text, token.value, joined)) return 'exact';
     const approximate = loose(token.value);
     if (approximate && contains(loose(document.text), approximate)) return 'near';
     return 'missing';

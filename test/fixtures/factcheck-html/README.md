@@ -29,3 +29,9 @@
 - `deputy-rendered.txt`：Jian 在 BRIEF 指定的期望原话，供假 OfficeReader 模拟渲染后补读；**未用真实 CDP 抓取**。Wen 真跑时仍要确认实际 DOM 是否给出独立原话。测试的长正文填充在测试代码里生成，不混进公开出处快照。
 
 新增公开出处片段每站不超过 25 词。所有测试离线，不联网、不调模型、不连接办公室浏览器。
+
+## 10-26 退回修正：Deputy 是文字粘连
+
+Wen 真实 OfficeReader 读取确认 HTTP 和浏览器均为同一段粘连文字，不是缺少 JS 渲染。`deputy-joined.txt` 直接从本单 `deputy-live.txt` 提取 `monthly instalments` 到 `Features` 的原始片段（10 词）；它与 `deputy-http.html` 一起验证两句多词原话无需浏览器即可命中。匹配时只放宽相邻字母，不移除引文内部空格，不放宽单词或带数字/金额的引文。
+
+渲染回退的 mock 改用测试代码内明确构造的缺原话 HTML shell，保留原回退行为的覆盖；不再拿实际 Deputy 粘连片段假设成“渲染后才有”。`deputy-rendered.txt` 仍只是前一轮约定的假渲染输入。旧来源说明保留用于追溯，以本节修正为准。
