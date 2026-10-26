@@ -74,7 +74,7 @@ test('日期三种写法、百分比、整数/英文数词、有数字边界和�
   for (const date of ['25 October 2026', '25 Oct 2026', '2026-10-25', '25 Oct']) {
     assert.equal((await run(`${date}: $110, five hours, 20%. Settings → Privacy → Keep activity`, 'xero', 'October 25, 2026. A$110 for 5 hours. 20 percent. Keep activity')).status, '✓', date);
   }
-  for (const [claim, source] of [['8', '18'], ['$8.00', '$18.00'], ['8.00', '18.00'], ['5%', '15%'], ['2026-10-25', '2025-10-25']]) assert.equal((await run(claim, 'xero', source)).status, '✗', claim);
+  for (const [claim, source] of [['8', '18'], ['$8.00', '$18.00'], ['8.00', '18.00'], ['5%', '15%'], ['Starts 2026-10-25', '2025-10-25']]) assert.equal((await run(claim, 'xero', source)).status, '✗', claim);
   assert.equal(tokens('Settings → Privacy → “Keep activity”').length, 1);
   assert.equal((await run('Settings > Privacy > Keep activity', 'xero', 'Keep activity')).status, '✓');
 });
@@ -109,7 +109,7 @@ test('数字或小写开头的引用句不串用前句出处，月份缩写中�
   const html = '<p>Cost is $8. <a href="#s1">[1]</a> 5 hours included. <a href="#s2">[2]</a> twenty minutes. <a href="#s3">[3]</a></p><ol><li id="s1"><a href="https://example.com/a">A</a></li><li id="s2"><a href="https://example.com/b">B</a></li><li id="s3"><a href="https://example.com/c">C</a></li></ol>';
   const rows = await factcheckHTML(html, { sources: reader({ 'https://example.com/a': '$8 and 5 hours', 'https://example.com/b': '$8', 'https://example.com/c': '20 minutes' }) });
   assert.equal(rows.length, 3); assert.deepEqual(rows.map(r => r.status), ['✓', '✗', '✓']); assert.deepEqual(rows.map(r => r.refs), [['s1'], ['s2'], ['s3']]);
-  assert.equal((await run('25 Oct. 2026.', 'xero', '2026-10-25')).status, '✓');
+  assert.equal((await run('Starts 25 Oct. 2026.', 'xero', '2026-10-25')).status, '✓');
   const beforePeriod = html.replace('is $8. <a href="#s1">[1]</a>', 'is $8 <a href="#s1">[1]</a>.').replace('5 hours included. <a href="#s2">[2]</a>', 'five hours included <a href="#s2">[2]</a>.');
   const beforeRows = await factcheckHTML(beforePeriod, { sources: reader({ 'https://example.com/a': '$8 and 5 hours', 'https://example.com/b': '$8', 'https://example.com/c': '20 minutes' }) });
   assert.deepEqual(beforeRows.map(r => r.status), ['✓', '✗', '✓']);
@@ -130,7 +130,7 @@ test('缺失引用或只有非公网来源不得冒充已核；相对地址可�
   const denied = await factcheckHTML(guide('$8', ['http://127.0.0.1/private']), { sources, officeFactory() { office++; assert.fail(); } });
   assert.equal(denied[0].status, '未核'); assert.equal(office, 0);
 });
-test('CDP 只在 HTTP 失败后显式使用、保留大小写、共用一个 reader 并清理；缺词不走 CDP', async () => {
+test('HTTP 失败后显式使用 CDP、保留大小写、共用一个 reader 并清理；缺数字不补 CDP', async () => {
   const sources = reader({}), calls = []; let close = 0, made = 0;
   const rows = await factcheckHTML(guide('“Keep Activity”', [urls.xero, urls.gemini]), { sources, cdp: true, env: {}, officeFactory(options) { assert.equal(options.preserveCase, true); made++; return { async read(url) { calls.push(url); return 'Keep activity. ' + 'Public source text. '.repeat(20); }, async close() { close++; } }; } });
   assert.equal(rows[0].status, '近似'); assert.equal(made, 1); assert.equal(close, 1); assert.equal(calls.length, 2);
@@ -178,4 +178,147 @@ test('CLI 默认只报三类，--all 打全部、总数含隐藏行；本地文�
   const rows = await checkGuide(url, { sources }); assert.equal(rows[0].status, '✓'); assert.equal(sources.calls[0][1].html, true); assert.match(formatHTML(rows, true), /只能人看\t/);
   let io = 0; assert.equal(await main(['--html', file, '--cdp'], { env: { GITHUB_ACTIONS: '1' }, sources: { readHTTP() { io++; }, close() {} }, stdout: { write() {} }, stderr: { write() {} } }), 2); assert.equal(io, 0);
   for (const args of [['--all', file], ['--html'], ['--html', file, file]]) assert.equal(await main(args, { stdout: { write() {} }, stderr: { write() {} } }), 2);
+});
+
+test('澳元五种写法双向等价，保留小数、千分位和正负号边界', async () => {
+  const forms = value => [`A$${value}`, `AU$${value}`, `AUD ${value}`, `$${value} AUD`, `${value} AUD`];
+  for (const claim of forms('48')) for (const source of forms('48.00')) {
+    assert.equal((await run(`Price: ${claim}`, 'xero', source)).status, '✓', `${claim} / ${source}`);
+  }
+  for (const claim of forms('1,200.00')) {
+    assert.equal((await run(`Price: ${claim}`, 'xero', 'AUD 1200')).status, '✓', claim);
+    assert.equal((await run(`Price: ${claim}`, 'xero', 'A$12,000.00')).status, '✗', claim);
+  }
+  for (const source of ['US$48', 'USD 48', 'USD $48', '$48 USD', 'US$48 AUD', 'USD 48 AUD', 'AU$148', 'A$48.50', '-$48 AUD', '-48 AUD']) {
+    assert.equal((await run('Price: A$48', 'xero', source)).status, '✗', source);
+  }
+  for (const claim of ['US$48', 'USD 48', '$48 USD']) assert.equal((await run(`Price: ${claim}`, 'xero', 'A$48')).status, '✗', claim);
+  assert.equal((await run('Price: AUD -48', 'xero', '-$48 AUD')).status, '✓');
+  assert.equal((await run('Price: AUD $80', 'xero', '80 AUD')).status, '✓');
+  const row = await run('Lite A$48, Pro A$52, Plus A$62. “Available on our Plus plan only”.', 'xero', await fixture('tradify-aud.txt'));
+  assert.equal(row.status, '✓');
+});
+
+test('只有核对日期的句子归只能人看、不抓出处；真实日期事实和混合句继续核', async () => {
+  const sources = reader({});
+  const [row] = await factcheckHTML(await fixture('review-date.html'), { sources });
+  assert.equal(row.status, '只能人看'); assert.equal(row.reviewDate, true); assert.equal(sources.calls.length, 0);
+  assert.match(formatHTML([row], true), /核对日期句，仅供人看/);
+  assert.match(formatHTML([row]), /只能人看 1/);
+  for (const text of ['As of 26 October 2026.', 'Checked 2026-10-26.', 'Checked on 26 Oct. 2026', '核对于 2026-10-26。', '核对于2026年10月26日', '26 October 2026.', '2026-10-26']) {
+    const sources = reader({});
+    const [result] = await factcheckHTML(guide(text), { sources });
+    assert.equal(result.status, '只能人看', text); assert.equal(sources.calls.length, 0);
+  }
+  for (const text of ['As of 26 October 2026, the price is A$48.', 'Checked 26 October 2026: “Price is fixed”.', 'The programme starts 26 October 2026.', 'The next date is 26 October 2026.', 'Checked 2026-02-29.']) {
+    assert.equal((await run(text, 'xero', 'Unrelated source')).status, '✗', text);
+  }
+});
+
+const deputyURL = 'https://www.deputy.com/au/pricing';
+const filler = 'Synthetic test filler. '.repeat(40);
+async function dynamicSource({ script = true, short = false, body, rawError = false } = {}) {
+  const calls = [];
+  const html = (body ?? '<p>Public source body.</p><script></script>').replace(/<script><\/script>/g, script ? '<script></script>' : '') + (short ? '' : `<p>${filler}</p>`);
+  const sources = new Sources({ withVia: true, preserveCase: true, checkURL: async url => assert.equal(url, deputyURL), fetchImpl: async url => {
+    calls.push(url);
+    if (rawError && calls.length > 1) throw Error('fixture HTML metadata unavailable');
+    return new Response(html, { headers: { 'content-type': 'text/html' } });
+  } });
+  return { sources, calls };
+}
+
+test('HTTP 正文缺引号原话且有 script：无 CDP 保持 ✗ 并提醒，显式 CDP 补到才 ✓，同 URL 只补一次', async () => {
+  const html = guide('Deputy AI is “INTRODUCTORY FREE”.', [deputyURL]);
+  const first = await dynamicSource();
+  const [plain] = await factcheckHTML(html, { sources: first.sources, officeFactory() { assert.fail('no --cdp'); } });
+  assert.equal(plain.status, '✗'); assert.equal(plain.mayNeedBrowser, true);
+  assert.match(formatHTML([plain]), /可能要浏览器渲染/); assert.equal(first.calls.length, 2);
+  const second = await dynamicSource(); let made = 0, reads = 0, closed = 0;
+  const result = await factcheckHTML(html + html, { sources: second.sources, cdp: true, env: {}, officeFactory(options) {
+    made++; assert.equal(options.preserveCase, true);
+    return { async read(url) { reads++; assert.equal(url, deputyURL); return fixture('deputy-rendered.txt').then(s => s + filler); }, async close() { closed++; } };
+  } });
+  assert.deepEqual(result.map(row => row.status), ['✓', '✓']);
+  assert.equal(made, 1); assert.equal(reads, 1); assert.equal(closed, 1); assert.equal(second.sources.closed, true); assert.equal(second.calls.length, 2);
+});
+
+test('渲染成功仍缺原话才 ✗，渲染失败/空正文是未核，不能拿 script 内容冒充原话', async () => {
+  for (const mode of ['absent', 'failed', 'empty']) {
+    const { sources } = await dynamicSource({ body: '<p>Public source body.</p><script>INTRODUCTORY FREE</script>' });
+    let closed = 0;
+    const [row] = await factcheckHTML(guide('“INTRODUCTORY FREE”', [deputyURL]), { sources, cdp: true, env: {}, officeFactory() { return {
+      async read() { if (mode === 'failed') throw Error('fixture CDP blocked'); return mode === 'empty' ? '' : filler; },
+      async close() { closed++; },
+    }; } });
+    assert.equal(row.status, mode === 'absent' ? '✗' : '未核');
+    if (mode !== 'absent') assert.match(row.errors[0], /CDP/);
+    assert.equal(closed, 1); assert.equal(sources.closed, true);
+  }
+});
+
+test('缺数字、非引号设置路径、原话已在任一出处或只是近似时不补 CDP；长静态页无脚本也不补', async () => {
+  for (const [sentence, options, status] of [
+    ['A$48', {}, '✗'], ['Settings → Privacy → Missing switch', {}, '✗'],
+    ['“INTRODUCTORY FREE”', { body: '<p>INTRODUCTORY FREE</p><script></script>' }, '✓'],
+    ['“INTRODUCTORY FREE”', { body: '<p>Introductory free</p><script></script>' }, '近似'],
+    ['“INTRODUCTORY FREE”', { script: false }, '✗'],
+    ['“INTRODUCTORY FREE”', { rawError: true }, '✗'],
+  ]) {
+    const { sources, calls } = await dynamicSource(options);
+    const [row] = await factcheckHTML(guide(sentence, [deputyURL]), { sources, cdp: true, env: {}, officeFactory() { assert.fail(sentence); } });
+    assert.equal(row.status, status, sentence);
+    if (!sentence.startsWith('“') || status !== '✗') assert.equal(calls.length, 1);
+  }
+  const sources = reader({ [urls.xero]: filler, [deputyURL]: 'INTRODUCTORY FREE' });
+  assert.equal((await factcheckHTML(guide('“INTRODUCTORY FREE”', [urls.xero, deputyURL]), { sources, cdp: true, env: {}, officeFactory() { assert.fail('another source already has it'); } }))[0].status, '✓');
+  assert.equal(sources.calls.length, 2);
+});
+
+test('noscript 或明显短的 HTTP 正文也可提示/补读，CDP/HTTP token 合并，取消仍清理', async () => {
+  const { sources } = await dynamicSource({ body: '<p>A$48</p><noscript>Enable JavaScript</noscript>' });
+  const [row] = await factcheckHTML(guide('Price A$48, “INTRODUCTORY FREE”', [deputyURL]), { sources, cdp: true, env: {}, officeFactory() { return {
+    async read() { return 'INTRODUCTORY FREE. ' + filler; }, async close() {},
+  }; } });
+  assert.equal(row.status, '✓');
+  const short = reader({ [deputyURL]: 'Public text. '.repeat(20) });
+  const [hint] = await factcheckHTML(guide('“INTRODUCTORY FREE”', [deputyURL]), { sources: short });
+  assert.equal(hint.mayNeedBrowser, true); assert.equal(short.calls.length, 1);
+  const aborted = await dynamicSource(), controller = new AbortController(); let closed = 0;
+  await assert.rejects(factcheckHTML(guide('“INTRODUCTORY FREE”', [deputyURL]), { sources: aborted.sources, cdp: true, env: {}, signal: controller.signal, officeFactory() { return {
+    async read() { controller.abort(Error('fixture aborted')); throw controller.signal.reason; }, async close() { closed++; },
+  }; } }), /fixture aborted/);
+  assert.equal(closed, 1); assert.equal(aborted.sources.closed, true);
+});
+
+test('Deputy 实际粘连片段里的两句多词原话直接命中，不误触发浏览器补核', async () => {
+  const text = await fixture('deputy-joined.txt');
+  const html = guide('Deputy AI is “INTRODUCTORY FREE”; “Price and availability may change”.', [deputyURL]);
+  for (const cdp of [false, true]) {
+    const sources = reader({ [deputyURL]: text });
+    const [row] = await factcheckHTML(html, { sources, cdp, env: {}, officeFactory() { assert.fail('literal phrases are already present'); } });
+    assert.equal(row.status, '✓'); assert.deepEqual(row.missing, []); assert.equal(row.mayNeedBrowser, false);
+    assert.equal(sources.calls.length, 1); assert.equal(sources.closed, 1);
+  }
+  const { sources, calls } = await dynamicSource({ body: await fixture('deputy-http.html') });
+  assert.equal((await factcheckHTML(html, { sources, cdp: true, env: {}, officeFactory() { assert.fail('no rendering needed'); } }))[0].status, '✓');
+  assert.equal(calls.length, 1);
+});
+
+test('粘连放宽只接受无数字金额的多词引文和相邻字母，单词/数字/金额/设置路径边界不变', async () => {
+  assert.equal((await run('“free trial”', 'xero', 'beforefree trialAfter')).status, '✓');
+  assert.equal((await run('“free trial”', 'xero', 'beforefree trial.')).status, '✓');
+  assert.equal((await run('“free trial”', 'xero', 'free trialAfter')).status, '✓');
+  for (const source of ['_free trial', 'free trial_']) assert.equal((await run('“free trial”', 'xero', source)).status, '近似');
+  for (const [claim, source] of [
+    ['“free”', 'freedom'], ['“switch”', 'switches'],
+    ['“free trial”', '1free trial'], ['“free trial”', 'free trial2'],
+    ['“free trial”', 'beforefree trial2'], ['“free trial”', 'beforeFree trialAfter'],
+    ['“8 units”', '0.8 units; elsewhere 8 items.'], ['“8 units”', 'before8 unitsAfter; elsewhere 8 items.'],
+    ['“v2 mode”', 'beforev2 modeAfter'], ['“２０ days free”', 'before２０ days freeAfter'],
+    ['“A$48 per month”', 'beforeA$48 per monthAfter; elsewhere A$48.'],
+    ['Settings → Privacy → Keep activity', 'beforeKeep activityAfter'],
+  ]) {
+    assert.equal((await run(claim, 'xero', source)).status, '✗', claim + ' / ' + source);
+  }
 });
