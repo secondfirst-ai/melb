@@ -94,3 +94,63 @@ test('离线发布接线：分页精确匹配，report缺失仍报，create/comm
   assert.ok(fake.calls.length >= 2); assert.equal(fake.calls[0][0], 'create'); assert.ok(fake.calls.slice(1).every(([action]) => action === 'comment'));
   assert.ok(fake.calls.every(([, options]) => options.body.includes('/actions/runs/12345')));
 });
+
+test('同题网址只列一次、每个quote只有一条原因且保留原句', () => {
+  const quotes = [{ url, quote: 'First exact sentence.' }, { url, quote: 'Second exact sentence.' }];
+  const text = report({ scope: '全部问答', literalOnly: true, errors: [], warnings: [], legacyFiles: 0, legacyRecords: 0, total: 1,
+    results: [{ id: 'water', literal: 'fail', semantic: 'skipped', status: 'fail', quotes, issues: [{ text: `quote 1 不在页面上：First exact sentence.（${url}）` }, { text: `quote 2：无法取得 ${url}（HTTP 403）` }] }], usage: { requests: 0, input: 0, output: 0, estimatedUSD: 0 } });
+  const p = plan('fail', [], { report: text, sourceURLs: { water: [url, url] } });
+  assert.equal(p.body.split('https://example.gov.au/water?a=1&amp;b=2').length - 1, 1);
+  for (const n of [1, 2]) assert.equal((p.body.match(new RegExp('^- 原因：quote ' + n + '：', 'gm')) ?? []).length, 1);
+  assert.match(p.body, /First exact sentence/); assert.match(p.body, /Second exact sentence/); assert.match(p.body, /HTTP 403/);
+});
+
+test('来源映射缺失或不完整仍保留报告里每个quote的原句和网址引用', () => {
+  const otherURL = 'https://example.gov.au/b_under?a=1&b=2', renderedOther = 'https://example.gov.au/b\\_under?a=1&amp;b=2';
+  const text = fixture('fail', { results: [{ id: 'water', literal: 'fail', semantic: 'skipped', status: 'fail',
+    issues: [{ text: `quote 1 不在页面上：Missing text.（${url}）` }], quotes: [{ url, quote: 'Missing text.' }, { url: otherURL, quote: 'Present text.' }] }] });
+  for (const sources of [{}, sourceURLs]) {
+    const p = plan('fail', [], { report: text, sourceURLs: sources });
+    for (const address of ['https://example.gov.au/water?a=1&amp;b=2', renderedOther]) assert.equal(p.body.split(address).length - 1, 1);
+    assert.match(p.body, /原因：quote 1：[^\n]*Missing text\.[^\n]*网址1/);
+    assert.match(p.body, /原因：quote 2：[^\n]*Present text\.[^\n]*网址2/);
+    assert.doesNotMatch(p.body, /amp;amp;/);
+  }
+  const unable = plan('unable', [], { sourceURLs: {} });
+  assert.equal(unable.body.split('https://example.gov.au/water?a=1&amp;b=2').length - 1, 1);
+  assert.match(unable.body, /HTTP 403/); assert.match(unable.body, /原因：quote 1：[^\n]*网址1/);
+});
+
+test('本机run标记格式及发布CLI：分页、新建、评论、缺token、任何输出和正文都不漏token', async t => {
+  const { localMain } = await import('../scripts/weekly-issue.mjs');
+  const localURL = 'local:melbourne-mac:2026-10-26T18:30:00+11:00';
+  assert.match(plan('pass', [existing], { runURL: localURL }).body, /本次从墨尔本本机跑：local:/);
+  for (const value of ['local:x:no-time', 'local:x\n:2026-10-26T18:30:00Z']) assert.throws(() => plan('pass', [], { runURL: value }), /run 链接/);
+  const dir = await fs.mkdtemp(path.resolve('.cache/local-weekly-')); t.after(() => fs.rm(dir, { recursive: true, force: true }));
+  const file = path.join(dir, 'report.md'), token = 'FAKE_WEEKLY_PRIVATE_TOKEN', args = ['--publish', '--report', file, '--outcome', 'failure', '--run-url', localURL];
+  await fs.writeFile(file, fixture('pass', { errors: ['fixture ' + token], total: 0, results: [] }));
+  for (const opened of [false, true]) {
+    const logs = [], calls = [];
+    const fetchImpl = async (target, options) => {
+      calls.push({ target, options }); assert.equal(options.headers.authorization, 'Bearer ' + token); assert.equal(options.redirect, 'error');
+      if (options.method === 'GET') {
+        if (target.endsWith('page=1')) return new Response(JSON.stringify(Array.from({ length: 100 }, (_, i) => ({ number: 100 + i, title: 'not the issue', state: 'open' }))));
+        return new Response(JSON.stringify(opened ? [existing] : []));
+      }
+      assert.ok(!options.body.includes(token)); return new Response(JSON.stringify({ number: 42 }));
+    };
+    const code = await localMain(args, { env: { MELB_ISSUES_TOKEN: token }, fetchImpl, out: s => logs.push(s), error: s => logs.push(s) });
+    assert.equal(code, 1); assert.equal(calls.length, 3); assert.match(calls.at(-1).target, opened ? /issues\/7\/comments$/ : /issues$/);
+    assert.ok(!logs.join('').includes(token)); assert.match(calls.at(-1).options.body, /redacted/);
+  }
+  let fetches = 0; const logs = [];
+  assert.equal(await localMain(args, { env: {}, fetchImpl: () => { fetches++; throw Error('must not fetch'); }, error: s => logs.push(s) }), 2);
+  assert.equal(fetches, 0); assert.match(logs.join(''), /MELB_ISSUES_TOKEN 没配/);
+  const failedLogs = [];
+  assert.equal(await localMain(args, { env: { MELB_ISSUES_TOKEN: token }, fetchImpl: () => { throw Error('failure ' + token); }, error: s => failedLogs.push(s) }), 2);
+  assert.ok(!failedLogs.join('').includes(token)); assert.match(failedLogs.join(''), /redacted/);
+  await fs.writeFile(file, fixture('pass'));
+  let posts = 0;
+  const code = await localMain(['--publish', '--report', file, '--outcome', 'success', '--run-url', localURL], { env: { MELB_ISSUES_TOKEN: token }, fetchImpl: async (_url, options) => { if (options.method !== 'GET') posts++; return new Response('[]'); }, out: () => {} });
+  assert.equal(code, 0); assert.equal(posts, 0);
+});

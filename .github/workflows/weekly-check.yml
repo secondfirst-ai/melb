@@ -1,9 +1,6 @@
 name: Weekly source check
 
 on:
-  schedule:
-    # 周二 02:00 AEDT（UTC+11）；冬令时为周二 01:00 AEST（UTC+10），可以接受。
-    - cron: '0 15 * * 1'
   workflow_dispatch:
 
 permissions:
