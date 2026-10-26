@@ -35,6 +35,9 @@ jobs:
         run: npx --no-install playwright install-deps chromium
       - name: Install Chromium
         run: npx --no-install playwright install chromium
+      - name: Let Chromium start with its sandbox on
+        # Ubuntu 24+ runner 的 AppArmor 禁了非特权 user namespace，Chromium sandbox 起不来；放开它，sandbox 仍然开着。
+        run: sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
       - name: Check every source without model calls
         id: verify
         run: node scripts/verify --all --literal-only --report "$RUNNER_TEMP/weekly-check-report.md"
