@@ -45,15 +45,18 @@ export function uniqueReasons(reasons) {
     const match = reason.match(/^quote (\d+)(?=[ ：])/);
     const key = match ? `quote ${match[1]}` : reason;
     if (!groups.has(key)) groups.set(key, { number: match?.[1], reasons: [], quotes: [] });
-    const group = groups.get(key), detail = reason.match(/^quote \d+：(.+) — https?:\/\//);
-    const list = detail ? group.quotes : group.reasons;
-    const value = detail ? detail[1] : reason;
-    if (!list.includes(value)) list.push(value);
+    const group = groups.get(key), detail = reason.match(/^quote \d+：(.+) — (https?:\/\/\S+)$/);
+    if (detail) {
+      if (!group.quotes.some(q => q.text === detail[1] && q.url === detail[2])) group.quotes.push({ text: detail[1], url: detail[2] });
+    } else if (!group.reasons.includes(reason)) group.reasons.push(reason);
   }
   return [...groups.values()].map(g => {
     if (!g.number) return g.reasons.join('；');
     const reasons = g.reasons.map(r => r.replace(/^quote \d+[ ：]*/, ''));
-    for (const quote of g.quotes) if (!reasons.some(r => r.includes(quote))) reasons.push(`原句：${quote}`);
+    for (const { text, url } of g.quotes) {
+      if (!reasons.some(r => r.includes(text))) reasons.push(`原句：${text}`);
+      if (!reasons.some(r => r.includes(url))) reasons.push(`出处：${url}`);
+    }
     return `quote ${g.number}：${reasons.join('；')}`;
   });
 }
@@ -70,13 +73,14 @@ export function planWeeklyIssue({ report, outcome, issues, sourceURLs = {}, runU
     lines.push('本周原句检查有不过、无法核对或检查未完成的项目。');
     if (result.errors.length) lines.push('', '## 检查问题', ...result.errors.map(e => `- ${e.replace(/@(?!\u200b)/g, '@\u200b')}`));
     for (const p of result.problems) {
-      const urls = [...new Set(Array.isArray(sourceURLs[p.id]) ? sourceURLs[p.id] : [])];
+      // 报告内的网址已经转义；即使 data 缺失，也从明细保留网址和每个 quote 的对应关系。
+      const urls = [...new Set([...(Array.isArray(sourceURLs[p.id]) ? sourceURLs[p.id].map(escape) : []), ...p.reasons.flatMap(r => r.match(/https?:\/\/[^\s<>（）]+/g) ?? [])])];
       const reasons = uniqueReasons(p.reasons).map(reason => {
         // 原因用编号引用网址，完整网址每题只列一次；长 URL 先替换，避免前缀相同互相截断。
-        for (const { url, index } of urls.map((url, index) => ({ url: escape(url), index })).sort((a, b) => b.url.length - a.url.length)) reason = reason.split(url).join(`网址${index + 1}`);
+        for (const { url, index } of urls.map((url, index) => ({ url, index })).sort((a, b) => b.url.length - a.url.length)) reason = reason.split(url).join(`网址${index + 1}`);
         return reason.replace(/@(?!\u200b)/g, '@\u200b');
       });
-      lines.push('', `## ${p.id} — ${labels[p.status]}`, `- 网址：${urls.length ? urls.map((u, i) => `[${i + 1}] ${escape(u)}`).join('；') : '报告未能对应来源，见下方原因及 run 报告'}`, ...reasons.map(reason => `- 原因：${reason}`));
+      lines.push('', `## ${p.id} — ${labels[p.status]}`, `- 网址：${urls.length ? urls.map((u, i) => `[${i + 1}] ${u}`).join('；') : '报告未能对应来源，见下方原因及 run 报告'}`, ...reasons.map(reason => `- 原因：${reason}`));
     }
   } else lines.push('本周全过。');
   lines.push('');

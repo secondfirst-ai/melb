@@ -105,6 +105,22 @@ test('同题网址只列一次、每个quote只有一条原因且保留原句', 
   assert.match(p.body, /First exact sentence/); assert.match(p.body, /Second exact sentence/); assert.match(p.body, /HTTP 403/);
 });
 
+test('来源映射缺失或不完整仍保留报告里每个quote的原句和网址引用', () => {
+  const otherURL = 'https://example.gov.au/b_under?a=1&b=2', renderedOther = 'https://example.gov.au/b\\_under?a=1&amp;b=2';
+  const text = fixture('fail', { results: [{ id: 'water', literal: 'fail', semantic: 'skipped', status: 'fail',
+    issues: [{ text: `quote 1 不在页面上：Missing text.（${url}）` }], quotes: [{ url, quote: 'Missing text.' }, { url: otherURL, quote: 'Present text.' }] }] });
+  for (const sources of [{}, sourceURLs]) {
+    const p = plan('fail', [], { report: text, sourceURLs: sources });
+    for (const address of ['https://example.gov.au/water?a=1&amp;b=2', renderedOther]) assert.equal(p.body.split(address).length - 1, 1);
+    assert.match(p.body, /原因：quote 1：[^\n]*Missing text\.[^\n]*网址1/);
+    assert.match(p.body, /原因：quote 2：[^\n]*Present text\.[^\n]*网址2/);
+    assert.doesNotMatch(p.body, /amp;amp;/);
+  }
+  const unable = plan('unable', [], { sourceURLs: {} });
+  assert.equal(unable.body.split('https://example.gov.au/water?a=1&amp;b=2').length - 1, 1);
+  assert.match(unable.body, /HTTP 403/); assert.match(unable.body, /原因：quote 1：[^\n]*网址1/);
+});
+
 test('本机run标记格式及发布CLI：分页、新建、评论、缺token、任何输出和正文都不漏token', async t => {
   const { localMain } = await import('../scripts/weekly-issue.mjs');
   const localURL = 'local:melbourne-mac:2026-10-26T18:30:00+11:00';
