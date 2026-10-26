@@ -70,8 +70,12 @@ function numericTokens(text) {
   take(/\b(\d{4})-(\d{2})-(\d{2})\b/g, m => date(m[3], m[2], m[1]));
   take(new RegExp(`\\b(\\d{1,2})(?:st|nd|rd|th)?\\s+(${monthPattern})\\.?(?:\\s+(\\d{4}))?\\b`, 'gi'), m => date(m[1], months.findIndex(month => month.startsWith(m[2].toLowerCase())) + 1, m[3]));
   take(new RegExp(`\\b(${monthPattern})\\.?\\s+(\\d{1,2})(?:st|nd|rd|th)?(?:,?\\s+(\\d{4}))?\\b`, 'gi'), m => date(m[2], months.findIndex(month => month.startsWith(m[1].toLowerCase())) + 1, m[3]));
+  // 美元先取走，不能让 US$48 / USD 48 退成普通数字、再跟澳元金额互相命中。
+  take(new RegExp(`(?<![\\p{L}\\p{N}_+\\-])([+-]?)(?:US\\$|USD\\s+\\$?)\\s*(${number})(?![\\p{L}\\p{N}_]|\\.\\d)`, 'giu'), m => ({ type: 'usd', value: decimal(m[1] + m[2]) }));
+  take(new RegExp(`(?<![\\p{L}\\p{N}_.+\\-])([+-]?\\$\\s*)?(${number})\\s+USD\\b`, 'giu'), m => ({ type: 'usd', value: decimal((m[1]?.trim().startsWith('-') ? '-' : '') + m[2]) }));
   // 标题里的「课程名 - $330」是分隔号；金额前紧贴的 -$330 / $-330 才带符号。
-  take(new RegExp(`(?<![\\p{L}\\p{N}_+\\-])([+-]?)(?:AU?\\$|\\$)\\s*(${number})(?![\\p{L}\\p{N}_]|\\.\\d)`, 'giu'), m => ({ type: 'money', value: decimal(m[1] + m[2]) }));
+  take(new RegExp(`(?<![\\p{L}\\p{N}_+\\-])([+-]?)(?:AU?\\$|\\$|AUD\\s+\\$?)\\s*(${number})(?:\\s+AUD\\b)?(?![\\p{L}\\p{N}_]|\\.\\d)`, 'giu'), m => ({ type: 'money', value: decimal(m[1] + m[2]) }));
+  take(new RegExp(`(?<![\\p{L}\\p{N}_.+\\-])(${number})\\s+AUD\\b`, 'giu'), m => ({ type: 'money', value: decimal(m[1]) }));
   take(new RegExp(`(?<![\\p{L}\\p{N}_.+\\-])(${number})\\s*(?:%|per cent\\b|percent\\b)`, 'giu'), m => ({ type: 'percent', value: decimal(m[1]) }));
   take(new RegExp(`(?<![\\p{L}\\p{N}_.+\\-])(${number})(?![\\p{L}\\p{N}_]|\\.\\d)`, 'gu'), m => ({ type: 'number', value: decimal(m[1]) }));
   // 这些 one 是习语，不是待核对的数量（例如 Microsoft, for one）。
@@ -98,7 +102,7 @@ export function tokens(text) {
   const phrases = [];
   for (const match of text.matchAll(quoted())) {
     const value = match.slice(1).find(x => x !== undefined)?.trim();
-    if (value) phrases.push({ type: 'phrase', value: normalizeCase(value), label: match[0] });
+    if (value) phrases.push({ type: 'phrase', value: normalizeCase(value), label: match[0], quoted: true });
   }
   // 未加引号的设置路径也取最后一级开关名；各层菜单未必在出处中连写。
   for (const match of text.matchAll(/(?:→|›|\s>\s)\s*([^→›>|.!?\n]+)(?=$|[|.!?\n])/g)) {
@@ -136,6 +140,17 @@ function sourceNumbers(text) {
   return [...found, ...found.flatMap(t => t.type === 'date' ? Object.values(t.value).filter(value => value !== null).map(value => ({ type: 'number', value })) : t.type === 'number' ? [] : [{ type: 'number', value: t.value }])];
 }
 
+function reviewDate(text) {
+  const value = text.replace(/^(?:as of|checked(?: on)?|核对于)\s*[:：]?\s*/i, '').replace(/[.!?。！？]+$/, '').trim();
+  const found = numericTokens(value);
+  if (found.length === 1 && found[0].type === 'date' && found[0].label === value) return true;
+  const zh = /^(\d{4})年(\d{1,2})月(\d{1,2})日$/.exec(value);
+  return !!zh && numericTokens(`${zh[1]}-${zh[2].padStart(2, '0')}-${zh[3].padStart(2, '0')}`).some(t => t.type === 'date');
+}
+
+const documentFor = document => ({ ...document, text: normalizeCase(document.text), numbers: sourceNumbers(document.text) });
+const documentsFor = (urls, pages) => urls.flatMap(url => [pages.get(url)?.document, pages.get(url)?.rendered].filter(Boolean));
+
 function sourceReader() { return new Sources({ withVia: true, allowHTTP: true, preserveCase: true }); }
 export async function factcheckHTML(html, { cdp = false, caller = 'factcheck', env = process.env, signal, guideURL, sources = sourceReader(), officeFactory = options => new OfficeReader(options) } = {}) {
   let office;
@@ -144,11 +159,14 @@ export async function factcheckHTML(html, { cdp = false, caller = 'factcheck', e
     const rows = claims(html, guideURL);
     if (!rows.length) throw Error('指南 HTML 中没有带 #sN 引用的句子或表格行');
     const pages = new Map();
-    for (const row of rows) row.tokens = tokens(row.text);
+    for (const row of rows) {
+      row.reviewDate = reviewDate(row.text);
+      row.tokens = row.reviewDate ? [] : tokens(row.text);
+    }
     for (const url of new Set(rows.filter(row => row.tokens.length).flatMap(row => row.urls))) {
       signal?.throwIfAborted();
       let document, error;
-      // HTML 模式直接抓取失败才可进入显式 --cdp；不为缺词启动浏览器。
+      // 抓取失败沿用显式 --cdp；HTTP 成功但缺引号原话的补核放在下面。
       try { document = await wait(sources.readHTTP(url), 120_000, signal); }
       catch (e) {
         if (signal?.aborted) throw signal.reason;
@@ -163,19 +181,39 @@ export async function factcheckHTML(html, { cdp = false, caller = 'factcheck', e
       }
       if (document) {
         if (typeof document.text !== 'string' || !document.text.trim()) throw Error('出处读取器未返回正文');
-        document = { ...document, text: normalizeCase(document.text), numbers: sourceNumbers(document.text) };
+        document = documentFor(document);
       }
       pages.set(url, { document, error });
     }
+    const missingQuote = row => row.tokens.some(token => token.quoted && !documentsFor(row.urls, pages).some(document => matchToken(token, document) !== 'missing'));
+    for (const [url, page] of pages) {
+      if (!page.document || ['pdf', 'cdp'].includes(page.document.via) || !rows.some(row => row.urls.includes(url) && missingQuote(row))) continue;
+      signal?.throwIfAborted();
+      // 只为仍缺的引号原话读 HTML 迹象；不改 Sources/verify，也不为缺数字开浏览器。
+      let dynamic = page.document.text.length < 600;
+      if (!dynamic) {
+        try {
+          const raw = await wait(sources.readHTTP(url, { html: true }), 120_000, signal);
+          dynamic = typeof raw.html === 'string' && /<(?:script|noscript)\b/i.test(raw.html);
+        } catch { if (signal?.aborted) throw signal.reason; }
+      }
+      if (!dynamic) continue;
+      page.mayNeedBrowser = true;
+      if (!cdp) continue;
+      try {
+        office ??= officeFactory({ caller, signal, preserveCase: true });
+        page.rendered = documentFor({ text: usable(await office.read(url), { preserveCase: true }), via: 'cdp' });
+      } catch (e) { if (signal?.aborted) throw signal.reason; page.renderError = 'CDP：' + safeError(e); }
+    }
     return rows.map(row => {
       if (!row.tokens.length) return { ...row, status: '只能人看', missing: [] };
-      const documents = row.urls.flatMap(url => pages.get(url)?.document ? [pages.get(url).document] : []);
+      const documents = documentsFor(row.urls, pages);
       const outcomes = row.tokens.map(token => ({ token, matches: documents.map(document => matchToken(token, document)) }));
       const missing = outcomes.filter(o => !o.matches.some(m => m !== 'missing')).map(o => o.token.label);
-      const unreadable = row.urls.filter(url => !pages.get(url)?.document);
+      const unreadable = row.urls.filter(url => !pages.get(url)?.document || missingQuote(row) && pages.get(url)?.renderError);
       const unresolved = unreadable.length || row.missingRefs.length;
       const status = !documents.length || missing.length && unresolved ? '未核' : missing.length ? '✗' : outcomes.some(o => !o.matches.includes('exact')) ? '近似' : '✓';
-      return { ...row, status, missing, unreadable, errors: unreadable.map(url => `${url}：${pages.get(url)?.error ?? '没有出处正文'}`) };
+      return { ...row, status, missing, unreadable, mayNeedBrowser: !cdp && missingQuote(row) && row.urls.some(url => pages.get(url)?.mayNeedBrowser), errors: unreadable.map(url => `${url}：${pages.get(url)?.renderError ?? pages.get(url)?.error ?? '没有出处正文'}`) };
     });
   } finally { try { await office?.close(); } finally { await sources.close(); } }
 }
@@ -199,8 +237,8 @@ export function formatHTML(results, all = false) {
   for (const row of results) {
     counts[row.status]++;
     if (!all && ['✓', '只能人看'].includes(row.status)) continue;
-    const detail = row.status === '✗' ? `；缺：${row.missing.join('、')}` : row.status === '未核' ? `；${[...(row.errors ?? []), ...(row.missingRefs ?? []).map(ref => `${ref} 没有出处网址`)].join('；')}` : row.status === '近似' ? '；只差大小写或标点' : '';
-    lines.push(`${row.status}\t${row.text}${detail}；出处：${row.urls.join('、') || '无'}`);
+    const detail = row.status === '✗' ? `；缺：${row.missing.join('、')}` : row.status === '未核' ? `；${[...(row.errors ?? []), ...(row.missingRefs ?? []).map(ref => `${ref} 没有出处网址`)].join('；')}` : row.status === '近似' ? '；只差大小写或标点' : row.reviewDate ? '；核对日期句，仅供人看' : '';
+    lines.push(`${row.status}\t${row.text}${detail}${row.mayNeedBrowser ? '；可能要浏览器渲染' : ''}；出处：${row.urls.join('、') || '无'}`);
   }
   lines.push('汇总：' + STATUSES.map(status => `${status} ${counts[status]}`).join(' · '));
   return lines.join('\n') + '\n';
