@@ -8,6 +8,8 @@ import { Sources } from '../scripts/source.mjs';
 import { verify, report } from '../scripts/verify.mjs';
 import { browserProxy } from '../scripts/network.mjs';
 
+// Node test runner 的 stdout 帧解析会被混入的中文普通输出干扰；diagnostic 通过测试事件传输。
+
 test('本地浏览器代理拒绝 loopback/metadata CONNECT 和普通 HTTP', async (t) => {
   let proxy;
   try { proxy = await browserProxy(); }
@@ -54,7 +56,7 @@ test('本地 HTTP 假 Anthropic：yes/partial/no、坏 JSON、超时；实际三
   }
   const base = `http://127.0.0.1:${server.address().port}`, previous = process.env.ANTHROPIC_BASE_URL;
   process.env.ANTHROPIC_BASE_URL = base;
-  console.log(`假服务 PID ${process.pid}，${base}；本进程 finally 关闭`);
+  t.diagnostic(`假服务 PID ${process.pid}，${base}；本进程 finally 关闭`);
   try {
     const r = { id: 'http-test', answer: { en: 'This is supported.', zh: '原文支持。' } };
     for (mode of ['yes', 'partial', 'no', 'bad', 'timeout']) {
@@ -63,7 +65,7 @@ test('本地 HTTP 假 Anthropic：yes/partial/no、坏 JSON、超时；实际三
       const result = await client.check(r, [{ url: 'https://example.gov.au', quote: 'This is supported.', text: 'This is supported.' }]);
       assert.equal(result.status, mode === 'yes' ? 'pass' : ['partial', 'no'].includes(mode) ? 'fail' : 'unable');
       assert.equal(calls, ['bad', 'timeout'].includes(mode) ? 2 : 1);
-      console.log(`HTTP ${mode} → ${result.status}（${calls} 次请求）`);
+      t.diagnostic(`HTTP ${mode} → ${result.status}（${calls} 次请求）`);
     }
     // 只供本地测试：保留官方 URL 作数据，用本地假页面响应；生产无这个重写入口。
     mode = 'fixture'; calls = 0; pages = 0;
@@ -78,7 +80,7 @@ test('本地 HTTP 假 Anthropic：yes/partial/no、坏 JSON、超时；实际三
     assert.deepEqual(result.results.map(r => r.literal), ['pass', 'pass', 'pass']);
     assert.deepEqual(result.results.map(r => r.status), ['pass', 'pass', 'fail']);
     await fs.writeFile('.cache/http-fixture-report.md', report(result));
-    console.log('fixture：只核 3 条；页面抓 1 次；逐句 3 次；过/过/不过，错数题字面过。');
+    t.diagnostic('fixture：只核 3 条；页面抓 1 次；逐句 3 次；过/过/不过，错数题字面过。');
   } finally {
     if (previous === undefined) delete process.env.ANTHROPIC_BASE_URL; else process.env.ANTHROPIC_BASE_URL = previous;
     server.closeAllConnections(); await new Promise(resolve => server.close(resolve));
