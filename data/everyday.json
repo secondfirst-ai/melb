@@ -4,7 +4,7 @@
   "en": "Everyday questions about Melbourne, answered from official sources",
   "zh": "墨尔本日常问答（答案来自官方出处）"
  },
- "updated": "2026-10-25",
+ "updated": "2026-10-28",
  "notes": [
   {
    "en": "Each answer is limited to what the cited official page says, with a verbatim quote and the date we checked it. If a question isn't here, we don't have a checked answer.",
@@ -320,27 +320,35 @@
     "墨尔本市中心右转为什么要从左边转"
    ],
    "answer": {
-    "en": "At an intersection with traffic lights and a hook turn only sign, a driver turning right must make a hook turn. Enter from the far left of the road you are leaving, move forward keeping to the left of the intersection and clear of any marked foot crossing, and stop near the far side of the road you are entering. Stay there until the traffic lights on that road turn green, then turn right. Source is the Road Safety Road Rules 2017 (rule 34), authorised version from 2020.",
-    "zh": "在有红绿灯、并竖着「hook turn only」标志的路口，右转必须走 hook turn：从你所在道路的最左边进入路口，靠左往前开，别挡住人行横道，一直开到尽量靠近要驶入那条路的对面一侧停下；等那条路的红绿灯变绿，再右转。出处是《2017 年道路安全规则》第 34 条（2020 年授权版本）。"
+    "en": "At an intersection with traffic lights and a hook turn only sign, a driver turning right must make a hook turn. Enter from as near as practicable to the far left of the road you are leaving, move forward keeping as near as practicable to the left of the intersection and clear of any marked foot crossing, until you are as near as practicable to the far side of the road you are entering. Stay there until the traffic lights on that road turn green, then turn right. Source is the Road Safety Road Rules 2017 (rule 34), authorised version 026, incorporating amendments as at 18 February 2026.",
+    "zh": "在有红绿灯、并竖着「hook turn only」标志的路口，右转必须走 hook turn：尽量从你所在道路的最左边进入路口，尽量靠左往前开，别挡住画了线的人行横道，一直开到尽量靠近要驶入那条路的对面一侧；在那里等，等那条路的红绿灯变绿，再右转。出处是《2017 年道路安全规则》第 34 条（第 026 版，含截至 2026 年 2 月 18 日的修订）。"
    },
    "sources": [
     {
-     "url": "https://content.legislation.vic.gov.au/sites/default/files/2020-11/17-41sra009%20authorised.pdf",
-     "quote": "A driver turning right at an intersection with traffic lights and a hook turn only sign must turn right by making a hook turn in accordance with this rule."
+     "url": "https://content.legislation.vic.gov.au/sites/default/files/2026-02/17-41sra026-authorised.pdf",
+     "quote": "34 Making a hook turn at a hook turn only sign"
     },
     {
-     "url": "https://content.legislation.vic.gov.au/sites/default/files/2020-11/17-41sra009%20authorised.pdf",
+     "url": "https://content.legislation.vic.gov.au/sites/default/files/2026-02/17-41sra026-authorised.pdf",
+     "quote": "Step 1 Approach and enter the intersection from as near as practicable to the far left side of the road that the driver is leaving."
+    },
+    {
+     "url": "https://content.legislation.vic.gov.au/sites/default/files/2026-02/17-41sra026-authorised.pdf",
+     "quote": "Step 2 Move forward, keeping as near as practicable to the left of the intersection and clear of any marked foot crossing, until the driver is as near as practicable to the far side of the road that the driver is entering."
+    },
+    {
+     "url": "https://content.legislation.vic.gov.au/sites/default/files/2026-02/17-41sra026-authorised.pdf",
      "quote": "Step 3 Remain at the position reached under step 2 until the traffic lights on the road that the driver is entering change to green."
     },
     {
-     "url": "https://content.legislation.vic.gov.au/sites/default/files/2020-11/17-41sra009%20authorised.pdf",
+     "url": "https://content.legislation.vic.gov.au/sites/default/files/2026-02/17-41sra026-authorised.pdf",
      "quote": "Step 4 Turn right into that road."
     }
    ],
    "tags": [
     "driving"
    ],
-   "checked": "2026-10-22"
+   "checked": "2026-10-28"
   },
   {
    "id": "find-bin-collection-day-melbourne",
