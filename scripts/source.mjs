@@ -1,6 +1,7 @@
 import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { publicURL, pinnedFetch, browserProxy } from './network.mjs';
+import { usdLiteralMatch, usdLiteralExcerpt, USD_NOTE } from './usd.mjs';
 export { publicURL } from './network.mjs';
 
 export const FETCH_TIMEOUT_MS = 15_000;
@@ -137,19 +138,21 @@ export function excerpt(text, quote) {
 }
 
 export function literal(record, pages) {
-  const issues = [], excerpts = [];
+  const issues = [], excerpts = [], notes = [];
   for (const [i, s] of record.sources.entries()) {
     const page = pages.get(s.url), quote = normalize(s.quote);
     if (!page?.texts.length) {
       issues.push({ status: 'unable', text: `quote ${i + 1}：无法取得 ${s.url}（${page?.errors.join('；') ?? '未抓取'}）` });
       continue;
     }
-    const text = page.texts.find((t) => t.includes(quote));
+    const exact = page.texts.find((t) => t.includes(quote));
+    const text = exact ?? page.texts.find(t => usdLiteralMatch(quote, t));
     if (!text) {
       issues.push({ status: page.browserFailed ? 'unable' : 'fail', text: page.browserFailed ? `quote ${i + 1} 不在 fetch 文字里，浏览器又未能核对：${page.errors.join('；')}（${s.url}）` : `quote ${i + 1} 不在页面上：${s.quote}（${s.url}）` });
       continue;
     }
-    excerpts.push({ url: s.url, quote: s.quote, text: excerpt(text, quote) });
+    excerpts.push({ url: s.url, quote: s.quote, text: exact ? excerpt(text, quote) : usdLiteralExcerpt(quote, text) });
+    if (!exact) notes.push(`quote ${i + 1}：${USD_NOTE}（${s.url}）`);
   }
-  return { status: issues.some((i) => i.status === 'fail') ? 'fail' : issues.length ? 'unable' : 'pass', issues, excerpts };
+  return { status: issues.some((i) => i.status === 'fail') ? 'fail' : issues.length ? 'unable' : 'pass', issues, excerpts, ...(notes.length ? { notes } : {}) };
 }

@@ -20,8 +20,8 @@ export function report(result) {
   if (result.errors.length) lines.push('', '## 格式错误', ...result.errors.map((e) => `- ${escape(e)}`));
   lines.push('', '| 题目 id | 字面 | 逐句 | 结果 |', '|---|---|---|---|');
   for (const r of result.results) lines.push(`| ${escape(r.id)} | ${labels[r.literal]} | ${r.semantic === 'skipped' ? '未跑' : labels[r.semantic]}${r.cached ? '（缓存）' : ''} | ${labels[r.status]}${result.literalOnly && r.status === 'pass' ? '（仅字面）' : ''} |`);
-  for (const r of result.results.filter((r) => r.issues.length)) {
-    lines.push('', `## ${escape(r.id)} — ${labels[r.status]}`, ...r.issues.map((i) => `- ${escape(i.text)}`));
+  for (const r of result.results.filter((r) => r.issues.length || r.notes?.length)) {
+    lines.push('', `## ${escape(r.id)} — ${labels[r.status]}`, ...r.issues.map((i) => `- ${escape(i.text)}`), ...(r.notes ?? []).map(note => `- ${escape(note)}`));
     if (r.status === 'fail') lines.push(...r.quotes.map((s, i) => `- quote ${i + 1}：${escape(s.quote)} — ${escape(s.url)}`));
   }
   if (result.warnings.length) lines.push('', '## 提醒（不拦）', ...result.warnings.map((w) => `- ${escape(w)}`));
@@ -47,7 +47,7 @@ export async function collectLiteral(options = {}, dependencies = {}) {
       const pages = new Map(await mapLimit([...quotes], async ([url, q]) => [url, await sources.read(url, q)]));
       result.items = chosen.map(({ file, record }) => ({ file, record, hash: recordHash(record), ...literal(record, pages) }));
     } finally { await sources.close(); }
-    result.results = result.items.map(i => ({ file: i.file, id: i.record.id, literal: i.status, semantic: 'skipped', status: i.status, issues: i.issues, quotes: i.record.sources }));
+    result.results = result.items.map(i => ({ file: i.file, id: i.record.id, literal: i.status, semantic: 'skipped', status: i.status, issues: i.issues, quotes: i.record.sources, ...(i.notes ? { notes: i.notes } : {}) }));
   }
   result.exitCode = result.errors.length || result.results.some(r => r.status !== 'pass') ? 1 : 0;
   return result;
@@ -71,7 +71,7 @@ export async function judge(evidence, { model = new Claude(), cache = emptyCache
         await saves;
       }
     }
-    return { file: item.file, id: record.id, literal: item.status, semantic: checked.status, status: checked.status, issues: checked.issues, quotes: record.sources, cached: Boolean(checked.cached) };
+    return { file: item.file, id: record.id, literal: item.status, semantic: checked.status, status: checked.status, issues: checked.issues, quotes: record.sources, ...(item.notes ? { notes: item.notes } : {}), cached: Boolean(checked.cached) };
   });
   result.exitCode = result.errors.length || result.results.some(r => r.status !== 'pass') ? 1 : 0;
   return result;
