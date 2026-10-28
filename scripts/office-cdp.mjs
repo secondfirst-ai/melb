@@ -4,6 +4,7 @@ import { randomUUID, createHash } from 'node:crypto';
 import fs from 'node:fs/promises';
 import os from 'node:os';
 import path from 'node:path';
+import { renderedPricePage, CURRENCY_AMOUNT } from './price-pages.mjs';
 import { publicURL, safeError, usable } from './source.mjs';
 
 const ENDPOINT = 'http://127.0.0.1:9333';
@@ -138,12 +139,23 @@ export class OfficeReader {
       const response = await wait(page.goto(url, { waitUntil: 'domcontentloaded', timeout: this.timeout }), this.timeout, this.signal);
       if (!response?.ok()) throw Error(`办公室浏览器 HTTP ${response?.status() ?? '无响应'}`);
       await wait(this.checkURL(page.url()), this.timeout, this.signal);
-      const text = await wait(page.evaluate(() => {
+      const prices = renderedPricePage(url) || renderedPricePage(page.url());
+      if (prices) {
+        try {
+          await wait(page.waitForFunction(pattern => new RegExp(pattern, 'i').test(document.body?.innerText ?? ''), CURRENCY_AMOUNT, { timeout: this.timeout }), this.timeout, this.signal);
+        } catch (error) {
+          if (this.signal?.aborted) throw this.signal.reason;
+          throw Error('价格页等待货币金额渲染失败：' + safeError(error));
+        }
+      }
+      const text = await wait(page.evaluate(prices => {
+        // 价格页上的相邻元素用 textContent 会粘成 FreeA$0/month，取与等待条件相同的可见正文。
+        if (prices) return document.body?.innerText ?? '';
         const body = document.body?.cloneNode(true);
         if (!body) return '';
         for (const node of body.querySelectorAll('script,style,noscript,template')) node.remove();
         return body.textContent;
-      }), this.timeout, this.signal);
+      }, prices), this.timeout, this.signal);
       return usable(text, { preserveCase: this.preserveCase });
     } finally {
       controller.abort(); this.signal?.removeEventListener('abort', abort);

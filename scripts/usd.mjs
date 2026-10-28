@@ -2,6 +2,7 @@ export const USD_NOTE = 'USD 写法对上（页上写明 USD）';
 const number = '[+-]?(?:\\d{1,3}(?:,\\d{3})+|\\d+)(?:\\.\\d+)?';
 const decimal = value => Number(value.replaceAll(',', ''));
 const declaration = /(?<![\p{L}\p{N}_])(?:USD(?![\p{L}\p{N}_])|US\$|US\s+dollars?(?![\p{L}\p{N}_]))/iu;
+export const declaresUSD = text => declaration.test(text);
 
 export function usdAmounts(text) {
   const result = [];
@@ -30,10 +31,10 @@ export function usdMatch(value, text) {
 }
 
 // 只规范美元金额；句子的其余字面仍须完整出现，不能因为价格对上就放过别的改字。
-function usdLiteralSpan(quote, text) {
+function usdLiteralSpan(quote, text, { allowDeclared = true } = {}) {
   const amounts = usdAmounts(quote);
   if (!amounts.length || amounts.some(row => usdMatch(row.value, text) === 'missing')) return null;
-  const explicit = usdAmounts(text), bare = declaredDollars(text).filter(row => !explicit.some(other => row.start < other.end && row.end > other.start));
+  const explicit = usdAmounts(text), bare = allowDeclared ? declaredDollars(text).filter(row => (typeof allowDeclared !== 'function' || allowDeclared(row)) && !explicit.some(other => row.start < other.end && row.end > other.start)) : [];
   const sources = [...explicit, ...bare];
   for (const first of sources.filter(row => row.value === amounts[0].value)) {
     const start = first.start - amounts[0].start;
@@ -51,7 +52,7 @@ function usdLiteralSpan(quote, text) {
   return null;
 }
 
-export const usdLiteralMatch = (quote, text) => usdLiteralSpan(quote, text) !== null;
+export const usdLiteralMatch = (quote, text, options) => usdLiteralSpan(quote, text, options) !== null;
 
 // 原字面可能带US$，不能再用它找摘录；保留实际命中处及页上USD声明的原文。
 export function usdLiteralExcerpt(quote, text) {
