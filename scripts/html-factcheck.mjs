@@ -3,6 +3,7 @@ import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { Sources, normalizeCase, safeError, usable } from './source.mjs';
 import { OfficeReader, wait } from './office-cdp.mjs';
+import { usdAmounts, usdMatch, usdLiteralMatch, USD_NOTE } from './usd.mjs';
 
 const MAX_BYTES = 20 * 1024 * 1024;
 export const STATUSES = ['✓', '✗', '近似', '只能人看', '未核'];
@@ -71,8 +72,9 @@ function numericTokens(text) {
   take(new RegExp(`\\b(\\d{1,2})(?:st|nd|rd|th)?\\s+(${monthPattern})\\.?(?:\\s+(\\d{4}))?\\b`, 'gi'), m => date(m[1], months.findIndex(month => month.startsWith(m[2].toLowerCase())) + 1, m[3]));
   take(new RegExp(`\\b(${monthPattern})\\.?\\s+(\\d{1,2})(?:st|nd|rd|th)?(?:,?\\s+(\\d{4}))?\\b`, 'gi'), m => date(m[2], months.findIndex(month => month.startsWith(m[1].toLowerCase())) + 1, m[3]));
   // 美元先取走，不能让 US$48 / USD 48 退成普通数字、再跟澳元金额互相命中。
-  take(new RegExp(`(?<![\\p{L}\\p{N}_+\\-])([+-]?)(?:US\\$|USD\\s+\\$?)\\s*(${number})(?![\\p{L}\\p{N}_]|\\.\\d)`, 'giu'), m => ({ type: 'usd', value: decimal(m[1] + m[2]) }));
-  take(new RegExp(`(?<![\\p{L}\\p{N}_.+\\-])([+-]?\\$\\s*)?(${number})\\s+USD\\b`, 'giu'), m => ({ type: 'usd', value: decimal((m[1]?.trim().startsWith('-') ? '-' : '') + m[2]) }));
+  const dollars = usdAmounts(rest);
+  for (const token of dollars) tokens.push({ label: token.label, type: 'usd', value: token.value });
+  for (const token of dollars.reverse()) rest = rest.slice(0, token.start) + ' '.repeat(token.end - token.start) + rest.slice(token.end);
   // 标题里的「课程名 - $330」是分隔号；金额前紧贴的 -$330 / $-330 才带符号。
   take(new RegExp(`(?<![\\p{L}\\p{N}_+\\-])([+-]?)(?:AU?\\$|\\$|AUD\\s+\\$?)\\s*(${number})(?:\\s+AUD\\b)?(?![\\p{L}\\p{N}_]|\\.\\d)`, 'giu'), m => ({ type: 'money', value: decimal(m[1] + m[2]) }));
   take(new RegExp(`(?<![\\p{L}\\p{N}_.+\\-])(${number})\\s+AUD\\b`, 'giu'), m => ({ type: 'money', value: decimal(m[1]) }));
@@ -126,10 +128,12 @@ function contains(text, value, joinedLetters = false) {
 }
 const loose = s => normalizeCase(s).toLowerCase().replace(/[^\p{L}\p{N}\s]/gu, (punct, offset, value) => /[.,:/+-]/.test(punct) && /\d/.test(value[offset - 1] ?? '') && /\d/.test(value[offset + 1] ?? '') ? punct : ' ').replace(/\s+/g, ' ').trim();
 function matchToken(token, document) {
+  if (token.type === 'usd') { const match = usdMatch(token.value, document.text); return match === 'declared' ? 'usd' : match; }
   if (token.type === 'phrase') {
     // 相邻元素的 textContent 会粘字；多词原话逐字存在就算命中，单词和数字/金额仍守原边界。
     const joined = token.quoted && token.value.split(/\s+/).filter(word => /\p{L}/u.test(word)).length >= 2 && !/\p{N}/u.test(token.value) && !numericTokens(token.value).length;
     if (contains(document.text, token.value, joined)) return 'exact';
+    if (usdLiteralMatch(token.value, document.text)) return 'usd';
     const approximate = loose(token.value);
     if (approximate && contains(loose(document.text), approximate)) return 'near';
     return 'missing';
@@ -214,8 +218,8 @@ export async function factcheckHTML(html, { cdp = false, caller = 'factcheck', e
       const missing = outcomes.filter(o => !o.matches.some(m => m !== 'missing')).map(o => o.token.label);
       const unreadable = row.urls.filter(url => !pages.get(url)?.document || missingQuote(row) && pages.get(url)?.renderError);
       const unresolved = unreadable.length || row.missingRefs.length;
-      const status = !documents.length || missing.length && unresolved ? '未核' : missing.length ? '✗' : outcomes.some(o => !o.matches.includes('exact')) ? '近似' : '✓';
-      return { ...row, status, missing, unreadable, mayNeedBrowser: !cdp && missingQuote(row) && row.urls.some(url => pages.get(url)?.mayNeedBrowser), errors: unreadable.map(url => `${url}：${pages.get(url)?.renderError ?? pages.get(url)?.error ?? '没有出处正文'}`) };
+      const status = !documents.length || missing.length && unresolved ? '未核' : missing.length ? '✗' : outcomes.some(o => !o.matches.some(match => match === 'exact' || match === 'usd')) ? '近似' : '✓';
+      return { ...row, status, missing, ...(outcomes.some(o => o.matches.includes('usd')) ? { note: USD_NOTE } : {}), unreadable, mayNeedBrowser: !cdp && missingQuote(row) && row.urls.some(url => pages.get(url)?.mayNeedBrowser), errors: unreadable.map(url => `${url}：${pages.get(url)?.renderError ?? pages.get(url)?.error ?? '没有出处正文'}`) };
     });
   } finally { try { await office?.close(); } finally { await sources.close(); } }
 }
@@ -238,9 +242,9 @@ export function formatHTML(results, all = false) {
   const counts = Object.fromEntries(STATUSES.map(status => [status, 0])), lines = [];
   for (const row of results) {
     counts[row.status]++;
-    if (!all && ['✓', '只能人看'].includes(row.status)) continue;
+    if (!all && ['✓', '只能人看'].includes(row.status) && !row.note) continue;
     const detail = row.status === '✗' ? `；缺：${row.missing.join('、')}` : row.status === '未核' ? `；${[...(row.errors ?? []), ...(row.missingRefs ?? []).map(ref => `${ref} 没有出处网址`)].join('；')}` : row.status === '近似' ? '；只差大小写或标点' : row.reviewDate ? '；核对日期句，仅供人看' : '';
-    lines.push(`${row.status}\t${row.text}${detail}${row.mayNeedBrowser ? '；可能要浏览器渲染' : ''}；出处：${row.urls.join('、') || '无'}`);
+    lines.push(`${row.status}\t${row.text}${detail}${row.note ? '；' + row.note : ''}${row.mayNeedBrowser ? '；可能要浏览器渲染' : ''}；出处：${row.urls.join('、') || '无'}`);
   }
   lines.push('汇总：' + STATUSES.map(status => `${status} ${counts[status]}`).join(' · '));
   return lines.join('\n') + '\n';

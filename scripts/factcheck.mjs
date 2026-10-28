@@ -4,6 +4,7 @@ import { pathToFileURL } from 'node:url';
 import { Sources, normalize, excerpt, safeError, usable } from './source.mjs';
 import { OfficeReader, wait } from './office-cdp.mjs';
 import { checkGuide, formatHTML } from './html-factcheck.mjs';
+import { usdLiteralMatch, usdLiteralExcerpt, USD_NOTE } from './usd.mjs';
 
 class UsageError extends Error {}
 const USAGE = '用法：node scripts/factcheck.mjs in.json|- [--cdp] [--caller 名字] 或 --html <文件或公开网址> [--cdp] [--all] [--caller 名字]';
@@ -42,9 +43,10 @@ export async function factcheck(value, { cdp = false, caller = 'factcheck', env 
     }
     return rows.map(row => {
       const page = pages.get(new URL(row.url).href), needle = normalize(row.quote);
-      const document = page.documents.find(document => document.text.includes(needle)) ?? page.documents.at(-1);
+      const document = page.documents.find(document => document.text.includes(needle)) ?? page.documents.find(document => usdLiteralMatch(needle, document.text)) ?? page.documents.at(-1);
       if (!document) return { url: row.url, quote: row.quote, status: 'unreachable', via: page.via, excerpt: '', error: page.errors.join('；') || '无法取得正文' };
-      return { url: row.url, quote: row.quote, status: document.text.includes(needle) ? 'found' : 'not_found', via: document.via, excerpt: excerpt(document.text, row.quote) };
+      const exact = document.text.includes(needle), usd = !exact && usdLiteralMatch(needle, document.text);
+      return { url: row.url, quote: row.quote, status: exact || usd ? 'found' : 'not_found', ...(usd ? { note: USD_NOTE } : {}), via: document.via, excerpt: usd ? usdLiteralExcerpt(needle, document.text) : excerpt(document.text, row.quote) };
     });
   } finally {
     try { await office?.close(); } finally { await sources.close(); }
