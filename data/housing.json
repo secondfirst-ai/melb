@@ -157,8 +157,8 @@
     "中介多久内必须提供租金收据"
    ],
    "answer": {
-    "en": "Yes. Rental providers or their agents must give a receipt immediately if rent is paid in person, and within five business days of a request. Rental providers must also keep rent records for at least 12 months.",
-    "zh": "要。房东或其中介必须在当面付租时立即出具收据；其他情况下，须在收到要求后的五个工作日内提供。房东还必须将租金记录保存至少12个月。"
+    "en": "Yes. Rental providers or their agents must give a receipt immediately if rent is paid in person. They must also give one within five business days of a request. Rental providers must also keep rent records for at least 12 months.",
+    "zh": "要。房东或其中介必须在当面付租时立即出具收据，并且在收到要求后的五个工作日内也须提供收据。房东还必须将租金记录保存至少12个月。"
    },
    "sources": [
     {
@@ -259,8 +259,8 @@
   {
    "id": "victoria-who-can-evict-a-renter",
    "question": {
-    "en": "Can my landlord kick me out or change the locks without going through VCAT in Victoria?",
-    "zh": "在维多利亚州，房东可以不经过VCAT直接赶我走或换锁吗？"
+    "en": "Can my landlord evict me themselves without going through VCAT in Victoria?",
+    "zh": "在维多利亚州，房东可以不经过VCAT自己把我赶走吗？"
    },
    "aliases": [
     "Who can evict a tenant in Victoria?",
@@ -269,8 +269,8 @@
     "谁有权驱逐租客"
    ],
    "answer": {
-    "en": "No. A rental provider, rooming house operator or park owner or operator cannot personally evict a renter, physically or otherwise. Only the police can evict a renter, and only when they have a warrant of possession from VCAT.",
-    "zh": "不可以。房东、寄宿屋经营者或营地业主/经营者不得亲自以任何方式（包括人身方式）驱逐租客。只有警察可以驱逐租客，而且必须持有VCAT签发的占有令（warrant of possession）。"
+    "en": "A rental provider, rooming house operator or park owner or operator cannot personally evict a renter, physically or otherwise. Only the police can evict a renter, and only when they have a warrant of possession from VCAT.",
+    "zh": "房东、寄宿屋经营者或营地业主/经营者不得亲自以任何方式（包括人身方式）驱逐租客。只有警察可以驱逐租客，而且必须持有VCAT签发的占有令（warrant of possession）。"
    },
    "sources": [
     {
@@ -572,8 +572,8 @@
     "租客可以单独发起押金申领吗"
    ],
    "answer": {
-    "en": "Yes. Any renter with their name on the bond can start the bond claim after the agreement ends, and must first authenticate their identity with Service Victoria. The RTBA gives the other parties on the bond 14 days to contest the claim by applying to VCAT or RDRV. If no one contests, the bond is repaid as directed in the claim at the end of the 14-day period.",
-    "zh": "可以。押金上列名的任何一位租客，都可以在租约结束后自行发起押金申领，但须先通过Service Victoria验证身份。RTBA会给押金上的其他各方14天时间，通过向VCAT或RDRV申请来对申领提出异议。如果无人提出异议，14天期满后押金将按申领内容退还。"
+    "en": "Yes. Any renter with their name on the bond can start the bond claim after the agreement ends, and must first authenticate their identity with Service Victoria. The RTBA gives the other parties on the bond 14 days to contest the claim by applying to VCAT or RDRV. If no one contests, the bond is repaid as directed in the claim at the end of the 14-day period, or sooner if all parties agree.",
+    "zh": "可以。押金上列名的任何一位租客，都可以在租约结束后自行发起押金申领，但须先通过Service Victoria验证身份。RTBA会给押金上的其他各方14天时间，通过向VCAT或RDRV申请来对申领提出异议。如果无人提出异议，押金将在14天期满时按申领内容退还；如果所有各方同意，也可以提前退还。"
    },
    "sources": [
     {
@@ -1231,8 +1231,8 @@
     "负担不起可以申诉涨租吗"
    ],
    "answer": {
-    "en": "The first step is to get a rent assessment from Consumer Affairs Victoria, which works out the property's market rental value. If the report confirms the rent is excessive but the rental provider will not reduce it, the renter must apply to RDRV within 30 days of receiving the report. Under Victorian rental laws, affordability is not a valid reason to challenge a rent increase.",
-    "zh": "第一步是向维多利亚州消费者事务局（Consumer Affairs Victoria）申请租金评估，由其核算该房产的市场租金。如果报告确认租金过高但房东仍不同意降租，租客必须在收到报告后30天内向RDRV提出申请。根据维州租赁法律，负担能力不是挑战涨租的有效理由。"
+    "en": "The first step is to get a rent assessment from Consumer Affairs Victoria, which works out the property's market rental value. If the report confirms the rent is excessive but the rental provider will not reduce it, the renter can apply to RDRV, and must apply within 30 days of receiving the report. Under Victorian rental laws, affordability is not a valid reason to challenge a rent increase.",
+    "zh": "第一步是向维多利亚州消费者事务局（Consumer Affairs Victoria）申请租金评估，由其核算该房产的市场租金。如果报告确认租金过高但房东仍不同意降租，租客可以向RDRV申请协助，并且必须在收到报告后30天内提出申请。根据维州租赁法律，负担能力不是挑战涨租的有效理由。"
    },
    "sources": [
     {
@@ -1385,8 +1385,8 @@
     "怎么把我从租客黑名单里删除"
    ],
    "answer": {
-    "en": "Renter databases, also called blacklists, contain the renting history of some renters. Before listing a renter, the rental provider, real estate agent or database operator must tell the renter in writing and give them 14 days to object. A renter listed inappropriately can ask the rental provider to remove the listing or apply to VCAT. Listings must be removed from databases after three years.",
-    "zh": "租客数据库（又称“黑名单”）记录了部分租客的租房历史。在将租客列入数据库之前，房东、房产中介或数据库运营方必须书面通知租客，并给其14天提出异议。如果租客被不当列入，可以要求房东删除，也可以向VCAT申请删除。列入数据库的记录须在三年后删除。"
+    "en": "Renter databases, also called blacklists, contain the renting history of some renters. Before listing a renter, the rental provider, real estate agent or database operator must tell the renter in writing and give them 14 days to object. A renter listed inappropriately can ask the rental provider to remove the listing, or apply to VCAT to have the listing removed. Listings must be removed from databases after three years.",
+    "zh": "租客数据库（又称“黑名单”）记录了部分租客的租房历史。在将租客列入数据库之前，房东、房产中介或数据库运营方必须书面通知租客，并给其14天提出异议。如果租客被不当列入，可以要求房东删除该记录，也可以向VCAT申请删除该记录。列入数据库的记录须在三年后删除。"
    },
    "sources": [
     {
@@ -1426,13 +1426,17 @@
     "房东能因为残障拒绝租房吗"
    ],
    "answer": {
-    "en": "No. A rental provider or agent cannot refuse to rent out premises to someone because they will have a child living with them, and for this law children are under the age of 16. Rental providers and agents also must not discriminate against prospective renters who have a disability.",
-    "zh": "不可以。房东或中介不能因为租客将有孩子同住而拒绝出租房屋，在这条法律中，儿童指16岁以下的人。房东和中介也不得歧视有残障的准租客。"
+    "en": "A rental provider or agent cannot refuse to rent out premises to someone because they will have a child living with them, and for this law children are under the age of 16. The page lists the only reasons a rental provider can refuse to rent to someone with children. Rental providers and agents also must not discriminate against prospective renters who have a disability.",
+    "zh": "房东或中介不能因为租客将有孩子同住而拒绝出租房屋，在这条法律中，儿童指16岁以下的人。该页面列出了房东可以拒绝把房子租给带孩子者的仅有几种原因。房东和中介也不得歧视有残障的准租客。"
    },
    "sources": [
     {
      "url": "https://www.consumer.vic.gov.au/housing/renting/legal-and-dispute-support/unlawful-discrimination",
      "quote": "A rental provider (landlord) or agent cannot refuse to rent out premises to someone because they will have a child living with them. For this law, children are defined as being under the age of 16."
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/legal-and-dispute-support/unlawful-discrimination",
+     "quote": "The only reasons a rental provider can refuse to rent their property to someone with children is if the property is:"
     },
     {
      "url": "https://www.consumer.vic.gov.au/housing/renting/legal-and-dispute-support/unlawful-discrimination",
@@ -1458,8 +1462,8 @@
     "房东什么时候要开始保存最低标准记录"
    ],
    "answer": {
-    "en": "From 13 October 2026, all rental providers must keep records sufficient to show the property meets the rental minimum standards. Rental providers and their agents must keep records showing the property met the minimum rental standards before it was advertised or offered for rent. They must also keep records showing it met the standards before the renter moved in.",
-    "zh": "自2026年10月13日起，所有房东都必须保存足以证明房产符合出租最低标准的记录。房东及其中介必须保存记录，证明房产在刊登广告或对外出租之前已符合最低出租标准。他们还必须保存记录，证明房产在租客入住之前已符合标准。"
+    "en": "From 13 October 2026, all rental providers must keep records sufficient to show the property meets the rental minimum standards. Rental providers and their agents must keep records showing the property met the minimum rental standards before it was advertised or offered for rent. Rental providers must also keep records showing it met the standards before the renter moved in.",
+    "zh": "自2026年10月13日起，所有房东都必须保存足以证明房产符合出租最低标准的记录。房东及其中介必须保存记录，证明房产在刊登广告或对外出租之前已符合最低出租标准。房东还必须保存记录，证明房产在租客入住之前已符合标准。"
    },
    "sources": [
     {
