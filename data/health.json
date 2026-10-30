@@ -1289,8 +1289,8 @@
         "私立医院急诊 Medicare 报销吗"
       ],
       "answer": {
-        "en": "Some private hospitals may have emergency departments and may charge fees for medical services, which may not be covered by Medicare. The page says that if you are uncertain and you can, you can ask the triage nurse about costs when you arrive.",
-        "zh": "部分私立医院可能设有急诊部，并可能收取医疗服务费用，这些医疗服务费用可能不在 Medicare 报销范围内。页面说，如果你不确定并且条件允许，到达时可以向分诊护士询问费用。"
+        "en": "Some private hospitals may have emergency departments and charge fees for medical services, which may not be covered by Medicare. The page says that if you are uncertain and you can, you can ask the triage nurse about costs when you arrive.",
+        "zh": "部分私立医院可能设有急诊部并收取医疗服务费用，这些医疗服务费用可能不在 Medicare 报销范围内。页面说，如果你不确定并且条件允许，到达时可以向分诊护士询问费用。"
       },
       "sources": [
         {
