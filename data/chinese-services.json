@@ -57,8 +57,8 @@
     "Do I need the phone number of the place I want to call when using TIS?"
    ],
    "answer": {
-    "en": "You will be asked to provide your name, the name of the organisation you need to contact and the phone number of that organisation. You may also be asked for any information the agency has requested be recorded by TIS National, such as an identification number or claim number.",
-    "zh": "接通口译员后，会被要求提供自己的姓名、要联系的机构名称和该机构的电话号码。有些机构还可能要求记录其他信息，例如身份编号或索赔编号。"
+    "en": "A caller is asked to provide their name, the name of the organisation they need to contact and that organisation's phone number. A caller may also be asked for any information the agency has requested be recorded by TIS National, such as an identification number or claim number.",
+    "zh": "来电者会被要求提供自己的姓名、要联系的机构名称和该机构的电话号码。来电者还可能被要求提供机构要求 TIS National 记录的其他信息，例如身份编号或索赔编号。"
    },
    "sources": [
     {
@@ -67,7 +67,15 @@
     },
     {
      "url": "https://www.tisnational.gov.au/en/Non-English-speakers/Interpreting-services",
-     "quote": "The interpreter will tell the TIS National operator who you need to contact and the operator will proceed to call and connect you and the interpreter to the organisation requested."
+     "quote": "your name"
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Non-English-speakers/Interpreting-services",
+     "quote": "the name of the organisation you need to contact"
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Non-English-speakers/Interpreting-services",
+     "quote": "the phone number of the organisation you need to contact."
     },
     {
      "url": "https://www.tisnational.gov.au/en/Non-English-speakers/Interpreting-services",
@@ -199,7 +207,7 @@
    ],
    "answer": {
     "en": "TIS National provides interpreting services to a wide range of agencies and businesses throughout Australia. Its clients include state and federal government departments, utility companies, telecommunication companies, emergency services, legal services and settlement and community service providers. If the agency or business provides an interpreting service phone number that is not 131 450, that number should be dialled before contacting TIS National.",
-    "zh": "TIS National 为全澳各地的许多机构和企业提供口译服务，客户包括联邦和州政府部门、公用事业公司、电信公司、紧急服务机构、法律服务机构以及安置和社区服务机构。如果要联系的机构提供的口译电话不是 131 450，应先拨该机构提供的号码，再考虑联系 TIS National。"
+    "zh": "TIS National 为全澳各地的许多机构和企业提供口译服务，客户包括联邦和州政府部门、公用事业公司、电信公司、紧急服务机构、法律服务机构以及安置和社区服务机构。如果要联系的机构提供的口译电话不是 131 450，应先拨该机构提供的号码，然后再联系 TIS National。"
    },
    "sources": [
     {
@@ -209,6 +217,26 @@
     {
      "url": "https://www.tisnational.gov.au/en/Non-English-speakers/Help-using-TIS-National",
      "quote": "Some of our clients include:"
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Non-English-speakers/Help-using-TIS-National",
+     "quote": "utility companies"
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Non-English-speakers/Help-using-TIS-National",
+     "quote": "telecommunication companies"
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Non-English-speakers/Help-using-TIS-National",
+     "quote": "emergency services"
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Non-English-speakers/Help-using-TIS-National",
+     "quote": "legal services"
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Non-English-speakers/Help-using-TIS-National",
+     "quote": "settlement and community service providers."
     },
     {
      "url": "https://www.tisnational.gov.au/en/Non-English-speakers/Help-using-TIS-National",
@@ -481,8 +509,8 @@
     "Does the Free Interpreting Service cover tenancy agreements?"
    ],
    "answer": {
-    "en": "The Free Interpreting Service (FIS) can be used for any private residential property matter in Australia, but not for corporate non-residential property matters such as commercial leases and sales. Real estate agencies are eligible if they hold a real estate agent licence, provide private residential property services (rental or sales), and provide services to anyone in Australia who is eligible for Medicare.",
-    "zh": "免费口译服务（FIS）可用于澳大利亚的任何私人住宅物业事务，但不能用于商业租约和买卖等企业非住宅物业事务。持有房地产中介牌照、提供私人住宅租赁或买卖服务、且服务对象为符合 Medicare 资格的人的中介机构可以使用。"
+    "en": "The Free Interpreting Service (FIS) can be used for any private residential property matter in Australia, but not for corporate non-residential property matters such as commercial leases and sales. Real estate agencies are eligible if they hold a real estate agent licence, provide private residential property services (rental or sales), and provide services to anyone in Australia who is eligible for Medicare (Australian citizens, permanent residents and select temporary visa holders).",
+    "zh": "免费口译服务（FIS）可用于澳大利亚的任何私人住宅物业事务，但不能用于商业租约和买卖等企业非住宅物业事务。符合条件的中介机构需持有房地产中介牌照，提供私人住宅租赁或买卖服务，并且服务对象是澳大利亚境内任何符合 Medicare 资格的人（澳大利亚公民、永久居民和部分临时签证持有人）。"
    },
    "sources": [
     {
@@ -557,8 +585,8 @@
     "Do pharmacies have access to free interpreters in Australia?"
    ],
    "answer": {
-    "en": "Yes. The Free Interpreting Service (FIS) gives eligible pharmacies free access to professional interpreters to communicate with customers with limited English proficiency. Pharmacies can use the FIS to dispense medication, provide advice, assist with diagnosis, support vaccinations and deliver other pharmacy services.",
-    "zh": "可以。免费口译服务（FIS）让符合条件的药房免费使用专业口译员与英语水平有限的顾客沟通。药房可以用它来配药、提供建议、协助诊断、支持疫苗接种及提供其他药房服务。"
+    "en": "The Free Interpreting Service (FIS) gives pharmacies free access to professional interpreters to communicate with customers with limited English proficiency, and it can be used to dispense medication, provide advice, assist with diagnosis, support vaccinations and deliver other pharmacy services. It can be used if the pharmacy has a PBS approval number or the pharmacist is registered with AHPRA, they are working in a community setting, and they are serving anyone in Australia who is eligible for Medicare (Australian citizens, permanent residents and select temporary visa holders).",
+    "zh": "免费口译服务（FIS）让药房免费使用专业口译员与英语水平有限的顾客沟通，可用于配药、提供建议、协助诊断、支持疫苗接种及提供其他药房服务。使用条件是药房有 PBS 批准号码或药剂师已在 AHPRA 注册，在社区环境工作，并且服务对象是澳大利亚境内任何符合 Medicare 资格的人（澳大利亚公民、永久居民和部分临时签证持有人）。"
    },
    "sources": [
     {
@@ -568,6 +596,18 @@
     {
      "url": "https://www.tisnational.gov.au/en/Our-services/Free-Interpreting-Service/Eligible-groups/Pharmacies",
      "quote": "to dispense medication, provide advice, assist with diagnosis, support vaccinations, and deliver other pharmacy services"
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Our-services/Free-Interpreting-Service/Eligible-groups/Pharmacies",
+     "quote": "the pharmacy has a PBS approval number, or the pharmacist is registered with AHPRA, and"
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Our-services/Free-Interpreting-Service/Eligible-groups/Pharmacies",
+     "quote": "they are working in a community setting, and"
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Our-services/Free-Interpreting-Service/Eligible-groups/Pharmacies",
+     "quote": "they are delivering services to anyone in Australia who is eligible for Medicare (Australian citizens, permanent residents and select temporary visa holders)."
     }
    ],
    "tags": [
@@ -800,10 +840,14 @@
     "Can I pay TIS National to translate a document?"
    ],
    "answer": {
-    "en": "No. TIS National currently does not offer general or commercial translation services other than the Free Translating Service. Questions about translation services can be submitted through the Contact us form, selecting ‘other’ as the enquiry type, and the Translating Services team will respond.",
-    "zh": "不提供。TIS National 目前不提供免费笔译服务以外的其他一般或商业翻译服务。有关翻译服务的问题，可以提交“联系我们”表单，并选择“其他”作为咨询类型，笔译服务团队会回复。"
+    "en": "No. TIS National currently does not offer other general or commercial translation services; it delivers the Free Translating Service to eligible applicants. Questions about translation services can be submitted through the Contact us form, selecting ‘other’ as the enquiry type, and the Translating Services team will respond.",
+    "zh": "不提供。TIS National 目前不提供其他一般或商业翻译服务，只向符合条件的申请人提供免费笔译服务（Free Translating Service）。有关翻译服务的问题，可以提交“联系我们”表单，并选择“其他”作为咨询类型，笔译服务团队（Translating Services team）会回复。"
    },
    "sources": [
+    {
+     "url": "https://www.tisnational.gov.au/en/Non-English-speakers/Other-services-for-non-English-speakers",
+     "quote": "TIS National delivers the Free Translating Service to eligible applicants."
+    },
     {
      "url": "https://www.tisnational.gov.au/en/Non-English-speakers/Other-services-for-non-English-speakers",
      "quote": "Currently, we do not offer other general or commercial translation services."
@@ -1636,7 +1680,7 @@
    ],
    "answer": {
     "en": "Door-to-door salespeople must say why they are visiting, give their name and company, and say they must leave if asked (if asked to leave they cannot contact the person again for at least 30 days). They must also explain the right to cancel the contract and provide a written copy before any contract is signed. They must not ask for payment within 10 business days of signing, or supply goods priced over $500 within that period.",
-    "zh": "上门推销员必须告知造访原因、自己的名字和公司，以及如果被要求离开就必须离开（被要求离开后至少 30 天内不能再联系），还要告知取消合约的权利。他们必须在签署任何合约前提供书面副本，签署合约后 10 个工作日内不得要求付款，也不得提供标价超过 500 澳元的货物或服务。"
+    "zh": "上门推销员必须告知造访原因、自己的名字和公司，以及如果被要求离开就必须离开（被要求离开后至少 30 天内不能再联系），还要告知取消合约的权利。他们必须在签署任何合约前提供书面副本，签署合约后 10 个工作日内不得要求付款，也不得提供标价超过 500 澳元的货物。"
    },
    "sources": [
     {
