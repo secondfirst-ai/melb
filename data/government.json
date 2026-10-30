@@ -59,8 +59,8 @@
     "不投票罚款多少澳元"
    ],
    "answer": {
-    "en": "For elections held between 1 July 2026 and 30 June 2027, the fine for not voting is $105. For elections held between 1 July 2025 and 30 June 2026, the fine is $102. The source says this applies to not voting in state and local council elections run by the Victorian Electoral Commission.",
-    "zh": "在 2026 年 7 月 1 日至 2027 年 6 月 30 日期间举行的选举中，不投票的罚款是 105 澳元。在 2025 年 7 月 1 日至 2026 年 6 月 30 日期间举行的选举中，罚款是 102 澳元。该来源说明这适用于由维州选举委员会负责的州选举和地方市政选举。"
+    "en": "For elections held between 1 July 2026 and 30 June 2027, the fine for not voting is $105. For elections held between 1 July 2025 and 30 June 2026, the fine is $102.",
+    "zh": "在 2026 年 7 月 1 日至 2027 年 6 月 30 日期间举行的选举中，不投票的罚款是 105 澳元。在 2025 年 7 月 1 日至 2026 年 6 月 30 日期间举行的选举中，罚款是 102 澳元。"
    },
    "sources": [
     {
@@ -70,10 +70,6 @@
     {
      "url": "https://www.vec.vic.gov.au/voting/fines-and-reviews",
      "quote": "For elections held between 1 July 2025 and 30 June 2026, the fine for not voting is $102"
-    },
-    {
-     "url": "https://www.vec.vic.gov.au/voting/fines-and-reviews",
-     "quote": "The Australian Electoral Commission runs Federal elections and the Victorian Electoral Commission runs state and local council elections."
     }
    ],
    "tags": [
@@ -228,8 +224,8 @@
     "查询选民登记状态"
    ],
    "answer": {
-    "en": "Use the Victorian Electoral Commission's Check my enrolment service to check your enrolment details for Victorian state and local council elections. To protect your privacy, you must enter your name and address exactly as they appear on the electoral roll. If you are a silent elector, your details will not appear there and you need to call 131 832.",
-    "zh": "可以使用维州选举委员会的“Check my enrolment”服务查询你在维州州选举和地方市政选举中的登记资料。为保护隐私，你必须按选民名册上的写法准确输入姓名和地址。如果你是“silent elector”（隐名选民），你的资料不会显示在该服务中，需要致电 131 832。"
+    "en": "Use the Victorian Electoral Commission's Check my enrolment service to check your enrolment details for Victorian state and local council elections. To protect your privacy, you must enter your name and address exactly as they appear on the electoral roll.",
+    "zh": "可以使用维州选举委员会的“Check my enrolment”服务查询你在维州州选举和地方市政选举中的登记资料。为保护隐私，你必须按选民名册上的写法准确输入姓名和地址。"
    },
    "sources": [
     {
@@ -239,10 +235,6 @@
     {
      "url": "https://www.vec.vic.gov.au/enrolment/check-my-enrolment",
      "quote": "To protect your privacy you must enter your name and address exactly as they appear on the electoral roll."
-    },
-    {
-     "url": "https://www.vec.vic.gov.au/enrolment/check-my-enrolment",
-     "quote": "If you're a silent elector, your enrolment details won't appear in Check my enrolment. Please call us on 131 832 for help."
     }
    ],
    "tags": [
@@ -299,8 +291,8 @@
     "council-enrolled voter 是什么"
    ],
    "answer": {
-    "en": "Possibly. You can apply to become a council-enrolled voter directly with your council if you are a property owner, occupier or represent a corporation, and you are not a state-enrolled voter within the council area. Once you are on the council roll, you must vote and may be fined if you do not. You will not be fined if you choose not to become a council-enrolled voter.",
-    "zh": "有可能。如果你是业主、占用人或公司代表，而且不是该市政区内的州选民，可以直接向市政府申请成为 council-enrolled voter（市政登记选民）。一旦列入市政选民册，你就必须投票，不投票可能被罚款。如果你选择不成为市政登记选民，则不会被罚款。"
+    "en": "Possibly. You can apply to become a council-enrolled voter directly with your council if you are 18 years or older, a property owner, occupier or represent a corporation, and you are not a state-enrolled voter within the council area. Once you are on the council roll, you must vote and may be fined if you do not. You will not be fined if you choose not to become a council-enrolled voter.",
+    "zh": "有可能。如果你年满 18 岁，是业主、占用人或公司代表，而且不是该市政区内的州选民，可以直接向市政府申请成为 council-enrolled voter（市政登记选民）。一旦列入市政选民册，你就必须投票，不投票可能被罚款。如果你选择不成为市政登记选民，则不会被罚款。"
    },
    "sources": [
     {
@@ -310,6 +302,10 @@
     {
      "url": "https://www.vec.vic.gov.au/enrolment/enrol-to-vote/enrolling-for-local-council-elections",
      "quote": "You can apply to become a council-enrolled voter directly with your council if you are:"
+    },
+    {
+     "url": "https://www.vec.vic.gov.au/enrolment/enrol-to-vote/enrolling-for-local-council-elections",
+     "quote": "18 years or older"
     },
     {
      "url": "https://www.vec.vic.gov.au/enrolment/enrol-to-vote/enrolling-for-local-council-elections",
@@ -512,8 +508,8 @@
     "电子出生证明谁可以申请"
    ],
    "answer": {
-    "en": "Yes, for children born on or after 19 February 2019. The Victorian Government has introduced free digital birth certificates for Victorians born on or after that date. A digital certificate can be added to the Service Victoria app, and you can also apply for it later through Service Victoria.",
-    "zh": "可以，但仅限于 2019 年 2 月 19 日及之后出生的孩子。维州政府为在该日期当天或之后出生的维州人推出了免费的电子出生证明。电子证书可以添加到 Service Victoria 应用中，你也可以之后再通过 Service Victoria 申请。"
+    "en": "Yes, for children born on or after 19 February 2019. The Victorian Government has introduced free digital birth certificates for Victorians born on or after that date. Digital certificates are automatically added to your digital wallet in the Service Victoria app, and a parent can apply for the child's digital birth certificate when registering the birth or later through Service Victoria.",
+    "zh": "可以，适用于 2019 年 2 月 19 日及之后出生的孩子。维州政府为在该日期当天或之后出生的维州人推出了免费的电子出生证明。电子证书会自动添加到你在 Service Victoria 应用中的数字钱包，家长可以在登记出生时，或之后通过 Service Victoria 为孩子申请电子出生证明。"
    },
    "sources": [
     {
@@ -554,8 +550,8 @@
     "BDM 出生证明处理时间"
    ],
    "answer": {
-    "en": "A paper birth certificate takes up to 14 days (2 weeks), and a digital certificate is immediate if the birth is already registered. A commemorative birth certificate takes up to 28 days (4 weeks). The processing time starts when BDM receives all required documents, and extra time is needed for public holidays and postage.",
-    "zh": "纸质出生证明最长需要 14 天（2 周）；如果出生已登记，电子证书可以立即获得。纪念版出生证明最长需要 28 天（4 周）。处理时间从 BDM 收到全部所需文件时开始计算，遇到公共假期和邮寄还需要额外时间。"
+    "en": "A paper birth certificate takes up to 14 days (2 weeks), and a digital certificate is immediate if the birth is already registered. A commemorative birth certificate takes up to 28 days (4 weeks). The processing time starts when BDM receives all required documents, and BDM says to allow extra time for public holidays and postage.",
+    "zh": "纸质出生证明最长需要 14 天（2 周）；如果出生已登记，电子证书可以立即获得。纪念版出生证明最长需要 28 天（4 周）。处理时间从 BDM 收到全部所需文件时开始计算，BDM 提示遇到公共假期和邮寄时要预留额外时间。"
    },
    "sources": [
     {
@@ -837,26 +833,17 @@
    "aliases": [
     "Can a wedding be held by video call in Victoria?",
     "How many witnesses are needed for a wedding in Victoria?",
-    "Who can marry us in Victoria?",
     "维州可以视频结婚吗",
     "结婚需要几个证人"
    ],
    "answer": {
-    "en": "No. A marriage must be solemnised in the physical presence of a celebrant and two witnesses. Marriages in Victoria must be performed by an authorised celebrant, such as a registered civil marriage celebrant or an authorised minister of religion.",
-    "zh": "不可以。婚姻必须在证婚人（celebrant）和两名见证人亲自在场的情况下完成。维多利亚州的婚礼必须由获授权的证婚人主持，例如注册的民事婚姻证婚人或获授权的宗教教士。"
+    "en": "No. A marriage must be solemnised in the physical presence of a celebrant and two witnesses.",
+    "zh": "不可以。婚姻必须在证婚人（celebrant）和两名见证人亲自在场的情况下完成。"
    },
    "sources": [
     {
      "url": "https://www.bdm.vic.gov.au/getting-married-victoria",
      "quote": "No. A marriage must be solemnised in the physical presence of a celebrant and two witnesses."
-    },
-    {
-     "url": "https://www.bdm.vic.gov.au/getting-married-victoria",
-     "quote": "Marriages in Victoria must be performed by an authorised celebrant, such as:"
-    },
-    {
-     "url": "https://www.bdm.vic.gov.au/getting-married-victoria",
-     "quote": "Be married by a registered civil marriage celebrant or an authorised minister of religion"
     }
    ],
    "tags": [
@@ -930,13 +917,11 @@
    "aliases": [
     "How do I change my surname after marriage in Victoria?",
     "Change of name after marriage BDM",
-    "How much does a change of name cost in Victoria?",
-    "结婚后改姓怎么办",
-    "改名需要多少钱"
+    "结婚后改姓怎么办"
    ],
    "answer": {
-    "en": "If you married in Australia, you do not need to apply for a change of name. You give the relevant organisations a copy of your Australian marriage certificate. A formal change of name registration is a separate process, and its fee is $89.50, which is non-refundable.",
-    "zh": "如果你在澳大利亚结婚，就不需要申请更改姓名，只需把澳大利亚的结婚证书副本提供给相关机构。正式的更改姓名登记是另一套程序，费用为 89.50 澳元，不予退还。"
+    "en": "If you married in Australia, you do not need to apply for a change of name. You give the relevant organisations a copy of your Australian marriage certificate.",
+    "zh": "如果你在澳大利亚结婚，就不需要申请更改姓名，只需把澳大利亚的结婚证书副本提供给相关机构。"
    },
    "sources": [
     {
@@ -946,19 +931,13 @@
     {
      "url": "https://www.bdm.vic.gov.au/change-name",
      "quote": "Just give the relevant organisations a copy of your Australian marriage certificate."
-    },
-    {
-     "url": "https://www.bdm.vic.gov.au/fees",
-     "quote": "Change of name registration fee of $89.50 is non-refundable."
     }
    ],
    "tags": [
     "name-change",
-    "bdm",
-    "fee"
+    "bdm"
    ],
-   "checked": "2026-10-30",
-   "valid_until": "2027-06-30"
+   "checked": "2026-10-30"
   },
   {
    "id": "victoria-wwcc-who-needs-one",
@@ -975,7 +954,7 @@
    ],
    "answer": {
     "en": "You qualify for a Working with Children Check if all 5 of the page's criteria are true. These include being an adult volunteer, paid or self-employed worker caring for children under 18 years of age, and working in one of the occupational fields listed in the Act. You are breaking the law if you start child-related work without applying for a Clearance first. Your organisation is also breaking the law if it lets you start before you have applied.",
-    "zh": "如果该页面列出的 5 项条件全部符合，你就需要办理 Working with Children Check。这些条件包括：你是照顾 18 岁以下儿童的成年志愿者、受薪员工或自雇人士，并且在法案列出的职业领域内工作。在未先申请 Clearance 的情况下开始儿童相关工作属于违法。你所在的机构如果在你申请之前就让你开始儿童相关工作，同样违法。"
+    "zh": "如果该页面列出的 5 项条件全部符合，你就符合办理 Working with Children Check 的资格。这些条件包括：你是照顾 18 岁以下儿童的成年志愿者、受薪员工或自雇人士，并且在法案列出的职业领域内工作。在未先申请 Clearance 的情况下开始儿童相关工作属于违法。你所在的机构如果在你申请之前就让你开始儿童相关工作，同样违法。"
    },
    "sources": [
     {
@@ -1269,8 +1248,8 @@
     "志愿者办警察证明有优惠吗"
    ],
    "answer": {
-    "en": "The standard fee for a National Police Check is $91.50 (GST exempt). Victorian volunteers and students on placement qualify for a processing fee discount, and the reduced fee for a volunteer is $31.10. To get the reduced fee, a Community Volunteer Fee (CVF) number must be included in the application.",
-    "zh": "National Police Check 的标准费用为 91.50 澳元（免 GST）。维州的志愿者和实习学生可享受申请处理费折扣，志愿者的优惠费用为 31.10 澳元。要获得优惠费用，申请中必须包含社区志愿者费用（CVF）编号。"
+    "en": "The standard fee for a National Police Check is $91.50 (GST exempt). Victorian volunteers and students on placement qualify for a processing fee discount, and the reduced fee for a volunteer is $31.10. For online applications, a Community Volunteer Fee (CVF) number must be included to get the reduced fee.",
+    "zh": "National Police Check 的标准费用为 91.50 澳元（免 GST）。维州的志愿者和实习学生可享受申请处理费折扣，志愿者的优惠费用为 31.10 澳元。在线申请时，必须附上社区志愿者费用（CVF）编号才能获得优惠费用。"
    },
    "sources": [
     {
@@ -1515,8 +1494,8 @@
     "JP 签字站在哪里"
    ],
    "answer": {
-    "en": "The Department of Justice and Community Safety has a Find a Justice of the Peace by appointment page, with listings that show when each JP is available. You can also find a Justice of the Peace at a document signing station. The page notes that JPs are volunteers who offer a valuable service to the community.",
-    "zh": "司法与社区安全部（Department of Justice and Community Safety）设有“Find a Justice of the Peace by appointment”页面，列表中会显示各位太平绅士的可约时间。你也可以在文件签署站（document signing station）找到太平绅士。该页面指出，太平绅士是为社区提供宝贵服务的志愿者。"
+    "en": "The justice.vic.gov.au website has a 'Find a Justice of the Peace by appointment' page, and it asks you to check the listings to see when JPs are available before calling. You can also find a Justice of the Peace at a document signing station. The page notes that JPs are volunteers who offer a valuable service to the community.",
+    "zh": "justice.vic.gov.au 网站设有“Find a Justice of the Peace by appointment”页面，并要求你致电前先查看列表，了解太平绅士何时有空。你也可以在文件签署站（document signing station）找到太平绅士。该页面指出，太平绅士是为社区提供宝贵服务的志愿者。"
    },
    "sources": [
     {
@@ -1684,8 +1663,8 @@
     "council rates 分期付款日期"
    ],
    "answer": {
-    "en": "The City of Boroondara lists payment options for 2026–2027. Paying in full with a 2% discount (Council rates and charges only) is due 31 August 2026, and paying in full with no discount is due 15 February 2027. Paying in 4 instalments is due 30 September 2026, 30 November 2026, 28 February 2027 and 31 May 2027. Other councils set their own dates.",
-    "zh": "City of Boroondara 公布了 2026–2027 年度的缴费方式。一次付清并享受 2% 折扣（仅限 Council 税费）的到期日为 2026 年 8 月 31 日，一次付清但无折扣的到期日为 2027 年 2 月 15 日。分 4 期缴纳的到期日为 2026 年 9 月 30 日、2026 年 11 月 30 日、2027 年 2 月 28 日和 2027 年 5 月 31 日。其他 council 各自设定缴费日期。"
+    "en": "The City of Boroondara lists payment options for 2026–2027. Paying in full with a 2% discount (Council rates and charges only) is due 31 August 2026, and paying in full with no discount is due 15 February 2027. Paying in 4 instalments is due 30 September 2026, 30 November 2026, 28 February 2027 and 31 May 2027.",
+    "zh": "City of Boroondara 公布了 2026–2027 年度的缴费方式。一次付清并享受 2% 折扣（仅限 Council 税费）的到期日为 2026 年 8 月 31 日，一次付清但无折扣的到期日为 2027 年 2 月 15 日。分 4 期缴纳的到期日为 2026 年 9 月 30 日、2026 年 11 月 30 日、2027 年 2 月 28 日和 2027 年 5 月 31 日。"
    },
    "sources": [
     {
@@ -1770,7 +1749,7 @@
    ],
    "answer": {
     "en": "According to the City of Boroondara, the Victorian Government caps the total amount councils can raise from rates each year, and for 2026-27 this cap is 2.75%. Individual property rates may increase or decrease by different percentages, depending on how each property's value has changed. The waste management charge, waste levy and Emergency Services and Volunteer Fund are not subject to the cap.",
-    "zh": "据 City of Boroondara 介绍，维州政府每年限制各 council 通过 rates 筹集的总金额，2026-27 年度的上限为 2.75%。各物业的 rates 可能按不同的百分比上升或下降，取决于每个物业的价值变化。垃圾管理费、垃圾填埋税和 Emergency Services and Volunteer Fund 不受该上限约束。"
+    "zh": "据 City of Boroondara 介绍，维州政府每年限制各 council 通过 rates 筹集的总金额，2026-27 年度的上限为 2.75%。各物业的 rates 可能按不同的百分比上升或下降，取决于每个物业的价值变化。垃圾管理费、垃圾税（waste levy）和 Emergency Services and Volunteer Fund 不受该上限约束。"
    },
    "sources": [
     {
@@ -1845,8 +1824,8 @@
     "市政税可以延期吗"
    ],
    "answer": {
-    "en": "The City of Boroondara says that if you are having trouble paying your bills, you may be eligible to apply for a payment plan to pay your bills over time. It provides an online form to request a rates payment plan. Other councils have their own arrangements.",
-    "zh": "City of Boroondara 表示，如果你在支付账单方面有困难，可能有资格申请分期付款计划，在一段时间内付清账单。该 council 提供在线表格用于申请 rates 分期付款计划。其他 council 有各自的安排。"
+    "en": "The City of Boroondara says that if you are having trouble paying your bills, you may be eligible to apply for a payment plan to pay your bills over time. It provides an online form to request a rates payment plan.",
+    "zh": "City of Boroondara 表示，如果你在支付账单方面有困难，可能有资格申请分期付款计划，在一段时间内付清账单。该 council 提供在线表格用于申请 rates 分期付款计划。"
    },
    "sources": [
     {
