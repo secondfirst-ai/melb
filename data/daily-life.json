@@ -1526,45 +1526,6 @@
    }
   },
   {
-   "id": "cat-curfew-monash-glen-eira",
-   "question": {
-    "en": "Is there a cat curfew in Melbourne?",
-    "zh": "墨尔本有猫宵禁吗？"
-   },
-   "aliases": [
-    "Must I keep my cat inside at night in Melbourne?",
-    "Cat curfew Monash",
-    "Cat curfew Glen Eira",
-    "墨尔本晚上猫要关在家里吗",
-    "猫宵禁"
-   ],
-   "answer": {
-    "en": "Some councils have one. City of Monash says its curfew runs between sunset or 7pm (whichever is later) and sunrise and requires cats to be contained inside or on the owner's property. Glen Eira says cats must remain on the owner's property between 7pm and 6am, with the curfew coming into effect in late 2026.",
-    "zh": "部分市政府设有猫宵禁。Monash 市政府表示，其宵禁时间为日落或晚上 7 点（以较晚者为准）至日出，要求猫主人将猫关在室内或自家物业内。Glen Eira 市政府表示，猫须在晚上 7 点至早上 6 点期间留在主人的物业内，该宵禁将于 2026 年底生效。"
-   },
-   "sources": [
-    {
-     "url": "https://www.monash.vic.gov.au/Residents-Property/Animals/Cats",
-     "quote": "The curfew, which is between sunset or 7pm (whichever is later) and sunrise, was introduced following extensive community consultation. The curfew requires cat owners to keep their cats contained inside or on their property between those times."
-    },
-    {
-     "url": "https://www.gleneira.vic.gov.au/services/pets-and-animals/cat-curfew",
-     "quote": "Following the adoption of a night-time cat curfew at the Ordinary Council M eeting on Wednesday 5 November 2025, it will soon be a requirement that cats must remain on their owner’s property between 7pm and 6am."
-    }
-   ],
-   "tags": [
-    "pets",
-    "cats",
-    "council"
-   ],
-   "checked": "2026-10-30",
-   "valid_until": "2027-06-30",
-   "note": {
-    "en": "Curfews are set by individual councils; check your own council. The Glen Eira start date is only given as late 2026.",
-    "zh": "宵禁由各市政府自行规定，请查询所在市政府。Glen Eira 页面只写明生效时间为 2026 年底。"
-   }
-  },
-  {
    "id": "supply-alcohol-to-minors-at-home-victoria",
    "question": {
     "en": "Can I give alcohol to someone under 18 at my home in Victoria?",
