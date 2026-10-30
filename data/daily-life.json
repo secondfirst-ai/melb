@@ -1,0 +1,1855 @@
+{
+ "dataset": "melb-daily-life",
+ "title": {
+  "en": "Daily life in Melbourne and Victoria, answered from official sources",
+  "zh": "墨尔本和维州日常生活问答（答案来自官方出处）"
+ },
+ "updated": "2026-10-30",
+ "notes": [
+  {
+   "en": "Each answer is limited to what the cited official page says, with a verbatim quote and the date we checked it. If a question isn't here, we don't have a checked answer.",
+   "zh": "每条答案只说出处原文支持的内容，附原句和核对日期。这里没有的问题，就是我们还没有核过的答案。"
+  }
+ ],
+ "records": [
+  {
+   "id": "vic-residential-noise-lawnmower-vehicle-hours",
+   "question": {
+    "en": "What times can I not run a lawnmower or work on a vehicle at home in Victoria?",
+    "zh": "在维多利亚州，家里哪些时间不能用割草机或修车？"
+   },
+   "aliases": [
+    "Lawn mower noise hours Victoria",
+    "Leaf blower noise times Melbourne",
+    "墨尔本几点以后不能用割草机",
+    "维州住宅噪音禁止时间 割草机"
+   ],
+   "answer": {
+    "en": "EPA Victoria lists lawnmowers or other grass-cutting devices, and equipment with an internal combustion engine, as a group of residential noise items. They must not be heard in a neighbour's home on weekdays before 7 am and after 8 pm, or on weekends and public holidays before 9 am and after 8 pm.",
+    "zh": "维多利亚州环保局（EPA）把割草机或其他割草设备，以及内燃机设备列为住宅噪音项目。这类噪音不得在工作日早上7点前和晚上8点后、周末和公共假日早上9点前和晚上8点后传到邻居家中。"
+   },
+   "sources": [
+    {
+     "url": "https://www.epa.vic.gov.au/for-community/environmental-information/noise/residential-noise",
+     "quote": "lawnmowers or other grass-cutting devices equipment with an internal combustion engine not in group 2 weekdays before 7 am and after 8 pm weekends and public holidays before 9 am and after 8 pm"
+    },
+    {
+     "url": "https://www.epa.vic.gov.au/for-community/environmental-information/noise/residential-noise",
+     "quote": "Residential noise is unreasonable if: it happens during prohibited times, and someone in a habitable room in any other residence can hear it."
+    }
+   ],
+   "tags": [
+    "noise",
+    "residential",
+    "lawnmower"
+   ],
+   "checked": "2026-10-30",
+   "note": {
+    "en": "The same page lists motor vehicles (except when entering or leaving the premises) in this group.",
+    "zh": "该页面同一组别还列有机动车（进出住宅时除外）。"
+   }
+  },
+  {
+   "id": "vic-residential-noise-power-tools-hours",
+   "question": {
+    "en": "What hours are power tools banned at home in Victoria?",
+    "zh": "维多利亚州家里几点到几点禁止使用电动工具？"
+   },
+   "aliases": [
+    "Power tool noise hours Melbourne",
+    "When can I use a drill or circular saw at home Victoria",
+    "墨尔本家里电钻几点不能用",
+    "住宅 电动工具 噪音 时间"
+   ],
+   "answer": {
+    "en": "EPA Victoria lists electric power tools, chainsaws, circular saws, compressors, and pneumatic or impacting tools as residential noise items. They must not be heard in a neighbour's home on weekdays before 7 am and after 8 pm, or on weekends and public holidays before 9 am and after 8 pm.",
+    "zh": "维多利亚州环保局（EPA）把电动工具、链锯、圆锯、压缩机以及气动或冲击类工具列为住宅噪音项目。这类噪音不得在工作日早上7点前和晚上8点后、周末和公共假日早上9点前和晚上8点后传到邻居家中。"
+   },
+   "sources": [
+    {
+     "url": "https://www.epa.vic.gov.au/for-community/environmental-information/noise/residential-noise",
+     "quote": "electric power tools, chainsaws or circular saws gas or air compressors pneumatic power tools, hammers or other impacting tools or grinding equipment weekdays before 7 am and after 8 pm weekends and public holidays before 9 am and after 8 pm"
+    }
+   ],
+   "tags": [
+    "noise",
+    "residential",
+    "power-tools"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "vic-residential-noise-pool-pump-heater-hours",
+   "question": {
+    "en": "What hours can pool pumps, home heaters and vacuum cleaners not be heard by neighbours in Victoria?",
+    "zh": "在维多利亚州，泳池泵、家用暖气和吸尘器哪些时间不能让邻居听到？"
+   },
+   "aliases": [
+    "Pool pump noise curfew Victoria",
+    "Vacuum cleaner noise hours Melbourne",
+    "泳池泵噪音时间 墨尔本",
+    "吸尘器几点以后不能用 维州"
+   ],
+   "answer": {
+    "en": "EPA Victoria lists swimming pool, spa or water pumps, home heaters, and vacuum cleaners as one group of residential noise items. They must not be heard in a neighbour's home on weekdays before 7 am and after 10 pm, or on weekends and public holidays before 9 am and after 10 pm.",
+    "zh": "维多利亚州环保局（EPA）把泳池、水疗池或水泵、家用暖气和吸尘器列为同一组住宅噪音项目。这类噪音不得在工作日早上7点前和晚上10点后、周末和公共假日早上9点前和晚上10点后传到邻居家中。"
+   },
+   "sources": [
+    {
+     "url": "https://www.epa.vic.gov.au/for-community/environmental-information/noise/residential-noise",
+     "quote": "swimming pool, spa or water pumps (except when used to fill a header tank) home heaters, including central heating, hot water systems or a heat pump, air conditioner or split system used for heating vacuum cleaners weekdays before 7 am and after 10 pm weekends and public holidays before 9 am and after 10 pm"
+    }
+   ],
+   "tags": [
+    "noise",
+    "residential",
+    "pool"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "vic-residential-noise-air-conditioner-hours",
+   "question": {
+    "en": "When can neighbours not hear my air conditioner in Victoria, and is there a heat exception?",
+    "zh": "在维多利亚州，空调声音哪些时间不得让邻居听到？高温时有例外吗？"
+   },
+   "aliases": [
+    "Air conditioner noise rules Melbourne",
+    "Can I run aircon at night during a heat health warning",
+    "墨尔本空调噪音时间",
+    "高温健康警告 空调 可以开吗"
+   ],
+   "answer": {
+    "en": "For air conditioners, evaporative coolers and split systems used for cooling, EPA Victoria's prohibited times are weekdays before 7 am and after 11 pm, and weekends and public holidays before 9 am and after 11 pm. The prohibited times do not apply when an air conditioner is run during a Department of Health heat health warning. A council officer may still assess the noise as unreasonable in that case.",
+    "zh": "对于制冷用的空调、蒸发式冷却器和分体机，维多利亚州环保局（EPA）规定的禁止时间是：工作日早上7点前和晚上11点后，周末和公共假日早上9点前和晚上11点后。卫生部发布高温健康警告期间运行空调时，这些禁止时间不适用。即便如此，市政厅官员仍可能认定该噪音不合理。"
+   },
+   "sources": [
+    {
+     "url": "https://www.epa.vic.gov.au/for-community/environmental-information/noise/residential-noise",
+     "quote": "air conditioners, evaporative coolers or split systems used for cooling weekdays before 7 am and after 11 pm weekends and public holidays before 9 am and after 11 pm."
+    },
+    {
+     "url": "https://www.epa.vic.gov.au/for-community/environmental-information/noise/residential-noise",
+     "quote": "The prohibited times in the Environment Protection Regulations 2021 do not apply when: you need to use equipment in an emergency you run your air conditioner during a Department of Health heat health warning"
+    },
+    {
+     "url": "https://www.epa.vic.gov.au/for-community/environmental-information/noise/residential-noise",
+     "quote": "A council officer may still assess noise from an air conditioner to be unreasonable even during a heat health warning."
+    }
+   ],
+   "tags": [
+    "noise",
+    "residential",
+    "air-conditioner",
+    "heat"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "vic-residential-noise-stereo-music-hours",
+   "question": {
+    "en": "What hours can music, stereos and TVs not be heard by neighbours in Victoria?",
+    "zh": "在维多利亚州，音乐、音响和电视哪些时间不得让邻居听到？"
+   },
+   "aliases": [
+    "Music noise curfew at home Victoria",
+    "Party music cut off time Melbourne",
+    "墨尔本家里音乐几点要关",
+    "住宅 音响 噪音 时间 维州"
+   ],
+   "answer": {
+    "en": "EPA Victoria's prohibited times for musical instruments and electrical audio goods such as stereos, radios and TVs vary by day. They are Monday to Thursday before 7 am and after 10 pm, Friday before 7 am and after 11 pm, Saturday and public holidays before 9 am and after 11 pm, and Sunday before 9 am and after 10 pm.",
+    "zh": "维多利亚州环保局（EPA）对乐器以及音响、收音机、电视等电子音响设备的禁止时间因日而异：周一至周四早上7点前和晚上10点后，周五早上7点前和晚上11点后，周六和公共假日早上9点前和晚上11点后，周日早上9点前和晚上10点后。"
+   },
+   "sources": [
+    {
+     "url": "https://www.epa.vic.gov.au/for-community/environmental-information/noise/residential-noise",
+     "quote": "musical instruments electrical audio goods, including stereos, radios, TVs and public address systems Monday to Thursday before 7 am and after 10 pm Friday before 7 am and after 11 pm Saturday and public holidays before 9 am and after 11 pm Sunday before 9 am and after 10 pm"
+    }
+   ],
+   "tags": [
+    "noise",
+    "residential",
+    "music"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "vic-who-handles-neighbour-noise-complaints",
+   "question": {
+    "en": "Who do I report a noisy neighbour to in Victoria: EPA, council or police?",
+    "zh": "在维多利亚州，邻居太吵应该向谁投诉：EPA、市政厅还是警察？"
+   },
+   "aliases": [
+    "Report residential noise Melbourne",
+    "Who investigates noise complaints Victoria",
+    "邻居噪音投诉 墨尔本",
+    "吵闹邻居 找谁"
+   ],
+   "answer": {
+    "en": "EPA Victoria does not investigate reports of residential noise; that is the role of the local council. Councils investigate residential noise reports, while police respond to late-night noise such as parties. Police may issue a warning or an on-the-spot fine to a person who makes or allows unreasonable noise from a residence.",
+    "zh": "维多利亚州环保局（EPA）不调查住宅噪音举报，这是当地市政厅的职责。市政厅调查住宅噪音举报，而警方处理聚会等深夜噪音。对于从住宅发出或放任不合理噪音的人，警方可发出警告或当场罚款。"
+   },
+   "sources": [
+    {
+     "url": "https://www.epa.vic.gov.au/for-community/environmental-information/noise/residential-noise",
+     "quote": "We do not investigate reports of residential noise – this is the role of your local council."
+    },
+    {
+     "url": "https://www.epa.vic.gov.au/manage-noise-your-neighbours",
+     "quote": "Councils investigate reports of residential noise."
+    },
+    {
+     "url": "https://www.epa.vic.gov.au/manage-noise-your-neighbours",
+     "quote": "Police respond to late-night noise such as parties."
+    },
+    {
+     "url": "https://www.epa.vic.gov.au/manage-noise-your-neighbours",
+     "quote": "Police may issue a warning or an on-the-spot fine to a person who makes or allows unreasonable noise from a residence."
+    }
+   ],
+   "tags": [
+    "noise",
+    "council",
+    "police"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "vic-construction-noise-working-hours",
+   "question": {
+    "en": "What are the normal working hours for a residential construction site in Victoria?",
+    "zh": "维多利亚州住宅建筑工地的正常施工时间是什么时候？"
+   },
+   "aliases": [
+    "Builder noise hours Melbourne",
+    "Construction work start time Saturday Victoria",
+    "墨尔本施工噪音时间",
+    "建筑工地几点可以开工"
+   ],
+   "answer": {
+    "en": "EPA Victoria advises that residential construction and demolition sites work on weekdays 7 am to 6 pm and Saturday 9 am to 1 pm. It says construction, demolition and land development should take place in normal working hours. Noise within normal working hours can still be unreasonable in some cases.",
+    "zh": "维多利亚州环保局（EPA）建议住宅建筑和拆除工地在工作日早上7点至下午6点、周六早上9点至下午1点施工。EPA表示建筑、拆除和土地开发应在正常工作时间内进行。即使在正常工作时间内，噪音在某些情况下仍可能被认定为不合理。"
+   },
+   "sources": [
+    {
+     "url": "https://www.epa.vic.gov.au/for-community/environmental-information/noise/construction-noise",
+     "quote": "residential construction and demolition sites weekdays 7 am to 6 pm Saturday 9 am to 1 pm"
+    },
+    {
+     "url": "https://www.epa.vic.gov.au/for-community/environmental-information/noise/construction-noise",
+     "quote": "Construction, demolition and land development should take place in normal working hours"
+    },
+    {
+     "url": "https://www.epa.vic.gov.au/for-community/environmental-information/noise/construction-noise",
+     "quote": "Noise from a construction site in normal working hours can still be unreasonable in some cases."
+    }
+   ],
+   "tags": [
+    "noise",
+    "construction"
+   ],
+   "checked": "2026-10-30",
+   "note": {
+    "en": "EPA says it does not investigate noise complaints about residential construction sites; that is the role of the local council.",
+    "zh": "EPA表示不调查住宅建筑工地的噪音投诉，这是当地市政厅的职责。"
+   }
+  },
+  {
+   "id": "vic-burning-off-permit-fire-danger-period",
+   "question": {
+    "en": "Do I need a permit to burn off garden waste in Victoria?",
+    "zh": "在维多利亚州焚烧园艺垃圾需要许可证吗？"
+   },
+   "aliases": [
+    "Backyard burning rules Victoria",
+    "Can I burn off on Total Fire Ban day",
+    "墨尔本后院烧树叶 可以吗",
+    "维州 焚烧 许可证 火灾危险期"
+   ],
+   "answer": {
+    "en": "During the Fire Danger Period you can only burn off with a written permit, which you can apply for online at Fire Permits Victoria. Burning off on a Total Fire Ban day is illegal. Burning off in the Fire Danger Period without a valid permit, or without complying with all conditions, can result in a fine of more than $23,000 or 12 months in prison or both. Local councils may also have their own rules on lighting fires.",
+    "zh": "在火灾危险期内，只有持有书面许可证才可以焚烧，可在 Fire Permits Victoria 网上申请。在全面禁火日焚烧是违法的。在火灾危险期内没有有效许可证、或未遵守许可证所有条件而焚烧，可被处以超过23,000澳元的罚款或12个月监禁，或两者并罚。地方市政厅也可能有自己关于点火的规定。"
+   },
+   "sources": [
+    {
+     "url": "https://www.cfa.vic.gov.au/fire-safety/outside-your-home/burning-off",
+     "quote": "you can only burn off if you have a written permit."
+    },
+    {
+     "url": "https://www.cfa.vic.gov.au/fire-safety/outside-your-home/burning-off",
+     "quote": "Apply for a permit online at Fire Permits Victoria"
+    },
+    {
+     "url": "https://www.cfa.vic.gov.au/fire-safety/outside-your-home/burning-off",
+     "quote": "Burning off during the Fire Danger Period without a valid permit, or without complying with all conditions on a permit can result in a fine of more than $23,000 or 12 months in prison or both."
+    },
+    {
+     "url": "https://www.cfa.vic.gov.au/fire-safety/outside-your-home/burning-off",
+     "quote": "Burning off on a Total Fire Ban day is illegal."
+    },
+    {
+     "url": "https://www.cfa.vic.gov.au/fire-safety/outside-your-home/burning-off",
+     "quote": "Local councils may have rules (known as Local Laws) on lighting fires."
+    }
+   ],
+   "tags": [
+    "fire",
+    "burning-off",
+    "cfa"
+   ],
+   "checked": "2026-10-30",
+   "valid_until": "2027-06-30",
+   "note": {
+    "en": "The dollar figure is a CFA statement; fine amounts are indexed and may change, so valid_until is set to the end of the financial year. CFA says the Fire Danger Period takes effect by municipality.",
+    "zh": "罚款金额出自CFA页面；罚款金额会按指数调整，可能变动，因此有效期设为本财政年度结束。CFA表示火灾危险期按市镇分别生效。"
+   }
+  },
+  {
+   "id": "vic-wood-heater-what-not-to-burn",
+   "question": {
+    "en": "What can't I burn in a wood heater in Victoria?",
+    "zh": "在维多利亚州，木柴取暖炉里不能烧什么？"
+   },
+   "aliases": [
+    "Wood heater banned fuels Victoria",
+    "Can I burn painted wood in my fireplace",
+    "壁炉能烧什么木头",
+    "取暖炉 不能烧 油漆木头"
+   ],
+   "answer": {
+    "en": "EPA Victoria says burning the wrong things in a wood heater can make toxic smoke. It says not to burn coal, coke, driftwood, household rubbish, painted wood, or treated timber or green-coloured pine logs. It says to always use dry, seasoned and untreated hardwood.",
+    "zh": "维多利亚州环保局（EPA）表示，在木柴取暖炉里烧错东西会产生有毒烟雾。EPA称不要烧煤、焦炭、漂流木、生活垃圾、涂过漆的木头，以及经过处理的木材或绿色松木原木。EPA还称应始终使用干燥、风干且未经处理的硬木。"
+   },
+   "sources": [
+    {
+     "url": "https://www.epa.vic.gov.au/manage-smoke-wood-heaters",
+     "quote": "Burning the wrong things in your wood heater can make toxic smoke."
+    },
+    {
+     "url": "https://www.epa.vic.gov.au/manage-smoke-wood-heaters",
+     "quote": "In your wood heater, do not burn: coal coke, which is a fire fuel made from coal driftwood household rubbish painted wood, which can contain chemicals treated timber or green-coloured pine logs"
+    },
+    {
+     "url": "https://www.epa.vic.gov.au/manage-smoke-wood-heaters",
+     "quote": "Always use dry, seasoned and untreated hardwood."
+    }
+   ],
+   "tags": [
+    "fire",
+    "wood-heater",
+    "smoke"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "vic-report-wood-heater-smoke",
+   "question": {
+    "en": "Who do I report wood heater smoke to in Victoria?",
+    "zh": "在维多利亚州，木柴取暖炉冒烟应该向谁举报？"
+   },
+   "aliases": [
+    "Neighbour's chimney smoke complaint Melbourne",
+    "Report smoky fireplace council",
+    "邻居烟囱冒烟 投诉",
+    "壁炉烟雾 举报 市政厅"
+   ],
+   "answer": {
+    "en": "EPA Victoria says you can report smoke from a wood heater to your local council.",
+    "zh": "维多利亚州环保局（EPA）表示，可以向当地市政厅举报木柴取暖炉冒出的烟。"
+   },
+   "sources": [
+    {
+     "url": "https://www.epa.vic.gov.au/manage-smoke-wood-heaters",
+     "quote": "You can report smoke from a wood heater to your local council."
+    }
+   ],
+   "tags": [
+    "fire",
+    "wood-heater",
+    "council"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "vic-e-waste-landfill-ban",
+   "question": {
+    "en": "Can I put old electronics in the rubbish bin in Victoria?",
+    "zh": "在维多利亚州，旧电子产品可以扔进垃圾桶吗？"
+   },
+   "aliases": [
+    "E-waste ban Victoria",
+    "Can I throw a dead phone or TV in the bin",
+    "电子垃圾 能扔垃圾桶吗",
+    "维州 电子废物 禁止填埋"
+   ],
+   "answer": {
+    "en": "No. Since 2019 it has been illegal in Victoria to put e-waste in household rubbish or landfill. The Victorian Government defines e-waste as any item with a plug, battery or power cord, including e-cigarettes, televisions, computers, mobile phones, battery-operated toys, kitchen appliances and white goods.",
+    "zh": "不可以。自2019年起，在维多利亚州把电子废物放入家庭垃圾或填埋场属违法。维多利亚州政府把电子废物定义为任何带插头、电池或电源线的物品，包括电子烟、电视、电脑、手机、电池玩具、厨房电器和白色家电。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vic.gov.au/e-waste-ban",
+     "quote": "Since 2019, it has been illegal to put e-waste in household rubbish or landfill in Victoria."
+    },
+    {
+     "url": "https://www.vic.gov.au/e-waste-ban",
+     "quote": "E-waste is any item that has a plug, battery or power cord and includes e-cigarettes, televisions, computers, mobile phones, battery-operated toys, kitchen appliances and white goods."
+    }
+   ],
+   "tags": [
+    "recycling",
+    "e-waste",
+    "landfill"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "vic-report-littering-from-vehicle",
+   "question": {
+    "en": "How do I report someone littering from a car in Victoria?",
+    "zh": "在维多利亚州，看到有人从车里乱扔垃圾怎么举报？"
+   },
+   "aliases": [
+    "Report cigarette butt thrown from car",
+    "Littering from vehicle report EPA",
+    "从车窗扔垃圾 举报",
+    "维州 车内乱扔垃圾 EPA"
+   ],
+   "answer": {
+    "en": "It is against the law to litter from a vehicle, and EPA Victoria accepts reports about littering from or near the vehicle a person is using. A report about a vehicle with Victorian number plates can be made online within 7 days of when it happened. Littering that is not from or near a vehicle is reported to the local council.",
+    "zh": "从车辆中乱扔垃圾是违法的，维多利亚州环保局（EPA）受理对某人所用车辆内或车辆附近乱扔垃圾的举报。对悬挂维多利亚州车牌的车辆，可在事发后7天内网上举报。与车辆无关的乱扔垃圾，则向当地市政厅举报。"
+   },
+   "sources": [
+    {
+     "url": "https://www.epa.vic.gov.au/report-littering-vehicle",
+     "quote": "It’s against the law to litter from a vehicle, including a car, truck or van."
+    },
+    {
+     "url": "https://www.epa.vic.gov.au/report-littering-vehicle",
+     "quote": "You can report littering from a vehicle with Victorian number plates online within 7 days of when it happened."
+    },
+    {
+     "url": "https://www.epa.vic.gov.au/report-littering-vehicle",
+     "quote": "If the littering is not from or near a vehicle, report it to your local council"
+    }
+   ],
+   "tags": [
+    "litter",
+    "epa",
+    "car"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "vic-report-illegal-dumping-who",
+   "question": {
+    "en": "Who do I report illegally dumped rubbish to in Victoria?",
+    "zh": "在维多利亚州，发现非法倾倒垃圾应该向谁举报？"
+   },
+   "aliases": [
+    "Report dumped mattress or furniture",
+    "EPA pollution hotline illegal dumping",
+    "非法倾倒垃圾 举报",
+    "路边丢弃床垫 找谁"
+   ],
+   "answer": {
+    "en": "In Victoria, it is illegal to dump, leave or bury any kind of waste at a location that is not licensed to accept it, on public or private land. Household waste such as TVs, appliances, furniture or mattresses, and dumped waste on residential or council-owned land, is reported to the local council. Other types, such as industrial waste or construction and demolition materials, can be reported to EPA online or on its 24-hour pollution hotline, 1300 372 842.",
+    "zh": "在维多利亚州，在没有牌照接收废物的地点倾倒、遗弃或掩埋任何废物都是违法的，无论是公有还是私有土地。电视、电器、家具或床垫等家庭废物，以及住宅或市政厅所属土地上的倾倒废物，应向当地市政厅举报。工业废物、建筑和拆除材料等其他类型，可向EPA网上举报或拨打其24小时污染热线1300 372 842。"
+   },
+   "sources": [
+    {
+     "url": "https://www.epa.vic.gov.au/report-illegal-waste-dumping",
+     "quote": "In Victoria, it's illegal to dump, leave or bury any kind of waste at a location that is not licensed to accept it. This includes public and private land."
+    },
+    {
+     "url": "https://www.epa.vic.gov.au/report-illegal-waste-dumping",
+     "quote": "household waste, such as TVs, appliances, furniture or mattresses dumped waste on residential or council-owned land."
+    },
+    {
+     "url": "https://www.epa.vic.gov.au/report-illegal-waste-dumping",
+     "quote": "Report illegal dumping online, or call our 24-hour pollution hotline on 1300 372 842"
+    },
+    {
+     "url": "https://www.epa.vic.gov.au/report-illegal-waste-dumping",
+     "quote": "You can report other types of dumped waste and rubbish to us, including: industrial waste construction and demolition materials, including asbestos"
+    }
+   ],
+   "tags": [
+    "litter",
+    "dumping",
+    "epa"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "boroondara-hard-waste-collection-rules",
+   "question": {
+    "en": "How does hard waste collection work in Boroondara?",
+    "zh": "Boroondara 市的大件垃圾（硬垃圾）收集是怎么安排的？"
+   },
+   "aliases": [
+    "Boroondara hard rubbish booking",
+    "How many free hard rubbish pickups Boroondara",
+    "Boroondara 大件垃圾预约",
+    "Hawthorn Kew 硬垃圾收集"
+   ],
+   "answer": {
+    "en": "Residential properties whose general waste bins are collected by Boroondara Council can book 2 free hard rubbish collections each financial year. There is no annual hard waste collection, so a booking is required. Hard waste goes on the nature strip before 5 am on the day of collection and no earlier than 2 days beforehand. Items placed on the kerb without a booking are considered illegally dumped and can result in a fine.",
+    "zh": "由 Boroondara 市政厅收集普通垃圾桶的住宅物业，每个财政年度可预约2次免费大件垃圾收集。该市没有每年一次的统一收集，必须预约。大件垃圾须在收集当天早上5点前放到路边草坪，且不得早于收集前2天。未预约就放在路边的物品被视为非法倾倒，可能被罚款。"
+   },
+   "sources": [
+    {
+     "url": "https://www.boroondara.vic.gov.au/services/waste-and-recycling/hard-waste-collection",
+     "quote": "Residential properties whose general waste bins are collected by us can book 2 free hard rubbish collections each financial year."
+    },
+    {
+     "url": "https://www.boroondara.vic.gov.au/services/waste-and-recycling/hard-waste-collection",
+     "quote": "There is no annual hard waste collection in Boroondara. You must book a hard waste collection."
+    },
+    {
+     "url": "https://www.boroondara.vic.gov.au/services/waste-and-recycling/hard-waste-collection",
+     "quote": "Put your hard waste on the nature strip before 5 am on the day of collection and no earlier than 2 days beforehand."
+    },
+    {
+     "url": "https://www.boroondara.vic.gov.au/services/waste-and-recycling/hard-waste-collection",
+     "quote": "Items placed on the kerb without a booking are considered to be illegally dumped and can result in a fine."
+    }
+   ],
+   "tags": [
+    "hard-waste",
+    "boroondara",
+    "council"
+   ],
+   "checked": "2026-10-30",
+   "note": {
+    "en": "This applies to the City of Boroondara only; other councils have their own hard waste rules.",
+    "zh": "仅适用于 Boroondara 市；其他市政厅有各自的大件垃圾规定。"
+   }
+  },
+  {
+   "id": "vic-four-bin-household-recycling-system",
+   "question": {
+    "en": "What are the four household bin streams in Victoria's standard recycling system?",
+    "zh": "维多利亚州统一的家庭垃圾分类系统包括哪四类垃圾桶？"
+   },
+   "aliases": [
+    "Victoria glass bin FOGO new bins",
+    "Standard bin lid colours Victoria",
+    "维州 四桶分类 玻璃 FOGO",
+    "新垃圾桶 颜色 维州"
+   ],
+   "answer": {
+    "en": "Victoria is standardising household waste and recycling services into a 4-stream system. The four streams are glass recycling, food organics and garden organics (FOGO), mixed recycling and general rubbish. Councils are required to provide these 4-stream services to households.",
+    "zh": "维多利亚州正在把家庭垃圾和回收服务统一为四类分流系统：玻璃回收、厨余和园艺有机垃圾（FOGO）、混合回收和一般垃圾。市政厅须向住户提供这四类服务。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vic.gov.au/standardising-household-recycling-across-victoria",
+     "quote": "Households that receive waste and recycling services from local councils and Alpine Resorts Victoria (ARV), will have access to the new standardised 4-stream system with separate services for: glass recycling food organics and garden organics (FOGO) mixed recycling general rubbish."
+    },
+    {
+     "url": "https://www.vic.gov.au/standardising-household-recycling-across-victoria",
+     "quote": "The CE Act requires councils and ARV to provide the 4-stream services to households."
+    }
+   ],
+   "tags": [
+    "recycling",
+    "bins",
+    "fogo"
+   ],
+   "checked": "2026-10-30",
+   "note": {
+    "en": "The page says the transition is underway; the date a given council introduces each bin differs.",
+    "zh": "该页面称过渡正在进行；各市政厅推出各类垃圾桶的时间不同。"
+   }
+  },
+  {
+   "id": "vic-plastic-bag-ban-thickness",
+   "question": {
+    "en": "Are plastic shopping bags banned in Victoria?",
+    "zh": "维多利亚州禁止塑料购物袋吗？"
+   },
+   "aliases": [
+    "Plastic bag ban Victoria 35 micrometres",
+    "Can shops give me a plastic bag Melbourne",
+    "维州 塑料袋禁令",
+    "墨尔本 超市 塑料袋 可以给吗"
+   ],
+   "answer": {
+    "en": "It is against the law in Victoria for a retailer to sell or provide customers with plastic bags that are 35 micrometres thick or less at any part, carry goods sold from the premises, have handles, and are all or partly plastic. This includes degradable, biodegradable and compostable bags. Bags without handles, such as garbage bags and bin liners, are among those allowed.",
+    "zh": "在维多利亚州，零售商出售或向顾客提供同时满足以下条件的塑料袋属违法：任何部位厚度不超过35微米、用于装从店内售出的商品、带提手、全部或部分为塑料。这包括可降解、生物降解和可堆肥的袋子。垃圾袋和垃圾桶内衬袋等不带提手的袋子属于允许之列。"
+   },
+   "sources": [
+    {
+     "url": "https://www.epa.vic.gov.au/plastic-bags",
+     "quote": "It’s against the law in Victoria for a retailer to sell or provide customers with plastic bags that:"
+    },
+    {
+     "url": "https://www.epa.vic.gov.au/plastic-bags",
+     "quote": "are 35 micrometres (μm) thick or less at any part of the bag, and"
+    },
+    {
+     "url": "https://www.epa.vic.gov.au/plastic-bags",
+     "quote": "carry goods sold from the premises, and"
+    },
+    {
+     "url": "https://www.epa.vic.gov.au/plastic-bags",
+     "quote": "have handles, and"
+    },
+    {
+     "url": "https://www.epa.vic.gov.au/plastic-bags",
+     "quote": "are all or partly plastic."
+    },
+    {
+     "url": "https://www.epa.vic.gov.au/plastic-bags",
+     "quote": "This includes new or reused plastic bags that are: degradable biodegradable compostable."
+    },
+    {
+     "url": "https://www.epa.vic.gov.au/plastic-bags",
+     "quote": "Some bags without handles are allowed, such as: supermarket bags used to carry loose fruit and vegetables plastic dry-cleaning covers dog waste or nappy bags medical waste bags garbage bags and bin liners."
+    }
+   ],
+   "tags": [
+    "plastic-bags",
+    "shopping",
+    "retail"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "sunsmart-uv-index-3-when-to-protect",
+   "question": {
+    "en": "At what UV Index level should I protect my skin in Victoria?",
+    "zh": "在维多利亚州，紫外线指数达到多少就需要防晒？"
+   },
+   "aliases": [
+    "When is sun protection needed in Melbourne?",
+    "What UV level is harmful?",
+    "墨尔本紫外线指数几时要防晒",
+    "UV 3 防晒"
+   ],
+   "answer": {
+    "en": "SunSmart says to cover up from UV and protect your skin when the UV level hits 3 (Moderate) or above. It says UV levels can be harmful on warm, sunny days and on cool, cloudy days too. It says UV is always highest during the middle part of the day, between 10am and 2pm, or between 11am and 3pm daylight saving time.",
+    "zh": "SunSmart 表示，当紫外线水平达到 3（中等）或以上时，应遮盖皮肤并做好防晒。它说，紫外线在温暖晴朗的日子和凉爽多云的日子都可能有害。它还说，紫外线总是在一天的中段最强，即上午 10 点至下午 2 点，或夏令时间的上午 11 点至下午 3 点。"
+   },
+   "sources": [
+    {
+     "url": "https://www.sunsmart.com.au/uv-radiation",
+     "quote": "When the UV level hits 3 (Moderate) or above, cover up from UV and protect your skin."
+    },
+    {
+     "url": "https://www.sunsmart.com.au/uv-radiation",
+     "quote": "UV is always highest during the middle part of the day between 10am and 2pm or 11am and 3pm daylight saving time."
+    }
+   ],
+   "tags": [
+    "sunsmart",
+    "uv",
+    "weather",
+    "health"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "sunsmart-five-forms-of-sun-protection",
+   "question": {
+    "en": "What are the five forms of sun protection?",
+    "zh": "防晒的五种方式是什么？"
+   },
+   "aliases": [
+    "What does SunSmart say to use when the UV is 3 or above?",
+    "Slip Slop Slap Seek Slide five forms",
+    "防晒五种方法",
+    "紫外线 3 以上怎么防晒"
+   ],
+   "answer": {
+    "en": "SunSmart says that when the UV is 3 or above, families should use five forms of sun protection. These are wearing a hat, clothing and sunglasses, applying sunscreen, and enjoying shady areas outdoors.",
+    "zh": "SunSmart 表示，当紫外线指数为 3 或以上时，家人应使用五种防晒方式：戴帽子、穿衣物、戴太阳镜、涂防晒霜，以及在户外享受阴凉处。"
+   },
+   "sources": [
+    {
+     "url": "https://www.sunsmart.com.au/protect-your-skin/be-a-sunsmart-family",
+     "quote": "If the UV is 3 or above, make sure your family uses five forms of sun protection by wearing a hat, clothing and sunglasses, applying sunscreen and enjoying shady areas outdoors to give you extra coverage."
+    }
+   ],
+   "tags": [
+    "sunsmart",
+    "uv",
+    "weather",
+    "health"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "sunsmart-sunscreen-babies",
+   "question": {
+    "en": "Can babies wear sunscreen in Australia?",
+    "zh": "澳大利亚的婴儿可以涂防晒霜吗？"
+   },
+   "aliases": [
+    "Sunscreen for babies under six months",
+    "What SPF for a baby?",
+    "六个月以下婴儿能用防晒霜吗",
+    "婴儿防晒霜 SPF"
+   ],
+   "answer": {
+    "en": "SunSmart says SPF50 or 50+ sunscreen can be used on babies over six months, for the small parts of skin that clothing cannot cover. It says regular sunscreen use on babies under six months is not recommended.",
+    "zh": "SunSmart 表示，对于衣物遮盖不到的小块皮肤，可以给六个月以上的婴儿使用 SPF50 或 50+ 的防晒霜。它说，不建议给六个月以下的婴儿经常使用防晒霜。"
+   },
+   "sources": [
+    {
+     "url": "https://www.sunsmart.com.au/protect-your-skin/be-a-sunsmart-family",
+     "quote": "For those small parts of skin you can’t cover with clothing, use SPF50 or 50+ sunscreen on babies over six months."
+    },
+    {
+     "url": "https://www.sunsmart.com.au/protect-your-skin/be-a-sunsmart-family",
+     "quote": "Regular sunscreen use on babies under six months is not recommended."
+    }
+   ],
+   "tags": [
+    "sunsmart",
+    "uv",
+    "children",
+    "health"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "sunsmart-best-hat-for-sun-protection",
+   "question": {
+    "en": "Which hats give good UV protection?",
+    "zh": "哪种帽子的防晒效果好？"
+   },
+   "aliases": [
+    "Are caps good for sun protection?",
+    "Best hat for kids in the sun",
+    "鸭舌帽能防晒吗",
+    "宽边帽 防紫外线"
+   ],
+   "answer": {
+    "en": "SunSmart says bucket, wide brim or legionnaire hats are best. It says caps and visors do not provide good UV protection. It says to choose a hat that shades the head, face, eyes, ears and neck.",
+    "zh": "SunSmart 表示，渔夫帽、宽边帽或带遮颈布的军团帽效果最好。它说，棒球帽和遮阳帽（只有帽檐）不能提供良好的紫外线防护。它还说，应选择能遮住头部、脸部、眼睛、耳朵和脖子的帽子。"
+   },
+   "sources": [
+    {
+     "url": "https://www.sunsmart.com.au/protect-your-skin/be-a-sunsmart-family",
+     "quote": "Choose a hat that shades the head, face, eyes, ears and neck."
+    },
+    {
+     "url": "https://www.sunsmart.com.au/protect-your-skin/be-a-sunsmart-family",
+     "quote": "Bucket, wide brim or legionnaire hats are best. Caps and visors do not provide good UV protection."
+    }
+   ],
+   "tags": [
+    "sunsmart",
+    "uv",
+    "children",
+    "health"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "sunsmart-global-uv-app",
+   "question": {
+    "en": "Is there a free app for UV alerts?",
+    "zh": "有没有免费的紫外线提醒应用？"
+   },
+   "aliases": [
+    "SunSmart app",
+    "How do I check the UV index each day?",
+    "SunSmart 紫外线 App",
+    "每日紫外线提醒"
+   ],
+   "answer": {
+    "en": "SunSmart has a free SunSmart Global UV app. It says the app gives daily UV and sun protection alerts.",
+    "zh": "SunSmart 有一款免费的 SunSmart Global UV 应用。它表示，该应用每天提供紫外线和防晒提醒。"
+   },
+   "sources": [
+    {
+     "url": "https://www.sunsmart.com.au/resources/sunsmart-app",
+     "quote": "Download the free SunSmart Global UV app and get daily UV and sun protection alerts."
+    }
+   ],
+   "tags": [
+    "sunsmart",
+    "uv",
+    "app",
+    "weather"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-summer-sunburn-minutes",
+   "question": {
+    "en": "How quickly can you get sun damage in a Victorian summer?",
+    "zh": "维多利亚州夏天晒伤有多快？"
+   },
+   "aliases": [
+    "How fast can UV burn skin in Victoria?",
+    "Can I get sunburnt in 11 minutes?",
+    "维州夏天多久会晒伤",
+    "紫外线几分钟能伤皮肤"
+   ],
+   "answer": {
+    "en": "SunSmart says that in Victoria's summer months, UV can cause damage in as little as 11 minutes. It says UV damage cannot be undone and adds to your lifetime tally of UV damage.",
+    "zh": "SunSmart 表示，在维多利亚州的夏季，紫外线最快只需 11 分钟就可能造成伤害。它说，紫外线伤害无法逆转，会累加到一生的紫外线损伤总量中。"
+   },
+   "sources": [
+    {
+     "url": "https://www.sunsmart.com.au/uv-radiation",
+     "quote": "Sunburn is a UV radiation burn to the skin. In Victoria's summer months, UV can cause damage in as little as 11 minutes."
+    },
+    {
+     "url": "https://www.sunsmart.com.au/uv-radiation",
+     "quote": "UV damage can’t be undone and adds to your lifetime tally of UV damage, increasing your skin cancer risk."
+    }
+   ],
+   "tags": [
+    "sunsmart",
+    "uv",
+    "weather",
+    "health"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "ses-sandbags-where-to-get",
+   "question": {
+    "en": "Where can I get sandbags for a flood in Victoria?",
+    "zh": "在维多利亚州，洪水来临前去哪里领沙袋？"
+   },
+   "aliases": [
+    "Does VICSES give out free sandbags?",
+    "How many sandbags per household?",
+    "SES 沙袋 领取点",
+    "洪水沙袋 每户数量"
+   ],
+   "answer": {
+    "en": "VICSES says it only sets up sandbag collection points when required, to help prepare at-risk townships. It says that at other times, the community may be able to get sandbags from a local hardware store. VICSES recommends 25 sandbags or less per household, depending on flood risk, and says sandbags will not stop floodwater completely.",
+    "zh": "VICSES 表示，只有在需要时才会设置沙袋领取点，以协助有风险的城镇做准备。它说，其他时候居民或许可以从当地五金店取得沙袋。VICSES 建议每户 25 个沙袋或更少，视洪水风险而定，并表示沙袋不能完全挡住洪水。"
+   },
+   "sources": [
+    {
+     "url": "https://www.ses.vic.gov.au/plan-and-stay-safe/sandbag-guide",
+     "quote": "VICSES only set up sandbag collection points when required to assist to prepare at-risk townships. At other times, community may be able to access sandbags from their local hardware store."
+    },
+    {
+     "url": "https://www.ses.vic.gov.au/plan-and-stay-safe/sandbag-guide",
+     "quote": "We recommend 25 sandbags or less per household, depending on your flood risk."
+    },
+    {
+     "url": "https://www.ses.vic.gov.au/plan-and-stay-safe/sandbag-guide",
+     "quote": "Sandbags won’t stop floodwater completely, but can reduce the amount of water entering your home or business."
+    }
+   ],
+   "tags": [
+    "ses",
+    "flood",
+    "sandbags",
+    "emergency"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "ses-how-to-fill-sandbags",
+   "question": {
+    "en": "How should sandbags be filled?",
+    "zh": "沙袋应该怎么装？"
+   },
+   "aliases": [
+    "Can I fill sandbags with dirt?",
+    "How full should a sandbag be?",
+    "沙袋装多满",
+    "沙袋可以用泥土吗"
+   ],
+   "answer": {
+    "en": "VICSES says to fill hessian sandbags with sand only and not dirt. It says to fill each bag only two-thirds full and not to tie the top of the bag.",
+    "zh": "VICSES 表示，麻布沙袋只能装沙，不能装泥土。它说，每个袋子只装三分之二满，并且不要扎紧袋口。"
+   },
+   "sources": [
+    {
+     "url": "https://www.ses.vic.gov.au/plan-and-stay-safe/sandbag-guide",
+     "quote": "Only use sand to fill hessian bags. Do not use dirt."
+    },
+    {
+     "url": "https://www.ses.vic.gov.au/plan-and-stay-safe/sandbag-guide",
+     "quote": "Only fill sandbag two-thirds full. Do not over fill the sandbag as it will be too heavy to carry."
+    },
+    {
+     "url": "https://www.ses.vic.gov.au/plan-and-stay-safe/sandbag-guide",
+     "quote": "Do not tie the top of the sandbag."
+    }
+   ],
+   "tags": [
+    "ses",
+    "flood",
+    "sandbags",
+    "emergency"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "ses-driving-through-floodwater-15cm",
+   "question": {
+    "en": "Is it safe to drive through floodwater in Victoria?",
+    "zh": "在维多利亚州可以开车穿过积水路段吗？"
+   },
+   "aliases": [
+    "How deep can floodwater be before a car floats?",
+    "15 to float",
+    "开车过水淹路面",
+    "15厘米水能浮起汽车吗"
+   ],
+   "answer": {
+    "en": "VICSES says to never drive through floodwater. It says it can take just 15cm of flowing water to float a car, which it describes as the height of an average pen.",
+    "zh": "VICSES 表示，切勿驾车穿过洪水。它说，只需 15 厘米深的流动水就能让汽车浮起，并形容这相当于一支普通笔的高度。"
+   },
+   "sources": [
+    {
+     "url": "https://www.ses.vic.gov.au/plan-and-stay-safe/emergencies/flood",
+     "quote": "Stay safe by never driving through floodwater. It can take just 15cm of flowing water to float a car - That’s the height of an average pen."
+    }
+   ],
+   "tags": [
+    "ses",
+    "flood",
+    "driving",
+    "emergency"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "cfa-fire-danger-rating-levels",
+   "question": {
+    "en": "What are the fire danger rating levels in Victoria?",
+    "zh": "维多利亚州的火险等级有哪些？"
+   },
+   "aliases": [
+    "What does a Catastrophic fire danger rating mean?",
+    "How many days ahead is the fire danger rating forecast?",
+    "火险评级 等级",
+    "极端火险 灾难性火险"
+   ],
+   "answer": {
+    "en": "CFA lists four levels of fire danger: Moderate (plan and prepare), High (be ready to act), Extreme (take action now to protect your life and property) and Catastrophic (for your survival, leave bushfire risk areas). Ratings are forecast using Bureau of Meteorology data for up to four days in advance.",
+    "zh": "CFA 列出四个火险等级：中等（做好计划和准备）、高（准备行动）、极端（立即采取行动保护生命和财产）和灾难性（为了生存，离开有山火风险的地区）。评级根据气象局数据预报，最多提前四天。"
+   },
+   "sources": [
+    {
+     "url": "https://www.cfa.vic.gov.au/warnings-and-restrictions/fire-bans-ratings-and-restrictions/about-fire-danger-ratings",
+     "quote": "There are four levels of fire danger: Moderate - Plan and prepare High - Be ready to act Extreme - Take action now to protect your life and property Catastrophic - For your survival, leave bushfire risk areas"
+    },
+    {
+     "url": "https://www.cfa.vic.gov.au/warnings-and-restrictions/fire-bans-ratings-and-restrictions/about-fire-danger-ratings",
+     "quote": "Ratings are forecast using Bureau of Meteorology data for up to four days in advance, based on weather and other environmental conditions such as vegetation."
+    }
+   ],
+   "tags": [
+    "cfa",
+    "fire",
+    "bushfire",
+    "emergency"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "cfa-total-fire-ban-meaning",
+   "question": {
+    "en": "What is a Total Fire Ban in Victoria?",
+    "zh": "维多利亚州的“全面禁火令”（Total Fire Ban）是什么？"
+   },
+   "aliases": [
+    "Can I light a fire on a Total Fire Ban day?",
+    "Who declares a Total Fire Ban?",
+    "Total Fire Ban 是什么意思",
+    "禁火日能生火吗"
+   ],
+   "answer": {
+    "en": "CFA says Total Fire Bans are declared by CFA's Chief Officer on days of heightened fire danger, to reduce the risk of a fire starting. A Total Fire Ban day can be declared at any time of the year, and no fires are to be lit in the open air unless the person has a special permit. CFA says anyone who breaches a declaration is subject to heavy legal penalties, including large fines and even imprisonment.",
+    "zh": "CFA 表示，全面禁火令由 CFA 首席官员在火险升高的日子宣布，以降低起火风险。禁火日可在一年中的任何时候宣布，除非持有特别许可，否则不得在露天点火。CFA 说，违反禁令者将面临严厉的法律处罚，包括巨额罚款甚至监禁。"
+   },
+   "sources": [
+    {
+     "url": "https://www.cfa.vic.gov.au/warnings-and-restrictions/fire-bans-ratings-and-restrictions/about-total-fire-bans",
+     "quote": "Total Fire Bans are declared by CFA's Chief Officer on days of heightened fire danger to reduce the risk of a fire starting."
+    },
+    {
+     "url": "https://www.cfa.vic.gov.au/warnings-and-restrictions/fire-bans-ratings-and-restrictions/about-total-fire-bans",
+     "quote": "Anyone who breaches a Total Fire Ban declaration is subject to heavy legal penalties including large fines and even imprisonment."
+    },
+    {
+     "url": "https://www.cfa.vic.gov.au/warnings-and-restrictions/fire-danger-period/about-the-fire-danger-period",
+     "quote": "A Total Fire Ban day can be declared at any time throughout the year. No fires are to be lit in the open air on Total Fire Ban Days unless you have a special permit."
+    }
+   ],
+   "tags": [
+    "cfa",
+    "fire",
+    "total-fire-ban",
+    "emergency"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "cfa-fire-danger-period-dates",
+   "question": {
+    "en": "What is the Fire Danger Period in Victoria and when does it run?",
+    "zh": "维多利亚州的“火险期”（Fire Danger Period）是什么，何时开始？"
+   },
+   "aliases": [
+    "When does fire season start in Victoria?",
+    "Can I light a fire in my yard during fire season?",
+    "火险期 几月开始",
+    "维州火灾季节 露天生火"
+   ],
+   "answer": {
+    "en": "CFA declares the Fire Danger Period for each municipality, depending on rain, grassland curing rate and other local conditions. It may be declared as early as October in some municipalities and typically stays in place until the fire danger lessens, which could be as late as May. Once it is declared, a fire cannot be lit in the open air unless the person has a permit or complies with certain requirements.",
+    "zh": "CFA 按市（council/shire）分别宣布火险期，取决于降雨、草地干枯率和其他当地条件。有些地区最早可在 10 月宣布，通常持续到火险下降为止，最晚可到 5 月。火险期宣布后，除非持有许可或符合某些要求，否则不得在露天点火。"
+   },
+   "sources": [
+    {
+     "url": "https://www.cfa.vic.gov.au/warnings-and-restrictions/fire-danger-period/about-the-fire-danger-period",
+     "quote": "CFA declares the Fire Danger Period for each municipality (shire or council) at different times in the lead up to the fire season. It depends on the amount of rain, grassland curing rate and other local conditions. The Fire Danger Period may be declared as early as October in some municipalities, and typically remains in place until the fire danger lessens, which could be as late as May."
+    },
+    {
+     "url": "https://www.cfa.vic.gov.au/warnings-and-restrictions/fire-danger-period/about-the-fire-danger-period",
+     "quote": "Once the Fire Danger Period has been declared, fire restrictions come into force. This means you cannot light a fire in the open air unless you have a permit or comply with certain requirements."
+    }
+   ],
+   "tags": [
+    "cfa",
+    "fire",
+    "fire-danger-period",
+    "emergency"
+   ],
+   "checked": "2026-10-30",
+   "note": {
+    "en": "Dates differ by municipality and change each year; the CFA page does not give a single statewide date.",
+    "zh": "各市的日期不同且每年变化；CFA 页面没有给出全州统一的日期。"
+   }
+  },
+  {
+   "id": "cfa-burn-off-permit-fire-danger-period",
+   "question": {
+    "en": "Do I need a permit to burn off in Victoria?",
+    "zh": "在维多利亚州烧荒（burn-off）需要许可吗？"
+   },
+   "aliases": [
+    "Can I burn garden waste in the fire danger period?",
+    "Do I have to notify anyone before burning off?",
+    "烧树叶需要许可吗",
+    "维州 burn-off 许可"
+   ],
+   "answer": {
+    "en": "CFA says a permit is needed to burn off during the Fire Danger Period. It says the person must also notify Triple Zero Victoria of the burn-off as contained in the permit, otherwise brigades will be called out unnecessarily.",
+    "zh": "CFA 表示，在火险期内烧荒需要许可。它说，还必须按许可中的规定向 Triple Zero Victoria 通报烧荒，否则消防队会被不必要地出动。"
+   },
+   "sources": [
+    {
+     "url": "https://www.cfa.vic.gov.au/warnings-and-restrictions/fire-danger-period/about-the-fire-danger-period",
+     "quote": "You need a permit to burn-off during the Fire Danger Period. You must also notify Triple Zero Victoria of your burn-off as contained in your permit. Otherwise brigades will be called out unnecessarily."
+    }
+   ],
+   "tags": [
+    "cfa",
+    "fire",
+    "burn-off",
+    "emergency"
+   ],
+   "checked": "2026-10-30",
+   "note": {
+    "en": "Local councils may have their own local laws on lighting fires.",
+    "zh": "地方议会可能有各自关于点火的地方法规。"
+   }
+  },
+  {
+   "id": "vicemergency-hotline-number",
+   "question": {
+    "en": "What is the VicEmergency Hotline number?",
+    "zh": "VicEmergency 热线电话是多少？"
+   },
+   "aliases": [
+    "How do I get emergency information in another language in Victoria?",
+    "VicEmergency hotline",
+    "1800 226 226",
+    "VicEmergency 热线 翻译"
+   ],
+   "answer": {
+    "en": "The VicEmergency Hotline is 1800 226 226 and gives information on current emergencies and fire information. CFA says people who do not speak English can get translated information from the Hotline by calling 131 450.",
+    "zh": "VicEmergency 热线是 1800 226 226，提供当前紧急情况和火灾的信息。CFA 表示，不会说英语的人可以拨打 131 450 从热线获取翻译信息。"
+   },
+   "sources": [
+    {
+     "url": "https://www.cfa.vic.gov.au/fire-safety/bushfire-safety-basics/vicemergency-app-and-hotline",
+     "quote": "Call 1800 226 226 to hear about current emergencies and fire information, including:"
+    },
+    {
+     "url": "https://www.cfa.vic.gov.au/fire-safety/bushfire-safety-basics/vicemergency-app-and-hotline",
+     "quote": "If you or someone you know doesn't speak English, they can access translated information from the VicEmergency Hotline by calling 131 450"
+    }
+   ],
+   "tags": [
+    "vicemergency",
+    "emergency",
+    "hotline",
+    "language"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "vicemergency-app-watch-zone",
+   "question": {
+    "en": "What does the VicEmergency app do?",
+    "zh": "VicEmergency 应用有什么功能？"
+   },
+   "aliases": [
+    "How do I get emergency alerts in Victoria?",
+    "VicEmergency watch zone",
+    "VicEmergency App 怎么设置提醒",
+    "维州紧急警报 应用"
+   ],
+   "answer": {
+    "en": "The VicEmergency app, website and Hotline provide real-time emergency information and warnings. Creating a watch zone on a device allows the person to be notified of incidents and warnings in a particular area of their choice. The default alert settings are for fire, flood and weather.",
+    "zh": "VicEmergency 应用、网站和热线提供实时的紧急信息和警报。在设备上创建“关注区”后，可以收到所选地区的事件和警报通知。默认的提醒设置涵盖火灾、洪水和天气。"
+   },
+   "sources": [
+    {
+     "url": "https://www.cfa.vic.gov.au/fire-safety/bushfire-safety-basics/vicemergency-app-and-hotline",
+     "quote": "The VicEmergency app, website and Hotline provide real-time emergency information and warnings."
+    },
+    {
+     "url": "https://www.cfa.vic.gov.au/fire-safety/bushfire-safety-basics/vicemergency-app-and-hotline",
+     "quote": "Creating a watch zone on your device allows you to be notified of incidents and warnings in a particular area of your choice."
+    },
+    {
+     "url": "https://www.cfa.vic.gov.au/fire-safety/bushfire-safety-basics/vicemergency-app-and-hotline",
+     "quote": "If you are happy to receive the default alert settings which are for fire, flood and weather, then simply press quick save at the top of your screen."
+    }
+   ],
+   "tags": [
+    "vicemergency",
+    "emergency",
+    "app",
+    "weather"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "triple-zero-victoria-call-process",
+   "question": {
+    "en": "What happens when I call 000 in Victoria?",
+    "zh": "在维多利亚州拨打 000 后会发生什么？"
+   },
+   "aliases": [
+    "Who answers triple zero?",
+    "What does the 000 operator ask?",
+    "拨打 000 会被问什么",
+    "000 接线员"
+   ],
+   "answer": {
+    "en": "When calling triple zero (000), the caller is first asked by Telstra which service is required: police, fire or ambulance. A caller on a mobile phone is also asked which state they are calling from, and a call from within Victoria is connected to one of Triple Zero Victoria's emergency communication centres. Triple Zero Victoria says to not hang up until the Call-taker advises you to do so.",
+    "zh": "拨打三个零（000）时，Telstra 会先问需要哪种服务：警察、消防或救护车。用手机拨打的人还会被问在哪个州，如果在维多利亚州内拨打，电话会接到 Triple Zero Victoria 的某个紧急通讯中心。Triple Zero Victoria 表示，在接线员告知可以挂断之前不要挂机。"
+   },
+   "sources": [
+    {
+     "url": "https://www.triplezero.vic.gov.au/making-triple-zero-000-call",
+     "quote": "When you first call triple zero (000), you will be asked by Telstra which service you require: police, fire or ambulance."
+    },
+    {
+     "url": "https://www.triplezero.vic.gov.au/making-triple-zero-000-call",
+     "quote": "If you are calling from a mobile phone, you will also be asked which state you are calling from. If you are calling from within Victoria, you will be connected to one of Triple Zero Victoria’s emergency communication centres."
+    },
+    {
+     "url": "https://www.triplezero.vic.gov.au/making-triple-zero-000-call",
+     "quote": "Don’t hang up until the Call-taker advises you to do so."
+    }
+   ],
+   "tags": [
+    "triple-zero",
+    "emergency",
+    "000"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "triple-zero-translator-hearing-impairment",
+   "question": {
+    "en": "How do I call 000 if I need an interpreter or have a hearing or speech impairment?",
+    "zh": "需要翻译或有听力、语言障碍时，如何拨打 000？"
+   },
+   "aliases": [
+    "Can I ask for a translator when calling 000?",
+    "106 TTY service",
+    "拨打 000 要翻译",
+    "听障人士 紧急电话 106"
+   ],
+   "answer": {
+    "en": "Triple Zero Victoria says a caller who needs a translator should state the language required. It says people with a hearing or speech impairment can contact police, fire or ambulance by calling the 106 TTY service if life or property is in danger.",
+    "zh": "Triple Zero Victoria 表示，需要翻译的来电者应说明所需的语言。它说，有听力或语言障碍的人，如果生命或财产处于危险中，可以拨打 106 TTY 服务联系警察、消防或救护车。"
+   },
+   "sources": [
+    {
+     "url": "https://www.triplezero.vic.gov.au/making-triple-zero-000-call",
+     "quote": "If you need a translator, state the language you require."
+    },
+    {
+     "url": "https://www.triplezero.vic.gov.au/making-triple-zero-000-call",
+     "quote": "If you have a hearing or speech impairment and life or property is in danger, you can contact police, fire or ambulance by calling the 106 TTY service."
+    }
+   ],
+   "tags": [
+    "triple-zero",
+    "emergency",
+    "000",
+    "language",
+    "accessibility"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-emergency-markers",
+   "question": {
+    "en": "What are emergency markers in Victorian parks and trails?",
+    "zh": "维多利亚州公园和步道上的“紧急标识牌”是什么？"
+   },
+   "aliases": [
+    "How do I tell 000 where I am on a bike trail?",
+    "Green emergency marker sign",
+    "紧急标志牌 绿色",
+    "国家公园 报警 位置"
+   ],
+   "answer": {
+    "en": "Emergency markers are designed to pinpoint an exact location in public open spaces or areas that are otherwise hard to define. They look like a street sign with white text on a green background. Each has a unique alphanumeric code made up of three letters and three numbers, which the caller can give the Call-taker when calling triple zero (000).",
+    "zh": "紧急标识牌用于在公共开放空间或其他难以描述的地点标明确切位置。它们看起来像白字绿底的路牌，每块都有由三个字母和三个数字组成的唯一编码，拨打三个零（000）时可把该编码告诉接线员。"
+   },
+   "sources": [
+    {
+     "url": "https://www.triplezero.vic.gov.au/making-triple-zero-000-call",
+     "quote": "Emergency markers are designed to pinpoint your exact location in public open spaces or an area that may otherwise be hard to define."
+    },
+    {
+     "url": "https://www.triplezero.vic.gov.au/making-triple-zero-000-call",
+     "quote": "Emergency markers look like a street sign with white text on a green background. Each has a unique alphanumeric code made up of three letters and three numbers."
+    },
+    {
+     "url": "https://www.triplezero.vic.gov.au/making-triple-zero-000-call",
+     "quote": "When calling triple zero (000), provide the Call-taker with the alphanumeric code on the Emergency Marker sign."
+    }
+   ],
+   "tags": [
+    "triple-zero",
+    "emergency",
+    "000",
+    "parks"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-heat-health-warning",
+   "question": {
+    "en": "What is a heat health warning in Victoria?",
+    "zh": "维多利亚州的“高温健康警告”是什么？"
+   },
+   "aliases": [
+    "Who issues heat health warnings?",
+    "What is a heatwave warning?",
+    "高温健康预警",
+    "热浪警告 谁发布"
+   ],
+   "answer": {
+    "en": "Victoria's health department issues a heat health warning in response to a new Bureau of Meteorology severe or extreme heatwave warning. The warning notifies the community, local governments, hospitals, and health and community services of the risk and likely impact on people's health. The Chief Health Officer may also issue one when forecast temperatures pose a health risk, for example a single day of extremely high temperatures.",
+    "zh": "维多利亚州卫生部门会在气象局发布新的严重或极端热浪警告时发出高温健康警告。该警告会通知社区、地方政府、医院以及健康和社区服务机构有关风险及对健康的可能影响。当预报气温构成健康风险时（例如单日极高温），首席卫生官也可发出该警告。"
+   },
+   "sources": [
+    {
+     "url": "https://www.health.vic.gov.au/environmental-health/heat-health-warning",
+     "quote": "In response to a new Bureau severe or extreme heatwave warning, we will issue a heat health warning."
+    },
+    {
+     "url": "https://www.health.vic.gov.au/environmental-health/heat-health-warning",
+     "quote": "A heat health warning notifies the community, local governments, hospitals, health and community services of the risk and likely impact on people's health."
+    },
+    {
+     "url": "https://www.health.vic.gov.au/environmental-health/heat-health-warning",
+     "quote": "The Chief Health Officer may also issue a heat health warning when they consider forecast temperatures pose a health risk for example a single day of extremely high temperatures."
+    }
+   ],
+   "tags": [
+    "heat",
+    "health",
+    "weather",
+    "emergency"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "bom-heatwave-categories-victoria",
+   "question": {
+    "en": "What are the heatwave categories in the national heatwave warning system?",
+    "zh": "国家热浪预警系统分哪几类热浪？"
+   },
+   "aliases": [
+    "What is an extreme heatwave?",
+    "When does the Bureau issue heatwave warnings?",
+    "热浪分级",
+    "极端热浪 谁有风险"
+   ],
+   "answer": {
+    "en": "The health department says the Bureau of Meteorology issues heatwave warnings when 10% or more of a weather district is in a severe or extreme heatwave. It lists 3 heatwave categories: low-intensity heatwaves, where most people can cope; severe heatwaves, where vulnerable people are at risk; and extreme heatwaves, where everyone is at risk, even healthy people.",
+    "zh": "卫生部门表示，当某个天气区域有 10% 或以上处于严重或极端热浪时，气象局会发布热浪警告。它列出 3 类热浪：低强度热浪，大多数人可以应对；严重热浪，易受影响的人有风险；极端热浪，所有人都有风险，包括健康的人。"
+   },
+   "sources": [
+    {
+     "url": "https://www.health.vic.gov.au/environmental-health/heat-health-warning",
+     "quote": "The Bureau of Meteorology issues heatwave warnings when 10% or more of a weather district is in a severe or extreme heatwave."
+    },
+    {
+     "url": "https://www.health.vic.gov.au/environmental-health/heat-health-warning",
+     "quote": "They use 3 heatwave categories based on intensity:"
+    },
+    {
+     "url": "https://www.health.vic.gov.au/environmental-health/heat-health-warning",
+     "quote": "Low-intensity heatwaves - most people can cope Severe heatwaves - vulnerable people at risk Extreme heatwaves - everyone is at risk, even people who are healthy."
+    }
+   ],
+   "tags": [
+    "heat",
+    "health",
+    "weather"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "microchip-and-register-dog-cat-victoria",
+   "question": {
+    "en": "Do dogs and cats in Melbourne need to be microchipped and registered with the council?",
+    "zh": "墨尔本的猫狗需要植入芯片并向市政府登记吗？"
+   },
+   "aliases": [
+    "Do I have to register my dog in Melbourne?",
+    "Pet registration and microchip rules in Victoria",
+    "墨尔本养狗要登记吗",
+    "猫狗芯片和宠物登记规定"
+   ],
+   "answer": {
+    "en": "Yes. City of Boroondara says all dogs and cats over 3 months old must be microchipped and registered with their local council by 9 April each year. City of Stonnington likewise says a cat or dog must be microchipped and registered with the council when it turns three months old. Boroondara says annual fees depend on the pet's type, desexing status and concession eligibility.",
+    "zh": "需要。Boroondara 市政府表示，所有超过 3 个月大的猫狗都必须植入芯片，并在每年 4 月 9 日前向所在地市政府登记。Stonnington 市政府同样表示，猫或狗满三个月时须植入芯片并向市政府登记。Boroondara 表示，年度登记费取决于宠物种类、是否绝育以及是否符合优惠条件。"
+   },
+   "sources": [
+    {
+     "url": "https://www.boroondara.vic.gov.au/services/pets-and-animals/pet-registration",
+     "quote": "All dogs and cats over the age of 3 months must be microchipped and registered with their local council by 9 April each year."
+    },
+    {
+     "url": "https://www.boroondara.vic.gov.au/services/pets-and-animals/pet-registration",
+     "quote": "Annual pet registration fees are determined by your pet's type, desexing status and your eligibility for concession rates."
+    },
+    {
+     "url": "https://www.stonnington.vic.gov.au/Services/Pets-and-animals/Microchipping-and-desexing-your-pet",
+     "quote": "You will need to microchip your cat or dog and register it with City of Stonnington when it turns three months old."
+    }
+   ],
+   "tags": [
+    "pets",
+    "dogs",
+    "cats",
+    "council"
+   ],
+   "checked": "2026-10-30",
+   "note": {
+    "en": "Two councils are cited; each Victorian council runs its own registration and sets its own fees.",
+    "zh": "此处引用了两个市政府；维多利亚州各市政府各自办理登记并自行定价。"
+   }
+  },
+  {
+   "id": "dogs-in-victorian-national-parks",
+   "question": {
+    "en": "Can I take my dog into national parks in Victoria?",
+    "zh": "可以带狗进入维多利亚州的国家公园吗？"
+   },
+   "aliases": [
+    "Are dogs allowed in national parks near Melbourne?",
+    "Dog friendly parks Victoria",
+    "国家公园可以带狗吗",
+    "维多利亚州哪些公园可以遛狗"
+   ],
+   "answer": {
+    "en": "Generally no. Parks Victoria says dogs are not allowed in most national parks in Victoria, including any beaches that form part of a national park. Dogs are permitted in many other parks and reserves if they are under control and on a lead, except in designated off-lead areas. Parks Victoria says a dog in a protected area where it is not allowed, or off-leash in a dog-friendly park, can lead to a fine.",
+    "zh": "一般不可以。维多利亚州公园管理局（Parks Victoria）表示，维州大多数国家公园不允许带狗，包括属于国家公园的海滩。在许多其他公园和保护区内，只要狗受到控制并拴着牵引绳即可入内，指定的免拴区域除外。Parks Victoria 表示，狗出现在不允许的保护区，或在适合带狗的公园内不拴绳，都可能被罚款。"
+   },
+   "sources": [
+    {
+     "url": "https://www.parks.vic.gov.au/things-to-do/dog-friendly-parks",
+     "quote": "Dogs are not allowed in most national parks in Victoria. This includes any beaches that form part of the national park."
+    },
+    {
+     "url": "https://www.parks.vic.gov.au/things-to-do/dog-friendly-parks",
+     "quote": "Dogs are permitted in many parks and reserves provided they are always under control and on leads."
+    },
+    {
+     "url": "https://www.parks.vic.gov.au/things-to-do/dog-friendly-parks",
+     "quote": "If your dog is found in a protected area where they’re not allowed, or in a dog-friendly park but off-leash, you could be fined."
+    }
+   ],
+   "tags": [
+    "pets",
+    "dogs",
+    "parks"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "dog-on-lead-off-leash-melbourne-parks",
+   "question": {
+    "en": "Do dogs have to be on a lead in Melbourne parks?",
+    "zh": "在墨尔本的公园里，狗必须拴绳吗？"
+   },
+   "aliases": [
+    "Where can I let my dog off leash in Melbourne?",
+    "Dog off-leash rules in council parks",
+    "墨尔本哪里可以让狗不拴绳",
+    "公园遛狗要拴绳吗"
+   ],
+   "answer": {
+    "en": "Rules are set by each council. City of Stonnington says dogs must be kept on-lead at all times unless in a designated off-lead area, and owners must carry a lead. Glen Eira says off-leash park users must carry a leash at all times and put a leash on the dog within 20 metres of playgrounds, BBQs or picnic areas. Failure to follow the rules may result in a fine.",
+    "zh": "规则由各市政府制定。Stonnington 市政府规定，除指定的免拴区域外，狗必须始终拴绳，主人须携带牵引绳。Glen Eira 市政府规定，在免拴公园内主人须随时携带牵引绳，并在距离儿童游乐场、烧烤区或野餐区 20 米范围内给狗拴上绳。违反规定可能被罚款。"
+   },
+   "sources": [
+    {
+     "url": "https://www.stonnington.vic.gov.au/Services/Pets-and-animals/Off-lead-parks-and-reserves",
+     "quote": "keep your dog on-lead at all times unless in a designated off-lead area"
+    },
+    {
+     "url": "https://www.stonnington.vic.gov.au/Services/Pets-and-animals/Off-lead-parks-and-reserves",
+     "quote": "Failure to do so may result in a fine."
+    },
+    {
+     "url": "https://www.gleneira.vic.gov.au/services/pets-and-animals/dog-walking-and-off-leash-areas",
+     "quote": "carry a leash at all times"
+    },
+    {
+     "url": "https://www.gleneira.vic.gov.au/services/pets-and-animals/dog-walking-and-off-leash-areas",
+     "quote": "put a leash on your dog within 20 metres of:"
+    }
+   ],
+   "tags": [
+    "pets",
+    "dogs",
+    "parks",
+    "council"
+   ],
+   "checked": "2026-10-30",
+   "note": {
+    "en": "Stonnington and Glen Eira are examples; other councils have their own off-leash areas and rules.",
+    "zh": "Stonnington 和 Glen Eira 仅为示例；其他市政府有各自的免拴区域和规定。"
+   }
+  },
+  {
+   "id": "dog-poo-pick-up-melbourne",
+   "question": {
+    "en": "Do I have to pick up my dog's poo in Melbourne?",
+    "zh": "在墨尔本必须清理狗的粪便吗？"
+   },
+   "aliases": [
+    "Can I be fined for not picking up dog poo?",
+    "Dog poo bags in parks Melbourne",
+    "遛狗不捡狗屎会被罚款吗",
+    "墨尔本遛狗要带粪便袋吗"
+   ],
+   "answer": {
+    "en": "Yes, according to the councils checked. Whitehorse City Council requires dog owners to carry a bag or scoop to remove their dog's poo in any public place, and says owners can be fined for not picking up. City of Stonnington also lists picking up after your dog as a requirement and says failing to follow its rules may result in a fine.",
+    "zh": "是的，根据所查阅的市政府页面。Whitehorse 市政府要求狗主人在任何公共场所随身携带袋子或铲子清理狗的粪便，并表示不清理可能被罚款。Stonnington 市政府也把清理狗粪列为要求，并表示不遵守规定可能被罚款。"
+   },
+   "sources": [
+    {
+     "url": "https://www.whitehorse.vic.gov.au/living-working/pets/dogs/dog-poo-disposal",
+     "quote": "Whitehorse City Council requires dog owners to carry an appropriate receptacle (e.g. bag or scoop) to remove and dispose of their dog’s poo whenever they are with their dog in a public place. You can be fined for not picking up after your dog."
+    },
+    {
+     "url": "https://www.stonnington.vic.gov.au/Services/Pets-and-animals/Off-lead-parks-and-reserves",
+     "quote": "pick up after your dog (bags and bins are supplied at designated off-lead areas)"
+    }
+   ],
+   "tags": [
+    "pets",
+    "dogs",
+    "council"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "how-many-pets-without-permit-melbourne",
+   "question": {
+    "en": "How many dogs or cats can I keep at home in Melbourne without a permit?",
+    "zh": "在墨尔本，家里不申请许可最多可以养几只猫狗？"
+   },
+   "aliases": [
+    "Pet limit per household Melbourne",
+    "Excess animal permit",
+    "墨尔本一户最多养几条狗",
+    "养多只宠物要许可吗"
+   ],
+   "answer": {
+    "en": "It depends on the council. City of Monash says 2 dogs, or 2 cats, can be kept on a property without an additional animal permit. City of Boroondara says the maximum number depends on the type of animal and dwelling, and keeping more requires an Excess Animal Permit, which costs $141.50 per application.",
+    "zh": "取决于所在市政府。Monash 市政府表示，一处房产可养 2 只狗或 2 只猫而无需额外的动物许可。Boroondara 市政府表示，不需许可的最高数量取决于动物种类和住宅类型，超出须申请超额动物许可（Excess Animal Permit），每份申请费用为 141.50 澳元。"
+   },
+   "sources": [
+    {
+     "url": "https://www.monash.vic.gov.au/Residents-Property/Animals/Dogs",
+     "quote": "You can keep 2 dogs on the property without an additional animal permit."
+    },
+    {
+     "url": "https://www.monash.vic.gov.au/Residents-Property/Animals/Cats",
+     "quote": "You can keep 2 cats on the property without an additional animal permit."
+    },
+    {
+     "url": "https://www.boroondara.vic.gov.au/services/pets-and-animals/apply-excess-animal-permit",
+     "quote": "There is a maximum number of animals you can keep without a permit. The number depends on the type of animal and dwelling."
+    },
+    {
+     "url": "https://www.boroondara.vic.gov.au/services/pets-and-animals/apply-excess-animal-permit",
+     "quote": "The fee for an Excess Animal Permit is $141.50 per application."
+    }
+   ],
+   "tags": [
+    "pets",
+    "dogs",
+    "cats",
+    "council"
+   ],
+   "checked": "2026-10-30",
+   "valid_until": "2027-06-30",
+   "note": {
+    "en": "The permit fee is a council fee that may change.",
+    "zh": "许可费是市政府收费，可能调整。"
+   }
+  },
+  {
+   "id": "cat-curfew-monash-glen-eira",
+   "question": {
+    "en": "Is there a cat curfew in Melbourne?",
+    "zh": "墨尔本有猫宵禁吗？"
+   },
+   "aliases": [
+    "Must I keep my cat inside at night in Melbourne?",
+    "Cat curfew Monash",
+    "Cat curfew Glen Eira",
+    "墨尔本晚上猫要关在家里吗",
+    "猫宵禁"
+   ],
+   "answer": {
+    "en": "Some councils have one. City of Monash says its curfew runs between sunset or 7pm (whichever is later) and sunrise and requires cats to be contained inside or on the owner's property. Glen Eira says cats must remain on the owner's property between 7pm and 6am, with the curfew coming into effect in late 2026.",
+    "zh": "部分市政府设有猫宵禁。Monash 市政府表示，其宵禁时间为日落或晚上 7 点（以较晚者为准）至日出，要求猫主人将猫关在室内或自家物业内。Glen Eira 市政府表示，猫须在晚上 7 点至早上 6 点期间留在主人的物业内，该宵禁将于 2026 年底生效。"
+   },
+   "sources": [
+    {
+     "url": "https://www.monash.vic.gov.au/Residents-Property/Animals/Cats",
+     "quote": "The curfew, which is between sunset or 7pm (whichever is later) and sunrise, was introduced following extensive community consultation. The curfew requires cat owners to keep their cats contained inside or on their property between those times."
+    },
+    {
+     "url": "https://www.gleneira.vic.gov.au/services/pets-and-animals/cat-curfew",
+     "quote": "Following the adoption of a night-time cat curfew at the Ordinary Council M eeting on Wednesday 5 November 2025, it will soon be a requirement that cats must remain on their owner’s property between 7pm and 6am."
+    }
+   ],
+   "tags": [
+    "pets",
+    "cats",
+    "council"
+   ],
+   "checked": "2026-10-30",
+   "valid_until": "2027-06-30",
+   "note": {
+    "en": "Curfews are set by individual councils; check your own council. The Glen Eira start date is only given as late 2026.",
+    "zh": "宵禁由各市政府自行规定，请查询所在市政府。Glen Eira 页面只写明生效时间为 2026 年底。"
+   }
+  },
+  {
+   "id": "supply-alcohol-to-minors-at-home-victoria",
+   "question": {
+    "en": "Can I give alcohol to someone under 18 at my home in Victoria?",
+    "zh": "在维多利亚州，我可以在自己家里给未满 18 岁的人提供酒精饮料吗？"
+   },
+   "aliases": [
+    "Is it legal to serve teenagers alcohol at a party?",
+    "Underage drinking in private homes Victoria",
+    "家里聚会可以给未成年人喝酒吗",
+    "维州未成年人在家喝酒的规定"
+   ],
+   "answer": {
+    "en": "Only in limited cases. Liquor Control Victoria says the legal drinking age is 18 and it is legal to provide alcohol to a minor in a private home if you are the parent or guardian, or have the parent or guardian's consent, and the drinking is supervised by a responsible adult. Providing alcohol without consent can lead to a fine of more than $25,000.",
+    "zh": "仅限特定情形。维多利亚州酒类管制局（Liquor Control Victoria）表示，法定饮酒年龄为 18 岁；只有当你是未成年人的父母或监护人，或已获得其父母或监护人同意，并且有负责任的成年人监督其饮酒时，才可在私人住宅内向未成年人提供酒精。未经同意提供酒精，可能被处以超过 25,000 澳元的罚款。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vic.gov.au/underage-drinking-in-private-homes",
+     "quote": "The legal drinking age in Victoria is 18 years. Anyone under 18 is considered a minor."
+    },
+    {
+     "url": "https://www.vic.gov.au/underage-drinking-in-private-homes",
+     "quote": "you are the minor's parent or legal guardian or you have the parent or guardian's consent (permission) to provide alcohol"
+    },
+    {
+     "url": "https://www.vic.gov.au/underage-drinking-in-private-homes",
+     "quote": "the minor's alcohol drinking is supervised by a responsible adult."
+    },
+    {
+     "url": "https://www.vic.gov.au/underage-drinking-in-private-homes",
+     "quote": "Without consent, if you provide alcohol to a minor in your home you could be fined more than $25,000."
+    }
+   ],
+   "tags": [
+    "alcohol",
+    "law",
+    "minors"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "minors-at-licensed-venues-victoria",
+   "question": {
+    "en": "Can under-18s go into pubs and bars in Victoria?",
+    "zh": "未满 18 岁的人可以进入维多利亚州的酒吧吗？"
+   },
+   "aliases": [
+    "Can kids go into a pub in Melbourne?",
+    "Minors in licensed venues with parent",
+    "未成年人能进酒吧吗",
+    "带孩子去酒吧可以吗"
+   ],
+   "answer": {
+    "en": "A minor is allowed at a licensed venue if they are with a responsible adult. Liquor Control Victoria says it is against the law to supply alcohol to a minor or allow a minor to drink at a licensed venue, with fines of more than $25,000. A responsible adult is 18 or older and can be the minor's parent, step-parent, guardian or grandparent, among others.",
+    "zh": "如果有负责任的成年人陪同，未成年人可以进入持牌场所。维多利亚州酒类管制局表示，向未成年人供应酒精，或允许未成年人在持牌场所饮酒均属违法，罚款可超过 25,000 澳元。负责任的成年人须年满 18 岁，包括未成年人的父母、继父母、监护人或祖父母等。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vic.gov.au/under-18s-at-licensed-venues",
+     "quote": "A minor is allowed at a licensed venue if they are in the company of a responsible adult."
+    },
+    {
+     "url": "https://www.vic.gov.au/under-18s-at-licensed-venues",
+     "quote": "There are serious penalties for breaching these laws, including fines of more than $25,000."
+    },
+    {
+     "url": "https://www.vic.gov.au/under-18s-at-licensed-venues",
+     "quote": "the minor's parent, step-parent, guardian or grandparent. These automatically meet the legal requirement."
+    }
+   ],
+   "tags": [
+    "alcohol",
+    "law",
+    "minors"
+   ],
+   "checked": "2026-10-30",
+   "note": {
+    "en": "Venue conditions, such as unaccompanied-minor exceptions, are set out on the same page.",
+    "zh": "同一页面还列出了场所条件，例如无人陪同的未成年人的例外情形。"
+   }
+  },
+  {
+   "id": "id-accepted-to-buy-alcohol-victoria",
+   "question": {
+    "en": "What ID is accepted to prove my age when buying alcohol in Victoria?",
+    "zh": "在维多利亚州买酒时，哪些证件可用来证明年龄？"
+   },
+   "aliases": [
+    "Is a passport accepted at bars in Melbourne?",
+    "Can I use an overseas driver licence at a pub?",
+    "Acceptable ID for alcohol Victoria",
+    "在墨尔本买酒可以用护照吗",
+    "买酒要带什么身份证件"
+   ],
+   "answer": {
+    "en": "Liquor Control Victoria lists an Australian driver licence (physical or digital), a Victorian proof of age card or equivalent from another state or territory, a Keypass card, and an Australian or foreign passport among acceptable IDs. A foreign driver licence is accepted, but if it is not in English it must come with an official English translation or an International Driving Permit. It says licensees should check the ID of anyone who looks under 25.",
+    "zh": "维多利亚州酒类管制局列出的可接受证件包括：澳大利亚驾照（实体或电子版）、维多利亚州年龄证明卡或其他州/领地的同类证件、Keypass 卡，以及澳大利亚或外国护照。外国驾照也可接受，但若非英文，须附官方英文翻译或国际驾驶许可。该局表示，持牌人应查验任何看起来未满 25 岁者的证件。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vic.gov.au/checking-IDs-before-supplying-alcohol",
+     "quote": "Australian driver licence (physical or digital)"
+    },
+    {
+     "url": "https://www.vic.gov.au/checking-IDs-before-supplying-alcohol",
+     "quote": "Victorian proof of age card or an equivalent from another state or territory of Australia"
+    },
+    {
+     "url": "https://www.vic.gov.au/checking-IDs-before-supplying-alcohol",
+     "quote": "Keypass card"
+    },
+    {
+     "url": "https://www.vic.gov.au/checking-IDs-before-supplying-alcohol",
+     "quote": "Australian or foreign passport"
+    },
+    {
+     "url": "https://www.vic.gov.au/checking-IDs-before-supplying-alcohol",
+     "quote": "Foreign driver licence. If not in English, it must be accompanied by an official English translation (for example, translated by a NAATI accredited translator) or an International Driving Permit."
+    },
+    {
+     "url": "https://www.vic.gov.au/checking-IDs-before-supplying-alcohol",
+     "quote": "It is important you check the ID of anyone who looks under 25 years."
+    }
+   ],
+   "tags": [
+    "alcohol",
+    "id",
+    "law"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "rsa-training-required-victoria",
+   "question": {
+    "en": "Do I need a Responsible Service of Alcohol (RSA) certificate to serve alcohol in Victoria?",
+    "zh": "在维多利亚州提供酒精饮料需要 RSA（负责任服务酒精）证书吗？"
+   },
+   "aliases": [
+    "What is RSA in Victoria?",
+    "RSA certificate for bar work Melbourne",
+    "在墨尔本酒吧工作需要RSA吗",
+    "RSA证书是什么"
+   ],
+   "answer": {
+    "en": "Yes. Liquor Control Victoria says Responsible Service of Alcohol (RSA) training is required if you want to supply alcohol in Victoria. Its RSA page also covers how to get an RSA certificate, including refresher courses and a bridging course for interstate certificates.",
+    "zh": "需要。维多利亚州酒类管制局表示，若要在维州供应酒精饮料，须接受负责任服务酒精（RSA）培训。其 RSA 页面还介绍了如何取得 RSA 证书，包括复训课程以及适用于外州证书的衔接课程。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vic.gov.au/responsible-service-alcohol",
+     "quote": "Responsible Service of Alcohol (RSA) training is required if you want to supply alcohol in Victoria."
+    },
+    {
+     "url": "https://www.vic.gov.au/responsible-service-alcohol",
+     "quote": "How to get an RSA certificate, including refresher courses and the bridging course for interstate certificates."
+    }
+   ],
+   "tags": [
+    "alcohol",
+    "work",
+    "training"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "where-smoking-vaping-banned-victoria",
+   "question": {
+    "en": "Where is smoking and vaping banned in Victoria?",
+    "zh": "维多利亚州哪些地方禁止吸烟和使用电子烟？"
+   },
+   "aliases": [
+    "Can I smoke at a tram stop in Melbourne?",
+    "Smoke-free areas Victoria",
+    "Is vaping banned in public places?",
+    "墨尔本哪里不能抽烟",
+    "电车站可以吸烟吗"
+   ],
+   "answer": {
+    "en": "Under the Tobacco Act 1987, smoking and vaping are prohibited in all enclosed workplaces and certain public spaces. The Victorian health department's list includes outdoor dining areas, train stations, tram-stop platforms, tram and bus shelters, and on trains, trams and buses. It also includes areas within 4 metres of entrances to schools and childcare centres, and within 10 metres of playground equipment.",
+    "zh": "根据《1987 年烟草法》，所有封闭式工作场所和某些公共场所禁止吸烟和使用电子烟。维多利亚州卫生部门列出的场所包括户外用餐区、火车站、电车站台、电车和巴士候车亭，以及火车、电车和巴士上。此外还包括学校和托儿中心入口 4 米范围内，以及游乐设施 10 米范围内。"
+   },
+   "sources": [
+    {
+     "url": "https://www.health.vic.gov.au/tobacco-reform/smoke-free-and-vape-free-areas",
+     "quote": "Under Victoria's Tobacco Act 1987 (the Tobacco Act), smoking and the use of e-cigarettes (vaping) is prohibited in all enclosed workplaces and certain public spaces where members of the public gather."
+    },
+    {
+     "url": "https://www.health.vic.gov.au/tobacco-reform/smoke-free-and-vape-free-areas",
+     "quote": "at train stations, tram-stop platforms, tram and bus shelters, and on trains, trams and buses"
+    },
+    {
+     "url": "https://www.health.vic.gov.au/tobacco-reform/smoke-free-and-vape-free-areas",
+     "quote": "on the grounds of, and within 4 metres of entrances to, childcare centres, kindergartens, preschools, and primary and secondary schools"
+    },
+    {
+     "url": "https://www.health.vic.gov.au/tobacco-reform/playground-equipment-smoke-free-and-vape-free",
+     "quote": "Smoking and the use of e-cigarettes (vaping) is banned within 10 metres of all playground equipment in outdoor public places."
+    }
+   ],
+   "tags": [
+    "smoking",
+    "vaping",
+    "law"
+   ],
+   "checked": "2026-10-30",
+   "note": {
+    "en": "The health department page lists further places, including patrolled beaches and public hospital entrances.",
+    "zh": "卫生部门页面还列出其他场所，包括有救生员巡逻的海滩和公立医院入口。"
+   }
+  },
+  {
+   "id": "smoking-vaping-outdoor-dining-drinking-areas-victoria",
+   "question": {
+    "en": "Can I smoke or vape in a cafe's outdoor seating or beer garden in Victoria?",
+    "zh": "在维多利亚州，可以在咖啡馆的户外座位或啤酒花园吸烟或用电子烟吗？"
+   },
+   "aliases": [
+    "Smoking at outdoor restaurants Melbourne",
+    "Smoking in pub beer gardens Victoria",
+    "墨尔本户外餐厅可以抽烟吗",
+    "酒吧户外区域能抽烟吗"
+   ],
+   "answer": {
+    "en": "No for outdoor dining. The Victorian health department says smoking and vaping are banned in all commercial outdoor dining areas in Victoria, including footpath dining areas, courtyards and beer gardens while food is being eaten or is available to be eaten. It also says the ban applies to an outdoor drinking area if any part of it is within 4 metres of an outdoor dining area, unless separated by a wall at least 2.1 metres high.",
+    "zh": "用餐区域内不可以。维多利亚州卫生部门表示，维州所有商业户外用餐区禁止吸烟和使用电子烟，包括人行道用餐区、庭院和啤酒花园在有人用餐或可供用餐期间。该部门还表示，如果户外饮酒区的任何部分距离户外用餐区不足 4 米，也适用禁令，除非中间隔有至少 2.1 米高的墙。"
+   },
+   "sources": [
+    {
+     "url": "https://www.health.vic.gov.au/tobacco-reform/outdoor-dining-smoke-free-and-vape-free",
+     "quote": "Smoking and the use of e-cigarettes (vaping) is banned in all commercial outdoor dining areas in Victoria."
+    },
+    {
+     "url": "https://www.health.vic.gov.au/tobacco-reform/outdoor-dining-smoke-free-and-vape-free",
+     "quote": "in outdoor areas at hospitality and food venues used for eating food. This includes footpath dining areas, courtyards and beer gardens during times food is being eaten or is available to be eaten."
+    },
+    {
+     "url": "https://www.health.vic.gov.au/tobacco-reform/outdoor-dining-smoke-free-and-vape-free",
+     "quote": "Smoking and vaping is banned in an outdoor drinking area if any part of that area is within 4 metres of an outdoor dining area, unless separated by a wall of at least 2.1 metres high."
+    }
+   ],
+   "tags": [
+    "smoking",
+    "vaping",
+    "law",
+    "dining"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "tobacco-vape-sale-age-18-victoria",
+   "question": {
+    "en": "What is the minimum age to buy cigarettes or vapes in Victoria?",
+    "zh": "在维多利亚州，购买香烟或电子烟的最低年龄是多少？"
+   },
+   "aliases": [
+    "Can under-18s buy tobacco in Victoria?",
+    "Legal age to buy vapes Victoria",
+    "维州几岁可以买烟",
+    "未满18岁能买电子烟吗"
+   ],
+   "answer": {
+    "en": "The Victorian health department says the Tobacco Act bans the sale of tobacco products and vaping goods to people under 18 years of age. Retailers must also ensure that people under 18 do not buy tobacco products from a vending machine on their premises.",
+    "zh": "维多利亚州卫生部门表示，《烟草法》禁止向 18 岁以下的人出售烟草制品和电子烟用品。零售商还必须确保 18 岁以下的人不能在其场所内的自动售货机购买烟草制品。"
+   },
+   "sources": [
+    {
+     "url": "https://www.health.vic.gov.au/tobacco-reform/tobacco-retailers",
+     "quote": "This legislation bans the sale of tobacco products and vaping goods to people under the age of 18 years, and regulates the display and advertising of tobacco products."
+    },
+    {
+     "url": "https://www.health.vic.gov.au/tobacco-reform/tobacco-retailers",
+     "quote": "Retailers must also ensure that persons under 18 do not purchase tobacco products from a vending machine on their premises."
+    }
+   ],
+   "tags": [
+    "smoking",
+    "vaping",
+    "law",
+    "minors"
+   ],
+   "checked": "2026-10-30",
+   "note": {
+    "en": "This page is about retail sale rules; national vape import and supply reforms are covered separately by the Therapeutic Goods Administration.",
+    "zh": "本页说明零售销售规则；全国性的电子烟进口和供应改革由药品管理局（TGA）另行说明。"
+   }
+  }
+ ]
+}
