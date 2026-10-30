@@ -1,0 +1,1309 @@
+{
+  "dataset": "melb-health",
+  "title": {
+    "en": "Health in Melbourne and Victoria, answered from official sources",
+    "zh": "墨尔本与维州健康问答（答案来自官方出处）"
+  },
+  "updated": "2026-10-30",
+  "notes": [
+    {
+      "en": "Each answer is limited to what the cited official page says, with a verbatim quote and the date we checked it. This is a public reference, not personal medical advice.",
+      "zh": "每条答案只说出处原文支持的内容，附原句和核对日期。这是公共参考资料，不是个人医疗建议。"
+    }
+  ],
+  "records": [
+    {
+      "id": "nurse-on-call-number-hours",
+      "question": {
+        "en": "What is the NURSE-ON-CALL phone number in Victoria and when is it open?",
+        "zh": "维州的 NURSE-ON-CALL 电话是多少，什么时候可以打？"
+      },
+      "aliases": [
+        "NURSE-ON-CALL Victoria phone number",
+        "Is there a 24 hour nurse helpline in Victoria?",
+        "NURSE-ON-CALL 电话号码",
+        "维州有 24 小时护士热线吗"
+      ],
+      "answer": {
+        "en": "The NURSE-ON-CALL number is 1300 60 60 24. It gives Victorians health advice from a registered nurse, 24 hours a day, 7 days a week.",
+        "zh": "NURSE-ON-CALL 的电话是 1300 60 60 24。它由注册护士为维州居民提供健康建议，每天 24 小时、每周 7 天都有人接听。"
+      },
+      "sources": [
+        {
+          "url": "https://www.healthdirect.gov.au/nurse-on-call",
+          "quote": "The NURSE-ON-CALL helpline provides Victorians health advice from a registered nurse, 24 hours a day, 7 days a week."
+        },
+        {
+          "url": "https://www.healthdirect.gov.au/nurse-on-call",
+          "quote": "Call NURSE-ON-CALL on 1300 60 60 24 * for immediate health advice from a registered nurse — available 24/7."
+        }
+      ],
+      "tags": [
+        "nurse-on-call",
+        "helpline"
+      ],
+      "checked": "2026-10-30"
+    },
+    {
+      "id": "nurse-on-call-call-cost",
+      "question": {
+        "en": "How much does it cost to call NURSE-ON-CALL?",
+        "zh": "打 NURSE-ON-CALL 电话要多少钱？"
+      },
+      "aliases": [
+        "Is NURSE-ON-CALL free to call?",
+        "Is the Nurse-on-Call number charged from a mobile?",
+        "打 NURSE-ON-CALL 要收费吗",
+        "手机打 NURSE-ON-CALL 贵吗"
+      ],
+      "answer": {
+        "en": "The page says local call costs apply from anywhere in Victoria. It says higher rates may apply for calls from mobiles.",
+        "zh": "该页面说，在维州任何地方打这个电话按本地电话收费，用手机打的话费率可能更高。"
+      },
+      "sources": [
+        {
+          "url": "https://www.healthdirect.gov.au/nurse-on-call",
+          "quote": "* Local call costs apply from anywhere in Victoria. Higher rates may apply for calls from mobiles."
+        }
+      ],
+      "tags": [
+        "nurse-on-call",
+        "helpline"
+      ],
+      "checked": "2026-10-30"
+    },
+    {
+      "id": "nurse-on-call-when-to-call",
+      "question": {
+        "en": "When should I call NURSE-ON-CALL instead of 000?",
+        "zh": "什么时候该打 NURSE-ON-CALL，什么时候该打 000？"
+      },
+      "aliases": [
+        "What is NURSE-ON-CALL for?",
+        "Should I call Nurse-on-Call or an ambulance?",
+        "NURSE-ON-CALL 是做什么用的",
+        "不确定要不要看医生可以打哪个电话"
+      ],
+      "answer": {
+        "en": "NURSE-ON-CALL can be called when someone is feeling unwell or when you are not sure whether to seek medical help. It is for non-emergency health advice only. In an emergency, call triple zero (000) or go to a hospital emergency department.",
+        "zh": "当你或你照顾的人感觉不舒服，或不确定是否该就医时，可以打 NURSE-ON-CALL。它只提供非紧急的健康建议。紧急情况下应打三个零（000）或去医院急诊部。"
+      },
+      "sources": [
+        {
+          "url": "https://www.healthdirect.gov.au/nurse-on-call",
+          "quote": "you or someone you're caring for is feeling unwell"
+        },
+        {
+          "url": "https://www.healthdirect.gov.au/nurse-on-call",
+          "quote": "you're not sure if you should seek medical help"
+        },
+        {
+          "url": "https://www.healthdirect.gov.au/nurse-on-call",
+          "quote": "NURSE-ON-CALL is for non-emergency health advice only. If you think your situation is an emergency, you should always call triple zero (000) or go to a hospital emergency department."
+        }
+      ],
+      "tags": [
+        "nurse-on-call",
+        "emergency"
+      ],
+      "checked": "2026-10-30"
+    },
+    {
+      "id": "nurse-on-call-interpreter",
+      "question": {
+        "en": "How do I use NURSE-ON-CALL if I need an interpreter?",
+        "zh": "需要口译的话，怎么使用 NURSE-ON-CALL？"
+      },
+      "aliases": [
+        "Can I get an interpreter when calling Nurse-on-Call?",
+        "Nurse-on-Call in another language",
+        "NURSE-ON-CALL 有中文口译吗",
+        "英语不好怎么打 NURSE-ON-CALL"
+      ],
+      "answer": {
+        "en": "If English is not your main language, call TIS National on 131 450. Ask to be transferred to NURSE-ON-CALL and state the phone number 1300 60 60 24.",
+        "zh": "如果英语不是你的主要语言，可以打 TIS National 的电话 131 450，并要求转接到 NURSE-ON-CALL，同时说出号码 1300 60 60 24。"
+      },
+      "sources": [
+        {
+          "url": "https://www.healthdirect.gov.au/nurse-on-call",
+          "quote": "If English is not your main language and you need an interpreter, call TIS National (Opens in new tab) on 131 450 and ask to be transferred to NURSE-ON-CALL and state the phone number 1300 60 60 24."
+        }
+      ],
+      "tags": [
+        "nurse-on-call",
+        "interpreter"
+      ],
+      "checked": "2026-10-30"
+    },
+    {
+      "id": "after-hours-healthcare-options-victoria",
+      "question": {
+        "en": "What can I do if I need a doctor after hours in Victoria and it is not an emergency?",
+        "zh": "在维州非紧急情况下晚上或周末需要看病，有哪些选择？"
+      },
+      "aliases": [
+        "After hours doctor Melbourne",
+        "Where to go when the GP is closed in Victoria",
+        "半夜不舒服不是急诊怎么办",
+        "GP 下班后在哪里看病"
+      ],
+      "answer": {
+        "en": "For unexpected after-hours medical issues that are not emergencies, the page lists Urgent Care Clinics, telephone helplines, pharmacies, after-hours medical clinics, and doctors who can visit you at home. In an emergency, it says to always call triple zero (000).",
+        "zh": "对于下班后出现的非紧急突发医疗问题，该页面列出了紧急护理诊所（Urgent Care Clinic）、电话热线、药房、夜间或周末开诊的医疗诊所，以及上门出诊的医生。遇到紧急情况，页面说要随时拨打三个零（000）。"
+      },
+      "sources": [
+        {
+          "url": "https://www.betterhealth.vic.gov.au/health/ServicesAndSupport/after-hours-healthcare-options",
+          "quote": "For unexpected after-hours medical issues that are not emergencies, there are Urgent Care Clinics, telephone helplines, pharmacies, after-hours medical clinics, and doctors who can visit you at home."
+        },
+        {
+          "url": "https://www.betterhealth.vic.gov.au/health/ServicesAndSupport/after-hours-healthcare-options",
+          "quote": "In an emergency, always call triple zero (000)."
+        }
+      ],
+      "tags": [
+        "after-hours",
+        "gp"
+      ],
+      "checked": "2026-10-30"
+    },
+    {
+      "id": "after-hours-home-visit-doctor-bulk-billed",
+      "question": {
+        "en": "Can an after-hours doctor visit me at home in Victoria and will it be bulk-billed?",
+        "zh": "在维州晚上能请医生上门吗？会用 Medicare 全额报销（bulk bill）吗？"
+      },
+      "aliases": [
+        "Home visit doctor Melbourne bulk billed",
+        "After hours house call doctor Victoria",
+        "医生上门看病 墨尔本",
+        "上门看诊可以 bulk bill 吗"
+      ],
+      "answer": {
+        "en": "If your regular GP does not provide after-hours care, you may be able to book a doctor to visit you at home between 6.00 pm and early morning. Not all home visit services cover all areas. A home visit may be bulk-billed if you are registered with Medicare or Veterans Affairs.",
+        "zh": "如果你平时的 GP 不提供下班后服务，你也许可以预约医生在晚上 6 点到次日清晨之间上门看诊。并非所有上门服务都覆盖所有地区。如果你已登记 Medicare 或退伍军人事务部（Veterans Affairs），上门看诊可能会 bulk bill。"
+      },
+      "sources": [
+        {
+          "url": "https://www.betterhealth.vic.gov.au/health/ServicesAndSupport/after-hours-healthcare-options",
+          "quote": "If your regular GP does not provide after-hours care, you may be able to book a doctor to visit you at home between 6.00 pm and early morning through one of the services listed below. Not all home visit services cover all areas."
+        },
+        {
+          "url": "https://www.betterhealth.vic.gov.au/health/ServicesAndSupport/after-hours-healthcare-options",
+          "quote": "A home visit may be bulk-billed if you are registered with Medicare or Veterans Affairs."
+        }
+      ],
+      "tags": [
+        "after-hours",
+        "gp",
+        "bulk-billing"
+      ],
+      "checked": "2026-10-30"
+    },
+    {
+      "id": "what-is-bulk-billing",
+      "question": {
+        "en": "What does bulk billing mean at a GP in Australia?",
+        "zh": "在澳大利亚看 GP，bulk billing（全额报销）是什么意思？"
+      },
+      "aliases": [
+        "What is bulk billing?",
+        "Does bulk billing mean free?",
+        "bulk bill 是什么意思",
+        "bulk billing 就是不用付钱吗"
+      ],
+      "answer": {
+        "en": "If your doctor bulk bills, they accept the Medicare benefit as full payment and bill Medicare directly. You do not pay anything out-of-pocket.",
+        "zh": "如果医生 bulk bill，就是接受 Medicare 给付的金额作为全部费用，并直接向 Medicare 收费，你自己不用付任何费用。"
+      },
+      "sources": [
+        {
+          "url": "https://www.healthdirect.gov.au/bulk-billing-for-medical-services",
+          "quote": "If your doctor bulk bills, it means that they accept the Medicare benefit as full payment and bill Medicare directly, so you won't pay anything out-of-pocket."
+        }
+      ],
+      "tags": [
+        "bulk-billing",
+        "medicare",
+        "gp"
+      ],
+      "checked": "2026-10-30"
+    },
+    {
+      "id": "doctor-does-not-bulk-bill-gap-payment",
+      "question": {
+        "en": "What happens if my doctor does not bulk bill, and what is a gap payment?",
+        "zh": "如果医生不 bulk bill 会怎样？什么是 gap payment？"
+      },
+      "aliases": [
+        "What is a gap fee at the doctor?",
+        "Do I pay upfront if the GP doesn't bulk bill?",
+        "看医生的 gap 费是什么",
+        "医生不 bulk bill 要先付钱吗"
+      ],
+      "answer": {
+        "en": "If your doctor does not bulk bill, you pay for the service at the time of your appointment. If a Medicare benefit applies, you can claim that amount back from Medicare. The difference between the doctor's charge and the Medicare benefit is called a 'gap payment' or 'out-of-pocket' cost.",
+        "zh": "如果医生不 bulk bill，你要在就诊时付费；如果适用 Medicare 给付，可以向 Medicare 申请退回这部分金额。医生收费与 Medicare 给付金额之间的差额叫做“gap payment”或“自付费用”。"
+      },
+      "sources": [
+        {
+          "url": "https://www.healthdirect.gov.au/bulk-billing-for-medical-services",
+          "quote": "If your doctor does not bulk bill, you will have to pay for your services at the time of your appointment. If a Medicare benefit applies, you can claim this amount back from Medicare."
+        },
+        {
+          "url": "https://www.healthdirect.gov.au/bulk-billing-for-medical-services",
+          "quote": "The difference between your doctor's charges and the amount paid by Medicare (the 'Medicare benefit') is called a 'gap payment' or 'out-of-pocket' cost."
+        }
+      ],
+      "tags": [
+        "bulk-billing",
+        "medicare",
+        "gp"
+      ],
+      "checked": "2026-10-30"
+    },
+    {
+      "id": "do-all-gps-bulk-bill",
+      "question": {
+        "en": "Do all GPs bulk bill, and how do I check before I go?",
+        "zh": "是不是所有 GP 都 bulk bill？去之前怎么确认？"
+      },
+      "aliases": [
+        "How do I find a bulk billing doctor?",
+        "Does every doctor in Melbourne bulk bill?",
+        "哪里能找到 bulk bill 的医生",
+        "所有医生都 bulk bill 吗"
+      ],
+      "answer": {
+        "en": "Not all healthcare professionals bulk bill. The page says to ask before you see a doctor whether they bulk bill and whether you will have any out-of-pocket costs. It also says you may not be bulk billed for every service if you have more than one service in a visit.",
+        "zh": "并不是所有医疗人员都 bulk bill。该页面说，看医生之前要先问清楚对方是否 bulk bill，以及你是否需要自付费用。页面还说，如果一次就诊中有多项服务，不一定每一项都能 bulk bill。"
+      },
+      "sources": [
+        {
+          "url": "https://www.healthdirect.gov.au/bulk-billing-for-medical-services",
+          "quote": "Not all healthcare professionals bulk bill. Before you see a doctor, ask if they bulk bill and if you will have any out-of-pocket costs."
+        },
+        {
+          "url": "https://www.healthdirect.gov.au/bulk-billing-for-medical-services",
+          "quote": "If you have more than one service during a visit to your doctor or medical practice, you may not be bulk billed for all of them."
+        }
+      ],
+      "tags": [
+        "bulk-billing",
+        "gp"
+      ],
+      "checked": "2026-10-30"
+    },
+    {
+      "id": "medicare-who-is-eligible",
+      "question": {
+        "en": "Who is eligible for Medicare in Australia?",
+        "zh": "谁有资格使用 Medicare？"
+      },
+      "aliases": [
+        "Can permanent residents get Medicare?",
+        "Who can get a Medicare card?",
+        "永久居民能用 Medicare 吗",
+        "谁可以办 Medicare 卡"
+      ],
+      "answer": {
+        "en": "You can get Medicare benefits if you are an Australian or New Zealand citizen or an Australian permanent resident. The page also lists people who have applied for permanent residency (some conditions apply), temporary residents covered by a Ministerial Order, and people covered by a Reciprocal Health Care Agreement with another country.",
+        "zh": "如果你是澳大利亚或新西兰公民，或澳大利亚永久居民，就可以获得 Medicare 给付。页面还列出：已申请永久居留的人（有一些条件）、受部长令（Ministerial Order）覆盖的临时居民，以及适用与他国签订的互惠医疗协议（Reciprocal Health Care Agreement）的人。"
+      },
+      "sources": [
+        {
+          "url": "https://www.healthdirect.gov.au/medicare",
+          "quote": "are an Australian or New Zealand citizen"
+        },
+        {
+          "url": "https://www.healthdirect.gov.au/medicare",
+          "quote": "are an Australian permanent resident"
+        },
+        {
+          "url": "https://www.healthdirect.gov.au/medicare",
+          "quote": "have applied for permanent residency (some conditions apply)"
+        },
+        {
+          "url": "https://www.healthdirect.gov.au/medicare",
+          "quote": "are a temporary resident covered by a Ministerial Order"
+        }
+      ],
+      "tags": [
+        "medicare",
+        "eligibility"
+      ],
+      "checked": "2026-10-30"
+    },
+    {
+      "id": "medicare-what-it-covers",
+      "question": {
+        "en": "What does Medicare cover?",
+        "zh": "Medicare 覆盖哪些项目？"
+      },
+      "aliases": [
+        "What is Medicare?",
+        "Does Medicare cover hospital and doctors?",
+        "Medicare 包括什么",
+        "Medicare 能报销看医生和住院吗"
+      ],
+      "answer": {
+        "en": "Medicare is the insurance scheme that gives eligible people access to healthcare, including many health and hospital services at no cost or low cost. With a Medicare card you can get free or low-cost medical services by doctors, specialists and other health professionals, hospital treatment and mental health care.",
+        "zh": "Medicare 是让符合资格的人获得医疗服务的保险制度，包括许多免费或低费用的健康和医院服务。持有 Medicare 卡，你可以获得医生、专科医生和其他医疗专业人员的免费或低费用服务，以及医院治疗和心理健康护理。"
+      },
+      "sources": [
+        {
+          "url": "https://www.healthdirect.gov.au/medicare",
+          "quote": "Medicare is the insurance scheme that gives Australian citizens, permanent residents and other eligible people access to healthcare. This includes many health and hospital services at no cost or low cost."
+        },
+        {
+          "url": "https://www.healthdirect.gov.au/medicare",
+          "quote": "medical services by doctors, specialists and other health professionals"
+        },
+        {
+          "url": "https://www.healthdirect.gov.au/medicare",
+          "quote": "hospital treatment"
+        },
+        {
+          "url": "https://www.healthdirect.gov.au/medicare",
+          "quote": "mental health care"
+        }
+      ],
+      "tags": [
+        "medicare"
+      ],
+      "checked": "2026-10-30"
+    },
+    {
+      "id": "medicare-rebate-gp-specialist-percent",
+      "question": {
+        "en": "How much of the fee does Medicare pay for a GP visit or a specialist?",
+        "zh": "Medicare 付 GP 或专科医生费用的多少？"
+      },
+      "aliases": [
+        "Does Medicare pay the full GP fee?",
+        "Medicare rebate percentage specialist",
+        "Medicare 报销专科医生多少比例",
+        "Medicare 付全额 GP 费用吗"
+      ],
+      "answer": {
+        "en": "For out-of-hospital services on the Medicare Benefits Schedule, Medicare pays the full schedule fee for general practitioner services. It pays 85% of the schedule fee for a specialist. Your doctor can choose to charge more than the set fee.",
+        "zh": "对于 Medicare 收费表（MBS）上的院外服务，Medicare 支付全科医生（GP）服务的全额表定费用，支付专科医生表定费用的 85%。医生可以选择收取高于表定费用的价格。"
+      },
+      "sources": [
+        {
+          "url": "https://www.healthdirect.gov.au/medicare",
+          "quote": "Your doctor can choose to charge more than the set fee. If an out-of-hospital service is on the MBS, Medicare will pay:"
+        },
+        {
+          "url": "https://www.healthdirect.gov.au/medicare",
+          "quote": "the full schedule fee for general practitioner services"
+        },
+        {
+          "url": "https://www.healthdirect.gov.au/medicare",
+          "quote": "85% of the schedule fee for a specialist"
+        }
+      ],
+      "tags": [
+        "medicare",
+        "gp",
+        "rebate"
+      ],
+      "checked": "2026-10-30"
+    },
+    {
+      "id": "medicare-how-to-enrol",
+      "question": {
+        "en": "How do I enrol in Medicare and get a card?",
+        "zh": "怎么登记 Medicare 并拿到 Medicare 卡？"
+      },
+      "aliases": [
+        "How to apply for a Medicare card",
+        "Can I get a digital Medicare card?",
+        "怎么申请 Medicare 卡",
+        "Medicare 卡有电子版吗"
+      ],
+      "answer": {
+        "en": "To access Medicare you need to enrol, by completing an enrolment form through Services Australia or your myGov account. If you meet the criteria you get a Medicare number and card. You can also get a digital copy of your card if your myGov account is linked to your Medicare online account.",
+        "zh": "要使用 Medicare 就需要登记，可通过 Services Australia 或 myGov 账户填写登记表。符合条件的话会得到 Medicare 号码和卡。如果你的 myGov 账户已关联 Medicare 在线账户，还可以获得卡的电子版。"
+      },
+      "sources": [
+        {
+          "url": "https://www.healthdirect.gov.au/medicare",
+          "quote": "To access Medicare, you need to enrol"
+        },
+        {
+          "url": "https://www.healthdirect.gov.au/medicare",
+          "quote": "Register by completing an enrolment form"
+        },
+        {
+          "url": "https://www.healthdirect.gov.au/medicare",
+          "quote": "If you meet the criteria, you will get a Medicare number and card."
+        },
+        {
+          "url": "https://www.healthdirect.gov.au/medicare",
+          "quote": "You can also get a digital copy of your Medicare card if you have a myGov"
+        }
+      ],
+      "tags": [
+        "medicare",
+        "enrolment"
+      ],
+      "checked": "2026-10-30"
+    },
+    {
+      "id": "medicare-baby-and-age-15-card",
+      "question": {
+        "en": "Is a baby born in Australia automatically on Medicare, and when can I get my own card?",
+        "zh": "在澳大利亚出生的婴儿会自动加入 Medicare 吗？几岁可以有自己的卡？"
+      },
+      "aliases": [
+        "Medicare for newborn baby",
+        "Can a 15 year old get their own Medicare card?",
+        "新生儿 Medicare",
+        "15岁可以有自己的 Medicare 卡吗"
+      ],
+      "answer": {
+        "en": "Babies born in Australia are automatically enrolled in Medicare and are listed on their parents' card. If you are aged 15 years or older, you can apply for your own Medicare card.",
+        "zh": "在澳大利亚出生的婴儿会自动登记 Medicare，并列在父母的卡上。年满 15 岁的人可以申请自己的 Medicare 卡。"
+      },
+      "sources": [
+        {
+          "url": "https://www.healthdirect.gov.au/medicare",
+          "quote": "Babies born in Australia are automatically enrolled in Medicare and are listed on their parents' card. If you are aged 15 years or older, you can apply for your own Medicare card."
+        }
+      ],
+      "tags": [
+        "medicare",
+        "enrolment",
+        "children"
+      ],
+      "checked": "2026-10-30"
+    },
+    {
+      "id": "what-is-mymedicare",
+      "question": {
+        "en": "What is MyMedicare and how do I register?",
+        "zh": "MyMedicare 是什么？怎么登记？"
+      },
+      "aliases": [
+        "MyMedicare registration GP",
+        "Do I need to register with MyMedicare?",
+        "MyMedicare 怎么注册",
+        "MyMedicare 要登记固定的 GP 吗"
+      ],
+      "answer": {
+        "en": "MyMedicare is a free, voluntary patient registration system that lets people register with their preferred GP and primary care team. To register you must have a Medicare card or a Department of Veterans' Affairs (DVA) Veteran Card. Your practice must be registered with MyMedicare, and you and your practice both need to agree.",
+        "zh": "MyMedicare 是免费、自愿的患者登记系统，让人们登记自己首选的 GP 和基层医疗团队。登记需要有 Medicare 卡或退伍军人事务部（DVA）的退伍军人卡。你的诊所必须已加入 MyMedicare，并且你和诊所双方都要同意登记。"
+      },
+      "sources": [
+        {
+          "url": "https://www.healthdirect.gov.au/medicare",
+          "quote": "MyMedicare is a free, voluntary patient registration system that allows people to register with their preferred GP and primary care team."
+        },
+        {
+          "url": "https://www.healthdirect.gov.au/medicare",
+          "quote": "To register for MyMedicare, you must have either a Medicare card or a Department of Veterans' Affairs (DVA) Veteran Card."
+        },
+        {
+          "url": "https://www.healthdirect.gov.au/medicare",
+          "quote": "Your practice must be registered with MyMedicare. Both you and your practice need to agree to the registration."
+        }
+      ],
+      "tags": [
+        "medicare",
+        "mymedicare",
+        "gp"
+      ],
+      "checked": "2026-10-30"
+    },
+    {
+      "id": "medicare-urgent-care-clinic-what-is",
+      "question": {
+        "en": "What is a Medicare Urgent Care Clinic and do I need an appointment?",
+        "zh": "Medicare Urgent Care Clinic 是什么？需要预约吗？"
+      },
+      "aliases": [
+        "Medicare UCC bulk billed",
+        "Walk-in urgent care Melbourne no appointment",
+        "Medicare 紧急护理诊所",
+        "不预约可以看急症吗"
+      ],
+      "answer": {
+        "en": "Medicare Urgent Care Clinics provide urgent health care that does not need treatment in an emergency department. They are open longer hours than regular clinics and provide bulk billed care. You do not need an appointment or referral.",
+        "zh": "Medicare 紧急护理诊所（Medicare UCC）提供不需要在急诊部处理的紧急医疗服务。它们的开放时间比普通诊所长，并提供 bulk billed 的医疗服务。就诊不需要预约或转诊信。"
+      },
+      "sources": [
+        {
+          "url": "https://www.healthdirect.gov.au/urgent-care-clinics",
+          "quote": "Medicare Urgent Care Clinics (Medicare UCCs) are clinics that provide urgent health care that does not require treatment in an emergency department."
+        },
+        {
+          "url": "https://www.healthdirect.gov.au/urgent-care-clinics",
+          "quote": "Medicare UCCs are open for longer hours than regular clinics and provide bulk billed medical care."
+        },
+        {
+          "url": "https://www.healthdirect.gov.au/urgent-care-clinics",
+          "quote": "You don't need an appointment or referral to be treated at a Medicare UCC."
+        }
+      ],
+      "tags": [
+        "urgent-care",
+        "medicare",
+        "bulk-billing"
+      ],
+      "checked": "2026-10-30"
+    },
+    {
+      "id": "medicare-urgent-care-clinic-conditions",
+      "question": {
+        "en": "What can a Medicare Urgent Care Clinic treat, and what needs the emergency department?",
+        "zh": "Medicare Urgent Care Clinic 能看什么病？什么情况要去急诊部？"
+      },
+      "aliases": [
+        "Do urgent care clinics treat broken bones?",
+        "Urgent care vs emergency department",
+        "紧急护理诊所能看骨折吗",
+        "急诊和紧急护理诊所的区别"
+      ],
+      "answer": {
+        "en": "Medicare UCCs can help with a medical problem that can't wait for a doctor's appointment, such as an infection or minor fracture (broken bone). Serious or life-threatening conditions, such as difficulty breathing or severe burns, need the nearest emergency department, because Medicare UCCs can't help with medical emergencies.",
+        "zh": "Medicare UCC 可以处理等不到预约看医生的医疗问题，例如感染或轻微骨折。严重或危及生命的情况（如呼吸困难或严重烧伤）应去最近的急诊部，因为 Medicare UCC 无法处理医疗紧急情况。"
+      },
+      "sources": [
+        {
+          "url": "https://www.healthdirect.gov.au/urgent-care-clinics",
+          "quote": "Medicare UCCs can help if you have a medical problem that can't wait for an appointment with your doctor, such as an infection or minor fracture (broken bone)."
+        },
+        {
+          "url": "https://www.healthdirect.gov.au/urgent-care-clinics",
+          "quote": "If you have a serious or life-threatening condition, such as difficulty breathing or severe burns, visit your nearest emergency department — Medicare UCCs can't help with medical emergencies."
+        }
+      ],
+      "tags": [
+        "urgent-care",
+        "emergency"
+      ],
+      "checked": "2026-10-30"
+    },
+    {
+      "id": "victoria-urgent-care-clinics-free-walk-in",
+      "question": {
+        "en": "Are Victorian Urgent Care Clinics free, and do I need a Medicare card or referral?",
+        "zh": "维州的 Urgent Care Clinic 免费吗？需要 Medicare 卡或转诊吗？"
+      },
+      "aliases": [
+        "Free urgent care clinic Victoria",
+        "Urgent Care Clinic no Medicare card",
+        "维州免费紧急护理诊所",
+        "没有 Medicare 卡能去 Urgent Care Clinic 吗"
+      ],
+      "answer": {
+        "en": "Urgent Care Clinics are free, walk-in clinics for when you need healthcare immediately but it is not life-threatening. They run 7 days a week. You do not need a Medicare card, an appointment or a referral from your GP.",
+        "zh": "Urgent Care Clinic 是免费的免预约诊所，适用于需要马上就医但不危及生命的情况，每周 7 天开放。就诊不需要 Medicare 卡、预约或 GP 转诊信。"
+      },
+      "sources": [
+        {
+          "url": "https://www.betterhealth.vic.gov.au/urgent-care-clinics",
+          "quote": "Walk-in to a free Urgent Care Clinic when you need immediate healthcare now but it's not life-threatening."
+        },
+        {
+          "url": "https://www.betterhealth.vic.gov.au/urgent-care-clinics",
+          "quote": "With 38 locations across Victoria, the Clinics provide expert urgent care 7 days a week, open early to late."
+        },
+        {
+          "url": "https://www.betterhealth.vic.gov.au/urgent-care-clinics",
+          "quote": "You do not need a Medicare card, an appointment or a referral from your GP."
+        }
+      ],
+      "tags": [
+        "urgent-care",
+        "victoria"
+      ],
+      "checked": "2026-10-30"
+    },
+    {
+      "id": "urgent-care-centre-vs-clinic-regional-victoria",
+      "question": {
+        "en": "What is the difference between an Urgent Care Centre and an Urgent Care Clinic in Victoria?",
+        "zh": "维州的 Urgent Care Centre 和 Urgent Care Clinic 有什么区别？"
+      },
+      "aliases": [
+        "Urgent Care Centres regional Victoria fees",
+        "Are urgent care centres free?",
+        "Urgent Care Centre 收费吗",
+        "区域地区的紧急护理中心"
+      ],
+      "answer": {
+        "en": "Urgent Care Clinics are free and GP led, open late and on weekends. Urgent Care Centres, found in rural and regional Victoria, are urgent care nurse led and may incur fees.",
+        "zh": "Urgent Care Clinic 免费，由 GP 主导，晚间和周末开放。设在维州乡村和地区的 Urgent Care Centre 由紧急护理护士主导，可能要收费。"
+      },
+      "sources": [
+        {
+          "url": "https://www.betterhealth.vic.gov.au/urgent-care-centres",
+          "quote": "Please note that Urgent Care Centres in rural and regional areas, and Urgent Care Clinics provide a different healthcare service. Urgent Care Clinics are free and GP led, open late and on weekends. Urgent Care Centres are urgent care nurse led and may incur fees."
+        }
+      ],
+      "tags": [
+        "urgent-care",
+        "victoria"
+      ],
+      "checked": "2026-10-30"
+    },
+    {
+      "id": "victoria-virtual-emergency-department",
+      "question": {
+        "en": "What is the Victorian Virtual Emergency Department and does it cost anything?",
+        "zh": "维州的 Virtual Emergency Department 是什么？要钱吗？"
+      },
+      "aliases": [
+        "Video call emergency doctor Victoria",
+        "Virtual ED Victoria free",
+        "维州线上急诊",
+        "视频看急诊医生免费吗"
+      ],
+      "answer": {
+        "en": "The Virtual Emergency Department is a free service, open 24 hours a day, 7 days a week, that connects you to an emergency doctor or nurse by video call. You do not need a referral from your GP, a Medicare card or an appointment. In a life-threatening emergency, call Triple Zero (000).",
+        "zh": "Virtual Emergency Department 是免费服务，每天 24 小时、每周 7 天开放，通过视频通话把你连线到急诊医生或护士。不需要 GP 转诊信、Medicare 卡或预约。遇到危及生命的紧急情况，请拨打三个零（000）。"
+      },
+      "sources": [
+        {
+          "url": "https://www.betterhealth.vic.gov.au/health/services-and-support/virtual-emergency-department",
+          "quote": "If you need urgent care from home or anywhere else, our free, 24 hours a day, 7 days a week service connects you to an emergency doctor or nurse from your computer, laptop or mobile phone."
+        },
+        {
+          "url": "https://www.betterhealth.vic.gov.au/health/services-and-support/virtual-emergency-department",
+          "quote": "You do not need a referral from your GP, a Medicare card or an appointment to access the Virtual Emergency Department."
+        },
+        {
+          "url": "https://www.betterhealth.vic.gov.au/health/services-and-support/virtual-emergency-department",
+          "quote": "In a life-threatening emergency, please call Triple Zero (000)."
+        }
+      ],
+      "tags": [
+        "virtual-ed",
+        "emergency"
+      ],
+      "checked": "2026-10-30"
+    },
+    {
+      "id": "call-000-ambulance-free-no-credit",
+      "question": {
+        "en": "Is a call to 000 free, and can I call without phone credit?",
+        "zh": "打 000 要钱吗？手机没话费能打吗？"
+      },
+      "aliases": [
+        "Can I call 000 with no credit?",
+        "Is triple zero free?",
+        "000 免费吗",
+        "没有话费能打 000 吗"
+      ],
+      "answer": {
+        "en": "Calls to triple zero (000) are free. You can call triple zero (000) even if you do not have any credit on your phone.",
+        "zh": "拨打三个零（000）是免费的。即使手机里没有话费，也可以拨打三个零（000）。"
+      },
+      "sources": [
+        {
+          "url": "https://www.betterhealth.vic.gov.au/health/servicesandsupport/calling-an-ambulance",
+          "quote": "Call triple zero (000) for an ambulance in a medical emergency. Calls to triple zero (000) are free."
+        },
+        {
+          "url": "https://www.betterhealth.vic.gov.au/health/servicesandsupport/calling-an-ambulance",
+          "quote": "You can call triple zero (000) even if you do not have any credit on your phone."
+        }
+      ],
+      "tags": [
+        "000",
+        "ambulance"
+      ],
+      "checked": "2026-10-30"
+    },
+    {
+      "id": "call-000-interpreter",
+      "question": {
+        "en": "Can I get an interpreter when I call 000?",
+        "zh": "打 000 时可以要口译吗？"
+      },
+      "aliases": [
+        "Call 000 if I don't speak English",
+        "Triple zero language interpreter",
+        "不会英语怎么打 000",
+        "打 000 可以说中文吗"
+      ],
+      "answer": {
+        "en": "If you do not speak English or prefer to speak in your own language, you can ask the operator for an interpreter. There will be a short wait while they get an interpreter on the phone to speak to you.",
+        "zh": "如果你不会说英语，或更愿意说自己的语言，可以向接线员要求口译员。接线员找口译员接入电话时，需要稍等一会儿。"
+      },
+      "sources": [
+        {
+          "url": "https://www.betterhealth.vic.gov.au/health/servicesandsupport/calling-an-ambulance",
+          "quote": "If you do not speak English or prefer to speak in your own language, you can ask the operator for an interpreter. There will be a short wait while they get an interpreter on the phone to speak to you."
+        }
+      ],
+      "tags": [
+        "000",
+        "interpreter"
+      ],
+      "checked": "2026-10-30"
+    },
+    {
+      "id": "emergency-112-911-in-australia",
+      "question": {
+        "en": "Can I call 112 or 911 for an emergency in Australia?",
+        "zh": "在澳大利亚紧急情况可以打 112 或 911 吗？"
+      },
+      "aliases": [
+        "Does 112 work in Australia?",
+        "Does 911 work in Melbourne?",
+        "澳大利亚 112 能用吗",
+        "墨尔本打 911 有用吗"
+      ],
+      "answer": {
+        "en": "The secondary emergency number 112 can be called from mobile phones in Australia, but it does not give you priority over triple zero (000) calls. 911 is an American and Canadian emergency number that will not work in Australia.",
+        "zh": "在澳大利亚可以用手机拨打备用紧急号码 112，但它不会比三个零（000）有优先权。911 是美国和加拿大的紧急号码，在澳大利亚无法使用。"
+      },
+      "sources": [
+        {
+          "url": "https://www.betterhealth.vic.gov.au/health/servicesandsupport/calling-an-ambulance",
+          "quote": "A secondary emergency number 112 can be called from mobile phones in Australia. It does not give you priority over triple zero (000) calls."
+        },
+        {
+          "url": "https://www.betterhealth.vic.gov.au/health/servicesandsupport/calling-an-ambulance",
+          "quote": "Do not call 911, it is an American and Canadian emergency number that will not work in Australia."
+        }
+      ],
+      "tags": [
+        "000",
+        "emergency"
+      ],
+      "checked": "2026-10-30"
+    },
+    {
+      "id": "call-ambulance-106-hearing-speech",
+      "question": {
+        "en": "How can I contact an ambulance if I have a hearing or speech impairment?",
+        "zh": "听力或言语障碍的人怎么叫救护车？"
+      },
+      "aliases": [
+        "106 text emergency number",
+        "Emergency relay service Victoria",
+        "106 紧急文字服务",
+        "听障人士怎么打紧急电话"
+      ],
+      "answer": {
+        "en": "If you have a speech or hearing impairment and use a telephone typewriter (TTY), computer or modem to make telephone calls, you can contact an ambulance on 106. You cannot use this number with SMS on your mobile phone.",
+        "zh": "如果你有言语或听力障碍，并使用电传打字机（TTY）、电脑或调制解调器打电话，可以拨打 106 联系救护车。这个号码不能通过手机短信（SMS）使用。"
+      },
+      "sources": [
+        {
+          "url": "https://www.betterhealth.vic.gov.au/health/servicesandsupport/calling-an-ambulance",
+          "quote": "If you have a speech or hearing impairment and use a telephone typewriter (TTY), computer or modem to make telephone calls, you can contact an ambulance on 106."
+        },
+        {
+          "url": "https://www.betterhealth.vic.gov.au/health/servicesandsupport/calling-an-ambulance",
+          "quote": "You cannot use this number with SMS on your mobile phone."
+        }
+      ],
+      "tags": [
+        "000",
+        "accessibility"
+      ],
+      "checked": "2026-10-30"
+    },
+    {
+      "id": "call-000-unable-to-speak-dial-55",
+      "question": {
+        "en": "What if I call 000 but cannot speak?",
+        "zh": "打 000 但不能说话怎么办？"
+      },
+      "aliases": [
+        "Silent call to triple zero press 55",
+        "Press 55 000",
+        "打 000 不能出声怎么办",
+        "000 按 55"
+      ],
+      "answer": {
+        "en": "If it is not safe for you to speak or you are unable to speak, your call will be transferred to an Interactive Voice Response, which asks you to dial 55 and connects you to the police. If you do not dial 55 when asked, the call will be disconnected.",
+        "zh": "如果你不方便说话或无法说话，电话会被转到互动语音应答系统，系统会要求你按 55，然后接通警察。如果被要求时没有按 55，电话会被挂断。"
+      },
+      "sources": [
+        {
+          "url": "https://www.betterhealth.vic.gov.au/health/servicesandsupport/calling-an-ambulance",
+          "quote": "If it is not safe for you to speak on the phone or you are unable to speak, your call will be transferred to an Interactive Voice Response. This will ask you to dial 55 and you will be connected to the police."
+        },
+        {
+          "url": "https://www.betterhealth.vic.gov.au/health/servicesandsupport/calling-an-ambulance",
+          "quote": "If you do not dial 55 when asked, the call will be disconnected."
+        }
+      ],
+      "tags": [
+        "000",
+        "emergency"
+      ],
+      "checked": "2026-10-30"
+    },
+    {
+      "id": "emergency-plus-app-location",
+      "question": {
+        "en": "What is the Emergency+ app for?",
+        "zh": "Emergency+ 应用有什么用？"
+      },
+      "aliases": [
+        "Emergency Plus app Australia",
+        "How can 000 know my location",
+        "Emergency+ app 是什么",
+        "打 000 怎么定位"
+      ],
+      "answer": {
+        "en": "The page advises pre-downloading the 'Emergency+' app to your smartphone from the Apple or Google Play store to gain accurate location and GPS information. It says smartphone users can download the app to help call takers pinpoint the exact location.",
+        "zh": "该页面建议提前从苹果或 Google Play 商店把“Emergency+”应用下载到智能手机上，以获得准确的位置和 GPS 信息。页面说，智能手机用户下载这个应用可以帮助接线员确定准确位置。"
+      },
+      "sources": [
+        {
+          "url": "https://www.betterhealth.vic.gov.au/health/servicesandsupport/calling-an-ambulance",
+          "quote": "Pre download the ‘Emergency+’ app to your smartphone from the Apple or Google Play store to gain accurate location and GPS information."
+        },
+        {
+          "url": "https://www.betterhealth.vic.gov.au/health/servicesandsupport/calling-an-ambulance",
+          "quote": "Smartphone users can download the Emergency+ app"
+        }
+      ],
+      "tags": [
+        "000",
+        "app"
+      ],
+      "checked": "2026-10-30"
+    },
+    {
+      "id": "lifeline-13-11-14",
+      "question": {
+        "en": "What is the Lifeline phone number and when is it open?",
+        "zh": "Lifeline 的电话是多少，什么时候接听？"
+      },
+      "aliases": [
+        "Lifeline Australia 13 11 14",
+        "Who do I call in a mental health crisis in Victoria?",
+        "Lifeline 热线",
+        "墨尔本心理危机打什么电话"
+      ],
+      "answer": {
+        "en": "Call Lifeline on 13 11 14 for crisis support and suicide prevention. It is confidential phone counselling to discuss personal issues, listed as available 24 hours a day, 7 days a week.",
+        "zh": "拨打 13 11 14 联系 Lifeline，可获得危机支援和自杀预防服务。这是保密的电话辅导，可以谈个人问题，页面列明每天 24 小时、每周 7 天提供。"
+      },
+      "sources": [
+        {
+          "url": "https://www.betterhealth.vic.gov.au/health/servicesandsupport/who-to-call-in-a-crisis",
+          "quote": "Call Lifeline on 13 11 14 for crisis support and suicide prevention."
+        },
+        {
+          "url": "https://www.betterhealth.vic.gov.au/health/servicesandsupport/who-to-call-in-a-crisis",
+          "quote": "Confidential phone counselling to discuss personal issues."
+        },
+        {
+          "url": "https://www.betterhealth.vic.gov.au/health/servicesandsupport/who-to-call-in-a-crisis",
+          "quote": "Call 13 11 14"
+        }
+      ],
+      "tags": [
+        "mental-health",
+        "helpline"
+      ],
+      "checked": "2026-10-30"
+    },
+    {
+      "id": "beyond-blue-phone-number",
+      "question": {
+        "en": "What is the Beyond Blue phone number?",
+        "zh": "Beyond Blue 的电话是多少？"
+      },
+      "aliases": [
+        "Beyond Blue support line",
+        "Mental health support number Australia 24 hours",
+        "Beyond Blue 热线",
+        "心理健康支援电话"
+      ],
+      "answer": {
+        "en": "Beyond Blue offers immediate mental health support and advice on 1300 224 636, listed as available 24 hours a day, 7 days a week.",
+        "zh": "Beyond Blue 提供即时的心理健康支援和建议，电话是 1300 224 636，页面列明每天 24 小时、每周 7 天提供。"
+      },
+      "sources": [
+        {
+          "url": "https://www.betterhealth.vic.gov.au/health/servicesandsupport/who-to-call-in-a-crisis",
+          "quote": "Get immediate mental health support and advice."
+        },
+        {
+          "url": "https://www.betterhealth.vic.gov.au/health/servicesandsupport/who-to-call-in-a-crisis",
+          "quote": "Call 1300 224 636"
+        }
+      ],
+      "tags": [
+        "mental-health",
+        "helpline"
+      ],
+      "checked": "2026-10-30"
+    },
+    {
+      "id": "kids-helpline-number",
+      "question": {
+        "en": "What is the Kids Helpline number and who can use it?",
+        "zh": "Kids Helpline 的电话是多少？谁可以用？"
+      },
+      "aliases": [
+        "Kids Helpline Australia",
+        "Counselling for young people phone",
+        "儿童青少年热线",
+        "年轻人心理辅导电话"
+      ],
+      "answer": {
+        "en": "Kids Helpline is a phone and online counselling service specifically for young people aged between 5 and 25. The number is 1800 551 800.",
+        "zh": "Kids Helpline 是专为 5 至 25 岁年轻人设立的电话和线上辅导服务，电话是 1800 551 800。"
+      },
+      "sources": [
+        {
+          "url": "https://www.betterhealth.vic.gov.au/health/servicesandsupport/who-to-call-in-a-crisis",
+          "quote": "Phone and online counselling service specifically for young people aged between 5 and 25."
+        },
+        {
+          "url": "https://www.betterhealth.vic.gov.au/health/servicesandsupport/who-to-call-in-a-crisis",
+          "quote": "Call 1800 551 800"
+        }
+      ],
+      "tags": [
+        "mental-health",
+        "helpline",
+        "youth"
+      ],
+      "checked": "2026-10-30"
+    },
+    {
+      "id": "chemist-care-now-what-is",
+      "question": {
+        "en": "What is Chemist Care Now in Victoria?",
+        "zh": "维州的 Chemist Care Now 是什么？"
+      },
+      "aliases": [
+        "Community Pharmacist Program Victoria",
+        "Can a pharmacist treat a UTI in Victoria?",
+        "药房药剂师可以直接开药吗",
+        "药房治疗尿路感染"
+      ],
+      "answer": {
+        "en": "In Victoria, participating chemists can provide care for more common health needs without a visit to the GP. A trained pharmacist can assess you in a private consultation room and, where appropriate, provide certain prescription medicines and treatments.",
+        "zh": "在维州，参与计划的药房可以为更多常见健康问题提供护理，不必先去看 GP。受过培训的药剂师会在私人诊室为你评估，并在适当时提供某些处方药和治疗。"
+      },
+      "sources": [
+        {
+          "url": "https://www.betterhealth.vic.gov.au/community-pharmacist-program",
+          "quote": "In Victoria, participating chemists can now provide care for more common health needs without the need for a visit to the GP."
+        },
+        {
+          "url": "https://www.betterhealth.vic.gov.au/community-pharmacist-program",
+          "quote": "A trained pharmacist can assess you in a private consultation room and, where appropriate, provide certain prescription medicines and treatments."
+        }
+      ],
+      "tags": [
+        "pharmacy",
+        "chemist-care-now"
+      ],
+      "checked": "2026-10-30"
+    },
+    {
+      "id": "chemist-care-now-cost",
+      "question": {
+        "en": "How much does a Chemist Care Now consultation cost?",
+        "zh": "Chemist Care Now 的咨询要多少钱？"
+      },
+      "aliases": [
+        "Are pharmacist consultations free in Victoria?",
+        "Do Chemist Care Now medicines count towards the PBS safety net?",
+        "药房看诊免费吗",
+        "Chemist Care Now 的药费怎么算"
+      ],
+      "answer": {
+        "en": "Most Chemist Care Now consultations are free. You pay the full cost of any medicine you receive, and the chemist sets the medicine price, which may vary between chemists. These medicines do not count towards your PBS Safety Net threshold.",
+        "zh": "大多数 Chemist Care Now 咨询是免费的。你要全额支付所拿到的药费，药价由药房自行定价，各药房可能不同。这些药品不计入你的 PBS 安全网（Safety Net）门槛。"
+      },
+      "sources": [
+        {
+          "url": "https://www.betterhealth.vic.gov.au/community-pharmacist-program",
+          "quote": "Most Chemist Care Now consultations are free."
+        },
+        {
+          "url": "https://www.betterhealth.vic.gov.au/community-pharmacist-program",
+          "quote": "However, you will need to pay the full cost for any medicine you receive from your pharmacist during your consultation."
+        },
+        {
+          "url": "https://www.betterhealth.vic.gov.au/community-pharmacist-program",
+          "quote": "Medicine prices are set by the chemist and may vary between chemists. Medicines supplied through Chemist Care Now do not contribute to your Pharmaceutical Benefit Scheme (PBS) Safety Net threshold."
+        }
+      ],
+      "tags": [
+        "pharmacy",
+        "chemist-care-now"
+      ],
+      "checked": "2026-10-30"
+    },
+    {
+      "id": "victoria-public-dental-who-is-eligible",
+      "question": {
+        "en": "Who is eligible for public dental care in Victoria?",
+        "zh": "谁有资格使用维州的公立牙科服务？"
+      },
+      "aliases": [
+        "Free dental care Victoria concession card",
+        "Royal Dental Hospital Melbourne eligibility",
+        "维州公立牙科资格",
+        "有 Health Care Card 可以看公立牙医吗"
+      ],
+      "answer": {
+        "en": "People aged 18 and over who hold a health care or pensioner concession card, or are dependants of cardholders, are eligible. So are young people aged 13–17 with such a card or who are dependants of cardholders, and all Aboriginal and Torres Strait Islander people.",
+        "zh": "持有医疗保健卡（health care card）或养老金优惠卡（pensioner concession card）的 18 岁及以上人士，或这些卡持有人的受抚养人，有资格使用。持有此类卡或为持卡人受抚养人的 13 至 17 岁青少年，以及所有原住民和托雷斯海峡岛民，也有资格。"
+      },
+      "sources": [
+        {
+          "url": "https://www.health.vic.gov.au/dental-health/access-to-victorias-public-dental-care-services",
+          "quote": "people aged 18 years and over, who are health care or pensioner concession card holders or dependants of concession card holders"
+        },
+        {
+          "url": "https://www.health.vic.gov.au/dental-health/access-to-victorias-public-dental-care-services",
+          "quote": "young people aged 13–17 years who hold a healthcare or pensioner concession card, or who are dependants of concession card holders"
+        },
+        {
+          "url": "https://www.health.vic.gov.au/dental-health/access-to-victorias-public-dental-care-services",
+          "quote": "all Aboriginal and Torres Strait Islander people"
+        }
+      ],
+      "tags": [
+        "dental",
+        "public-dental"
+      ],
+      "checked": "2026-10-30"
+    },
+    {
+      "id": "victoria-public-dental-waiting-list-priority",
+      "question": {
+        "en": "Do I have to wait for public dental care in Victoria, and who gets priority?",
+        "zh": "维州公立牙科要排队吗？谁有优先权？"
+      },
+      "aliases": [
+        "Public dental waiting list Victoria",
+        "Priority access dental homeless",
+        "公立牙科排队多久",
+        "谁可以优先看牙"
+      ],
+      "answer": {
+        "en": "People with priority access are offered the next available appointment for general care and are not placed on the general waiting list. The page lists people who are homeless or at risk of homelessness among them. All other people seeking routine dental or denture care need to place their name on a waiting list.",
+        "zh": "享有优先权的人会被安排下一个可用的普通牙科预约，不需要排入一般候诊名单。页面列出的优先对象包括无家可归或有无家可归风险的人。其他寻求常规牙科或假牙护理的人都需要把名字登记到候诊名单上。"
+      },
+      "sources": [
+        {
+          "url": "https://www.health.vic.gov.au/dental-health/access-to-victorias-public-dental-care-services",
+          "quote": "Victorians who have priority access to dental care are offered the next available appointment for general care. They are not placed on the general waiting list."
+        },
+        {
+          "url": "https://www.health.vic.gov.au/dental-health/access-to-victorias-public-dental-care-services",
+          "quote": "people who are homeless or at risk of homelessness"
+        },
+        {
+          "url": "https://www.health.vic.gov.au/dental-health/access-to-victorias-public-dental-care-services",
+          "quote": "All other people seeking routine dental or denture care need to place their name on a waiting list."
+        }
+      ],
+      "tags": [
+        "dental",
+        "public-dental"
+      ],
+      "checked": "2026-10-30"
+    },
+    {
+      "id": "child-dental-benefits-schedule-amount",
+      "question": {
+        "en": "How much is the Child Dental Benefits Schedule?",
+        "zh": "儿童牙科福利计划（Child Dental Benefits Schedule）有多少钱？"
+      },
+      "aliases": [
+        "Child Dental Benefits Schedule $1,158",
+        "Dental benefit for kids Australia",
+        "儿童牙科补助",
+        "儿童牙科福利计划金额"
+      ],
+      "answer": {
+        "en": "The Child Dental Benefits Schedule provides up to $1,158 in dental benefits over 2 years for children aged from 0 to 17 years in eligible families. Services Australia has more information about it.",
+        "zh": "儿童牙科福利计划为符合条件家庭中 0 至 17 岁的儿童，在 2 年内提供最高 1,158 澳元的牙科福利。Services Australia 有更多相关信息。"
+      },
+      "sources": [
+        {
+          "url": "https://www.health.vic.gov.au/dental-health/access-to-victorias-public-dental-care-services",
+          "quote": "It provides up to $1,158 in dental benefits over 2 years for children aged from 0 to 17 years"
+        },
+        {
+          "url": "https://www.health.vic.gov.au/dental-health/access-to-victorias-public-dental-care-services",
+          "quote": "Services Australia has more information about the Child Dental Benefits Schedule."
+        }
+      ],
+      "tags": [
+        "dental",
+        "children"
+      ],
+      "checked": "2026-10-30",
+      "valid_until": "2027-01-01"
+    },
+    {
+      "id": "who-gives-vaccines-victoria",
+      "question": {
+        "en": "Where can I get vaccinations in Victoria?",
+        "zh": "在维州可以去哪里打疫苗？"
+      },
+      "aliases": [
+        "Free immunisation clinic council Victoria",
+        "Can pharmacists give vaccines in Victoria?",
+        "维州哪里可以打疫苗",
+        "市政厅有免费疫苗门诊吗"
+      ],
+      "answer": {
+        "en": "Immunisations in Victoria are provided by local councils, GPs and nurses in medical clinics and community health services, some maternal and child health nurses, travel medicine clinics, community pharmacists and hospitals. Local councils provide free immunisations at community clinics to eligible people under the National Immunisation Program.",
+        "zh": "维州的疫苗接种由当地市政厅、医疗诊所和社区健康服务机构的 GP 与护士、部分母婴健康护士、旅行医学诊所、社区药剂师和医院提供。市政厅会在社区疫苗门诊，为符合资格的人免费提供国家免疫计划（National Immunisation Program）下的疫苗。"
+      },
+      "sources": [
+        {
+          "url": "https://www.betterhealth.vic.gov.au/health/healthyliving/Who-provides-immunisations-in-victoria",
+          "quote": "Immunisations in Victoria are provided by: local councils, GPs and specially qualified nurses in medical clinics and community health services, some maternal and child health nurses, travel medicine clinics, community pharmacists and hospitals."
+        },
+        {
+          "url": "https://www.betterhealth.vic.gov.au/health/healthyliving/Who-provides-immunisations-in-victoria",
+          "quote": "provide free immunisations at community immunisation clinics to eligible persons under the National Immunisation Program"
+        }
+      ],
+      "tags": [
+        "vaccination",
+        "council"
+      ],
+      "checked": "2026-10-30"
+    },
+    {
+      "id": "childhood-vaccines-free-victoria",
+      "question": {
+        "en": "Are childhood vaccines free in Victoria, and what if my child missed one?",
+        "zh": "维州儿童疫苗免费吗？孩子漏打了怎么办？"
+      },
+      "aliases": [
+        "Victorian immunisation schedule free",
+        "Catch-up vaccines for children",
+        "儿童疫苗免费吗",
+        "孩子漏打疫苗怎么补"
+      ],
+      "answer": {
+        "en": "The Victorian immunisation schedule outlines the vaccines routinely provided free of charge to all Victorian children under the National Immunisation Program and Victorian funded programs. If a child has fallen behind or missed a vaccine, the schedule can be continued as if there had been no delay, and doses already received do not need repeating.",
+        "zh": "维州免疫接种时间表列出了在国家免疫计划和维州资助项目下，免费提供给所有维州儿童的常规疫苗。如果孩子落后或漏打疫苗，可以照常继续接种时间表，不必重复已经接种过的剂次。"
+      },
+      "sources": [
+        {
+          "url": "https://www.betterhealth.vic.gov.au/health/healthyliving/immunisation-childhood",
+          "quote": "outlines the vaccines that are routinely provided free of charge to all Victorian children under the National Immunisation Program"
+        },
+        {
+          "url": "https://www.betterhealth.vic.gov.au/health/healthyliving/immunisation-childhood",
+          "quote": "If you have fallen behind or missed a vaccine, the vaccine schedule can be safely continued as if there had been no delay."
+        },
+        {
+          "url": "https://www.betterhealth.vic.gov.au/health/healthyliving/immunisation-childhood",
+          "quote": "There is no need to repeat doses already received before having catch-up doses."
+        }
+      ],
+      "tags": [
+        "vaccination",
+        "children"
+      ],
+      "checked": "2026-10-30"
+    },
+    {
+      "id": "private-health-insurance-waiting-periods",
+      "question": {
+        "en": "What are the maximum waiting periods for private hospital cover in Australia?",
+        "zh": "澳大利亚私人医院保险的等待期最长是多久？"
+      },
+      "aliases": [
+        "Private health insurance waiting period pre-existing condition",
+        "Waiting period pregnancy private health",
+        "私人医疗保险等待期",
+        "孕产保险等待多久"
+      ],
+      "answer": {
+        "en": "Maximum hospital waiting periods are 12 months for pre-existing conditions and pregnancy, and 2 months for psychiatric care, rehabilitation or palliative care (even for a pre-existing condition). It is 2 months for all other circumstances.",
+        "zh": "医院保险的最长等待期是：既往病症和怀孕为 12 个月；精神科护理、康复或姑息治疗为 2 个月（即使是既往病症）；其他所有情况为 2 个月。"
+      },
+      "sources": [
+        {
+          "url": "https://www.privatehealth.gov.au/health_insurance/howitworks/waiting_periods.htm",
+          "quote": "The maximum hospital waiting periods are 12 months for pre-existing conditions and pregnancy, 2 months for psychiatric care, rehabilitation or palliative care (even for a pre-existing condition), and 2 months for all other circumstances."
+        }
+      ],
+      "tags": [
+        "private-health",
+        "insurance"
+      ],
+      "checked": "2026-10-30"
+    },
+    {
+      "id": "public-or-private-patient-in-public-hospital",
+      "question": {
+        "en": "Can I choose to be a private patient in a Victorian public hospital?",
+        "zh": "在维州公立医院可以选择当私人病人吗？"
+      },
+      "aliases": [
+        "Public vs private patient public hospital Victoria",
+        "Private health insurance in a public hospital",
+        "公立医院私人病人",
+        "有私人保险去公立医院"
+      ],
+      "answer": {
+        "en": "You can choose to be treated as a public or private patient in a public hospital. If you have private health insurance, you can have some control over the timing of your medical treatment.",
+        "zh": "你可以选择在公立医院以公立病人或私人病人身份接受治疗。如果你有私人医疗保险，对治疗的时间安排可以有一定的掌控。"
+      },
+      "sources": [
+        {
+          "url": "https://www.betterhealth.vic.gov.au/health/servicesandsupport/hospitals-in-victoria",
+          "quote": "You can choose to be treated as a public or private patient in a public hospital."
+        },
+        {
+          "url": "https://www.betterhealth.vic.gov.au/health/servicesandsupport/hospitals-in-victoria",
+          "quote": "If you have private health insurance, you can have some control over the timing of your medical treatment."
+        }
+      ],
+      "tags": [
+        "hospital",
+        "private-health"
+      ],
+      "checked": "2026-10-30"
+    },
+    {
+      "id": "private-hospital-emergency-department-fees",
+      "question": {
+        "en": "Do private hospital emergency departments charge fees in Victoria?",
+        "zh": "维州私立医院的急诊部要收费吗？"
+      },
+      "aliases": [
+        "Private hospital emergency Medicare cover",
+        "ED cost private hospital Melbourne",
+        "私立医院急诊收费",
+        "私立医院急诊 Medicare 报销吗"
+      ],
+      "answer": {
+        "en": "Some private hospitals may have emergency departments and charge fees for medical services, which may not be covered by Medicare. The page says to ask the triage nurse about costs on arrival if you are uncertain and able to.",
+        "zh": "部分私立医院设有急诊部并收取医疗服务费用，这些费用可能不在 Medicare 报销范围内。页面说，如果你不确定且条件允许，到达时可以向分诊护士询问费用。"
+      },
+      "sources": [
+        {
+          "url": "https://www.betterhealth.vic.gov.au/health/ServicesAndSupport/after-hours-healthcare-options",
+          "quote": "Some private hospitals may have emergency departments and charge fees for medical services, which may not be covered by Medicare. If you are uncertain and if you can, ask the triage nurse about costs when you arrive."
+        }
+      ],
+      "tags": [
+        "emergency",
+        "hospital",
+        "cost"
+      ],
+      "checked": "2026-10-30"
+    }
+  ]
+}
