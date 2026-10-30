@@ -35,3 +35,5 @@
 Wen 真实 OfficeReader 读取确认 HTTP 和浏览器均为同一段粘连文字，不是缺少 JS 渲染。`deputy-joined.txt` 直接从本单 `deputy-live.txt` 提取 `monthly instalments` 到 `Features` 的原始片段（10 词）；它与 `deputy-http.html` 一起验证两句多词原话无需浏览器即可命中。匹配时只放宽相邻字母，不移除引文内部空格，不放宽单词或带数字/金额的引文。
 
 渲染回退的 mock 改用测试代码内明确构造的缺原话 HTML shell，保留原回退行为的覆盖；不再拿实际 Deputy 粘连片段假设成“渲染后才有”。`deputy-rendered.txt` 仍只是前一轮约定的假渲染输入。旧来源说明保留用于追溯，以本节修正为准。
+
+prices-2026-10-28.json保存每周价格报告里的原句与原页首段（2026-10-28），没有再次抓取。报告的Giday首段未包含50c：测试明确另接一条合成50c价格行；ChatGPT/Claude渲染价格、等待及锁均用合成fixture，不代表实时网站。

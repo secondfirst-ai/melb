@@ -3,7 +3,8 @@ import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { Sources, normalizeCase, safeError, usable } from './source.mjs';
 import { OfficeReader, wait } from './office-cdp.mjs';
-import { usdAmounts, usdMatch, usdLiteralMatch, USD_NOTE } from './usd.mjs';
+import { usdAmounts, usdMatch, usdLiteralMatch, USD_NOTE, declaresUSD } from './usd.mjs';
+import { renderedPricePage, CURRENCY_AMOUNT } from './price-pages.mjs';
 
 const MAX_BYTES = 20 * 1024 * 1024;
 export const STATUSES = ['✓', '✗', '近似', '只能人看', '未核'];
@@ -53,6 +54,8 @@ export function claims(html, baseURL) {
   return result;
 }
 
+const cents = () => /(?<![\p{L}\p{N}_$.,+\-])([+-]?(?:\d{1,3}(?:,\d{3})+|\d+))\s*(?:c|¢)(?![\p{L}\p{N}_]|[.,]\d)/giu;
+
 function numericTokens(text) {
   let rest = text;
   const tokens = [];
@@ -78,6 +81,7 @@ function numericTokens(text) {
   // 标题里的「课程名 - $330」是分隔号；金额前紧贴的 -$330 / $-330 才带符号。
   take(new RegExp(`(?<![\\p{L}\\p{N}_+\\-])([+-]?)(?:AU?\\$|\\$|AUD\\s+\\$?)\\s*(${number})(?:\\s+AUD\\b)?(?![\\p{L}\\p{N}_]|\\.\\d)`, 'giu'), m => ({ type: 'money', value: decimal(m[1] + m[2]) }));
   take(new RegExp(`(?<![\\p{L}\\p{N}_.+\\-])(${number})\\s+AUD\\b`, 'giu'), m => ({ type: 'money', value: decimal(m[1]) }));
+  take(cents(), (m, offset) => hasNonAudCurrency(sentenceAround(text, offset, offset + m[0].length)) ? { type: 'currency-unknown', value: null } : { type: 'money', value: decimal(m[1]) / 100 });
   take(new RegExp(`(?<![\\p{L}\\p{N}_.+\\-])(${number})\\s*(?:%|per cent\\b|percent\\b)`, 'giu'), m => ({ type: 'percent', value: decimal(m[1]) }));
   take(new RegExp(`(?<![\\p{L}\\p{N}_.+\\-])(${number})(?![\\p{L}\\p{N}_]|\\.\\d)`, 'gu'), m => ({ type: 'number', value: decimal(m[1]) }));
   // 这些 one 是习语，不是待核对的数量（例如 Microsoft, for one）。
@@ -101,6 +105,10 @@ function numericTokens(text) {
 }
 
 export function tokens(text) {
+  // 只去掉括号内纯核对日期及站内Guide编号；真实事实日期、金额、原话继续核。
+  const spans = [...text.matchAll(quoted())].map(match => [match.index, match.index + match[0].length]);
+  text = text.replace(/\(([^()]*)\)|（([^（）]*)）/g, (whole, en, zh, offset) => !spans.some(([a, b]) => offset >= a && offset < b) && reviewDate((en ?? zh).trim()) ? ' '.repeat(whole.length) : whole)
+    .replace(/\bGuide\s+(?:№\s*|No\.?\s+|#\s*)\d+(?![\p{L}\p{N}_])/giu, (whole, offset) => spans.some(([a, b]) => offset >= a && offset < b) ? whole : ' '.repeat(whole.length));
   const phrases = [];
   for (const match of text.matchAll(quoted())) {
     const value = match.slice(1).find(x => x !== undefined)?.trim();
@@ -128,22 +136,92 @@ function contains(text, value, joinedLetters = false) {
 }
 const loose = s => normalizeCase(s).toLowerCase().replace(/[^\p{L}\p{N}\s]/gu, (punct, offset, value) => /[.,:/+-]/.test(punct) && /\d/.test(value[offset - 1] ?? '') && /\d/.test(value[offset + 1] ?? '') ? punct : ' ').replace(/\s+/g, ' ').trim();
 function matchToken(token, document) {
-  if (token.type === 'usd') { const match = usdMatch(token.value, document.text); return match === 'declared' ? 'usd' : match; }
+  if (token.type === 'currency-unknown') return 'manual';
+  if (token.type === 'usd') {
+    const match = usdMatch(token.value, document.text);
+    if (match === 'declared' && document.dollarCurrency === 'foreign') return 'manual';
+    if (match === 'declared' || match === 'missing' && document.dollarCurrency === 'usd' && document.numbers.some(t => t.type === 'usd' && t.value === token.value)) return 'usd';
+    return match === 'missing' && document.numbers.some(t => t.type === 'currency-unknown') ? 'manual' : match;
+  }
   if (token.type === 'phrase') {
     // 相邻元素的 textContent 会粘字；多词原话逐字存在就算命中，单词和数字/金额仍守原边界。
     const joined = token.quoted && token.value.split(/\s+/).filter(word => /\p{L}/u.test(word)).length >= 2 && !/\p{N}/u.test(token.value) && !numericTokens(token.value).length;
     if (contains(document.text, token.value, joined)) return 'exact';
-    if (usdLiteralMatch(token.value, document.text)) return 'usd';
+    const allowDeclared = document.dollarCurrency !== 'foreign' && (amount => !hasNonAudCurrency(sentenceAround(document.text, amount.start, amount.end), true));
+    if (usdLiteralMatch(token.value, document.text, { allowDeclared })) return 'usd';
+    if (usdLiteralMatch(token.value, document.text)) return 'manual';
     const approximate = loose(token.value);
     if (approximate && contains(loose(document.text), approximate)) return 'near';
     return 'missing';
   }
-  return document.numbers.some(t => t.type === token.type && (token.type === 'date' ? t.value.day === token.value.day && t.value.month === token.value.month && (token.value.year === null || t.value.year === token.value.year) : t.value === token.value)) ? 'exact' : 'missing';
+  if (document.numbers.some(t => t.type === token.type && (token.type === 'date' ? t.value.day === token.value.day && t.value.month === token.value.month && (token.value.year === null || t.value.year === token.value.year) : t.value === token.value))) return 'exact';
+  return token.type === 'money' && (document.numbers.some(t => t.type === 'currency-unknown') || document.onlyForeignPrices) ? 'manual' : 'missing';
 }
 
-function sourceNumbers(text) {
-  const found = numericTokens(text);
-  return [...found, ...found.flatMap(t => t.type === 'date' ? Object.values(t.value).filter(value => value !== null).map(value => ({ type: 'number', value })) : t.type === 'number' ? [] : [{ type: 'number', value: t.value }])];
+// 只接受明确澳元；ISO表、Unicode符号和dollars修饰共用一套判断，不列外币黑名单。
+const nonAudCodes = Intl.supportedValuesOf('currency').filter(code => code !== 'AUD');
+const nonAudPrefixes = new Set(nonAudCodes.flatMap(code => [code, code.slice(0, 2), code[0]]).filter(prefix => !['A', 'AU', 'AUD'].includes(prefix)));
+const currencyRules = (ignoreUSD) => {
+  const codes = nonAudCodes.filter(code => !ignoreUSD || code !== 'USD'), code = `(?:${codes.join('|')})`;
+  const prefixes = [...new Set(codes.flatMap(code => [code, code.slice(0, 2), code[0]]))].filter(prefix => !['A', 'AU', 'AUD', ...(ignoreUSD ? ['US', 'USD'] : [])].includes(prefix));
+  return {
+    amount: new RegExp(String.raw`(?<![\p{L}\p{N}_.+\-])(?:${number}\s*(?:c|¢)?(?:\s*(?:per\s+[a-z]+|/\s*[a-z]+))?\s*${code}(?![\p{L}\p{N}_])|${code}\s*\$?\s*${number}(?!\d|[.,]\d)(?:c|¢)?)`, 'iu'),
+    declaration: new RegExp(String.raw`\b(?:currency(?: is)?|prices?(?: are)? in|priced in|billed in|charged in)\s*[:=]?\s*${code}\b`, 'iu'),
+    symbol: new RegExp(String.raw`(?<![\p{L}\p{N}_])(?:${prefixes.join('|')})\$`, 'iu'),
+  };
+};
+const allCurrencies = currencyRules(false), withoutUSD = currencyRules(true);
+function hasNonAudCurrency(text, ignoreUSD = false) {
+  // 按最新口径，除ASCII $以外的Sc符号（包括¢）都交给人工确认币种。
+  if ([...text.matchAll(/\p{Sc}/gu)].some(match => match[0] !== '$')) return true;
+  const normalized = text.replace(/(?<=\p{L})\.(?=\p{L}|\s+dollars?\b|\s*\$)/giu, '');
+  const rules = ignoreUSD ? withoutUSD : allCurrencies;
+  if (rules.amount.test(normalized) || rules.declaration.test(normalized) || rules.symbol.test(normalized) || !ignoreUSD && declaresUSD(normalized)) return true;
+  // 非明确澳元的dollars修饰保守交给人，包括带点缩写和多词国名的最后一个词。
+  return [...normalized.matchAll(/(?<![\p{L}\p{N}_])([\p{L}.]+)\s+dollars?\b/giu)].some(match => {
+    const modifier = match[1].replaceAll('.', '').toLowerCase();
+    return !['australian', 'australia', 'aud', 'au', ...(ignoreUSD ? ['us', 'usd'] : [])].includes(modifier);
+  });
+}
+function sentenceAround(text, start, end) {
+  let from = 0, to = text.length;
+  for (const match of text.matchAll(/[!?。！？\r\n]|\.(?!\d)|(?<!\d)\./g)) {
+    // 小数、字母间点、U.S.这类缩写的末点和常见缩写都不分句。
+    if (match[0] === '.' && (/\p{L}/u.test(text[match.index - 1] ?? '') && /\p{L}/u.test(text[match.index + 1] ?? '') || /(?:\b\p{L}\.){2,}$/u.test(text.slice(0, match.index + 1)) || /\b(?:incl|excl|approx|vs|etc|e\.g|i\.e|min|max|Mr|Mrs|Dr|Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Sept|Oct|Nov|Dec)\.$/i.test(text.slice(0, match.index + 1)))) continue;
+    if (match.index < start) from = match.index + match[0].length;
+    else if (match.index >= end) { to = match.index; break; }
+  }
+  return text.slice(from, to);
+}
+function dollarCurrency(text, url) {
+  try { if (!new URL(url).hostname.toLowerCase().endsWith('.com.au') && !renderedPricePage(url)) return null; } catch { return null; }
+  return hasNonAudCurrency(text, true) ? 'foreign' : hasNonAudCurrency(text) ? 'usd' : renderedPricePage(url) ? 'foreign' : 'money';
+}
+function sourceNumbers(text, currency, rendered) {
+  let found = numericTokens(text);
+  if (rendered) {
+    // 价格页行内元素会把名称与 A$ 或单位粘在一起；排除 CA$ 等明确外币前缀。
+    const aud = new RegExp(String.raw`(?<![\p{N}_$])([\p{L}]*?)(AU?\$)\s*(${number})(?!\d|[.,]\d)`, 'giu');
+    for (const match of text.matchAll(aud)) {
+      const prefix = (match[1] + match[2].slice(0, -1)).toUpperCase();
+      if (nonAudPrefixes.has(prefix)) found.push({ label: match[0], type: 'currency-unknown', value: null });
+      else found.push({ label: match[0], type: 'money', value: decimal(match[3]) });
+    }
+  }
+  if (currency) {
+    if (currency !== 'money') found = found.map(t => t.type === 'money' && /^[+-]?\$/.test(t.label) && !/\bAUD$/i.test(t.label) ? { ...t, type: 'currency-unknown', value: null } : t);
+    const explicitUSD = usdAmounts(text);
+    const bare = new RegExp(`(?<![\\p{L}\\p{N}_+\\-])([+-]?)\\$\\s*(${number})(?!\\d|[.,]\\d)`, 'giu');
+    for (const match of text.matchAll(bare)) {
+      // 已被显式USD消费的金额，不能因后面另有AUD又补成澳元。
+      if (explicitUSD.some(row => match.index < row.end && match.index + match[0].length > row.start)) continue;
+      const explicitAUD = /\bAUD\s*$/i.test(text.slice(0, match.index)) || /^\s*AUD\b/i.test(text.slice(match.index + match[0].length));
+      const type = explicitAUD || currency === 'money' ? 'money' : 'currency-unknown';
+      found.push({ label: match[0], type, value: type === 'currency-unknown' ? null : decimal(match[1] + match[2]) });
+      if (!explicitAUD && currency === 'usd') found.push({ label: match[0], type: 'usd', value: decimal(match[1] + match[2]) });
+    }
+  }
+  return [...found, ...found.flatMap(t => t.type === 'date' ? Object.values(t.value).filter(value => value !== null).map(value => ({ type: 'number', value })) : ['number', 'currency-unknown'].includes(t.type) ? [] : [{ type: 'number', value: t.value }])];
 }
 
 function reviewDate(text) {
@@ -154,7 +232,11 @@ function reviewDate(text) {
   return !!zh && numericTokens(`${zh[1]}-${zh[2].padStart(2, '0')}-${zh[3].padStart(2, '0')}`).some(t => t.type === 'date');
 }
 
-const documentFor = document => ({ ...document, text: normalizeCase(document.text), numbers: sourceNumbers(document.text) });
+const documentFor = (document, url) => {
+  const text = normalizeCase(document.text), currency = dollarCurrency(text, url);
+  const numbers = sourceNumbers(text, currency, renderedPricePage(url));
+  return { ...document, text, dollarCurrency: currency, numbers, onlyForeignPrices: renderedPricePage(url) && !!currency && currency !== 'money' && !numbers.some(t => t.type === 'money') };
+};
 const documentsFor = (urls, pages) => urls.flatMap(url => [pages.get(url)?.document, pages.get(url)?.rendered].filter(Boolean));
 
 function sourceReader() { return new Sources({ withVia: true, allowHTTP: true, preserveCase: true }); }
@@ -172,6 +254,17 @@ export async function factcheckHTML(html, { cdp = false, caller = 'factcheck', e
     for (const url of new Set(rows.filter(row => row.tokens.length).flatMap(row => row.urls))) {
       signal?.throwIfAborted();
       let document, error;
+      if (renderedPricePage(url)) {
+        // 不能把导航里的数字当作价格；没开CDP或金额未渲染都算未核。
+        try {
+          if (!cdp) throw Error('此价格页需要 --cdp 等待货币金额渲染');
+          office ??= officeFactory({ caller, signal, preserveCase: true });
+          const text = usable(await office.read(url), { preserveCase: true });
+          if (!new RegExp(CURRENCY_AMOUNT, 'i').test(text)) throw Error('价格页未渲染出货币金额');
+          document = documentFor({ text, via: 'cdp' }, url);
+        } catch (e) { if (signal?.aborted) throw signal.reason; error = safeError(e); }
+        pages.set(url, { document, error }); continue;
+      }
       // 抓取失败沿用显式 --cdp；HTTP 成功但缺引号原话的补核放在下面。
       try { document = await wait(sources.readHTTP(url), 120_000, signal); }
       catch (e) {
@@ -187,7 +280,7 @@ export async function factcheckHTML(html, { cdp = false, caller = 'factcheck', e
       }
       if (document) {
         if (typeof document.text !== 'string' || !document.text.trim()) throw Error('出处读取器未返回正文');
-        document = documentFor(document);
+        document = documentFor(document, url);
       }
       pages.set(url, { document, error });
     }
@@ -208,7 +301,7 @@ export async function factcheckHTML(html, { cdp = false, caller = 'factcheck', e
       if (!cdp) continue;
       try {
         office ??= officeFactory({ caller, signal, preserveCase: true });
-        page.rendered = documentFor({ text: usable(await office.read(url), { preserveCase: true }), via: 'cdp' });
+        page.rendered = documentFor({ text: usable(await office.read(url), { preserveCase: true }), via: 'cdp' }, url);
       } catch (e) { if (signal?.aborted) throw signal.reason; page.renderError = 'CDP：' + safeError(e); }
     }
     return rows.map(row => {
@@ -218,8 +311,9 @@ export async function factcheckHTML(html, { cdp = false, caller = 'factcheck', e
       const missing = outcomes.filter(o => !o.matches.some(m => m !== 'missing')).map(o => o.token.label);
       const unreadable = row.urls.filter(url => !pages.get(url)?.document || missingQuote(row) && pages.get(url)?.renderError);
       const unresolved = unreadable.length || row.missingRefs.length;
-      const status = !documents.length || missing.length && unresolved ? '未核' : missing.length ? '✗' : outcomes.some(o => !o.matches.some(match => match === 'exact' || match === 'usd')) ? '近似' : '✓';
-      return { ...row, status, missing, ...(outcomes.some(o => o.matches.includes('usd')) ? { note: USD_NOTE } : {}), unreadable, mayNeedBrowser: !cdp && missingQuote(row) && row.urls.some(url => pages.get(url)?.mayNeedBrowser), errors: unreadable.map(url => `${url}：${pages.get(url)?.renderError ?? pages.get(url)?.error ?? '没有出处正文'}`) };
+      const manual = outcomes.some(o => o.matches.includes('manual') && !o.matches.some(match => ['exact', 'usd', 'near'].includes(match)));
+      const status = !documents.length || missing.length && unresolved ? '未核' : missing.length ? '✗' : manual ? '只能人看' : outcomes.some(o => !o.matches.some(match => match === 'exact' || match === 'usd')) ? '近似' : '✓';
+      return { ...row, status, missing, ...(status === '只能人看' && manual ? { note: '币种不明确，未换算为澳元，需人工核对。' } : outcomes.some(o => o.matches.includes('usd')) ? { note: USD_NOTE } : {}), unreadable, mayNeedBrowser: !cdp && missingQuote(row) && row.urls.some(url => pages.get(url)?.mayNeedBrowser), errors: unreadable.map(url => `${url}：${pages.get(url)?.renderError ?? pages.get(url)?.error ?? '没有出处正文'}`) };
     });
   } finally { try { await office?.close(); } finally { await sources.close(); } }
 }
