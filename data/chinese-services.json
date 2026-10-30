@@ -1,0 +1,1885 @@
+{
+ "dataset": "melb-chinese-services",
+ "title": {
+  "en": "Official services and information in Chinese",
+  "zh": "中文官方服务与信息"
+ },
+ "updated": "2026-10-30",
+ "notes": [
+  {
+   "en": "Each answer is limited to what the cited official page says, with a verbatim quote and the date we checked it. If a question isn't here, we don't have a checked answer.",
+   "zh": "每条答案只说出处原文支持的内容，附原句和核对日期。这里没有的问题，就是我们还没有核过的答案。"
+  }
+ ],
+ "records": [
+  {
+   "id": "tis-call-131-450-chinese-interpreter",
+   "question": {
+    "en": "How do I call 131 450 to get a Chinese interpreter?",
+    "zh": "怎么打 131 450 找中文口译员？"
+   },
+   "aliases": [
+    "打 131 450 要说什么",
+    "How do I ask for a Mandarin or Cantonese interpreter on the phone?",
+    "131 450 找普通话口译员怎么说",
+    "What happens when I call TIS National on 131 450?"
+   ],
+   "answer": {
+    "en": "TIS National's immediate phone interpreting service is available 24 hours a day, every day of the year by calling 131 450. When you call 131 450, an automated prompt asks which language you need, and you state the language you require.",
+    "zh": "TIS National 的即时电话口译服务全年每天 24 小时提供，号码是 131 450。拨通后，自动语音会问需要哪种语言，来电者要说出所需的语言。"
+   },
+   "sources": [
+    {
+     "url": "https://www.tisnational.gov.au/en/Non-English-speakers/Interpreting-services",
+     "quote": "TIS National's immediate phone interpreting service is available 24 hours a day, every day of the year by calling 131 450."
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Non-English-speakers/Interpreting-services",
+     "quote": "An automated prompt will ask you which language you need. Please state the language that you require."
+    }
+   ],
+   "tags": [
+    "interpreter",
+    "tis"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "tis-what-info-operator-asks",
+   "question": {
+    "en": "What information does the TIS National operator ask for when I call 131 450?",
+    "zh": "打 131 450 之后，接线员会问我哪些信息？"
+   },
+   "aliases": [
+    "打电话找口译员要提供什么资料",
+    "口译员接通后要报对方机构的电话吗",
+    "What do I need to tell the TIS operator?",
+    "Do I need the phone number of the place I want to call when using TIS?"
+   ],
+   "answer": {
+    "en": "A caller is asked to provide their name, the name of the organisation they need to contact and that organisation's phone number. A caller may also be asked for any required information the agency has requested be recorded by TIS National, for example an identification number or claim number.",
+    "zh": "来电者会被要求提供自己的姓名、要联系的机构名称和该机构的电话号码。来电者还可能被要求提供机构要求 TIS National 记录的任何必要信息，例如身份编号或索赔编号。"
+   },
+   "sources": [
+    {
+     "url": "https://www.tisnational.gov.au/en/Non-English-speakers/Interpreting-services",
+     "quote": "The operator will connect you with an interpreter in the language you asked for. You will be asked to provide:"
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Non-English-speakers/Interpreting-services",
+     "quote": "your name"
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Non-English-speakers/Interpreting-services",
+     "quote": "the name of the organisation you need to contact"
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Non-English-speakers/Interpreting-services",
+     "quote": "the phone number of the organisation you need to contact."
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Non-English-speakers/Interpreting-services",
+     "quote": "You may also be asked for any required information the agency has requested be recorded by TIS National (for example, an identification number or claim number)."
+    }
+   ],
+   "tags": [
+    "interpreter",
+    "tis"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "tis-131-450-cost",
+   "question": {
+    "en": "Does it cost money to call 131 450 for an interpreter, and what about from a mobile?",
+    "zh": "打 131 450 要钱吗？手机打要不要额外费用？"
+   },
+   "aliases": [
+    "TIS 口译电话收费吗",
+    "131 450 是免费的吗",
+    "Is the TIS National interpreter service free for non-English speakers?",
+    "用手机打 131 450 会贵吗"
+   ],
+   "answer": {
+    "en": "The majority of TIS National interpreting services are free to non-English speakers, and generally the organisation being contacted accepts the charges. Calls to 131 450 cost a local call throughout Australia, but calls from mobile phones or from outside Australia may attract a higher rate depending on the service provider used.",
+    "zh": "TIS National 的大部分口译服务对不会说英语的人免费，通常由要联系的机构支付费用。在澳大利亚各地拨打 131 450 按本地电话收费，但从手机或境外拨打可能按较高费率收费，视服务商而定。"
+   },
+   "sources": [
+    {
+     "url": "https://www.tisnational.gov.au/en/Non-English-speakers/Interpreting-services",
+     "quote": "The majority of TIS National interpreting services are free to non-English speakers. Generally the organisation you are contacting will accept the charges for the service."
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Non-English-speakers/Interpreting-services",
+     "quote": "You can call TIS National on 131 450 for the cost of a local call throughout Australia. Charges for calls from mobile phones, or from outside of Australia may attract a higher rate depending on the service provider used."
+    }
+   ],
+   "tags": [
+    "interpreter",
+    "tis",
+    "cost"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "tis-call-from-overseas",
+   "question": {
+    "en": "What number do I call TIS National from outside Australia?",
+    "zh": "人在国外，怎么联系 TIS National 的口译服务？"
+   },
+   "aliases": [
+    "海外打 TIS 口译电话号码",
+    "Is there an overseas number for TIS National?",
+    "从国外打电话找澳洲口译服务"
+   ],
+   "answer": {
+    "en": "TIS National's immediate phone interpreting number is 131 450 within Australia and +613 9106 3162 from outside Australia. Both are available 24 hours a day, every day of the year.",
+    "zh": "TIS National 的即时电话口译在澳大利亚境内的号码是 131 450，境外的号码是 +613 9106 3162。这两个号码都全年每天 24 小时提供服务。"
+   },
+   "sources": [
+    {
+     "url": "https://www.tisnational.gov.au/en/Contact-us",
+     "quote": "Call and request an interpreter 24 hours a day, every day of the year"
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Contact-us",
+     "quote": "Phone: 131 450 (within Australia)"
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Contact-us",
+     "quote": "Phone: +613 9106 3162 (outside Australia)"
+    }
+   ],
+   "tags": [
+    "interpreter",
+    "tis"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "tis-personal-account",
+   "question": {
+    "en": "Can I pay for a TIS National interpreter myself if the organisation will not accept the charges?",
+    "zh": "如果对方机构不肯付口译费，我可以自己开 TIS 账户付费吗？"
+   },
+   "aliases": [
+    "TIS 个人账户怎么开",
+    "对方不接 TIS 电话怎么办",
+    "How do I register a personal account with TIS National?",
+    "What do I need to open a TIS National personal account?"
+   ],
+   "answer": {
+    "en": "Yes. Where the organisation does not accept TIS National's charges, a person can create a personal account with TIS National and pay for the service themselves, which requires a credit card. To do so, call 131 450, say the language needed, tell the operator a personal account is needed, and provide a full name, Australian postal address, phone number and credit card details.",
+    "zh": "可以。如果要联系的机构不愿意接受口译服务费用，可以通过创建 TIS National 个人账户自己付费，创建账户需要信用卡。开户时要拨打 131 450，说出所需语言，并告诉接线员要创建个人账户，然后提供全名、澳大利亚邮寄地址、电话号码和信用卡资料。"
+   },
+   "sources": [
+    {
+     "url": "https://www.tisnational.gov.au/en/Non-English-speakers/Register-a-personal-account",
+     "quote": "Some organisations you wish to speak to may not be willing to accept the charges for our interpreting services. Where the organisation you need to speak to does not accept our calls, you can choose to pay for the service yourself by creating a personal account with TIS National. You will need a credit card to create a personal account."
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Non-English-speakers/Register-a-personal-account",
+     "quote": "Call TIS National on 131 450."
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Non-English-speakers/Register-a-personal-account",
+     "quote": "If you are a non-English speaker and need to access an interpreter, call 131 450 and tell the TIS National operator the language you need."
+    }
+   ],
+   "tags": [
+    "interpreter",
+    "tis",
+    "cost"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "tis-which-organisations-to-call",
+   "question": {
+    "en": "Which organisations can I contact through a TIS National interpreter?",
+    "zh": "通过 TIS 口译员可以联系哪些机构？机构有自己的口译电话怎么办？"
+   },
+   "aliases": [
+    "TIS 可以帮我打给银行或电力公司吗",
+    "口译员能帮我打给政府部门吗",
+    "Can TIS connect me to a utility company or government department?",
+    "机构的口译号码不是 131 450 怎么办"
+   ],
+   "answer": {
+    "en": "TIS National provides interpreting services to a wide range of agencies and businesses throughout Australia. Its clients include state and federal government departments, utility companies, telecommunication companies, emergency services, legal services and settlement and community service providers. If the agency or business provides an interpreting service phone number that is not 131 450, that number should be dialled before contacting TIS National.",
+    "zh": "TIS National 为全澳各地的许多机构和企业提供口译服务，客户包括联邦和州政府部门、公用事业公司、电信公司、紧急服务机构、法律服务机构以及安置和社区服务机构。如果要联系的机构提供的口译电话不是 131 450，应先拨该机构提供的号码，然后再联系 TIS National。"
+   },
+   "sources": [
+    {
+     "url": "https://www.tisnational.gov.au/en/Non-English-speakers/Help-using-TIS-National",
+     "quote": "TIS National provides interpreting services to a wide range of agencies and businesses throughout Australia."
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Non-English-speakers/Help-using-TIS-National",
+     "quote": "Some of our clients include:"
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Non-English-speakers/Help-using-TIS-National",
+     "quote": "utility companies"
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Non-English-speakers/Help-using-TIS-National",
+     "quote": "telecommunication companies"
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Non-English-speakers/Help-using-TIS-National",
+     "quote": "emergency services"
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Non-English-speakers/Help-using-TIS-National",
+     "quote": "legal services"
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Non-English-speakers/Help-using-TIS-National",
+     "quote": "settlement and community service providers."
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Non-English-speakers/Help-using-TIS-National",
+     "quote": "If the agency or business you need to contact provides an interpreting service phone number that is not 131 450, please dial the number provided before contacting TIS National."
+    }
+   ],
+   "tags": [
+    "interpreter",
+    "tis"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "tis-when-can-i-connect",
+   "question": {
+    "en": "When can TIS National connect me to an agency — evenings, weekends and public holidays?",
+    "zh": "TIS 口译电话什么时候能帮我打给机构？周末和公众假期可以吗？"
+   },
+   "aliases": [
+    "晚上能用 TIS 找口译员吗",
+    "公众假期打 131 450 可以吗",
+    "Can TIS connect me to a hospital on weekends?",
+    "TIS 的服务时间是多少"
+   ],
+   "answer": {
+    "en": "TIS National services are available 24 hours a day, but interpreting calls are only connected during the operating hours of the agency or business being contacted. As a general guide, most registered agencies can usually be connected Monday to Friday 9 am – 5 pm (AEST); outside business hours or on weekends, TIS can connect to hospitals, some health services and businesses such as insurance or utilities; on public holidays it recommends waiting until standard business hours unless the call is an emergency.",
+    "zh": "TIS National 的服务全天 24 小时提供，但只在要联系的机构或企业营业时间内接通口译电话。一般周一至周五上午 9 点至下午 5 点（AEST）可连接大多数登记机构；非营业时间或周末可连接医院和部分医疗服务或保险、公用事业等企业；公众假期建议在正常营业时间再打，紧急情况除外。"
+   },
+   "sources": [
+    {
+     "url": "https://www.tisnational.gov.au/en/Non-English-speakers/Help-using-TIS-National",
+     "quote": "Although TIS National services are available 24 hours a day, we only connect interpreting phone calls during the operating hours of the agency or business you want to contact."
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Non-English-speakers/Help-using-TIS-National",
+     "quote": "Outside business hours or weekends – we can connect to hospitals and some health services or businesses such as insurance or utilities."
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Non-English-speakers/Help-using-TIS-National",
+     "quote": "Public holidays (Australia-wide or state holidays) – we recommend to wait and call during standard business hours unless your call is an emergency."
+    }
+   ],
+   "tags": [
+    "interpreter",
+    "tis"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "tis-request-male-female-interpreter",
+   "question": {
+    "en": "Can I request a male or female interpreter through TIS National?",
+    "zh": "可以要求男口译员或女口译员吗？"
+   },
+   "aliases": [
+    "TIS 能选口译员性别吗",
+    "我想要女口译员怎么说",
+    "Can I ask for a female interpreter on 131 450?"
+   ],
+   "answer": {
+    "en": "Yes. A person who prefers an interpreter of a particular gender should tell the TIS National operator or the organisation they are contacting as soon as possible. TIS National will try to provide an interpreter of the requested gender.",
+    "zh": "可以。如果希望口译员是特定性别，应尽早告诉 TIS National 接线员或要联系的机构。TIS National 会尽量提供所要求性别的口译员。"
+   },
+   "sources": [
+    {
+     "url": "https://www.tisnational.gov.au/en/Non-English-speakers/Help-using-TIS-National",
+     "quote": "Yes. If you would prefer an interpreter of a particular gender, tell the TIS National operator or organisation you are contacting as soon as possible. TIS National will try to provide you with an interpreter of the requested gender."
+    }
+   ],
+   "tags": [
+    "interpreter",
+    "tis"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "tis-know-the-interpreter",
+   "question": {
+    "en": "What if I know the interpreter TIS National connects me to?",
+    "zh": "如果 TIS 接通的口译员我认识，可以不用他吗？"
+   },
+   "aliases": [
+    "口译员是熟人怎么办",
+    "我可以换一个口译员吗",
+    "Can I refuse an interpreter I know personally?"
+   ],
+   "answer": {
+    "en": "If a person realises they know the allocated interpreter, it is their decision whether to continue the interpreting session. If they do not want to continue with the same interpreter, they should tell the TIS National operator or the organisation and end the call.",
+    "zh": "如果发现分配到的口译员是自己认识的人，是否继续口译由本人决定。如果不想继续用同一位口译员，应告诉 TIS National 接线员或要联系的机构，并结束通话。"
+   },
+   "sources": [
+    {
+     "url": "https://www.tisnational.gov.au/en/Non-English-speakers/Help-using-TIS-National",
+     "quote": "If you realise you know the allocated interpreter, it is your decision if you want to continue the interpreting session. If you do not want to continue with the same interpreter, tell the TIS National operator or the organisation and end the call."
+    }
+   ],
+   "tags": [
+    "interpreter",
+    "tis"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "government-must-provide-interpreter",
+   "question": {
+    "en": "Do Australian government agencies have to provide an interpreter, and what about private organisations?",
+    "zh": "澳大利亚政府机构有义务为不会英语的人提供口译吗？私营机构呢？"
+   },
+   "aliases": [
+    "政府部门必须提供口译吗",
+    "Multicultural Access and Equity 是什么",
+    "私营公司不接 TIS 电话怎么办",
+    "Must a government agency use an interpreter for limited-English clients?"
+   ],
+   "answer": {
+    "en": "Under Australia's Multicultural Access and Equity Policy, Australian Government departments and agencies have an obligation to be responsive to the needs of clients with limited English proficiency. Some private organisations may not accept calls from TIS National, but if a person calls the organisation directly it may be able to call back with a phone interpreter.",
+    "zh": "澳大利亚政府部门和机构根据《多元文化准入与公平政策》（Multicultural Access and Equity Policy），有责任回应英语水平有限的客户的需要。一些私营机构可能不接 TIS National 的电话，但直接致电该机构时，对方也许可以用电话口译员回电。"
+   },
+   "sources": [
+    {
+     "url": "https://www.tisnational.gov.au/en/Non-English-speakers/Help-using-TIS-National",
+     "quote": "Australian Government departments and agencies have an obligation to be responsive to the needs of clients with limited English proficiency under Australia's"
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Non-English-speakers/Help-using-TIS-National",
+     "quote": "Some private organisations may not accept calls from TIS National, however if you call the organisation directly they may be able to call you back with a phone interpreter."
+    }
+   ],
+   "tags": [
+    "interpreter",
+    "tis",
+    "government"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "tis-cancel-booked-interpreter",
+   "question": {
+    "en": "What should I do if an organisation booked an interpreter for me and I cannot attend?",
+    "zh": "机构给我预约了口译员，我去不了怎么办？"
+   },
+   "aliases": [
+    "预约的口译员要取消怎么办",
+    "Who do I tell if I need to cancel an interpreter appointment?"
+   ],
+   "answer": {
+    "en": "If an organisation has booked an interpreter and the appointment needs to be cancelled, the person should tell the organisation as soon as possible.",
+    "zh": "如果机构已为本人预约了口译员而需要取消预约，应尽快告知该机构。"
+   },
+   "sources": [
+    {
+     "url": "https://www.tisnational.gov.au/en/Non-English-speakers/Interpreting-services",
+     "quote": "If an organisation has booked an interpreter for you and you need to cancel the appointment, it is important you tell the organisation as soon as possible."
+    }
+   ],
+   "tags": [
+    "interpreter",
+    "tis"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "tis-number-of-languages",
+   "question": {
+    "en": "How many languages does TIS National provide interpreters in?",
+    "zh": "TIS National 提供多少种语言的口译？"
+   },
+   "aliases": [
+    "TIS 有粤语和普通话口译吗",
+    "澳洲电话口译有多少种语言",
+    "Does TIS National cover more than 150 languages?"
+   ],
+   "answer": {
+    "en": "TIS National has a panel of credentialed language practitioners who provide services in more than 150 languages. The language list is updated as new languages become available.",
+    "zh": "TIS National 有一批持有资质的语言从业人员，提供超过 150 种语言的服务。语言名单会在有新语言可用时更新。"
+   },
+   "sources": [
+    {
+     "url": "https://www.tisnational.gov.au/en/Who/We-speak-your-language/Available-languages",
+     "quote": "TIS National has a panel of credentialed language practitioners who provide services in more than 150 languages. The language list is updated as new languages become available."
+    }
+   ],
+   "tags": [
+    "interpreter",
+    "tis"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "tis-chinese-website",
+   "question": {
+    "en": "Does the TIS National website have a Chinese version?",
+    "zh": "TIS National 网站有中文版吗？"
+   },
+   "aliases": [
+    "TIS 网站有简体中文吗",
+    "TIS Multilingual 是什么",
+    "Where can I read TIS National information in Chinese?"
+   ],
+   "answer": {
+    "en": "Yes. TIS Multilingual offers translated information on the TIS National website in 10 high-demand languages, and its language list includes Chinese (Simplified) and Chinese (Traditional). The translated content includes help using TIS National, available services and booking, organisations who use TIS National services, and when to contact TIS National.",
+    "zh": "有。TIS Multilingual 在 TIS National 网站上提供翻译内容，涵盖 10 种需求较高的语言，语言列表中包括简体中文和繁体中文。内容包括使用 TIS National 的帮助、可用服务与预约、使用 TIS National 服务的机构，以及何时联系 TIS National。"
+   },
+   "sources": [
+    {
+     "url": "https://www.tisnational.gov.au/en/Who/We-speak-your-language/TIS-Multilingual-support",
+     "quote": "TIS Multilingual offers translated information and resources on the TIS National website. Translated content is available in 10 high-demand languages."
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Who/We-speak-your-language/TIS-Multilingual-support",
+     "quote": "Chinese (Simplified) - 简体中文"
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Who/We-speak-your-language/TIS-Multilingual-support",
+     "quote": "Help using TIS National"
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Who/We-speak-your-language/TIS-Multilingual-support",
+     "quote": "When to contact TIS National."
+    }
+   ],
+   "tags": [
+    "tis",
+    "chinese-website"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "free-interpreter-pharmacy-real-estate-council",
+   "question": {
+    "en": "Besides GPs, can pharmacies, real estate agencies and councils also provide a free interpreter?",
+    "zh": "除了看医生，药房、租房中介和市政府也能为我提供免费口译吗？"
+   },
+   "aliases": [
+    "去药房买药可以要免费口译员吗",
+    "租房中介能找免费口译吗",
+    "Free Interpreting Service 包括哪些机构",
+    "Which services offer the Free Interpreting Service?"
+   ],
+   "answer": {
+    "en": "Yes. The Free Interpreting Service (FIS) is available for private medical practitioners, pharmacies, real estate agents, city/shire councils, eligible non-government organisations and charities, registered trade unions, eligible allied health professionals and parliamentarians. A person visiting one of these services can ask the staff for an interpreter, which they can organise at no cost.",
+    "zh": "可以。免费口译服务（FIS）适用于私人执业医生、药房、房地产中介、市政府（city/shire council）、符合条件的非政府组织和慈善机构、注册工会、符合条件的专职医疗人员和国会议员。去这些机构时可以请工作人员安排口译员，无需付费。"
+   },
+   "sources": [
+    {
+     "url": "https://www.tisnational.gov.au/en/Non-English-speakers/Help-using-TIS-National",
+     "quote": "The FIS is available for these services:"
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Non-English-speakers/Help-using-TIS-National",
+     "quote": "If you visit one of these services, ask the staff for an interpreter. They can organise this for you at no cost."
+    }
+   ],
+   "tags": [
+    "interpreter",
+    "tis",
+    "fis"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "free-interpreter-real-estate-agent",
+   "question": {
+    "en": "Can a real estate agent arrange a free interpreter for renting or buying a home?",
+    "zh": "租房或买房时，房产中介可以为我安排免费口译吗？"
+   },
+   "aliases": [
+    "看房签租约能要免费口译吗",
+    "中介必须提供口译员吗",
+    "Does the Free Interpreting Service cover tenancy agreements?"
+   ],
+   "answer": {
+    "en": "The Free Interpreting Service (FIS) can be used for any private residential property matter in Australia, but not for corporate non-residential property matters such as commercial leases and sales. Real estate agencies are eligible if they hold a real estate agent licence, provide private residential property services (rental or sales), and provide services to anyone in Australia who is eligible for Medicare (Australian citizens, permanent residents and select temporary visa holders).",
+    "zh": "免费口译服务（FIS）可用于澳大利亚的任何私人住宅物业事务，但不能用于商业租约和买卖等企业非住宅物业事务。符合条件的中介机构需持有房地产中介牌照，提供私人住宅租赁或买卖服务，并且服务对象是澳大利亚境内任何符合 Medicare 资格的人（澳大利亚公民、永久居民和部分临时签证持有人）。"
+   },
+   "sources": [
+    {
+     "url": "https://www.tisnational.gov.au/en/Our-services/Free-Interpreting-Service/Eligible-groups/Real-estate-agencies",
+     "quote": "The FIS can be used for any private residential property matter in Australia."
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Our-services/Free-Interpreting-Service/Eligible-groups/Real-estate-agencies",
+     "quote": "The FIS cannot be used for corporate non-residential property matters, such as commercial leases and sales."
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Our-services/Free-Interpreting-Service/Eligible-groups/Real-estate-agencies",
+     "quote": "provide services to anyone in Australia who is eligible for Medicare (Australian citizens, permanent residents and select temporary visa holders)."
+    }
+   ],
+   "tags": [
+    "interpreter",
+    "housing",
+    "fis"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "free-interpreter-local-council",
+   "question": {
+    "en": "Can I ask for a free interpreter when dealing with my local council?",
+    "zh": "到市政府（council）办事，可以要求免费口译吗？"
+   },
+   "aliases": [
+    "council 有免费口译吗",
+    "市政厅办事口译服务",
+    "Does the Free Interpreting Service cover council services?"
+   ],
+   "answer": {
+    "en": "The Free Interpreting Service (FIS) can be used to deliver most city/shire council services and activities, for people in Australia who are eligible for Medicare. Councils cannot use it for local tourism or other commercial activities, compliance activities (for example, animal, food or building safety or business regulation), citizenship ceremonies, or services provided on behalf of another government body.",
+    "zh": "免费口译服务（FIS）可用于提供大多数市政府（city/shire council）的服务和活动，服务对象是符合 Medicare 资格的人。但市政府不能把它用于本地旅游或其他商业活动、合规执法活动（例如动物、食品、建筑安全或商业监管）、入籍仪式，以及代表其他政府机构提供的服务。"
+   },
+   "sources": [
+    {
+     "url": "https://www.tisnational.gov.au/en/Our-services/Free-Interpreting-Service/Eligible-groups/City-shire-councils",
+     "quote": "The FIS can be used to deliver most city/shire council services and activities."
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Our-services/Free-Interpreting-Service/Eligible-groups/City-shire-councils",
+     "quote": "City/shire councils are eligible to access the FIS to communicate with anyone in Australia who is eligible for Medicare (Australian citizens, permanent residents and select temporary visa holders)."
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Our-services/Free-Interpreting-Service/Eligible-groups/City-shire-councils",
+     "quote": "The FIS cannot be used by city/shire councils for:"
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Our-services/Free-Interpreting-Service/Eligible-groups/City-shire-councils",
+     "quote": "citizenship ceremonies"
+    }
+   ],
+   "tags": [
+    "interpreter",
+    "council",
+    "fis"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "free-interpreter-pharmacy",
+   "question": {
+    "en": "Can a pharmacist use a free interpreter when I buy medicine or get a vaccination?",
+    "zh": "在药房买药或接种疫苗时，药剂师可以用免费口译吗？"
+   },
+   "aliases": [
+    "药房有免费口译员吗",
+    "药剂师怎么联系 TIS 口译",
+    "Do pharmacies have access to free interpreters in Australia?"
+   ],
+   "answer": {
+    "en": "The Free Interpreting Service (FIS) gives pharmacies free access to professional interpreters to communicate with customers with limited English proficiency, and it can be used to dispense medication, provide advice, assist with diagnosis, support vaccinations and deliver other pharmacy services. It can be used if the pharmacy has a PBS approval number or the pharmacist is registered with AHPRA, they are working in a community setting, and they are serving anyone in Australia who is eligible for Medicare (Australian citizens, permanent residents and select temporary visa holders).",
+    "zh": "免费口译服务（FIS）让药房免费使用专业口译员与英语水平有限的顾客沟通，可用于配药、提供建议、协助诊断、支持疫苗接种及提供其他药房服务。使用条件是药房有 PBS 批准号码或药剂师已在 AHPRA 注册，在社区环境工作，并且服务对象是澳大利亚境内任何符合 Medicare 资格的人（澳大利亚公民、永久居民和部分临时签证持有人）。"
+   },
+   "sources": [
+    {
+     "url": "https://www.tisnational.gov.au/en/Our-services/Free-Interpreting-Service/Eligible-groups/Pharmacies",
+     "quote": "The FIS gives pharmacies free access to professional interpreters to communicate with customers with limited English proficiency."
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Our-services/Free-Interpreting-Service/Eligible-groups/Pharmacies",
+     "quote": "to dispense medication, provide advice, assist with diagnosis, support vaccinations, and deliver other pharmacy services"
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Our-services/Free-Interpreting-Service/Eligible-groups/Pharmacies",
+     "quote": "the pharmacy has a PBS approval number, or the pharmacist is registered with AHPRA, and"
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Our-services/Free-Interpreting-Service/Eligible-groups/Pharmacies",
+     "quote": "they are working in a community setting, and"
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Our-services/Free-Interpreting-Service/Eligible-groups/Pharmacies",
+     "quote": "they are delivering services to anyone in Australia who is eligible for Medicare (Australian citizens, permanent residents and select temporary visa holders)."
+    }
+   ],
+   "tags": [
+    "interpreter",
+    "pharmacy",
+    "fis"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "free-translating-service-documents",
+   "question": {
+    "en": "Can new migrants get personal documents translated for free, and how many?",
+    "zh": "新移民可以免费翻译证件吗？最多翻译几份？"
+   },
+   "aliases": [
+    "Free Translating Service 是什么",
+    "移民免费翻译出生证明学历",
+    "TIS 免费笔译服务",
+    "Does the Australian Government translate migrant documents for free?"
+   ],
+   "answer": {
+    "en": "Yes. The Free Translating Service is provided for people settling permanently in Australia, and an eligible person can have up to 10 personal documents translated. TIS National delivers the service on behalf of the Department of Home Affairs.",
+    "zh": "有。免费笔译服务（Free Translating Service）面向在澳大利亚永久定居的人，有资格的人最多可以翻译 10 份个人文件。该服务由 TIS National 代表内政部（Department of Home Affairs）提供。"
+   },
+   "sources": [
+    {
+     "url": "https://www.tisnational.gov.au/en/Our-services/Free-Translating-Service/About",
+     "quote": "The Free Translating Service is provided for people settling permanently in Australia."
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Our-services/Free-Translating-Service/About",
+     "quote": "If you are eligible for the Free Translating Service, you can have up to 10 personal documents translated."
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Our-services/Free-Translating-Service/About",
+     "quote": "TIS National delivers the Free Translating Service on behalf of the"
+    }
+   ],
+   "tags": [
+    "translation",
+    "tis",
+    "newcomer"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "free-translating-service-who-eligible",
+   "question": {
+    "en": "Who is eligible for the Free Translating Service — can tourist or working holiday visa holders use it?",
+    "zh": "谁有资格用免费笔译服务？旅游签证和打工度假签证可以吗？"
+   },
+   "aliases": [
+    "免费翻译服务签证要求",
+    "澳洲公民可以用免费翻译吗",
+    "What visa do I need for TIS free translation?",
+    "免费翻译需要在澳大利亚境内吗"
+   ],
+   "answer": {
+    "en": "Holders of eligible visas are generally allowed to use the service, but the visa must have been granted in the past 2 years and still be valid (not cancelled or expired), and the person must be onshore in Australia. Tourist visa holders and working holiday visa holders are not eligible, and Australian citizens are also not eligible.",
+    "zh": "有资格的签证持有人一般可以使用，但签证必须是过去 2 年内获批且仍然有效（没有被取消或过期），而且申请人必须在澳大利亚境内。旅游签证和打工度假签证持有人不符合资格，澳大利亚公民也不符合。"
+   },
+   "sources": [
+    {
+     "url": "https://www.tisnational.gov.au/en/Our-services/Free-Translating-Service/Eligibility",
+     "quote": "Holders of eligible visas are generally allowed to access the Free Translating Service. Your visa must be granted in the past 2 years, and still valid (not cancelled or expired)."
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Our-services/Free-Translating-Service/Eligibility",
+     "quote": "You need to be onshore (in Australia) to access the service."
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Our-services/Free-Translating-Service/Eligibility",
+     "quote": "Tourist visa holders and working holiday visa holders are not eligible for the Free Translating Service. Australian citizens are also not eligible for this service."
+    }
+   ],
+   "tags": [
+    "translation",
+    "tis",
+    "visa"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "free-translating-service-how-long",
+   "question": {
+    "en": "How long does the Free Translating Service take, and how long does the account last?",
+    "zh": "免费翻译证件要等多久？账户能用多久？"
+   },
+   "aliases": [
+    "免费笔译服务处理时间",
+    "TIS 翻译件多久能下载",
+    "How many days for TIS free document translation?"
+   ],
+   "answer": {
+    "en": "Within 30 calendar days following the application's approval, the completed translation will be available to download in the Free Translating Service portal, and the actual processing time is often less than 30 calendar days. There is no priority or rush option. Accounts are valid for a maximum of 2 years, and documents can be downloaded multiple times within this period.",
+    "zh": "获批后的 30 个日历日内，完成的翻译会出现在免费笔译服务门户网站上供下载，实际处理时间往往少于 30 个日历日，且没有加急选项。账户最长有效 2 年，期间文件可以多次下载。"
+   },
+   "sources": [
+    {
+     "url": "https://www.tisnational.gov.au/en/Our-services/Free-Translating-Service/About",
+     "quote": "Within 30 calendar days following the application's approval, the completed translation will be available to download in the Free Translating Service portal."
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Our-services/Free-Translating-Service/About",
+     "quote": "There is no priority or rush option available however, the actual processing time is often less than 30 calendar days."
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Our-services/Free-Translating-Service/About",
+     "quote": "Accounts for the Free Translation Service are valid for a maximum of 2 years, and documents can be downloaded multiple times within this period."
+    }
+   ],
+   "tags": [
+    "translation",
+    "tis"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "free-translating-service-translation-format",
+   "question": {
+    "en": "Is a document translated through the Free Translating Service a full translation?",
+    "zh": "免费翻译出来的是全文翻译吗？"
+   },
+   "aliases": [
+    "TIS 免费翻译是摘要吗",
+    "免费笔译 100 字",
+    "Can I get a full translation from the Free Translating Service?"
+   ],
+   "answer": {
+    "en": "Most translations are provided in an extract summary format of up to 100 words, which will be suitable for the majority of official purposes in Australia. A person who can supply reasonable evidence that a full translation of a document is needed can contact TIS National to request one; if a full translation is provided, the first 5 pages count as one document, the next 5 as the second document, and so on.",
+    "zh": "大多数翻译以最多 100 个词的摘要格式提供，适合澳大利亚的大多数官方用途。如果能提供合理证据，证明某份文件需要全文翻译，可以联系 TIS National 申请；提供全文翻译时，前 5 页算一份文件，接下来的 5 页算第二份，以此类推。"
+   },
+   "sources": [
+    {
+     "url": "https://www.tisnational.gov.au/en/Our-services/Free-Translating-Service/About",
+     "quote": "Most translations are provided in an extract summary format of up to 100 words. This will be suitable for the majority of official purposes in Australia."
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Our-services/Free-Translating-Service/About",
+     "quote": "If you can supply reasonable evidence that you need a full translation of a certain document, then you can contact TIS National to request this."
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Our-services/Free-Translating-Service/About",
+     "quote": "If a full translation is provided, then the first 5 pages will count as one document, the next 5 as the second document, and so on."
+    }
+   ],
+   "tags": [
+    "translation",
+    "tis"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "free-translating-service-not-for-visa-applications",
+   "question": {
+    "en": "Can the Free Translating Service translate documents for a visa or citizenship application, and where else can I find a translator?",
+    "zh": "免费笔译服务可以翻译签证或入籍申请用的文件吗？不符合资格要去哪找翻译？"
+   },
+   "aliases": [
+    "签证申请文件免费翻译吗",
+    "找 NAATI 认证翻译在哪里",
+    "If I'm not eligible for TIS free translation, where do I go?"
+   ],
+   "answer": {
+    "en": "No. Document translations required for visa or citizenship applications, and documents issued by private citizens, are not eligible for the Free Translating Service. A person who is not eligible needs to seek translations from another provider, and TIS National recommends the NAATI directory to find a NAATI certified translator.",
+    "zh": "不可以。签证或入籍申请所需的文件翻译不在免费笔译服务范围内，私人公民出具的文件也不接受。不符合资格的人需要向其他服务商取得翻译，TIS National 建议到 NAATI 名录中寻找 NAATI 认证的翻译。"
+   },
+   "sources": [
+    {
+     "url": "https://www.tisnational.gov.au/en/Our-services/Free-Translating-Service/Eligibility",
+     "quote": "Document translations required for visa or citizenship applications, and documents issued by private citizens, are not eligible."
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Our-services/Free-Translating-Service/Eligibility",
+     "quote": "If you are not eligible for the Free Translating Service, you will need to seek document translations from another provider. We recommend visiting the"
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Our-services/Free-Translating-Service/Eligibility",
+     "quote": "to engage a NAATI certified translator, or an endorsed language service provider."
+    }
+   ],
+   "tags": [
+    "translation",
+    "tis",
+    "visa"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "free-translating-service-fix-error",
+   "question": {
+    "en": "What can I do if there is a mistake in a translation from the Free Translating Service?",
+    "zh": "免费翻译的文件有错字或日期错了，怎么更正？"
+   },
+   "aliases": [
+    "TIS 翻译错误怎么改",
+    "翻译件拼写错误多久内要申请更正",
+    "How do I request a correction to a TIS translation?"
+   ],
+   "answer": {
+    "en": "If a translated document has any mistakes, for example a spelling error or an incorrect date, the person can ask TIS National to fix it, and must let TIS National know within 30 days of receiving the translated document. A correction request is submitted in the Free Translating Service portal; if it is approved, TIS National fixes the translation document for free within 7 days.",
+    "zh": "如果翻译文件有错误，例如拼写错误或日期不对，可以在收到翻译文件后 30 天内通知 TIS National。需要在免费笔译服务门户网站提交更正请求，经审核批准后，TIS National 会在 7 天内免费更正翻译文件。"
+   },
+   "sources": [
+    {
+     "url": "https://www.tisnational.gov.au/en/Our-services/Free-Translating-Service/About",
+     "quote": "If your translated document has any mistakes, for example, if there is a spelling error or the date is incorrect, you can ask TIS National to fix this for you. You must let us know within 30 days of receiving the translated document."
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Our-services/Free-Translating-Service/About",
+     "quote": "The request will be reviewed by TIS National; if it’s approved we will fix the translation document for free, within 7 days."
+    }
+   ],
+   "tags": [
+    "translation",
+    "tis"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "tis-general-translation-not-offered",
+   "question": {
+    "en": "Does TIS National offer general or commercial translation services?",
+    "zh": "TIS National 提供一般的商业笔译服务吗？"
+   },
+   "aliases": [
+    "TIS 能翻译普通文件吗",
+    "哪里可以问 TIS 翻译服务问题",
+    "Can I pay TIS National to translate a document?"
+   ],
+   "answer": {
+    "en": "No. TIS National currently does not offer other general or commercial translation services; it delivers the Free Translating Service to eligible applicants. Questions about translation services can be submitted through the Contact us form, selecting ‘other’ as the enquiry type, and the Translating Services team will respond.",
+    "zh": "不提供。TIS National 目前不提供其他一般或商业翻译服务，只向符合条件的申请人提供免费笔译服务（Free Translating Service）。有关翻译服务的问题，可以提交“联系我们”表单，并选择“其他”作为咨询类型，笔译服务团队（Translating Services team）会回复。"
+   },
+   "sources": [
+    {
+     "url": "https://www.tisnational.gov.au/en/Non-English-speakers/Other-services-for-non-English-speakers",
+     "quote": "TIS National delivers the Free Translating Service to eligible applicants."
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Non-English-speakers/Other-services-for-non-English-speakers",
+     "quote": "Currently, we do not offer other general or commercial translation services."
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Non-English-speakers/Other-services-for-non-English-speakers",
+     "quote": "If you have questions about translation services, you can submit a Contact us form, selecting ‘other’ as the enquiry type. Our Translating Services team will respond."
+    }
+   ],
+   "tags": [
+    "translation",
+    "tis"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "amep-free-english-classes",
+   "question": {
+    "en": "Can new migrants learn English for free? What is the Adult Migrant English Program (AMEP)?",
+    "zh": "新移民可以免费学英语吗？AMEP 是什么？"
+   },
+   "aliases": [
+    "AMEP 免费英语课",
+    "成人移民英语课程",
+    "Is there a free English program for migrants in Australia?",
+    "免费英语课有托儿服务吗"
+   ],
+   "answer": {
+    "en": "The Adult Migrant English Program (AMEP) provides free English language tuition, and a migrant or humanitarian entrant may be eligible. People attending face to face classes can access free childcare for children under school age.",
+    "zh": "成人移民英语课程（AMEP）提供免费英语教学，移民或人道主义入境者可能有资格参加。参加面授课程的人可以为学龄前儿童使用免费托儿服务。"
+   },
+   "sources": [
+    {
+     "url": "https://www.tisnational.gov.au/en/Non-English-speakers/Other-services-for-non-English-speakers",
+     "quote": "The Adult Migrant English Program (AMEP) provides free English language tuition. You may be eligible for the AMEP if you are a migrant or humanitarian entrant."
+    },
+    {
+     "url": "https://www.tisnational.gov.au/en/Non-English-speakers/Other-services-for-non-English-speakers",
+     "quote": "People attending face to face classes can access free childcare for children under school age."
+    }
+   ],
+   "tags": [
+    "english",
+    "newcomer"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "healthdirect-nurse-hotline-1800-022-222",
+   "question": {
+    "en": "Who can I call for health advice when I am not sure whether to see a doctor?",
+    "zh": "身体不舒服但不确定要不要看医生，可以打什么电话？"
+   },
+   "aliases": [
+    "healthdirect 热线 1800 022 222",
+    "维州 Nurse-on-Call 电话",
+    "澳洲有 24 小时护士热线吗",
+    "Is there a free 24-hour nurse health advice line in Victoria?"
+   ],
+   "answer": {
+    "en": "The healthdirect free health hotline is 1800 022 222, which is called the NURSE-ON-CALL line in Victoria. Registered nurses give advice 24 hours a day, 7 days a week, when a person is unsure whether to see a GP, treat the problem at home or go to an emergency department. Calling from a mobile phone may incur call charges.",
+    "zh": "healthdirect 的免费健康热线是 1800 022 222，在维多利亚州称为 NURSE-ON-CALL 专线。当不确定应去看全科医生、在家处理还是去急诊时，注册护士每星期 7 天、每天 24 小时提供建议。使用移动电话拨打可能产生通话费用。"
+   },
+   "sources": [
+    {
+     "url": "https://www.healthdirect.gov.au/how-healthdirect-can-help-you/zh-hans-how-healthdirect-can-help-you",
+     "quote": "healthdirec每星期7天24小时免费提供可靠的医疗健康信息和建议。"
+    },
+    {
+     "url": "https://www.healthdirect.gov.au/how-healthdirect-can-help-you/zh-hans-how-healthdirect-can-help-you",
+     "quote": "（维多利亚州称作NURSE-ON-CALL专线）。当您不确定该怎样做时，例如是否应该去看全科医生，还是在家处理病情，或是需要到急诊室就诊，我们的注册护士会每星期7天全天候24小时为您提供建议。"
+    },
+    {
+     "url": "https://www.healthdirect.gov.au/how-healthdirect-can-help-you/zh-hans-how-healthdirect-can-help-you",
+     "quote": "使用移动电话拨打此号码可能会产生通话费用。"
+    }
+   ],
+   "tags": [
+    "health",
+    "hotline",
+    "healthdirect"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "healthdirect-triple-zero-interpreter",
+   "question": {
+    "en": "What if I call 000 in an emergency and I do not speak English?",
+    "zh": "打 000 求救，不会英语怎么办？"
+   },
+   "aliases": [
+    "紧急情况 000 有中文口译吗",
+    "打 000 能找口译员吗",
+    "Does 000 connect me to an interpreter?"
+   ],
+   "answer": {
+    "en": "In an emergency, 000 should be called first. The 000 operator will arrange an interpreter from TIS National.",
+    "zh": "紧急情况应优先拨打 000。000 接线员会为您联系国家笔译与口译服务中心（TIS National）的口译员。"
+   },
+   "sources": [
+    {
+     "url": "https://www.healthdirect.gov.au/healthcare-and-services/general-health/what-care-do-i-need/zh-hans-what-care-do-i-need",
+     "quote": "紧急情况应优先拨打000。000接线员会为您联系国家笔译与口译服务中心的口译员。"
+    }
+   ],
+   "tags": [
+    "emergency",
+    "interpreter",
+    "healthdirect"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "healthdirect-ask-for-interpreter-24-hours",
+   "question": {
+    "en": "Do I need to book a phone interpreter in advance at a GP or hospital?",
+    "zh": "在医院或医疗服务机构，口译员要提前预约吗？"
+   },
+   "aliases": [
+    "看病需要提前预约口译吗",
+    "医院可以安排电话口译吗",
+    "How quickly can I reach a phone interpreter at the doctor?"
+   ],
+   "answer": {
+    "en": "No. The healthdirect Chinese page says a phone interpreter can be reached within minutes, with no advance booking, 24 hours a day. When seeing a GP, in hospital or using any other health service, a person can call TIS National on 131 450, and a doctor, pharmacist or hospital can also arrange interpreting.",
+    "zh": "不需要。healthdirect 的中文页面说，通过电话在几分钟内就可以联系上口译员，无需提前预订，而且此服务全天 24 小时提供。看全科医生、在医院内或使用其他任何医疗保健服务时，都可以致电 TIS National（131 450）；医生、药剂师或医院也能为您安排口译服务。"
+   },
+   "sources": [
+    {
+     "url": "https://www.healthdirect.gov.au/healthcare-and-services/roles-and-specialties/the-role-of-a-gp/zh-hans-the-role-of-a-gp",
+     "quote": "通过电话，您在几分钟之内便可以联系上口译员，您无需提前预订，且此服务全天24小时提供。"
+    },
+    {
+     "url": "https://www.healthdirect.gov.au/healthcare-and-services/general-health/what-care-do-i-need/zh-hans-what-care-do-i-need",
+     "quote": "看全科医生、在医院内或使用其它任何医疗保健服务时，您都可以致电笔译与口译服务中心。"
+    },
+    {
+     "url": "https://www.healthdirect.gov.au/healthcare-and-services/general-health/what-care-do-i-need/zh-hans-what-care-do-i-need",
+     "quote": "医生、药剂师或医院也能为您安排口译服务。"
+    }
+   ],
+   "tags": [
+    "interpreter",
+    "health",
+    "healthdirect"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "healthdirect-nurse-line-interpreter",
+   "question": {
+    "en": "How do I use the healthdirect advice line if I need an interpreter?",
+    "zh": "打健康热线 1800 022 222 时，怎样用中文？"
+   },
+   "aliases": [
+    "健康热线有中文服务吗",
+    "Nurse-on-Call 中文口译怎么用",
+    "Can I talk to healthdirect in Mandarin?"
+   ],
+   "answer": {
+    "en": "A person whose usual language is not English and who needs an interpreter can call TIS National on 131 450 and ask them to transfer the call to healthdirect.",
+    "zh": "如果常用语不是英语、需要口译服务，可以致电国家笔译与口译服务中心（TIS National）131 450，请他们帮忙转接到 healthdirect。"
+   },
+   "sources": [
+    {
+     "url": "https://www.healthdirect.gov.au/how-healthdirect-can-help-you/zh-hans-how-healthdirect-can-help-you",
+     "quote": "如果您的常用语非英语，需要口译服务，请拨打"
+    }
+   ],
+   "tags": [
+    "interpreter",
+    "hotline",
+    "healthdirect"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "healthdirect-which-service-to-use",
+   "question": {
+    "en": "Who should I contact for a serious illness versus a minor one?",
+    "zh": "病得严重和病情轻微，应该分别找谁？"
+   },
+   "aliases": [
+    "小病去哪里看",
+    "什么时候该叫救护车",
+    "澳洲生病先看全科医生还是药房",
+    "When should I go to emergency instead of seeing a GP?"
+   ],
+   "answer": {
+    "en": "For a serious illness or injury, call 000 for an ambulance or go to the nearest hospital emergency department. For a minor illness or injury, call healthdirect on 1800 022 222 for advice, or see a GP, nearby clinic or pharmacist. For ongoing care, see a GP.",
+    "zh": "病情严重或受了重伤，应拨打 000 呼叫救护车，或到最近的医院急诊室。病情轻微或受了轻伤，可以拨打 1800 022 222 致电 healthdirect 寻求建议，或到全科医生、附近诊所或药剂师处就诊。需要长期医疗服务时，应到全科医生处就诊。"
+   },
+   "sources": [
+    {
+     "url": "https://www.healthdirect.gov.au/healthcare-and-services/general-health/what-care-do-i-need/zh-hans-what-care-do-i-need",
+     "quote": "如果病情严重或受了重伤"
+    },
+    {
+     "url": "https://www.healthdirect.gov.au/healthcare-and-services/general-health/what-care-do-i-need/zh-hans-what-care-do-i-need",
+     "quote": "：请拨打000呼叫救护车，或到最近的医院急诊室就诊。"
+    },
+    {
+     "url": "https://www.healthdirect.gov.au/healthcare-and-services/general-health/what-care-do-i-need/zh-hans-what-care-do-i-need",
+     "quote": "：请拨打1800 022 222致电healthdirect寻求建议，或到全科医生、附近诊所或药剂师处就诊。"
+    },
+    {
+     "url": "https://www.healthdirect.gov.au/healthcare-and-services/general-health/what-care-do-i-need/zh-hans-what-care-do-i-need",
+     "quote": "：请到全科医生（GP或家庭医生）处就诊。"
+    }
+   ],
+   "tags": [
+    "health",
+    "emergency",
+    "healthdirect"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "healthdirect-medicare-who-covered",
+   "question": {
+    "en": "Who is eligible for Medicare?",
+    "zh": "哪些人可以使用 Medicare？"
+   },
+   "aliases": [
+    "Medicare 适用于什么人",
+    "永久居民有 Medicare 吗",
+    "新西兰公民能用 Medicare 吗",
+    "Are New Zealand citizens covered by Medicare?"
+   ],
+   "answer": {
+    "en": "The healthdirect Chinese page says Medicare applies to Australian citizens, New Zealand citizens, Australian permanent residents, people who have applied for permanent residency (with conditions), temporary residents covered by a ministerial order, and citizens or permanent residents of Norfolk Island, the Cocos (Keeling) Islands, Christmas Island or Lord Howe Island. Visitors from a country with a reciprocal healthcare agreement with Australia may be eligible for Medicare benefits.",
+    "zh": "healthdirect 的中文页面说，Medicare 适用于澳大利亚公民、新西兰公民、澳大利亚永久居民、已申请澳大利亚永久居留权的人（有条件限制）、受部长命令保护的临时居民，以及诺福克岛、科科斯（基林）群岛、圣诞岛或豪勋爵岛的公民或永久居民。来自与澳大利亚签有互惠医疗保健协议国家的访客，则可能有资格享受 Medicare 福利。"
+   },
+   "sources": [
+    {
+     "url": "https://www.healthdirect.gov.au/healthcare-and-services/costs-and-financial-support/how-do-i-pay-for-healthcare/zh-hans-how-do-i-pay-for-healthcare",
+     "quote": "Medicare适用于以下人群："
+    },
+    {
+     "url": "https://www.healthdirect.gov.au/healthcare-and-services/costs-and-financial-support/how-do-i-pay-for-healthcare/zh-hans-how-do-i-pay-for-healthcare",
+     "quote": "澳大利亚公民"
+    },
+    {
+     "url": "https://www.healthdirect.gov.au/healthcare-and-services/costs-and-financial-support/how-do-i-pay-for-healthcare/zh-hans-how-do-i-pay-for-healthcare",
+     "quote": "新西兰公民"
+    },
+    {
+     "url": "https://www.healthdirect.gov.au/healthcare-and-services/costs-and-financial-support/how-do-i-pay-for-healthcare/zh-hans-how-do-i-pay-for-healthcare",
+     "quote": "澳大利亚永久居民"
+    },
+    {
+     "url": "https://www.healthdirect.gov.au/healthcare-and-services/costs-and-financial-support/how-do-i-pay-for-healthcare/zh-hans-how-do-i-pay-for-healthcare",
+     "quote": "已申请澳大利亚永久居留权的人（有条件限制）"
+    },
+    {
+     "url": "https://www.healthdirect.gov.au/healthcare-and-services/costs-and-financial-support/how-do-i-pay-for-healthcare/zh-hans-how-do-i-pay-for-healthcare",
+     "quote": "受部长命令保护的临时居民"
+    },
+    {
+     "url": "https://www.healthdirect.gov.au/healthcare-and-services/costs-and-financial-support/how-do-i-pay-for-healthcare/zh-hans-how-do-i-pay-for-healthcare",
+     "quote": "诺福克岛、科科斯（基林）群岛、圣诞岛或豪勋爵岛的公民或永久居民"
+    }
+   ],
+   "tags": [
+    "health",
+    "medicare",
+    "healthdirect"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "healthdirect-gp-gap-fee",
+   "question": {
+    "en": "What is a gap fee when I see a GP in Australia?",
+    "zh": "看全科医生的“差额费”（gap fee）是什么？"
+   },
+   "aliases": [
+    "看医生为什么要额外付钱",
+    "bulk bill 是什么意思",
+    "Medicare 全额报销是什么",
+    "What does full rebate mean at a GP?"
+   ],
+   "answer": {
+    "en": "With a Medicare card, Medicare pays all or part of a GP's fee. If the GP offers full rebate, they charge only the amount Medicare covers and the patient pays nothing. Some GPs charge more than the Medicare rebate, and the remaining amount, called the gap fee, is paid by the patient.",
+    "zh": "持有 Medicare 卡时，Medicare 会支付全部或部分全科医生诊费。如果医生提供全额报销，只收取 Medicare 承保的金额，就诊者不需要付费。一些全科医生收取的费用高于 Medicare 报销的金额，剩余部分称为“差额费”（gap fee），由就诊者支付。"
+   },
+   "sources": [
+    {
+     "url": "https://www.healthdirect.gov.au/healthcare-and-services/roles-and-specialties/the-role-of-a-gp/zh-hans-the-role-of-a-gp",
+     "quote": "会支付全部或部分全科医生诊费。如果您的全科医生提供全额报销，这意味着他们只收取Medicare承保的金额。您不需要支付任何费用。您的全科医生将直接向Medicare收取费用。"
+    },
+    {
+     "url": "https://www.healthdirect.gov.au/healthcare-and-services/roles-and-specialties/the-role-of-a-gp/zh-hans-the-role-of-a-gp",
+     "quote": "一些全科医生收取的费用高于Medicare报销的金额。在这种情况下，Medicare将承担部分费用，您需要支付剩余金额。这部分剩余金额称为\"差额费\"（gap fee）。"
+    }
+   ],
+   "tags": [
+    "health",
+    "medicare",
+    "gp",
+    "healthdirect"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "healthdirect-specialist-referral-medicare",
+   "question": {
+    "en": "Do I need a referral to see a specialist for Medicare to pay?",
+    "zh": "看专科医生需要转诊信吗？"
+   },
+   "aliases": [
+    "转诊信多久有效",
+    "专科医生 Medicare 报销要什么",
+    "How long is a GP referral valid for Medicare?"
+   ],
+   "answer": {
+    "en": "Medicare cannot reimburse a specialist's fee unless the patient has a referral from a GP received within the past 12 months, or a referral from another specialist received within the past 3 months. If specialist treatment is needed, the GP refers the patient to a specialist or allied health professional.",
+    "zh": "除非有过去 12 个月内收到的来自全科医生的转诊信，或在过去 3 个月内收到过来自另一位专科医生的转诊信，否则 Medicare 无法为专科医生的诊费报销。如需接受专科治疗，全科医生会将患者转介给专科医生或专职医疗人员。"
+   },
+   "sources": [
+    {
+     "url": "https://www.healthdirect.gov.au/healthcare-and-services/roles-and-specialties/the-role-of-a-gp/zh-hans-the-role-of-a-gp",
+     "quote": "，或在过去3个月内收到过来自另一位专科医生的转诊信，否则Medicare无法为您报销专科医生的诊费。"
+    },
+    {
+     "url": "https://www.healthdirect.gov.au/healthcare-and-services/roles-and-specialties/the-role-of-a-gp/zh-hans-the-role-of-a-gp",
+     "quote": "除非您有过去12个月内收到的来自全科医生的"
+    }
+   ],
+   "tags": [
+    "health",
+    "medicare",
+    "gp",
+    "healthdirect"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "healthdirect-pharmacist-services",
+   "question": {
+    "en": "Besides dispensing medicine, what services can pharmacists provide in Australia?",
+    "zh": "药剂师除了配药还能提供哪些服务？"
+   },
+   "aliases": [
+    "药房可以打疫苗吗",
+    "药剂师能治尿路感染吗",
+    "药房可以开缺勤证明吗",
+    "What can a community pharmacist do?"
+   ],
+   "answer": {
+    "en": "Pharmacists can give advice on minor health problems, help manage chronic conditions and say when a person needs to see a doctor. They can also provide vaccinations and blood tests and, in certain circumstances, issue absence certificates, and some pharmacists can also treat uncomplicated urinary tract infections and manage minor wounds.",
+    "zh": "药剂师可以就小的健康问题提供建议，帮助管理慢性病，并告知何时需要看医生。药剂师也可以提供疫苗接种、验血，在特定情况下还可以开具缺勤证明；一些药剂师也可以治疗单纯性尿路感染和处理轻微伤口。"
+   },
+   "sources": [
+    {
+     "url": "https://www.healthdirect.gov.au/healthcare-and-services/roles-and-specialties/getting-the-most-out-of-your-pharmacist/zh-hans-getting-the-most-out-of-your-pharmacist",
+     "quote": "他们可以就小的健康问题为您提供建议，帮您管理慢性病，并告知您何时需要看医生。"
+    },
+    {
+     "url": "https://www.healthdirect.gov.au/healthcare-and-services/roles-and-specialties/getting-the-most-out-of-your-pharmacist/zh-hans-getting-the-most-out-of-your-pharmacist",
+     "quote": "药剂师也可以提供其它服务，例如疫苗接种、验血，在特定情况下还可以开具缺勤证明。"
+    },
+    {
+     "url": "https://www.healthdirect.gov.au/healthcare-and-services/roles-and-specialties/getting-the-most-out-of-your-pharmacist/zh-hans-getting-the-most-out-of-your-pharmacist",
+     "quote": "一些药剂师也可以治疗单纯性尿路感染和处理轻微伤口。"
+    }
+   ],
+   "tags": [
+    "health",
+    "pharmacy",
+    "healthdirect"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "healthdirect-pregnancy-care-options",
+   "question": {
+    "en": "Who provides pregnancy care in Australia?",
+    "zh": "在澳大利亚怀孕，产检可以找谁？"
+   },
+   "aliases": [
+    "怀孕后先找谁",
+    "澳洲生孩子可以在家分娩吗",
+    "助产士和产科医生有什么区别",
+    "Can I choose a midwife for pregnancy care in Australia?"
+   ],
+   "answer": {
+    "en": "During pregnancy, a person can choose a midwife, a GP, an obstetrician, or a combination of them. Depending on pregnancy risk and where they live, they can choose to give birth in a public or private hospital, at a birth centre, or at home. After finding out they are pregnant, they should contact a GP early to start planning their pregnancy care.",
+    "zh": "在怀孕期间，可以选择助产士、全科医生、产科医生，或他们共同提供服务。根据妊娠风险和居住地，可选择在公立或私立医院分娩，或在生产中心或在家分娩。发现怀孕后，应尽早与全科医生联系，开始规划孕产方案。"
+   },
+   "sources": [
+    {
+     "url": "https://www.healthdirect.gov.au/life-stages/pregnancy-and-post-natal-health/maternity-care-in-australia/zh-hans-maternity-care-in-australia",
+     "quote": "在怀孕期间，您可选择助产士、全科医生、产科医生，或他们共同为您提供服务。"
+    },
+    {
+     "url": "https://www.healthdirect.gov.au/life-stages/pregnancy-and-post-natal-health/maternity-care-in-australia/zh-hans-maternity-care-in-australia",
+     "quote": "根据您妊娠风险的高低及您的居住地，您可选择在公立或私立医院分娩，或者在生产中心或在家分娩。"
+    },
+    {
+     "url": "https://www.healthdirect.gov.au/life-stages/pregnancy-and-post-natal-health/maternity-care-in-australia/zh-hans-maternity-care-in-australia",
+     "quote": "发现自己怀孕后，请尽早与全科医生联系，开始规划自己的孕产方案。"
+    }
+   ],
+   "tags": [
+    "health",
+    "pregnancy",
+    "healthdirect"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "healthdirect-service-finder-chinese",
+   "question": {
+    "en": "Is there a Chinese-language tool to find doctors and health services in Australia?",
+    "zh": "有没有中文的医疗服务查找工具？"
+   },
+   "aliases": [
+    "healthdirect 服务搜寻中文版",
+    "怎么找附近的全科医生",
+    "Can I search for a GP near me in Chinese?"
+   ],
+   "answer": {
+    "en": "The healthdirect Service Finder is available in Chinese, and the page can be switched to Simplified or Traditional Chinese. It is described as Australia's most complete directory of healthcare professionals and health services, and can be searched by service type or name together with a suburb or postcode.",
+    "zh": "healthdirect 的医疗服务查找工具（Service Finder）有中文版，页面可切换为简体中文或繁体中文。它被描述为澳大利亚最完整的医护人员和医疗服务机构名录，可按服务类型或名称搜索，并输入地区或邮编查找。"
+   },
+   "sources": [
+    {
+     "url": "https://www.healthdirect.gov.au/australian-health-services/zh",
+     "quote": "医疗服务查找工具"
+    },
+    {
+     "url": "https://www.healthdirect.gov.au/australian-health-services/zh",
+     "quote": "澳大利亚最完整的医护人员和医疗服务机构名录。"
+    },
+    {
+     "url": "https://www.healthdirect.gov.au/australian-health-services/zh",
+     "quote": "按服务类型或名称搜索"
+    },
+    {
+     "url": "https://www.healthdirect.gov.au/australian-health-services/zh",
+     "quote": "请输入地区或邮编"
+    }
+   ],
+   "tags": [
+    "health",
+    "healthdirect",
+    "chinese-website"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "health-translations-chinese-resources",
+   "question": {
+    "en": "Where can I find free health information translated into Chinese?",
+    "zh": "哪里可以找到中文的健康资料？"
+   },
+   "aliases": [
+    "Health Translations 是什么",
+    "维州政府多语言健康资料",
+    "澳洲健康信息有中文版吗",
+    "Is there a library of translated health resources in Victoria?"
+   ],
+   "answer": {
+    "en": "Health Translations is a free online library of Australian multilingual health and wellbeing information, funded by the Victorian Government. It has over 40,000 free multilingual resources that can be searched by keyword, topic, language, file type or organisation. It does not host the resources itself but links directly to content hosted on trusted third-party websites.",
+    "zh": "Health Translations 是由维多利亚州政府资助的免费在线库，收集澳大利亚的多语言健康和福祉信息。该网站有超过 40,000 份免费多语言资源，可按关键词、主题、语言、文件类型或机构搜索；它不自己存放资源，而是直接链接到可信的第三方网站。"
+   },
+   "sources": [
+    {
+     "url": "https://www.healthtranslations.vic.gov.au/",
+     "quote": "A free library of Australian multilingual health and wellbeing information funded by the Victorian Government."
+    },
+    {
+     "url": "https://www.healthtranslations.vic.gov.au/",
+     "quote": "Over 40,000 free multilingual resources and counting"
+    },
+    {
+     "url": "https://www.healthtranslations.vic.gov.au/",
+     "quote": "Information can be found in a variety of ways. Search on keywords, topics, languages, file types or organisations."
+    },
+    {
+     "url": "https://www.healthtranslations.vic.gov.au/",
+     "quote": "Health Translations does not host individual resources. Instead, we provide direct links to content hosted on trusted third-party websites."
+    }
+   ],
+   "tags": [
+    "health",
+    "translation"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "vla-help-in-your-language",
+   "question": {
+    "en": "Can I get an interpreter when I call Victoria Legal Aid?",
+    "zh": "打给维州法律援助（VLA）可以说中文吗？"
+   },
+   "aliases": [
+    "Victoria Legal Aid 口译",
+    "法律援助 1300 792 387",
+    "法律援助电话几点开",
+    "Does Victoria Legal Aid provide interpreters?"
+   ],
+   "answer": {
+    "en": "Yes. A person who needs help in a language other than English can call Victoria Legal Aid on 1300 792 387, and it will arrange an interpreter. The phoneline is open between 8 am and 6 pm, Monday to Friday, and is closed on public holidays. If a person is eligible for ongoing legal help, Victoria Legal Aid will pay for an interpreter.",
+    "zh": "可以。需要英语以外语言的帮助时，可以致电 Victoria Legal Aid 的 1300 792 387，他们会安排口译员协助。电话服务时间为周一至周五上午 8 点至下午 6 点，公众假期不开放。如果符合持续法律援助的资格，Victoria Legal Aid 会支付口译员费用。"
+   },
+   "sources": [
+    {
+     "url": "https://www.legalaid.vic.gov.au/speak-us-your-language",
+     "quote": "If you need help in a language other than English, call us on 1300 792 387. We will arrange an interpreter to support you."
+    },
+    {
+     "url": "https://www.legalaid.vic.gov.au/speak-us-your-language",
+     "quote": "between 8 am and 6 pm, Monday to Friday. Our phoneline is closed on public holidays."
+    },
+    {
+     "url": "https://www.legalaid.vic.gov.au/speak-us-your-language",
+     "quote": "If you are eligible for ongoing legal help, we will pay for an interpreter."
+    }
+   ],
+   "tags": [
+    "legal",
+    "interpreter",
+    "vla"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "vla-via-tis-131-450",
+   "question": {
+    "en": "Can I reach Victoria Legal Aid through the Translating and Interpreting Service?",
+    "zh": "可以通过 TIS 口译员打给 Victoria Legal Aid 吗？"
+   },
+   "aliases": [
+    "用 131 450 打给法律援助",
+    "法律援助 TIS 转接",
+    "Can TIS call Victoria Legal Aid for me?"
+   ],
+   "answer": {
+    "en": "Yes. A person can also call the Translating and Interpreting Service on 131 450 and ask to speak to Victoria Legal Aid on 1300 792 387.",
+    "zh": "可以。也可以致电 Translating and Interpreting Service（131 450），请他们转接 Victoria Legal Aid 的 1300 792 387。"
+   },
+   "sources": [
+    {
+     "url": "https://www.legalaid.vic.gov.au/speak-us-your-language",
+     "quote": "You can also call the Translating and Interpreting Service on 131 450 and ask to speak to Victoria Legal Aid on 1300 792 387."
+    }
+   ],
+   "tags": [
+    "legal",
+    "interpreter",
+    "vla"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "cav-chinese-scam-guide",
+   "question": {
+    "en": "Does Consumer Affairs Victoria have scam-prevention information in Chinese?",
+    "zh": "消费者事务局（CAV）有没有中文的防诈骗资料？"
+   },
+   "aliases": [
+    "防诈骗中文资料",
+    "维州消费者事务局中文页面",
+    "Is there a Chinese guide to avoiding scams in Victoria?",
+    "澳洲常见诈骗有哪些"
+   ],
+   "answer": {
+    "en": "Yes. Consumer Affairs Victoria's Chinese page “避免受骗” (Avoiding scams) says scammers can contact people by phone, email, text message and mail, and describes common scams including investment scams, phishing scams, lottery scams, refund scams and romance scams.",
+    "zh": "有。Consumer Affairs Victoria 的“避免受骗”中文页面说，骗子可以通过电话、电邮、短信和邮件与人联系，并介绍了投资诈骗、钓鱼诈骗、彩票骗局、退款骗局和情感骗局等常见骗局。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/resources-and-tools/other-languages/chinese-simplified/avoiding-scams",
+     "quote": "骗子可以通过电话、电邮、短信和邮件与人联系。"
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/resources-and-tools/other-languages/chinese-simplified/avoiding-scams",
+     "quote": "投资诈骗"
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/resources-and-tools/other-languages/chinese-simplified/avoiding-scams",
+     "quote": "钓鱼诈骗"
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/resources-and-tools/other-languages/chinese-simplified/avoiding-scams",
+     "quote": "彩票骗局"
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/resources-and-tools/other-languages/chinese-simplified/avoiding-scams",
+     "quote": "退款骗局"
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/resources-and-tools/other-languages/chinese-simplified/avoiding-scams",
+     "quote": "情感骗局"
+    }
+   ],
+   "tags": [
+    "scam",
+    "consumer",
+    "chinese-website"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "cav-phishing-scam-what-to-do",
+   "question": {
+    "en": "What should I do if someone claiming to be my bank or phone company asks me to confirm my personal details?",
+    "zh": "接到自称银行或电信公司要我确认个人信息的电话，该怎么办？"
+   },
+   "aliases": [
+    "钓鱼诈骗怎么防",
+    "短信让我核实银行账号",
+    "How do I protect myself from phishing scams?"
+   ],
+   "answer": {
+    "en": "Phishing scammers may contact people by phone, email, text message or social media, pretending to represent a business the person has an account with, such as a bank, phone company or internet provider, and ask the person to provide or confirm personal information. Consumer Affairs Victoria's Chinese page says not to provide any information in this situation and to contact the business separately to check the call or message.",
+    "zh": "钓鱼诈骗者可能通过电话、电子邮件、短信或社交媒体联系，假装是银行、电话公司或网络提供商等开户企业的代表，要求提供或确认个人信息。Consumer Affairs Victoria 的中文页面说，这种情况下不要提供任何信息，应单独联系商家，核实通话或信息内容。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/resources-and-tools/other-languages/chinese-simplified/avoiding-scams",
+     "quote": "网络钓鱼诈骗者可能会通过电话、电子邮件、短信或社交媒体与您联系。他们假装是您开户的企业代表 - 例如银行、电话公司或网络提供商 -要求您提供或确认您的个人信息。"
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/resources-and-tools/other-languages/chinese-simplified/avoiding-scams",
+     "quote": "为了保护自己，在这种情况下请不要提供任何信息。请单独联系商家，核实通话或信息内容。"
+    }
+   ],
+   "tags": [
+    "scam",
+    "consumer"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "cav-refund-scam-government-bank",
+   "question": {
+    "en": "Is it real if someone says I am owed a refund but must pay a fee first?",
+    "zh": "有人说我有退款或欠款要领，但要先付手续费，是真的吗？"
+   },
+   "aliases": [
+    "退款骗局是什么",
+    "自称政府说欠我钱",
+    "Will a real bank or government department ask me to pay to get money back?"
+   ],
+   "answer": {
+    "en": "In a refund scam, scammers pretend to be from the government, a bank or another well-known organisation and claim they owe the person money, but say a fee or similar payment must be made first to “recover” it. Consumer Affairs Victoria's Chinese page says a real bank, business or government department will never contact a person claiming to owe them money and ask them to pay in order to get it back.",
+    "zh": "退款骗局中，骗子会假装来自政府、银行或其他知名机构，声称欠您钱，但您必须先支付手续费或类似费用才能“收回”欠款。Consumer Affairs Victoria 的中文页面说，真正的银行、企业或政府部门绝不会在联系您时，声称欠您钱，要求您付钱才能拿回欠款。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/resources-and-tools/other-languages/chinese-simplified/avoiding-scams",
+     "quote": "骗子会假装来自政府、银行或其他知名机构，声称欠您钱，但您必须先支付手续费或类似费用才能“收回”欠款。"
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/resources-and-tools/other-languages/chinese-simplified/avoiding-scams",
+     "quote": "真正的银行、企业或政府部门绝不会在联系您时，声称欠您钱，要求您付钱才能拿回欠款。"
+    }
+   ],
+   "tags": [
+    "scam",
+    "consumer"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "cav-lottery-prize-scam-signs",
+   "question": {
+    "en": "How can I tell whether a message saying I have won a prize is a scam?",
+    "zh": "收到说我中奖了的信息，怎样判断是不是骗局？"
+   },
+   "aliases": [
+    "彩票骗局警告信号",
+    "中奖要先交税是骗局吗",
+    "What are the warning signs of a lottery scam?"
+   ],
+   "answer": {
+    "en": "Warning signs of a lottery scam include: the prize is from a lottery or competition the person did not buy into; the person is asked to call a phone number or send an email containing personal details; a fee or bank details must be provided to claim the prize; and a PO box, email address or mobile number is given as the contact instead of a street address.",
+    "zh": "彩票骗局的警告信号包括：奖品来自并未购买的彩票或下注的比赛；要求拨打某个电话号码或发送包含个人详细信息的电邮；必须缴付某种费用或提供银行详细资料才能领取奖金；以邮局信箱号码、电邮地址或手机号码作为联系信息而未提供街道地址。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/resources-and-tools/other-languages/chinese-simplified/avoiding-scams",
+     "quote": "这类骗局的一些警告信号包括:"
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/resources-and-tools/other-languages/chinese-simplified/avoiding-scams",
+     "quote": "奖品来自于您并未购买的彩票或下注的比赛"
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/resources-and-tools/other-languages/chinese-simplified/avoiding-scams",
+     "quote": "您必须缴付某种费用或提供银行详细资料才能领取奖金"
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/resources-and-tools/other-languages/chinese-simplified/avoiding-scams",
+     "quote": "将邮局( PO )信箱号码、电邮地址或手机号码作为其联系信息(未提供街道地址)。"
+    }
+   ],
+   "tags": [
+    "scam",
+    "consumer"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "cav-romance-scam",
+   "question": {
+    "en": "Is it a romance scam if someone I met online asks me to send money?",
+    "zh": "网上认识的人要我汇钱，是不是情感骗局？"
+   },
+   "aliases": [
+    "交友网站骗局",
+    "网恋骗钱怎么办",
+    "How do online romance scams work?"
+   ],
+   "answer": {
+    "en": "In a romance scam, scammers approach victims on legitimate dating websites, move contact to personal email, phone or instant messaging once an interest is established, and eventually make up a lie that requires money, such as a sick or injured family member. Once money is sent by wire or transfer it is almost impossible to recover. Consumer Affairs Victoria's Chinese page warns not to send money to people the person has never met.",
+    "zh": "情感骗局中，骗子在合法交友网站上接近受害者，确立交往意向后将联系转移到个人电邮、电话或即时消息，最终编造一个需要用钱的谎言，例如家里有人患病或受伤。通过电汇或转账汇款后，几乎无法追回。Consumer Affairs Victoria 的中文页面提醒，不要把钱寄给素未谋面的人。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/resources-and-tools/other-languages/chinese-simplified/avoiding-scams",
+     "quote": "骗子在合法交友网站上接近受害者。一旦确立交往意向，他们会将所有联系人转移到个人电邮、电话或即时消息中。"
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/resources-and-tools/other-languages/chinese-simplified/avoiding-scams",
+     "quote": "最终，骗子将编造一个需要用钱的谎言，通常会说家里有人患病或受伤，或者投资需要用钱等。"
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/resources-and-tools/other-languages/chinese-simplified/avoiding-scams",
+     "quote": "一旦通过电汇或转账汇款，就几乎无法追回。"
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/resources-and-tools/other-languages/chinese-simplified/avoiding-scams",
+     "quote": "请不要把钱寄给素未谋面的人，即使与其谈过话或者收到过该人送的礼物，也不要为之"
+    }
+   ],
+   "tags": [
+    "scam",
+    "consumer"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "cav-report-scam-recover-money",
+   "question": {
+    "en": "If I think I have been scammed, what does Consumer Affairs Victoria's Chinese page advise?",
+    "zh": "如果觉得被骗了，Consumer Affairs Victoria 的中文页面建议怎么做？"
+   },
+   "aliases": [
+    "被诈骗了要报告吗",
+    "被骗能追回钱吗",
+    "Can I get my money back after a scam?"
+   ],
+   "answer": {
+    "en": "A person who thinks they may have been scammed should contact Consumer Affairs Victoria immediately to report it. Depending on the circumstances, they may be able to recover the money through their credit card provider or bank. If the money cannot be recovered, the scam should still be reported, because the information may help stop others being scammed.",
+    "zh": "如果认为可能被骗了，应立即联系 Consumer Affairs Victoria 报告此事。视个人情况，可能通过信用卡提供商或银行追回欠款。即使无法追回，仍要报告，因为这些信息可能有助于阻止其他人被骗。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/resources-and-tools/other-languages/chinese-simplified/avoiding-scams",
+     "quote": "如果您认为可能被骗了，请立即联系我们报告此事。视个人情况，您可能通过信用卡提供商或银行追回欠款。"
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/resources-and-tools/other-languages/chinese-simplified/avoiding-scams",
+     "quote": "如果无法追回欠款，则仍要报告此事，因为这些信息可能有助于我们阻止其他人被骗。"
+    }
+   ],
+   "tags": [
+    "scam",
+    "consumer"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "cav-door-to-door-hours-chinese",
+   "question": {
+    "en": "What hours can door-to-door salespeople visit in Victoria, and can they come on Sundays?",
+    "zh": "销售员几点可以上门推销？周日可以吗？"
+   },
+   "aliases": [
+    "上门推销时间",
+    "公众假期有人上门推销合法吗",
+    "Can a door-to-door salesperson knock on Sunday?"
+   ],
+   "answer": {
+    "en": "Salespeople can visit door to door between 9 am and 6 pm Monday to Friday and between 9 am and 5 pm on Saturday. They cannot visit on Sundays or public holidays, although a service provider or agent may visit at any time with the person's consent.",
+    "zh": "销售人员可以在星期一至星期五上午 9 时至下午 6 时、周六上午 9 时至下午 5 时登门推销。星期天或公众假期他们不能登门推销，但服务供应商或代理人可在您同意的情况下随时访问。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/resources-and-tools/other-languages/chinese-simplified/door-to-door-sales",
+     "quote": "销售人员可以在以下时段登门推销:"
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/resources-and-tools/other-languages/chinese-simplified/door-to-door-sales",
+     "quote": "星期一至星期五上午9时和下午6时之间"
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/resources-and-tools/other-languages/chinese-simplified/door-to-door-sales",
+     "quote": "周六上午9时和下午5时之间。"
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/resources-and-tools/other-languages/chinese-simplified/door-to-door-sales",
+     "quote": "星期天或公众假期他们不能登门推销。"
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/resources-and-tools/other-languages/chinese-simplified/door-to-door-sales",
+     "quote": "但是，服务供应商或代理人可在您同意的情况下随时访问您。"
+    }
+   ],
+   "tags": [
+    "consumer",
+    "door-to-door"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "cav-door-to-door-seller-rules",
+   "question": {
+    "en": "What rules must door-to-door salespeople follow, and when can they take payment?",
+    "zh": "上门推销员必须遵守哪些规则？签约后多久不能收款？"
+   },
+   "aliases": [
+    "上门推销可以马上收钱吗",
+    "让推销员离开后他们还能再来吗",
+    "What must a door-to-door seller tell me?"
+   ],
+   "answer": {
+    "en": "Door-to-door salespeople must say why they are visiting, give their name and company, and say they must leave if asked (if asked to leave they cannot contact the person again for at least 30 days). They must also explain the right to cancel the contract and provide a written copy before any contract is signed. They must not ask for payment within 10 business days of signing, or supply goods priced over $500 within that period.",
+    "zh": "上门推销员必须告知造访原因、自己的名字和公司，以及如果被要求离开就必须离开（被要求离开后至少 30 天内不能再联系），还要告知取消合约的权利。他们必须在签署任何合约前提供书面副本，签署合约后 10 个工作日内不得要求付款，也不得提供标价超过 500 澳元的货物。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/resources-and-tools/other-languages/chinese-simplified/door-to-door-sales",
+     "quote": "上门销售人员必须遵守什么规则？"
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/resources-and-tools/other-languages/chinese-simplified/door-to-door-sales",
+     "quote": "告知他们造访的原因"
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/resources-and-tools/other-languages/chinese-simplified/door-to-door-sales",
+     "quote": "告知他们的名字和公司"
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/resources-and-tools/other-languages/chinese-simplified/door-to-door-sales",
+     "quote": "在签署合约后10个工作日内不得要求付款"
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/resources-and-tools/other-languages/chinese-simplified/door-to-door-sales",
+     "quote": "在签署合约后10个工作日内不得提供标价超过500澳元的货物"
+    }
+   ],
+   "tags": [
+    "consumer",
+    "door-to-door"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "cav-fake-government-door-knock",
+   "question": {
+    "en": "What should I do if someone at my door claims to be from the ATO or Centrelink and asks for my bank details?",
+    "zh": "有人上门自称是税务局或 Centrelink 的人员，要我的银行资料，是真的吗？"
+   },
+   "aliases": [
+    "冒充政府人员上门",
+    "上门自称 Centrelink 要银行信息",
+    "Are door-to-door government officials real?"
+   ],
+   "answer": {
+    "en": "Someone may come to the door claiming to be from a government department such as the Australian Taxation Office or Centrelink and ask for bank or personal information to pay a tax refund or raise a payment, and may use those details to steal money or identity. Consumer Affairs Victoria's Chinese page warns to be careful about being deceived and to ask them to show identification, because in most cases government departments do not contact people this way.",
+    "zh": "有人会来到家门口自称来自澳大利亚税务局（Australian Taxation Office）或 Centrelink 等政府部门，要求提供银行信息或个人信息，以便支付退税或增加福利金，并可能利用这些详细资料窃取金钱或盗用身份。Consumer Affairs Victoria 的中文页面提醒要小心上当受骗，并要求对方出示证件，因为在大多数情况下政府部门不会以这种方式联系。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/resources-and-tools/other-languages/chinese-simplified/door-to-door-sales",
+     "quote": "有人会来到您家门口并自称来自某个政府部门，比如Australian Taxation Office或Centrelink。"
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/resources-and-tools/other-languages/chinese-simplified/door-to-door-sales",
+     "quote": "他们可利用这些详细资料窃取金钱或盗用身份。"
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/resources-and-tools/other-languages/chinese-simplified/door-to-door-sales",
+     "quote": "请务必要求他们出示证件。在大多数情况下，政府部门不会以这种方式与您联系。"
+    }
+   ],
+   "tags": [
+    "scam",
+    "consumer",
+    "door-to-door"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "cav-travelling-con-men-chinese",
+   "question": {
+    "en": "What are travelling con men, and what should I watch for if someone offers repair work at my door?",
+    "zh": "什么是“流动行骗犯”？遇到上门做维修的人要注意什么？"
+   },
+   "aliases": [
+    "上门修屋顶铺车道骗局",
+    "只限今天的优惠要付现金",
+    "How do I avoid door-knocking con men offering cheap repairs?"
+   ],
+   "answer": {
+    "en": "Travelling con men are tradespeople who knock on the doors of households and small businesses and offer to do repair work as a way of conning them. They offer low-priced work such as driveway re-paving, painting, roof repairs and carpet cleaning, often with a “today only” special price, and ask for cash payment before starting; once paid, they usually disappear.",
+    "zh": "流动行骗犯是敲门登访居民住户和小商户，以主动提出做维修工作为由进行行骗的技工。他们以低价提供车道重铺、刷油漆、屋顶修理和地毯清洁等工作，常提供“只限于今天”的特惠价，并要求在开始工作前支付现金；一旦付钱，通常就会消失匿迹。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/resources-and-tools/other-languages/chinese-simplified/travelling-con-men",
+     "quote": "流动行骗犯是指敲门登访居民住户和小商户，以主动提出做维修工作为由进行行骗的技工。"
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/resources-and-tools/other-languages/chinese-simplified/travelling-con-men",
+     "quote": "流动行骗犯以低价提供车道重铺、刷油漆、屋顶修理和地毯清洁等工作。通常，他们会向人们施压，提供“只限于今天”的特惠价。"
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/resources-and-tools/other-languages/chinese-simplified/travelling-con-men",
+     "quote": "流动行骗犯会要求在开始工作前支付现金，您一旦付钱，通常他们就会消失匿迹。"
+    }
+   ],
+   "tags": [
+    "scam",
+    "consumer"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "cav-smoke-alarm-rental-chinese",
+   "question": {
+    "en": "Do smoke alarms in rental properties have to be checked every year?",
+    "zh": "租的房子里烟雾报警器要定期检查吗？"
+   },
+   "aliases": [
+    "租房烟雾报警器法规",
+    "房东要检查烟雾报警器吗",
+    "Who is responsible for smoke alarms in a rental in Victoria?"
+   ],
+   "answer": {
+    "en": "From 25 November 2025, all rental properties must have an annual smoke alarm safety check to make sure alarms are correctly installed and working. Rental providers must make sure smoke alarms are installed correctly and working, and tenants should make sure the alarms keep working and tell the rental provider if one stops working.",
+    "zh": "自 2025 年 11 月 25 日起，所有租赁物业必须进行年度烟雾报警器安全检查，以确保其正确安装并处于正常工作状态。租赁提供商必须确保烟雾报警器安装正确并能正常工作；租户应确保报警器能继续工作，并在其停止工作时告知租赁提供商。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/resources-and-tools/other-languages/chinese-simplified/smoke-alarms-and-fire-safety",
+     "quote": "自2025年11月25日起，所有租赁物业必须进行年度烟雾报警器安全检查，以确保其正确安装并处于正常工作状态。"
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/resources-and-tools/other-languages/chinese-simplified/smoke-alarms-and-fire-safety",
+     "quote": "租赁提供商必须确保烟雾报警器安装正确并能正常工作。租户应确保报警器能继续工作，并在其停止工作时告知租赁提供商。"
+    }
+   ],
+   "tags": [
+    "housing",
+    "renting",
+    "consumer"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "aec-chinese-phone-interpreter",
+   "question": {
+    "en": "Does the Australian Electoral Commission have a Chinese phone interpreter service?",
+    "zh": "澳大利亚选举委员会（AEC）有中文电话口译吗？"
+   },
+   "aliases": [
+    "选举投票粤语电话",
+    "AEC 普通话热线 1300 720 142",
+    "How do I call the AEC in Cantonese or Mandarin?"
+   ],
+   "answer": {
+    "en": "Yes. The Australian Electoral Commission's Chinese page lists telephone interpreter services: Cantonese on 1300 720 135 and Mandarin on 1300 720 142.",
+    "zh": "有。澳大利亚选举委员会（AEC）的中文页面列出电话口译服务：广东话（Cantonese）为 1300 720 135，普通话（Mandarin）为 1300 720 142。"
+   },
+   "sources": [
+    {
+     "url": "https://www.aec.gov.au/About_AEC/Translated_information/chinese-simplified.htm",
+     "quote": "Telephone interpreter service"
+    },
+    {
+     "url": "https://www.aec.gov.au/About_AEC/Translated_information/chinese-simplified.htm",
+     "quote": "Cantonese - 1300 720 135"
+    },
+    {
+     "url": "https://www.aec.gov.au/About_AEC/Translated_information/chinese-simplified.htm",
+     "quote": "Mandarin - 1300 720 142"
+    }
+   ],
+   "tags": [
+    "election",
+    "interpreter",
+    "aec"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "aec-chinese-voting-guide",
+   "question": {
+    "en": "Is there a Chinese guide to enrolling and voting in Australia?",
+    "zh": "投票和选民登记有中文指南吗？"
+   },
+   "aliases": [
+    "联邦选举中文投票指南",
+    "AEC 中文资料",
+    "Where can I find AEC information in Chinese?"
+   ],
+   "answer": {
+    "en": "Yes. The Australian Electoral Commission's Chinese (Simplified) page provides Chinese resources including “A guide to enrolling and voting” and “How to make your vote count”.",
+    "zh": "有。澳大利亚选举委员会（AEC）的中文（简体）页面提供“A guide to enrolling and voting”（选民登记和投票指南）和“How to make your vote count”（如何确保投票有效）等中文资料。"
+   },
+   "sources": [
+    {
+     "url": "https://www.aec.gov.au/About_AEC/Translated_information/chinese-simplified.htm",
+     "quote": "A guide to enrolling and voting"
+    },
+    {
+     "url": "https://www.aec.gov.au/About_AEC/Translated_information/chinese-simplified.htm",
+     "quote": "How to make your vote count"
+    }
+   ],
+   "tags": [
+    "election",
+    "aec",
+    "chinese-website"
+   ],
+   "checked": "2026-10-30"
+  }
+ ]
+}
