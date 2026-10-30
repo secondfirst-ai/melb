@@ -828,7 +828,7 @@
    "id": "victoria-online-wedding-allowed",
    "question": {
     "en": "Can I get married online or without witnesses in Victoria?",
-    "zh": "在维多利亚州可以在线结婚或没有证婚人结婚吗？"
+    "zh": "在维多利亚州可以在线结婚，或在没有见证人的情况下结婚吗？"
    },
    "aliases": [
     "Can a wedding be held by video call in Victoria?",
@@ -838,7 +838,7 @@
    ],
    "answer": {
     "en": "No. A marriage must be solemnised in the physical presence of a celebrant and two witnesses.",
-    "zh": "不可以。婚姻必须在证婚人（celebrant）和两名见证人亲自在场的情况下完成。"
+    "zh": "不可以。婚姻必须在主婚官（celebrant）和两名见证人亲自在场的情况下完成。"
    },
    "sources": [
     {
