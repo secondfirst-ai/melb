@@ -1,0 +1,1931 @@
+{
+ "dataset": "melb-government",
+ "title": {
+  "en": "Councils, government services and documents in Melbourne and Victoria, answered from official sources",
+  "zh": "墨尔本与维州的市政府、政府服务和证件问答（答案来自官方出处）"
+ },
+ "updated": "2026-10-30",
+ "notes": [
+  {
+   "en": "Each answer is limited to what the cited official page says, with a verbatim quote and the date we checked it. If a question isn't here, we don't have a checked answer.",
+   "zh": "每条答案只说出处原文支持的内容，附原句和核对日期。这里没有的问题，就是我们还没有核过的答案。"
+  }
+ ],
+ "records": [
+  {
+   "id": "victoria-voting-compulsory",
+   "question": {
+    "en": "Is voting compulsory in Victoria?",
+    "zh": "在维多利亚州投票是强制的吗？"
+   },
+   "aliases": [
+    "Do I have to vote in Australia?",
+    "Do I have to vote in council elections in Victoria?",
+    "Is it compulsory to vote in state and federal elections?",
+    "澳洲投票是强制的吗",
+    "维州选举一定要去投票吗"
+   ],
+   "answer": {
+    "en": "Yes. In Victoria, if you are enrolled to vote, you must vote in all federal, state and council elections. If you do not vote, the Victorian Electoral Commission may send you a fine. The Australian Electoral Commission runs federal elections, and the Victorian Electoral Commission runs state and local council elections.",
+    "zh": "是的。在维多利亚州，只要你已登记为选民，就必须参加所有联邦、州和市政府（council）的选举。如果没有投票，维州选举委员会（VEC）可能会向你发出罚款。联邦选举由澳大利亚选举委员会（AEC）负责，州选举和地方市政选举由维州选举委员会负责。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vec.vic.gov.au/voting/fines-and-reviews",
+     "quote": "In Victoria, if you are enrolled to vote, you must vote in all federal, state and council elections. If you do not vote, we may send you a fine."
+    },
+    {
+     "url": "https://www.vec.vic.gov.au/voting/fines-and-reviews",
+     "quote": "The Australian Electoral Commission runs Federal elections and the Victorian Electoral Commission runs state and local council elections."
+    }
+   ],
+   "tags": [
+    "voting",
+    "election",
+    "enrolment"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-fine-for-not-voting-amount",
+   "question": {
+    "en": "How much is the fine for not voting in Victoria?",
+    "zh": "在维多利亚州不投票的罚款是多少？"
+   },
+   "aliases": [
+    "What is the penalty for not voting in a Victorian election?",
+    "How much do you get fined if you don't vote in Australia?",
+    "维州不去投票罚多少钱",
+    "不投票罚款多少澳元"
+   ],
+   "answer": {
+    "en": "For elections held between 1 July 2026 and 30 June 2027, the fine for not voting is $105. For elections held between 1 July 2025 and 30 June 2026, the fine is $102.",
+    "zh": "在 2026 年 7 月 1 日至 2027 年 6 月 30 日期间举行的选举中，不投票的罚款是 105 澳元。在 2025 年 7 月 1 日至 2026 年 6 月 30 日期间举行的选举中，罚款是 102 澳元。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vec.vic.gov.au/voting/fines-and-reviews",
+     "quote": "For elections held between 1 July 2026 and 30 June 2027, the fine for not voting is $105"
+    },
+    {
+     "url": "https://www.vec.vic.gov.au/voting/fines-and-reviews",
+     "quote": "For elections held between 1 July 2025 and 30 June 2026, the fine for not voting is $102"
+    }
+   ],
+   "tags": [
+    "voting",
+    "fine"
+   ],
+   "checked": "2026-10-30",
+   "valid_until": "2027-06-30"
+  },
+  {
+   "id": "victoria-didnt-vote-what-happens",
+   "question": {
+    "en": "What happens if I did not vote in a Victorian state or council election?",
+    "zh": "我没有参加维州州选举或市政选举投票，会怎样？"
+   },
+   "aliases": [
+    "I forgot to vote, what do I do?",
+    "I got an Apparent failure to vote notice, what is it?",
+    "How long do I have to reply to a failure to vote notice?",
+    "收到没投票通知怎么办",
+    "忘记投票会被罚款吗"
+   ],
+   "answer": {
+    "en": "First, the Victorian Electoral Commission sends an 'Apparent failure to vote notice'. It is not a fine, and you have 28 days to respond to it. If you ignore it, or your excuse for failing to vote is not accepted, you will get an Infringement Notice, which includes a fine.",
+    "zh": "首先，维州选举委员会会寄出一封“Apparent failure to vote notice”（疑似未投票通知）。这不是罚单，你有 28 天时间回复。如果你不理会，或者你未投票的理由不被接受，就会收到违规通知（Infringement Notice），其中包含罚款。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vec.vic.gov.au/voting/fines-and-reviews",
+     "quote": "First, you will get an 'Apparent failure to vote notice' from the Victorian Electoral Commission."
+    },
+    {
+     "url": "https://www.vec.vic.gov.au/voting/fines-and-reviews",
+     "quote": "It is not a fine, but it’s important to reply to it. You will have 28 days to respond to this notice."
+    },
+    {
+     "url": "https://www.vec.vic.gov.au/voting/fines-and-reviews",
+     "quote": "If you ignore it, or if your excuse for failing to vote is not accepted, you will get an Infringement Notice. This includes a fine."
+    }
+   ],
+   "tags": [
+    "voting",
+    "fine"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-who-must-enrol-to-vote",
+   "question": {
+    "en": "Who has to enrol to vote in Victoria, and how soon?",
+    "zh": "谁必须在维多利亚州登记为选民？要多久内登记？"
+   },
+   "aliases": [
+    "Am I eligible to enrol to vote in Victoria?",
+    "How do I enrol to vote as a new Australian citizen?",
+    "Can I enrol to vote at 17 in Victoria?",
+    "澳洲公民几岁可以登记投票",
+    "维州选民登记条件"
+   ],
+   "answer": {
+    "en": "You must enrol to vote if you are an Australian citizen, are 18 or older and have lived in Victoria for longer than a month. You must enrol within 21 days of meeting these requirements. If you are 17, you can fill out an enrolment form now, and you will be enrolled automatically on your 18th birthday.",
+    "zh": "如果你是澳大利亚公民、年满 18 岁并且在维多利亚州居住超过一个月，就必须登记为选民。你必须在满足这些条件后的 21 天内登记。如果你是 17 岁，现在就可以填写登记表，到 18 岁生日时会自动登记。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vec.vic.gov.au/enrolment/enrol-to-vote",
+     "quote": "You must enrol to vote if you:"
+    },
+    {
+     "url": "https://www.vec.vic.gov.au/enrolment/enrol-to-vote",
+     "quote": "are an Australian citizen"
+    },
+    {
+     "url": "https://www.vec.vic.gov.au/enrolment/enrol-to-vote",
+     "quote": "are 18 or older"
+    },
+    {
+     "url": "https://www.vec.vic.gov.au/enrolment/enrol-to-vote",
+     "quote": "have lived in Victoria for longer than a month."
+    },
+    {
+     "url": "https://www.vec.vic.gov.au/enrolment/enrol-to-vote",
+     "quote": "You must enrol within 21 days of meeting these requirements."
+    },
+    {
+     "url": "https://www.vec.vic.gov.au/enrolment/enrol-to-vote",
+     "quote": "If you're 17, you can fill out an enrolment form now. We'll automatically enrol you on your 18th birthday and you'll be ready to vote."
+    }
+   ],
+   "tags": [
+    "voting",
+    "enrolment"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-update-enrolment-when-moving-house",
+   "question": {
+    "en": "Do I need to update my voter enrolment when I move house in Victoria?",
+    "zh": "搬家后需要更新选民登记地址吗？"
+   },
+   "aliases": [
+    "How do I change my address on the electoral roll?",
+    "Do I need to update my enrolment if I change my name?",
+    "How soon must I update my enrolment after moving?",
+    "搬家后选民登记要改地址吗",
+    "更改姓名后选民登记要更新吗"
+   ],
+   "answer": {
+    "en": "Yes. You must update your enrolment within 21 days if you change your residential address (after you have lived there for at least one month). The fastest way is online, and one update covers federal, state and local council elections. The Victorian Electoral Commission also says to update your enrolment details if your name or postal address changes.",
+    "zh": "需要。如果你更换了居住地址（在新地址住满至少一个月之后），必须在 21 天内更新选民登记。最快的方式是在线更新，一次更新即适用于联邦、州和地方市政选举。维州选举委员会还提醒，如果你的姓名或邮寄地址有变，也应更新登记资料。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vec.vic.gov.au/enrolment/update-my-enrolment",
+     "quote": "You must update your enrolment within 21 days if you've changed your:"
+    },
+    {
+     "url": "https://www.vec.vic.gov.au/enrolment/update-my-enrolment",
+     "quote": "residential address (after you've lived there for at least one month)"
+    },
+    {
+     "url": "https://www.vec.vic.gov.au/enrolment/update-my-enrolment",
+     "quote": "The fastest way to update your enrolment is online."
+    },
+    {
+     "url": "https://www.vec.vic.gov.au/enrolment/update-my-enrolment",
+     "quote": "We work with the Australian Electoral Commission (AEC) to make it easy to update your enrolment for all federal, state and local council elections in one go."
+    },
+    {
+     "url": "https://www.vec.vic.gov.au/enrolment/enrol-to-vote",
+     "quote": "You should remember to update your enrolment details if your name or postal address changes."
+    }
+   ],
+   "tags": [
+    "voting",
+    "enrolment"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-check-my-enrolment",
+   "question": {
+    "en": "How can I check whether I am enrolled to vote in Victoria?",
+    "zh": "怎样查询我是否已在维多利亚州登记为选民？"
+   },
+   "aliases": [
+    "Check my enrolment VEC",
+    "Am I on the electoral roll?",
+    "How do I find my electoral enrolment details?",
+    "怎么查自己有没有登记投票",
+    "查询选民登记状态"
+   ],
+   "answer": {
+    "en": "Use the Victorian Electoral Commission's Check my enrolment service to check your enrolment details for Victorian state and local council elections. To protect your privacy, you must enter your name and address exactly as they appear on the electoral roll.",
+    "zh": "可以使用维州选举委员会的“Check my enrolment”服务查询你在维州州选举和地方市政选举中的登记资料。为保护隐私，你必须按选民名册上的写法准确输入姓名和地址。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vec.vic.gov.au/enrolment/check-my-enrolment",
+     "quote": "Use Check my enrolment to check your enrolment details for Victorian state and local council elections."
+    },
+    {
+     "url": "https://www.vec.vic.gov.au/enrolment/check-my-enrolment",
+     "quote": "To protect your privacy you must enter your name and address exactly as they appear on the electoral roll."
+    }
+   ],
+   "tags": [
+    "voting",
+    "enrolment"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-2026-state-election-enrolment-deadline",
+   "question": {
+    "en": "What is the deadline to enrol or update my details for the 2026 Victorian state election?",
+    "zh": "2026 年维州州选举的登记或更新资料截止时间是什么时候？"
+   },
+   "aliases": [
+    "When do rolls close for the 2026 Victorian election?",
+    "Last day to enrol to vote in the Victorian state election",
+    "2026 维州大选登记截止日期",
+    "维州选举什么时候截止登记"
+   ],
+   "answer": {
+    "en": "The deadline to enrol for the 2026 state election is 8 pm on Tuesday 3 November. The Victorian Electoral Commission says to enrol or update your enrolment before this date to vote in this election.",
+    "zh": "2026 年州选举的登记截止时间是 11 月 3 日（星期二）晚上 8 点。维州选举委员会表示，要在这次选举中投票，必须在此日期之前登记或更新登记资料。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vec.vic.gov.au/enrolment/enrol-to-vote",
+     "quote": "The deadline to enrol for the 2026 state election is 8 pm on Tuesday 3 November"
+    },
+    {
+     "url": "https://www.vec.vic.gov.au/enrolment/enrol-to-vote",
+     "quote": "Make sure you enrol or update your enrolment before this date to vote in this election."
+    }
+   ],
+   "tags": [
+    "voting",
+    "election",
+    "deadline"
+   ],
+   "checked": "2026-10-30",
+   "valid_until": "2026-11-03"
+  },
+  {
+   "id": "victoria-council-enrolled-voter-property-owner",
+   "question": {
+    "en": "Can I vote in council elections for a property I own but do not live in?",
+    "zh": "我能为自己拥有但不住的房产在市政选举中投票吗？"
+   },
+   "aliases": [
+    "What is a council-enrolled voter in Victoria?",
+    "Can a landlord vote in local council elections for a rental property?",
+    "Do ratepayers get a vote in council elections?",
+    "非居住的业主能投市政选举吗",
+    "council-enrolled voter 是什么"
+   ],
+   "answer": {
+    "en": "Possibly. You can apply to become a council-enrolled voter directly with your council if you are 18 years or older, a property owner, occupier or represent a corporation, and you are not a state-enrolled voter within the council area. Once you are on the council roll, you must vote and may be fined if you do not. You will not be fined if you choose not to become a council-enrolled voter.",
+    "zh": "有可能。如果你年满 18 岁，是业主、占用人或公司代表，而且不是该市政区内的州选民，可以直接向市政府申请成为 council-enrolled voter（市政登记选民）。一旦列入市政选民册，你就必须投票，不投票可能被罚款。如果你选择不成为市政登记选民，则不会被罚款。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vec.vic.gov.au/enrolment/enrol-to-vote/enrolling-for-local-council-elections",
+     "quote": "Council-enrolled voters include ratepayers who are property owners, occupiers or corporations."
+    },
+    {
+     "url": "https://www.vec.vic.gov.au/enrolment/enrol-to-vote/enrolling-for-local-council-elections",
+     "quote": "You can apply to become a council-enrolled voter directly with your council if you are:"
+    },
+    {
+     "url": "https://www.vec.vic.gov.au/enrolment/enrol-to-vote/enrolling-for-local-council-elections",
+     "quote": "18 years or older"
+    },
+    {
+     "url": "https://www.vec.vic.gov.au/enrolment/enrol-to-vote/enrolling-for-local-council-elections",
+     "quote": "a property owner, occupier or represent a corporation"
+    },
+    {
+     "url": "https://www.vec.vic.gov.au/enrolment/enrol-to-vote/enrolling-for-local-council-elections",
+     "quote": "not a state-enrolled voter within the council area."
+    },
+    {
+     "url": "https://www.vec.vic.gov.au/enrolment/enrol-to-vote/enrolling-for-local-council-elections",
+     "quote": "Once you are on the council roll, you must vote. If you don’t vote, you may get a fine. You will not be fined if you choose not to become a council-enrolled voter."
+    }
+   ],
+   "tags": [
+    "voting",
+    "council"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-view-electoral-roll-online",
+   "question": {
+    "en": "Can I look at the electoral roll online in Victoria?",
+    "zh": "可以在网上查看维多利亚州的选民名册吗？"
+   },
+   "aliases": [
+    "Can I see who is on the electoral roll?",
+    "Where can I view the Victorian electoral roll?",
+    "能在网上看选民名册吗",
+    "选民名册在哪里查看"
+   ],
+   "answer": {
+    "en": "No. The Victorian Electoral Commission says you can't view the electoral roll online. You can access the roll at its head office. Silent electors aren't included in the roll products it provides.",
+    "zh": "不能。维州选举委员会表示，选民名册不能在网上查看，可以到该委员会的总部查阅。隐名选民（silent electors）不包括在其提供的名册资料中。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vec.vic.gov.au/enrolment/enrol-to-vote",
+     "quote": "You can't view the electoral roll online."
+    },
+    {
+     "url": "https://www.vec.vic.gov.au/enrolment/enrol-to-vote",
+     "quote": "You can access the roll at our head office"
+    },
+    {
+     "url": "https://www.vec.vic.gov.au/enrolment/enrol-to-vote",
+     "quote": "Silent electors aren't included in any of these roll products."
+    }
+   ],
+   "tags": [
+    "voting",
+    "enrolment"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "aec-enrol-no-fixed-address",
+   "question": {
+    "en": "Can I enrol to vote if I have no fixed address?",
+    "zh": "没有固定住址还能登记投票吗？"
+   },
+   "aliases": [
+    "Can homeless people vote in Australia?",
+    "How do I enrol if I travel around Australia with no fixed address?",
+    "无固定住所能投票吗",
+    "流浪者可以登记选民吗"
+   ],
+   "answer": {
+    "en": "Yes. The Australian Electoral Commission says that if you are experiencing homelessness or are frequently travelling around Australia with no fixed address, you are still able to enrol and vote in elections.",
+    "zh": "可以。澳大利亚选举委员会（AEC）表示，如果你正处于无家可归的状态，或者经常在澳大利亚各地旅行而没有固定住址，仍然可以登记并在选举中投票。"
+   },
+   "sources": [
+    {
+     "url": "https://www.aec.gov.au/Enrolling_to_vote/Special_Category/no-fixed-address.htm",
+     "quote": "If you are experiencing homelessness or are frequently travelling around Australia with no fixed address, you are still able to enrol and vote in elections."
+    }
+   ],
+   "tags": [
+    "voting",
+    "enrolment"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-register-a-birth",
+   "question": {
+    "en": "Do I have to register my baby's birth in Victoria, and is there a fee?",
+    "zh": "在维多利亚州必须为宝宝登记出生吗？要收费吗？"
+   },
+   "aliases": [
+    "How long do I have to register a birth in Victoria?",
+    "How much does it cost to register a birth?",
+    "Where do I register a baby born in Victoria?",
+    "维州宝宝出生登记要多久内办",
+    "出生登记要钱吗"
+   ],
+   "answer": {
+    "en": "Yes. All births in Victoria need to be registered with the Registry of Births, Deaths and Marriages. Births must be registered within 60 days of the child being born, and there is no fee to register.",
+    "zh": "必须。维多利亚州的所有新生儿都需要向出生、死亡与婚姻登记处（BDM）登记。出生必须在孩子出生后 60 天内登记，登记不收费。"
+   },
+   "sources": [
+    {
+     "url": "https://www.bdm.vic.gov.au/register-birth",
+     "quote": "All births in Victoria need to be registered with the Registry of Births, Deaths and Marriages. Births must be registered within 60 days of the child being born. There is no fee to register."
+    }
+   ],
+   "tags": [
+    "birth",
+    "bdm"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-birth-registration-vs-certificate",
+   "question": {
+    "en": "Is registering a birth the same as getting a birth certificate in Victoria?",
+    "zh": "在维多利亚州，出生登记和申请出生证明是一回事吗？"
+   },
+   "aliases": [
+    "Do I need to order a birth certificate after registering a birth?",
+    "Is a birth certificate compulsory in Victoria?",
+    "出生登记和出生证明有什么区别",
+    "登记出生后还要申请出生证明吗"
+   ],
+   "answer": {
+    "en": "No. Registering a birth and getting a birth certificate are two different tasks. The law says a birth must be registered, while getting a birth certificate is optional but often needed as a primary form of ID for official purposes.",
+    "zh": "不是。登记出生和申请出生证明是两件不同的事。法律规定出生必须登记，而申请出生证明是自愿的，但办理官方事务时常常需要把它作为主要身份证明。"
+   },
+   "sources": [
+    {
+     "url": "https://www.bdm.vic.gov.au/register-birth",
+     "quote": "Registering a birth and a getting a birth certificate are 2 different tasks."
+    },
+    {
+     "url": "https://www.bdm.vic.gov.au/register-birth",
+     "quote": "The law says that a birth must be registered. Getting a birth certificate is optional, but it is often needed as a primary form of ID for official purposes."
+    }
+   ],
+   "tags": [
+    "birth",
+    "bdm"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-birth-certificate-cost",
+   "question": {
+    "en": "How much does a Victorian birth certificate cost?",
+    "zh": "维多利亚州出生证明多少钱？"
+   },
+   "aliases": [
+    "Price of a birth certificate from BDM Victoria",
+    "How much is a paper birth certificate in Victoria?",
+    "Is a digital birth certificate free?",
+    "维州出生证明费用",
+    "BDM 出生证明收费"
+   ],
+   "answer": {
+    "en": "A Victorian paper birth certificate costs $59.10, and a digital certificate is free. Legal certificates are sent by express post, which costs $10.60 within Australia. Commemorative certificates are priced from $95.80.",
+    "zh": "维州纸质出生证明的费用为 59.10 澳元，电子版免费。法定证书通过快递邮寄，在澳大利亚境内的邮费为 10.60 澳元。纪念版证书的价格从 95.80 澳元起。"
+   },
+   "sources": [
+    {
+     "url": "https://www.bdm.vic.gov.au/get-birth-certificate",
+     "quote": "Paper certificate $59.10"
+    },
+    {
+     "url": "https://www.bdm.vic.gov.au/get-birth-certificate",
+     "quote": "Digital certificate Free"
+    },
+    {
+     "url": "https://www.bdm.vic.gov.au/get-birth-certificate",
+     "quote": "Commemorative certificate from $95.80"
+    },
+    {
+     "url": "https://www.bdm.vic.gov.au/get-birth-certificate",
+     "quote": "Express post (within Australia) $10.60"
+    }
+   ],
+   "tags": [
+    "birth",
+    "bdm",
+    "fee"
+   ],
+   "checked": "2026-10-30",
+   "valid_until": "2027-06-30"
+  },
+  {
+   "id": "victoria-digital-birth-certificate",
+   "question": {
+    "en": "Can I get a free digital birth certificate in Victoria?",
+    "zh": "在维多利亚州可以免费获得电子出生证明吗？"
+   },
+   "aliases": [
+    "What is a digital birth certificate in Victoria?",
+    "Digital birth certificate Service Victoria app",
+    "Who is eligible for a digital birth certificate?",
+    "维州电子出生证明怎么领",
+    "电子出生证明谁可以申请"
+   ],
+   "answer": {
+    "en": "Yes, for children born on or after 19 February 2019. The Victorian Government has introduced free digital birth certificates for Victorians born on or after that date. Digital certificates are automatically added to your digital wallet in the Service Victoria app, and a parent can apply for the child's digital birth certificate when registering the birth or later through Service Victoria.",
+    "zh": "可以，适用于 2019 年 2 月 19 日及之后出生的孩子。维州政府为在该日期当天或之后出生的维州人推出了免费的电子出生证明。电子证书会自动添加到你在 Service Victoria 应用中的数字钱包，家长可以在登记出生时，或之后通过 Service Victoria 为孩子申请电子出生证明。"
+   },
+   "sources": [
+    {
+     "url": "https://www.bdm.vic.gov.au/get-birth-certificate",
+     "quote": "The Victorian Government has introduced free digital birth certificates for Victorians born on or after 19 February 2019."
+    },
+    {
+     "url": "https://www.bdm.vic.gov.au/get-birth-certificate",
+     "quote": "Digital birth certificates are currently only available to children born on or after 19 February 2019."
+    },
+    {
+     "url": "https://www.bdm.vic.gov.au/get-birth-certificate",
+     "quote": "You can apply for your child’s digital birth certificate when registering a child’s birth or later through Service Victoria"
+    },
+    {
+     "url": "https://www.bdm.vic.gov.au/get-birth-certificate",
+     "quote": "Digital certificates are automatically added to your digital wallet in the Service Victoria app"
+    }
+   ],
+   "tags": [
+    "birth",
+    "bdm",
+    "service-victoria"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-birth-certificate-processing-time",
+   "question": {
+    "en": "How long does it take to get a birth certificate from BDM Victoria?",
+    "zh": "从维州 BDM 申请出生证明需要多久？"
+   },
+   "aliases": [
+    "How long for a paper birth certificate in Victoria?",
+    "When will my birth certificate arrive?",
+    "Birth certificate turnaround time Victoria",
+    "维州出生证明多久能拿到",
+    "BDM 出生证明处理时间"
+   ],
+   "answer": {
+    "en": "A paper birth certificate takes up to 14 days (2 weeks), and a digital certificate is immediate if the birth is already registered. A commemorative birth certificate takes up to 28 days (4 weeks). The processing time starts when BDM receives all required documents, and BDM says to allow extra time for public holidays and postage.",
+    "zh": "纸质出生证明最长需要 14 天（2 周）；如果出生已登记，电子证书可以立即获得。纪念版出生证明最长需要 28 天（4 周）。处理时间从 BDM 收到全部所需文件时开始计算，BDM 提示遇到公共假期和邮寄时要预留额外时间。"
+   },
+   "sources": [
+    {
+     "url": "https://www.bdm.vic.gov.au/get-birth-certificate",
+     "quote": "Our processing times start when we receive all required documents."
+    },
+    {
+     "url": "https://www.bdm.vic.gov.au/get-birth-certificate",
+     "quote": "Paper certificate Up to 14 days (2 weeks)"
+    },
+    {
+     "url": "https://www.bdm.vic.gov.au/get-birth-certificate",
+     "quote": "Digital certificate - If birth already registered Immediate"
+    },
+    {
+     "url": "https://www.bdm.vic.gov.au/get-birth-certificate",
+     "quote": "Commemorative birth certificate Up to 28 days (4 weeks)"
+    },
+    {
+     "url": "https://www.bdm.vic.gov.au/get-birth-certificate",
+     "quote": "Allow extra time for public holidays and postage."
+    }
+   ],
+   "tags": [
+    "birth",
+    "bdm"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-birth-certificate-born-overseas-interstate",
+   "question": {
+    "en": "Can Victoria BDM issue a birth certificate if the person was born overseas or interstate?",
+    "zh": "出生在海外或外州，可以向维州 BDM 申请出生证明吗？"
+   },
+   "aliases": [
+    "I was born in NSW, can I get my birth certificate in Victoria?",
+    "Get a birth certificate for someone born overseas",
+    "在外州出生可以在维州办出生证明吗",
+    "海外出生的出生证明怎么办"
+   ],
+   "answer": {
+    "en": "No. Victoria only issues certificates for births registered in Victoria. If you or your child was born overseas or in another Australian state, you need to apply for a certificate from where the birth was registered.",
+    "zh": "不可以。维多利亚州只为在维州登记的出生签发证书。如果你或你的孩子在海外或澳大利亚其他州出生，需要向出生登记所在地申请证书。"
+   },
+   "sources": [
+    {
+     "url": "https://www.bdm.vic.gov.au/get-birth-certificate",
+     "quote": "Certificates are only issued for births registered in Victoria."
+    },
+    {
+     "url": "https://www.bdm.vic.gov.au/get-birth-certificate",
+     "quote": "If you or your child was born overseas or in another Australian state, you’ll need to apply for a certificate from where the birth was registered."
+    }
+   ],
+   "tags": [
+    "birth",
+    "bdm"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-bdm-identity-documents-birth-certificate",
+   "question": {
+    "en": "What ID do I need to apply for a birth certificate online in Victoria?",
+    "zh": "在维州网上申请出生证明需要什么身份证件？"
+   },
+   "aliases": [
+    "How do I prove my identity to BDM Victoria?",
+    "BDM proof of identity documents",
+    "Identity verification for a Victorian birth certificate",
+    "申请出生证明要哪些证件",
+    "BDM 身份验证需要几份文件"
+   ],
+   "answer": {
+    "en": "To get a birth certificate, you need to prove your identity online by providing two identity documents. You need one document from category 1 and one from category 2, and one of the documents must have a photo.",
+    "zh": "申请出生证明时，需要在线提供两份身份文件来证明身份。你需要一份第 1 类文件和一份第 2 类文件，其中一份必须带有照片。"
+   },
+   "sources": [
+    {
+     "url": "https://www.bdm.vic.gov.au/get-birth-certificate",
+     "quote": "you'll need to prove your identity online by providing two identity documents."
+    },
+    {
+     "url": "https://www.bdm.vic.gov.au/get-birth-certificate",
+     "quote": "You’ll need one document from category 1 and one document from category 2. One of the documents must have a photo."
+    }
+   ],
+   "tags": [
+    "birth",
+    "bdm",
+    "identity"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-bdm-needs-service-victoria-account",
+   "question": {
+    "en": "Do I need a Service Victoria account to order a BDM certificate online?",
+    "zh": "在网上向 BDM 申请证书需要 Service Victoria 账户吗？"
+   },
+   "aliases": [
+    "Why is BDM asking me to link a Service Victoria account?",
+    "Log in to BDM My Items Service Victoria",
+    "BDM 登录要 Service Victoria 账号吗",
+    "BDM 网上办理要关联 Service Victoria 吗"
+   ],
+   "answer": {
+    "en": "Yes. The Births, Deaths and Marriages Victoria website says you now need a Service Victoria account to complete online transactions. When you log into your BDM account, you are asked to link your Service Victoria account or create a new one. Service partners are not affected.",
+    "zh": "需要。维多利亚州出生、死亡与婚姻登记处的网站说明，现在需要 Service Victoria 账户才能完成在线交易。登录 BDM 账户时，系统会要求你关联已有的 Service Victoria 账户或新建一个。服务合作伙伴不受影响。"
+   },
+   "sources": [
+    {
+     "url": "https://www.bdm.vic.gov.au/",
+     "quote": "You now need a Service Victoria account to complete online transactions. When you log into your BDM account, we’ll ask you to link your Service Victoria account or create a new one. Service partners are not affected."
+    }
+   ],
+   "tags": [
+    "bdm",
+    "service-victoria"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-death-certificate-processing-time",
+   "question": {
+    "en": "How many days until a death certificate is issued by BDM Victoria?",
+    "zh": "从维州 BDM 申请死亡证明需要多久？"
+   },
+   "aliases": [
+    "How long to register a death in Victoria?",
+    "Death certificate turnaround Victoria",
+    "维州死亡证明多久办好",
+    "死亡登记和证书要几天"
+   ],
+   "answer": {
+    "en": "A death certificate takes up to 14 days (2 weeks), and a death registration and certificate in the last 3 months takes up to 7 days (1 week). The processing time starts when BDM receives all required documents. Extra time is needed for public holidays and postage.",
+    "zh": "死亡证明最长需要 14 天（2 周）；如果是最近 3 个月内的死亡登记和证书，最长需要 7 天（1 周）。处理时间从 BDM 收到全部所需文件时开始计算，遇到公共假期和邮寄还需要额外时间。"
+   },
+   "sources": [
+    {
+     "url": "https://www.bdm.vic.gov.au/get-death-certificate",
+     "quote": "Death registration and certificate in the last 3 months Up to 7 days (1 week)"
+    },
+    {
+     "url": "https://www.bdm.vic.gov.au/get-death-certificate",
+     "quote": "Death certificate Up to 14 days (2 weeks)"
+    },
+    {
+     "url": "https://www.bdm.vic.gov.au/get-death-certificate",
+     "quote": "Our processing times start when we receive all required documents."
+    },
+    {
+     "url": "https://www.bdm.vic.gov.au/get-death-certificate",
+     "quote": "Allow extra time for public holidays and postage."
+    }
+   ],
+   "tags": [
+    "death",
+    "bdm"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-who-registers-a-death",
+   "question": {
+    "en": "Who registers a death in Victoria?",
+    "zh": "在维多利亚州由谁来办理死亡登记？"
+   },
+   "aliases": [
+    "Do I need to register a death myself?",
+    "How is a death registered in Victoria?",
+    "Can I register a death without a funeral director?",
+    "维州死亡登记谁来办",
+    "没有殡仪馆能登记死亡吗"
+   ],
+   "answer": {
+    "en": "Usually, the funeral director registers a death as part of their services. They complete the death registration after the burial or cremation has taken place. If you want to register a death without a funeral director, BDM asks you to contact it for help.",
+    "zh": "通常由殡仪承办人（funeral director）作为其服务的一部分来登记死亡。他们在安葬或火化完成后办理死亡登记。如果你想在没有殡仪承办人的情况下登记死亡，BDM 请你联系它寻求协助。"
+   },
+   "sources": [
+    {
+     "url": "https://www.bdm.vic.gov.au/register-death",
+     "quote": "Usually, the funeral director registers a death, as part of their services."
+    },
+    {
+     "url": "https://www.bdm.vic.gov.au/register-death",
+     "quote": "If you want to register a death without a funeral director, please contact us for help."
+    }
+   ],
+   "tags": [
+    "death",
+    "bdm"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-marriage-certificate-cost-and-time",
+   "question": {
+    "en": "How much is a marriage certificate in Victoria and how long does it take?",
+    "zh": "维州结婚证书多少钱？要多久？"
+   },
+   "aliases": [
+    "How do I get a copy of my marriage certificate in Victoria?",
+    "Legal marriage certificate price BDM",
+    "Is the party certificate a legal marriage certificate?",
+    "维州结婚证明费用",
+    "结婚证补办要多久"
+   ],
+   "answer": {
+    "en": "A legal marriage certificate from BDM costs $59.10, plus $10.60 for express post within Australia. The processing time is up to 14 days (2 weeks). The certificate you sign at the ceremony (the 'party certificate') is a memento and is not the registered marriage certificate.",
+    "zh": "BDM 的法定结婚证书费用为 59.10 澳元，在澳大利亚境内快递邮寄另收 10.60 澳元。处理时间最长为 14 天（2 周）。婚礼上签署的证书（“party certificate”）只是纪念品，不是登记在册的结婚证书。"
+   },
+   "sources": [
+    {
+     "url": "https://www.bdm.vic.gov.au/get-marriage-certificate",
+     "quote": "Legal certificate $59.10"
+    },
+    {
+     "url": "https://www.bdm.vic.gov.au/get-marriage-certificate",
+     "quote": "Express post (within Australia) $10.60"
+    },
+    {
+     "url": "https://www.bdm.vic.gov.au/get-marriage-certificate",
+     "quote": "Certificate Up to 14 days (2 weeks)"
+    },
+    {
+     "url": "https://www.bdm.vic.gov.au/get-marriage-certificate",
+     "quote": "This certificate is a memento. It is not the registered marriage certificate."
+    }
+   ],
+   "tags": [
+    "marriage",
+    "bdm",
+    "fee"
+   ],
+   "checked": "2026-10-30",
+   "valid_until": "2027-06-30"
+  },
+  {
+   "id": "victoria-notice-of-intended-marriage",
+   "question": {
+    "en": "When do I need to lodge the Notice of Intended Marriage in Victoria?",
+    "zh": "在维多利亚州，结婚意向通知书（NOIM）要在什么时候提交？"
+   },
+   "aliases": [
+    "What is a NOIM?",
+    "How long before the wedding must I book at the Victorian Marriage Registry?",
+    "How far ahead do I need to notify for a wedding in Victoria?",
+    "结婚要提前多久递交 NOIM",
+    "维州结婚登记提前多久预约"
+   ],
+   "answer": {
+    "en": "The law says you must provide a signed and witnessed Notice of Intended Marriage (NOIM) at least one month before your wedding date. The Victorian Marriage Registry also says you need to book your ceremony with it at least one month before your intended wedding date.",
+    "zh": "法律规定，你必须在婚礼日期前至少一个月提交已签名并有见证人见证的结婚意向通知书（NOIM）。维多利亚州婚姻登记处（Victorian Marriage Registry）还说明，你需要在预定婚礼日期前至少一个月向其预约婚礼仪式。"
+   },
+   "sources": [
+    {
+     "url": "https://www.bdm.vic.gov.au/book-your-wedding-ceremony",
+     "quote": "The law says you must provide us a signed and witnessed Notice of Intended Marriage (NOIM) at least one month before your wedding date"
+    },
+    {
+     "url": "https://www.bdm.vic.gov.au/",
+     "quote": "You need to book your ceremony with the Victorian Marriage Registry at least one month before your intended wedding date."
+    }
+   ],
+   "tags": [
+    "marriage",
+    "bdm"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-online-wedding-allowed",
+   "question": {
+    "en": "Can I get married online or without witnesses in Victoria?",
+    "zh": "在维多利亚州可以在线结婚，或在没有见证人的情况下结婚吗？"
+   },
+   "aliases": [
+    "Can a wedding be held by video call in Victoria?",
+    "How many witnesses are needed for a wedding in Victoria?",
+    "维州可以视频结婚吗",
+    "结婚需要几个证人"
+   ],
+   "answer": {
+    "en": "No. A marriage must be solemnised in the physical presence of a celebrant and two witnesses.",
+    "zh": "不可以。婚姻必须在主婚官（celebrant）和两名见证人亲自在场的情况下完成。"
+   },
+   "sources": [
+    {
+     "url": "https://www.bdm.vic.gov.au/getting-married-victoria",
+     "quote": "No. A marriage must be solemnised in the physical presence of a celebrant and two witnesses."
+    }
+   ],
+   "tags": [
+    "marriage",
+    "bdm"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-wedding-ceremony-cost",
+   "question": {
+    "en": "How much does a wedding ceremony cost in Victoria?",
+    "zh": "在维多利亚州举办婚礼仪式要花多少钱？"
+   },
+   "aliases": [
+    "Is there a set fee for getting married in Victoria?",
+    "Cost of a celebrant in Victoria",
+    "维州结婚费用是固定的吗",
+    "证婚人收费多少"
+   ],
+   "answer": {
+    "en": "There is no set fee for a wedding ceremony in Victoria. BDM says to confirm costs with your celebrant or minister before booking your wedding.",
+    "zh": "维多利亚州的婚礼仪式没有固定收费。BDM 表示，预订婚礼前应先向你的证婚人或教士确认费用。"
+   },
+   "sources": [
+    {
+     "url": "https://www.bdm.vic.gov.au/getting-married-victoria",
+     "quote": "There's no set fee for a wedding ceremony in Victoria. Confirm costs with your celebrant or minister before booking your wedding."
+    }
+   ],
+   "tags": [
+    "marriage",
+    "bdm"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-divorce-certificate-bdm",
+   "question": {
+    "en": "Can I get a divorce certificate from BDM Victoria?",
+    "zh": "可以向维州 BDM 申请离婚证明吗？"
+   },
+   "aliases": [
+    "Where do I get a divorce certificate in Victoria?",
+    "Does the Registry of Births Deaths and Marriages hold divorce records?",
+    "维州离婚证去哪里拿",
+    "BDM 有离婚记录吗"
+   ],
+   "answer": {
+    "en": "No. The Registry of Births, Deaths and Marriages Victoria does not hold any divorce records or issue divorce certificates.",
+    "zh": "不能。维多利亚州出生、死亡与婚姻登记处不保存任何离婚记录，也不签发离婚证明。"
+   },
+   "sources": [
+    {
+     "url": "https://www.bdm.vic.gov.au/divorce",
+     "quote": "We don't hold any divorce records or issue divorce certificates."
+    }
+   ],
+   "tags": [
+    "marriage",
+    "bdm"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-change-name-after-marriage",
+   "question": {
+    "en": "Do I need to apply to change my name after getting married in Victoria?",
+    "zh": "在维多利亚州结婚后改姓需要向 BDM 申请吗？"
+   },
+   "aliases": [
+    "How do I change my surname after marriage in Victoria?",
+    "Change of name after marriage BDM",
+    "结婚后改姓怎么办"
+   ],
+   "answer": {
+    "en": "If you married in Australia, you do not need to apply for a change of name. You give the relevant organisations a copy of your Australian marriage certificate.",
+    "zh": "如果你在澳大利亚结婚，就不需要申请更改姓名，只需把澳大利亚的结婚证书副本提供给相关机构。"
+   },
+   "sources": [
+    {
+     "url": "https://www.bdm.vic.gov.au/change-name",
+     "quote": "If you married in Australia, you don’t need to apply for a change of name"
+    },
+    {
+     "url": "https://www.bdm.vic.gov.au/change-name",
+     "quote": "Just give the relevant organisations a copy of your Australian marriage certificate."
+    }
+   ],
+   "tags": [
+    "name-change",
+    "bdm"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-wwcc-who-needs-one",
+   "question": {
+    "en": "Who needs a Working with Children Check in Victoria?",
+    "zh": "谁需要在维多利亚州办理 Working with Children Check？"
+   },
+   "aliases": [
+    "Do I need a WWCC to volunteer at my child's school?",
+    "Do I need a Working with Children Clearance for paid work?",
+    "Is it illegal to work with children without a WWCC?",
+    "WWCC 谁需要办",
+    "做儿童志愿者要不要办 WWC Check"
+   ],
+   "answer": {
+    "en": "You qualify for a Working with Children Check if all 5 of the page's criteria are true. These include being an adult volunteer, paid or self-employed worker caring for children under 18 years of age, and working in one of the occupational fields listed in the Act. You are breaking the law if you start child-related work without applying for a Clearance first. Your organisation is also breaking the law if it lets you start before you have applied.",
+    "zh": "如果该页面列出的 5 项条件全部符合，你就符合办理 Working with Children Check 的资格。这些条件包括：你是照顾 18 岁以下儿童的成年志愿者、受薪员工或自雇人士，并且在法案列出的职业领域内工作。在未先申请 Clearance 的情况下开始儿童相关工作属于违法。你所在的机构如果在你申请之前就让你开始儿童相关工作，同样违法。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vic.gov.au/do-i-need-WWC-Clearance",
+     "quote": "If all 5 of the statements below are true, then you qualify for a Working with Children Check"
+    },
+    {
+     "url": "https://www.vic.gov.au/do-i-need-WWC-Clearance",
+     "quote": "You are an adult volunteer, paid, or self-employed worker caring for children under 18 years of age."
+    },
+    {
+     "url": "https://www.vic.gov.au/do-i-need-WWC-Clearance",
+     "quote": "You work or care for children in any of the occupational fields referred to as ‘service, places, bodies or activities’ in the Act."
+    },
+    {
+     "url": "https://www.vic.gov.au/WWC-Check-explained",
+     "quote": "You are breaking the law if you start child-related work without applying for a WWC Clearance first. Your organisation is also breaking the law if they allow you to engage in child-related work before you have applied for a Clearance."
+    }
+   ],
+   "tags": [
+    "wwcc",
+    "working-with-children"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-wwcc-cost",
+   "question": {
+    "en": "How much does a Working with Children Check cost in Victoria?",
+    "zh": "维州 Working with Children Check 多少钱？"
+   },
+   "aliases": [
+    "Is the WWCC free for volunteers?",
+    "Employee WWCC fee Victoria",
+    "How much to renew a Working with Children Check?",
+    "WWCC 费用",
+    "志愿者办 WWC Check 免费吗"
+   ],
+   "answer": {
+    "en": "For fees from 1 July 2026 to 30 June 2027, a volunteer Clearance, or its renewal, is free. An employee Clearance costs $139.20, and renewing an employee Clearance costs $105.30. Replacing an employee Clearance card costs $8.60.",
+    "zh": "2026 年 7 月 1 日至 2027 年 6 月 30 日的费用如下：志愿者 Clearance 及其续期免费；雇员 Clearance 为 139.20 澳元，雇员 Clearance 续期为 105.30 澳元。补发雇员 Clearance 卡为 8.60 澳元。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vic.gov.au/WWC-Check-explained",
+     "quote": "Fees from 1 July 2026 to 30 June 2027"
+    },
+    {
+     "url": "https://www.vic.gov.au/WWC-Check-explained",
+     "quote": "Volunteer Clearance / renewal of volunteer Clearance / replacement of volunteer card Free"
+    },
+    {
+     "url": "https://www.vic.gov.au/WWC-Check-explained",
+     "quote": "Employee Clearance $139.20"
+    },
+    {
+     "url": "https://www.vic.gov.au/WWC-Check-explained",
+     "quote": "Renewal of employee Clearance $105.30"
+    },
+    {
+     "url": "https://www.vic.gov.au/WWC-Check-explained",
+     "quote": "Replacement of employee Clearance card $8.60"
+    }
+   ],
+   "tags": [
+    "wwcc",
+    "fee"
+   ],
+   "checked": "2026-10-30",
+   "valid_until": "2027-06-30"
+  },
+  {
+   "id": "victoria-wwcc-volunteer-vs-employee",
+   "question": {
+    "en": "Should I apply for a volunteer or employee Working with Children Check?",
+    "zh": "我应该申请志愿者还是雇员类别的 Working with Children Check？"
+   },
+   "aliases": [
+    "What is the difference between volunteer and employee WWCC?",
+    "Can a volunteer WWC Clearance be used for paid work?",
+    "志愿者和雇员 WWC Check 有什么区别",
+    "有薪工作要办哪种 WWC"
+   ],
+   "answer": {
+    "en": "If you are paid for child-related work (excluding reimbursement of out-of-pocket expenses), you need to apply as an employee. If you do unpaid volunteer child-related work, you can apply for a volunteer Clearance, even if you are reimbursed for out-of-pocket expenses. The employee Clearance covers both paid and volunteer work.",
+    "zh": "如果你从事儿童相关工作并领取报酬（不含实报实销的自付费用），就需要以雇员身份申请。如果你从事无偿的儿童相关志愿工作，可以申请志愿者 Clearance，即使你的自付费用获得报销也一样。雇员 Clearance 同时涵盖有薪工作和志愿工作。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vic.gov.au/WWC-Check-explained",
+     "quote": "If you’re getting paid for child-related work (excluding reimbursement of out-of-pocket expenses), you’ll need to apply as an employee."
+    },
+    {
+     "url": "https://www.vic.gov.au/WWC-Check-explained",
+     "quote": "If you plan to do volunteer child-related work in Victoria (where you're not paid for the work), you’ll likely need a WWC Clearance."
+    },
+    {
+     "url": "https://www.vic.gov.au/WWC-Check-explained",
+     "quote": "If you're reimbursed for any out-of-pocket expenses you incur in doing voluntary work, you are still eligible for this type of Clearance."
+    },
+    {
+     "url": "https://www.vic.gov.au/WWC-Check-explained",
+     "quote": "The employee Clearance covers both paid and volunteer work."
+    }
+   ],
+   "tags": [
+    "wwcc"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-wwcc-how-long-valid",
+   "question": {
+    "en": "How long is a Working with Children Check valid for in Victoria?",
+    "zh": "维州的 Working with Children Check 有效期多久？"
+   },
+   "aliases": [
+    "Does a WWCC expire?",
+    "How often do I renew my Working with Children Clearance?",
+    "WWC Clearance 有效期",
+    "WWC Check 几年要续一次"
+   ],
+   "answer": {
+    "en": "If you pass the Working with Children Check, you are issued a WWC Clearance that is valid for 5 years, unless it is suspended, cancelled or surrendered. Clearance holders are continuously monitored, and a Clearance can be suspended or revoked if new relevant information arises.",
+    "zh": "如果你通过 Working with Children Check，会获发有效期为 5 年的 WWC Clearance，除非它被暂停、取消或交回。持有人会受到持续监测，如果出现新的相关信息，Clearance 可能被暂停或撤销。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vic.gov.au/WWC-Check-explained",
+     "quote": "If you pass the WWC Check, you will be issued with a WWC Clearance that is valid for 5 years, unless it is suspended, cancelled or surrendered."
+    },
+    {
+     "url": "https://www.vic.gov.au/WWC-Check-explained",
+     "quote": "Clearance holders are continuously monitored, and their Clearance can be suspended or revoked if new relevant information arises."
+    }
+   ],
+   "tags": [
+    "wwcc"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-wwcc-processing-time",
+   "question": {
+    "en": "How long does a Working with Children Check take to process?",
+    "zh": "Working with Children Check 的审批要多久？"
+   },
+   "aliases": [
+    "How long to get a WWCC in Victoria?",
+    "Why is my Working with Children Check taking so long?",
+    "WWC Check 要等多久",
+    "WWC Clearance 审批时间"
+   ],
+   "answer": {
+    "en": "Applications with no criminal history, relevant findings or additional information to consider may be processed within days. Applications that need an assessment generally take 3-12 weeks to process. The page also says that, because of current high demand, assessments may take longer than six months.",
+    "zh": "没有犯罪记录、相关裁定或需要考虑的额外信息的申请，可能在几天内处理完毕。需要进行评估的申请通常需要 3 至 12 周。该页面还说，由于目前需求量很大，评估可能需要超过六个月。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vic.gov.au/application-process-wwcc",
+     "quote": "Applications where a person has no criminal history, relevant findings against them or additional information that needs to be considered may be processed within days."
+    },
+    {
+     "url": "https://www.vic.gov.au/application-process-wwcc",
+     "quote": "Generally, these applications take 3-12 weeks to process."
+    },
+    {
+     "url": "https://www.vic.gov.au/application-process-wwcc",
+     "quote": "Because of current high demand for WWC Checks, processing times have been affected and assessments may take longer than six months."
+    }
+   ],
+   "tags": [
+    "wwcc"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-wwcc-identity-documents",
+   "question": {
+    "en": "What ID do I need to apply for a Working with Children Check online?",
+    "zh": "在线申请 Working with Children Check 需要什么身份证件？"
+   },
+   "aliases": [
+    "How do I verify my identity for a WWCC?",
+    "Can I apply for a WWCC at Australia Post?",
+    "申请 WWC Check 要带什么证件",
+    "WWC Check 可以在邮局验证身份吗"
+   ],
+   "answer": {
+    "en": "To apply online at Service Victoria, you need to verify your identity with two documents: one from Group A and one from Group B. If you do not have the two required documents to verify your identity online, you may verify your identity in person at Australia Post.",
+    "zh": "在 Service Victoria 在线申请时，你需要用两份文件验证身份：A 组一份、B 组一份。如果你没有在线验证身份所需的两份文件，可以到澳大利亚邮政（Australia Post）当面验证身份。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vic.gov.au/application-process-wwcc",
+     "quote": "you will need to verify your identity with two documents:"
+    },
+    {
+     "url": "https://www.vic.gov.au/application-process-wwcc",
+     "quote": "One document from Group A, AND one document from Group B"
+    },
+    {
+     "url": "https://www.vic.gov.au/application-process-wwcc",
+     "quote": "If you do not have the two required documents to verify your identity online, you may verify your identity in-person at Australia Post."
+    }
+   ],
+   "tags": [
+    "wwcc",
+    "identity"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-wwcc-work-while-waiting",
+   "question": {
+    "en": "Can I start work with children while my Working with Children Check is still being processed?",
+    "zh": "Working with Children Check 还在审批期间，我能开始做儿童相关工作吗？"
+   },
+   "aliases": [
+    "Can I volunteer with kids while my WWCC is pending?",
+    "Can I work before my WWC Clearance arrives?",
+    "WWC Check 审批中能上班吗",
+    "没拿到 WWC 前能当志愿者吗"
+   ],
+   "answer": {
+    "en": "Most people can, as the Act allows most people to engage in child-related work while their application is being assessed. However, by law you must not work if you have been charged with, convicted or found guilty of a sexual, violent or drug offence listed in clause 2 of Schedule 5 of the Act, among other listed situations. You must also have applied for a Clearance first.",
+    "zh": "大多数人可以，因为法案允许大多数人在申请评估期间从事儿童相关工作。但依法规定，如果你曾因法案附表 5 第 2 条所列的性犯罪、暴力犯罪或毒品犯罪被起诉、定罪或被裁定有罪，以及符合其他所列情形，就不得工作。你还必须先提交 Clearance 申请。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vic.gov.au/application-process-wwcc",
+     "quote": "The Act allows most people to engage in child-related work while their WWC Check application is being assessed. However, by law, you must not work if you:"
+    },
+    {
+     "url": "https://www.vic.gov.au/application-process-wwcc",
+     "quote": "have been charged with, convicted or found guilty of a sexual, violent or drug offence listed in clause 2 of Schedule 5 of the Act"
+    },
+    {
+     "url": "https://www.vic.gov.au/WWC-Check-explained",
+     "quote": "You are breaking the law if you start child-related work without applying for a WWC Clearance first."
+    }
+   ],
+   "tags": [
+    "wwcc"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-wwcc-digital-card",
+   "question": {
+    "en": "Is there a digital Working with Children Check card in Victoria?",
+    "zh": "维州有电子版的 Working with Children Check 卡吗？"
+   },
+   "aliases": [
+    "How do I add my WWCC to my phone?",
+    "Can I scan someone's WWC card?",
+    "WWC 电子卡怎么用",
+    "怎么验证别人的 WWC 卡是否有效"
+   ],
+   "answer": {
+    "en": "Yes. Your digital card is stored on the Service Vic app. You can see whether someone's card is current or expired by using the Service Victoria app to scan the QR code on the digital card. A cancelled or suspended card cannot be scanned with the app.",
+    "zh": "有。你的电子卡存储在 Service Vic 应用中。你可以用 Service Victoria 应用扫描电子卡上的二维码，查看某人的卡是否有效或已过期。已被取消或暂停的卡无法用该应用扫描。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vic.gov.au/WWC-Check-explained",
+     "quote": "Your digital card is stored on your Service Vic app"
+    },
+    {
+     "url": "https://www.vic.gov.au/WWC-Check-explained",
+     "quote": "You can see if someone’s card is current or expired by using the Service Victoria app to scan the QR code on the digital card. A cancelled or suspended card can’t be scanned with the app."
+    }
+   ],
+   "tags": [
+    "wwcc",
+    "service-victoria"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-national-police-check-cost",
+   "question": {
+    "en": "How much does a National Police Check cost in Victoria?",
+    "zh": "在维多利亚州办理 National Police Check（无犯罪记录证明）多少钱？"
+   },
+   "aliases": [
+    "How much is a police clearance in Victoria?",
+    "Is there a discount for volunteers on a police check?",
+    "Victoria Police criminal record check fee",
+    "警察无犯罪证明多少钱",
+    "志愿者办警察证明有优惠吗"
+   ],
+   "answer": {
+    "en": "The standard fee for a National Police Check is $91.50 (GST exempt). Victorian volunteers and students on placement qualify for a processing fee discount, and the reduced fee for a volunteer is $31.10. For online applications, a Community Volunteer Fee (CVF) number must be included to get the reduced fee.",
+    "zh": "National Police Check 的标准费用为 91.50 澳元（免 GST）。维州的志愿者和实习学生可享受申请处理费折扣，志愿者的优惠费用为 31.10 澳元。在线申请时，必须附上社区志愿者费用（CVF）编号才能获得优惠费用。"
+   },
+   "sources": [
+    {
+     "url": "https://www.police.vic.gov.au/national-police-check-fees-charges",
+     "quote": "Standard fee $91.50"
+    },
+    {
+     "url": "https://www.police.vic.gov.au/national-police-check-fees-charges",
+     "quote": "Reduced fee for a volunteer* $31.10"
+    },
+    {
+     "url": "https://www.police.vic.gov.au/national-police-check-fees-charges",
+     "quote": "Victorian volunteers and students on placement qualify for a National Police Check application processing fee discount."
+    },
+    {
+     "url": "https://www.police.vic.gov.au/national-police-check-fees-charges",
+     "quote": "Online applications: you must include the Community Volunteer Fee (CVF) Number in your application."
+    }
+   ],
+   "tags": [
+    "police-check",
+    "fee"
+   ],
+   "checked": "2026-10-30",
+   "valid_until": "2027-06-30"
+  },
+  {
+   "id": "victoria-national-police-check-what-for",
+   "question": {
+    "en": "What is a National Police Check used for in Victoria?",
+    "zh": "National Police Check 有什么用？"
+   },
+   "aliases": [
+    "Where do I apply for a police check in Victoria?",
+    "What is a National Police Certificate?",
+    "How do I get a criminal record check in Victoria?",
+    "无犯罪记录证明怎么办",
+    "警察证明可以用来干什么"
+   ],
+   "answer": {
+    "en": "You apply for a National Police Check and receive a National Police Certificate that you can use for employment, volunteering and occupation-related licensing and registration. Employers, organisations and regulators may ask you to provide it. The certificate contains an official record of any disclosable criminal history.",
+    "zh": "你申请 National Police Check 后会获得 National Police Certificate，可用于就业、志愿工作以及与职业相关的执照和注册。雇主、机构和监管机构可能会要求你提供。该证书载有任何可披露犯罪记录的官方记录。"
+   },
+   "sources": [
+    {
+     "url": "https://www.police.vic.gov.au/national-police-records-checks",
+     "quote": "Apply for a National Police Check and receive a National Police Certificate you can use for employment, volunteering and occupation-related licensing and registration."
+    },
+    {
+     "url": "https://www.police.vic.gov.au/apply-national-police-check",
+     "quote": "Employers, organisations, and regulators may request that you provide a National Police Certificate"
+    },
+    {
+     "url": "https://www.police.vic.gov.au/national-police-certificates",
+     "quote": "Apply for a National Police Check and receive a National Police Certificate containing an official record of any disclosable criminal history."
+    }
+   ],
+   "tags": [
+    "police-check"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-national-police-check-id-required",
+   "question": {
+    "en": "What ID do I need for a National Police Check in Victoria?",
+    "zh": "办理 National Police Check 需要什么身份证件？"
+   },
+   "aliases": [
+    "How many ID documents for a Victoria Police check?",
+    "Can I apply for a police check by post?",
+    "办警察证明要几份证件",
+    "邮寄申请警察证明要多少分证件"
+   ],
+   "answer": {
+    "en": "To apply for a National Police Check online, you need to provide three identity documents, including one photo ID. The page also says you need access to, or to borrow, a smartphone to complete an online application. For postal and in-person applications, 100 points of identification must be provided.",
+    "zh": "在线申请 National Police Check 时，你需要提供三份身份证件，其中包括一份带照片的证件。该页面还说明，你需要能使用（或借用）智能手机才能完成在线申请。邮寄和现场申请则需要提供 100 分的身份证明。"
+   },
+   "sources": [
+    {
+     "url": "https://www.police.vic.gov.au/apply-national-police-check",
+     "quote": "To apply for a National Police Check you will need to provide three identity documents, including one photo ID."
+    },
+    {
+     "url": "https://www.police.vic.gov.au/apply-national-police-check",
+     "quote": "you will need access, or to borrow, a smartphone to complete an online application."
+    },
+    {
+     "url": "https://www.police.vic.gov.au/apply-national-police-check",
+     "quote": "100 points of identification must be provided:"
+    }
+   ],
+   "tags": [
+    "police-check",
+    "identity"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-national-police-check-validity",
+   "question": {
+    "en": "How long is a National Police Check certificate valid for?",
+    "zh": "National Police Check 证书的有效期是多久？"
+   },
+   "aliases": [
+    "Can I reuse my police check for another job?",
+    "Does a police check expire?",
+    "警察证明有效期多久",
+    "警察证明可以用于多份工作吗"
+   ],
+   "answer": {
+    "en": "A National Police Check is a 'point in time' check, so the results only reflect police records up to the date and time the result is released. The organisation that requires the check typically determines how long a result is acceptable. A certificate can only be used for a single reason or job.",
+    "zh": "National Police Check 只是“某一时间点”的检查，结果只反映到结果发出的日期和时间为止的警方记录。要求提供该检查的机构通常自行决定结果的可接受期限。一份证书只能用于单一的原因或工作。"
+   },
+   "sources": [
+    {
+     "url": "https://www.police.vic.gov.au/national-police-certificates",
+     "quote": "A check is considered a 'point in time' check only, which means the results only reflect police record on and up until the date and time the result is released."
+    },
+    {
+     "url": "https://www.police.vic.gov.au/national-police-certificates",
+     "quote": "The organisation that requires the check will typically determine the timeframe acceptable for a check result to be valid"
+    },
+    {
+     "url": "https://www.police.vic.gov.au/national-police-certificates",
+     "quote": "A National Police Check Certificate can only be used for a single reason or job."
+    }
+   ],
+   "tags": [
+    "police-check"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-who-can-witness-statutory-declaration",
+   "question": {
+    "en": "Who can witness a statutory declaration in Victoria?",
+    "zh": "在维多利亚州，谁可以见证法定声明（statutory declaration）？"
+   },
+   "aliases": [
+    "Do I need a JP to witness a stat dec?",
+    "Can a pharmacist or nurse witness a statutory declaration in Victoria?",
+    "Can a police officer witness my stat dec?",
+    "谁可以做 stat dec 的见证人",
+    "药剂师可以见证法定声明吗"
+   ],
+   "answer": {
+    "en": "Many people can witness a statutory declaration in Victoria, including a Justice of the Peace and a police officer. The list of authorised witnesses also includes a nurse, a pharmacist, a midwife and a notary public. You must sign the declaration in front of your witness, and authorised witnesses do not have to accept a request to witness one.",
+    "zh": "在维多利亚州，许多人可以见证法定声明，包括太平绅士（Justice of the Peace）和警察。获授权的见证人名单还包括护士、药剂师、助产士和公证人（notary public）。你必须在见证人面前签署声明，而且获授权的见证人没有义务接受见证请求。"
+   },
+   "sources": [
+    {
+     "url": "https://www.justice.vic.gov.au/statdecs",
+     "quote": "Many people can witness a statutory declaration, including:"
+    },
+    {
+     "url": "https://www.justice.vic.gov.au/statdecs",
+     "quote": "Justice of the Peace"
+    },
+    {
+     "url": "https://www.justice.vic.gov.au/statdecs",
+     "quote": "police officer"
+    },
+    {
+     "url": "https://www.justice.vic.gov.au/statdecs",
+     "quote": "Nurse"
+    },
+    {
+     "url": "https://www.justice.vic.gov.au/statdecs",
+     "quote": "Pharmacist"
+    },
+    {
+     "url": "https://www.justice.vic.gov.au/statdecs",
+     "quote": "Midwife"
+    },
+    {
+     "url": "https://www.justice.vic.gov.au/statdecs",
+     "quote": "Notary public"
+    },
+    {
+     "url": "https://www.justice.vic.gov.au/statdecs",
+     "quote": "You must sign your statutory declaration in front of your witness."
+    },
+    {
+     "url": "https://www.justice.vic.gov.au/statdecs",
+     "quote": "authorised witnesses do not have to accept a request to witness a statutory declaration"
+    }
+   ],
+   "tags": [
+    "jp",
+    "statutory-declaration"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-false-statutory-declaration-penalty",
+   "question": {
+    "en": "What happens if a statutory declaration is false in Victoria?",
+    "zh": "在维多利亚州，法定声明内容不实会有什么后果？"
+   },
+   "aliases": [
+    "Can I go to jail for a false stat dec?",
+    "What is a statutory declaration?",
+    "法定声明造假会怎样",
+    "什么是 statutory declaration"
+   ],
+   "answer": {
+    "en": "A statutory declaration is a written statement that you sign and declare to be true and correct in the presence of an authorised witness. You can be charged with a criminal offence if the information is false. The penalty can be a fine of up to 600 penalty units, imprisonment for up to 5 years, or both.",
+    "zh": "法定声明是一份书面陈述，你在获授权见证人面前签署，并声明其内容真实无误。如果内容不实，你可能被控刑事罪名。可能的处罚包括最高 600 个罚款单位的罚款、最高 5 年监禁，或两者并罚。"
+   },
+   "sources": [
+    {
+     "url": "https://www.justice.vic.gov.au/statdecs",
+     "quote": "A statutory declaration is a written statement that you (the declarant) sign and declare to be true and correct in the presence of an authorised witness."
+    },
+    {
+     "url": "https://www.justice.vic.gov.au/statdecs",
+     "quote": "You can be charged with a criminal offence if the information is false."
+    },
+    {
+     "url": "https://www.justice.vic.gov.au/statdecs",
+     "quote": "You can receive a fine of up to 600 penalty units"
+    }
+   ],
+   "tags": [
+    "jp",
+    "statutory-declaration"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-find-a-justice-of-the-peace",
+   "question": {
+    "en": "How do I find a Justice of the Peace (JP) in Victoria?",
+    "zh": "在维多利亚州怎样找到太平绅士（JP）？"
+   },
+   "aliases": [
+    "Where can I get a document witnessed by a JP?",
+    "Are JPs free in Victoria?",
+    "Where are the document signing stations?",
+    "哪里可以找 JP 签文件",
+    "JP 签字站在哪里"
+   ],
+   "answer": {
+    "en": "The justice.vic.gov.au website has a 'Find a Justice of the Peace by appointment' page, and it asks you to check the listings to see when JPs are available before calling. You can also find a Justice of the Peace at a document signing station. The page notes that JPs are volunteers who offer a valuable service to the community.",
+    "zh": "justice.vic.gov.au 网站设有“Find a Justice of the Peace by appointment”页面，并要求你致电前先查看列表，了解太平绅士何时有空。你也可以在文件签署站（document signing station）找到太平绅士。该页面指出，太平绅士是为社区提供宝贵服务的志愿者。"
+   },
+   "sources": [
+    {
+     "url": "https://www.justice.vic.gov.au/justice-system/legal-assistance/find-a-justice-of-the-peace-by-appointment",
+     "quote": "Justices of the Peace are volunteers who offer a valuable service to the community."
+    },
+    {
+     "url": "https://www.justice.vic.gov.au/justice-system/legal-assistance/find-a-justice-of-the-peace-by-appointment",
+     "quote": "Before calling, please check the listings below to see when they are available:"
+    },
+    {
+     "url": "https://www.justice.vic.gov.au/justice-system/legal-assistance/find-a-justice-of-the-peace-by-appointment",
+     "quote": "You can also find a Justice of the Peace at a document signing station"
+    }
+   ],
+   "tags": [
+    "jp"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-contacting-a-jp-what-to-leave",
+   "question": {
+    "en": "What should I do when I call a Justice of the Peace for an appointment in Victoria?",
+    "zh": "预约太平绅士（JP）时来电应该留什么信息？"
+   },
+   "aliases": [
+    "What hours can I call a JP in Victoria?",
+    "JP business hours and after hours contact",
+    "JP 什么时候可以联系",
+    "给 JP 打电话要说什么"
+   ],
+   "answer": {
+    "en": "For JPs available during business hours only, contact them between 9am and 5pm. For JPs available after hours, contact them between 5pm and 8pm. When contacting a Justice of the Peace, leave your name, contact number, and the document requiring witnessing. Some JPs may not answer calls from private numbers.",
+    "zh": "对于只在营业时间提供服务的太平绅士，请在上午 9 点至下午 5 点之间联系。对于提供下班后服务的太平绅士，请在下午 5 点至晚上 8 点之间联系。联系时请留下你的姓名、联系电话和需要见证的文件。有些太平绅士可能不接听私人号码的来电。"
+   },
+   "sources": [
+    {
+     "url": "https://www.justice.vic.gov.au/justice-system/legal-assistance/find-a-justice-of-the-peace-by-appointment",
+     "quote": "For JPs available during business hours only"
+    },
+    {
+     "url": "https://www.justice.vic.gov.au/justice-system/legal-assistance/find-a-justice-of-the-peace-by-appointment",
+     "quote": "contact between 9am and 5pm"
+    },
+    {
+     "url": "https://www.justice.vic.gov.au/justice-system/legal-assistance/find-a-justice-of-the-peace-by-appointment",
+     "quote": "For JPs available after hours"
+    },
+    {
+     "url": "https://www.justice.vic.gov.au/justice-system/legal-assistance/find-a-justice-of-the-peace-by-appointment",
+     "quote": "contact between 5pm and 8pm"
+    },
+    {
+     "url": "https://www.justice.vic.gov.au/justice-system/legal-assistance/find-a-justice-of-the-peace-by-appointment",
+     "quote": "When contacting a justice of the peace, please leave your name, contact number, and the document requiring witnessing. Please also note that some justices of the peace may not answer calls from private numbers."
+    }
+   ],
+   "tags": [
+    "jp"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "service-victoria-digital-proof-of-age",
+   "question": {
+    "en": "How much is a digital Proof of Age in Victoria and who can get one?",
+    "zh": "维州电子 Proof of Age 多少钱？谁可以申请？"
+   },
+   "aliases": [
+    "Can I get a Proof of Age without a driver licence?",
+    "How old do I have to be for a digital Proof of Age?",
+    "电子年龄证明怎么办",
+    "没有驾照能办 Proof of Age 吗"
+   ],
+   "answer": {
+    "en": "A digital Proof of Age costs $10. Any Victorian aged 15 and over can get one, and there is no need to have a licence. If you remove your card and need to add it again, you have to apply and pay the fee again.",
+    "zh": "电子 Proof of Age 的费用为 10 澳元。任何 15 岁及以上的维州居民都可以申请，不需要持有驾照。如果你移除了卡片后需要再次添加，必须重新申请并再次支付费用。"
+   },
+   "sources": [
+    {
+     "url": "https://www.service.vic.gov.au/find-services/digital-wallet/digital-proof-of-age/faq",
+     "quote": "Any Victorian aged 15 and over can get a digital Proof of Age - there’s no need to have a licence."
+    },
+    {
+     "url": "https://www.service.vic.gov.au/find-services/digital-wallet/digital-proof-of-age/faq",
+     "quote": "It costs $10 to get a digital proof of age. If you remove your card and need to add it again, you'll have to apply and pay the fee again."
+    }
+   ],
+   "tags": [
+    "service-victoria",
+    "proof-of-age"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "service-victoria-digital-wallet-cards",
+   "question": {
+    "en": "What can I store in the Service Victoria digital wallet?",
+    "zh": "Service Victoria 数字钱包里可以存放哪些证件？"
+   },
+   "aliases": [
+    "How many cards can I add to the Service Victoria app?",
+    "Can I put my WWCC and driver licence in the Service Victoria app?",
+    "Service Victoria 应用能存几张卡",
+    "数字钱包可以放驾照吗"
+   ],
+   "answer": {
+    "en": "You can store up to 10 government cards in the Service Victoria digital wallet. These include a digital driver licence, a Working with Children Check card, a Seniors Card or Seniors Business Discount Card, a Veterans Card, and more.",
+    "zh": "你可以在 Service Victoria 数字钱包中最多存放 10 张政府证件，包括数字驾驶执照、Working with Children Check 卡、Seniors Card 或 Seniors Business Discount Card、Veterans Card 等。"
+   },
+   "sources": [
+    {
+     "url": "https://www.service.vic.gov.au/find-services/digital-wallet",
+     "quote": "You can store up to 10 government cards in the Service Victoria digital wallet"
+    }
+   ],
+   "tags": [
+    "service-victoria"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "service-victoria-account-needs-australian-mobile",
+   "question": {
+    "en": "Do I need a mobile phone to use a Service Victoria account?",
+    "zh": "使用 Service Victoria 账户必须有手机吗？"
+   },
+   "aliases": [
+    "Can I use an overseas phone number for Service Victoria?",
+    "Service Victoria multi-factor authentication",
+    "Service Victoria 能用国外手机号吗",
+    "Service Victoria 账户安全验证怎么设置"
+   ],
+   "answer": {
+    "en": "Yes. Service Victoria says you can't use account security or access a Service Victoria account without a mobile phone. You can only use an Australian mobile number to receive a one-time passcode, and international numbers aren't supported.",
+    "zh": "需要。Service Victoria 表示，没有手机就无法使用账户安全功能或访问 Service Victoria 账户。你只能使用澳大利亚手机号码接收一次性验证码，不支持国际号码。"
+   },
+   "sources": [
+    {
+     "url": "https://www.service.vic.gov.au/find-services/digital-wallet/create-account/account-security",
+     "quote": "You can't use account security or access a Service Victoria account without a mobile phone."
+    },
+    {
+     "url": "https://www.service.vic.gov.au/find-services/digital-wallet/create-account/account-security",
+     "quote": "You can only use an Australian mobile number to receive a one-time passcode. International numbers aren’t supported."
+    }
+   ],
+   "tags": [
+    "service-victoria",
+    "account"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "boroondara-rates-due-dates-2026-27",
+   "question": {
+    "en": "When are City of Boroondara council rates due in 2026-27?",
+    "zh": "2026-27 年度 City of Boroondara 的 council rates 什么时候到期？"
+   },
+   "aliases": [
+    "Boroondara rates instalment dates",
+    "Can I pay Boroondara rates in instalments?",
+    "Boroondara 市政税缴费日期",
+    "council rates 分期付款日期"
+   ],
+   "answer": {
+    "en": "The City of Boroondara lists payment options for 2026–2027. Paying in full with a 2% discount (Council rates and charges only) is due 31 August 2026, and paying in full with no discount is due 15 February 2027. Paying in 4 instalments is due 30 September 2026, 30 November 2026, 28 February 2027 and 31 May 2027.",
+    "zh": "City of Boroondara 公布了 2026–2027 年度的缴费方式。一次付清并享受 2% 折扣（仅限 Council 税费）的到期日为 2026 年 8 月 31 日，一次付清但无折扣的到期日为 2027 年 2 月 15 日。分 4 期缴纳的到期日为 2026 年 9 月 30 日、2026 年 11 月 30 日、2027 年 2 月 28 日和 2027 年 5 月 31 日。"
+   },
+   "sources": [
+    {
+     "url": "https://www.boroondara.vic.gov.au/services/rates/pay-your-rates",
+     "quote": "Payment options and due dates (2026–2027)"
+    },
+    {
+     "url": "https://www.boroondara.vic.gov.au/services/rates/pay-your-rates",
+     "quote": "Pay in full with a 2% discount (applies to Council rates and charges only) 31 August 2026"
+    },
+    {
+     "url": "https://www.boroondara.vic.gov.au/services/rates/pay-your-rates",
+     "quote": "Pay in full (no discount) 15 February 2027"
+    },
+    {
+     "url": "https://www.boroondara.vic.gov.au/services/rates/pay-your-rates",
+     "quote": "Pay in 4 instalments 30 September 2026 30 November 2026 28 February 2027 31 May 2027"
+    }
+   ],
+   "tags": [
+    "council-rates",
+    "boroondara"
+   ],
+   "checked": "2026-10-30",
+   "valid_until": "2027-05-31"
+  },
+  {
+   "id": "boroondara-how-to-pay-rates",
+   "question": {
+    "en": "How can I pay my council rates in the City of Boroondara?",
+    "zh": "在 City of Boroondara 可以怎样缴纳 council rates？"
+   },
+   "aliases": [
+    "Can I pay Boroondara rates by credit card?",
+    "Does Boroondara accept direct debit for rates?",
+    "Boroondara 市政税怎么缴",
+    "council rates 可以用信用卡吗"
+   ],
+   "answer": {
+    "en": "The City of Boroondara lets you pay rates online using your rates notice reference number, by direct debit from a savings or cheque account, by phone on 1300 722 151, or at any Australia Post office. At its customer service counter at 8 Inglesby Road, Camberwell, you can pay with cash, EFTPOS or credit card (Visa, Mastercard or Amex). Credit cards aren't accepted for direct debit.",
+    "zh": "City of Boroondara 允许你用税单参考号在网上缴费、从储蓄或支票账户直接扣款、拨打 1300 722 151 电话缴费，或到任何一家澳大利亚邮政（Australia Post）网点缴费。在位于 Camberwell Inglesby Road 8 号的客服柜台，可以用现金、EFTPOS 或信用卡（Visa、Mastercard 或 Amex）付款。直接扣款不接受信用卡。"
+   },
+   "sources": [
+    {
+     "url": "https://www.boroondara.vic.gov.au/services/rates/pay-your-rates",
+     "quote": "Pay securely online using your rates notice reference number."
+    },
+    {
+     "url": "https://www.boroondara.vic.gov.au/services/rates/pay-your-rates",
+     "quote": "(Credit cards aren't accepted for direct debit.)"
+    },
+    {
+     "url": "https://www.boroondara.vic.gov.au/services/rates/pay-your-rates",
+     "quote": "Call 1300 722 151 and follow the prompts for secure payment."
+    },
+    {
+     "url": "https://www.boroondara.vic.gov.au/services/rates/pay-your-rates",
+     "quote": "Pay in person at any Australia Post Office using:"
+    },
+    {
+     "url": "https://www.boroondara.vic.gov.au/services/rates/pay-your-rates",
+     "quote": "You can pay your rates using cash, EFTPOS or credit card (Visa, Mastercard or Amex)."
+    }
+   ],
+   "tags": [
+    "council-rates",
+    "boroondara"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-rate-cap-2026-27",
+   "question": {
+    "en": "What is the Victorian council rate cap for 2026-27?",
+    "zh": "2026-27 年度维州 council 税收（rates）涨幅上限是多少？"
+   },
+   "aliases": [
+    "How much can councils increase rates in Victoria?",
+    "What is rate capping in Victoria?",
+    "council rates 涨幅限制",
+    "维州市政税能涨多少"
+   ],
+   "answer": {
+    "en": "According to the City of Boroondara, the Victorian Government caps the total amount councils can raise from rates each year, and for 2026-27 this cap is 2.75%. Individual property rates may increase or decrease by different percentages, depending on how each property's value has changed. The waste management charge, waste levy and Emergency Services and Volunteer Fund are not subject to the cap.",
+    "zh": "据 City of Boroondara 介绍，维州政府每年限制各 council 通过 rates 筹集的总金额，2026-27 年度的上限为 2.75%。各物业的 rates 可能按不同的百分比上升或下降，取决于每个物业的价值变化。垃圾管理费、垃圾税（waste levy）和 Emergency Services and Volunteer Fund 不受该上限约束。"
+   },
+   "sources": [
+    {
+     "url": "https://www.boroondara.vic.gov.au/services/rates/understand-your-rates-and-what-they-pay",
+     "quote": "The Victorian Government caps the total amount councils can raise from rates each year. For 2026-27, this cap is 2.75%."
+    },
+    {
+     "url": "https://www.boroondara.vic.gov.au/services/rates/understand-your-rates-and-what-they-pay",
+     "quote": "Individual property rates may increase or decrease by different percentages, depending on how each property’s value has changed."
+    },
+    {
+     "url": "https://www.boroondara.vic.gov.au/services/rates/understand-your-rates-and-what-they-pay",
+     "quote": "The waste management charge, waste levy and Emergency Services and Volunteer Fund are not subject to the Victorian Government 2.75% rate cap."
+    }
+   ],
+   "tags": [
+    "council-rates"
+   ],
+   "checked": "2026-10-30",
+   "valid_until": "2027-06-30"
+  },
+  {
+   "id": "boroondara-how-rates-calculated",
+   "question": {
+    "en": "How are council rates calculated?",
+    "zh": "council rates 是怎么计算的？"
+   },
+   "aliases": [
+    "What is Capital Improved Value?",
+    "Can I object to my council property valuation?",
+    "How long do I have to object to my rates valuation?",
+    "council rates 怎么算",
+    "物业估值有异议怎么办"
+   ],
+   "answer": {
+    "en": "According to the City of Boroondara, rates are based on the Capital Improved Value (CIV), and the Valuer-General Victoria assesses property values annually. Your CIV multiplied by the rate in the dollar gives your property's general rates charge. If you disagree with your property's valuation, you can object within 2 months of receiving your rates notice.",
+    "zh": "据 City of Boroondara 介绍，rates 以资本改良价值（Capital Improved Value，CIV）为基础，物业价值由维州估价总监（Valuer-General Victoria）每年评估。你的 CIV 乘以每元税率（rate in the dollar）即为物业的一般 rates 费用。如果你不同意物业估值，可以在收到税单后 2 个月内提出异议。"
+   },
+   "sources": [
+    {
+     "url": "https://www.boroondara.vic.gov.au/services/rates/understand-your-rates-and-what-they-pay",
+     "quote": "Rates are based on the Capital Improved Value (CIV)"
+    },
+    {
+     "url": "https://www.boroondara.vic.gov.au/services/rates/understand-your-rates-and-what-they-pay",
+     "quote": "The Valuer-General Victoria assesses property values annually."
+    },
+    {
+     "url": "https://www.boroondara.vic.gov.au/services/rates/understand-your-rates-and-what-they-pay",
+     "quote": "General rates: Your CIV multiplied by the rate in the dollar gives your property’s general rates charge."
+    },
+    {
+     "url": "https://www.boroondara.vic.gov.au/services/rates/understand-your-rates-and-what-they-pay",
+     "quote": "If you disagree with your property’s valuation, you can object within 2 months of receiving your rates notice."
+    }
+   ],
+   "tags": [
+    "council-rates"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "boroondara-rates-payment-plan",
+   "question": {
+    "en": "Can I get a payment plan if I cannot pay my council rates on time?",
+    "zh": "如果无法按时缴纳 council rates，可以申请分期计划吗？"
+   },
+   "aliases": [
+    "What if I can't afford my Boroondara rates?",
+    "Rates hardship Boroondara",
+    "council rates 付不起怎么办",
+    "市政税可以延期吗"
+   ],
+   "answer": {
+    "en": "The City of Boroondara says that if you are having trouble paying your bills, you may be eligible to apply for a payment plan to pay your bills over time. It provides an online form to request a rates payment plan.",
+    "zh": "City of Boroondara 表示，如果你在支付账单方面有困难，可能有资格申请分期付款计划，在一段时间内付清账单。该 council 提供在线表格用于申请 rates 分期付款计划。"
+   },
+   "sources": [
+    {
+     "url": "https://www.boroondara.vic.gov.au/services/rates/pay-your-rates",
+     "quote": "If you’re having trouble paying your bills, you may be eligible to apply for a payment plan to pay your bills over time."
+    },
+    {
+     "url": "https://www.boroondara.vic.gov.au/services/rates/pay-your-rates",
+     "quote": "Submit an online request for a rates payment plan"
+    }
+   ],
+   "tags": [
+    "council-rates",
+    "boroondara"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "boroondara-residential-parking-permit-eligibility",
+   "question": {
+    "en": "Who can get a residential parking permit in the City of Boroondara?",
+    "zh": "谁可以在 City of Boroondara 申请居民停车许可？"
+   },
+   "aliases": [
+    "Can I get a resident parking permit if I live in an apartment?",
+    "Do apartments built after 2011 get parking permits in Boroondara?",
+    "公寓住户能办居民停车证吗",
+    "Boroondara 居民停车许可条件"
+   ],
+   "answer": {
+    "en": "You can apply for a residential parking permit if you live in a street that is in a residential parking permit zone, or in a street with time-restricted parking areas of one hour or more, and meet the eligibility criteria. Only residents who live at the property can apply, and only one application per property at a time. If you live in a unit or apartment built before August 2001 you are eligible for one permit, and if it was built after July 2011 you are not eligible for any kind of residential parking permit.",
+    "zh": "如果你住在居民停车许可区的街道，或住在设有一小时或以上限时停车区的街道，并符合资格条件，就可以申请居民停车许可。只有居住在该物业的居民才能申请，且每个物业同一时间只能提交一份申请。如果你住在 2001 年 8 月之前建成的单位或公寓，有资格获得一张许可；如果建于 2011 年 7 月之后，则没有资格获得任何类型的居民停车许可。"
+   },
+   "sources": [
+    {
+     "url": "https://www.boroondara.vic.gov.au/services/streets-roads-and-parking/parking-permits/residential-parking-permits",
+     "quote": "You can apply for a residential parking permit if you:"
+    },
+    {
+     "url": "https://www.boroondara.vic.gov.au/services/streets-roads-and-parking/parking-permits/residential-parking-permits",
+     "quote": "live in a street that's in a residential parking permit zone"
+    },
+    {
+     "url": "https://www.boroondara.vic.gov.au/services/streets-roads-and-parking/parking-permits/residential-parking-permits",
+     "quote": "live in a street that has time restricted parking areas of one hour or more"
+    },
+    {
+     "url": "https://www.boroondara.vic.gov.au/services/streets-roads-and-parking/parking-permits/residential-parking-permits",
+     "quote": "Only residents who live at the property can apply. You may submit only one application per property at a time."
+    },
+    {
+     "url": "https://www.boroondara.vic.gov.au/services/streets-roads-and-parking/parking-permits/residential-parking-permits",
+     "quote": "If you live in a unit or apartment that was built before August 2001, you are eligible for one parking permit."
+    },
+    {
+     "url": "https://www.boroondara.vic.gov.au/services/streets-roads-and-parking/parking-permits/residential-parking-permits",
+     "quote": "you are not eligible for a residential parking permit of any kind."
+    }
+   ],
+   "tags": [
+    "parking-permit",
+    "boroondara"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "boroondara-display-parking-permit",
+   "question": {
+    "en": "How do I display a residential or visitor parking permit in the City of Boroondara?",
+    "zh": "在 City of Boroondara，居民或访客停车许可要怎样摆放？"
+   },
+   "aliases": [
+    "Where do I put my parking permit on the car?",
+    "Visitor parking permit hang on mirror",
+    "停车许可贴在车上哪里",
+    "访客停车证怎么挂"
+   ],
+   "answer": {
+    "en": "In the City of Boroondara, a Specified Vehicle Permit is displayed in the lower left corner of the vehicle's windscreen. A Visitor Parking Permit is hung on the rear view mirror of the visiting vehicle. The Specified Vehicle Permit is only for the vehicle listed on the permit.",
+    "zh": "在 City of Boroondara，指定车辆许可（Specified Vehicle Permit）要摆放在车辆挡风玻璃的左下角。访客停车许可（Visitor Parking Permit）要挂在来访车辆的后视镜上。指定车辆许可只适用于许可上列明的车辆。"
+   },
+   "sources": [
+    {
+     "url": "https://www.boroondara.vic.gov.au/services/streets-roads-and-parking/parking-permits/residential-parking-permits",
+     "quote": "Display your permit in the lower left corner of the vehicle's windscreen."
+    },
+    {
+     "url": "https://www.boroondara.vic.gov.au/services/streets-roads-and-parking/parking-permits/residential-parking-permits",
+     "quote": "Hang the permit on the rear view mirror of the visiting vehicle."
+    },
+    {
+     "url": "https://www.boroondara.vic.gov.au/services/streets-roads-and-parking/parking-permits/residential-parking-permits",
+     "quote": "The Specified Vehicle Permit is only for the vehicle listed on the permit."
+    }
+   ],
+   "tags": [
+    "parking-permit",
+    "boroondara"
+   ],
+   "checked": "2026-10-30"
+  }
+ ]
+}
