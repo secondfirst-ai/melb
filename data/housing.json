@@ -1426,8 +1426,8 @@
     "房东能因为残障拒绝租房吗"
    ],
    "answer": {
-    "en": "A rental provider or agent cannot refuse to rent out premises to someone because they will have a child living with them, and for this law children are under the age of 16. The page lists the only reasons a rental provider can refuse to rent to someone with children. Rental providers and agents also must not discriminate against prospective renters who have a disability.",
-    "zh": "房东或中介不能因为租客将有孩子同住而拒绝出租房屋，在这条法律中，儿童指16岁以下的人。该页面列出了房东可以拒绝把房子租给带孩子者的仅有几种原因。房东和中介也不得歧视有残障的准租客。"
+    "en": "A rental provider or agent cannot refuse to rent out premises to someone because they will have a child living with them, and for this law children are under the age of 16. The only reasons a rental provider can refuse are if the property is the rental provider's main residence or is unsuitable for children. Rental providers and agents also must not discriminate against prospective renters who have a disability.",
+    "zh": "房东或中介不能因为租客将有孩子同住而拒绝出租房屋，在这条法律中，儿童指16岁以下的人。房东唯一可以拒绝的理由是：该房产是房东自己的主要住所，或不适合儿童。房东和中介也不得歧视有残障的准租客。"
    },
    "sources": [
     {
@@ -1437,6 +1437,14 @@
     {
      "url": "https://www.consumer.vic.gov.au/housing/renting/legal-and-dispute-support/unlawful-discrimination",
      "quote": "The only reasons a rental provider can refuse to rent their property to someone with children is if the property is:"
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/legal-and-dispute-support/unlawful-discrimination",
+     "quote": "the rental provider's main residence"
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/legal-and-dispute-support/unlawful-discrimination",
+     "quote": "unsuitable for children."
     },
     {
      "url": "https://www.consumer.vic.gov.au/housing/renting/legal-and-dispute-support/unlawful-discrimination",
