@@ -57,8 +57,8 @@
     "Do I need the phone number of the place I want to call when using TIS?"
    ],
    "answer": {
-    "en": "A caller is asked to provide their name, the name of the organisation they need to contact and that organisation's phone number. A caller may also be asked for any information the agency has requested be recorded by TIS National, such as an identification number or claim number.",
-    "zh": "来电者会被要求提供自己的姓名、要联系的机构名称和该机构的电话号码。来电者还可能被要求提供机构要求 TIS National 记录的其他信息，例如身份编号或索赔编号。"
+    "en": "A caller is asked to provide their name, the name of the organisation they need to contact and that organisation's phone number. A caller may also be asked for any required information the agency has requested be recorded by TIS National, for example an identification number or claim number.",
+    "zh": "来电者会被要求提供自己的姓名、要联系的机构名称和该机构的电话号码。来电者还可能被要求提供机构要求 TIS National 记录的任何必要信息，例如身份编号或索赔编号。"
    },
    "sources": [
     {
