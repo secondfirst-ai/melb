@@ -121,8 +121,8 @@
         "英语不好怎么打 NURSE-ON-CALL"
       ],
       "answer": {
-        "en": "If English is not your main language, call TIS National on 131 450. Ask to be transferred to NURSE-ON-CALL and state the phone number 1300 60 60 24.",
-        "zh": "如果英语不是你的主要语言，可以打 TIS National 的电话 131 450，并要求转接到 NURSE-ON-CALL，同时说出号码 1300 60 60 24。"
+        "en": "If English is not your main language and you need an interpreter, call TIS National on 131 450. Ask to be transferred to NURSE-ON-CALL and state the phone number 1300 60 60 24.",
+        "zh": "如果英语不是你的主要语言并且需要口译员，可以打 TIS National 的电话 131 450，并要求转接到 NURSE-ON-CALL，同时说出号码 1300 60 60 24。"
       },
       "sources": [
         {
@@ -150,7 +150,7 @@
       ],
       "answer": {
         "en": "For unexpected after-hours medical issues that are not emergencies, the page lists Urgent Care Clinics, telephone helplines, pharmacies, after-hours medical clinics, and doctors who can visit you at home. In an emergency, it says to always call triple zero (000).",
-        "zh": "对于下班后出现的非紧急突发医疗问题，该页面列出了紧急护理诊所（Urgent Care Clinic）、电话热线、药房、夜间或周末开诊的医疗诊所，以及上门出诊的医生。遇到紧急情况，页面说要随时拨打三个零（000）。"
+        "zh": "对于下班后出现的非紧急突发医疗问题，该页面列出了紧急护理诊所（Urgent Care Clinic）、电话热线、药房、after-hours 医疗诊所，以及上门出诊的医生。遇到紧急情况，页面说要随时拨打三个零（000）。"
       },
       "sources": [
         {
@@ -214,8 +214,8 @@
         "bulk billing 就是不用付钱吗"
       ],
       "answer": {
-        "en": "If your doctor bulk bills, they accept the Medicare benefit as full payment and bill Medicare directly. You do not pay anything out-of-pocket.",
-        "zh": "如果医生 bulk bill，就是接受 Medicare 给付的金额作为全部费用，并直接向 Medicare 收费，你自己不用付任何费用。"
+        "en": "If your doctor bulk bills, it means they accept the Medicare benefit as full payment and bill Medicare directly, so you will not pay anything out-of-pocket.",
+        "zh": "如果你的医生 bulk bill，意思是医生接受 Medicare 给付的金额作为全部费用并直接向 Medicare 收费，所以你不需要自付任何费用。"
       },
       "sources": [
         {
@@ -1161,8 +1161,8 @@
         "市政厅有免费疫苗门诊吗"
       ],
       "answer": {
-        "en": "Immunisations in Victoria are provided by local councils, GPs and nurses in medical clinics and community health services, some maternal and child health nurses, travel medicine clinics, community pharmacists and hospitals. Local councils provide free immunisations at community clinics to eligible people under the National Immunisation Program.",
-        "zh": "维州的疫苗接种由当地市政厅、医疗诊所和社区健康服务机构的 GP 与护士、部分母婴健康护士、旅行医学诊所、社区药剂师和医院提供。市政厅会在社区疫苗门诊，为符合资格的人免费提供国家免疫计划（National Immunisation Program）下的疫苗。"
+        "en": "Immunisations in Victoria are provided by local councils, GPs and specially qualified nurses in medical clinics and community health services, some maternal and child health nurses, travel medicine clinics, community pharmacists and hospitals. Local councils provide free immunisations at community immunisation clinics to eligible persons under the National Immunisation Program.",
+        "zh": "维州的疫苗接种由当地市政厅、医疗诊所和社区健康服务机构的 GP 和经过专门资格培训的护士、部分母婴健康护士、旅行医学诊所、社区药剂师和医院提供。市政厅会在社区免疫接种门诊，为符合资格的人免费提供国家免疫计划（National Immunisation Program）下的疫苗。"
       },
       "sources": [
         {
@@ -1289,8 +1289,8 @@
         "私立医院急诊 Medicare 报销吗"
       ],
       "answer": {
-        "en": "Some private hospitals may have emergency departments and charge fees for medical services, which may not be covered by Medicare. The page says to ask the triage nurse about costs on arrival if you are uncertain and able to.",
-        "zh": "部分私立医院设有急诊部并收取医疗服务费用，这些费用可能不在 Medicare 报销范围内。页面说，如果你不确定且条件允许，到达时可以向分诊护士询问费用。"
+        "en": "Some private hospitals may have emergency departments and may charge fees for medical services, which may not be covered by Medicare. The page says that if you are uncertain and you can, you can ask the triage nurse about costs when you arrive.",
+        "zh": "部分私立医院可能设有急诊部，并可能收取医疗服务费用，这些医疗服务费用可能不在 Medicare 报销范围内。页面说，如果你不确定并且条件允许，到达时可以向分诊护士询问费用。"
       },
       "sources": [
         {
