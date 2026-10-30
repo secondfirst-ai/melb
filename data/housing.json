@@ -1,0 +1,1581 @@
+{
+ "dataset": "melb-housing",
+ "title": {
+  "en": "Housing in Melbourne and Victoria: renting, bonds, utilities and buying, answered from official sources",
+  "zh": "墨尔本与维州住房问答：租房、押金、水电气与买房（答案来自官方出处）"
+ },
+ "updated": "2026-10-30",
+ "notes": [
+  {
+   "en": "Each answer is limited to what the cited official page says, with a verbatim quote and the date we checked it. If a question isn't here, we don't have a checked answer.",
+   "zh": "每条答案只说出处原文支持的内容，附原句和核对日期。这里没有的问题，就是我们还没有核过的答案。"
+  }
+ ],
+ "records": [
+  {
+   "id": "renter-notice-to-leave-end-of-lease-victoria",
+   "question": {
+    "en": "How much notice must a renter give to move out at the end of a lease in Victoria?",
+    "zh": "在维多利亚州，租客在租约结束时搬走需要提前多久通知？"
+   },
+   "aliases": [
+    "How many days notice do I give my landlord to leave at the end of my lease in Victoria?",
+    "What happens if I don't give notice when my fixed-term lease ends in Victoria?",
+    "租约到期搬走要提前几天通知房东",
+    "定期租约到期不通知会怎么样"
+   ],
+   "answer": {
+    "en": "Renters must give 28 days' notice if they want to leave at the end of a rental agreement. Renters on a fixed-term agreement, such as a 12-month agreement, automatically move to a month-to-month agreement if they do not give notice.",
+    "zh": "租客如果想在租约结束时搬走，必须提前28天通知。租期固定的租客（例如12个月的租约）如果没有发出通知，会自动转为按月租约。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/moving-out-giving-notice-and-evictions/giving-notice-as-a-renter/renter-giving-notice",
+     "quote": "Renters must give 28 days' notice if they want to leave at the end of a rental agreement (lease)."
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/moving-out-giving-notice-and-evictions/giving-notice-as-a-renter/renter-giving-notice",
+     "quote": "Renters on fixed-term agreements, like a 12-month agreement, will automatically move to a month-to-month agreement if they do not give notice."
+    }
+   ],
+   "tags": [
+    "renting",
+    "moving-out",
+    "notice"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-rent-increase-notice-period",
+   "question": {
+    "en": "How much notice must a landlord give before raising the rent in Victoria?",
+    "zh": "在维多利亚州，房东涨租前要提前多久通知租客？"
+   },
+   "aliases": [
+    "How many days notice for a rent increase in Victoria?",
+    "Does my landlord have to give written notice to put the rent up?",
+    "房东涨租要提前几天通知",
+    "涨租通知要提前90天吗"
+   ],
+   "answer": {
+    "en": "The rental provider must inform the renter using a Notice of rent increase form. The form must be given to the renter at least 90 days before the increase is due to start.",
+    "zh": "房东（rental provider）必须使用《涨租通知》（Notice of rent increase）表格通知租客。该表格必须在涨租生效日之前至少90天交给租客。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/rent/rent-increases",
+     "quote": "The rental provider must inform the renter using a Notice of rent increase form. This form must be given to the renter at least 90 days before the increase is due to start."
+    }
+   ],
+   "tags": [
+    "renting",
+    "rent",
+    "notice"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-late-rent-fee-illegal",
+   "question": {
+    "en": "Can a landlord charge a late fee if my rent is late in Victoria?",
+    "zh": "在维多利亚州，房租晚交房东可以收滞纳金吗？"
+   },
+   "aliases": [
+    "Is a late rent fee legal in Victoria?",
+    "Can my agent charge an administration fee for late rent?",
+    "房租晚交能收滞纳金吗",
+    "中介可以收晚交房租的手续费吗"
+   ],
+   "answer": {
+    "en": "No. It is illegal for a rental provider or agent to charge any sort of administration fee or late fee to process rent payments, even if the rent is late. Rental providers also cannot add clauses to rental agreements saying that fees or fines for late payment must be paid.",
+    "zh": "不可以。房东或中介（agent）即使在租金逾期的情况下，也不得以任何形式收取处理租金的行政费（administration fee）或滞纳金（late fee）。房东也不能在租约中加入要求支付逾期罚款或费用的条款。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/rent/late-or-unpaid-rent",
+     "quote": "However, it is illegal for a rental provider or agent to charge any sort of ‘administration fee’ or ‘late fee’ to process rent payments even if the rent is late."
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/rent/rent-payments-and-rent-in-advance",
+     "quote": "Rental providers cannot add clauses to rental agreements that say these kinds of fines or fees must be paid."
+    }
+   ],
+   "tags": [
+    "renting",
+    "rent",
+    "fees"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-rent-in-advance-limit",
+   "question": {
+    "en": "How much rent in advance can a landlord ask for in Victoria?",
+    "zh": "在维多利亚州，房东最多可以要求预付多少租金？"
+   },
+   "aliases": [
+    "Can my agent ask for 2 months rent upfront in Victoria?",
+    "What is the maximum rent in advance for a rental in Victoria?",
+    "租房最多能要求预付几个月房租",
+    "房东可以要求先付两个月租金吗"
+   ],
+   "answer": {
+    "en": "A rental provider cannot ask for or accept more than one month's rent in advance, with two exceptions. If rent is paid weekly, they can only ask for 14 days' rent in advance. If the rent is above $900 a week, there are no limits up to the full value of the rental agreement.",
+    "zh": "房东要求或接受的预付租金不能超过一个月的租金，但有两种例外。如果按周付租，只能要求预付14天的租金。如果租金每周超过900澳元，则不设上限，最高可达租约的全部金额。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/rent/rent-payments-and-rent-in-advance",
+     "quote": "A rental provider cannot ask for or accept more than a maximum of one month’s rent in advance from a renter, unless:"
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/rent/rent-payments-and-rent-in-advance",
+     "quote": "rent is paid weekly, in which case they can only ask for 14 days’ rent in advance"
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/rent/rent-payments-and-rent-in-advance",
+     "quote": "the rent is above $900 a week, in which case there are no limits up to the full value of the rental agreement."
+    }
+   ],
+   "tags": [
+    "renting",
+    "rent",
+    "advance"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-rent-receipt-rules",
+   "question": {
+    "en": "Does my landlord have to give me a rent receipt in Victoria?",
+    "zh": "在维多利亚州，房东必须给我房租收据吗？"
+   },
+   "aliases": [
+    "How long does an agent have to give a rent receipt?",
+    "How long must a landlord keep rent records in Victoria?",
+    "房东要给房租收据吗",
+    "中介多久内必须提供租金收据"
+   ],
+   "answer": {
+    "en": "Yes. Rental providers or their agents must give a receipt immediately if rent is paid in person, and within five business days of a request. Rental providers must also keep rent records for at least 12 months.",
+    "zh": "要。房东或其中介必须在当面付租时立即出具收据；其他情况下，须在收到要求后的五个工作日内提供。房东还必须将租金记录保存至少12个月。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/rent/rent-payments-and-rent-in-advance",
+     "quote": "Rental providers, or their agents, must provide renters with receipts for rent payments:"
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/rent/rent-payments-and-rent-in-advance",
+     "quote": "immediately if rent is paid in person"
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/rent/rent-payments-and-rent-in-advance",
+     "quote": "within five business days of a request."
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/rent/rent-payments-and-rent-in-advance",
+     "quote": "Rental providers must also keep rent records for at least 12 months."
+    }
+   ],
+   "tags": [
+    "renting",
+    "rent",
+    "receipts"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-stop-paying-rent-for-repairs",
+   "question": {
+    "en": "Can I stop paying rent if my landlord won't do repairs in Victoria?",
+    "zh": "在维多利亚州，房东不修东西我可以停付房租吗？"
+   },
+   "aliases": [
+    "Can I withhold rent because of repairs in Victoria?",
+    "Do I still pay rent in the last month of my lease?",
+    "房东不修理可以不交房租吗",
+    "搬走前最后一个月还要交房租吗"
+   ],
+   "answer": {
+    "en": "No. Renters must not stop paying rent until they agree with their rental provider on a date to stop. They must keep paying rent even if the rental provider or owner refuses to do repairs, if it is the last month of the agreement, if they have given notice to leave, or if they have received a notice to vacate.",
+    "zh": "不可以。租客在与房东就停止付租的日期达成一致之前，不得停付房租。即使房东或业主拒绝维修、已经是租约的最后一个月、租客已发出搬走通知，或已收到限期搬离通知（notice to vacate），租客也必须继续付租。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/rent/rent-payments-and-rent-in-advance",
+     "quote": "Renters must not stop paying rent until they agree with their rental provider on a date to stop."
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/rent/rent-payments-and-rent-in-advance",
+     "quote": "the rental provider or owner refuses to do repairs"
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/rent/rent-payments-and-rent-in-advance",
+     "quote": "it is the last month of the rental agreement"
+    }
+   ],
+   "tags": [
+    "renting",
+    "rent",
+    "repairs"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-notice-to-vacate-unpaid-rent-days",
+   "question": {
+    "en": "How late does my rent have to be before a landlord can give a notice to vacate in Victoria?",
+    "zh": "在维多利亚州，房租晚交多少天房东才能发限期搬离通知？"
+   },
+   "aliases": [
+    "Can I be evicted for paying rent late in Victoria?",
+    "How many days behind on rent before a notice to vacate?",
+    "拖欠房租多久会被发搬离通知",
+    "晚交房租会被赶出去吗"
+   ],
+   "answer": {
+    "en": "If renters are more than 14 days late on rent, the rental provider can give them a notice to vacate. For rooming house or caravan park tenants the period is 7 days. A renter can challenge a notice to vacate by applying to VCAT.",
+    "zh": "租客拖欠房租超过14天，房东就可以向其发出限期搬离通知（notice to vacate）。寄宿屋（rooming house）或房车营地的租户为7天。租客可以向VCAT申请对该通知提出异议。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/rent/late-or-unpaid-rent",
+     "quote": "If renters are more than 14 days late on rent (7 days for rooming house or caravan park tenants), the rental provider can give them a notice to vacate."
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/rent/late-or-unpaid-rent",
+     "quote": "A renter or resident can challenge a notice to vacate by applying to VCAT."
+    }
+   ],
+   "tags": [
+    "renting",
+    "rent",
+    "vcat",
+    "eviction"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-who-can-evict-a-renter",
+   "question": {
+    "en": "Can my landlord kick me out or change the locks without going through VCAT in Victoria?",
+    "zh": "在维多利亚州，房东可以不经过VCAT直接赶我走或换锁吗？"
+   },
+   "aliases": [
+    "Who can evict a tenant in Victoria?",
+    "Can a landlord evict a renter themselves?",
+    "房东可以自己把租客赶走吗",
+    "谁有权驱逐租客"
+   ],
+   "answer": {
+    "en": "No. A rental provider, rooming house operator or park owner or operator cannot personally evict a renter, physically or otherwise. Only the police can evict a renter, and only when they have a warrant of possession from VCAT.",
+    "zh": "不可以。房东、寄宿屋经营者或营地业主/经营者不得亲自以任何方式（包括人身方式）驱逐租客。只有警察可以驱逐租客，而且必须持有VCAT签发的占有令（warrant of possession）。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/rent/late-or-unpaid-rent",
+     "quote": "A rental provider, rooming house operator or park owner or operator cannot personally evict a renter, physically or otherwise."
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/moving-out-giving-notice-and-evictions/evictions-and-immediate-notice/evictions-and-possession-orders",
+     "quote": "Only the police can evict a renter and only when they have a warrant of possession from VCAT."
+    }
+   ],
+   "tags": [
+    "renting",
+    "eviction",
+    "vcat"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-four-strikes-unpaid-rent",
+   "question": {
+    "en": "What is the '4 strikes' rule for late rent in Victoria?",
+    "zh": "维多利亚州关于晚交房租的“4次警告”规则是什么？"
+   },
+   "aliases": [
+    "How many notices to vacate for unpaid rent before VCAT can evict me?",
+    "Can I avoid eviction by paying the rent owing after a notice to vacate?",
+    "因欠租收到几次通知会被驱逐",
+    "收到欠租搬离通知后补交房租能避免被赶走吗"
+   ],
+   "answer": {
+    "en": "A renter given a notice to vacate for unpaid rent can pay the rent owing by the vacate date to avoid eviction. If more than four notices to vacate are issued in a 12-month period, the renter has '4 strikes'. If a fifth notice is given for unpaid rent, the rental provider can apply to VCAT for a possession order.",
+    "zh": "收到欠租限期搬离通知的租客，可以在通知所列的搬离日期之前补交所欠租金以避免被驱逐。如果12个月内被发出超过四份搬离通知，租客就有了“4次警告”（4 strikes）。如果因欠租被发第五份通知，房东可以向VCAT申请占有令（possession order）。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/rent/late-or-unpaid-rent",
+     "quote": "When a renter is given a notice to vacate because they have not paid rent, they can pay the rent owing by the vacate date stated on the notice to avoid eviction."
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/rent/late-or-unpaid-rent",
+     "quote": "However, if more than four notices to vacate are issued to a renter in a 12-month period, the renter has ‘4 strikes’ against them."
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/rent/late-or-unpaid-rent",
+     "quote": "If a fifth notice to vacate is given to the renter because they have not paid rent, the rental provider can apply to VCAT for a possession order (also called an eviction notice)."
+    }
+   ],
+   "tags": [
+    "renting",
+    "rent",
+    "eviction",
+    "vcat"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-bond-lodged-with-rtba-14-days",
+   "question": {
+    "en": "How long does a landlord have to lodge my bond with the RTBA in Victoria?",
+    "zh": "在维多利亚州，房东收到押金后多久内必须交给RTBA？"
+   },
+   "aliases": [
+    "Where is my rental bond held in Victoria?",
+    "How do I know my bond has been lodged?",
+    "租房押金存在哪里",
+    "房东多久要把押金交给RTBA"
+   ],
+   "answer": {
+    "en": "Bonds are held in trust by the Residential Tenancies Bond Authority (RTBA). If the renter paid the rental provider, the rental provider must lodge the bond with the RTBA within 14 days, not including public holidays, of receiving it. The RTBA must give a receipt to the rental provider and all renters within 7 days of receiving the bond.",
+    "zh": "押金由租赁押金管理局（Residential Tenancies Bond Authority，RTBA）托管。如果租客把押金付给了房东，房东必须在收到押金后14天内（不含公共假日）把它交给RTBA。RTBA收到押金后7天内，必须向房东和所有租客提供收据。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/bond/bond-amounts-and-paying-a-bond",
+     "quote": "Bonds are held in trust by the Residential Tenancies Bond Authority (RTBA), a statutory authority within the Department of Government Services."
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/bond/bond-amounts-and-paying-a-bond",
+     "quote": "If the renter paid the rental provider, the rental provider must lodge the bond with the RTBA within 14 days (not including public holidays) of receiving the bond amount."
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/bond/bond-amounts-and-paying-a-bond",
+     "quote": "The RTBA must give a receipt with the bond number and other key information to the rental provider and all renters within 7 days of receiving the bond."
+    }
+   ],
+   "tags": [
+    "renting",
+    "bond",
+    "rtba"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-bond-cannot-pay-rent",
+   "question": {
+    "en": "Can I use my bond to pay the last month's rent in Victoria?",
+    "zh": "在维多利亚州，我可以用押金抵最后一个月的房租吗？"
+   },
+   "aliases": [
+    "Can the bond be used as rent?",
+    "Can I tell my landlord to take the rent out of my bond?",
+    "押金能当最后一个月房租吗",
+    "可以让房东扣押金抵租金吗"
+   ],
+   "answer": {
+    "en": "No. The bond and rent are separate payments, and the bond can't be used to pay rent. Bonds also can't be claimed to pay rent in an ongoing rental agreement.",
+    "zh": "不可以。押金和房租是两笔独立的款项，押金不能用来付房租。在租约仍在进行期间，也不能通过申领押金来支付房租。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/bond/bond-amounts-and-paying-a-bond",
+     "quote": "The bond and rent are separate payments. The bond can't be used to pay rent."
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/bond/bond-claims-and-refunds",
+     "quote": "Bonds can't be claimed to pay rent in an ongoing rental agreement."
+    }
+   ],
+   "tags": [
+    "renting",
+    "bond",
+    "rent"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-is-bond-compulsory",
+   "question": {
+    "en": "Do I have to pay a bond when renting in Victoria?",
+    "zh": "在维多利亚州租房一定要付押金吗？"
+   },
+   "aliases": [
+    "Is a rental bond compulsory?",
+    "What happens if I don't pay the bond?",
+    "租房必须交押金吗",
+    "不交押金会怎么样"
+   ],
+   "answer": {
+    "en": "Bonds aren't mandatory. However, if a bond is requested in the rental agreement, the renter must pay it. If the bond is not paid, the rental provider can give the renter a notice to vacate.",
+    "zh": "押金并非强制。但如果租约中要求支付押金，租客就必须支付。如果没有支付押金，房东可以向租客发出限期搬离通知（notice to vacate）。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/bond/bond-amounts-and-paying-a-bond",
+     "quote": "Bonds aren't mandatory. However, if a bond is requested in the rental agreement, the renter must pay it. If the bond is not paid, the rental provider can give the renter a notice to vacate."
+    }
+   ],
+   "tags": [
+    "renting",
+    "bond"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-pay-bond-directly-to-rtba",
+   "question": {
+    "en": "Can I pay my rental bond directly to the RTBA instead of my landlord?",
+    "zh": "我可以把租房押金直接付给RTBA，而不是付给房东吗？"
+   },
+   "aliases": [
+    "How do I pay a bond to the RTBA in Victoria?",
+    "How long do I have to pay the bond through the RTBA link?",
+    "押金可以直接交给RTBA吗",
+    "RTBA押金付款链接多久内要付"
+   ],
+   "answer": {
+    "en": "Yes. A renter can pay the bond directly to the RTBA by giving the rental provider written notice before the rental provider submits the bond lodgement form. Renters can pay using BPAY, direct debit, or direct credit card, and payments must be made within 48 hours of the link's creation.",
+    "zh": "可以。租客可以在房东提交押金登记表（bond lodgement）之前，书面通知房东自己将直接向RTBA支付押金。租客可以用BPAY、直接扣款（direct debit）或信用卡支付，付款必须在付款链接生成后48小时内完成。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/bond/lodging-the-bond-with-the-rtba",
+     "quote": "A renter can decide to pay the bond directly to the RTBA by giving the rental provider written notice of this decision before the rental provider submits the bond lodgement form to the RTBA."
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/bond/lodging-the-bond-with-the-rtba",
+     "quote": "Renters can pay using BPAY, direct debit, or direct credit card."
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/bond/lodging-the-bond-with-the-rtba",
+     "quote": "Payments must be made within 48 hours of the link’s creation."
+    }
+   ],
+   "tags": [
+    "renting",
+    "bond",
+    "rtba"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-multiple-renters-pay-bond",
+   "question": {
+    "en": "How do several flatmates pay one bond through the RTBA?",
+    "zh": "几个室友合租时怎么通过RTBA付同一笔押金？"
+   },
+   "aliases": [
+    "Can each housemate pay their share of the bond to the RTBA separately?",
+    "Who pays the bond in a share house in Victoria?",
+    "合租押金可以每人分开付给RTBA吗",
+    "合租的押金由谁来付"
+   ],
+   "answer": {
+    "en": "If you are paying the RTBA directly, all renters receive a link to pay. However, only one renter can pay the bond in full, as it must be lodged as a single payment. All the renters should agree who is going to pay, and how they will be reimbursed, before lodging.",
+    "zh": "如果直接向RTBA付款，所有租客都会收到付款链接。但押金必须作为一笔款项登记，因此只能由一位租客全额支付。所有租客应在登记前商定由谁来付，以及之后如何补偿该租客。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/bond/bond-amounts-and-paying-a-bond",
+     "quote": "If you are paying the RTBA directly, all renters will receive a link to pay. However, only one renter can pay the bond in full, as it must be lodged as a single payment. All the renters should agree who is going to pay, and how they will be reimbursed, before lodging."
+    }
+   ],
+   "tags": [
+    "renting",
+    "bond",
+    "share-house"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-bond-refund-how-long",
+   "question": {
+    "en": "How long does it take to get my bond back in Victoria?",
+    "zh": "在维多利亚州，退租后多久能拿回押金？"
+   },
+   "aliases": [
+    "When will the RTBA pay out my bond?",
+    "How do I get my bond back after I move out?",
+    "押金多久能退回来",
+    "搬走后怎么拿回押金"
+   ],
+   "answer": {
+    "en": "The RTBA only repays the bond when everyone listed on the bond agrees on how it should be repaid, or when VCAT has ordered it. Once everyone has accepted a claim, the RTBA will usually repay the bond within one business day.",
+    "zh": "只有在债券（押金）上列名的所有人都同意如何返还，或VCAT已作出命令时，RTBA才会返还押金。所有人接受押金申领后，RTBA通常会在一个工作日内退还押金。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/bond/bond-claims-and-refunds",
+     "quote": "The RTBA only repays the bond when everyone listed on the bond agrees on how it should be repaid or has been ordered by the Victorian Civil and Administrative Tribunal (VCAT)."
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/bond/bond-claims-and-refunds",
+     "quote": "Once everyone has accepted, the RTBA will usually repay the bond within one business day."
+    }
+   ],
+   "tags": [
+    "renting",
+    "bond",
+    "rtba",
+    "moving-out"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-landlord-time-to-claim-bond",
+   "question": {
+    "en": "How long does a landlord have to start a bond claim after the lease ends in Victoria?",
+    "zh": "在维多利亚州，租约结束后房东要在多久内发起押金申领？"
+   },
+   "aliases": [
+    "Does my landlord have a deadline to claim my bond?",
+    "What does the renter have to do when the landlord submits a bond claim?",
+    "房东申领押金有期限吗",
+    "房东提交押金申领后租客要在多久内确认"
+   ],
+   "answer": {
+    "en": "Rental providers must start a claim with the RTBA within 14 days of the rental agreement ending, unless a renter starts a claim first. When the rental provider submits the claim, every renter on the bond gets an email link to review and accept it, and renters must accept the claim within 14 days.",
+    "zh": "房东必须在租约结束后14天内向RTBA发起申领，除非租客已先发起申领。房东提交申领后，押金上列名的每位租客都会收到带链接的电子邮件，用于审核并接受申领；租客必须在14天内接受。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/bond/bond-claims-and-refunds",
+     "quote": "Rental providers must start a claim with the RTBA within 14 days of the rental agreement ending, unless a renter initiates a claim first."
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/bond/bond-claims-and-refunds",
+     "quote": "Renters must accept the claim within 14 days or the claim will no longer be available to complete."
+    }
+   ],
+   "tags": [
+    "renting",
+    "bond",
+    "rtba",
+    "moving-out"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-renter-start-bond-claim",
+   "question": {
+    "en": "Can I claim my bond back without my landlord's agreement in Victoria?",
+    "zh": "在维多利亚州，没有房东同意我也可以申请退还押金吗？"
+   },
+   "aliases": [
+    "Can a renter start a bond claim alone?",
+    "What if my landlord won't sign off on my bond refund?",
+    "房东不同意我能自己申请退押金吗",
+    "租客可以单独发起押金申领吗"
+   ],
+   "answer": {
+    "en": "Yes. Any renter with their name on the bond can start the bond claim after the agreement ends, and must first authenticate their identity with Service Victoria. The RTBA gives the other parties on the bond 14 days to contest the claim by applying to VCAT or RDRV. If no one contests, the bond is repaid as directed in the claim at the end of the 14-day period.",
+    "zh": "可以。押金上列名的任何一位租客，都可以在租约结束后自行发起押金申领，但须先通过Service Victoria验证身份。RTBA会给押金上的其他各方14天时间，通过向VCAT或RDRV申请来对申领提出异议。如果无人提出异议，14天期满后押金将按申领内容退还。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/bond/bond-claims-and-refunds",
+     "quote": "Any renter with their name on the bond can start the bond claim themselves after the agreement ends. Renters must authenticate their identity with Service Victoria before they can start a claim."
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/bond/bond-claims-and-refunds",
+     "quote": "The RTBA is required by law to give notice to all other parties on the bond and provide other parties with 14 days to contest the claim by making an application to VCAT or RDRV. If no party contests, the bond will be repaid as directed in the claim at the end of the 14-day period or sooner if all parties agree."
+    }
+   ],
+   "tags": [
+    "renting",
+    "bond",
+    "rtba",
+    "vcat",
+    "rdrv"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-bond-fair-wear-and-tear",
+   "question": {
+    "en": "Can a landlord keep my bond for fair wear and tear in Victoria?",
+    "zh": "在维多利亚州，房东可以因为正常损耗扣我的押金吗？"
+   },
+   "aliases": [
+    "What is fair wear and tear for a rental?",
+    "Can the landlord deduct carpet wear from my bond?",
+    "什么是正常损耗",
+    "房东能因为地毯磨损扣押金吗"
+   ],
+   "answer": {
+    "en": "No. Rental providers can't claim bond to cover fair wear and tear, which is deterioration because of reasonable use of the property or natural environmental forces. Faded curtains or worn kitchen bench tops are examples of fair wear and tear, while ripped curtains or broken bench tops might be considered damage.",
+    "zh": "不可以。房东不能动用押金来弥补正常损耗（fair wear and tear），即因合理使用房产或自然环境因素造成的老化。褪色的窗帘或磨旧的厨房台面属于正常损耗，而撕破的窗帘或破裂的台面则可能被视为损坏。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/bond/bond-claims-and-refunds",
+     "quote": "Rental providers can't claim bond to cover fair wear and tear."
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/bond/bond-claims-and-refunds",
+     "quote": "Examples of fair wear and tear might be faded curtains or worn kitchen bench tops. Ripped curtains or broken bench tops might be considered damage."
+    }
+   ],
+   "tags": [
+    "renting",
+    "bond",
+    "moving-out"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-bond-claim-notice-evidence",
+   "question": {
+    "en": "What must a landlord do before claiming part of my bond in Victoria?",
+    "zh": "在维多利亚州，房东在申领我的部分押金前必须做什么？"
+   },
+   "aliases": [
+    "Does my landlord have to give me evidence before taking money from my bond?",
+    "How much notice before a bond claim?",
+    "房东扣押金前要给我看证据吗",
+    "房东要提前几天通知我要扣押金"
+   ],
+   "answer": {
+    "en": "Before claiming all or any part of the bond, the rental provider must notify the renter at least 3 business days before lodging the claim with the RTBA. They must also give the renter evidence such as invoices, receipts, quotes or photographs, and the evidence must not contradict the condition report.",
+    "zh": "房东在申领全部或部分押金之前，必须在向RTBA提交申领的至少3个工作日前通知租客。房东还必须向租客提供发票、收据、报价单或照片等证据，且这些证据不得与房屋状况报告（condition report）相矛盾。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/bond/bond-claims-and-refunds",
+     "quote": "Notify the renter that they intend to make a bond claim, at least 3 business days before lodging the claim with RTBA."
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/bond/bond-claims-and-refunds",
+     "quote": "Provide the renter with evidence that supports the claim, in the form of invoices, receipts, quotes or photographs."
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/bond/bond-claims-and-refunds",
+     "quote": "Ensure the evidence does not contradict the condition report."
+    }
+   ],
+   "tags": [
+    "renting",
+    "bond",
+    "condition-report"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-bond-receipt-missing",
+   "question": {
+    "en": "I haven't received a bond receipt. What should I do in Victoria?",
+    "zh": "我没收到押金收据，在维多利亚州该怎么办？"
+   },
+   "aliases": [
+    "How do I check my bond has been lodged with the RTBA?",
+    "What is the RTBA phone number?",
+    "怎么确认押金已经交给RTBA",
+    "RTBA的电话是多少"
+   ],
+   "answer": {
+    "en": "Bond receipts should arrive within 7 days from when the bond is lodged. If a renter does not receive the receipt within 15 days, they can call the RTBA on 1300 137 164. A renter unsure whether the bond has been lodged can search for it online using their contact details.",
+    "zh": "押金收据应在押金登记后7天内收到。如果租客在15天内仍未收到收据，可以致电RTBA，电话1300 137 164。租客如果不确定押金是否已登记，可以用自己的联系方式在网上搜索查询。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/bond/lodging-the-bond-with-the-rtba",
+     "quote": "You should receive your bond receipts within 7 days from when the bond is lodged."
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/bond/lodging-the-bond-with-the-rtba",
+     "quote": "If you do not receive the receipt within 15 days, call the RTBA on 1300 137 164."
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/bond/lodging-the-bond-with-the-rtba",
+     "quote": "If you are not sure whether your bond has been lodged, you can check by searching for your bond online using your contact details."
+    }
+   ],
+   "tags": [
+    "renting",
+    "bond",
+    "rtba"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-extra-bond-when-allowed",
+   "question": {
+    "en": "When can a landlord ask for an extra bond in Victoria?",
+    "zh": "在维多利亚州，房东什么情况下可以要求加收押金？"
+   },
+   "aliases": [
+    "Can my landlord ask me to top up my bond?",
+    "Can I challenge an extra bond request?",
+    "房东可以要求补交押金吗",
+    "额外押金可以向VCAT申诉吗"
+   ],
+   "answer": {
+    "en": "Rental providers can only ask for extra bond in a long-term rental agreement of more than 5 years with an end date at least 5 years in the future, or when renters make certain changes to a property and the rental provider is responsible for removing the changes at the end of the lease. The renter can challenge an extra bond request at VCAT.",
+    "zh": "房东只能在两种情况下要求额外押金：一是长期租约（超过5年，且结束日期至少在5年之后）；二是租客对房产做了某些改动，并约定由房东在租约结束时负责拆除这些改动。租客可以向VCAT对额外押金的要求提出异议。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/bond/bond-amounts-and-paying-a-bond",
+     "quote": "Rental providers can only ask for extra bond:"
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/bond/bond-amounts-and-paying-a-bond",
+     "quote": "in a long-term rental agreement (of more than 5 years, and with an end date of at least 5 years in the future), or"
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/bond/bond-amounts-and-paying-a-bond",
+     "quote": "when renters make certain changes to a property, with the agreement that the rental provider is responsible for removing the changes at the end of the lease."
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/bond/bond-amounts-and-paying-a-bond",
+     "quote": "The renter can challenge an extra bond request at VCAT."
+    }
+   ],
+   "tags": [
+    "renting",
+    "bond",
+    "vcat"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-pet-bond-not-allowed",
+   "question": {
+    "en": "Can a landlord charge a pet bond in Victoria?",
+    "zh": "在维多利亚州，房东可以收宠物押金吗？"
+   },
+   "aliases": [
+    "Is a pet bond legal in Victoria?",
+    "Can I be charged extra bond for having a dog or cat?",
+    "租房养宠物能额外收押金吗",
+    "房东可以因为猫狗多收押金吗"
+   ],
+   "answer": {
+    "en": "No. Rental providers and owners cannot ask for an additional bond as a pet bond.",
+    "zh": "不可以。房东和业主不得以“宠物押金”（pet bond）为名要求额外的押金。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/repairs-alterations-safety-and-pets/pets",
+     "quote": "Rental providers and owners cannot ask for an additional bond as a ‘pet bond’."
+    }
+   ],
+   "tags": [
+    "renting",
+    "pets",
+    "bond"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-keep-pet-in-rental",
+   "question": {
+    "en": "Can I keep a pet in a rental property in Victoria, and how long does the landlord have to reply?",
+    "zh": "在维多利亚州，我可以在出租屋里养宠物吗？房东多久内必须答复？"
+   },
+   "aliases": [
+    "Can a landlord say no to pets in Victoria?",
+    "How do I ask my landlord for permission to have a dog?",
+    "房东能拒绝租客养宠物吗",
+    "养宠物要向房东申请吗，多久有答复"
+   ],
+   "answer": {
+    "en": "Renters who want a pet must ask their rental provider for permission, and rental providers must have a good reason to refuse. The rental provider has 14 days, starting the day after they receive the form, to decide. If they do not respond at all within the 14 days, the renter can keep the pet.",
+    "zh": "想养宠物的租客必须先向房东申请许可，房东拒绝时必须有正当理由。房东有14天时间（从收到表格的次日起算）作出决定。如果房东在14天内完全没有回应，租客可以养这只宠物。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/repairs-alterations-safety-and-pets/pets",
+     "quote": "Renters who want to have a pet in the property must ask their rental provider (landlord) for permission. Rental providers must have a good reason to refuse the renter’s request."
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/repairs-alterations-safety-and-pets/pets",
+     "quote": "The rental provider has 14 days (starting the day after they receive the form) to make a decision."
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/repairs-alterations-safety-and-pets/pets",
+     "quote": "If the rental provider does not respond at all within the 14 days the renter can keep the pet."
+    }
+   ],
+   "tags": [
+    "renting",
+    "pets",
+    "vcat"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-portable-rental-bond-fee",
+   "question": {
+    "en": "How does the Portable Rental Bond Scheme work and what does it cost?",
+    "zh": "租房押金转移计划（Portable Rental Bond Scheme）怎么运作？要多少钱？"
+   },
+   "aliases": [
+    "Can I transfer my bond to a new rental in Victoria?",
+    "Is there a fee to port my rental bond?",
+    "搬家时押金能转到新房子吗",
+    "押金转移要收费吗"
+   ],
+   "answer": {
+    "en": "Eligible renters can opt in, agree to the Terms and Conditions and pay a $25 application fee to transfer their bond to a new rental property. If the new bond is higher than the current bond, the renter pays the difference. Renters can't choose the amount of the bond to transfer.",
+    "zh": "符合条件的租客可以选择加入该计划，同意条款与条件并支付25澳元申请费，把现有押金转移到新的出租房产。如果新押金高于现有押金，租客需补足差额。租客不能自行选择转移的押金金额。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vic.gov.au/how-portable-bonds-work",
+     "quote": "If you’re eligible, you need to opt in, agree to the Terms and Conditions and pay a $25 application fee to transfer the bond. If your new bond is higher than your current bond, you’ll need to pay the difference."
+    },
+    {
+     "url": "https://www.vic.gov.au/how-portable-bonds-work",
+     "quote": "No. Renters can’t choose the amount of the bond to transfer."
+    }
+   ],
+   "tags": [
+    "renting",
+    "bond",
+    "portable-bond"
+   ],
+   "checked": "2026-10-30",
+   "valid_until": "2027-06-30"
+  },
+  {
+   "id": "victoria-portable-bond-homes-victoria-loan",
+   "question": {
+    "en": "Can I transfer a bond that was paid with a Homes Victoria loan?",
+    "zh": "用Homes Victoria贷款支付的押金可以转移到新房子吗？"
+   },
+   "aliases": [
+    "Can a RentAssist bond loan be ported to a new rental?",
+    "Can two people combine their old bonds to pay one new bond?",
+    "RentAssist押金贷款能转移吗",
+    "两个人的旧押金能合并成一个新押金吗"
+   ],
+   "answer": {
+    "en": "No. Bonds funded by a Homes Victoria loan are not eligible for the Portable Rental Bond Scheme, because the loan is issued for a specific rental property. Renters also cannot combine 2 separate bonds from different tenancies to pay the bond for a new property.",
+    "zh": "不可以。由Homes Victoria贷款支付的押金不符合押金转移计划的条件，因为这笔贷款是针对特定出租房产发放的。租客也不能把来自不同租约的两笔押金合并，用来支付新房产的押金。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vic.gov.au/how-portable-bonds-work",
+     "quote": "No. Bonds funded by a Homes Victoria loan are not eligible. The loan is issued for a specific rental property."
+    },
+    {
+     "url": "https://www.vic.gov.au/how-portable-bonds-work",
+     "quote": "No. Renters cannot combine 2 separate bonds from different tenancies to pay the bond for a new property."
+    }
+   ],
+   "tags": [
+    "renting",
+    "bond",
+    "portable-bond",
+    "homes-victoria"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-urgent-vs-non-urgent-repairs-timeframe",
+   "question": {
+    "en": "How quickly must a landlord do repairs in Victoria?",
+    "zh": "在维多利亚州，房东必须多快完成维修？"
+   },
+   "aliases": [
+    "What counts as an urgent repair in a rental?",
+    "How long does my landlord have to fix a broken dishwasher?",
+    "紧急维修和普通维修有什么区别",
+    "房东多久内要修好东西"
+   ],
+   "answer": {
+    "en": "Rental providers must make urgent repairs immediately and non-urgent repairs within 14 days of getting a written request. The law defines a list of urgent repairs, and anything else is non-urgent. A repair is non-urgent if the renter can continue to safely live in the property, such as a broken dishwasher or loose bathroom tiles.",
+    "zh": "房东必须立即完成紧急维修，并在收到书面请求后14天内完成非紧急维修。法律规定了一份紧急维修清单，清单之外的都属于非紧急维修。如果租客仍然可以安全居住，该维修就属于非紧急维修，例如洗碗机坏了或浴室瓷砖松动。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/repairs-alterations-safety-and-pets/repairs/repairs-in-rental-properties",
+     "quote": "Repairs are either ‘urgent’ or ‘non-urgent’. Rental providers must make urgent repairs immediately. Rental providers must make non-urgent repairs within 14 days of getting a written request."
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/repairs-alterations-safety-and-pets/repairs/repairs-in-rental-properties",
+     "quote": "The law defines a list of urgent repairs. Anything else is a non-urgent repair. A repair is non-urgent if the renter can continue to safely live in the property. Non-urgent repairs include things like a broken dishwasher or loose bathroom tiles."
+    }
+   ],
+   "tags": [
+    "renting",
+    "repairs"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-renter-arrange-urgent-repair",
+   "question": {
+    "en": "Can I organise an urgent repair myself and get the money back in Victoria?",
+    "zh": "在维多利亚州，我可以自己安排紧急维修再向房东要回费用吗？"
+   },
+   "aliases": [
+    "What if my landlord doesn't respond to an urgent repair request?",
+    "What is the limit for a renter paying for urgent repairs?",
+    "房东不回应紧急维修怎么办",
+    "租客自己垫付紧急维修费上限是多少"
+   ],
+   "answer": {
+    "en": "Yes, if the rental provider or agent does not respond to the request. The renter can organise and pay for the repair only if it does not cost more than $2500. The rental provider must pay them back within 7 days, and if the funds are not reimbursed within 7 days the renter can apply to RDRV for help.",
+    "zh": "可以，前提是房东或中介没有回应请求。租客只有在维修费用不超过2500澳元时，才可以自行安排并垫付维修。房东必须在7天内偿还；如果7天内没有偿还，租客可以向RDRV申请协助。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/repairs-alterations-safety-and-pets/repairs/repairs-in-rental-properties",
+     "quote": "If the rental provider or agent does not respond to the request, the renter can organise and pay for the repair. They can only do this if the repair does not cost more than $2500. The rental provider must pay them back within 7 days. If the funds are not reimbursed within 7 days, the renter can apply to Rental Dispute Resolution Victoria (RDRV) for help."
+    }
+   ],
+   "tags": [
+    "renting",
+    "repairs",
+    "rdrv"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-landlord-entry-times-and-notice",
+   "question": {
+    "en": "When can a landlord or agent enter my rental in Victoria?",
+    "zh": "在维多利亚州，房东或中介什么时候可以进入我租的房子？"
+   },
+   "aliases": [
+    "What hours can an agent do an inspection?",
+    "Does a landlord have to give written notice before entering?",
+    "房东上门检查要提前通知吗",
+    "中介可以几点进屋"
+   ],
+   "answer": {
+    "en": "A rental provider or agent can only enter the property between 8 am and 6 pm on any day except a public holiday, unless the renter agrees to entry outside these times. They must give the renter notice in writing that states the reason for entry. How much notice is needed depends on the reason for entering.",
+    "zh": "房东或中介只能在非公共假日的任何一天上午8点至下午6点之间进入房屋，除非租客同意在这些时间之外进入。他们必须以书面形式通知租客，并写明进入的原因。需要提前多久通知，取决于进入的原因。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rental-providers-inspecting-or-entering-a-property/when-a-rental-provider-can-enter-a-property",
+     "quote": "The rental provider or their agent can only enter the property between 8 am and 6 pm on any day except a public holiday. Entry outside these times is only possible if the renter agrees."
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rental-providers-inspecting-or-entering-a-property/when-a-rental-provider-can-enter-a-property",
+     "quote": "The notice must be in writing and state the reason for entry."
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rental-providers-inspecting-or-entering-a-property/when-a-rental-provider-can-enter-a-property",
+     "quote": "How much notice a rental provider must give depends on the reason they’re entering the property."
+    }
+   ],
+   "tags": [
+    "renting",
+    "inspections",
+    "entry"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-open-for-inspection-limits-renting",
+   "question": {
+    "en": "How often can an agent show my rental to prospective renters in Victoria?",
+    "zh": "在维多利亚州，中介多久可以带人来看我租的房子？"
+   },
+   "aliases": [
+    "Do I have to leave when the agent shows my rental?",
+    "How long can an open home for a rental last?",
+    "看房时我必须离开家吗",
+    "中介带看房每次最长多久"
+   ],
+   "answer": {
+    "en": "The rental provider or their agent must not show the property to prospective renters more than twice a week, or for longer than one hour each time, unless the current renter agrees to different arrangements. Renters are sometimes asked to be absent, but the renter is not required to leave.",
+    "zh": "除非现任租客同意其他安排，否则房东或中介带准租客看房每周不得超过两次，每次不得超过一小时。租客有时会被要求不在家，但租客并没有义务离开。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rental-providers-inspecting-or-entering-a-property/when-a-rental-provider-can-enter-a-property",
+     "quote": "The rental provider or their agent must not show the property to prospective renters more than twice a week, or for longer than one hour each time. This applies unless the current renter agrees to different arrangements."
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rental-providers-inspecting-or-entering-a-property/when-a-rental-provider-can-enter-a-property",
+     "quote": "Rental providers sometimes ask renters to be absent during a general inspection or when they’re showing the property to prospective tenants or buyers, but the renter is not required to leave."
+    }
+   ],
+   "tags": [
+    "renting",
+    "inspections",
+    "entry"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-condition-report-deadline",
+   "question": {
+    "en": "How long do I have to return the condition report after moving in?",
+    "zh": "搬进出租屋后，我要在多久内交回房屋状况报告？"
+   },
+   "aliases": [
+    "What is a condition report for a rental in Victoria?",
+    "What if my landlord didn't give me a condition report?",
+    "入住报告要在几天内交回",
+    "房东没给房屋状况报告怎么办"
+   ],
+   "answer": {
+    "en": "The rental provider or agent must sign the condition report and give the renter 2 copies, or one copy if sent electronically, before the renter moves in. The renter must return their signed copy within 5 business days of moving in. A renter who is not given a report can complete their own and give it to the rental provider or agent within 5 business days of moving in.",
+    "zh": "房东或中介必须签署房屋状况报告（condition report），并在租客入住前给租客2份（若以电子方式发送则为1份）。租客必须在入住后5个工作日内交回已签名的副本。如果租客没有收到报告，可以自己填写，并在入住后5个工作日内交给房东或中介。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/condition-reports",
+     "quote": "The rental provider, or their agent, prepares the condition report. They must sign it and give 2 copies to the renter (or one copy if sending electronically) before they move in."
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/condition-reports",
+     "quote": "They must return the report within 5 business days (i.e. not including weekends and public holidays) of moving into the property."
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/condition-reports",
+     "quote": "If a renter is not given a condition report before they move in, they can complete their own. They should give the condition report to the rental provider or their agent within 5 business days of moving in."
+    }
+   ],
+   "tags": [
+    "renting",
+    "condition-report",
+    "moving-in"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-exit-condition-report",
+   "question": {
+    "en": "Do I have to be there for the final inspection when I move out in Victoria?",
+    "zh": "在维多利亚州，退租时的最终检查我必须在场吗？"
+   },
+   "aliases": [
+    "Who does the exit condition report?",
+    "How long does the agent have to complete the exit condition report?",
+    "退租验房我要在场吗",
+    "退租验房报告多久内要完成"
+   ],
+   "answer": {
+    "en": "When a rental agreement ends, the rental provider or agent must complete the exit condition report section of the original condition report within 10 days. The renter must be present when this happens, or have been given a reasonable opportunity to be there.",
+    "zh": "租约结束时，房东或中介必须在10天内填完原房屋状况报告中的“退租状况报告”（exit condition report）部分。完成时租客必须在场，或已被给予合理的在场机会。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/condition-reports",
+     "quote": "When a rental agreement ends, the rental provider or agent must complete the ‘Exit condition report’ section of the original condition report within 10 days. The renter must be present when this happens, or have been given a reasonable opportunity to be there."
+    }
+   ],
+   "tags": [
+    "renting",
+    "condition-report",
+    "moving-out"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-goods-left-behind-after-moving-out",
+   "question": {
+    "en": "What happens to belongings I leave behind when I move out of a rental in Victoria?",
+    "zh": "在维多利亚州，搬走时留在出租屋里的物品会怎么处理？"
+   },
+   "aliases": [
+    "How long must a landlord keep my things after I move out?",
+    "Can the landlord throw away my personal documents?",
+    "搬走后落下的东西房东要保管多久",
+    "房东能扔掉我落下的证件吗"
+   ],
+   "answer": {
+    "en": "The rental provider can dispose of some goods left behind but must store others for a certain amount of time. Certain goods must be stored in a safe place for at least 14 days, and personal documents must be stored for at least 90 days. The rental provider must take reasonable steps to tell the former renter about the goods left behind.",
+    "zh": "房东可以处理部分遗留物品，但必须将其他物品保管一段时间。某些物品必须妥善保管至少14天，个人证件文件则必须保管至少90天。房东必须采取合理措施，把遗留物品的情况告知前租客。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/moving-out-giving-notice-and-evictions/goods-left-behind",
+     "quote": "The rental provider (landlord) can dispose of some goods left behind but must store others for a certain amount of time."
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/moving-out-giving-notice-and-evictions/goods-left-behind",
+     "quote": "Rental providers must store the following goods in a safe place for at least 14 days:"
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/moving-out-giving-notice-and-evictions/goods-left-behind",
+     "quote": "Personal documents that are left behind by a renter must be stored in a safe place by the rental provider for at least 90 days."
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/moving-out-giving-notice-and-evictions/goods-left-behind",
+     "quote": "The rental provider must take reasonable steps to tell the renter that they left these goods behind."
+    }
+   ],
+   "tags": [
+    "renting",
+    "moving-out",
+    "goods-left-behind"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-renter-pays-water-bill",
+   "question": {
+    "en": "Who pays the water bill in a rental property in Victoria?",
+    "zh": "在维多利亚州，出租屋的水费由谁付？"
+   },
+   "aliases": [
+    "Do renters pay for water usage in Victoria?",
+    "Does the landlord pay water charges if there's no separate meter?",
+    "租客需要付水费吗",
+    "没有独立水表水费谁出"
+   ],
+   "answer": {
+    "en": "If the property has its own meter, the renter must pay for the water they use and the sewage disposal charge, unless the rental provider agrees to pay. If the property doesn't have its own meter, the rental provider must pay.",
+    "zh": "如果房产有独立水表，租客必须支付自己的用水费和污水处理费，除非房东同意支付。如果房产没有独立水表，则由房东支付。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/paying-for-utilities-phone-and-internet",
+     "quote": "If the property has its own meter, the renter must pay for the water they use, as well as the sewage disposal charge. This applies unless the rental provider (landlord) agrees to pay."
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/paying-for-utilities-phone-and-internet",
+     "quote": "If the property doesn’t have its own meter, the rental provider must pay."
+    }
+   ],
+   "tags": [
+    "renting",
+    "utilities",
+    "water"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-renter-electricity-gas-connection-and-bills",
+   "question": {
+    "en": "Who pays to connect electricity and gas in a rental in Victoria, and who pays the bills?",
+    "zh": "在维多利亚州，出租屋的电、煤气接通费谁付？日常账单谁付？"
+   },
+   "aliases": [
+    "Does the landlord pay for electricity connection?",
+    "Do I pay gas bottle costs as a renter?",
+    "租客开通电和煤气要自己付费吗",
+    "罐装煤气谁出钱"
+   ],
+   "answer": {
+    "en": "The rental provider must pay to have the electricity, gas or oil supply installed and connected. If the property has its own meter, the renter must pay all supply and usage costs unless the rental provider agrees to pay. If the property uses bottled gas, the renter pays for the supply and hire of gas bottles.",
+    "zh": "电、煤气或燃油的安装和接通费用由房东支付。如果房产有独立电表、煤气表或油表，除非房东同意支付，否则租客须支付所有供应费和使用费。如果房产使用罐装煤气，租客支付煤气罐的供应费和租用费。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/paying-for-utilities-phone-and-internet",
+     "quote": "The rental provider must pay to have the electricity, gas or oil supply installed and connected."
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/paying-for-utilities-phone-and-internet",
+     "quote": "If the property has its own meter for electricity, gas or oil, the renter must pay all supply and usage costs, unless the rental provider agrees to pay."
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/paying-for-utilities-phone-and-internet",
+     "quote": "If the property uses bottled gas the renter pays for the supply and hire of gas bottles."
+    }
+   ],
+   "tags": [
+    "renting",
+    "utilities",
+    "electricity",
+    "gas"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-renter-internet-nbn-cost",
+   "question": {
+    "en": "Who pays for NBN or internet installation in a rental in Victoria?",
+    "zh": "在维多利亚州，出租屋安装NBN或网络谁来付费？"
+   },
+   "aliases": [
+    "Does my landlord pay for NBN connection?",
+    "Do renters pay ongoing internet costs?",
+    "租房装宽带谁出钱",
+    "网费是租客付还是房东付"
+   ],
+   "answer": {
+    "en": "The rental provider must pay all costs and charges for the initial installation of phone or internet connections, including connection to the National Broadband Network (NBN). Renters must pay the ongoing usage costs for phone and internet, unless the rental provider agrees otherwise.",
+    "zh": "电话或网络的初次安装费用，包括接入国家宽带网络（NBN），均由房东支付。除非房东另有同意，电话和网络的日常使用费由租客支付。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/paying-for-utilities-phone-and-internet",
+     "quote": "The rental provider must pay all costs and charges for the initial installation of phone or internet connections. This includes connection to the National Broadband Network (NBN)."
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/paying-for-utilities-phone-and-internet",
+     "quote": "Renters must pay for the ongoing usage costs for phone and internet, unless the rental provider agrees otherwise."
+    }
+   ],
+   "tags": [
+    "renting",
+    "utilities",
+    "internet"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-rent-increase-excessive-assessment",
+   "question": {
+    "en": "What can I do if I think my rent increase is too high in Victoria?",
+    "zh": "在维多利亚州，如果我觉得涨租太高，可以怎么办？"
+   },
+   "aliases": [
+    "How do I challenge excessive rent in Victoria?",
+    "Can I challenge a rent increase because I can't afford it?",
+    "怎么申诉过高的涨租",
+    "负担不起可以申诉涨租吗"
+   ],
+   "answer": {
+    "en": "The first step is to get a rent assessment from Consumer Affairs Victoria, which works out the property's market rental value. If the report confirms the rent is excessive but the rental provider will not reduce it, the renter must apply to RDRV within 30 days of receiving the report. Under Victorian rental laws, affordability is not a valid reason to challenge a rent increase.",
+    "zh": "第一步是向维多利亚州消费者事务局（Consumer Affairs Victoria）申请租金评估，由其核算该房产的市场租金。如果报告确认租金过高但房东仍不同意降租，租客必须在收到报告后30天内向RDRV提出申请。根据维州租赁法律，负担能力不是挑战涨租的有效理由。"
+   },
+   "sources": [
+    {
+     "url": "https://www.rdrv.vic.gov.au/resolve-dispute/excessive-rent",
+     "quote": "The first step is to get a rent assessment from Consumer Affairs Victoria (CAV). They will work out the property's market rental value."
+    },
+    {
+     "url": "https://www.rdrv.vic.gov.au/resolve-dispute/excessive-rent",
+     "quote": "You must apply to RDRV within 30 days of receiving a rent assessment report from CAV."
+    },
+    {
+     "url": "https://www.rdrv.vic.gov.au/resolve-dispute/excessive-rent",
+     "quote": "Under Victorian rental laws, affordability is not a valid reason to challenge a rent increase."
+    }
+   ],
+   "tags": [
+    "renting",
+    "rent",
+    "rdrv"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "rdrv-cost-and-what-it-does",
+   "question": {
+    "en": "What is RDRV and is it free to use?",
+    "zh": "RDRV是什么？使用它要收费吗？"
+   },
+   "aliases": [
+    "What is Rental Dispute Resolution Victoria?",
+    "Do I have to pay to use RDRV?",
+    "租房纠纷调解服务RDRV收费吗",
+    "RDRV能帮我解决押金问题吗"
+   ],
+   "answer": {
+    "en": "RDRV is a specialist rental dispute resolution and case management service provided by VCAT, and it is free to use for all Victorians. Its resolution coordinators help renters and rental providers resolve issues before they go to a hearing, such as bond and compensation disputes, rent increases and repairs. If a dispute goes to a hearing, an application fee may be payable.",
+    "zh": "RDRV是由VCAT提供的专门的租赁纠纷解决和案件管理服务，所有维州居民都可免费使用。其解决协调员会帮助租客和房东在进入听证之前解决问题，例如押金和赔偿纠纷、涨租和维修问题。如果纠纷进入听证，则可能需要缴付申请费。"
+   },
+   "sources": [
+    {
+     "url": "https://www.rdrv.vic.gov.au/about-rdrv/frequently-asked-questions",
+     "quote": "RDRV is a specialist rental dispute resolution and case management service provided by VCAT. It is free to use for all Victorians."
+    },
+    {
+     "url": "https://www.rdrv.vic.gov.au/about-rdrv/frequently-asked-questions",
+     "quote": "We can help with common problems like bond and compensation disputes, rent increases and repairs."
+    },
+    {
+     "url": "https://www.rdrv.vic.gov.au/about-rdrv/frequently-asked-questions",
+     "quote": "If you have to go to a hearing, you may have to pay an application fee."
+    }
+   ],
+   "tags": [
+    "renting",
+    "rdrv",
+    "vcat",
+    "disputes"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "rdrv-gutters-gardens-who-maintains",
+   "question": {
+    "en": "Who is responsible for gutters and gardens in a rental in Victoria?",
+    "zh": "在维多利亚州，出租屋的排水沟和花园由谁负责维护？"
+   },
+   "aliases": [
+    "Do renters have to clean the gutters?",
+    "Who mows the lawn in a rental property?",
+    "租客需要清理排水沟吗",
+    "出租屋的草坪谁来修剪"
+   ],
+   "answer": {
+    "en": "Renters are not responsible for gutter maintenance, but they should tell the rental provider if they notice any signs of gutter issues. Renters are responsible for keeping the place reasonably clean and reporting repair and maintenance issues, and the rental provider is responsible for keeping the property in good repair. If a job needs a cherry picker, ladder or special tools, it is the rental provider's responsibility.",
+    "zh": "租客不负责维护排水沟，但如果发现排水沟有问题的迹象，应告知房东。租客负责保持房屋合理整洁，并报告维修和保养问题；房东负责让房产保持良好状态。如果某项工作需要升降车、梯子或专用工具，则由房东负责。"
+   },
+   "sources": [
+    {
+     "url": "https://www.rdrv.vic.gov.au/who-maintains-gutters-gardens-and-pools-rental",
+     "quote": "Renters are not responsible for gutter maintenance, but they should tell the rental provider if they notice any signs of gutter issues"
+    },
+    {
+     "url": "https://www.rdrv.vic.gov.au/who-maintains-gutters-gardens-and-pools-rental",
+     "quote": "The renter is responsible for keeping the place reasonably clean and reporting any repair and maintenance issues."
+    },
+    {
+     "url": "https://www.rdrv.vic.gov.au/who-maintains-gutters-gardens-and-pools-rental",
+     "quote": "The rental provider is responsible for keeping the property in good repair."
+    },
+    {
+     "url": "https://www.rdrv.vic.gov.au/who-maintains-gutters-gardens-and-pools-rental",
+     "quote": "If it’s something you need a cherry picker, ladder or special tools for, it’s the rental provider’s responsibility."
+    }
+   ],
+   "tags": [
+    "renting",
+    "repairs",
+    "maintenance",
+    "rdrv"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "vcat-how-to-apply-rental-dispute",
+   "question": {
+    "en": "How do I apply to VCAT for a rental dispute?",
+    "zh": "租赁纠纷要怎么向VCAT提出申请？"
+   },
+   "aliases": [
+    "Can I apply to VCAT online for a tenancy dispute?",
+    "Do I need an account to apply to VCAT?",
+    "VCAT租房纠纷怎么申请",
+    "VCAT申请需要注册账号吗"
+   ],
+   "answer": {
+    "en": "Most residential tenancies disputes can be applied for using myVCAT, which requires creating an account. Applicants must share their application and any other correspondence with the other parties in the case. VCAT prioritises certain applications, such as disputes involving personal or family violence or urgent repairs.",
+    "zh": "大多数住宅租赁纠纷可以通过myVCAT提出申请，需要先创建账号。申请人必须把申请及其他往来文件同时提供给案件中的其他各方。VCAT会优先处理某些申请，例如涉及人身或家庭暴力、或紧急维修的纠纷。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vcat.vic.gov.au/case-types/residential-tenancies/apply",
+     "quote": "You can make an application for most residential tenancies disputes using myVCAT. You will need to create an account to make an application."
+    },
+    {
+     "url": "https://www.vcat.vic.gov.au/case-types/residential-tenancies/apply",
+     "quote": "You must share your application (and any other correspondence with us) with the other parties in your case."
+    },
+    {
+     "url": "https://www.vcat.vic.gov.au/case-types/residential-tenancies/apply",
+     "quote": "Some applications are considered urgent and must be heard by us within a certain amount of time according to the law. For example, if a dispute involves personal or family violence or urgent repairs."
+    }
+   ],
+   "tags": [
+    "renting",
+    "vcat",
+    "disputes"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-tenant-blacklist-rules",
+   "question": {
+    "en": "What is a renter blacklist database and can I be listed on it in Victoria?",
+    "zh": "租客黑名单数据库是什么？在维多利亚州我会被列入吗？"
+   },
+   "aliases": [
+    "Can a landlord put me on a bad tenant database?",
+    "How do I get removed from a tenant blacklist?",
+    "什么是坏租客数据库",
+    "怎么把我从租客黑名单里删除"
+   ],
+   "answer": {
+    "en": "Renter databases, also called blacklists, contain the renting history of some renters. Before listing a renter, the rental provider, real estate agent or database operator must tell the renter in writing and give them 14 days to object. A renter listed inappropriately can ask the rental provider to remove the listing or apply to VCAT. Listings must be removed from databases after three years.",
+    "zh": "租客数据库（又称“黑名单”）记录了部分租客的租房历史。在将租客列入数据库之前，房东、房产中介或数据库运营方必须书面通知租客，并给其14天提出异议。如果租客被不当列入，可以要求房东删除，也可以向VCAT申请删除。列入数据库的记录须在三年后删除。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/legal-and-dispute-support/renter-databases-blacklists",
+     "quote": "Renter databases, also called ‘blacklists’ or ‘bad renter databases’, contain the renting history of some renters."
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/legal-and-dispute-support/renter-databases-blacklists",
+     "quote": "Before listing a renter on a database, the rental provider, real estate agent or the database operator must tell the renter in writing, and give them 14 days to object."
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/legal-and-dispute-support/renter-databases-blacklists",
+     "quote": "If you find out that you have been listed inappropriately, you can ask the rental provider to remove the listing. You can also apply to VCAT to have the listing removed."
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/legal-and-dispute-support/renter-databases-blacklists",
+     "quote": "Listings must be removed from databases after three years."
+    }
+   ],
+   "tags": [
+    "renting",
+    "blacklist",
+    "vcat"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-landlord-refuse-renters-with-children",
+   "question": {
+    "en": "Can a landlord refuse to rent to me because I have a child in Victoria?",
+    "zh": "在维多利亚州，房东可以因为我有孩子而拒绝租给我吗？"
+   },
+   "aliases": [
+    "Is it legal to reject a tenant with kids?",
+    "Can an agent discriminate against a renter with a disability?",
+    "房东能拒绝带孩子的租客吗",
+    "房东能因为残障拒绝租房吗"
+   ],
+   "answer": {
+    "en": "No. A rental provider or agent cannot refuse to rent out premises to someone because they will have a child living with them, and for this law children are under the age of 16. Rental providers and agents also must not discriminate against prospective renters who have a disability.",
+    "zh": "不可以。房东或中介不能因为租客将有孩子同住而拒绝出租房屋，在这条法律中，儿童指16岁以下的人。房东和中介也不得歧视有残障的准租客。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/legal-and-dispute-support/unlawful-discrimination",
+     "quote": "A rental provider (landlord) or agent cannot refuse to rent out premises to someone because they will have a child living with them. For this law, children are defined as being under the age of 16."
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/legal-and-dispute-support/unlawful-discrimination",
+     "quote": "Rental providers and agents must not discriminate against prospective renters who have a disability or people who acquire a disability during the rental agreement (lease)."
+    }
+   ],
+   "tags": [
+    "renting",
+    "discrimination"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-rental-minimum-standards-records",
+   "question": {
+    "en": "Do landlords have to keep records that a rental meets the minimum standards?",
+    "zh": "房东是否必须保存出租屋符合最低标准的记录？"
+   },
+   "aliases": [
+    "When do rental minimum standards records start in Victoria?",
+    "What are the rental minimum standards in Victoria?",
+    "维州出租屋最低标准要保存记录吗",
+    "房东什么时候要开始保存最低标准记录"
+   ],
+   "answer": {
+    "en": "From 13 October 2026, all rental providers must keep records sufficient to show the property meets the rental minimum standards. Rental providers and their agents must keep records showing the property met the minimum rental standards before it was advertised or offered for rent. They must also keep records showing it met the standards before the renter moved in.",
+    "zh": "自2026年10月13日起，所有房东都必须保存足以证明房产符合出租最低标准的记录。房东及其中介必须保存记录，证明房产在刊登广告或对外出租之前已符合最低出租标准。他们还必须保存记录，证明房产在租客入住之前已符合标准。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/repairs-alterations-safety-and-pets/minimum-standards/minimum-standards-for-rental-properties",
+     "quote": "From 13 October 2026, all rental providers must keep records sufficient to show the property meets the rental minimum standards."
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/repairs-alterations-safety-and-pets/minimum-standards/minimum-standards-for-rental-properties",
+     "quote": "Rental providers and their agents must keep records showing that the property met the minimum rental standards before the property was advertised or offered for rent."
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/repairs-alterations-safety-and-pets/minimum-standards/minimum-standards-for-rental-properties",
+     "quote": "Rental providers must also keep records showing that the property met the minimum rental standards before the renter moved in."
+    }
+   ],
+   "tags": [
+    "renting",
+    "minimum-standards"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-homes-victoria-bond-loan",
+   "question": {
+    "en": "What is a Homes Victoria (RentAssist) bond loan and who can get one?",
+    "zh": "Homes Victoria（RentAssist）押金贷款是什么？谁可以申请？"
+   },
+   "aliases": [
+    "Can I get help paying a rental bond in Victoria?",
+    "Can a Homes Victoria bond loan be transferred to someone else?",
+    "没钱交押金政府有贷款吗",
+    "RentAssist押金贷款怎么申请"
+   ],
+   "answer": {
+    "en": "Government bond loans, called Homes Victoria loans or RentAssist bond loans, are available to people on low incomes who might not be able to pay bond and do not have any other financial options. Applicants must meet the eligibility criteria, which includes being an Australian permanent resident. Homes Victoria bond loans cannot be transferred to another person.",
+    "zh": "政府押金贷款称为Homes Victoria贷款或RentAssist押金贷款，提供给可能无力支付押金、也没有其他资金来源的低收入人士。申请人必须符合资格条件，其中包括是澳大利亚永久居民。Homes Victoria押金贷款不能转让给他人。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/bond/homes-victoria-bond-loans",
+     "quote": "Government bond loans are available to people on low incomes who might not be able to pay bond and do not have any other financial options. These are called Homes Victoria loans or RentAssist bond loans."
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/bond/homes-victoria-bond-loans",
+     "quote": "Applicants must meet the eligibility criteria, which includes being an Australian permanent resident."
+    },
+    {
+     "url": "https://www.consumer.vic.gov.au/housing/renting/rent-bond-bills-and-condition-reports/bond/homes-victoria-bond-loans",
+     "quote": "Homes Victoria bond loans cannot be transferred to another person."
+    }
+   ],
+   "tags": [
+    "renting",
+    "bond",
+    "homes-victoria"
+   ],
+   "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-first-home-owner-grant-amount",
+   "question": {
+    "en": "How much is the First Home Owner Grant in Victoria?",
+    "zh": "维多利亚州的首次置业补助（First Home Owner Grant）是多少？"
+   },
+   "aliases": [
+    "Do first home buyers get a grant in Victoria?",
+    "Is the first home owner grant only for new homes?",
+    "首次买房有政府补助吗",
+    "首置补助只适用于新房吗"
+   ],
+   "answer": {
+    "en": "The First Home Owner Grant is a $10,000 payment to help eligible first home buyers buy or build a new home in Victoria to live in. It applies to newly constructed or never-occupied properties valued up to $750,000.",
+    "zh": "首次置业补助（First Home Owner Grant）是一笔1万澳元的款项，用于帮助符合条件的首次置业者在维多利亚州购买或建造自住的新房。它适用于价值不超过75万澳元、新建或从未有人入住过的房产。"
+   },
+   "sources": [
+    {
+     "url": "https://www.sro.vic.gov.au/first-home-owner-grant",
+     "quote": "The First Home Owner Grant is a $10,000 payment to help eligible first home buyers buy or build a new home in Victoria to live in. It applies to newly constructed or never-occupied properties valued up to $750,000."
+    }
+   ],
+   "tags": [
+    "buying",
+    "first-home-buyer",
+    "grant"
+   ],
+   "checked": "2026-10-30",
+   "valid_until": "2027-06-30"
+  },
+  {
+   "id": "victoria-default-offer-electricity-esc",
+   "question": {
+    "en": "Who sets the Victorian Default Offer electricity prices?",
+    "zh": "维多利亚州的默认电价（Victorian Default Offer）由谁来定？"
+   },
+   "aliases": [
+    "What is the Victorian Default Offer?",
+    "Who regulates electricity standing offer prices in Victoria?",
+    "什么是维州默认电价",
+    "谁负责决定标准电价上限"
+   ],
+   "answer": {
+    "en": "The Essential Services Commission determines prices for standing offers covering electricity retail services in Victoria, which are called Victorian Default Offer prices.",
+    "zh": "维州基本服务委员会（Essential Services Commission）负责确定维多利亚州涵盖电力零售服务的标准合约（standing offer）价格，即“维多利亚默认电价”（Victorian Default Offer）。"
+   },
+   "sources": [
+    {
+     "url": "https://www.esc.vic.gov.au/electricity-and-gas/electricity-and-gas-prices-tariffs-and-benchmarks",
+     "quote": "We determine prices for standing offers covering electricity retail services in Victoria – Victorian Default Offer prices."
+    }
+   ],
+   "tags": [
+    "utilities",
+    "electricity",
+    "esc"
+   ],
+   "checked": "2026-10-30"
+  }
+ ]
+}
