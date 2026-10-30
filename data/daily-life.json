@@ -729,7 +729,7 @@
    ],
    "answer": {
     "en": "SunSmart says bucket, wide brim or legionnaire hats are best. It says caps and visors do not provide good UV protection. It says to choose a hat that shades the head, face, eyes, ears and neck.",
-    "zh": "SunSmart 表示，渔夫帽、宽边帽或带遮颈布的军团帽效果最好。它说，棒球帽和遮阳帽（只有帽檐）不能提供良好的紫外线防护。它还说，应选择能遮住头部、脸部、眼睛、耳朵和脖子的帽子。"
+    "zh": "SunSmart 表示，渔夫帽、宽边帽或军团帽效果最好。它说，棒球帽和遮阳帽不能提供良好的紫外线防护。它还说，应选择能遮住头部、脸部、眼睛、耳朵和脖子的帽子。"
    },
    "sources": [
     {
@@ -865,7 +865,7 @@
    ],
    "answer": {
     "en": "VICSES says to fill hessian sandbags with sand only and not dirt. It says to fill each bag only two-thirds full and not to tie the top of the bag.",
-    "zh": "VICSES 表示，麻布沙袋只能装沙，不能装泥土。它说，每个袋子只装三分之二满，并且不要扎紧袋口。"
+    "zh": "VICSES 表示，麻布沙袋只能装沙，不能装泥土。它说，每个袋子只装三分之二满，并且不要把袋口系上。"
    },
    "sources": [
     {
@@ -1412,8 +1412,8 @@
     "公园遛狗要拴绳吗"
    ],
    "answer": {
-    "en": "Rules are set by each council. City of Stonnington says dogs must be kept on-lead at all times unless in a designated off-lead area, and owners must carry a lead. Glen Eira says off-leash park users must carry a leash at all times and put a leash on the dog within 20 metres of playgrounds, BBQs or picnic areas. Failure to follow the rules may result in a fine.",
-    "zh": "规则由各市政府制定。Stonnington 市政府规定，除指定的免拴区域外，狗必须始终拴绳，主人须携带牵引绳。Glen Eira 市政府规定，在免拴公园内主人须随时携带牵引绳，并在距离儿童游乐场、烧烤区或野餐区 20 米范围内给狗拴上绳。违反规定可能被罚款。"
+    "en": "City of Stonnington says to keep your dog on-lead at all times unless in a designated off-lead area, and says failure to do so may result in a fine. Glen Eira says people using off-leash areas must carry a leash at all times and put a leash on their dog within 20 metres of playgrounds, BBQs or picnic areas.",
+    "zh": "Stonnington 市政府表示，除指定的免拴区域外，应始终给狗拴绳，否则可能被罚款。Glen Eira 市政府表示，使用免拴区域的人须随时携带牵引绳，并在距离儿童游乐场、烧烤区或野餐区 20 米范围内给狗拴上绳。"
    },
    "sources": [
     {
@@ -1458,17 +1458,13 @@
     "墨尔本遛狗要带粪便袋吗"
    ],
    "answer": {
-    "en": "Yes, according to the councils checked. Whitehorse City Council requires dog owners to carry a bag or scoop to remove their dog's poo in any public place, and says owners can be fined for not picking up. City of Stonnington also lists picking up after your dog as a requirement and says failing to follow its rules may result in a fine.",
-    "zh": "是的，根据所查阅的市政府页面。Whitehorse 市政府要求狗主人在任何公共场所随身携带袋子或铲子清理狗的粪便，并表示不清理可能被罚款。Stonnington 市政府也把清理狗粪列为要求，并表示不遵守规定可能被罚款。"
+    "en": "Whitehorse City Council requires dog owners to carry a bag or scoop to remove their dog's poo whenever they are with their dog in a public place. It says you can be fined for not picking up after your dog.",
+    "zh": "Whitehorse 市政府要求狗主人带狗到公共场所时随身携带袋子或铲子清理狗的粪便。该市政府表示，不清理狗粪可能被罚款。"
    },
    "sources": [
     {
      "url": "https://www.whitehorse.vic.gov.au/living-working/pets/dogs/dog-poo-disposal",
      "quote": "Whitehorse City Council requires dog owners to carry an appropriate receptacle (e.g. bag or scoop) to remove and dispose of their dog’s poo whenever they are with their dog in a public place. You can be fined for not picking up after your dog."
-    },
-    {
-     "url": "https://www.stonnington.vic.gov.au/Services/Pets-and-animals/Off-lead-parks-and-reserves",
-     "quote": "pick up after your dog (bags and bins are supplied at designated off-lead areas)"
     }
    ],
    "tags": [
@@ -1476,7 +1472,11 @@
     "dogs",
     "council"
    ],
-   "checked": "2026-10-30"
+   "checked": "2026-10-30",
+   "note": {
+    "en": "This source covers Whitehorse; other councils have their own local rules.",
+    "zh": "该来源针对 Whitehorse；其他市政府有各自的规定。"
+   }
   },
   {
    "id": "how-many-pets-without-permit-melbourne",
@@ -1670,8 +1670,8 @@
     "RSA证书是什么"
    ],
    "answer": {
-    "en": "Yes. Liquor Control Victoria says Responsible Service of Alcohol (RSA) training is required if you want to supply alcohol in Victoria. Its RSA page also covers how to get an RSA certificate, including refresher courses and a bridging course for interstate certificates.",
-    "zh": "需要。维多利亚州酒类管制局表示，若要在维州供应酒精饮料，须接受负责任服务酒精（RSA）培训。其 RSA 页面还介绍了如何取得 RSA 证书，包括复训课程以及适用于外州证书的衔接课程。"
+    "en": "Liquor Control Victoria says Responsible Service of Alcohol (RSA) training is required if you want to supply alcohol in Victoria. Its RSA page also covers how to get an RSA certificate, including refresher courses and a bridging course for interstate certificates.",
+    "zh": "维多利亚州酒类管制局表示，若要在维州供应酒精饮料，须接受负责任服务酒精（RSA）培训。其 RSA 页面还介绍了如何取得 RSA 证书，包括复训课程以及适用于外州证书的衔接课程。"
    },
    "sources": [
     {
