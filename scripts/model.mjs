@@ -7,7 +7,7 @@ export const MODEL = 'claude-sonnet-5-5';
 export const INPUT_USD_PER_M = 2, OUTPUT_USD_PER_M = 10;
 // 保留 Jian 的核对提示词和返回字段，另澄清中文按事实含义判断。
 const PROMPT = `You are a strict fact-checker. Below are excerpts from official web pages (lower-cased) and a draft answer in English and Chinese for a public dataset.
-For EACH sentence of the English answer, decide if the excerpts fully support it. "partial" = part of it is unsupported. Then write a corrected answer that keeps only what the excerpts support (same plain style, 2-5 sentences, no first person, no "I did not find"), and a Chinese version that says exactly the same.
+Each excerpt has a "quote" (the sentence the dataset cites) and "text" (the page around it). For EACH sentence of the English answer, decide if the quotes fully support it. Use "text" only to check that a quote is not misread out of context: a claim found in "text" but in no quote is unsupported. "partial" = part of it is unsupported. Then write a corrected answer that keeps only what the quotes support (same plain style, 2-5 sentences, no first person, no "I did not find"), and a Chinese version that says exactly the same.
 Output ONLY JSON, no code fence:`;
 export function sentences(answer) {
   return [...new Intl.Segmenter('en', { granularity: 'sentence' }).segment(answer)].map((x) => x.segment.trim()).filter(Boolean);
