@@ -150,36 +150,6 @@
    "checked": "2026-11-01"
   },
   {
-   "id": "oshc-dental-optical-physio",
-   "question": {
-    "en": "Does basic OSHC cover dental, glasses and physiotherapy?",
-    "zh": "基础 OSHC 包牙科、眼镜和物理治疗吗？"
-   },
-   "aliases": [
-    "Does student health insurance cover a dentist?",
-    "留学生保险报销牙医和配镜吗"
-   ],
-   "answer": {
-    "en": "OSHC does not cover general treatment such as dental, optical or physiotherapy. Extras OSHC or general treatment cover from an Australian private health insurer can cover these treatments.",
-    "zh": "OSHC 不涵盖牙科、眼科及配镜或物理治疗等一般治疗项目。OSHC 附加保险或澳大利亚私人医疗保险公司的普通治疗保险可以涵盖这些治疗。"
-   },
-   "sources": [
-    {
-     "url": "https://www.privatehealth.gov.au/health_insurance/overseas/overseas_student_health_cover.htm",
-     "quote": "OSHC does not pay for general treatment (ancillary, or extras cover) such as dental, optical or physiotherapy."
-    },
-    {
-     "url": "https://www.privatehealth.gov.au/health_insurance/overseas/overseas_student_health_cover.htm",
-     "quote": "If you require cover for these treatments, you may take Extras OSHC provided by an OSHC provider or general treatment cover with any Australian private health insurer."
-    }
-   ],
-   "tags": [
-    "oshc",
-    "dental"
-   ],
-   "checked": "2026-11-01"
-  },
-  {
    "id": "oshc-gap-fees",
    "question": {
     "en": "Why might I have to pay a gap fee with OSHC?",
@@ -494,32 +464,6 @@
    "checked": "2026-11-01"
   },
   {
-   "id": "student-usi-before-arrival",
-   "question": {
-    "en": "Can an international student create a USI before arriving in Australia?",
-    "zh": "留学生可以在抵达澳洲前创建 USI 吗？"
-   },
-   "aliases": [
-    "Can I get a USI while still overseas?",
-    "留学生还没入境能申请 USI 吗"
-   ],
-   "answer": {
-    "en": "An international student can only create a USI after arriving in Australia and clearing customs. A non-Australian passport and an Australian visa are used as identification.",
-    "zh": "留学生只能在抵达澳大利亚并通过海关后创建 USI。创建时用非澳大利亚护照和澳大利亚签证作为身份证明。"
-   },
-   "sources": [
-    {
-     "url": "https://www.studyaustralia.gov.au/en/plan-your-move/your-first-week-in-australia",
-     "quote": "You can only create a USI after you have arrived in Australia and cleared customs using your non-Australian passport and Australian visa as forms of ID."
-    }
-   ],
-   "tags": [
-    "usi",
-    "arrival"
-   ],
-   "checked": "2026-11-01"
-  },
-  {
    "id": "student-usi-qualification",
    "question": {
     "en": "Who needs a USI to study in Australia?",
@@ -606,32 +550,6 @@
    "checked": "2026-11-01"
   },
   {
-   "id": "student-accommodation-study-offer-guarantee",
-   "question": {
-    "en": "Does a university study offer guarantee student accommodation?",
-    "zh": "拿到大学录取通知就一定有学生宿舍吗？"
-   },
-   "aliases": [
-    "Does accepting my course offer secure a room?",
-    "收到录取通知书学校就会安排宿舍吗"
-   ],
-   "answer": {
-    "en": "A study offer does not guarantee accommodation. Accommodation managed by an education provider may be limited.",
-    "zh": "获得录取并不保证有住宿。教育机构管理的住宿可能数量有限。"
-   },
-   "sources": [
-    {
-     "url": "https://www.studyaustralia.gov.au/en/life-in-australia/accommodation",
-     "quote": "Places may be limited, and receiving an offer to study does not guarantee accommodation."
-    }
-   ],
-   "tags": [
-    "housing",
-    "study"
-   ],
-   "checked": "2026-11-01"
-  },
-  {
    "id": "student-purpose-built-accommodation",
    "question": {
     "en": "What is purpose-built student accommodation?",
@@ -658,62 +576,6 @@
    "tags": [
     "housing",
     "study"
-   ],
-   "checked": "2026-11-01"
-  },
-  {
-   "id": "student-homestay-meaning",
-   "question": {
-    "en": "What is a homestay for an international student?",
-    "zh": "留学生的 homestay 是什么？"
-   },
-   "aliases": [
-    "What is living with a host family?",
-    "寄宿家庭住宿是怎么回事"
-   ],
-   "answer": {
-    "en": "Homestay involves living with a local family in their home. Meals, cleaning and other services may be included.",
-    "zh": "Homestay 指住在当地家庭的家里。住宿可能包括餐食、清洁和其他服务。"
-   },
-   "sources": [
-    {
-     "url": "https://www.studyaustralia.gov.au/en/life-in-australia/accommodation",
-     "quote": "Homestay involves living with a local family in their home."
-    },
-    {
-     "url": "https://www.studyaustralia.gov.au/en/life-in-australia/accommodation",
-     "quote": "Meals, cleaning and other services may be included."
-    }
-   ],
-   "tags": [
-    "housing",
-    "homestay"
-   ],
-   "checked": "2026-11-01"
-  },
-  {
-   "id": "student-housing-under-18",
-   "question": {
-    "en": "Who approves accommodation for an under-18 student without a parent or approved welfare arrangement?",
-    "zh": "未满 18 岁且没有父母或获批福利安排的学生，住宿由谁批准？"
-   },
-   "aliases": [
-    "Who approves housing for a minor international student?",
-    "未成年留学生住宿需要学校批准吗"
-   ],
-   "answer": {
-    "en": "If a student under 18 studies in Australia without a parent, legal guardian or approved welfare arrangement, their education provider must approve accommodation and welfare arrangements that meet applicable requirements. This applies to students studying in Australia.",
-    "zh": "未满 18 岁的学生在澳大利亚学习时，如果没有父母、法定监护人或获批准的福利安排，其教育机构必须批准符合适用要求的住宿和福利安排。这适用于在澳大利亚学习的学生。"
-   },
-   "sources": [
-    {
-     "url": "https://www.studyaustralia.gov.au/en/life-in-australia/accommodation",
-     "quote": "If you are under 18 and studying in Australia without a parent, legal guardian or approved welfare arrangement, your education provider must approve accommodation and welfare arrangements that meet applicable requirements."
-    }
-   ],
-   "tags": [
-    "housing",
-    "welfare"
    ],
    "checked": "2026-11-01"
   },
@@ -834,37 +696,6 @@
     "scholarship"
    ],
    "checked": "2026-11-01"
-  },
-  {
-   "id": "international-student-travel-pass-existence",
-   "question": {
-    "en": "Can international students get a discounted public transport pass in Victoria?",
-    "zh": "留学生在维州可以申请公共交通优惠卡吗？"
-   },
-   "aliases": [
-    "Is there a student travel pass for overseas students?",
-    "维州留学生有公共交通优惠票吗"
-   ],
-   "answer": {
-    "en": "The International Student Travel Pass website says international undergraduate students can save on travel with the pass. It lists a 50% saving on a public transport ticket from participating education providers.",
-    "zh": "International Student Travel Pass 网站表示，国际本科生使用该通行证可以节省交通费用。网站列出参加该计划的教育机构学生可享受公共交通票价五折优惠。"
-   },
-   "sources": [
-    {
-     "url": "https://internationalstudent.ptv.vic.gov.au/",
-     "quote": "International undergraduate students can save over $550* on travel with an International Student Travel Pass."
-    },
-    {
-     "url": "https://internationalstudent.ptv.vic.gov.au/",
-     "quote": "Save 50% on a public transport ticket (from participating education providers)"
-    }
-   ],
-   "tags": [
-    "transport",
-    "student"
-   ],
-   "checked": "2026-11-01",
-   "valid_until": "2026-12-31"
   },
   {
    "id": "student-worker-payslip",
