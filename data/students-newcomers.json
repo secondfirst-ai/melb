@@ -867,36 +867,6 @@
    "valid_until": "2026-12-31"
   },
   {
-   "id": "student-tfn-lifetime",
-   "question": {
-    "en": "Do I need a new TFN if I change jobs or leave Australia?",
-    "zh": "换工作或离开澳洲后要重新申请 TFN 吗？"
-   },
-   "aliases": [
-    "Does my tax file number change when I move overseas?",
-    "回国或换工作后税号会变吗"
-   ],
-   "answer": {
-    "en": "A TFN is a unique number used to identify you in the tax system. It is yours for life, even if you change jobs or name, move interstate or go overseas.",
-    "zh": "TFN 是税务系统中用于识别个人的唯一号码。这个号码终身属于本人，即使换工作或改名、搬到其他州或去海外也不变。"
-   },
-   "sources": [
-    {
-     "url": "https://www.pev.gov.au/moving-australia/settling-australia",
-     "quote": "A Tax File Number (TFN) is a unique number used to identify you in the tax system and is an important part of your identity in Australia."
-    },
-    {
-     "url": "https://www.pev.gov.au/moving-australia/settling-australia",
-     "quote": "Your TFN is usually 9 digits long and is yours for life – you keep your TFN even if you change jobs or change your name, move interstate or go overseas."
-    }
-   ],
-   "tags": [
-    "tfn",
-    "arrival"
-   ],
-   "checked": "2026-11-01"
-  },
-  {
    "id": "student-worker-payslip",
    "question": {
     "en": "When should an international student receive a payslip after being paid?",
