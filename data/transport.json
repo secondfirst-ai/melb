@@ -96,8 +96,8 @@
     "区域巴士都半价吗"
    ],
    "answer": {
-    "en": "Public transport is half price for everyone, every day, from Monday 1 June 2026 until 1 January 2027. The discount covers travel on all trains, trams and buses, and on regional trains, coaches and buses, including intertown and regional town bus services. It excludes SkyBus, ferries, and non-subsidised regional bus services.",
-    "zh": "2026 年 6 月 1 日星期一至 2027 年 1 月 1 日，公共交通每天对所有人半价。折扣适用于所有火车、电车和巴士，以及区域火车、长途客车和巴士，包括城镇之间和区域内的城镇巴士。不包括 SkyBus、渡轮，以及没有政府补贴的区域巴士。"
+    "en": "Public transport is half price across the state for everyone, every day, from Monday 1 June 2026 until 1 January 2027. The discount covers travel on all trains, trams and buses, and on regional trains, coaches and buses, including intertown and regional town bus services. It excludes SkyBus, ferries, and non-subsidised regional bus services.",
+    "zh": "2026 年 6 月 1 日星期一至 2027 年 1 月 1 日，全州公共交通每天对所有人半价。折扣适用于所有火车、电车和巴士，以及区域火车、长途客车和巴士，包括城镇之间和区域内的城镇巴士。不包括 SkyBus、渡轮，以及没有政府补贴的区域巴士。"
    },
    "sources": [
     {
@@ -533,7 +533,7 @@
    ],
    "answer": {
     "en": "MPTP members are never required to pay the lifting fee personally. Drivers can turn or leave the meter on while loading and unloading a wheelchair passenger into a wheelchair accessible vehicle, and may apply additional service fees.",
-    "zh": "MPTP 会员从不需要自己支付抬升费（lifting fee）。司机在把使用轮椅的乘客装上或卸下无障碍出租车时，可以把计价器打开或保持运转，并且可以加收其他服务费。"
+    "zh": "MPTP 会员从不需要自己支付抬升费（lifting fee）。司机在把使用轮椅的乘客装上或卸下轮椅无障碍车辆（WAV）时，可以把计价器打开或保持运转，并且可以加收其他服务费。"
    },
    "sources": [
     {
@@ -911,8 +911,8 @@
     "无障碍车预约还收 high occupancy 吗"
    ],
    "answer": {
-    "en": "From 1 July 2026, the maximum high-occupancy fee for an unbooked trip is $18.35. It applies for five or more passengers, including a person who uses a wheelchair or other mobility aid, or where the hirer specifically requests a larger than standard vehicle regardless of the number of passengers. The larger-vehicle part of that fee does not apply where the booking is for a person who uses a wheelchair or other mobility aid.",
-    "zh": "自 2026 年 7 月 1 日起，未预约行程的多人乘坐附加费最高是 $18.35。它适用于五名或更多乘客，包括其中有人使用轮椅或其他行动辅具的情况，也适用于乘客特别要求比标准车更大的车辆、不论人数多少。如果这次预约是为使用轮椅或其他行动辅具的人叫的车，则不适用其中“要求更大车辆”的那一部分费用。"
+    "en": "From 1 July 2026, the maximum high-occupancy fee for an unbooked trip is $18.35. It applies for five or more passengers, including a person who uses a wheelchair or other mobility aid, or where the hirer specifically requests a larger than standard vehicle regardless of the number of passengers. Requesting a larger than standard vehicle does not bring in the fee where the booking is for a person who uses a wheelchair or other mobility aid.",
+    "zh": "自 2026 年 7 月 1 日起，未预约行程的多人乘坐附加费最高是 $18.35。它适用于五名或更多乘客，包括其中有人使用轮椅或其他行动辅具的情况，也适用于乘客特别要求比标准车更大的车辆、不论人数多少。如果这次预约是为使用轮椅或其他行动辅具的人叫的车，要求更大的车辆不会因此收这笔费用。"
    },
    "sources": [
     {
@@ -1520,8 +1520,8 @@
     "低地板电车轮椅标志在哪"
    ],
    "answer": {
-    "en": "Priority seats are for passengers who may have accessibility needs, such as a person with a disability, illness or injury, an elderly person, and people who are pregnant. A priority seat should be made available when a passenger who needs it asks, and the reason may not be visible. Refusing a priority seat when requested can result in a fine from an Authorised Officer. Some tram stops and low-floor trams have allocated spaces for passengers using wheelchairs or mobility aids, marked with a wheelchair symbol on the floor.",
-    "zh": "优先座是给可能有无障碍需要的乘客，例如有残疾、疾病或受伤的人、老年人和孕妇。需要优先座的乘客提出时，应当把座位让出来，需要的原因不一定看得出来。被要求后仍拒绝让出优先座，授权检查员（Authorised Officer）可以因此开出罚款。部分电车站和低地板电车为使用轮椅或行动辅具的乘客设有专用空间，地面上有轮椅标志。"
+    "en": "Priority seats are for passengers who may have accessibility needs, such as a person with a disability, illness or injury, an elderly person, and people who are pregnant. A priority seat should be made available when a passenger who needs it asks, and the reason may not be visible. Refusing a priority seat when requested can result in a fine from an Authorised Officer. Some tram stops and low-floor trams have allocated spaces for passengers using wheelchairs or mobility aids. On trams, the area is marked with a wheelchair symbol on the floor.",
+    "zh": "优先座是给可能有无障碍需要的乘客，例如有残疾、疾病或受伤的人、老年人和孕妇。需要优先座的乘客提出时，应当把座位让出来，需要的原因不一定看得出来。被要求后仍拒绝让出优先座，授权检查员（Authorised Officer）可以因此开出罚款。部分电车站和低地板电车为使用轮椅或行动辅具的乘客设有专用空间。在电车上，这块区域的地面有轮椅标志。"
    },
    "sources": [
     {
@@ -1735,8 +1735,8 @@
     "团体票能按折扣价订吗"
    ],
    "answer": {
-    "en": "Public transport is half price for everyone, every day, from Monday 1 June 2026 until 1 January 2027. V/Line bookings and seat reservations recommenced from Monday 1 June 2026 at half price. Group travel bookings can also be made at the discounted price.",
-    "zh": "2026 年 6 月 1 日星期一至 2027 年 1 月 1 日，公共交通每天对所有人半价。V/Line 的订票和座位预订从 2026 年 6 月 1 日星期一起按半价恢复。团体出行也可以按折扣价预订。"
+    "en": "Public transport is half price across the state for everyone, every day, from Monday 1 June 2026 until 1 January 2027. For V/Line and regional services, the page says bookings and seat reservations will recommence from Monday 1 June 2026, at half price. Group travel bookings can also be made at the discounted price.",
+    "zh": "2026 年 6 月 1 日星期一至 2027 年 1 月 1 日，全州公共交通每天对所有人半价。页面写明，V/Line 和区域服务的订票和座位预订将从 2026 年 6 月 1 日星期一起按半价恢复。团体出行也可以按折扣价预订。"
    },
    "sources": [
     {
@@ -1745,7 +1745,7 @@
     },
     {
      "url": "https://www.vic.gov.au/half-price-travel",
-     "quote": "Bookings and seat reservations will recommence from Monday 1 June 2026, at half price."
+     "quote": "V/Line and regional services Bookings and seat reservations will recommence from Monday 1 June 2026, at half price."
     },
     {
      "url": "https://www.vic.gov.au/half-price-travel",
