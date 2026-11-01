@@ -504,17 +504,13 @@
     "留学生还没入境能申请 USI 吗"
    ],
    "answer": {
-    "en": "International students can only create a USI once they have arrived in Australia. They are not required to provide one at enrolment because they cannot create it until they enter Australia.",
-    "zh": "留学生只能在抵达澳大利亚后创建 USI。由于入境前无法创建，注册入学时不需要提供 USI。"
+    "en": "An international student can only create a USI after arriving in Australia and clearing customs. A non-Australian passport and an Australian visa are used as identification.",
+    "zh": "留学生只能在抵达澳大利亚并通过海关后创建 USI。创建时用非澳大利亚护照和澳大利亚签证作为身份证明。"
    },
    "sources": [
     {
-     "url": "https://www.usi.gov.au/students/international-students-and-students-studying-overseas",
-     "quote": "You can only create a USI once you have arrived in Australia."
-    },
-    {
-     "url": "https://www.usi.gov.au/students/international-students-and-students-studying-overseas",
-     "quote": "You are not required to provide a USI at enrolment because you cannot create one until you enter Australia."
+     "url": "https://www.studyaustralia.gov.au/en/plan-your-move/your-first-week-in-australia",
+     "quote": "You can only create a USI after you have arrived in Australia and cleared customs using your non-Australian passport and Australian visa as forms of ID."
     }
    ],
    "tags": [
@@ -524,118 +520,32 @@
    "checked": "2026-11-01"
   },
   {
-   "id": "student-usi-passport-visa",
-   "question": {
-    "en": "What ID can an international student use to create a USI?",
-    "zh": "留学生创建 USI 可以用什么身份证件？"
-   },
-   "aliases": [
-    "Which passport and visa do I use for my USI?",
-    "留学生申请 USI 要用护照和签证吗"
-   ],
-   "answer": {
-    "en": "After arriving in Australia, an international student can use an Australian visa and a non-Australian passport to create a USI. Both documents are required for this method.",
-    "zh": "抵达澳大利亚后，留学生可以用澳大利亚签证和非澳大利亚护照创建 USI。使用这种方式时两份证件都需要。"
-   },
-   "sources": [
-    {
-     "url": "https://www.usi.gov.au/students/international-students-and-students-studying-overseas",
-     "quote": "use your Australian visa and non-Australian passport to create a USI"
-    },
-    {
-     "url": "https://www.usi.gov.au/students/international-students-and-students-studying-overseas/international-student-requirements",
-     "quote": "Both documents are required to create your USI."
-    }
-   ],
-   "tags": [
-    "usi",
-    "documents"
-   ],
-   "checked": "2026-11-01"
-  },
-  {
    "id": "student-usi-qualification",
    "question": {
-    "en": "Does an international student need a USI to receive a qualification in Australia?",
-    "zh": "留学生在澳大利亚拿学历证书需要 USI 吗？"
+    "en": "Who needs a USI to study in Australia?",
+    "zh": "在澳大利亚学习，哪些人需要 USI？"
    },
    "aliases": [
-    "Do overseas students need a USI to graduate?",
-    "留学生毕业拿证需要 USI 吗"
+    "Do university and TAFE students need a USI?",
+    "读大学和 TAFE 需要 USI 吗"
    ],
    "answer": {
-    "en": "An international student studying in Australia with an Australian education or training provider must have a USI to receive their qualification. A USI can only be created after arrival in Australia.",
-    "zh": "在澳大利亚的澳洲教育或培训机构学习的留学生，领取学历证书时必须有 USI。USI 只能在抵达澳大利亚后创建。"
+    "en": "People planning to study at an Australian university, attend TAFE or do other nationally recognised training need a USI. A USI can be used to obtain a qualification or statement of attainment.",
+    "zh": "计划在澳大利亚读大学、读 TAFE 或参加其他国家认可培训的人需要 USI。USI 可用于领取资格证书或学习成果证明。"
    },
    "sources": [
     {
-     "url": "https://www.usi.gov.au/students/international-students-and-students-studying-overseas/international-student-requirements",
-     "quote": "If you are an international student studying in Australia with an Australian education or training provider, you must have a USI to receive your qualification."
+     "url": "https://www.studyaustralia.gov.au/en/plan-your-move/your-first-week-in-australia",
+     "quote": "If you plan to study at a university in Australia, attend TAFE or do any other nationally recognised training, you will need a Unique Student Identifier (USI)."
     },
     {
-     "url": "https://www.usi.gov.au/students/international-students-and-students-studying-overseas/international-student-requirements",
-     "quote": "You cannot create a USI until you have arrived in Australia."
+     "url": "https://www.studyaustralia.gov.au/en/plan-your-move/your-first-week-in-australia",
+     "quote": "With a USI, you can get your qualification or statement of attainment."
     }
    ],
    "tags": [
     "usi",
     "study"
-   ],
-   "checked": "2026-11-01"
-  },
-  {
-   "id": "student-usi-after-departure",
-   "question": {
-    "en": "Can an international student create a USI after leaving Australia?",
-    "zh": "留学生离开澳洲后还能创建 USI 吗？"
-   },
-   "aliases": [
-    "I left Australia without a USI; can I create one now?",
-    "留学生回国后还能办 USI 吗"
-   ],
-   "answer": {
-    "en": "A USI cannot be created after departure from Australia. An international student who leaves without one may not be able to graduate or receive a statement of attainment.",
-    "zh": "离开澳大利亚后不能创建 USI。留学生如果没有创建 USI 就离境，可能无法毕业或领取学习成果证明。"
-   },
-   "sources": [
-    {
-     "url": "https://www.usi.gov.au/students/international-students-and-students-studying-overseas",
-     "quote": "A USI cannot be created after you depart Australia."
-    },
-    {
-     "url": "https://www.usi.gov.au/students/international-students-and-students-studying-overseas",
-     "quote": "you may not be able to graduate or receive a statement of attainment if you leave Australia and have not created a USI"
-    }
-   ],
-   "tags": [
-    "usi",
-    "departure"
-   ],
-   "checked": "2026-11-01"
-  },
-  {
-   "id": "student-usi-interpreter",
-   "question": {
-    "en": "Can I get an interpreter when contacting the USI service?",
-    "zh": "联系 USI 服务时可以请口译吗？"
-   },
-   "aliases": [
-    "Is language help available from the USI office?",
-    "咨询 USI 可以用中文口译吗"
-   ],
-   "answer": {
-    "en": "The USI service can arrange a translating and interpreting service when contacted. This allows a person to speak in their preferred language.",
-    "zh": "联系 USI 服务时，可以安排翻译和口译服务。这样联系者可以使用自己首选的语言沟通。"
-   },
-   "sources": [
-    {
-     "url": "https://www.usi.gov.au/students/international-students-and-students-studying-overseas",
-     "quote": "To speak to us in your preferred language, we can arrange a translating and interpreting service when you contact us."
-    }
-   ],
-   "tags": [
-    "usi",
-    "language"
    ],
    "checked": "2026-11-01"
   },
@@ -936,24 +846,25 @@
     "维州留学生有公共交通优惠票吗"
    ],
    "answer": {
-    "en": "Some full-time international students may be eligible for an International Student Travel Pass. YouthNav lists it among concessions available to young people in Victoria.",
-    "zh": "部分全日制留学生可能符合 International Student Travel Pass 的申请资格。YouthNav 将它列为维州年轻人可以使用的优惠之一。"
+    "en": "The International Student Travel Pass website says international undergraduate students can save on travel with the pass. It lists a 50% saving on a public transport ticket from participating education providers.",
+    "zh": "International Student Travel Pass 网站表示，国际本科生使用该通行证可以节省交通费用。网站列出参加该计划的教育机构学生可享受公共交通票价五折优惠。"
    },
    "sources": [
     {
-     "url": "https://www.youthcentral.vic.gov.au/youthnav/getting-around/public-transport-ticket-options",
-     "quote": "Some full-time international students can be eligible for an International Student Travel Pass."
+     "url": "https://internationalstudent.ptv.vic.gov.au/",
+     "quote": "International undergraduate students can save over $550* on travel with an International Student Travel Pass."
     },
     {
-     "url": "https://www.youthcentral.vic.gov.au/youthnav/getting-around/public-transport-ticket-options",
-     "quote": "Six concessions are available to young people in Victoria: the Transport Victoria secondary/tertiary student ID, international student pass, health care card, asylum seeker ID, Pensioner Concession Card printed with Code DSP, and Victorian Carer Card."
+     "url": "https://internationalstudent.ptv.vic.gov.au/",
+     "quote": "Save 50% on a public transport ticket (from participating education providers)"
     }
    ],
    "tags": [
     "transport",
     "student"
    ],
-   "checked": "2026-11-01"
+   "checked": "2026-11-01",
+   "valid_until": "2026-12-31"
   },
   {
    "id": "student-tfn-lifetime",
@@ -966,47 +877,17 @@
     "回国或换工作后税号会变吗"
    ],
    "answer": {
-    "en": "A TFN is a personal reference number in the tax and superannuation systems. It is yours for life, even if you change jobs or name, move interstate or go overseas.",
-    "zh": "TFN 是税务和养老金体系中的个人参考号码。这个号码终身属于本人，即使换工作或改名、搬到其他州或去海外也不变。"
+    "en": "A TFN is a unique number used to identify you in the tax system. It is yours for life, even if you change jobs or name, move interstate or go overseas.",
+    "zh": "TFN 是税务系统中用于识别个人的唯一号码。这个号码终身属于本人，即使换工作或改名、搬到其他州或去海外也不变。"
    },
    "sources": [
     {
-     "url": "https://www.ato.gov.au/individuals-and-families/tax-file-number/what-is-a-tax-file-number",
-     "quote": "A tax file number (TFN) is your personal reference number in the tax and superannuation systems."
+     "url": "https://www.pev.gov.au/moving-australia/settling-australia",
+     "quote": "A Tax File Number (TFN) is a unique number used to identify you in the tax system and is an important part of your identity in Australia."
     },
     {
-     "url": "https://www.ato.gov.au/individuals-and-families/tax-file-number/what-is-a-tax-file-number",
-     "quote": "yours for life – you keep your TFN even if you change jobs or name, move interstate or go overseas."
-    }
-   ],
-   "tags": [
-    "tfn",
-    "arrival"
-   ],
-   "checked": "2026-11-01"
-  },
-  {
-   "id": "student-tfn-lost-where",
-   "question": {
-    "en": "Where can I find my TFN if I have forgotten it?",
-    "zh": "忘记 TFN 了，可以在哪里找？"
-   },
-   "aliases": [
-    "Where do I look up my existing tax file number?",
-    "忘了税号从哪里查"
-   ],
-   "answer": {
-    "en": "The ATO lists the ATO app or ATO online account, if linked to myGov, as places to find an existing TFN. It also lists an income tax notice of assessment.",
-    "zh": "ATO 表示，如果 myGov 已关联 ATO，可以在 ATO app 或 ATO 在线账户中找到已有的 TFN。所得税评税通知书上也可能有。"
-   },
-   "sources": [
-    {
-     "url": "https://www.ato.gov.au/individuals-and-families/tax-file-number/what-is-a-tax-file-number",
-     "quote": "in the ATO app or your ATO online account if you have a myGov account linked to the ATO"
-    },
-    {
-     "url": "https://www.ato.gov.au/individuals-and-families/tax-file-number/what-is-a-tax-file-number",
-     "quote": "on your income tax notice of assessment"
+     "url": "https://www.pev.gov.au/moving-australia/settling-australia",
+     "quote": "Your TFN is usually 9 digits long and is yours for life – you keep your TFN even if you change jobs or change your name, move interstate or go overseas."
     }
    ],
    "tags": [
