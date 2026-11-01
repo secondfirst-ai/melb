@@ -1,0 +1,1659 @@
+{
+  "dataset": "money-work",
+  "title": {
+    "en": "Money and work",
+    "zh": "财务与工作"
+  },
+  "updated": "2026-11-01",
+  "notes": [],
+  "records": [
+    {
+      "id": "find-lost-tfn-online",
+      "question": {
+        "en": "How can I find my TFN if I have forgotten it?",
+        "zh": "忘记税号 TFN 了怎么找回？"
+      },
+      "aliases": [
+        "Where do I find my tax file number online?",
+        "How do I look up my forgotten TFN?",
+        "税号忘了去哪里查？",
+        "怎样在线找回 TFN？"
+      ],
+      "answer": {
+        "en": "If you already have a TFN but cannot remember it, you can find it online in ATO online services. Sign in to your myGov account or log in to the ATO app.",
+        "zh": "如果已经有 TFN 但忘记了号码，可以在 ATO 在线服务中查找。需要登录 myGov 账户或 ATO app。"
+      },
+      "sources": [
+        {
+          "url": "https://www.ato.gov.au/individuals-and-families/tax-file-number/lost-or-stolen-tfn",
+          "quote": "If you already have a TFN and don't remember the number, you can find it online in ATO online services."
+        },
+        {
+          "url": "https://www.ato.gov.au/individuals-and-families/tax-file-number/lost-or-stolen-tfn",
+          "quote": "You will need to sign in to your myGov account or login to the ATO app."
+        }
+      ],
+      "tags": [
+        "tax",
+        "tfn"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "stolen-tfn-report",
+      "question": {
+        "en": "What if someone steals or misuses my TFN?",
+        "zh": "税号被盗或被冒用怎么办？"
+      },
+      "aliases": [
+        "Who do I tell if my tax file number is stolen?",
+        "What number can I call about TFN misuse?",
+        "TFN 泄露要通知谁？",
+        "税号疑似被冒用打什么电话？"
+      ],
+      "answer": {
+        "en": "If your TFN has been lost or stolen, or an unauthorised third party has access to it, tell the ATO as soon as possible. If you suspect misuse, call the Client Identity Support Centre on 1800 467 033 between 8:00 am and 6:00 pm, Monday to Friday.",
+        "zh": "如果 TFN 遗失、被盗或被未经授权的第三方获取，应尽快告知 ATO。如果怀疑 TFN 被冒用，可在周一至周五上午 8:00 至下午 6:00 拨打客户身份支持中心电话 1800 467 033。"
+      },
+      "sources": [
+        {
+          "url": "https://www.ato.gov.au/individuals-and-families/tax-file-number/lost-or-stolen-tfn",
+          "quote": "If your TFN has been lost, stolen or an unauthorised third party has access to it, tell us as soon as possible."
+        },
+        {
+          "url": "https://www.ato.gov.au/individuals-and-families/tax-file-number/lost-or-stolen-tfn",
+          "quote": "If you suspect misuse of your TFN, phone our Client Identity Support Centre on 1800 467 033 between 8:00 am and 6:00 pm, Monday to Friday."
+        }
+      ],
+      "tags": [
+        "tax",
+        "tfn"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "what-is-abn",
+      "question": {
+        "en": "What is an ABN?",
+        "zh": "ABN 是什么？"
+      },
+      "aliases": [
+        "What does an Australian business number identify?",
+        "How many digits are in an ABN?",
+        "澳洲商业号码是什么？",
+        "ABN 有几位数字？"
+      ],
+      "answer": {
+        "en": "An Australian business number (ABN) is a unique 11-digit number that identifies a business or organisation to government and the community. Not everyone is entitled to an ABN.",
+        "zh": "澳大利亚商业号码（ABN）是一个独一无二的 11 位号码，用于向政府和公众识别企业或机构。并不是每个人都有资格获得 ABN。"
+      },
+      "sources": [
+        {
+          "url": "https://www.abr.gov.au/business-super-funds-charities/applying-abn",
+          "quote": "The ABN (Australian business number) is a unique 11-digit number that identifies your business or organisation to the government and community."
+        },
+        {
+          "url": "https://www.abr.gov.au/business-super-funds-charities/applying-abn",
+          "quote": "Not everyone is entitled to an ABN."
+        }
+      ],
+      "tags": [
+        "business",
+        "abn"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "employee-abn-employer-request",
+      "question": {
+        "en": "Can my employer make me get an ABN for an employee job?",
+        "zh": "雇主可以要求我为员工工作申请 ABN 吗？"
+      },
+      "aliases": [
+        "Do employees need an ABN to be hired?",
+        "Can my boss require an ABN for a job as an employee?",
+        "打工做员工必须有 ABN 吗？",
+        "老板要求员工办 ABN 合适吗？"
+      ],
+      "answer": {
+        "en": "You aren't entitled to an ABN for work you carry out as an employee, even if you or your employer calls it contracting. An employer shouldn't ask you to get an ABN as a condition of employment.",
+        "zh": "对于以员工身份从事的工作，即使你或雇主称其为承包工作，也没有资格为此申请 ABN。雇主不应把申请 ABN 作为雇用条件。"
+      },
+      "sources": [
+        {
+          "url": "https://www.abr.gov.au/business-super-funds-charities/applying-abn/abn-entitlement",
+          "quote": "You're not entitled to an ABN for work that you carry out as an employee – including as an apprentice, trade assistant or labourer – even if you or your employer calls it contracting."
+        },
+        {
+          "url": "https://www.abr.gov.au/business-super-funds-charities/applying-abn/abn-entitlement",
+          "quote": "An employer shouldn't ask you to get an ABN as a condition of employment."
+        }
+      ],
+      "tags": [
+        "business",
+        "abn",
+        "employment"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "abn-update-details-time",
+      "question": {
+        "en": "How soon must I update changed ABN details?",
+        "zh": "ABN 信息变更后多久要更新？"
+      },
+      "aliases": [
+        "How long do I have to change my ABN details?",
+        "When must I report changes to ABN details?",
+        "ABN 资料变了多久内要改？",
+        "商业号码资料更新期限是多少？"
+      ],
+      "answer": {
+        "en": "It is your responsibility to maintain your ABN details. You must update them within 28 days of becoming aware of changes.",
+        "zh": "维护 ABN 信息是持有人的责任。知道信息发生变更后，必须在 28 天内更新。"
+      },
+      "sources": [
+        {
+          "url": "https://www.abr.gov.au/business-super-funds-charities/applying-abn/abn-important-facts",
+          "quote": "It's your responsibility to maintain your ABN details."
+        },
+        {
+          "url": "https://www.abr.gov.au/business-super-funds-charities/applying-abn/abn-important-facts",
+          "quote": "You must update your details within 28 days of becoming aware of changes."
+        }
+      ],
+      "tags": [
+        "business",
+        "abn"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "cancel-abn-online",
+      "question": {
+        "en": "Can I cancel my ABN online?",
+        "zh": "可以在线注销 ABN 吗？"
+      },
+      "aliases": [
+        "How do I close an ABN online?",
+        "What do I need to cancel my ABN on the internet?",
+        "网上怎么取消商业号码？",
+        "在线注销 ABN 需要什么？"
+      ],
+      "answer": {
+        "en": "You can cancel your ABN online using ABR online services. To access the service, you need to have set up your Digital ID and Relationship Authorisation Manager (RAM).",
+        "zh": "可以通过澳大利亚商业登记处（ABR）的在线服务注销 ABN。使用该服务需要先设置 Digital ID 和 Relationship Authorisation Manager（RAM）。"
+      },
+      "sources": [
+        {
+          "url": "https://www.abr.gov.au/business-super-funds-charities/updating-or-cancelling-your-abn/cancel-your-abn",
+          "quote": "You can cancel your ABN online using ABR online services."
+        },
+        {
+          "url": "https://www.abr.gov.au/business-super-funds-charities/updating-or-cancelling-your-abn/cancel-your-abn",
+          "quote": "To access ABR online services, you need to have set up your Digital ID and Relationship Authorisation Manager (RAM)."
+        }
+      ],
+      "tags": [
+        "business",
+        "abn"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "abn-tax-return-profit-loss",
+      "question": {
+        "en": "Do I need to lodge a tax return if my ABN business made a loss?",
+        "zh": "有 ABN 但生意亏损，还要报税吗？"
+      },
+      "aliases": [
+        "Must ABN holders lodge tax if they made no profit?",
+        "Do I have to lodge a return for a loss-making ABN business?",
+        "ABN 生意没赚钱要报税吗？",
+        "商业号码经营亏损需要申报所得税吗？"
+      ],
+      "answer": {
+        "en": "Most people with an ABN must lodge an annual income tax return. This applies whether the business reports a profit or loss and whether it is above or below the tax-free threshold.",
+        "zh": "大多数 ABN 持有人都必须每年申报所得税。无论生意盈利还是亏损，也无论收入高于还是低于免税门槛，都是如此。"
+      },
+      "sources": [
+        {
+          "url": "https://www.abr.gov.au/business-super-funds-charities/applying-abn/abn-important-facts",
+          "quote": "Most people who have an ABN are required to lodge an annual income tax return."
+        },
+        {
+          "url": "https://www.abr.gov.au/business-super-funds-charities/applying-abn/abn-important-facts",
+          "quote": "This is regardless of whether the business is reporting a profit or loss and above or below the tax-free threshold."
+        }
+      ],
+      "tags": [
+        "business",
+        "abn",
+        "tax"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "gst-registration-turnover-threshold",
+      "question": {
+        "en": "At what turnover must a business register for GST?",
+        "zh": "营业额达到多少必须注册 GST？"
+      },
+      "aliases": [
+        "When does a small business have to register for GST?",
+        "What is the GST turnover threshold for a business?",
+        "小生意营业额多少要注册 GST？",
+        "GST 注册门槛是多少？"
+      ],
+      "answer": {
+        "en": "A business or enterprise must register for GST when its GST turnover is $75,000 or more. Once registration is required, it must register within 21 days.",
+        "zh": "企业或经营实体的 GST 营业额达到或超过 75,000 澳元时，必须注册 GST。达到注册要求后，必须在 21 天内注册。"
+      },
+      "sources": [
+        {
+          "url": "https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/registering-for-gst",
+          "quote": "when your business or enterprise has a GST turnover (gross income from all businesses minus GST) of $75,000 or more (the GST threshold)."
+        },
+        {
+          "url": "https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/registering-for-gst",
+          "quote": "Once you are required to register for GST, you need to do so within 21 days."
+        }
+      ],
+      "tags": [
+        "business",
+        "gst"
+      ],
+      "checked": "2026-11-01",
+      "valid_until": "2027-06-30"
+    },
+    {
+      "id": "rideshare-gst-registration",
+      "question": {
+        "en": "Do rideshare drivers need to register for GST below the turnover threshold?",
+        "zh": "网约车司机营业额没达到门槛也要注册 GST 吗？"
+      },
+      "aliases": [
+        "Must Uber drivers register for GST even with low turnover?",
+        "Does the GST threshold apply to ride-sourcing?",
+        "开网约车收入低也要注册 GST 吗？",
+        "网约车司机有 GST 营业额门槛吗？"
+      ],
+      "answer": {
+        "en": "People who provide taxi or limousine travel for passengers, including ride-sourcing, must register for GST regardless of their GST turnover. This applies to owner-drivers and to those who lease or rent a taxi.",
+        "zh": "提供出租车或礼宾车载客服务的人，包括网约车司机，无论 GST 营业额多少都必须注册 GST。这适用于车主兼司机，也适用于租赁出租车的人。"
+      },
+      "sources": [
+        {
+          "url": "https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/registering-for-gst",
+          "quote": "when you provide taxi or limousine travel for passengers (including ride-sourcing) regardless of your GST turnover."
+        },
+        {
+          "url": "https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/registering-for-gst",
+          "quote": "This applies to both owner-drivers and if you lease or rent a taxi."
+        }
+      ],
+      "tags": [
+        "business",
+        "gst",
+        "rideshare"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "gst-register-abn-first",
+      "question": {
+        "en": "Do I need an ABN before registering for GST?",
+        "zh": "注册 GST 之前要有 ABN 吗？"
+      },
+      "aliases": [
+        "Can I register for GST without an ABN?",
+        "How can an ABN holder register for GST?",
+        "没有 ABN 能注册 GST 吗？",
+        "有商业号码后怎么注册 GST？"
+      ],
+      "answer": {
+        "en": "You need an Australian business number before you register for GST. Once you have an ABN, you can register for GST through Online services for business, by phoning the ATO Business enquiries line, or through a registered tax or BAS agent.",
+        "zh": "注册 GST 前需要有澳大利亚商业号码（ABN）。取得 ABN 后，可以通过企业在线服务、拨打 ATO 商业咨询电话，或通过注册税务代理或 BAS 代理注册 GST。"
+      },
+      "sources": [
+        {
+          "url": "https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/registering-for-gst",
+          "quote": "Before you register, you need to have an Australian business number (ABN)."
+        },
+        {
+          "url": "https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/registering-for-gst",
+          "quote": "Once you have an ABN, you can register for GST either:"
+        }
+      ],
+      "tags": [
+        "business",
+        "gst",
+        "abn"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "gst-turnover-vs-profit",
+      "question": {
+        "en": "Is GST turnover the same as business profit?",
+        "zh": "GST 营业额等于生意利润吗？"
+      },
+      "aliases": [
+        "Does the GST threshold use profit or income?",
+        "How is GST turnover different from profit?",
+        "GST 门槛看收入还是利润？",
+        "计算 GST 营业额要扣除销售中的 GST 吗？"
+      ],
+      "answer": {
+        "en": "GST turnover is total business income, not profit. The ATO says certain amounts, including GST included in sales to customers, are subtracted when calculating it.",
+        "zh": "GST 营业额指企业总收入，不是利润。ATO 表示，计算时要扣除某些金额，包括向顾客销售时所含的 GST。"
+      },
+      "sources": [
+        {
+          "url": "https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/registering-for-gst",
+          "quote": "Your GST turnover is your total business income (not your profit), minus:"
+        },
+        {
+          "url": "https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/registering-for-gst",
+          "quote": "GST included in sales to your customers"
+        }
+      ],
+      "tags": [
+        "business",
+        "gst"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "tax-year-australia",
+      "question": {
+        "en": "What dates does the Australian income tax year cover?",
+        "zh": "澳大利亚所得税年度是从哪天到哪天？"
+      },
+      "aliases": [
+        "When does the Australian financial year start and end for tax returns?",
+        "What period does my tax return cover?",
+        "澳洲报税年度几月开始几月结束？",
+        "个人报税覆盖哪个时间段？"
+      ],
+      "answer": {
+        "en": "An income tax return covers the income year from 1 July to 30 June. It includes income earned and expenses that can be claimed as deductions.",
+        "zh": "所得税申报涵盖从 7 月 1 日至 6 月 30 日的收入年度。申报包括所得收入和可以申请扣除的支出。"
+      },
+      "sources": [
+        {
+          "url": "https://www.ato.gov.au/individuals-and-families/your-tax-return/before-you-prepare-your-tax-return/preparing-your-tax-return",
+          "quote": "Your tax return covers the income year from 1 July to 30 June."
+        },
+        {
+          "url": "https://www.ato.gov.au/individuals-and-families/your-tax-return/before-you-prepare-your-tax-return/preparing-your-tax-return",
+          "quote": "When you lodge a tax return you include how much money you earn (income) and any expenses you can claim as a deduction."
+        }
+      ],
+      "tags": [
+        "tax",
+        "returns"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "tax-return-self-lodge-deadline",
+      "question": {
+        "en": "When is the deadline for lodging my own Australian tax return?",
+        "zh": "自己报澳大利亚所得税，截止日期是什么时候？"
+      },
+      "aliases": [
+        "When must I lodge my own tax return?",
+        "What happens if the tax return deadline is on a weekend?",
+        "自己报税最晚哪天提交？",
+        "报税截止日在周末怎么办？"
+      ],
+      "answer": {
+        "en": "If you lodge your own tax return, it is due by 31 October each year. If 31 October falls on a weekend, the due date is the next business day after 31 October.",
+        "zh": "自行报税的截止日期是每年 10 月 31 日。如果 10 月 31 日是周末，截止日期顺延至之后的下一个工作日。"
+      },
+      "sources": [
+        {
+          "url": "https://www.ato.gov.au/individuals-and-families/your-tax-return/before-you-prepare-your-tax-return/preparing-your-tax-return",
+          "quote": "If you’re lodging your own tax return, you need to lodge it by 31 October each year."
+        },
+        {
+          "url": "https://www.ato.gov.au/individuals-and-families/your-tax-return/before-you-prepare-your-tax-return/preparing-your-tax-return",
+          "quote": "If 31 October falls on a weekend, the due date to lodge your tax return is the next business day after 31 October."
+        }
+      ],
+      "tags": [
+        "tax",
+        "returns"
+      ],
+      "checked": "2026-11-01",
+      "valid_until": "2027-06-30"
+    },
+    {
+      "id": "tax-agent-lodgment-deadline",
+      "question": {
+        "en": "Does a tax agent get a later tax return deadline?",
+        "zh": "找税务代理报税，截止日期会更晚吗？"
+      },
+      "aliases": [
+        "When must I engage an accountant for my tax return?",
+        "Can a registered tax agent lodge after October?",
+        "税务代理可以十月底后报税吗？",
+        "什么时候之前要找好注册报税代理？"
+      ],
+      "answer": {
+        "en": "Registered tax agents generally have special lodgment schedules and can lodge returns for clients later than 31 October. If you use a registered tax agent, you need to engage them before 31 October.",
+        "zh": "注册税务代理通常有特别申报时间安排，可以在 10 月 31 日之后为客户报税。如果使用注册税务代理，需要在 10 月 31 日之前委托代理。"
+      },
+      "sources": [
+        {
+          "url": "https://www.ato.gov.au/individuals-and-families/your-tax-return/before-you-prepare-your-tax-return/preparing-your-tax-return",
+          "quote": "If you choose to use the services of a registered tax agent, they will generally have special lodgment schedules and can lodge returns for clients later than 31 October."
+        },
+        {
+          "url": "https://www.ato.gov.au/individuals-and-families/your-tax-return/before-you-prepare-your-tax-return/preparing-your-tax-return",
+          "quote": "If you're using a registered tax agent, you need to engage them before 31 October."
+        }
+      ],
+      "tags": [
+        "tax",
+        "returns"
+      ],
+      "checked": "2026-11-01",
+      "valid_until": "2027-06-30"
+    },
+    {
+      "id": "check-need-tax-return",
+      "question": {
+        "en": "How do I check whether I need to lodge a tax return?",
+        "zh": "怎么查自己是否需要报税？"
+      },
+      "aliases": [
+        "Is there an ATO tool to see if I need to lodge?",
+        "How can I find out if a tax return is required?",
+        "ATO 有工具查是否需要报税吗？",
+        "我用什么工具判断要不要报税？"
+      ],
+      "answer": {
+        "en": "The ATO has a “Do I need to lodge?” tool in its online services. Accessing that version requires the ATO to be linked to your myGov account.",
+        "zh": "ATO 在线服务提供“我需要报税吗？”查询工具。使用该版本需要将 ATO 关联到 myGov 账户。"
+      },
+      "sources": [
+        {
+          "url": "https://www.ato.gov.au/individuals-and-families/your-tax-return/before-you-prepare-your-tax-return/how-to-work-out-if-you-need-to-lodge-a-tax-return",
+          "quote": "You can access an authenticated version of the Do I need to lodge? tool in ATO online services."
+        },
+        {
+          "url": "https://www.ato.gov.au/individuals-and-families/your-tax-return/before-you-prepare-your-tax-return/how-to-work-out-if-you-need-to-lodge-a-tax-return",
+          "quote": "You need the ATO linked to your myGov account."
+        }
+      ],
+      "tags": [
+        "tax",
+        "returns"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "mytax-who-can-use",
+      "question": {
+        "en": "Can a sole trader use myTax to lodge a tax return?",
+        "zh": "个体经营者可以用 myTax 报税吗？"
+      },
+      "aliases": [
+        "Can I use myTax for a sole trader return?",
+        "Can I lodge a sole trader return on my phone?",
+        "sole trader 可以自己用 myTax 报税吗？",
+        "个体经营者能用手机报税吗？"
+      ],
+      "answer": {
+        "en": "myTax is available to all individuals and sole traders who want to lodge their own tax return. It can be used on a computer, smartphone or tablet.",
+        "zh": "所有想自行报税的个人和个体经营者都可以使用 myTax。可以用电脑、智能手机或平板电脑使用。"
+      },
+      "sources": [
+        {
+          "url": "https://www.ato.gov.au/individuals-and-families/your-tax-return/how-to-lodge-your-tax-return/lodge-your-tax-return-online-with-mytax",
+          "quote": "It is available for all individuals and sole traders who want to lodge their own tax return."
+        },
+        {
+          "url": "https://www.ato.gov.au/individuals-and-families/your-tax-return/how-to-lodge-your-tax-return/lodge-your-tax-return-online-with-mytax",
+          "quote": "Using myTax you can lodge your tax return on a computer, smartphone or tablet."
+        }
+      ],
+      "tags": [
+        "tax",
+        "returns",
+        "business"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "what-is-superannuation",
+      "question": {
+        "en": "What is superannuation in Australia?",
+        "zh": "澳大利亚的 super 养老金是什么？"
+      },
+      "aliases": [
+        "What does super mean in Australia?",
+        "How does super relate to retirement saving?",
+        "澳洲 super 指什么？",
+        "super 和退休储蓄有什么关系？"
+      ],
+      "answer": {
+        "en": "Australia's superannuation system is the main way most people save for retirement. Superannuation is a long-term investment that grows over time.",
+        "zh": "澳大利亚的 superannuation 养老金制度是大多数人为退休储蓄的主要方式。养老金是一项随时间增长的长期投资。"
+      },
+      "sources": [
+        {
+          "url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/what-is-super",
+          "quote": "Australia's superannuation system is the main way most people save for their retirement."
+        },
+        {
+          "url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/what-is-super",
+          "quote": "Superannuation (super for short) is a long-term investment that grows over time."
+        }
+      ],
+      "tags": [
+        "super",
+        "retirement"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "super-on-top-of-wages",
+      "question": {
+        "en": "Is employer super paid on top of my wages?",
+        "zh": "雇主缴的 super 是工资之外另付的吗？"
+      },
+      "aliases": [
+        "Is super included in or added to wages?",
+        "Does my employer pay super in addition to wages?",
+        "super 包含在工资里还是另付？",
+        "雇主养老金是在工资外缴纳吗？"
+      ],
+      "answer": {
+        "en": "For most people, super begins when they start work and their employer starts paying a percentage of their salary or wages into a super fund. The employer pays this super on top of wages.",
+        "zh": "对大多数人来说，养老金从开始工作、雇主按工资的一定比例向养老金基金缴款时开始积累。雇主缴纳的这部分 super 在工资之外另付。"
+      },
+      "sources": [
+        {
+          "url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/what-is-super",
+          "quote": "For most people, super begins when you start work and your employer starts paying a percentage of your salary or wages into your super fund."
+        },
+        {
+          "url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/what-is-super",
+          "quote": "Your employer pays your super on top of your wages."
+        }
+      ],
+      "tags": [
+        "super",
+        "pay"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "super-guarantee-rate-2026",
+      "question": {
+        "en": "What is the employer super guarantee rate in 2026?",
+        "zh": "2026 年雇主的 super guarantee 比例是多少？"
+      },
+      "aliases": [
+        "How much compulsory super must an employer pay in 2026?",
+        "What percentage of qualifying earnings is the super guarantee?",
+        "2026 年强制养老金比例是多少？",
+        "雇主按工资多少比例缴 super？"
+      ],
+      "answer": {
+        "en": "Under the super guarantee, employers must pay super contributions of 12% of an eligible employee's qualifying earnings. The Fair Work Ombudsman lists employees over 18, and those under 18 who work over 30 hours a week, for this rule.",
+        "zh": "按照 super guarantee，雇主必须按符合条件的员工合资格收入的 12% 缴纳养老金。Fair Work Ombudsman 列出的适用人员包括超过 18 岁的员工，以及未满 18 岁且每周工作超过 30 小时的员工。"
+      },
+      "sources": [
+        {
+          "url": "https://www.fairwork.gov.au/pay-and-wages/tax-and-superannuation",
+          "quote": "Under the super guarantee, employers must pay super contributions of 12% of an employee's qualifying earnings when an employee is:"
+        },
+        {
+          "url": "https://www.fairwork.gov.au/pay-and-wages/tax-and-superannuation",
+          "quote": "over 18 years, or"
+        },
+        {
+          "url": "https://www.fairwork.gov.au/pay-and-wages/tax-and-superannuation",
+          "quote": "under 18 years and works over 30 hours a week."
+        }
+      ],
+      "tags": [
+        "super",
+        "pay"
+      ],
+      "checked": "2026-11-01",
+      "valid_until": "2027-06-30"
+    },
+    {
+      "id": "casuals-temporary-residents-super",
+      "question": {
+        "en": "Can casual employees and temporary residents get super?",
+        "zh": "临时工和临时居民可以获得 super 吗？"
+      },
+      "aliases": [
+        "Do casual workers get compulsory super?",
+        "Are temporary visa holders eligible for employer super?",
+        "casual 员工有强制养老金吗？",
+        "临时签证居民能拿雇主 super 吗？"
+      ],
+      "answer": {
+        "en": "If eligible, the super guarantee applies to all types of employees, including casual employees. Temporary residents are also eligible for super.",
+        "zh": "符合条件时，super guarantee 适用于所有类型的员工，包括 casual 临时工。临时居民也有资格获得 super。"
+      },
+      "sources": [
+        {
+          "url": "https://www.fairwork.gov.au/pay-and-wages/tax-and-superannuation",
+          "quote": "If eligible, the super guarantee applies to all types of employees, including:"
+        },
+        {
+          "url": "https://www.fairwork.gov.au/pay-and-wages/tax-and-superannuation",
+          "quote": "casual employees."
+        },
+        {
+          "url": "https://www.fairwork.gov.au/pay-and-wages/tax-and-superannuation",
+          "quote": "Independent contractors paid mainly for their labour and temporary residents are also eligible for super."
+        }
+      ],
+      "tags": [
+        "super",
+        "casual"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "super-payday-frequency",
+      "question": {
+        "en": "When must an employer pay super contributions?",
+        "zh": "雇主要多久缴一次 super？"
+      },
+      "aliases": [
+        "How often does my boss have to pay super in 2026?",
+        "How long does payday super take to reach my fund?",
+        "2026 年雇主要每次发工资都缴 super 吗？",
+        "发薪后养老金多久要到账？"
+      ],
+      "answer": {
+        "en": "From 1 July 2026, employers must pay their employees' super contributions each payday. Super guarantee payments must reach the employee's fund within 7 business days of payday, extended to 20 business days in certain circumstances.",
+        "zh": "从 2026 年 7 月 1 日起，雇主必须在每个发薪日缴纳员工的 super。super guarantee 缴款必须在发薪日起 7 个工作日内到达员工的养老金基金；某些情况下可延长至 20 个工作日。"
+      },
+      "sources": [
+        {
+          "url": "https://www.fairwork.gov.au/pay-and-wages/tax-and-superannuation",
+          "quote": "From 1 July 2026, employers must pay their employees superannuation contributions each payday."
+        },
+        {
+          "url": "https://www.fairwork.gov.au/pay-and-wages/tax-and-superannuation",
+          "quote": "Super guarantee payments must be received by the employee’s super fund within 7 business days from payday."
+        },
+        {
+          "url": "https://www.fairwork.gov.au/pay-and-wages/tax-and-superannuation",
+          "quote": "This is extended to 20 business days in certain circumstances, for example an employer’s first contribution to a super fund, or for a new employee."
+        }
+      ],
+      "tags": [
+        "super",
+        "pay"
+      ],
+      "checked": "2026-11-01",
+      "valid_until": "2027-06-30"
+    },
+    {
+      "id": "unpaid-super-complaint",
+      "question": {
+        "en": "Where can I complain if my employer has not paid my super guarantee?",
+        "zh": "雇主没缴 super guarantee，可以向哪里投诉？"
+      },
+      "aliases": [
+        "Who handles complaints about unpaid compulsory super?",
+        "Can I report missing super to the tax office?",
+        "雇主欠养老金向谁投诉？",
+        "没缴 super 可以向税务局举报吗？"
+      ],
+      "answer": {
+        "en": "Employees who think the super guarantee hasn't been paid can complain to the ATO. The ATO is the primary enforcement agency for the compulsory super guarantee.",
+        "zh": "认为雇主没有缴纳 super guarantee 的员工可以向 ATO 投诉。ATO 是强制 super guarantee 的主要执法机构。"
+      },
+      "sources": [
+        {
+          "url": "https://www.fairwork.gov.au/pay-and-wages/tax-and-superannuation",
+          "quote": "Employees who think the super guarantee hasn't been paid can make a complaint to the ATO."
+        },
+        {
+          "url": "https://www.fairwork.gov.au/pay-and-wages/tax-and-superannuation",
+          "quote": "The ATO is the primary enforcement agency for the compulsory super guarantee."
+        }
+      ],
+      "tags": [
+        "super",
+        "complaint"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "find-super-accounts-online",
+      "question": {
+        "en": "How can I find out what super accounts I have?",
+        "zh": "怎么查自己有哪些 super 账户？"
+      },
+      "aliases": [
+        "Where can I see my super accounts?",
+        "Can I check my super through myGov?",
+        "在哪里查看自己名下的养老金账户？",
+        "myGov 能查 super 吗？"
+      ],
+      "answer": {
+        "en": "If you are unsure which super accounts you hold, you can log in to ATO online services through myGov to monitor and keep track of your super. The ATO app is included in these online services.",
+        "zh": "如果不清楚自己有哪些 super 账户，可以通过 myGov 登录 ATO 在线服务，查看和追踪养老金。ATO app 也属于这些在线服务。"
+      },
+      "sources": [
+        {
+          "url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/what-is-super",
+          "quote": "If you're unsure of what super accounts you hold, you can log in to ATO online services (including ATO App) through myGov to monitor and keep track of your super."
+        }
+      ],
+      "tags": [
+        "super",
+        "accounts"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "minimum-wage-award-or-agreement",
+      "question": {
+        "en": "How do I find the minimum pay that applies to my job?",
+        "zh": "怎么查我的工作适用多少最低工资？"
+      },
+      "aliases": [
+        "Is my minimum pay set by an award?",
+        "Where do I check minimum wages under an enterprise agreement?",
+        "我的最低时薪由哪个 award 决定？",
+        "企业协议里的最低工资在哪里查？"
+      ],
+      "answer": {
+        "en": "For most employees, the minimum wage is set by the award covering their industry or occupation. Employees covered by an enterprise or other registered agreement can check the agreement for their minimum pay rates.",
+        "zh": "大多数员工的最低工资由涵盖其行业或职业的 award 规定。受企业协议或其他注册协议覆盖的员工，可以查看协议中的最低工资标准。"
+      },
+      "sources": [
+        {
+          "url": "https://www.fairwork.gov.au/pay-and-wages/minimum-wages",
+          "quote": "For most employees, the minimum wage is set by the award that covers their industry or occupation."
+        },
+        {
+          "url": "https://www.fairwork.gov.au/pay-and-wages/minimum-wages",
+          "quote": "check the agreement for the minimum pay rates."
+        }
+      ],
+      "tags": [
+        "pay",
+        "award"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "minimum-wage-before-tax",
+      "question": {
+        "en": "Is the minimum wage quoted before or after tax?",
+        "zh": "最低工资是税前还是税后？"
+      },
+      "aliases": [
+        "Are minimum pay rates gross or net?",
+        "Is Australian minimum wage before tax?",
+        "最低时薪是税前金额吗？",
+        "最低工资算 gross 还是 net？"
+      ],
+      "answer": {
+        "en": "The minimum wage is the amount of pay before tax is taken out. This is called gross pay.",
+        "zh": "最低工资指扣税之前的工资金额。这叫做税前工资（gross pay）。"
+      },
+      "sources": [
+        {
+          "url": "https://www.fairwork.gov.au/pay-and-wages/minimum-wages",
+          "quote": "The minimum wage refers to the amount of pay before tax is taken out (gross pay)."
+        }
+      ],
+      "tags": [
+        "pay",
+        "tax"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "weekend-penalty-rates",
+      "question": {
+        "en": "Do I get extra pay for working on weekends?",
+        "zh": "周末上班有额外工资吗？"
+      },
+      "aliases": [
+        "Is weekend work paid at a higher rate?",
+        "How are Saturday and Sunday penalty rates set?",
+        "周六周日上班时薪会更高吗？",
+        "周末 penalty rate 按什么规定？"
+      ],
+      "answer": {
+        "en": "Penalty rates are higher pay rates that can apply when an employee works particular hours or days, including weekends. The penalty rates an employee is entitled to depend on the applicable award.",
+        "zh": "penalty rates 是在员工于特定时段或日期工作时可能适用的较高工资标准，其中包括周末。员工有权获得的 penalty rate 取决于适用的 award。"
+      },
+      "sources": [
+        {
+          "url": "https://www.fairwork.gov.au/pay-and-wages/penalty-rates-allowances-and-other-payments/penalty-rates",
+          "quote": "Penalty rates are higher pay rates that can apply when an employee works particular hours or days such as evenings, weekends or public holidays."
+        },
+        {
+          "url": "https://www.fairwork.gov.au/pay-and-wages/penalty-rates-allowances-and-other-payments/penalty-rates",
+          "quote": "The penalty rates that you or your employees are entitled to will depend on the award that applies."
+        }
+      ],
+      "tags": [
+        "pay",
+        "weekend"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "overtime-rate-how-set",
+      "question": {
+        "en": "How is overtime paid in Australia?",
+        "zh": "澳大利亚加班工资怎么付？"
+      },
+      "aliases": [
+        "What counts as overtime and is it paid more?",
+        "Is work outside ordinary hours paid as overtime?",
+        "超过正常工时算加班吗？",
+        "加班一般工资更高吗？"
+      ],
+      "answer": {
+        "en": "Overtime is work performed outside the ordinary hours listed in an award or agreement. It is usually paid at a higher rate.",
+        "zh": "加班是指在 award 或 agreement 列明的正常工作时间之外进行的工作。加班通常按较高工资标准支付。"
+      },
+      "sources": [
+        {
+          "url": "https://www.fairwork.gov.au/pay-and-wages/penalty-rates-allowances-and-other-payments/overtime-pay",
+          "quote": "Overtime is work performed outside the ordinary hours listed in an award or agreement."
+        },
+        {
+          "url": "https://www.fairwork.gov.au/pay-and-wages/penalty-rates-allowances-and-other-payments/overtime-pay",
+          "quote": "Overtime is usually paid at a higher rate."
+        }
+      ],
+      "tags": [
+        "pay",
+        "overtime"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "time-off-instead-of-overtime",
+      "question": {
+        "en": "Can I take time off instead of overtime pay?",
+        "zh": "加班后可以调休代替加班费吗？"
+      },
+      "aliases": [
+        "What is time off in lieu for overtime?",
+        "Can overtime be compensated with paid time off?",
+        "加班能换带薪休假吗？",
+        "TOIL 调休是什么意思？"
+      ],
+      "answer": {
+        "en": "Some awards and registered agreements allow an employee to take paid time off instead of overtime pay. This is also called time off in lieu or TOIL.",
+        "zh": "有些 award 和注册协议允许员工用带薪休假代替加班费。这也叫 time off in lieu 或 TOIL。"
+      },
+      "sources": [
+        {
+          "url": "https://www.fairwork.gov.au/pay-and-wages/penalty-rates-allowances-and-other-payments/overtime-pay",
+          "quote": "Some awards and registered agreements allow an employee to take paid time off instead of being paid overtime pay."
+        },
+        {
+          "url": "https://www.fairwork.gov.au/pay-and-wages/penalty-rates-allowances-and-other-payments/overtime-pay",
+          "quote": "This is also known as 'time in lieu', 'time off in lieu' or 'TOIL'."
+        }
+      ],
+      "tags": [
+        "pay",
+        "overtime"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "training-time-paid",
+      "question": {
+        "en": "Does my employer have to pay me for required training time?",
+        "zh": "雇主要求的培训时间要付工资吗？"
+      },
+      "aliases": [
+        "Should online work training be paid?",
+        "Do I get paid for mandatory training at home?",
+        "网上工作培训要付工资吗？",
+        "在家做雇主要求的培训有工资吗？"
+      ],
+      "answer": {
+        "en": "Employees need to be paid for all time spent working, including training, whether online or at home. If an employer requires an employee to be present at work, they must be paid for that time.",
+        "zh": "员工的所有工作时间都应获得报酬，包括培训时间，即使培训在线上或在家进行。如果雇主要求员工在工作场所，员工也必须获得这段时间的工资。"
+      },
+      "sources": [
+        {
+          "url": "https://www.fairwork.gov.au/pay-and-wages/paying-wages",
+          "quote": "Employees need to be paid for all time spent working."
+        },
+        {
+          "url": "https://www.fairwork.gov.au/pay-and-wages/paying-wages",
+          "quote": "doing training (including online or at home)"
+        },
+        {
+          "url": "https://www.fairwork.gov.au/pay-and-wages/paying-wages",
+          "quote": "If an employer requires an employee to be present at work, they must be paid for that time."
+        }
+      ],
+      "tags": [
+        "pay",
+        "training"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "wages-payment-frequency",
+      "question": {
+        "en": "How often does my employer have to pay my wages?",
+        "zh": "雇主至少多久发一次工资？"
+      },
+      "aliases": [
+        "Can my employer pay me monthly?",
+        "What is the minimum frequency for paying wages?",
+        "老板可以按月发工资吗？",
+        "工资最少多久发一次？"
+      ],
+      "answer": {
+        "en": "Employers need to pay employees at least monthly for the work they do. Employees can be paid in cash, by cheque or by electronic funds transfer into their bank account.",
+        "zh": "雇主必须至少每月为员工的工作支付一次工资。工资可以用现金、支票或电子转账到员工银行账户的方式支付。"
+      },
+      "sources": [
+        {
+          "url": "https://www.fairwork.gov.au/pay-and-wages/paying-wages",
+          "quote": "Employers need to pay employees at least monthly for the work they do."
+        },
+        {
+          "url": "https://www.fairwork.gov.au/pay-and-wages/paying-wages",
+          "quote": "in cash"
+        },
+        {
+          "url": "https://www.fairwork.gov.au/pay-and-wages/paying-wages",
+          "quote": "by cheque"
+        },
+        {
+          "url": "https://www.fairwork.gov.au/pay-and-wages/paying-wages",
+          "quote": "directly into their bank account by electronic funds transfer (EFT)."
+        }
+      ],
+      "tags": [
+        "pay",
+        "wages"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "pay-slip-when-issued",
+      "question": {
+        "en": "When must my employer give me a pay slip?",
+        "zh": "雇主必须什么时候给我工资单？"
+      },
+      "aliases": [
+        "How soon after payday should I get a payslip?",
+        "Is an electronic payslip allowed?",
+        "发工资后多久要给工资单？",
+        "工资单可以发电子版吗？"
+      ],
+      "answer": {
+        "en": "An employee must receive a pay slip within 1 working day of payday, even if they are on leave. Pay slips can be electronic or hard copy.",
+        "zh": "即使员工正在休假，雇主也必须在发薪日后的 1 个工作日内提供工资单。工资单可以是电子版或纸质版。"
+      },
+      "sources": [
+        {
+          "url": "https://www.fairwork.gov.au/pay-and-wages/paying-wages/pay-slips",
+          "quote": "Pay slips have to be given to an employee within 1 working day of pay day, even if an employee is on leave."
+        },
+        {
+          "url": "https://www.fairwork.gov.au/pay-and-wages/paying-wages/pay-slips",
+          "quote": "Pay slips have to be in either electronic form or hard copy."
+        }
+      ],
+      "tags": [
+        "pay",
+        "payslip"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "payslip-leave-balance-required",
+      "question": {
+        "en": "Does my pay slip have to show my leave balance?",
+        "zh": "工资单必须显示剩余假期吗？"
+      },
+      "aliases": [
+        "Must annual leave balances appear on a payslip?",
+        "Can I ask my employer for my leave balance?",
+        "工资单一定要写年假余额吗？",
+        "可以向雇主查询剩余假期吗？"
+      ],
+      "answer": {
+        "en": "Showing leave balances on a pay slip is best practice, but it isn't required. Employers must tell employees their leave balances if they ask.",
+        "zh": "在工资单上显示假期余额属于最佳做法，但并非强制要求。如果员工询问，雇主必须告知其假期余额。"
+      },
+      "sources": [
+        {
+          "url": "https://www.fairwork.gov.au/pay-and-wages/paying-wages/pay-slips",
+          "quote": "While it's best practice to show an employee's leave balances on their pay slip, it’s not a requirement."
+        },
+        {
+          "url": "https://www.fairwork.gov.au/pay-and-wages/paying-wages/pay-slips",
+          "quote": "Employers do need to tell employees their leave balances if they ask for it."
+        }
+      ],
+      "tags": [
+        "pay",
+        "payslip",
+        "leave"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "employer-time-wages-records-access",
+      "question": {
+        "en": "Can I see my employment and wage records?",
+        "zh": "我可以查看自己的雇佣和工资记录吗？"
+      },
+      "aliases": [
+        "Can a former employee request their work records?",
+        "Does my employer have to let me see payroll records?",
+        "离职后还能查看雇佣记录吗？",
+        "雇主要让我看自己的工资记录吗？"
+      ],
+      "answer": {
+        "en": "If an employee asks to see their records, the employer must make them available. This also applies after employment has ended.",
+        "zh": "如果员工要求查看自己的记录，雇主必须提供。这项规定在雇佣关系结束后仍然适用。"
+      },
+      "sources": [
+        {
+          "url": "https://www.fairwork.gov.au/pay-and-wages/paying-wages/record-keeping",
+          "quote": "If an employee asks to see their records, an employer must make them available."
+        },
+        {
+          "url": "https://www.fairwork.gov.au/pay-and-wages/paying-wages/record-keeping",
+          "quote": "This includes after an employee has ceased employment."
+        }
+      ],
+      "tags": [
+        "pay",
+        "records"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "time-wages-records-retention",
+      "question": {
+        "en": "How long must employers keep time and wages records?",
+        "zh": "雇主必须保留工时和工资记录多久？"
+      },
+      "aliases": [
+        "How many years must payroll records be kept?",
+        "How long are employers required to retain wage records?",
+        "工资记录要保存几年？",
+        "雇主保存工时记录的期限是多久？"
+      ],
+      "answer": {
+        "en": "Employers must keep time and wages records for 7 years. The records must be legible and in English.",
+        "zh": "雇主必须把工时和工资记录保留 7 年。记录必须清晰可读，并使用英文。"
+      },
+      "sources": [
+        {
+          "url": "https://www.fairwork.gov.au/pay-and-wages/paying-wages/record-keeping",
+          "quote": "Employers have to keep time and wages records for 7 years."
+        },
+        {
+          "url": "https://www.fairwork.gov.au/pay-and-wages/paying-wages/record-keeping",
+          "quote": "Time and wages records have to be:"
+        },
+        {
+          "url": "https://www.fairwork.gov.au/pay-and-wages/paying-wages/record-keeping",
+          "quote": "legible"
+        },
+        {
+          "url": "https://www.fairwork.gov.au/pay-and-wages/paying-wages/record-keeping",
+          "quote": "in English."
+        }
+      ],
+      "tags": [
+        "pay",
+        "records"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "unpaid-wages-fair-work-help",
+      "question": {
+        "en": "What can I do if I think I am being underpaid?",
+        "zh": "觉得工资被少发了怎么办？"
+      },
+      "aliases": [
+        "Who can help if my boss underpays me?",
+        "How can I check whether I am getting the right pay?",
+        "老板少发工资可以找谁帮忙？",
+        "怎么核对自己的工资有没有发对？"
+      ],
+      "answer": {
+        "en": "Fair Work says employees can check their pay slips and records of hours worked to see what they are being paid. It also says employees can contact Fair Work for help with workplace entitlements and obligations.",
+        "zh": "Fair Work 表示，员工可以查看工资单和工作时间记录，了解自己目前获得的工资。它还表示，员工可以就工作场所的权益和义务问题联系 Fair Work 寻求帮助。"
+      },
+      "sources": [
+        {
+          "url": "https://www.fairwork.gov.au/workplace-problems/common-workplace-problems/my-pay-doesnt-seem-right",
+          "quote": "First, you need to know what you’re currently getting paid. You can check your:"
+        },
+        {
+          "url": "https://www.fairwork.gov.au/workplace-problems/common-workplace-problems/my-pay-doesnt-seem-right",
+          "quote": "pay slips"
+        },
+        {
+          "url": "https://www.fairwork.gov.au/workplace-problems/common-workplace-problems/my-pay-doesnt-seem-right",
+          "quote": "rosters of the hours you’ve worked"
+        },
+        {
+          "url": "https://www.fairwork.gov.au/workplace-problems/common-workplace-problems/my-pay-doesnt-seem-right",
+          "quote": "For help with questions about workplace entitlements and obligations, you can contact us."
+        }
+      ],
+      "tags": [
+        "pay",
+        "complaint"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "boss-cancel-visa-workplace",
+      "question": {
+        "en": "Can my boss cancel my visa if I raise a pay problem?",
+        "zh": "我提出工资问题，老板可以取消我的签证吗？"
+      },
+      "aliases": [
+        "Can an employer cancel a migrant worker visa?",
+        "Can my boss cancel my visa for complaining about pay?",
+        "雇主有权取消移民工人的签证吗？",
+        "因为投诉工资老板能取消签证吗？"
+      ],
+      "answer": {
+        "en": "Only the Department of Home Affairs can cancel visas. Your boss cannot cancel your visa.",
+        "zh": "只有内政部可以取消签证。老板不能取消你的签证。"
+      },
+      "sources": [
+        {
+          "url": "https://www.fairwork.gov.au/workplace-problems/common-workplace-problems/my-pay-doesnt-seem-right",
+          "quote": "Only the Department of Home Affairs (Home Affairs) can cancel visas, not your boss."
+        }
+      ],
+      "tags": [
+        "visa",
+        "pay",
+        "employment"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "final-pay-when-due",
+      "question": {
+        "en": "How soon should I get my final pay after leaving a job?",
+        "zh": "离职后多久应该拿到最后一笔工资？"
+      },
+      "aliases": [
+        "When is final pay due after resignation?",
+        "Does final pay have to be paid within seven days?",
+        "辞职后最后工资什么时候发？",
+        "离职工资需要七天内结清吗？"
+      ],
+      "answer": {
+        "en": "Most awards require employers to pay final pay within 7 days after the employee’s last day of employment. Employers must follow their award or enterprise agreement about when final pay needs to be paid.",
+        "zh": "大多数 award 要求雇主在员工最后一个工作日之后 7 天内支付最后一笔工资。雇主必须遵守适用的 award 或企业协议中有关最后工资支付时间的规定。"
+      },
+      "sources": [
+        {
+          "url": "https://www.fairwork.gov.au/ending-employment/final-pay",
+          "quote": "Most awards require employers to pay employees their final pay within 7 days after their last day of employment."
+        },
+        {
+          "url": "https://www.fairwork.gov.au/ending-employment/final-pay",
+          "quote": "Employers must follow their award or enterprise agreement about when final pay needs to be paid."
+        }
+      ],
+      "tags": [
+        "pay",
+        "final"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "unused-annual-leave-final-pay",
+      "question": {
+        "en": "Is unused annual leave paid out when I leave my job?",
+        "zh": "离职时没用完的年假会折现吗？"
+      },
+      "aliases": [
+        "Do I get paid for accrued annual leave on resignation?",
+        "How is unused annual leave paid when employment ends?",
+        "辞职后剩余年假会发钱吗？",
+        "离职时年假折现怎么算？"
+      ],
+      "answer": {
+        "en": "An employee's unused annual leave is paid out when their employment ends. The payment must be the same as the amount that would have been paid if the leave had been taken during employment.",
+        "zh": "雇佣关系结束时，员工未使用的年假会折现支付。支付金额必须与在职期间休这段年假本应获得的金额相同。"
+      },
+      "sources": [
+        {
+          "url": "https://www.fairwork.gov.au/ending-employment/final-pay",
+          "quote": "An employee’s unused annual leave gets paid out when their employment ends."
+        },
+        {
+          "url": "https://www.fairwork.gov.au/ending-employment/final-pay",
+          "quote": "The annual leave payment on termination must be the same as the amount that would have been paid if annual leave was taken during employment."
+        }
+      ],
+      "tags": [
+        "pay",
+        "leave",
+        "final"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "wage-deduction-definition",
+      "question": {
+        "en": "Can an employer take deductions from my wages?",
+        "zh": "雇主可以从我的工资里扣钱吗？"
+      },
+      "aliases": [
+        "Are deductions from wages always allowed?",
+        "What is a pay deduction?",
+        "老板可以随便扣工资吗？",
+        "工资扣款是什么意思？"
+      ],
+      "answer": {
+        "en": "Taking money out of an employee's pay before paying them is called a deduction. An employer can only make a deduction in limited situations.",
+        "zh": "在向员工支付工资之前从中扣除款项称为工资扣除。雇主只能在有限的情况下扣款。"
+      },
+      "sources": [
+        {
+          "url": "https://www.fairwork.gov.au/pay-and-wages/deductions-and-related-issues",
+          "quote": "Taking money out of an employee’s pay before it’s paid to them is called a deduction."
+        },
+        {
+          "url": "https://www.fairwork.gov.au/pay-and-wages/deductions-and-related-issues",
+          "quote": "An employer can only make a deduction in limited situations."
+        }
+      ],
+      "tags": [
+        "pay",
+        "deductions"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "super-withdraw-before-retirement",
+      "question": {
+        "en": "Can I withdraw my super before retirement?",
+        "zh": "退休前可以提取 super 吗？"
+      },
+      "aliases": [
+        "When can I access my super money?",
+        "Can I take super out early?",
+        "什么时候能取出养老金？",
+        "super 可以提前取吗？"
+      ],
+      "answer": {
+        "en": "Except in very limited circumstances, you cannot withdraw super or start a super income stream until you reach preservation age and meet the relevant conditions of release. Penalties and fees apply if super is accessed illegally.",
+        "zh": "除极少数情况外，必须达到养老金保存年龄并符合相关提取条件，才能提取 super 或开始领取养老金收入。非法提取 super 会产生处罚和费用。"
+      },
+      "sources": [
+        {
+          "url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/what-is-super",
+          "quote": "Except in very limited circumstances, you can't withdraw amounts from super or start an income stream until you've reached your preservation age and meet the relevant conditions of release."
+        },
+        {
+          "url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/what-is-super",
+          "quote": "Penalties and fees apply if super is accessed illegally."
+        }
+      ],
+      "tags": [
+        "super",
+        "retirement"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "gst-voluntary-registration",
+      "question": {
+        "en": "Can a business register for GST voluntarily?",
+        "zh": "企业可以自愿注册 GST 吗？"
+      },
+      "aliases": [
+        "Can I register for GST below the threshold?",
+        "How long must I stay voluntarily registered for GST?",
+        "没达到门槛能自愿注册 GST 吗？",
+        "自愿注册 GST 要保留多久？"
+      ],
+      "answer": {
+        "en": "If a business or enterprise does not fall into a category required to register for GST, registration is optional. If it chooses to register, it generally must stay registered for at least 12 months.",
+        "zh": "如果企业或经营实体不属于必须注册 GST 的类别，可以选择是否注册。如果选择注册，通常必须保持注册至少 12 个月。"
+      },
+      "sources": [
+        {
+          "url": "https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/registering-for-gst",
+          "quote": "If your business or enterprise doesn’t fit into one of these categories, registering for GST is optional."
+        },
+        {
+          "url": "https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/registering-for-gst",
+          "quote": "If you choose to register, generally you must stay registered for at least 12 months."
+        }
+      ],
+      "tags": [
+        "business",
+        "gst"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "gst-registered-multiple-businesses",
+      "question": {
+        "en": "Do I need separate GST registrations for each business I operate?",
+        "zh": "经营多家生意需要分别注册 GST 吗？"
+      },
+      "aliases": [
+        "Do I register GST twice for two businesses?",
+        "Do GST registered businesses lodge a BAS?",
+        "两门生意要注册两次 GST 吗？",
+        "注册 GST 后要提交 BAS 吗？"
+      ],
+      "answer": {
+        "en": "You only need to register for GST once, even if you operate more than one business. Once registered, you need to lodge a business activity statement (BAS).",
+        "zh": "即使经营多家生意，也只需要注册一次 GST。注册后需要提交商业活动报表（BAS）。"
+      },
+      "sources": [
+        {
+          "url": "https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/registering-for-gst",
+          "quote": "You only need to register for GST once, even if you operate more than one business."
+        },
+        {
+          "url": "https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/registering-for-gst",
+          "quote": "Once registered for GST, you need to lodge a business activity statement (BAS)."
+        }
+      ],
+      "tags": [
+        "business",
+        "gst",
+        "bas"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "mytax-prefill-information",
+      "question": {
+        "en": "Does myTax automatically fill in my income information?",
+        "zh": "myTax 会自动填入我的收入资料吗？"
+      },
+      "aliases": [
+        "When does the ATO prefill myTax?",
+        "Does my online tax return include prefilled information?",
+        "ATO 什么时候预填 myTax 资料？",
+        "网上报税表会自动填资料吗？"
+      ],
+      "answer": {
+        "en": "When you lodge online with myTax, the ATO pre-fills the return with information it already has. The ATO can pre-fill most information from employers, banks, government agencies, health funds and third parties by late July.",
+        "zh": "通过 myTax 在线报税时，ATO 会用已有资料预填报税表。ATO 可以在 7 月下旬前预填来自雇主、银行、政府机构、医保基金和第三方的大部分资料。"
+      },
+      "sources": [
+        {
+          "url": "https://www.ato.gov.au/individuals-and-families/your-tax-return/how-to-lodge-your-tax-return/lodge-your-tax-return-online-with-mytax",
+          "quote": "When you lodge online with myTax, we pre-fill your return with information we already have."
+        },
+        {
+          "url": "https://www.ato.gov.au/individuals-and-families/your-tax-return/how-to-lodge-your-tax-return/lodge-your-tax-return-online-with-mytax",
+          "quote": "We can pre-fill most information from your employers, banks, government agencies, health funds and third parties by late July."
+        }
+      ],
+      "tags": [
+        "tax",
+        "returns"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "ato-tax-refund-or-bill",
+      "question": {
+        "en": "What happens if I paid too much or too little tax?",
+        "zh": "税交多了或交少了会怎样？"
+      },
+      "aliases": [
+        "Why might I get a tax refund or a tax bill?",
+        "Will the ATO refund tax I overpaid?",
+        "多交的税会退吗？",
+        "为什么报税后可能还要补税？"
+      ],
+      "answer": {
+        "en": "If you pay more tax than you need to, the ATO refunds the extra amount as a tax refund. If you do not pay enough tax, you may receive a tax bill.",
+        "zh": "如果缴纳的税超过应缴金额，ATO 会把多缴部分作为退税退还。如果缴税不足，可能会收到税款账单。"
+      },
+      "sources": [
+        {
+          "url": "https://www.ato.gov.au/individuals-and-families/your-tax-return/before-you-prepare-your-tax-return/preparing-your-tax-return",
+          "quote": "If you pay more tax than you need to, we'll refund the extra amount to you (this is known as a tax refund)."
+        },
+        {
+          "url": "https://www.ato.gov.au/individuals-and-families/your-tax-return/before-you-prepare-your-tax-return/preparing-your-tax-return",
+          "quote": "If you don't pay enough tax then you may receive a tax bill."
+        }
+      ],
+      "tags": [
+        "tax",
+        "returns"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "choice-of-super-fund",
+      "question": {
+        "en": "Can I choose my own super fund?",
+        "zh": "我可以自己选择 super 基金吗？"
+      },
+      "aliases": [
+        "Can I choose where my super is invested?",
+        "Who manages my super fund money?",
+        "养老金基金可以自己选吗？",
+        "super 由谁投资管理？"
+      ],
+      "answer": {
+        "en": "You can generally choose the fund in which your super is invested and how it is invested. The fund invests and manages the money for you until you retire.",
+        "zh": "一般来说，可以选择自己的 super 投入哪个基金，以及如何投资。养老金基金会为你投资和管理这笔钱，直到退休。"
+      },
+      "sources": [
+        {
+          "url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/what-is-super",
+          "quote": "You can generally choose what fund your super is invested in, and how it is invested."
+        },
+        {
+          "url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/what-is-super",
+          "quote": "Your chosen super fund invests and manages this money for you until you retire."
+        }
+      ],
+      "tags": [
+        "super",
+        "funds"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "award-wages-versus-national-minimum",
+      "question": {
+        "en": "Which employees does the National Minimum Wage apply to?",
+        "zh": "全国最低工资适用于哪些员工？"
+      },
+      "aliases": [
+        "Who gets the National Minimum Wage?",
+        "Does the National Minimum Wage apply when no award or agreement covers me?",
+        "全国最低工资适用哪些人？",
+        "没有 award 或注册协议时适用全国最低工资吗？"
+      ],
+      "answer": {
+        "en": "The National Minimum Wage applies to employees who are not covered by an award or registered agreement. It is reviewed each year.",
+        "zh": "全国最低工资适用于不受 award 或注册协议覆盖的员工。这项标准每年进行审查。"
+      },
+      "sources": [
+        {
+          "url": "https://www.fairwork.gov.au/pay-and-wages/minimum-wages",
+          "quote": "The National Minimum Wage applies to employees not covered by an award or registered agreement."
+        },
+        {
+          "url": "https://www.fairwork.gov.au/pay-and-wages/minimum-wages",
+          "quote": "This is the minimum pay rate provided by the Fair Work Act 2009 and is reviewed each year."
+        }
+      ],
+      "tags": [
+        "pay",
+        "award"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "dasp-when-submit",
+      "question": {
+        "en": "When can a temporary visa holder submit a DASP application?",
+        "zh": "临时签证持有人什么时候可以提交离境养老金 DASP 申请？"
+      },
+      "aliases": [
+        "Can I apply for DASP before leaving Australia?",
+        "Must my visa end before submitting a DASP claim?",
+        "离境前可以申请退养老金吗？",
+        "提交 DASP 时签证需要失效吗？"
+      ],
+      "answer": {
+        "en": "You can only submit a DASP application after you have left Australia and no longer hold an active visa. You can start and save the online application while still in Australia.",
+        "zh": "只有离开澳大利亚且不再持有有效签证后，才能提交 DASP 申请。人在澳大利亚时可以开始填写并保存在线申请。"
+      },
+      "sources": [
+        {
+          "url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/temporary-residents-and-superannuation/departing-australia-superannuation-payment-dasp",
+          "quote": "You can only submit a DASP application when you've left Australia and do not hold an active visa."
+        },
+        {
+          "url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/temporary-residents-and-superannuation/departing-australia-superannuation-payment-dasp",
+          "quote": "You can start and save your online application while you are still in Australia and have all the relevant information handy."
+        }
+      ],
+      "tags": [
+        "super",
+        "temporary-resident"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "dasp-online-cost",
+      "question": {
+        "en": "Does the online DASP application cost anything?",
+        "zh": "在线申请离境养老金 DASP 收费吗？"
+      },
+      "aliases": [
+        "Is it free to claim departing Australia super online?",
+        "Can I use the online DASP system for ATO-held super?",
+        "网上申请离境退 super 免费吗？",
+        "ATO 代管的养老金可以网上申请 DASP 吗？"
+      ],
+      "answer": {
+        "en": "The DASP online application system is free to use. It can be used for super held by a super fund and super held by the ATO.",
+        "zh": "使用 DASP 在线申请系统免费。该系统可用于申请由养老金基金或 ATO 持有的 super。"
+      },
+      "sources": [
+        {
+          "url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/temporary-residents-and-superannuation/departing-australia-superannuation-payment-dasp",
+          "quote": "You can use the DASP online application systemExternal Link free of charge"
+        },
+        {
+          "url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/temporary-residents-and-superannuation/departing-australia-superannuation-payment-dasp",
+          "quote": "You can apply for a DASP via either: the DASP online application systemExternal Link – for both super fund and ATO-held super"
+        }
+      ],
+      "tags": [
+        "super",
+        "temporary-resident"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "dasp-working-holiday-tax",
+      "question": {
+        "en": "Is working holiday super taxed differently when claimed as DASP?",
+        "zh": "打工度假期间的 super 作为 DASP 提取时，税率不同吗？"
+      },
+      "aliases": [
+        "Is a backpacker DASP taxed at a different rate?",
+        "Does WHM tax apply to the whole DASP payment?",
+        "背包客离境退养老金税率不同吗？",
+        "打工度假 DASP 税率会适用整笔款吗？"
+      ],
+      "answer": {
+        "en": "Different DASP tax rates apply to working holiday maker visa holders. If a DASP includes amounts attributable to contributions made while the person held a working holiday maker visa, the working holiday maker rate applies to the entire payment.",
+        "zh": "打工度假签证持有人适用不同的 DASP 税率。如果 DASP 包含持打工度假签证期间缴款所对应的金额，打工度假税率适用于整笔款项。"
+      },
+      "sources": [
+        {
+          "url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/temporary-residents-and-superannuation/departing-australia-superannuation-payment-dasp",
+          "quote": "Different tax rates apply to working holiday maker (WHM) visa holders."
+        },
+        {
+          "url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/temporary-residents-and-superannuation/departing-australia-superannuation-payment-dasp",
+          "quote": "If you have held a WHM visa, your super fund will check whether the DASP includes amounts attributable to super contributions made while you held a WHM visa. If it does, the fund will apply the DASP WHM tax rate."
+        },
+        {
+          "url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/temporary-residents-and-superannuation/departing-australia-superannuation-payment-dasp",
+          "quote": "The DASP WHM tax rate applies to the entire payment, including any super you may have earned while working under a different visa."
+        }
+      ],
+      "tags": [
+        "super",
+        "working-holiday",
+        "tax"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "dasp-tax-return-report",
+      "question": {
+        "en": "Do I include a DASP payment in my Australian tax return?",
+        "zh": "离境养老金 DASP 需要写进澳大利亚报税表吗？"
+      },
+      "aliases": [
+        "Do I report my DASP on an income tax return?",
+        "Is departing Australia super assessable income?",
+        "退回的离境养老金要报所得税吗？",
+        "DASP 算应税收入吗？"
+      ],
+      "answer": {
+        "en": "DASP does not form part of assessable income for Australian tax purposes. Final tax is withheld when it is paid, so neither amount is included in the tax return.",
+        "zh": "就澳大利亚税务而言，DASP 不属于应税收入。付款时会扣缴最终税款，因此这两项金额都不计入报税表。"
+      },
+      "sources": [
+        {
+          "url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/temporary-residents-and-superannuation/departing-australia-superannuation-payment-dasp",
+          "quote": "DASP does not form part of your assessable income for Australian tax purposes."
+        },
+        {
+          "url": "https://www.ato.gov.au/individuals-and-families/super-for-individuals-and-families/super/temporary-residents-and-superannuation/departing-australia-superannuation-payment-dasp",
+          "quote": "A final tax is withheld from DASP when the payment is made – so don't include either amounts in your tax return."
+        }
+      ],
+      "tags": [
+        "super",
+        "tax",
+        "returns"
+      ],
+      "checked": "2026-11-01"
+    }
+  ]
+}
