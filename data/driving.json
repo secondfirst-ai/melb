@@ -66,8 +66,8 @@
   {
    "id": "victoria-p-driver-hands-free-phone",
    "question": {
-    "en": "Can Victorian P plate drivers use a hands-free phone while driving?",
-    "zh": "维州 P 牌司机开车时可以使用免提手机吗？"
+    "en": "Can Victorian P1 and P2 drivers use a hands-free phone while driving?",
+    "zh": "维州 P1 和 P2 司机开车时可以使用免提手机吗？"
    },
    "aliases": [
     "Can P platers make hands free calls?",
@@ -76,8 +76,8 @@
     "L牌能用蓝牙通话吗"
    ],
    "answer": {
-    "en": "No. Learner, P1 and P2 drivers are not permitted to use a hand-held or hands-free mobile phone while driving.",
-    "zh": "不可以。L 牌、P1 和 P2 司机开车时不得使用手持或免提手机。"
+    "en": "P1 and P2 drivers are not permitted to use a hands-free mobile phone while driving. Learner drivers are also not permitted to use a hands-free mobile phone while driving.",
+    "zh": "P1 和 P2 司机开车时不得使用免提手机。L 牌司机开车时也不得使用免提手机。"
    },
    "sources": [
     {
@@ -420,8 +420,8 @@
     "拦车罚单可以提名司机吗"
    ],
    "answer": {
-    "en": "No. Fines Victoria says you cannot nominate another driver if police stopped you and issued an on-the-spot fine, including where the fine was later sent by post.",
-    "zh": "不可以。Fines Victoria 表示，如果警方拦下你并开出现场罚单，就不能提名其他司机，包括罚单后来以邮寄方式送达的情况。"
+    "en": "You cannot nominate another driver if you were stopped by a Victoria Police member and issued with an on-the-spot fine at the time of the offence or later received the fine by post. This is a restriction on nominating another driver.",
+    "zh": "如果维州警员拦下你，并在违法当时开出现场罚单，或你后来通过邮寄收到罚单，就不能提名其他司机。这是一项对提名其他司机的限制。"
    },
    "sources": [
     {
@@ -476,8 +476,8 @@
     "找不到交通罚单怎么办"
    ],
    "answer": {
-    "en": "If you have another open fine, Fines Victoria says you can use its notice details to log in to Your fines and see your current fines. If you have no other fines and need help with a lost fine, contact Fines Victoria.",
-    "zh": "Fines Victoria 表示，如果还有其他未结罚单，可以用那张通知上的资料登录 Your fines，查看当前罚单。如果没有其他罚单，又需要帮助查找遗失的罚单，可以联系 Fines Victoria。"
+    "en": "If you have another open fine in your name, you can use the obligation number, infringement number or court case number on its notice to log in to Your fines and view your current fines. If you have no other fines and need help with a lost fine, contact Fines Victoria.",
+    "zh": "如果你名下还有其他未结罚单，可以用该通知上的 obligation number、infringement number 或 court case number 登录 Your fines，查看当前罚单。如果没有其他罚单，又需要帮助查找遗失的罚单，可以联系 Fines Victoria。"
    },
    "sources": [
     {
@@ -700,8 +700,8 @@
   {
    "id": "victoria-camera-flash-not-speeding",
    "question": {
-    "en": "Does a camera flash always mean I will get a fine in Victoria?",
-    "zh": "在维州看到摄像头闪光，就一定会收到罚单吗？"
+    "en": "Why might a road safety camera flash if I was not speeding?",
+    "zh": "没有超速时，道路安全摄像头为什么可能闪光？"
    },
    "aliases": [
     "Camera flashed but I was not speeding Victoria",
@@ -710,8 +710,8 @@
     "没超速相机为什么闪了"
    ],
    "answer": {
-    "en": "No. Cameras can flash for reasons other than detecting an offence, such as testing or detecting an offence in another lane.",
-    "zh": "不一定。摄像头闪光可能有其他原因，例如测试或检测到另一条车道上的违法行为。"
+    "en": "Cameras can flash for reasons other than offence detection. Examples include testing or detecting an offence in another lane.",
+    "zh": "摄像头可能因检测违法以外的原因闪光。例如，摄像头可能正在测试，或检测到另一条车道上的违法行为。"
    },
    "sources": [
     {
@@ -940,8 +940,8 @@
     "CityLink开过后多久可以买pass"
    ],
    "answer": {
-    "en": "Yes. Linkt says previous CityLink travel can be covered by opening an account within 9 days or buying a pass within 5 days of the first trip.",
-    "zh": "可以。Linkt 表示，过去的 CityLink 行程可以通过在 9 天内开设账户，或在首次行程后 5 天内购买 pass 来支付。"
+    "en": "Linkt says you can buy a pass within 5 days of your first trip to pay for previous CityLink travel. You can also open an account within 9 days to pay for previous travel.",
+    "zh": "Linkt 表示，可以在首次行程后 5 天内购买 pass，支付之前的 CityLink 行程。也可以在 9 天内开设账户，支付之前的行程。"
    },
    "sources": [
     {
@@ -1110,13 +1110,17 @@
     "CityLink能用EastLink账户支付吗"
    ],
    "answer": {
-    "en": "Yes. EastLink says all EastLink accounts can be used to pay for EastLink and CityLink trips in Melbourne.",
-    "zh": "可以。EastLink 表示，所有 EastLink 账户都可用于支付墨尔本的 EastLink 和 CityLink 行程。"
+    "en": "EastLink says its accounts can be used to pay for EastLink and CityLink trips in Melbourne. An account that is suspended will not work on any tollway.",
+    "zh": "EastLink 表示，其账户可以支付墨尔本的 EastLink 和 CityLink 行程。账户一旦被暂停，就无法在任何收费公路使用。"
    },
    "sources": [
     {
      "url": "https://www.eastlink.com.au/faq",
      "quote": "All EastLink accounts can be used to pay for EastLink and CityLink trips in Melbourne."
+    },
+    {
+     "url": "https://www.eastlink.com.au/faq",
+     "quote": "Remember, if your account is suspended then it will not work on any tollway."
     }
    ],
    "tags": [
@@ -1253,8 +1257,8 @@
     "维州能堵住别人车库入口吗"
    ],
    "answer": {
-    "en": "Drivers must not stop across a driveway except to drop off or pick up passengers. The driver must stay in the vehicle and stop for no more than 2 minutes.",
-    "zh": "司机不得在车道出入口前停车，接送乘客除外。司机必须留在车内，停车时间不得超过 2 分钟。"
+    "en": "Do not park across a driveway unless dropping off or picking up passengers. When doing so, do not leave the vehicle or take longer than two minutes.",
+    "zh": "除接送乘客外，不要把车停在车道出入口前。接送乘客时，不要离开车辆，也不要超过两分钟。"
    },
    "sources": [
     {
@@ -1366,7 +1370,7 @@
    ],
    "answer": {
     "en": "A Double Time Permit allows parking in a standard parking bay for twice the time shown on the parking sign. The permit applies to standard parking bays.",
-    "zh": "Double Time Permit 允许持证人在普通停车位停留标志所示时间的两倍。这种许可适用于普通停车位。"
+    "zh": "Double Time Permit 允许车辆在普通停车位停留标志所示时间的两倍。这种许可适用于普通停车位。"
    },
    "sources": [
     {
