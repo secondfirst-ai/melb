@@ -1,0 +1,1357 @@
+{
+ "dataset": "driving",
+ "title": {
+  "en": "Driving in Melbourne and Victoria",
+  "zh": "墨尔本和维州驾驶"
+ },
+ "updated": "2026-11-01",
+ "notes": [],
+ "records": [
+  {
+   "id": "victoria-digital-licence-learners-probationary",
+   "question": {
+    "en": "Can learner and P plate drivers get a digital licence in Victoria?",
+    "zh": "维州的 L 牌和 P 牌司机可以用数字驾照吗？"
+   },
+   "aliases": [
+    "Digital licence for L and P platers",
+    "Can learners have a digital permit?",
+    "学车证有电子版吗",
+    "P牌能申请电子驾照吗"
+   ],
+   "answer": {
+    "en": "Yes. Service Victoria says digital versions are available for every kind of driver licence and learner permit.",
+    "zh": "可以。Service Victoria 表示，各类驾照和 learner permit 都有数字版。"
+   },
+   "sources": [
+    {
+     "url": "https://service.vic.gov.au/find-services/digital-wallet/digital-driver-licence/about-digital-driver-licences/licences-permits-statuses",
+     "quote": "Yes. You can get digital versions of every kind of driver licence and learner permit."
+    }
+   ],
+   "tags": [
+    "licence",
+    "digital"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "victoria-p-plate-zero-alcohol",
+   "question": {
+    "en": "What is the alcohol limit for Victorian P plate drivers?",
+    "zh": "维州 P 牌司机的酒精限制是多少？"
+   },
+   "aliases": [
+    "Can a P plater drink alcohol before driving?",
+    "P plate BAC limit Victoria",
+    "维州P牌能喝酒开车吗",
+    "实习驾照酒精限值"
+   ],
+   "answer": {
+    "en": "P1 and P2 drivers must have zero blood and breath alcohol concentration before driving. This means they cannot have any alcohol in their system.",
+    "zh": "P1 和 P2 司机开车前的血液及呼气酒精浓度必须为零。这意味着体内不能有任何酒精。"
+   },
+   "sources": [
+    {
+     "url": "https://www.police.vic.gov.au/staying-safe-school-leaver-celebrations",
+     "quote": "If you are a probationary driver (on your P1 or P2 licence), you must have a zero blood and breath alcohol concentration (BAC) before driving. This means you cannot have any alcohol in your system."
+    }
+   ],
+   "tags": [
+    "licence",
+    "alcohol"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "victoria-p-driver-hands-free-phone",
+   "question": {
+    "en": "Can Victorian P1 and P2 drivers use a hands-free phone while driving?",
+    "zh": "维州 P1 和 P2 司机开车时可以使用免提手机吗？"
+   },
+   "aliases": [
+    "Can P platers make hands free calls?",
+    "Learner driver Bluetooth calls Victoria",
+    "P牌开车能打免提电话吗",
+    "L牌能用蓝牙通话吗"
+   ],
+   "answer": {
+    "en": "P1 and P2 drivers are not permitted to use a hands-free mobile phone while driving. Learner drivers are also not permitted to use a hands-free mobile phone while driving.",
+    "zh": "P1 和 P2 司机开车时不得使用免提手机。L 牌司机开车时也不得使用免提手机。"
+   },
+   "sources": [
+    {
+     "url": "https://www.police.vic.gov.au/impaired-distracted-dangerous-and-high-risk-driving",
+     "quote": "Learner, P1 and P2 drivers are not permitted to use a hand-held or hands-free mobile phone while driving."
+    }
+   ],
+   "tags": [
+    "licence",
+    "phone"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "victoria-handheld-phone-traffic-lights",
+   "question": {
+    "en": "Can I hold my phone while stopped at traffic lights in Victoria?",
+    "zh": "在维州等红灯时可以手拿手机吗？"
+   },
+   "aliases": [
+    "Phone use at red lights Victoria",
+    "Is holding a phone illegal when stopped at lights?",
+    "红灯停车拿手机违法吗",
+    "等红灯能拿手机吗"
+   ],
+   "answer": {
+    "en": "No. Victoria Police says using a handheld mobile phone is illegal when the vehicle is stationary but not parked, including at traffic lights.",
+    "zh": "不可以。维州警方表示，车辆停着但未泊车时使用手持手机违法，包括在红灯前停车时。"
+   },
+   "sources": [
+    {
+     "url": "https://www.police.vic.gov.au/impaired-distracted-dangerous-and-high-risk-driving",
+     "quote": "Using a handheld mobile phone is also illegal when your vehicle is stationary but not parked, e.g. when you're stopped at traffic lights."
+    }
+   ],
+   "tags": [
+    "phone",
+    "road-rules"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "victoria-baby-under-six-months-car-seat",
+   "question": {
+    "en": "What car seat does a baby under six months need in Victoria?",
+    "zh": "在维州，不满六个月的婴儿需要什么汽车安全座椅？"
+   },
+   "aliases": [
+    "Newborn rear facing car seat law Victoria",
+    "How must a baby under six months travel in a car?",
+    "新生儿坐车要朝后吗",
+    "六个月以下宝宝安全座椅规定"
+   ],
+   "answer": {
+    "en": "A child under six months must use an approved rearward-facing child restraint. It must be properly fastened and adjusted.",
+    "zh": "未满六个月的儿童必须使用经批准的后向儿童安全座椅。座椅必须正确固定并调整。"
+   },
+   "sources": [
+    {
+     "url": "https://www.betterhealth.vic.gov.au/health/healthyliving/child-safety-in-the-car",
+     "quote": "Children aged under six months must use an approved, properly fastened and adjusted rearward-facing child restraint."
+    }
+   ],
+   "tags": [
+    "children",
+    "road-rules"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "victoria-child-four-to-seven-car-restraint",
+   "question": {
+    "en": "What car restraint does a child between four and seven need in Victoria?",
+    "zh": "在维州，四岁至七岁的孩子坐车需要什么安全座椅？"
+   },
+   "aliases": [
+    "Booster seat law for five year old Victoria",
+    "Restraint for child under seven Victoria",
+    "五岁孩子要坐增高座椅吗",
+    "维州四到七岁儿童汽车座椅规定"
+   ],
+   "answer": {
+    "en": "Children aged between four and seven must use a forward-facing child restraint or booster seat. It must be properly fastened and adjusted.",
+    "zh": "四岁至七岁的儿童必须使用前向儿童安全座椅或增高座椅。座椅必须正确固定并调整。"
+   },
+   "sources": [
+    {
+     "url": "https://www.betterhealth.vic.gov.au/health/healthyliving/child-safety-in-the-car",
+     "quote": "Children aged between four and seven years old must use a properly fastened and adjusted forward-facing child restraint OR booster seat."
+    }
+   ],
+   "tags": [
+    "children",
+    "road-rules"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "victoria-child-seven-to-fifteen-car-restraint",
+   "question": {
+    "en": "Can a child between seven and 16 use an adult seatbelt in Victoria?",
+    "zh": "在维州，七岁至 16 岁的孩子可以用成人安全带吗？"
+   },
+   "aliases": [
+    "Can an eight year old use an adult seatbelt Victoria?",
+    "Booster seat rules for children over seven",
+    "八岁孩子能系成人安全带吗",
+    "七岁以上儿童增高座椅规定"
+   ],
+   "answer": {
+    "en": "Children aged between seven and 16 must use a booster seat with a properly fastened and adjusted lap or sash seatbelt or child safety harness, or a properly fastened and adjusted seatbelt. This is the rule described by Better Health Channel.",
+    "zh": "七岁至 16 岁的儿童必须使用增高座椅并配合正确扣紧和调整的腰带式或斜肩式安全带或儿童安全束带，或者使用正确扣紧和调整的安全带。这是 Better Health Channel 说明的规定。"
+   },
+   "sources": [
+    {
+     "url": "https://www.betterhealth.vic.gov.au/health/healthyliving/child-safety-in-the-car",
+     "quote": "Children aged between seven and 16 years old must use a booster seat with a properly fastened and adjusted lap or sash seatbelt or child safety harness, or a properly fastened and adjusted seatbelt."
+    }
+   ],
+   "tags": [
+    "children",
+    "road-rules"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "victoria-roadworthy-validity-selling-car",
+   "question": {
+    "en": "How long is a roadworthy certificate valid when selling a car in Victoria?",
+    "zh": "在维州卖车时，道路适行证书的有效期是多久？"
+   },
+   "aliases": [
+    "How long does a Victorian RWC last?",
+    "Roadworthy certificate age for a car sale",
+    "维州RWC有效期多久",
+    "卖车的路检证书多久有效"
+   ],
+   "answer": {
+    "en": "A roadworthy certificate is valid for 30 days from its issue date. Consumer Affairs Victoria says the certificate supplied to the buyer of a registered car should be no more than 30 days old.",
+    "zh": "道路适行证书自签发日起有效 30 天。Consumer Affairs Victoria 表示，出售已注册汽车时提供给买家的证书不应超过 30 天。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/consumers-and-businesses/cars/selling-a-car",
+     "quote": "If the car is registered, make sure you provide the buyer with a roadworthy certificate that is not more than 30 days old. This is a general safety check conducted by a licensed vehicle tester and is valid for 30 days from the date of issue."
+    }
+   ],
+   "tags": [
+    "rego",
+    "roadworthy"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "victoria-sell-unregistered-car-without-roadworthy",
+   "question": {
+    "en": "Can an unregistered car be sold without a roadworthy certificate in Victoria?",
+    "zh": "在维州，没有注册的车可以不带道路适行证书出售吗？"
+   },
+   "aliases": [
+    "Need RWC to sell unregistered car Victoria?",
+    "Can a car with cancelled registration be sold without a RWC?",
+    "无rego卖车需要路检吗",
+    "注销注册的车能不带RWC出售吗"
+   ],
+   "answer": {
+    "en": "Yes. A car that is unregistered or has had its registration cancelled can be sold without a roadworthy certificate.",
+    "zh": "可以。没有注册或注册已取消的汽车可以不附道路适行证书出售。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/consumers-and-businesses/cars/buying-a-used-car/before-you-buy-a-used-car/unregistered-vehicles",
+     "quote": "If a car is unregistered or the registration has been cancelled, it can be sold without a roadworthy certificate."
+    }
+   ],
+   "tags": [
+    "rego",
+    "roadworthy"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "victoria-roadworthy-transfer-form-buyer",
+   "question": {
+    "en": "What does a buyer send to VicRoads after a private car sale?",
+    "zh": "维州私人买车后，买家要向 VicRoads 提交什么？"
+   },
+   "aliases": [
+    "Who submits vehicle transfer form Victoria?",
+    "Private car transfer paperwork for buyer",
+    "私人买车后过户表格交给谁",
+    "维州汽车过户买家交什么"
+   ],
+   "answer": {
+    "en": "Consumer Affairs Victoria says the buyer and seller both sign a transfer of registration form. The buyer then sends the form and the roadworthy certificate provided by the seller to VicRoads within 14 days of the sale.",
+    "zh": "Consumer Affairs Victoria 表示，买卖双方都要签署注册过户表。买家随后须在出售后 14 天内，将表格和卖家提供的道路适行证书交给 VicRoads。"
+   },
+   "sources": [
+    {
+     "url": "https://www.consumer.vic.gov.au/consumers-and-businesses/cars/selling-a-car",
+     "quote": "For this to happen, both you and the buyer must sign a 'transfer of registration' form. The buyer then sends the form and the roadworthy certificate you provide to VicRoads within 14 days of the sale."
+    }
+   ],
+   "tags": [
+    "rego",
+    "transfer"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "victoria-car-fine-after-sale",
+   "question": {
+    "en": "What if I receive a traffic fine after selling my car in Victoria?",
+    "zh": "在维州卖车后收到该车的交通罚单怎么办？"
+   },
+   "aliases": [
+    "Sold my car and got its speeding fine",
+    "Traffic infringement after sale of vehicle",
+    "车卖了还收到罚单",
+    "卖车后收到超速罚单怎么办"
+   ],
+   "answer": {
+    "en": "Fines Victoria says to submit a nomination form stating that you were not the owner or driver at the time of the offence. It says to include the buyer’s details and proof that registration was transferred before the offence.",
+    "zh": "Fines Victoria 表示，应提交提名表，说明违法时你不是车主或司机。还应提供买家资料，以及违法发生前已完成车辆注册过户的证明。"
+   },
+   "sources": [
+    {
+     "url": "https://online.fines.vic.gov.au/Infringement-fines/Infringement-fine-FAQs",
+     "quote": "If you receive a traffic fine for a vehicle you have sold, you need to submit a Nomination form stating that you were not the owner or driver of the vehicle at the time of the offence. You should include details of the buyer and proof that you transferred the vehicle registration to the buyer before the date of the offence."
+    }
+   ],
+   "tags": [
+    "rego",
+    "fines"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "victoria-nominate-driver-camera-fine",
+   "question": {
+    "en": "What if someone else was driving when my car got a camera fine in Victoria?",
+    "zh": "在维州，别人开我的车被摄像头拍到并收到罚单怎么办？"
+   },
+   "aliases": [
+    "Nominate another driver for speed camera fine",
+    "Speeding ticket came to car owner but another person drove",
+    "别人开我车超速罚单寄给我",
+    "摄像头罚单如何提名司机"
+   ],
+   "answer": {
+    "en": "The vehicle owner can complete a nomination form identifying the driver. If accepted, the original fine is withdrawn and a new fine with a new due date is issued to the nominated driver.",
+    "zh": "车主可以填写提名表，指明当时的司机。如果提名获接受，原罚单会撤销，并向被提名司机发出有新到期日的罚单。"
+   },
+   "sources": [
+    {
+     "url": "https://online.fines.vic.gov.au/Infringement-fines/Infringement-fine-FAQs",
+     "quote": "You need to nominate the person that was driving the vehicle at the time of the offence, by completing a nomination form."
+    },
+    {
+     "url": "https://online.fines.vic.gov.au/Infringement-fines/Infringement-fine-FAQs",
+     "quote": "If the nomination is accepted, the fine issued to you will be withdrawn and a new fine, with a new due date, will be issued to the nominated driver."
+    }
+   ],
+   "tags": [
+    "fines",
+    "camera"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "victoria-nominate-after-final-demand",
+   "question": {
+    "en": "Can I nominate another driver after a Notice of Final Demand?",
+    "zh": "收到 Notice of Final Demand 后还能提名其他司机吗？"
+   },
+   "aliases": [
+    "Too late to nominate a driver Victoria",
+    "Can I nominate at final demand stage?",
+    "最后催缴通知后还能转罚单吗",
+    "罚单到最后催缴阶段还能提名司机吗"
+   ],
+   "answer": {
+    "en": "Once a fine reaches the Notice of Final Demand stage, it is generally too late to nominate. Fines Victoria notes limited exceptions, such as an extension granted by a magistrate.",
+    "zh": "罚单进入 Notice of Final Demand 阶段后，通常已来不及提名。Fines Victoria 说明存在少数例外，例如裁判官批准延期。"
+   },
+   "sources": [
+    {
+     "url": "https://online.fines.vic.gov.au/Infringement-fines/Infringement-fine-FAQs",
+     "quote": "Once the fine progresses to Notice of Final Demand stage, it is too late to nominate, except in limited circumstances (for example, if a Magistrate grants an extension)."
+    }
+   ],
+   "tags": [
+    "fines",
+    "nomination"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "victoria-nominate-paid-fine",
+   "question": {
+    "en": "Can I nominate the actual driver after paying a Victorian fine?",
+    "zh": "维州罚单已经付了，还能提名实际司机吗？"
+   },
+   "aliases": [
+    "Paid fine but someone else was driving Victoria",
+    "Can a paid infringement be nominated?",
+    "罚款付了还能转给实际司机吗",
+    "已交罚单还能提名别人吗"
+   ],
+   "answer": {
+    "en": "Fines Victoria provides nomination forms for a fine that has already been paid. If the nomination is accepted, the amount paid is refunded and a new fine is issued to the nominated driver.",
+    "zh": "Fines Victoria 为已支付的罚单提供提名表。如果提名获接受，已付款项会退还，并向被提名司机发出新罚单。"
+   },
+   "sources": [
+    {
+     "url": "https://online.fines.vic.gov.au/Infringement-fines/Infringement-fine-FAQs",
+     "quote": "If you want to nominate a fine which you have paid, you can download and complete an Infringement Nomination form (PDF) (for fines with a Victoria Police logo) or Nomination form (PDF) (for fines with a Safe Transport Victoria logo) and submit the completed form to Fines Victoria."
+    },
+    {
+     "url": "https://online.fines.vic.gov.au/Infringement-fines/Infringement-fine-FAQs",
+     "quote": "If the nomination is accepted, you will be refunded the amount you have paid, and a new fine will be issued to the nominated driver."
+    }
+   ],
+   "tags": [
+    "fines",
+    "nomination"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "victoria-fine-nominate-police-stop",
+   "question": {
+    "en": "Can I nominate another driver for a fine issued when police stopped me?",
+    "zh": "警方拦车时开的罚单，可以提名其他司机吗？"
+   },
+   "aliases": [
+    "Nominate another person for an on the spot fine",
+    "Can I transfer a police issued on the spot fine?",
+    "现场被警察开罚单能转给别人吗",
+    "拦车罚单可以提名司机吗"
+   ],
+   "answer": {
+    "en": "You cannot nominate another driver if you were stopped by a Victoria Police member and issued with an on-the-spot fine at the time of the offence or later received the fine by post. This is a restriction on nominating another driver.",
+    "zh": "如果维州警员拦下你，并在违法当时开出现场罚单，或你后来通过邮寄收到罚单，就不能提名其他司机。这是一项对提名其他司机的限制。"
+   },
+   "sources": [
+    {
+     "url": "https://online.fines.vic.gov.au/Nominate",
+     "quote": "you were stopped by a member of Victoria Police and issued with an on-the-spot fine at the time of the offence or later received the fine by post"
+    }
+   ],
+   "tags": [
+    "fines",
+    "nomination"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "victoria-fine-stolen-car-plates",
+   "question": {
+    "en": "What if I get a fine while my car or number plates were stolen in Victoria?",
+    "zh": "在维州，车辆或车牌被盗期间收到罚单怎么办？"
+   },
+   "aliases": [
+    "Fine for stolen number plates Victoria",
+    "Speeding fine for stolen car",
+    "车牌被盗收到罚单怎么办",
+    "车被偷期间的罚单怎么处理"
+   ],
+   "answer": {
+    "en": "Fines Victoria says to complete a nomination statement and explain what happened. For suspected stolen vehicles or plates, it says to include a police report reference number and clear images of the vehicle showing the number plate.",
+    "zh": "Fines Victoria 表示，应填写提名声明并说明发生的情况。如果怀疑车辆或车牌被盗，应提供警方报案编号及清晰显示车牌的车辆照片。"
+   },
+   "sources": [
+    {
+     "url": "https://online.fines.vic.gov.au/Infringement-fines/Infringement-fine-FAQs",
+     "quote": "You need to complete a nomination statement, select the appropriate option and explain what has happened. If you think the vehicle or number plates displayed on the vehicle were stolen, when you submit a nomination include a police report reference number and clear images of your vehicle showing the number plate."
+    }
+   ],
+   "tags": [
+    "fines",
+    "nomination"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "victoria-fine-review-how-many",
+   "question": {
+    "en": "How many times can I request a review of a Victorian fine?",
+    "zh": "维州罚单可以申请复核几次？"
+   },
+   "aliases": [
+    "Can I review the same infringement twice Victoria?",
+    "Number of reviews per fine Victoria",
+    "罚单可以多次申诉吗",
+    "维州罚单能复核几次"
+   ],
+   "answer": {
+    "en": "In most cases, you can apply for only one review per fine. The application must use an eligible ground and include supporting evidence.",
+    "zh": "大多数情况下，每张罚单只能申请一次复核。申请必须基于符合条件的理由，并提供支持证据。"
+   },
+   "sources": [
+    {
+     "url": "https://online.fines.vic.gov.au/Your-options/Request-a-review",
+     "quote": "In most cases, you can only apply for one review for each fine."
+    },
+    {
+     "url": "https://online.fines.vic.gov.au/Your-options/Request-a-review",
+     "quote": "You can only ask for a review under one of the eligible grounds and you have to provide supporting evidence to support the reasons you are asking for a review."
+    }
+   ],
+   "tags": [
+    "fines",
+    "review"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "victoria-fine-review-on-hold",
+   "question": {
+    "en": "What happens to a fine during an internal review in Victoria?",
+    "zh": "在维州申请罚单 internal review 期间，罚单会怎样？"
+   },
+   "aliases": [
+    "Does an internal review pause my fine Victoria?",
+    "Fine payment on hold while reviewed",
+    "罚单内部复核期间会暂停吗",
+    "申诉期间罚单要继续处理吗"
+   ],
+   "answer": {
+    "en": "Fines included in an internal review application are put on hold while the application is reviewed. Fines Victoria says the application will be decided within 90 days using the information supplied.",
+    "zh": "申请 internal review 所包含的罚单在复核期间会暂停处理。Fines Victoria 表示，会根据提供的资料在 90 天内作出决定。"
+   },
+   "sources": [
+    {
+     "url": "https://online.fines.vic.gov.au/Your-options/Request-a-review",
+     "quote": "After you apply, any fines included in the application will be put on hold while the application is reviewed. Your application will be decided within 90 days, using the information you gave."
+    }
+   ],
+   "tags": [
+    "fines",
+    "review"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "victoria-fine-excessive-speed-internal-review",
+   "question": {
+    "en": "Can I request an internal review for an excessive speeding fine in Victoria?",
+    "zh": "维州严重超速罚单可以申请 internal review 吗？"
+   },
+   "aliases": [
+    "Internal review for excessive speeding Victoria",
+    "Can excessive speeding infringement be internally reviewed?",
+    "严重超速罚单能内部复核吗",
+    "维州严重超速可以申请internal review吗"
+   ],
+   "answer": {
+    "en": "No. Fines Victoria lists excessive speeding offences among fines that cannot receive an internal review.",
+    "zh": "不可以。Fines Victoria 将严重超速违法列为不能申请 internal review 的罚单类别之一。"
+   },
+   "sources": [
+    {
+     "url": "https://online.fines.vic.gov.au/Your-options/Request-a-review",
+     "quote": "You cannot request an internal review for: excessive speeding offences"
+    }
+   ],
+   "tags": [
+    "fines",
+    "speeding"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "victoria-fine-expire",
+   "question": {
+    "en": "Do fines registered with Fines Victoria expire?",
+    "zh": "在 Fines Victoria 登记的罚单会过期吗？"
+   },
+   "aliases": [
+    "Do unpaid Victorian fines expire?",
+    "Can an old Fines Victoria fine still be enforced?",
+    "维州罚单欠久了会过期吗",
+    "Fines Victoria登记的罚款会失效吗"
+   ],
+   "answer": {
+    "en": "No. Once a fine is registered with Fines Victoria, it does not expire and can be enforced at any time.",
+    "zh": "不会。罚单一旦在 Fines Victoria 登记，就不会过期，随时可以被执行。"
+   },
+   "sources": [
+    {
+     "url": "https://online.fines.vic.gov.au/Infringement-fines/Infringement-fine-FAQs",
+     "quote": "No. Once a fine is registered with Fines Victoria it does not expire and can be enforced at any time."
+    }
+   ],
+   "tags": [
+    "fines"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "victoria-road-camera-red-after-entry",
+   "question": {
+    "en": "Will a red-light camera fine me if the light turns red after I enter the intersection?",
+    "zh": "进入路口后信号灯才变红，红灯摄像头会开罚单吗？"
+   },
+   "aliases": [
+    "Light turned red while I was in intersection Victoria",
+    "Red light camera already entered intersection",
+    "进入路口后变红灯会被拍吗",
+    "过线后红灯亮会罚款吗"
+   ],
+   "answer": {
+    "en": "A red-light camera detects a vehicle entering an intersection after the light turns red. You will not get a fine if the light turned red after you had already entered the intersection.",
+    "zh": "红灯摄像头检测的是信号灯变红后驶入路口的车辆。如果你已经进入路口后灯才变红，就不会因此收到罚单。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vic.gov.au/red-light-cameras",
+     "quote": "Red light cameras detect when a vehicle drives through an intersection after the traffic light has turned red."
+    },
+    {
+     "url": "https://www.vic.gov.au/red-light-cameras",
+     "quote": "You will not get a fine if the light turned red after you had already entered the intersection."
+    }
+   ],
+   "tags": [
+    "camera",
+    "red-light"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "victoria-red-light-camera-speed",
+   "question": {
+    "en": "Do Victorian red-light cameras also catch speeding?",
+    "zh": "维州红灯摄像头也会拍超速吗？"
+   },
+   "aliases": [
+    "Can a red light camera detect speed Victoria?",
+    "Do intersection cameras check speed too?",
+    "闯红灯摄像头能拍超速吗",
+    "路口红灯相机也测速吗"
+   ],
+   "answer": {
+    "en": "Some red-light cameras can also detect speeding vehicles. These cameras are permanently installed at intersections.",
+    "zh": "部分红灯摄像头也能检测超速车辆。这类摄像头永久安装在路口。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vic.gov.au/red-light-cameras",
+     "quote": "Red light cameras are digital road safety cameras permanently installed at intersections to detect vehicles that run red lights. Some red light cameras can also detect speeding vehicles."
+    }
+   ],
+   "tags": [
+    "camera",
+    "speeding"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "victoria-camera-two-cars-image",
+   "question": {
+    "en": "How does a camera identify the offending car when two cars appear in a photo?",
+    "zh": "罚单照片里有两辆车时，摄像头怎么判断哪辆车违法？"
+   },
+   "aliases": [
+    "Two cars in speed camera photo Victoria",
+    "Multiple vehicles in red light camera image",
+    "测速照片有两辆车怎么分辨",
+    "罚单照片两辆车会罚错吗"
+   ],
+   "answer": {
+    "en": "Road safety cameras can monitor multiple lanes for speeding and red-light offences. The camera differentiates between lanes, and only the offending vehicle will be fined.",
+    "zh": "道路安全摄像头可以同时监测多条车道的超速和闯红灯违法。摄像头会区分车道，只有违法车辆会被处罚。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vic.gov.au/frequently-asked-questions-about-road-safety-cameras",
+     "quote": "Road safety cameras can monitor multiple lanes for both speeding and red light offences. The camera differentiates between lanes and only the offending vehicle will be fined."
+    }
+   ],
+   "tags": [
+    "camera",
+    "speeding"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "victoria-camera-flash-not-speeding",
+   "question": {
+    "en": "Why might a road safety camera flash if I was not speeding?",
+    "zh": "没有超速时，道路安全摄像头为什么可能闪光？"
+   },
+   "aliases": [
+    "Camera flashed but I was not speeding Victoria",
+    "Why did a speed camera flash when I was not speeding?",
+    "摄像头闪了是不是一定有罚单",
+    "没超速相机为什么闪了"
+   ],
+   "answer": {
+    "en": "Cameras can flash for reasons other than offence detection. Examples include testing or detecting an offence in another lane.",
+    "zh": "摄像头可能因检测违法以外的原因闪光。例如，摄像头可能正在测试，或检测到另一条车道上的违法行为。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vic.gov.au/frequently-asked-questions-about-road-safety-cameras",
+     "quote": "Cameras can flash for reasons other than offence detection (due to testing or detecting an offence in another lane)."
+    }
+   ],
+   "tags": [
+    "camera",
+    "speeding"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "victoria-point-to-point-camera",
+   "question": {
+    "en": "How do point-to-point speed cameras work in Victoria?",
+    "zh": "维州区间测速摄像头如何测速？"
+   },
+   "aliases": [
+    "Average speed cameras Hume Highway Victoria",
+    "Do Peninsula Link cameras measure average speed?",
+    "维州区间测速测什么",
+    "Peninsula Link有平均速度摄像头吗"
+   ],
+   "answer": {
+    "en": "Point-to-point camera systems are used on the Hume Highway and Peninsula Link. They measure average speeds over a distance and also take instantaneous speed measurements.",
+    "zh": "Hume Highway 和 Peninsula Link 使用区间测速系统。它们测量一段路程的平均速度，也测量瞬时速度。"
+   },
+   "sources": [
+    {
+     "url": "https://www.police.vic.gov.au/road-safety-cameras",
+     "quote": "Point-to-point camera systems are used on the Hume Highway and Peninsula Link. They measure average speeds over distance and take instantaneous speed measurements."
+    }
+   ],
+   "tags": [
+    "camera",
+    "speeding"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "victoria-camera-red-light-fine-2026",
+   "question": {
+    "en": "How much is a red-light camera fine in Victoria?",
+    "zh": "维州红灯摄像头罚款是多少？"
+   },
+   "aliases": [
+    "Red light infringement fine and points Victoria 2026",
+    "How many points for running a red light Victoria?",
+    "维州闯红灯罚多少钱扣几分",
+    "红灯摄像头罚款金额"
+   ],
+   "answer": {
+    "en": "Fines Victoria lists a $523 penalty for failing to obey a red light or red arrow. The offence also incurs 3 demerit points.",
+    "zh": "Fines Victoria 列出的不遵守红灯或红色箭头信号的罚款为 523 澳元。这项违法还会记 3 个 demerit points。"
+   },
+   "sources": [
+    {
+     "url": "https://online.fines.vic.gov.au/Your-options/Fine-amounts-and-demerit-points",
+     "quote": "Failing to obey traffic lights, both red-light and red-light arrow, incurs a penalty of $523 and 3 demerit points."
+    }
+   ],
+   "tags": [
+    "fines",
+    "camera"
+   ],
+   "checked": "2026-11-01",
+   "valid_until": "2027-06-30"
+  },
+  {
+   "id": "victoria-mobile-seatbelt-camera-detect",
+   "question": {
+    "en": "What can mobile phone and seatbelt detection cameras detect in Victoria?",
+    "zh": "维州手机和安全带检测摄像头能拍到什么？"
+   },
+   "aliases": [
+    "Do Victorian cameras detect seatbelts and phones?",
+    "What do distracted driver cameras catch?",
+    "维州摄像头能拍手机和安全带吗",
+    "分心驾驶摄像头拍什么"
+   ],
+   "answer": {
+    "en": "The cameras detect offences involving portable devices such as phones while driving. They also detect not wearing a seatbelt or wearing one incorrectly.",
+    "zh": "这些摄像头检测驾驶时使用手机等便携设备的违法行为。它们也检测未系安全带或未正确系安全带的行为。"
+   },
+   "sources": [
+    {
+     "url": "https://online.fines.vic.gov.au/Infringement-fines/Infringement-fine-FAQs",
+     "quote": "The mobile phone and seatbelt detection cameras capture offences related to the use of portable devices like mobile phones while driving, not wearing a seatbelt, or not wearing a seatbelt correctly."
+    }
+   ],
+   "tags": [
+    "camera",
+    "phone",
+    "seatbelt"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "victoria-traffic-accident-police-report",
+   "question": {
+    "en": "Will Victoria Police make a report for a crash with no injuries?",
+    "zh": "没有人受伤的交通事故，维州警方会做事故报告吗？"
+   },
+   "aliases": [
+    "Minor car accident no injury police report Victoria",
+    "Do police report a car crash with no injuries?",
+    "轻微事故无人受伤警方会做报告吗",
+    "双方交换资料后警方会记录事故吗"
+   ],
+   "answer": {
+    "en": "If no one was injured and all parties exchanged names and addresses, Victoria Police will not normally make a formal accident report. An accident can be reported by visiting or contacting a local police station.",
+    "zh": "如果无人受伤，而且各方已交换姓名和地址，维州警方通常不会制作正式事故报告。可以到当地警察局或联系该警察局报告事故。"
+   },
+   "sources": [
+    {
+     "url": "https://www.police.vic.gov.au/traffic-accident-reports",
+     "quote": "To report an accident, visit or contact your local police station. If no-one was injured in the accident, and all involved parties have exchanged name and address details, Victoria Police will not normally make a formal report of the accident."
+    }
+   ],
+   "tags": [
+    "accident",
+    "police"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "victoria-traffic-accident-report-copy",
+   "question": {
+    "en": "Who can apply for a Victoria Police traffic accident report?",
+    "zh": "谁可以申请维州警方的交通事故报告？"
+   },
+   "aliases": [
+    "Get a copy of police crash report Victoria",
+    "Can a person with vehicle damage request accident report?",
+    "谁能申请维州交通事故报告",
+    "车辆受损能申请警方事故报告吗"
+   ],
+   "answer": {
+    "en": "A person injured or suffering property damage in a traffic accident can apply for a copy of the report. Victoria Police also says an individual can authorise someone to apply on their behalf.",
+    "zh": "交通事故中受伤或财产受损的人可以申请报告副本。维州警方还表示，个人可以授权他人代为申请。"
+   },
+   "sources": [
+    {
+     "url": "https://www.police.vic.gov.au/traffic-accident-reports",
+     "quote": "Any person who is injured or suffers property damage as a result of a traffic accident may apply for a copy of the report."
+    },
+    {
+     "url": "https://www.police.vic.gov.au/traffic-accident-reports",
+     "quote": "You can also authorise a person to represent you and apply on your behalf."
+    }
+   ],
+   "tags": [
+    "accident",
+    "police"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "victoria-traffic-accident-report-application",
+   "question": {
+    "en": "How do I apply for a Victoria Police traffic accident report?",
+    "zh": "如何申请维州警方的交通事故报告？"
+   },
+   "aliases": [
+    "Apply online for accident report Victoria Police",
+    "Police collision report application Victoria",
+    "如何在线申请警方车祸报告",
+    "维州事故报告怎么申请"
+   ],
+   "answer": {
+    "en": "Complete the online Traffic Accident Report Application Form. The application requires supporting documents, including a statutory declaration.",
+    "zh": "填写在线 Traffic Accident Report Application Form。申请需要提供支持文件，包括 statutory declaration。"
+   },
+   "sources": [
+    {
+     "url": "https://www.police.vic.gov.au/traffic-accident-reports",
+     "quote": "To apply for a traffic accident report, complete the online Traffic Accident Report Application Form. As part of your application, you will be required to upload a number of supporting documents, including a statutory declaration."
+    }
+   ],
+   "tags": [
+    "accident",
+    "police"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "victoria-traffic-accident-report-processing",
+   "question": {
+    "en": "How long does a Victoria Police traffic accident report application take?",
+    "zh": "维州警方交通事故报告的申请需要多久处理？"
+   },
+   "aliases": [
+    "Police collision report processing time Victoria",
+    "How long for accident records application Victoria Police?",
+    "申请维州警方事故报告要等多久",
+    "车祸报告处理时间"
+   ],
+   "answer": {
+    "en": "Victoria Police asks applicants to allow a minimum of 10 working days for processing. This is the minimum processing time stated by police.",
+    "zh": "维州警方表示，申请人需要预留至少 10 个工作日供处理。这是警方列出的最短处理时间。"
+   },
+   "sources": [
+    {
+     "url": "https://www.police.vic.gov.au/traffic-accident-reports",
+     "quote": "Please allow a minimum of 10 working days for your application to be processed."
+    }
+   ],
+   "tags": [
+    "accident",
+    "police"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "citylink-pay-after-driving",
+   "question": {
+    "en": "Can I pay for CityLink after I have driven on it?",
+    "zh": "开过 CityLink 之后还能补交通行费吗？"
+   },
+   "aliases": [
+    "Forgot CityLink toll pay after trip",
+    "How long after CityLink travel can I buy a pass?",
+    "忘记付CityLink过路费还能补吗",
+    "CityLink开过后多久可以买pass"
+   ],
+   "answer": {
+    "en": "Linkt says you can buy a pass within 5 days of your first trip to pay for previous CityLink travel. You can also open an account within 9 days to pay for previous travel.",
+    "zh": "Linkt 表示，可以在首次行程后 5 天内购买 pass，支付之前的 CityLink 行程。也可以在 9 天内开设账户，支付之前的行程。"
+   },
+   "sources": [
+    {
+     "url": "https://www.linkt.com.au/using-toll-roads/about-melbourne-toll-roads/citylink/pay-citylink-tolls/melbourne",
+     "quote": "If you've already travelled on CityLink, you can pay for your previous travel by: opening an account within 9 days or buying a pass within 5 days of your first trip."
+    }
+   ],
+   "tags": [
+    "tolls",
+    "citylink"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "citylink-unpaid-toll-invoice",
+   "question": {
+    "en": "What happens if I travel on CityLink without paying a toll?",
+    "zh": "开了 CityLink 没有付通行费会怎样？"
+   },
+   "aliases": [
+    "CityLink toll invoice if I have no account",
+    "Will CityLink send me a toll bill?",
+    "CityLink没付费会寄账单吗",
+    "没有账户走CityLink怎么办"
+   ],
+   "answer": {
+    "en": "Linkt says a toll invoice can be sent to the vehicle’s registered owner. The invoice includes an administration fee as well as the cost of CityLink travel.",
+    "zh": "Linkt 表示，通行费账单可以寄给车辆的注册车主。账单包含 CityLink 通行费及账单管理费。"
+   },
+   "sources": [
+    {
+     "url": "https://www.linkt.com.au/using-toll-roads/about-melbourne-toll-roads/citylink/pay-citylink-tolls/melbourne",
+     "quote": "Alternatively, you can wait for a toll invoice to arrive in the mail. Toll invoices are sent to the vehicle's registered owner and include a toll invoice admin fee as well as the cost of your CityLink travel."
+    }
+   ],
+   "tags": [
+    "tolls",
+    "citylink"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "eastlink-trip-pass-after-travel",
+   "question": {
+    "en": "How long after an EastLink trip can I buy an EastLink trip pass?",
+    "zh": "开过 EastLink 后多久还可以买 EastLink trip pass？"
+   },
+   "aliases": [
+    "EastLink pass after travel deadline",
+    "Can I buy EastLink trip pass after driving?",
+    "EastLink开过后补买pass期限",
+    "忘买EastLink通行证多久内能买"
+   ],
+   "answer": {
+    "en": "An EastLink trip pass can be bought before the trip or up to 3 days afterwards. One pass pays for a single trip in one direction on EastLink.",
+    "zh": "EastLink trip pass 可以在行程前购买，也可以在行程后最多 3 天内购买。一张 pass 支付 EastLink 一个方向的一次行程。"
+   },
+   "sources": [
+    {
+     "url": "https://www.eastlink.com.au/faq",
+     "quote": "If you don't want an account, you can purchase an EastLink trip pass before or up to 3 days after you travel. One trip pass pays for a single trip in one direction on EastLink."
+    }
+   ],
+   "tags": [
+    "tolls",
+    "eastlink"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "eastlink-trip-pass-return",
+   "question": {
+    "en": "Does one EastLink trip pass cover a return trip?",
+    "zh": "一张 EastLink trip pass 可以覆盖往返行程吗？"
+   },
+   "aliases": [
+    "Do I need two EastLink passes for return journey?",
+    "EastLink trip pass one way or return",
+    "EastLink往返要买几张pass",
+    "EastLink单程证能用来回吗"
+   ],
+   "answer": {
+    "en": "No. One EastLink trip pass pays for a single trip in one direction; a return trip requires two passes.",
+    "zh": "不可以。一张 EastLink trip pass 支付一个方向的一次行程；往返需要两张 pass。"
+   },
+   "sources": [
+    {
+     "url": "https://www.eastlink.com.au/faq",
+     "quote": "One trip pass pays for a single trip in one direction on EastLink. A return trip requires two trip passes."
+    }
+   ],
+   "tags": [
+    "tolls",
+    "eastlink"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "eastlink-trip-pass-citylink",
+   "question": {
+    "en": "Can an EastLink trip pass be used on CityLink?",
+    "zh": "EastLink trip pass 可以在 CityLink 使用吗？"
+   },
+   "aliases": [
+    "Does EastLink trip pass cover CityLink?",
+    "EastLink pass use on CityLink toll road",
+    "EastLink单程证能走CityLink吗",
+    "EastLink pass适用于CityLink吗"
+   ],
+   "answer": {
+    "en": "No. EastLink says its trip pass pays for a single trip in one direction on EastLink only.",
+    "zh": "不可以。EastLink 表示，其 trip pass 只支付 EastLink 一个方向的一次行程。"
+   },
+   "sources": [
+    {
+     "url": "https://www.eastlink.com.au/buy-trip-pass",
+     "quote": "one EastLink trip pass pays for a single trip in one direction on EastLink only (a return trip requires two trip passes)"
+    }
+   ],
+   "tags": [
+    "tolls",
+    "eastlink",
+    "citylink"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "linkt-account-eastlink-compatibility",
+   "question": {
+    "en": "Can I use a Linkt CityLink account to pay EastLink tolls?",
+    "zh": "可以用 Linkt 的 CityLink 账户支付 EastLink 通行费吗？"
+   },
+   "aliases": [
+    "Does a Linkt account work on EastLink?",
+    "Pay EastLink with CityLink account",
+    "Linkt账户能支付EastLink吗",
+    "CityLink账户可以走EastLink吗"
+   ],
+   "answer": {
+    "en": "Yes, provided the Linkt account is valid, not suspended and linked to the vehicle details. EastLink says tolls incurred on EastLink will be charged to that Linkt account.",
+    "zh": "可以，但 Linkt 账户必须有效、未被暂停，并已关联车辆资料。EastLink 表示，EastLink 行程产生的通行费会记入该 Linkt 账户。"
+   },
+   "sources": [
+    {
+     "url": "https://www.eastlink.com.au/faq",
+     "quote": "Yes, provided your Linkt account is valid and not suspended, and your vehicle details have been linked to the account. When you drive on EastLink with a Linkt tag and/or Linkt account, the tolls you incur will be charged to your Linkt account."
+    }
+   ],
+   "tags": [
+    "tolls",
+    "eastlink",
+    "citylink"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "eastlink-account-citylink-compatibility",
+   "question": {
+    "en": "Can an EastLink account pay for CityLink travel?",
+    "zh": "EastLink 账户可以支付 CityLink 通行费吗？"
+   },
+   "aliases": [
+    "Does EastLink account work on CityLink?",
+    "EastLink account use on Melbourne CityLink",
+    "EastLink账户能走CityLink吗",
+    "CityLink能用EastLink账户支付吗"
+   ],
+   "answer": {
+    "en": "EastLink says its accounts can be used to pay for EastLink and CityLink trips in Melbourne. An account that is suspended will not work on any tollway.",
+    "zh": "EastLink 表示，其账户可以支付墨尔本的 EastLink 和 CityLink 行程。账户一旦被暂停，就无法在任何收费公路使用。"
+   },
+   "sources": [
+    {
+     "url": "https://www.eastlink.com.au/faq",
+     "quote": "All EastLink accounts can be used to pay for EastLink and CityLink trips in Melbourne."
+    },
+    {
+     "url": "https://www.eastlink.com.au/faq",
+     "quote": "Remember, if your account is suspended then it will not work on any tollway."
+    }
+   ],
+   "tags": [
+    "tolls",
+    "eastlink",
+    "citylink"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "eastlink-tag-account-interstate",
+   "question": {
+    "en": "Does an EastLink tag account work on toll roads in NSW and Queensland?",
+    "zh": "EastLink tag 账户可以在新州和昆州收费公路使用吗？"
+   },
+   "aliases": [
+    "Use EastLink tag interstate NSW QLD",
+    "Does EastLink tag account work interstate?",
+    "EastLink电子标签能在新州昆州用吗",
+    "EastLink tag账户州际通用吗"
+   ],
+   "answer": {
+    "en": "EastLink tag accounts can pay for trips on interstate tollways in NSW and Queensland. EastLink says its non-tag accounts do not work in those states.",
+    "zh": "EastLink tag 账户可以支付新州和昆州州际收费公路的行程。EastLink 表示，其 non-tag 账户不能在这两个州使用。"
+   },
+   "sources": [
+    {
+     "url": "https://www.eastlink.com.au/faq",
+     "quote": "EastLink tag accounts can also be used to pay for trips on interstate tollways in NSW and QLD. EastLink non-tag accounts will not work in NSW and QLD however."
+    }
+   ],
+   "tags": [
+    "tolls",
+    "eastlink"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "eastlink-toll-rental-car",
+   "question": {
+    "en": "Do rental cars automatically include EastLink toll payments?",
+    "zh": "租车是否自动包含 EastLink 通行费支付？"
+   },
+   "aliases": [
+    "Are rental car tolls included EastLink?",
+    "Does every rental company offer toll payment?",
+    "租车走EastLink自动付费吗",
+    "租车公司都提供收费公路付款吗"
+   ],
+   "answer": {
+    "en": "Not necessarily. EastLink says some rental companies may offer toll payment programs, while others do not.",
+    "zh": "不一定。EastLink 表示，部分租车公司可能提供通行费支付计划，另一些则不提供。"
+   },
+   "sources": [
+    {
+     "url": "https://www.eastlink.com.au/faq",
+     "quote": "Some vehicle rental companies may offer toll payment programs for travel on any tollway in Australia, including EastLink, without having to arrange a pass each time you travel on a tollway. Other vehicle rental companies do not offer toll payment progams."
+    }
+   ],
+   "tags": [
+    "tolls",
+    "eastlink",
+    "rental"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "eastlink-pass-expiry-refund",
+   "question": {
+    "en": "Does an unused EastLink trip pass expire or allow a refund?",
+    "zh": "未使用的 EastLink trip pass 会过期或可以退款吗？"
+   },
+   "aliases": [
+    "Unused EastLink pass expiry and refund",
+    "Can I refund a trip pass EastLink?",
+    "EastLink没用的pass多久过期",
+    "EastLink通行证能退款吗"
+   ],
+   "answer": {
+    "en": "An EastLink trip pass is not refundable or transferable. An unused pass expires 6 months after purchase.",
+    "zh": "EastLink trip pass 不可退款或转让。未使用的 pass 在购买后 6 个月过期。"
+   },
+   "sources": [
+    {
+     "url": "https://www.eastlink.com.au/buy-trip-pass",
+     "quote": "a trip pass is not refundable or transferable - an unused trip pass expires 6 months after purchase"
+    }
+   ],
+   "tags": [
+    "tolls",
+    "eastlink"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "linkt-visitors-pass-coverage",
+   "question": {
+    "en": "Which Melbourne toll roads does a Linkt Visitor’s Pass cover?",
+    "zh": "Linkt Visitor’s Pass 覆盖墨尔本哪些收费公路？"
+   },
+   "aliases": [
+    "Does Linkt visitor pass cover EastLink?",
+    "Visitor pass CityLink and EastLink coverage",
+    "Linkt访客pass包含EastLink吗",
+    "游客通行证能走哪些墨尔本收费路"
+   ],
+   "answer": {
+    "en": "A Linkt Visitor’s Pass covers CityLink and EastLink. Linkt says it can cover up to 30 days on Melbourne toll roads.",
+    "zh": "Linkt Visitor’s Pass 覆盖 CityLink 和 EastLink。Linkt 表示，这种 pass 可以覆盖墨尔本收费公路最多 30 天的行程。"
+   },
+   "sources": [
+    {
+     "url": "https://www.linkt.com.au/accounts-and-passes/passes/visitors-pass",
+     "quote": "A Visitor’s Pass has you covered on CityLink and EastLink, so you’ll be good to go for up to 30 days on any toll road in Melbourne."
+    }
+   ],
+   "tags": [
+    "tolls",
+    "citylink",
+    "eastlink"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "victoria-park-across-driveway",
+   "question": {
+    "en": "Can I park across a driveway in Victoria?",
+    "zh": "在维州可以把车停在别人车道出入口前吗？"
+   },
+   "aliases": [
+    "Can I block a driveway while waiting in my car?",
+    "Stopping across a driveway Victoria",
+    "车停在车道出入口前可以吗",
+    "维州能堵住别人车库入口吗"
+   ],
+   "answer": {
+    "en": "Do not park across a driveway unless dropping off or picking up passengers. When doing so, do not leave the vehicle or take longer than two minutes.",
+    "zh": "除接送乘客外，不要把车停在车道出入口前。接送乘客时，不要离开车辆，也不要超过两分钟。"
+   },
+   "sources": [
+    {
+     "url": "https://www.boroondara.vic.gov.au/services/streets-roads-and-parking/parking-and-road-rules",
+     "quote": "Do not park across driveways unless you are dropping off or picking up passengers. If dropping off or picking up passenger, do not leave your vehicle or take longer than two minutes to do so."
+    }
+   ],
+   "tags": [
+    "parking",
+    "road-rules"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "victoria-motorcycle-footpath-parking",
+   "question": {
+    "en": "Can I park a motorcycle on the footpath in Victoria?",
+    "zh": "在维州可以把摩托车停在人行道上吗？"
+   },
+   "aliases": [
+    "Motorbike parking on footpath Victoria",
+    "Motorcycle parking on pavement Melbourne",
+    "维州摩托车能停人行道吗",
+    "摩托车可以停在步道上吗"
+   ],
+   "answer": {
+    "en": "Boroondara council says motorcycles may park on footpaths unless signs prohibit it. They must not obstruct pedestrians.",
+    "zh": "Boroondara 市政府表示，除非标志禁止，摩托车可以停在人行道上。摩托车不得妨碍行人。"
+   },
+   "sources": [
+    {
+     "url": "https://www.boroondara.vic.gov.au/services/streets-roads-and-parking/parking-and-road-rules",
+     "quote": "Only motorcycles may park on footpaths and (unless signs prohibit it) and must not obstruct pedestrians."
+    }
+   ],
+   "tags": [
+    "parking",
+    "road-rules"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "victoria-parking-broken-meter-fine",
+   "question": {
+    "en": "Do parking time limits still apply if the meter is broken in Victoria?",
+    "zh": "在维州，停车计费器坏了还要遵守停车时限吗？"
+   },
+   "aliases": [
+    "Broken parking meter time limit Victoria",
+    "Can I stay longer if the parking machine is broken?",
+    "停车机器坏了还能超时停吗",
+    "停车表坏了时限还算吗"
+   ],
+   "answer": {
+    "en": "Yes. Victoria Legal Aid says you may not have to pay a fine if the ticket machine or meter was broken, but you still must obey the signs.",
+    "zh": "要。Victoria Legal Aid 表示，如果售票机或停车计费器坏了，可能不必支付罚款，但仍须遵守标志。"
+   },
+   "sources": [
+    {
+     "url": "https://www.legalaid.vic.gov.au/parking-laws-fines",
+     "quote": "You may not have to pay the fine if the ticket machine or meter was broken. However, even if a ticket machine or meter is broken, you still must obey the signs."
+    }
+   ],
+   "tags": [
+    "parking",
+    "road-rules"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "victoria-private-parking-payment-notice",
+   "question": {
+    "en": "Is a private car park payment notice the same as a council parking fine?",
+    "zh": "私人停车场的缴费通知和 council 停车罚单一样吗？"
+   },
+   "aliases": [
+    "Shopping centre parking fine versus council infringement",
+    "Private parking ticket same as government fine Victoria?",
+    "商场私人停车罚单和市政罚单一样吗",
+    "私人停车场通知是政府罚单吗"
+   ],
+   "answer": {
+    "en": "No. Victoria Legal Aid says a private company’s parking “fine” is not the same as a fine from a council, the government or police.",
+    "zh": "不一样。Victoria Legal Aid 表示，私人公司的停车“罚单”与 council、政府或警方开出的罚单不同。"
+   },
+   "sources": [
+    {
+     "url": "https://www.legalaid.vic.gov.au/parking-laws-fines",
+     "quote": "A parking ‘fine’ from a private company is not the same as a fine from a council, the government or police."
+    }
+   ],
+   "tags": [
+    "parking",
+    "road-rules"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "victoria-double-time-parking-permit",
+   "question": {
+    "en": "What does a Double Time accessible parking permit allow in Victoria?",
+    "zh": "维州的 Double Time 无障碍停车证有什么作用？"
+   },
+   "aliases": [
+    "Double Time permit standard parking bays Victoria",
+    "How long can a double time permit holder park?",
+    "维州双倍停车时间证能停多久",
+    "Double Time停车证适用普通车位吗"
+   ],
+   "answer": {
+    "en": "A Double Time Permit allows parking in a standard parking bay for twice the time shown on the parking sign. The permit applies to standard parking bays.",
+    "zh": "Double Time Permit 允许车辆在普通停车位停留标志所示时间的两倍。这种许可适用于普通停车位。"
+   },
+   "sources": [
+    {
+     "url": "https://www.legalaid.vic.gov.au/parking-laws-fines",
+     "quote": "A Double Time Permit allows you to park in a standard parking bay for double the time on the parking sign."
+    }
+   ],
+   "tags": [
+    "parking",
+    "road-rules"
+   ],
+   "checked": "2026-11-01"
+  }
+ ]
+}
