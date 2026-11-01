@@ -1959,38 +1959,6 @@
     "yarra"
    ],
    "checked": "2026-11-01"
-  },
-  {
-   "id": "city-of-melbourne-residential-parking-permit",
-   "question": {
-    "en": "Who can apply for a City of Melbourne residential parking permit?",
-    "zh": "谁可以申请墨尔本市居民停车许可？"
-   },
-   "aliases": [
-    "Melbourne council residential parking permit eligibility",
-    "Can CBD residents get a City of Melbourne parking permit?",
-    "墨尔本市居民停车许可资格",
-    "CBD 住宅可以申请市政停车证吗"
-   ],
-   "answer": {
-    "en": "City of Melbourne residents at eligible addresses can apply for a residential parking permit. Residential parking permits are not available in the central city (CBD) or Docklands.",
-    "zh": "住在符合条件地址的墨尔本市居民可以申请居民停车许可。市中心（CBD）和 Docklands 不提供居民停车许可。"
-   },
-   "sources": [
-    {
-     "url": "https://www.melbourne.vic.gov.au/residential-parking-permits",
-     "quote": "If you're a resident of the City of Melbourne living at an eligible address, you can apply for a residential parking permit."
-    },
-    {
-     "url": "https://www.melbourne.vic.gov.au/residential-parking-permits",
-     "quote": "Residential parking permits are not available in the central city (CBD) or Docklands."
-    }
-   ],
-   "tags": [
-    "parking",
-    "city-of-melbourne"
-   ],
-   "checked": "2026-11-01"
   }
  ]
 }

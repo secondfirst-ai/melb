@@ -1306,66 +1306,6 @@
       "checked": "2026-10-30"
     },
     {
-      "id": "replace-lost-medicare-card",
-      "question": {
-        "en": "How can I replace a lost, stolen or damaged Medicare card?",
-        "zh": "Medicare 卡丢失、被盗或损坏后怎么补办？"
-      },
-      "aliases": [
-        "Replace a lost Medicare card",
-        "What if my Medicare card is stolen?",
-        "Medicare 卡丢了怎么办",
-        "医保卡损坏怎么补办"
-      ],
-      "answer": {
-        "en": "If a Medicare card is lost, stolen or damaged, a new card can be requested. A digital copy of the new card can be used straight away in the myGov app.",
-        "zh": "Medicare 卡丢失、被盗或损坏后可以申请新卡。新卡的电子版可以立即在 myGov app 中使用。"
-      },
-      "sources": [
-        {
-          "url": "https://www.servicesaustralia.gov.au/get-new-medicare-card-if-it-expires-or-lost-stolen-or-damaged?context=21796",
-          "quote": "If your Medicare card is lost, stolen or damaged, you can ask for a new card. You can do this using:"
-        },
-        {
-          "url": "https://www.servicesaustralia.gov.au/get-new-medicare-card-if-it-expires-or-lost-stolen-or-damaged?context=21796",
-          "quote": "You can use a digital copy of your new Medicare card straight away in the myGov app."
-        }
-      ],
-      "tags": [
-        "medicare",
-        "card"
-      ],
-      "checked": "2026-11-01"
-    },
-    {
-      "id": "medicare-card-expiry-renewal",
-      "question": {
-        "en": "What happens when my Medicare card expires?",
-        "zh": "Medicare 卡到期时会怎样？"
-      },
-      "aliases": [
-        "Does Medicare send a replacement before expiry?",
-        "Renew an expiring Medicare card",
-        "医保卡到期会自动换新吗",
-        "Medicare 卡快过期了"
-      ],
-      "answer": {
-        "en": "Services Australia sends a new Medicare card about 4 to 8 weeks before the current card expires. It sends the card to the address it has on file.",
-        "zh": "Services Australia 会在现有 Medicare 卡到期前约 4 至 8 周寄出新卡。新卡会寄到其记录中的地址。"
-      },
-      "sources": [
-        {
-          "url": "https://www.servicesaustralia.gov.au/get-new-medicare-card-if-it-expires-or-lost-stolen-or-damaged?context=21796",
-          "quote": "We’ll send you a new card about 4 to 8 weeks before your current card expires. You don’t need to do anything. We’ll send it to the address we have for you."
-        }
-      ],
-      "tags": [
-        "medicare",
-        "card"
-      ],
-      "checked": "2026-11-01"
-    },
-    {
       "id": "medicare-safety-net-family-registration",
       "question": {
         "en": "Does a family need to register for Medicare Safety Nets if everyone is on the same card?",
@@ -1383,8 +1323,12 @@
       },
       "sources": [
         {
-          "url": "https://www.servicesaustralia.gov.au/how-to-register-for-medicare-safety-nets?context=22001",
-          "quote": "If you’re part of a family or couple, you can register as a family to combine your costs. This means you’re more likely to reach the thresholds sooner. Even if all family members are on the same Medicare card, you’ll still need to register."
+          "url": "https://www.healthdirect.gov.au/healthcare-and-services/costs-and-financial-support/medicare-safety-net",
+          "quote": "If you are in a couple or family, you need to register for the Medicare Safety Nets. This will combine the costs of everyone in your family."
+        },
+        {
+          "url": "https://www.healthdirect.gov.au/healthcare-and-services/costs-and-financial-support/medicare-safety-net",
+          "quote": "You need to register even if your family members are on the same Medicare card."
         }
       ],
       "tags": [
@@ -1406,17 +1350,17 @@
         "Medicare 心理咨询报销次数"
       ],
       "answer": {
-        "en": "A mental health treatment plan lets a person claim up to 10 individual and 10 group sessions with an eligible mental health professional each calendar year. Health professionals set their own fees, so Medicare may cover only some of the cost.",
-        "zh": "心理健康治疗计划允许每个日历年申报最多 10 次个人和 10 次团体治疗，服务须由符合资格的心理健康专业人员提供。医疗专业人员自行定价，因此 Medicare 可能只承担部分费用。"
+        "en": "With a mental health treatment plan and a doctor’s referral, a person can claim a Medicare rebate for up to 10 individual and 10 group sessions with a mental health professional each calendar year. Health professionals set their own fees, so Medicare may cover only part of the cost.",
+        "zh": "有心理健康治疗计划和医生转诊时，每个日历年可申请 Medicare 报销最多 10 次个人和 10 次团体心理健康专业人员的治疗。医疗专业人员自行定价，因此 Medicare 可能只承担部分费用。"
       },
       "sources": [
         {
-          "url": "https://www.servicesaustralia.gov.au/mental-health-care-and-medicare?context=60092",
-          "quote": "A mental health treatment plan lets you claim up to 10 individual and 10 group sessions with an eligible mental health professional each calendar year."
+          "url": "https://www.healthdirect.gov.au/healthcare-and-services/costs-and-financial-support/how-do-i-pay-for-healthcare",
+          "quote": "You can claim a Medicare rebate for up to 10 individual sessions and 10 group sessions (Opens in new tab) each calendar year with a mental health professional. To do this, you need a mental health treatment plan and referral from your doctor."
         },
         {
-          "url": "https://www.servicesaustralia.gov.au/mental-health-care-and-medicare?context=60092",
-          "quote": "Health professionals set their own fees, so we may only cover some of the cost."
+          "url": "https://www.healthdirect.gov.au/healthcare-and-services/costs-and-financial-support/how-do-i-pay-for-healthcare",
+          "quote": "Medicare may only cover part of the cost, as health professionals set their own fees."
         }
       ],
       "tags": [
@@ -1428,8 +1372,8 @@
     {
       "id": "national-immunisation-schedule-cost",
       "question": {
-        "en": "Are vaccines on the National Immunisation Program schedule free?",
-        "zh": "国家免疫计划时间表上的疫苗免费吗？"
+        "en": "Are National Immunisation Program vaccines free in Victoria?",
+        "zh": "维州的国家免疫计划疫苗免费吗？"
       },
       "aliases": [
         "Are NIP vaccines free?",
@@ -1438,13 +1382,13 @@
         "免费疫苗是否要付诊费"
       ],
       "answer": {
-        "en": "All vaccines on the National Immunisation Program schedule are free, but a health professional may charge a consultation or service fee. Eligibility for free vaccines under the program is linked to eligibility for Medicare benefits.",
-        "zh": "国家免疫计划时间表上的疫苗都免费，但医疗专业人员可能收取诊费或服务费。该计划免费疫苗的资格与 Medicare 福利资格相关。"
+        "en": "National Immunisation Program and Victorian Government funded vaccines are free for eligible age groups. The immunisation provider may charge a consultation fee for the visit.",
+        "zh": "国家免疫计划和维州政府资助的疫苗对符合年龄条件的人免费。疫苗接种服务人员可能收取就诊的诊费。"
       },
       "sources": [
         {
-          "url": "https://www.health.gov.au/topics/immunisation/when-to-get-vaccinated/national-immunisation-program-schedule",
-          "quote": "All vaccines listed on the NIP Schedule are free however, your health professional may apply a consultation fee or service charge. Eligibility for free vaccines under the NIP is linked to eligibility for Medicare benefits."
+          "url": "https://www.betterhealth.vic.gov.au/health/healthyliving/Immunisation-common-questions",
+          "quote": "All National Immunisation Program (NIP) and Victorian Government funded vaccines are provided free of charge for eligible age groups. While the routine vaccines are free, your immunisation provider may charge a consultation fee for the visit."
         }
       ],
       "tags": [
@@ -1456,8 +1400,8 @@
     {
       "id": "national-immunisation-free-pregnancy-vaccines",
       "question": {
-        "en": "Which vaccines are free during pregnancy under the National Immunisation Program?",
-        "zh": "国家免疫计划为孕妇免费提供哪些疫苗？"
+        "en": "Which vaccines are free during pregnancy in Victoria?",
+        "zh": "在维州怀孕期间有哪些免费疫苗？"
       },
       "aliases": [
         "Free vaccines for pregnant women in Australia",
@@ -1466,17 +1410,13 @@
         "怀孕能免费打哪些疫苗"
       ],
       "answer": {
-        "en": "The National Immunisation Program provides free influenza, whooping cough and respiratory syncytial virus (RSV) vaccines during pregnancy. Eligibility for free vaccines under the program is linked to eligibility for Medicare benefits.",
-        "zh": "国家免疫计划为孕期提供免费的流感、百日咳和呼吸道合胞病毒（RSV）疫苗。该计划免费疫苗的资格与 Medicare 福利资格相关。"
+        "en": "Influenza and whooping cough vaccines are free during every pregnancy. A free respiratory syncytial virus (RSV) vaccine is available to pregnant women under the National Immunisation Program.",
+        "zh": "每次怀孕期间都可以免费接种流感和百日咳疫苗。国家免疫计划也向孕妇提供免费的呼吸道合胞病毒（RSV）疫苗。"
       },
       "sources": [
         {
-          "url": "https://www.health.gov.au/topics/immunisation/when-to-get-vaccinated/immunisation-for-pregnancy",
-          "quote": "You can get the influenza, whooping cough (pertussis) and respiratory syncytial virus (RSV) vaccines for free while you are pregnant through the National Immunisation Program (NIP)."
-        },
-        {
-          "url": "https://www.health.gov.au/topics/immunisation/when-to-get-vaccinated/national-immunisation-program-schedule",
-          "quote": "Eligibility for free vaccines under the NIP is linked to eligibility for Medicare benefits."
+          "url": "https://www.betterhealth.vic.gov.au/health/healthyliving/immunisation-and-pregnancy",
+          "quote": "All women should receive free influenza and whooping cough vaccines during every pregnancy. A free respiratory syncytial virus (RSV) vaccine is now available to pregnant women under the National Immunisation Program (NIP)."
         }
       ],
       "tags": [
