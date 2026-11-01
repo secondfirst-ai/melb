@@ -1,0 +1,1897 @@
+{
+ "dataset": "melb-transport",
+ "title": {
+  "en": "Transport questions about Melbourne and Victoria, answered from official sources",
+  "zh": "墨尔本和维多利亚州出行问答（答案来自官方出处）"
+ },
+ "updated": "2026-11-01",
+ "notes": [
+  {
+   "en": "Each answer is limited to what the cited official page says, with a verbatim quote and the date we checked it. Fares and rates that can change carry valid_until. If a question is not here, there is no checked answer for it.",
+   "zh": "每条答案只写出处原文支撑的内容，附原句和核对日期。可能变动的票价和费率标了 valid_until。这里没有的问题，就是还没有核过的答案。"
+  }
+ ],
+ "records": [
+  {
+   "id": "tram-myki-when-to-touch-off",
+   "question": {
+    "en": "Do I need to touch off my myki on a Melbourne tram?",
+    "zh": "在墨尔本坐电车，myki 需要下车时刷卡（touch off）吗？"
+   },
+   "aliases": [
+    "Touch off on a tram or not",
+    "Myki in the Free Tram Zone on a tram",
+    "电车要刷下车卡吗",
+    "免费电车区还要 touch on 吗"
+   ],
+   "answer": {
+    "en": "On Yarra Trams services, you touch on and do not need to touch off. Do not touch on or off if you are only travelling in the city's Free Tram Zone. Touch off on a tram only if you are only travelling in Zone 2.",
+    "zh": "在 Yarra Trams 的电车上，上车要刷卡（touch on），下车不需要刷卡（touch off）。如果整段行程都在市中心免费电车区（Free Tram Zone）内，上车和下车都不要刷。只有整段行程都在 Zone 2 时，才在电车上 touch off。"
+   },
+   "sources": [
+    {
+     "url": "https://yarratrams.com.au/fares-and-ticketing",
+     "quote": "Remember to touch on, you don't need to touch off"
+    },
+    {
+     "url": "https://yarratrams.com.au/fares-and-ticketing",
+     "quote": "Don't touch on or off if you're just travelling in the city's Free Tram Zone"
+    },
+    {
+     "url": "https://yarratrams.com.au/fares-and-ticketing",
+     "quote": "Only touch off on trams if you're just travelling in Zone 2"
+    }
+   ],
+   "tags": [
+    "transport",
+    "tram",
+    "myki"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "myki-card-price",
+   "question": {
+    "en": "How much does a myki card itself cost?",
+    "zh": "myki 卡本身要多少钱？"
+   },
+   "aliases": [
+    "Price of a new myki card",
+    "Concession myki card cost",
+    "myki 卡工本费多少",
+    "买一张 concession myki 要几澳元"
+   ],
+   "answer": {
+    "en": "Metro Trains says a full fare myki card costs $6. A concession, seniors or child myki costs $3.",
+    "zh": "Metro Trains 写明，全价 myki 卡售价 $6。Concession、老年人或儿童 myki 卡售价 $3。"
+   },
+   "sources": [
+    {
+     "url": "https://www.metrotrains.com.au/tickets-2/",
+     "quote": "A full fare myki card costs $6 and a concession, seniors or child myki costs $3."
+    }
+   ],
+   "tags": [
+    "transport",
+    "myki",
+    "fare"
+   ],
+   "checked": "2026-11-01",
+   "valid_until": "2027-06-30",
+   "note": {
+    "en": "Dollar figures are the amounts stated on the source page and can change, so valid_until is the end of the financial year. The answer does not add an end date the page does not state.",
+    "zh": "金额是出处页面写明的数字，可能变动，因此 valid_until 设为本财政年度结束。答案没有加入页面上没有的截止日期。"
+   }
+  },
+  {
+   "id": "half-price-travel-exclusions",
+   "question": {
+    "en": "Which services are outside Victoria's half-price public transport discount?",
+    "zh": "维州公共交通半价折扣不包括哪些服务？"
+   },
+   "aliases": [
+    "Does the half-price fare include SkyBus?",
+    "Are ferries included in half-price travel?",
+    "半价车票含不含 SkyBus",
+    "区域巴士都半价吗"
+   ],
+   "answer": {
+    "en": "Public transport is half price for everyone, every day, from Monday 1 June 2026 until 1 January 2027. The discount covers travel on all trains, trams and buses, and on regional trains, coaches and buses, including intertown and regional town bus services. It excludes SkyBus, ferries, and non-subsidised regional bus services.",
+    "zh": "2026 年 6 月 1 日星期一至 2027 年 1 月 1 日，公共交通每天对所有人半价。折扣适用于所有火车、电车和巴士，以及区域火车、长途客车和巴士，包括城镇之间和区域内的城镇巴士。不包括 SkyBus、渡轮，以及没有政府补贴的区域巴士。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vic.gov.au/half-price-travel",
+     "quote": "Public transport is half price across the state for everyone, every day, from Monday 1 June 2026 until 1 January 2027."
+    },
+    {
+     "url": "https://www.vic.gov.au/half-price-travel",
+     "quote": "The discount is for travel on all trains, trams and buses; and regional trains, coaches and buses (including intertown and regional town bus services). It excludes SkyBus, ferries, and non-subsidised regional bus services."
+    }
+   ],
+   "tags": [
+    "transport",
+    "fare"
+   ],
+   "checked": "2026-11-01",
+   "valid_until": "2027-01-01",
+   "note": {
+    "en": "valid_until is 1 January 2027, the end date the half-price page gives for this discount.",
+    "zh": "valid_until 是 2027 年 1 月 1 日，即半价页面为这项折扣写明的结束日期。"
+   }
+  },
+  {
+   "id": "youth-myki-and-senior-weekend-travel",
+   "question": {
+    "en": "Can under-18s and seniors travel free on Victorian public transport?",
+    "zh": "18 岁以下和老年人坐维州公共交通可以免费吗？"
+   },
+   "aliases": [
+    "Is a Youth myki free for children?",
+    "Do seniors travel free on weekends in Victoria?",
+    "Youth myki 周末免费吗",
+    "老年人周末坐车要钱吗"
+   ],
+   "answer": {
+    "en": "Children and young people under 18 can continue to travel for free with their Youth myki. Seniors can continue to travel for free on weekends.",
+    "zh": "18 岁以下的儿童和青少年可以继续使用 Youth myki 免费乘车。老年人可以继续在周末免费乘车。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vic.gov.au/half-price-travel",
+     "quote": "Children and young people under 18 can continue to travel for free with their Youth myki, and seniors can continue to travel for free on weekends."
+    }
+   ],
+   "tags": [
+    "transport",
+    "myki",
+    "fare"
+   ],
+   "checked": "2026-11-01",
+   "note": {
+    "en": "The sentence is on the half-price public transport page. It says this travel can continue, and it does not give an end date, so this record has no valid_until.",
+    "zh": "这句话在半价公共交通页面上，说的是可以继续这样乘车，没有写结束日期，因此这条不设 valid_until。"
+   }
+  },
+  {
+   "id": "city-circle-tram-is-free",
+   "question": {
+    "en": "Is the City Circle Tram free?",
+    "zh": "City Circle 环城电车是免费的吗？"
+   },
+   "aliases": [
+    "Do I pay for the City Circle tram?",
+    "Free tourist tram in central Melbourne",
+    "墨尔本环城电车要刷卡吗",
+    "City Circle 电车免费吗"
+   ],
+   "answer": {
+    "en": "The City Circle Tram is a free tram service around central Melbourne. It takes passengers past some of Melbourne's major attractions.",
+    "zh": "City Circle 电车是围绕墨尔本市中心运行的免费电车。它载乘客经过墨尔本的一些主要景点。"
+   },
+   "sources": [
+    {
+     "url": "https://www.melbourne.vic.gov.au/public-transport",
+     "quote": "The City Circle Tram is a free tram service around central Melbourne taking passengers past some of Melbourne's major attractions."
+    }
+   ],
+   "tags": [
+    "transport",
+    "tram"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "skybus-city-express-hours",
+   "question": {
+    "en": "What hours does the SkyBus Melbourne City Express run, and how often?",
+    "zh": "SkyBus 市区快线每天开到几点，多久一班？"
+   },
+   "aliases": [
+    "SkyBus first and last bus to Southern Cross",
+    "Is there a SkyBus between 1am and 4am?",
+    "凌晨还有机场大巴吗",
+    "SkyBus 高峰多久一班"
+   ],
+   "answer": {
+    "en": "The SkyBus Melbourne City Express runs daily from 4am to 1am between Melbourne Airport and Melbourne city (Southern Cross Station), with stops outside Terminals 1, 3 and 4. Departures are every 10 minutes during peak times (7am and 7pm) and every 15 minutes outside peak times. SkyBus does not operate services between 1am and 4am.",
+    "zh": "SkyBus Melbourne City Express 每天 4am 至 1am 往返墨尔本机场和市区的 Southern Cross Station，停靠点在 1、3、4 号航站楼外。高峰时段（7am 和 7pm）每 10 分钟一班，高峰以外每 15 分钟一班。1am 至 4am 没有 SkyBus 班次。"
+   },
+   "sources": [
+    {
+     "url": "https://www.melbourneairport.com.au/bus-services",
+     "quote": "The SkyBus Melbourne City Express runs daily from 4am to 1am between Melbourne Airport and Melbourne city (Southern Cross Station), with stops conveniently located outside Terminals 1, 3 and 4."
+    },
+    {
+     "url": "https://www.melbourneairport.com.au/bus-services",
+     "quote": "departures every 10 minutes during peak times (7am and 7pm) and every 15 minutes outside peak times."
+    },
+    {
+     "url": "https://www.melbourneairport.com.au/bus-services",
+     "quote": "Please note: SkyBus do not operate services between 1am and 4am."
+    }
+   ],
+   "tags": [
+    "transport",
+    "airport",
+    "bus"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "skybus-city-express-fares",
+   "question": {
+    "en": "How much is a SkyBus ticket between Melbourne Airport and Southern Cross?",
+    "zh": "墨尔本机场到 Southern Cross 的 SkyBus 票价是多少？"
+   },
+   "aliases": [
+    "SkyBus adult child and senior fares",
+    "SkyBus return fare bought online",
+    "SkyBus 成人单程多少钱",
+    "机场大巴儿童票和老年人票"
+   ],
+   "answer": {
+    "en": "On the Melbourne City Express fare page, a single adult fare is $25.90 one way, and a return fare bought online is $43.40, described as $21.70 each way. Children aged 4 - 16 years are $6.60 one way. A senior fare is $20.70 one way and requires a valid Australian state-issued Seniors card. Online tickets at skybus.com.au are valid for 12 months, and a 10-trip option in the app is $180.00 one way.",
+    "zh": "Melbourne City Express 票价页上，成人单程 $25.90；在线购买的往返票为 $43.40，页面同时写成单程 $21.70。4 至 16 岁儿童单程 $6.60。老年人单程 $20.70，需要出示有效的澳大利亚州政府签发的 Seniors card。在 skybus.com.au 在线购买的车票有效期 12 个月；App 里的 10 次票为单程 $180.00。"
+   },
+   "sources": [
+    {
+     "url": "https://www.skybus.com.au/melbourne-city-express/fares/",
+     "quote": "Single adult fare $25.90 one way"
+    },
+    {
+     "url": "https://www.skybus.com.au/melbourne-city-express/fares/",
+     "quote": "Purchase a return fare for only $43.40 online"
+    },
+    {
+     "url": "https://www.skybus.com.au/melbourne-city-express/fares/",
+     "quote": "At only $21.70 each way with our Return fares"
+    },
+    {
+     "url": "https://www.skybus.com.au/melbourne-city-express/fares/",
+     "quote": "Children aged 4 - 16 years $6.60 one way"
+    },
+    {
+     "url": "https://www.skybus.com.au/melbourne-city-express/fares/",
+     "quote": "Presentation of a valid, Australian state issued Seniors card is required $20.70 one way"
+    },
+    {
+     "url": "https://www.skybus.com.au/melbourne-city-express/fares/",
+     "quote": "For 10 single trips (available App only) $180.00 one way"
+    },
+    {
+     "url": "https://www.melbourneairport.com.au/bus-services",
+     "quote": "Online at skybus.com.au - tickets valid for 12 months"
+    }
+   ],
+   "tags": [
+    "transport",
+    "airport",
+    "fare"
+   ],
+   "checked": "2026-11-01",
+   "valid_until": "2027-06-30",
+   "note": {
+    "en": "Dollar figures are the amounts stated on the source page and can change, so valid_until is the end of the financial year. The answer does not add an end date the page does not state.",
+    "zh": "金额是出处页面写明的数字，可能变动，因此 valid_until 设为本财政年度结束。答案没有加入页面上没有的截止日期。"
+   }
+  },
+  {
+   "id": "skybus-peninsula-eastern-sunshine",
+   "question": {
+    "en": "Does SkyBus run from Melbourne Airport to the peninsula, the east, or Sunshine?",
+    "zh": "SkyBus 有没有从墨尔本机场去半岛、东区和 Sunshine 的线？"
+   },
+   "aliases": [
+    "SkyBus to Frankston or St Kilda",
+    "SkyBus to Box Hill or Doncaster",
+    "机场大巴去 Frankston",
+    "Sunshine 机场快线停哪"
+   ],
+   "answer": {
+    "en": "The SkyBus Peninsula Express runs daily between Melbourne Airport and St Kilda, Frankston and surrounding bayside suburbs, with key stops at St Kilda, Brighton, Southland and Chelsea. The Eastern Express includes Watsonia Station, Westfield Doncaster and Box Hill Central. The Sunshine Express uses a 100% electric fleet and runs directly to Sunshine Station, with a connection to the Metro train network and V/Line regional services. Airport stops for the Peninsula, Eastern and Sunshine Express are at Terminals 4 and 1 only.",
+    "zh": "SkyBus Peninsula Express 每天往返墨尔本机场与 St Kilda、Frankston 及周边海湾郊区，主要停靠 St Kilda、Brighton、Southland 和 Chelsea。Eastern Express 的停靠点包括 Watsonia Station、Westfield Doncaster 和 Box Hill Central。Sunshine Express 使用 100% 电动车队，直达 Sunshine Station，可换乘 Metro 火车和 V/Line 区域列车。这三条线在机场只停 4 号和 1 号航站楼。"
+   },
+   "sources": [
+    {
+     "url": "https://www.melbourneairport.com.au/bus-services",
+     "quote": "The SkyBus Peninsula Express also runs daily between Melbourne Airport and St Kilda, Frankston and surrounding bayside suburbs."
+    },
+    {
+     "url": "https://www.melbourneairport.com.au/bus-services",
+     "quote": "with key stops at St Kilda, Brighton, Southland, and Chelsea."
+    },
+    {
+     "url": "https://www.melbourneairport.com.au/bus-services",
+     "quote": "This route provides fast transfers to major transit points including Watsonia Station, Westfield Doncaster, and Box Hill Central"
+    },
+    {
+     "url": "https://www.melbourneairport.com.au/bus-services",
+     "quote": "the Sunshine Express utilizes our 100% electric fleet. This service runs directly to Sunshine Station, offering a connection to the Metro train network and V/Line regional services"
+    },
+    {
+     "url": "https://www.melbourneairport.com.au/bus-services",
+     "quote": "Airport stops for Peninsula, Eastern and Sunshine Express can be found at Terminals 4 and 1 only."
+    }
+   ],
+   "tags": [
+    "transport",
+    "airport",
+    "bus"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "gull-geelong-from-melbourne-airport",
+   "question": {
+    "en": "Is there a direct bus from Melbourne Airport to Geelong?",
+    "zh": "墨尔本机场有直达 Geelong 的巴士吗？"
+   },
+   "aliases": [
+    "Gull bus airport to Geelong hours",
+    "Where does the Geelong airport bus pick up?",
+    "机场去 Geelong 的大巴几点",
+    "Geelong 巴士在哪个航站楼"
+   ],
+   "answer": {
+    "en": "Gull Geelong operates scheduled services from Melbourne Airport to Geelong daily from 5.30am to Midnight. Pick-up and drop-off is opposite Terminal 3.",
+    "zh": "Gull Geelong 每天 5.30am 至午夜有从墨尔本机场到 Geelong 的固定班次。上下车地点在 3 号航站楼对面。"
+   },
+   "sources": [
+    {
+     "url": "https://www.melbourneairport.com.au/bus-services",
+     "quote": "Gull Geelong operates scheduled services from Melbourne Airport to Geelong daily from 5.30am to Midnight. Pick-up and drop off is conveniently located opposite Terminal 3."
+    }
+   ],
+   "tags": [
+    "transport",
+    "airport",
+    "bus"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "airport-value-car-park-shuttle",
+   "question": {
+    "en": "How often is the free shuttle from Melbourne Airport's Value car parks?",
+    "zh": "墨尔本机场 Value 停车场的免费接驳车多久一班？"
+   },
+   "aliases": [
+    "Value car park bus to the terminals",
+    "Which terminal does the Value South shuttle serve?",
+    "机场便宜停车场有没有摆渡车",
+    "Value 停车场巴士去 T4 吗"
+   ],
+   "answer": {
+    "en": "The free courtesy bus for the Value Car Parks operates 24/7 and arrives every 15 minutes. Value North has 7 bus stops, with stops at Terminal 4 and Terminal 1, and a short walk from Terminal 1 to Terminals 2 and 3. Value South has one bus stop, shelter J, and that bus travels directly to Terminal 4 only.",
+    "zh": "Value 停车场的免费接驳车每周 7 天、每天 24 小时运行，每 15 分钟一班。Value North 有 7 个巴士站，停靠 4 号航站楼和 1 号航站楼，从 1 号航站楼步行一小段可到 2 号和 3 号航站楼。Value South 只有一个巴士站（shelter J），这趟车只直达 4 号航站楼。"
+   },
+   "sources": [
+    {
+     "url": "https://www.melbourneairport.com.au/bus-services",
+     "quote": "The free bus service operates 24/7 and arrives every 15 minutes."
+    },
+    {
+     "url": "https://www.melbourneairport.com.au/bus-services",
+     "quote": "There are 7 bus stops in the Value North Car Park, with stops at Terminal 4 and at Terminal 1 (with a short walk to Terminals 2 and 3)."
+    },
+    {
+     "url": "https://www.melbourneairport.com.au/bus-services",
+     "quote": "There is one bus stop within the Value South Car Park (shelter J). The bus travels directly to Terminal 4 only."
+    }
+   ],
+   "tags": [
+    "transport",
+    "airport",
+    "bus"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "airport-taxi-to-cbd-and-ranks",
+   "question": {
+    "en": "Where do official taxis and Ubers pick up at Melbourne Airport, and how long is the trip to the CBD?",
+    "zh": "墨尔本机场的正规出租车和 Uber 在哪里上车？到市中心大概多久？"
+   },
+   "aliases": [
+    "Melbourne Airport taxi rank terminals",
+    "Is the airport to CBD taxi a 30 minute trip?",
+    "机场出租车停在哪几个航站楼",
+    "不要坐航站楼里拉客的车吗"
+   ],
+   "answer": {
+    "en": "Melbourne Airport says the Melbourne CBD is approximately a 30-minute fare from the airport. Authorised taxis wait at designated taxi ranks at Terminals 1, 2, and 4, marked with signage. The airport says not to accept any offer of taxi or Uber services outside those designated ranks. It also says to make sure the taxi and the driver are displaying their accredited taxi service number before approaching.",
+    "zh": "墨尔本机场写道，从机场到墨尔本 CBD 大约是 30 分钟车程的费用。持牌出租车在 1、2、4 号航站楼有标志的指定出租车站候客。机场表示，不要接受这些指定车站以外的出租车或 Uber 揽客。机场还表示，走向出租车之前要确认车辆和司机都展示了获准的出租车服务编号。"
+   },
+   "sources": [
+    {
+     "url": "https://www.melbourneairport.com.au/taxi-and-uber",
+     "quote": "The Melbourne CBD is approximately a 30-minute fare from Melbourne Airport."
+    },
+    {
+     "url": "https://www.melbourneairport.com.au/taxi-and-uber",
+     "quote": "Authorised taxis wait at designated taxi ranks at Terminals 1, 2, and 4, clearly marked with signage."
+    },
+    {
+     "url": "https://www.melbourneairport.com.au/taxi-and-uber",
+     "quote": "For your safety you should not accept any offer of taxi or Uber services outside of the designated taxi ranks at Terminals 1, 2, and 4"
+    },
+    {
+     "url": "https://www.melbourneairport.com.au/taxi-and-uber",
+     "quote": "Before approaching the taxi, make sure the taxi and the driver are displaying their accredited taxi service number."
+    }
+   ],
+   "tags": [
+    "transport",
+    "airport",
+    "taxi"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "airport-taxi-rank-by-terminal",
+   "question": {
+    "en": "Which Melbourne Airport taxi and Uber rank is for Qantas, international, Jetstar or Virgin?",
+    "zh": "墨尔本机场坐 Qantas、国际航班、Jetstar 或 Virgin，出租车和 Uber 在哪个车站？"
+   },
+   "aliases": [
+    "Terminal 1 taxi rank Qantas",
+    "Where is the Terminal 4 Uber rank?",
+    "国际到达的出租车在哪",
+    "Jetstar 旅客打车去 T4 吗"
+   ],
+   "answer": {
+    "en": "All of the Melbourne Airport taxi and Uber ranks are now split ranks, with both options in the same place. The Terminal 1 split rank is opposite the Qantas domestic arrivals, and the Terminal 2 split rank is outside international arrivals and includes both taxi and Uber. The Terminal 4 split rank is on the ground level of T4 and is for Jetstar, Virgin, Rex and Link passengers. All split ranks have accessible bays and entry lanes for both taxi and Uber.",
+    "zh": "墨尔本机场的出租车和 Uber 车站现在都是分流车站，两种车在同一地点。1 号航站楼的分流车站在 Qantas 国内到达对面；2 号航站楼的分流车站在国际到达外面，同时有出租车和 Uber。4 号航站楼的分流车站仍在 T4 地面层，供 Jetstar、Virgin、Rex 和 Link 的旅客使用。所有分流车站都有无障碍车位，以及出租车和 Uber 各自的进站车道。"
+   },
+   "sources": [
+    {
+     "url": "https://www.melbourneairport.com.au/extra-taxi-and-uber-zones",
+     "quote": "All of the Melbourne Airport taxi and Ubers ranks are now split ranks, meaning they have both options in the same spot."
+    },
+    {
+     "url": "https://www.melbourneairport.com.au/extra-taxi-and-uber-zones",
+     "quote": "The Terminal 1 split rank is opposite the Qantas domestic arrivals."
+    },
+    {
+     "url": "https://www.melbourneairport.com.au/extra-taxi-and-uber-zones",
+     "quote": "The Terminal 2 split rank is outside international arrivals. It now includes both taxi and Uber options."
+    },
+    {
+     "url": "https://www.melbourneairport.com.au/extra-taxi-and-uber-zones",
+     "quote": "The Terminal 4 split rank is still the same on the ground level of T4. This rank is for Jetstar, Virgin, Rex and Link passengers."
+    },
+    {
+     "url": "https://www.melbourneairport.com.au/extra-taxi-and-uber-zones",
+     "quote": "All split ranks have accessible bays and entry lanes for both taxi and Uber."
+    }
+   ],
+   "tags": [
+    "transport",
+    "airport",
+    "taxi"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "mptp-fare-subsidy-cap",
+   "question": {
+    "en": "How much of a taxi fare does the Multi Purpose Taxi Program cover?",
+    "zh": "Multi Purpose Taxi Program（MPTP）补贴多少出租车费？"
+   },
+   "aliases": [
+    "MPTP 50 percent subsidy limit",
+    "MPTP yearly cap per financial year",
+    "MPTP 一趟最多贴多少",
+    "出租车补贴卡每年上限"
+   ],
+   "answer": {
+    "en": "MPTP members receive a 50% discount on the total fare, up to $60 per trip, and the program does not cover the full cost of a taxi fare. The subsidy cap is $2,180 per financial year, and that yearly limit resets on July 1st. Most unbooked taxi providers accept MPTP cards, but not all of them. If the card is damaged and does not work, the member pays the full fare.",
+    "zh": "MPTP 会员每趟车费打五折，最高补贴 $60，这项计划不承担全部出租车费。每个财政年度的补贴上限是 $2,180，每年 7 月 1 日重置。大多数提供未预约服务的出租车经营者接受 MPTP 卡，但不是全部。卡损坏而且不能用时，会员要支付全额车费。"
+   },
+   "sources": [
+    {
+     "url": "https://safetransport.vic.gov.au/on-the-road/multi-purpose-taxi-program/mptp-members/",
+     "quote": "Members receive a 50% discount on the total fare, up to $60 per trip. Some restrictions may apply. The program does not cover the full cost of a taxi fare."
+    },
+    {
+     "url": "https://safetransport.vic.gov.au/on-the-road/multi-purpose-taxi-program/mptp-members/",
+     "quote": "Members are entitled to half the fare being covered up to a maximum subsidy coverage of $60 per trip and a subsidy cap of $2,180 per financial year. This yearly limit resets on July 1st each year."
+    },
+    {
+     "url": "https://safetransport.vic.gov.au/on-the-road/multi-purpose-taxi-program/mptp-members/",
+     "quote": "Most taxi (unbooked) providers accept MPTP member cards, however not all of them."
+    },
+    {
+     "url": "https://safetransport.vic.gov.au/on-the-road/multi-purpose-taxi-program/mptp-members/",
+     "quote": "if your card is damaged and does not work you will need to pay the full fare."
+    }
+   ],
+   "tags": [
+    "transport",
+    "taxi",
+    "accessibility"
+   ],
+   "checked": "2026-11-01",
+   "valid_until": "2027-06-30",
+   "note": {
+    "en": "Dollar figures are the amounts stated on the source page and can change, so valid_until is the end of the financial year. The answer does not add an end date the page does not state.",
+    "zh": "金额是出处页面写明的数字，可能变动，因此 valid_until 设为本财政年度结束。答案没有加入页面上没有的截止日期。"
+   }
+  },
+  {
+   "id": "mptp-lifting-fee",
+   "question": {
+    "en": "Does an MPTP member pay the wheelchair lifting fee?",
+    "zh": "MPTP 会员要自己付轮椅抬升费吗？"
+   },
+   "aliases": [
+    "Who pays the taxi wheelchair lifting fee?",
+    "MPTP WAV lifting fee",
+    "坐无障碍出租车抬轮椅谁付钱",
+    "MPTP 会员付 lifting fee 吗"
+   ],
+   "answer": {
+    "en": "MPTP members are never required to pay the lifting fee personally. Drivers can turn or leave the meter on while loading and unloading a wheelchair passenger into a wheelchair accessible vehicle, and may apply additional service fees.",
+    "zh": "MPTP 会员从不需要自己支付抬升费（lifting fee）。司机在把使用轮椅的乘客装上或卸下无障碍出租车时，可以把计价器打开或保持运转，并且可以加收其他服务费。"
+   },
+   "sources": [
+    {
+     "url": "https://safetransport.vic.gov.au/on-the-road/multi-purpose-taxi-program/mptp-members/",
+     "quote": "wheelchair accessible vehicles (WAVs)"
+    },
+    {
+     "url": "https://safetransport.vic.gov.au/on-the-road/multi-purpose-taxi-program/mptp-members/",
+     "quote": "MPTP members are never required to pay the lifting fee personally."
+    },
+    {
+     "url": "https://safetransport.vic.gov.au/on-the-road/multi-purpose-taxi-program/mptp-members/",
+     "quote": "drivers can turn or leave the meter on while loading and unloading a wheelchair-bound passenger into a WAV service, in addition to any additional service fees they may wish to apply."
+    }
+   ],
+   "tags": [
+    "transport",
+    "taxi",
+    "accessibility"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "mptp-rideshare-providers",
+   "question": {
+    "en": "Which rideshare services does the MPTP page say offer MPTP trips?",
+    "zh": "MPTP 页面写了哪些网约车提供 MPTP 行程？"
+   },
+   "aliases": [
+    "Can I use MPTP with Uber?",
+    "Does Uber Assist have wheelchair taxis?",
+    "MPTP 能用在 Uber 上吗",
+    "Oiii 接受出租车补贴卡吗"
+   ],
+   "answer": {
+    "en": "The MPTP members page says Oiii, Uber and Get Picked Up offer MPTP services. Uber Assist drivers can help load and unload collapsible wheelchairs or mobility scooters that fit in the trunk of a standard sedan once folded or disassembled. Uber Assist does not offer wheelchair accessible vehicles (WAV) at this time.",
+    "zh": "MPTP 会员页面写明，Oiii、Uber 和 Get Picked Up 提供 MPTP 服务。Uber Assist 司机可以帮忙装卸折叠或拆开后能放进普通轿车后备箱的可折叠轮椅或代步车。Uber Assist 目前不提供无障碍轮椅车（WAV）。"
+   },
+   "sources": [
+    {
+     "url": "https://safetransport.vic.gov.au/on-the-road/multi-purpose-taxi-program/mptp-members/",
+     "quote": "Oiii, Uber and Get Picked Up offer MPTP services."
+    },
+    {
+     "url": "https://safetransport.vic.gov.au/on-the-road/multi-purpose-taxi-program/mptp-members/",
+     "quote": "Uber Assist drivers can help load and unload assistive devices such as collapsible wheelchairs or mobility scooters that can fit in the trunk of a standard sedan once folded or disassembled, but does not offer wheelchair accessible vehicles (WAV) at this time."
+    }
+   ],
+   "tags": [
+    "transport",
+    "taxi",
+    "accessibility"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "cpv-driver-alcohol-limit",
+   "question": {
+    "en": "What is the blood alcohol limit for a taxi or rideshare driver on a job?",
+    "zh": "出租车或网约车司机在接单时血液酒精浓度上限是多少？"
+   },
+   "aliases": [
+    "Rideshare driver BAC while working",
+    "Taxi driver alcohol limit Victoria",
+    "网约车司机开车能喝酒吗",
+    "出租车司机 BAC 是 0 吗"
+   ],
+   "answer": {
+    "en": "The blood alcohol concentration limit for all commercial passenger vehicle drivers, including rideshare, hire car and taxi drivers, is 0.00 while the vehicle is in service. When the vehicle is being driven for private use, the limit is 0.05, the same as for a regular driver.",
+    "zh": "所有商业载客车辆司机，包括网约车、租赁车和出租车司机，在提供服务时血液酒精浓度上限是 0.00。车辆作私人用途驾驶时，上限是 0.05，与普通司机相同。"
+   },
+   "sources": [
+    {
+     "url": "https://safetransport.vic.gov.au/on-the-road/cpv-driver-accreditation/driver-requirements/",
+     "quote": "The blood alcohol concentration (BAC) limit for all commercial passenger vehicle drivers (including rideshare, hire car and taxi drivers) is 0.00 while the vehicle is in service. When a CPV is being driven for private use, CPV drivers are subject to the same blood alcohol level as a regular driver; that is, 0.05."
+    }
+   ],
+   "tags": [
+    "transport",
+    "taxi"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "cpv-vehicle-qr-code",
+   "question": {
+    "en": "Do taxis and rideshare cars in Victoria have to show a QR code?",
+    "zh": "维州的出租车和网约车必须张贴二维码吗？"
+   },
+   "aliases": [
+    "Safe Transport Victoria QR code in a rideshare",
+    "Penalty for a missing CPV QR code",
+    "网约车里没有二维码可以罚吗",
+    "出租车 QR code 打给谁"
+   ],
+   "answer": {
+    "en": "All commercial passenger vehicles must be fitted with a QR code during service, and the requirement generally applies to taxis and rideshare vehicles. Failing to meet it may result in a fine of 1 penalty unit. Passengers who prefer to speak to someone can call Safe Transport Victoria on 1800 638 802. In an emergency, passengers should call 000.",
+    "zh": "所有商业载客车辆在服务期间必须安装二维码，这项要求一般适用于出租车和网约车。未达到要求可能被处以 1 个罚款单位（penalty unit）。想跟人说话的乘客可以打 Safe Transport Victoria 的 1800 638 802。紧急情况打 000。"
+   },
+   "sources": [
+    {
+     "url": "https://safetransport.vic.gov.au/on-the-road/cpv-industry/qr-code-for-commercial-passenger-vehicles/",
+     "quote": "All CPVs must be fitted with a QR code during service."
+    },
+    {
+     "url": "https://safetransport.vic.gov.au/on-the-road/cpv-industry/qr-code-for-commercial-passenger-vehicles/",
+     "quote": "Yes. The QR code requirement generally applies to all commercial passenger vehicles, including taxis and rideshare vehicles."
+    },
+    {
+     "url": "https://safetransport.vic.gov.au/on-the-road/cpv-industry/qr-code-for-commercial-passenger-vehicles/",
+     "quote": "Failure to meet this requirement may result in a fine amounting to 1 penalty unit."
+    },
+    {
+     "url": "https://safetransport.vic.gov.au/on-the-road/cpv-industry/qr-code-for-commercial-passenger-vehicles/",
+     "quote": "Passengers who prefer to speak to someone can still call Safe Transport Victoria on 1800 638 802."
+    },
+    {
+     "url": "https://safetransport.vic.gov.au/on-the-road/cpv-industry/qr-code-for-commercial-passenger-vehicles/",
+     "quote": "In an emergency, passengers should call 000."
+    }
+   ],
+   "tags": [
+    "transport",
+    "taxi"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "taxi-security-camera-rules",
+   "question": {
+    "en": "When does a Victorian taxi have to have a security camera?",
+    "zh": "维州出租车什么时候必须装安全摄像头？"
+   },
+   "aliases": [
+    "Are booked rideshare cars required to have cameras?",
+    "Regional taxi security camera rule",
+    "预约的网约车要装摄像头吗",
+    "街上拦的出租车有监控吗"
+   ],
+   "answer": {
+    "en": "Vehicles used for unbooked services, hailed or taken from a rank, in the Melbourne metropolitan, urban and large regional zones must have an approved and functional security camera installed. Cameras are not required in regional and country commercial passenger vehicles. Booked services, organised through an app or by phone, are not required to have cameras. The camera must be switched on at all times during an unbooked service.",
+    "zh": "在墨尔本都市区、城市区和大型区域区内，路边招停或在出租车站上车的未预约服务车辆，必须安装经批准且能正常工作的安全摄像头。区域和乡村的商业载客车辆不要求安装。通过 App 或电话安排的预约服务不要求有摄像头。未预约服务进行期间，摄像头必须一直开着。"
+   },
+   "sources": [
+    {
+     "url": "https://safetransport.vic.gov.au/on-the-road/cpv-driver-accreditation/driver-requirements/",
+     "quote": "Vehicles used for providing unbooked services (those hailed or from a rank) in the Melbourne metropolitan, urban and large regional zones must have an approved and functional security camera installed."
+    },
+    {
+     "url": "https://safetransport.vic.gov.au/on-the-road/cpv-driver-accreditation/driver-requirements/",
+     "quote": "They are not required to be fitted into regional and country CPVs"
+    },
+    {
+     "url": "https://safetransport.vic.gov.au/on-the-road/multi-purpose-taxi-program/mptp-members/",
+     "quote": "Booked services (those you organise through an app or over the phone) are not required to have cameras"
+    },
+    {
+     "url": "https://safetransport.vic.gov.au/on-the-road/cpv-driver-accreditation/driver-requirements/",
+     "quote": "The camera must be switched on at all times during an unbooked service."
+    }
+   ],
+   "tags": [
+    "transport",
+    "taxi"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "when-driver-can-refuse-unbooked-fare",
+   "question": {
+    "en": "When can a taxi driver refuse an unbooked fare?",
+    "zh": "出租车司机什么时候可以拒绝未预约的客人？"
+   },
+   "aliases": [
+    "Can a rank taxi refuse a short fare?",
+    "Unbooked fare refusal exceptions Victoria",
+    "路边打车司机能拒载吗",
+    "未预约出租车必须接客吗"
+   ],
+   "answer": {
+    "en": "From 1 August 2026, commercial passenger vehicle drivers providing unbooked services must accept all fares unless a valid exception applies. They can refuse an unbooked fare only in limited circumstances. Valid exceptions include concerns about safety, passenger behaviour, the number of passengers, or a reasonable belief the fare will not be paid.",
+    "zh": "自 2026 年 8 月 1 日起，提供未预约服务的商业载客车辆司机必须接受所有乘客，除非有有效的例外。他们只能在有限情况下拒绝未预约的乘客。有效例外包括对安全的顾虑、乘客行为、乘客人数，或者有合理理由相信车费不会被支付。"
+   },
+   "sources": [
+    {
+     "url": "https://safetransport.vic.gov.au/on-the-road/cpv-driver-accreditation/driver-requirements/",
+     "quote": "From 1 August 2026, CPV drivers providing unbooked services must accept all fares unless a valid exception applies."
+    },
+    {
+     "url": "https://safetransport.vic.gov.au/on-the-road/cpv-driver-accreditation/driver-requirements/",
+     "quote": "Drivers can only refuse an unbooked fare in limited circumstances. Valid exceptions include concerns about safety, passenger behaviour, the number of passengers, or a reasonable belief the fare will not be paid."
+    }
+   ],
+   "tags": [
+    "transport",
+    "taxi"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "cpv-assistance-animals",
+   "question": {
+    "en": "Can a taxi or rideshare driver refuse an assistance animal?",
+    "zh": "出租车或网约车司机可以拒绝辅助动物吗？"
+   },
+   "aliases": [
+    "Do assistance dogs have to wear a vest in a taxi?",
+    "Rideshare and guide dogs Victoria",
+    "导盲犬上网约车能被拒吗",
+    "辅助动物没穿背心算不算"
+   ],
+   "answer": {
+    "en": "Commercial passenger vehicle drivers cannot refuse fares to passengers with assistance animals. Some assistance animals wear identification and others do not. An animal trained to help a person alleviate their disability is an assistance animal.",
+    "zh": "商业载客车辆司机不能拒绝携带辅助动物的乘客。有些辅助动物佩戴标识，有些不佩戴。经过训练、用来帮助一个人减轻残疾影响的动物就是辅助动物。"
+   },
+   "sources": [
+    {
+     "url": "https://safetransport.vic.gov.au/on-the-road/cpv-driver-accreditation/driver-requirements/",
+     "quote": "Drivers cannot refuse fares to passengers with assistance animals. Some assistance animals wear identification, but others do not. As long as they're trained to help a person alleviate their disability, they're considered an assistance animal."
+    }
+   ],
+   "tags": [
+    "transport",
+    "taxi",
+    "accessibility"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "child-restraint-unbooked-taxi",
+   "question": {
+    "en": "Does an unbooked taxi have to carry a child seat?",
+    "zh": "路边打到的出租车必须自备儿童座椅吗？"
+   },
+   "aliases": [
+    "Baby capsule in a hailed taxi Victoria",
+    "Can I bring my own child seat in a taxi?",
+    "未预约出租车有没有婴儿提篮",
+    "出租车儿童座椅固定点"
+   ],
+   "answer": {
+    "en": "Vehicles that provide unbooked services are not required to carry child restraints such as capsules, child seats or booster seats. They must have at least one point where the straps of a child restraint or booster seat can be securely attached, if the child's parent or carer brings one to use.",
+    "zh": "提供未预约服务的车辆不要求随车携带婴儿提篮、儿童座椅或增高垫。如果孩子的父母或看护人自己带了儿童约束装置或增高垫，车上必须至少有一个可以把绑带牢固固定住的点。"
+   },
+   "sources": [
+    {
+     "url": "https://safetransport.vic.gov.au/on-the-road/cpv-driver-accreditation/driver-requirements/",
+     "quote": "Vehicles that provide unbooked services aren't required to carry child restraints such as capsules, child seats or booster seats. However, they must have at least one point where the straps of a child restraint or booster seat can be securely attached, if the child's parent or carer brings these to use."
+    }
+   ],
+   "tags": [
+    "transport",
+    "taxi"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "melbourne-unbooked-taxi-fare-structures",
+   "question": {
+    "en": "What are the maximum unbooked taxi fares in Melbourne, Dandenong, Frankston and the Mornington Peninsula?",
+    "zh": "墨尔本、Dandenong、Frankston 和 Mornington Peninsula 未预约出租车的最高车费怎么算？"
+   },
+   "aliases": [
+    "Melbourne taxi flag fall and per kilometre rate",
+    "Taxi peak rate Christmas and New Year",
+    "墨尔本出租车白天起步价和每公里",
+    "未预约出租车有几种计费"
+   ],
+   "answer": {
+    "en": "For unbooked fares in Melbourne, Dandenong, Frankston and the Mornington Peninsula, there is more than one way to structure a fare, one of the structures must be selected, and the maximum rates dated 1 July 2026 may be undercut by the provider. Structure 1, time or distance, is a flag fall plus either distance above 21 km/h or time below 21 km/h: day (9 am to 5 pm) $5.40, $2.10 per kilometre and $0.70 per minute; overnight (5 pm to 9 am) $6.75, $2.30 per kilometre and $0.80 per minute; peak $8.00, $2.55 per kilometre and $0.85 per minute. Structure 2, time and distance, is a flag fall plus both distance and time for the whole journey: day (9am - 5pm) $5.25, $1.685 per kilometre and $0.433 per minute; overnight (5pm - 9am) $6.55, $1.871 per kilometre and $0.476 per minute; peak $7.80, $2.070 per kilometre and $0.513 per min. On structure 1, peak is 10 pm to 4 am Friday and Saturday, all day Christmas Day, Boxing Day and New Year's Day, and from 6 pm New Year's Eve until midnight at the end of New Year's Day; structure 2's peak rate covers 10pm - 4am Friday and Saturday, all-day Christmas Day, Boxing Day and New Year's Day, and from 6pm New Year's Eve until midnight at the end of New Year's Day.",
+    "zh": "墨尔本、Dandenong、Frankston 和 Mornington Peninsula 的未预约车费可以按一种以上的结构计算，必须从这些结构里选择一种；页面标明 2026 年 7 月 1 日的费率是最高价，经营者可以收得更低。结构 1 按“时间或距离”计费，在起步价之外，车速高于 21 km/h 时按距离、低于 21 km/h 时按时间：白天（上午 9 点至下午 5 点）$5.40、每公里 $2.10、每分钟 $0.70；夜间（下午 5 点至上午 9 点）$6.75、每公里 $2.30、每分钟 $0.80；高峰 $8.00、每公里 $2.55、每分钟 $0.85。结构 2 按“时间和距离”计费，起步价之外，全程同时按距离和时间计：白天（9am - 5pm）$5.25、每公里 $1.685、每分钟 $0.433；夜间（5pm - 9am）$6.55、每公里 $1.871、每分钟 $0.476；高峰 $7.80、每公里 $2.070、每分钟 $0.513。结构 1 的高峰是周五和周六 10 pm 至 4 am、圣诞节、节礼日和元旦全天，以及新年前夜 6 pm 至元旦结束时的午夜；结构 2 的高峰费率覆盖周五和周六 10pm - 4am、圣诞节、节礼日和元旦全天，以及新年前夜 6pm 至元旦结束时的午夜。"
+   },
+   "sources": [
+    {
+     "url": "https://safetransport.vic.gov.au/on-the-road/cpv-driver-accreditation/fares-and-levies/",
+     "quote": "Unbooked fares - Melbourne, Dandenong, Frankston, Mornington Peninsula"
+    },
+    {
+     "url": "https://safetransport.vic.gov.au/on-the-road/cpv-driver-accreditation/fares-and-levies/",
+     "quote": "There is more than one way to structure a fare. You must select from one of the structures below."
+    },
+    {
+     "url": "https://safetransport.vic.gov.au/on-the-road/cpv-driver-accreditation/fares-and-levies/",
+     "quote": "Maximum fares for unbooked trips from 1 July 2026"
+    },
+    {
+     "url": "https://safetransport.vic.gov.au/on-the-road/cpv-driver-accreditation/fares-and-levies/",
+     "quote": "Note that these fare rates are maximum rates. Providers may charge less than the rates displayed."
+    },
+    {
+     "url": "https://safetransport.vic.gov.au/on-the-road/cpv-driver-accreditation/fares-and-levies/",
+     "quote": "Rate Flag fall Distance - applies when the speed is above 21 km/h Time - applies when the speed is below 21 km/h Day rate - 9 am to 5 pm $5.40 $2.10 per kilometre $0.70 per minute Overnight rate - 5 pm to 9 am $6.75 $2.30 per kilometre $0.80 per minute Peak rate - 10 pm to 4 am Friday and Saturday; all day Christmas Day, Boxing Day and New Year's Day; and from 6 pm New Year's Eve until midnight at the end of New Year's Day $8.00 $2.55 per kilometre $0.85 per minute"
+    },
+    {
+     "url": "https://safetransport.vic.gov.au/on-the-road/cpv-driver-accreditation/fares-and-levies/",
+     "quote": "Time and distance rates both apply for the whole journey."
+    },
+    {
+     "url": "https://safetransport.vic.gov.au/on-the-road/cpv-driver-accreditation/fares-and-levies/",
+     "quote": "Day Rate (9am - 5pm) $5.25 $1.685 per kilometre $0.433 per minute Overnight Rate (5pm - 9am) $6.55 $1.871 per kilometre $0.476 per minute Peak Rate (10pm - 4am Friday and Saturday and all-day Christmas Day, Boxing Day, New Year's Day and from 6pm New Year's Eve until midnight at the end of New Year's Day) $7.80 $2.070 per kilometre $0.513 per min"
+    }
+   ],
+   "tags": [
+    "transport",
+    "taxi",
+    "fare"
+   ],
+   "checked": "2026-11-01",
+   "valid_until": "2027-06-30",
+   "note": {
+    "en": "Dollar figures are the amounts stated on the source page and can change, so valid_until is the end of the financial year. The answer does not add an end date the page does not state.",
+    "zh": "金额是出处页面写明的数字，可能变动，因此 valid_until 设为本财政年度结束。答案没有加入页面上没有的截止日期。"
+   }
+  },
+  {
+   "id": "unbooked-taxi-card-surcharge",
+   "question": {
+    "en": "What is the maximum card surcharge on an unbooked taxi in Victoria?",
+    "zh": "维州未预约出租车刷卡，最高可以加收多少手续费？"
+   },
+   "aliases": [
+    "Cabcharge fee maximum on a taxi",
+    "4 percent taxi card surcharge",
+    "出租车刷卡手续费 6% 还是 4%",
+    "Cabcharge 最高收多少"
+   ],
+   "answer": {
+    "en": "From 1 July 2026, maximum extras for unbooked trips include a maximum 6% fee, including GST, when a non-cash device designed only for commercial passenger vehicles is used, such as the Cabcharge device used in taxis. A maximum 4% fee, including GST, applies to credit/debit cards and other non-cash payments that are not those vehicle-specific devices.",
+    "zh": "自 2026 年 7 月 1 日起，未预约行程的最高附加费包括：使用只为商业载客车辆设计的非现金支付设备时，最高加收 6%（含 GST），出租车里的 Cabcharge 设备就是例子。使用信用卡或借记卡，以及其他不属于这类专用设备的非现金支付时，最高加收 4%（含 GST）。"
+   },
+   "sources": [
+    {
+     "url": "https://safetransport.vic.gov.au/on-the-road/cpv-driver-accreditation/fares-and-levies/",
+     "quote": "Maximum extras for unbooked trips from 1 July 2026"
+    },
+    {
+     "url": "https://safetransport.vic.gov.au/on-the-road/cpv-driver-accreditation/fares-and-levies/",
+     "quote": "A maximum 6% fee applies when using a non-cash payment device designed for use only in commercial passenger vehicles. An example of this is the Cabcharge payment device used in taxis"
+    },
+    {
+     "url": "https://safetransport.vic.gov.au/on-the-road/cpv-driver-accreditation/fares-and-levies/",
+     "quote": "6% (including GST)"
+    },
+    {
+     "url": "https://safetransport.vic.gov.au/on-the-road/cpv-driver-accreditation/fares-and-levies/",
+     "quote": "A maximum 4% fee applies when using credit/debit cards, and all other non-cash payments other than commercial passenger vehicle specific payment devices"
+    },
+    {
+     "url": "https://safetransport.vic.gov.au/on-the-road/cpv-driver-accreditation/fares-and-levies/",
+     "quote": "4% (including GST)"
+    }
+   ],
+   "tags": [
+    "transport",
+    "taxi",
+    "fare"
+   ],
+   "checked": "2026-11-01",
+   "valid_until": "2027-06-30",
+   "note": {
+    "en": "Dollar figures are the amounts stated on the source page and can change, so valid_until is the end of the financial year. The answer does not add an end date the page does not state.",
+    "zh": "金额是出处页面写明的数字，可能变动，因此 valid_until 设为本财政年度结束。答案没有加入页面上没有的截止日期。"
+   }
+  },
+  {
+   "id": "unbooked-taxi-high-occupancy-fee",
+   "question": {
+    "en": "What is the high-occupancy fee on an unbooked taxi?",
+    "zh": "未预约出租车的多人乘坐附加费是多少？"
+   },
+   "aliases": [
+    "Taxi fee for five or more passengers",
+    "Larger taxi booking fee maximum",
+    "五个人打一辆出租车要加钱吗",
+    "无障碍车预约还收 high occupancy 吗"
+   ],
+   "answer": {
+    "en": "From 1 July 2026, the maximum high-occupancy fee for an unbooked trip is $18.35. It applies for five or more passengers, including a person who uses a wheelchair or other mobility aid, or where the hirer specifically requests a larger than standard vehicle regardless of the number of passengers. The larger-vehicle part of that fee does not apply where the booking is for a person who uses a wheelchair or other mobility aid.",
+    "zh": "自 2026 年 7 月 1 日起，未预约行程的多人乘坐附加费最高是 $18.35。它适用于五名或更多乘客，包括其中有人使用轮椅或其他行动辅具的情况，也适用于乘客特别要求比标准车更大的车辆、不论人数多少。如果这次预约是为使用轮椅或其他行动辅具的人叫的车，则不适用其中“要求更大车辆”的那一部分费用。"
+   },
+   "sources": [
+    {
+     "url": "https://safetransport.vic.gov.au/on-the-road/cpv-driver-accreditation/fares-and-levies/",
+     "quote": "Maximum extras for unbooked trips from 1 July 2026"
+    },
+    {
+     "url": "https://safetransport.vic.gov.au/on-the-road/cpv-driver-accreditation/fares-and-levies/",
+     "quote": "High occupancy fee For five or more passengers (including a person(s) who uses a wheelchair or other mobility aid) or where the hirer specifically requests a larger than standard vehicle regardless of the number of passengers (except where the booking is for a person(s) who uses a wheelchair or other mobility aid) $18.35"
+    }
+   ],
+   "tags": [
+    "transport",
+    "taxi",
+    "fare"
+   ],
+   "checked": "2026-11-01",
+   "valid_until": "2027-06-30",
+   "note": {
+    "en": "Dollar figures are the amounts stated on the source page and can change, so valid_until is the end of the financial year. The answer does not add an end date the page does not state.",
+    "zh": "金额是出处页面写明的数字，可能变动，因此 valid_until 设为本财政年度结束。答案没有加入页面上没有的截止日期。"
+   }
+  },
+  {
+   "id": "unbooked-taxi-cleaning-fee",
+   "question": {
+    "en": "How much can an unbooked taxi charge if a passenger soils the car?",
+    "zh": "乘客弄脏未预约出租车，清洁费最多多少？"
+   },
+   "aliases": [
+    "Taxi cleaning fee bodily fluids Victoria",
+    "Maximum mess fee in a Melbourne taxi",
+    "在出租车里呕吐要赔多少",
+    "弄脏出租车清洁费上限"
+   ],
+   "answer": {
+    "en": "From 1 July 2026, a reasonable cleaning fee applies if a passenger soils an unbooked vehicle with food, drink or bodily fluids. The maximum listed is up to $123.75.",
+    "zh": "自 2026 年 7 月 1 日起，如果乘客用食物、饮料或体液弄脏未预约服务的车辆，可以收取合理的清洁费。页面列出的上限是 $123.75。"
+   },
+   "sources": [
+    {
+     "url": "https://safetransport.vic.gov.au/on-the-road/cpv-driver-accreditation/fares-and-levies/",
+     "quote": "Maximum extras for unbooked trips from 1 July 2026"
+    },
+    {
+     "url": "https://safetransport.vic.gov.au/on-the-road/cpv-driver-accreditation/fares-and-levies/",
+     "quote": "A reasonable cleaning fee applies if a passenger soils the vehicle with food, drink or bodily fluids Up to $123.75"
+    }
+   ],
+   "tags": [
+    "transport",
+    "taxi",
+    "fare"
+   ],
+   "checked": "2026-11-01",
+   "valid_until": "2027-06-30",
+   "note": {
+    "en": "Dollar figures are the amounts stated on the source page and can change, so valid_until is the end of the financial year. The answer does not add an end date the page does not state.",
+    "zh": "金额是出处页面写明的数字，可能变动，因此 valid_until 设为本财政年度结束。答案没有加入页面上没有的截止日期。"
+   }
+  },
+  {
+   "id": "unbooked-taxi-passthrough-charges",
+   "question": {
+    "en": "Are the Melbourne Airport taxi rank fee, the trip levy and tolls given as dollar amounts?",
+    "zh": "机场出租车站费、行程税和过路费，页面有没有写出具体金额？"
+   },
+   "aliases": [
+    "Melbourne airport taxi rank fee amount",
+    "CPV trip levy pass through",
+    "机场打车的 rank fee 是多少钱",
+    "出租车过路费谁出"
+   ],
+   "answer": {
+    "en": "In the maximum extras for unbooked trips from 1 July 2026, the airport rank fee for trips taken from the Melbourne airport rank is listed as pass-through. The trip levy on every commercial passenger vehicle trip commencing in Victoria is also listed as pass-through. Toll-road charges are pass-through if the passenger requests a toll road route.",
+    "zh": "在 2026 年 7 月 1 日起的未预约行程最高附加费里，从墨尔本机场出租车站出发的机场车站费被列为转嫁（pass-through）。凡在维多利亚州开始的商业载客车辆行程都要收的行程税，同样列为转嫁。如果乘客要求走收费公路，过路费也是转嫁。"
+   },
+   "sources": [
+    {
+     "url": "https://safetransport.vic.gov.au/on-the-road/cpv-driver-accreditation/fares-and-levies/",
+     "quote": "Maximum extras for unbooked trips from 1 July 2026"
+    },
+    {
+     "url": "https://safetransport.vic.gov.au/on-the-road/cpv-driver-accreditation/fares-and-levies/",
+     "quote": "Airport rank fee Applies to trips taken from the Melbourne airport rank Pass-through"
+    },
+    {
+     "url": "https://safetransport.vic.gov.au/on-the-road/cpv-driver-accreditation/fares-and-levies/",
+     "quote": "Trip levy applies to every commercial passenger vehicle trip commencing in Victoria Pass-through"
+    },
+    {
+     "url": "https://safetransport.vic.gov.au/on-the-road/cpv-driver-accreditation/fares-and-levies/",
+     "quote": "Charges also apply to toll roads if the passenger requests a toll road route Pass-through"
+    }
+   ],
+   "tags": [
+    "transport",
+    "taxi",
+    "fare"
+   ],
+   "checked": "2026-11-01",
+   "valid_until": "2027-06-30",
+   "note": {
+    "en": "These extras are in the unbooked-trip table dated 1 July 2026. The page lists the amount as pass-through and does not print a dollar figure, so the answer does not give one. valid_until is the end of the financial year.",
+    "zh": "这些附加费列在 2026 年 7 月 1 日起的未预约车程表里。页面把金额写成转嫁（pass-through），没有写出具体澳元数，答案也不写金额。valid_until 设为本财政年度结束。"
+   }
+  },
+  {
+   "id": "vline-myki-and-coach-tickets",
+   "question": {
+    "en": "Can I use myki or a bank card on V/Line trains and coaches?",
+    "zh": "V/Line 的火车和长途客车能用 myki 或银行卡吗？"
+   },
+   "aliases": [
+    "Do V/Line coaches take contactless payment?",
+    "Paper ticket on a long-distance V/Line train",
+    "V/Line 大巴能刷 myki 吗",
+    "长途火车还要纸质票吗"
+   ],
+   "answer": {
+    "en": "Passengers can tap and go with a myki, bank card, smartphone or smartwatch on most V/Line train services. A paper ticket or eTicket can still be used on long-distance train services instead of myki or contactless payment. Scheduled coach services do not take myki or contactless payment and need a valid paper ticket or eTicket.",
+    "zh": "在大多数 V/Line 火车上，乘客可以用 myki、银行卡、智能手机或智能手表拍卡上车。长途火车仍然可以使用纸质票或电子票，代替 myki 或感应支付。固定班次的长途客车不接受 myki 或感应支付，必须持有效纸质票或电子票。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vline.com.au/ticketing",
+     "quote": "Passengers can tap and go using a myki, a bank card, smartphone or smartwatch to travel on most V/Line train services."
+    },
+    {
+     "url": "https://www.vline.com.au/ticketing",
+     "quote": "You are still able to use a paper or eTicket on long distance train services, instead of myki or contactless payment, if you prefer."
+    },
+    {
+     "url": "https://www.vline.com.au/ticketing",
+     "quote": "Scheduled coach services do not take myki or contactless payment and require a valid paper or eTicket to travel."
+    }
+   ],
+   "tags": [
+    "transport",
+    "vline",
+    "myki"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "vline-reserved-seats",
+   "question": {
+    "en": "Which V/Line trains have reserved seats?",
+    "zh": "哪些 V/Line 火车有预留座位？"
+   },
+   "aliases": [
+    "Is all seating reserved on the Albury train?",
+    "V/Line unreserved carriage standing",
+    "去 Warrnambool 的火车要订座吗",
+    "Albury 线是不是全部对号"
+   ],
+   "answer": {
+    "en": "Reserved seating is available on V/Line trains to and from Albury, Bairnsdale, Shepparton, Swan Hill and Warrnambool. Those services mix reserved and unreserved carriages, except Albury, where all seating is reserved. A reserved ticket guarantees a specific seat in a reserved carriage. An unreserved ticket is for the unreserved carriages and may mean standing for all or part of the journey if no seat is free.",
+    "zh": "往返 Albury、Bairnsdale、Shepparton、Swan Hill 和 Warrnambool 的 V/Line 火车有预留座位。这些车次同时有预留车厢和未预留车厢，Albury 除外，Albury 的座位全部预留。预留车票保证预留车厢里的一个指定座位。未预留车票只能坐未预留车厢，如果没有空位，全程或其中一段可能需要站立。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vline.com.au/ticketing",
+     "quote": "Reserved seating is available on V/Line train services to and from Albury, Bairnsdale, Shepparton, Swan Hill and Warrnambool."
+    },
+    {
+     "url": "https://www.vline.com.au/ticketing",
+     "quote": "These services operate with a mixture of reserved and unreserved carriages, except Albury where all seating is reserved."
+    },
+    {
+     "url": "https://www.vline.com.au/ticketing",
+     "quote": "You can purchase a reserved ticket, which guarantees you a specific seat in the reserved carriage(s), or an unreserved ticket, which allows you to travel in the unreserved carriage(s) onboard these services, and may require you to stand for all or part of the journey if there are no seats available."
+    }
+   ],
+   "tags": [
+    "transport",
+    "vline"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "vline-companion-card",
+   "question": {
+    "en": "Does V/Line accept the Victorian Companion Card?",
+    "zh": "V/Line 接受维州 Companion Card 吗？"
+   },
+   "aliases": [
+    "Free travel for a companion on V/Line",
+    "Carer travels free with Companion Card",
+    "陪同卡在 V/Line 能免票吗",
+    "Companion Card 看护人免费吗"
+   ],
+   "answer": {
+    "en": "The Victorian Companion Card is accepted on all V/Line services. It offers free travel for companions and carers travelling with a cardholder.",
+    "zh": "所有 V/Line 服务都接受维多利亚州 Companion Card。持卡人的陪同者和看护人可以免费同行。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vline.com.au/Fares-general-info",
+     "quote": "The Victorian Companion Card is accepted on all V/Line services. It offers free travel for companions and carers travelling with a cardholder."
+    }
+   ],
+   "tags": [
+    "transport",
+    "vline",
+    "accessibility"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "vline-luggage-allowance",
+   "question": {
+    "en": "How much luggage can I take on V/Line?",
+    "zh": "坐 V/Line 可以带多少行李？"
+   },
+   "aliases": [
+    "V/Line 32 kilogram luggage limit",
+    "Maximum weight of one V/Line bag",
+    "V/Line 行李限重多少公斤",
+    "一件行李能不能超过 16 公斤"
+   ],
+   "answer": {
+    "en": "From December 1 2021, the total luggage limit on all V/Line services is 32 kilograms. A passenger can carry two items of luggage, with no single item heavier than 16 kilograms, plus one piece of hand luggage.",
+    "zh": "自 2021 年 12 月 1 日起，所有 V/Line 服务的行李总重上限是 32 千克。乘客可以带两件行李，单件不超过 16 千克，另外再加一件手提行李。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vline.com.au/Fares-general-info/Bikes-Luggage-Animals",
+     "quote": "From December 1 2021 the total luggage limit for all V/Line services is 32 kilograms. Customers can carry two items of luggage, with no one item weighing more than 16 kilograms, as well as one piece of hand luggage."
+    }
+   ],
+   "tags": [
+    "transport",
+    "vline"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "animals-on-vline",
+   "question": {
+    "en": "Can I take a dog or an emotional-support animal on V/Line?",
+    "zh": "狗或情绪支持动物可以上 V/Line 吗？"
+   },
+   "aliases": [
+    "Pets on V/Line coaches",
+    "Are emotional support animals service animals on V/Line?",
+    "V/Line 大巴能带狗吗",
+    "导盲犬算不算服务动物"
+   ],
+   "answer": {
+    "en": "Domestic pets, including cats and dogs, may travel on all V/Line train services and are not allowed on coaches. On trains the animal must be in a suitable enclosed container that one person can carry in one hand, with room to move, ventilation, access for food or water, and that is clean and secure; the container goes in the designated pet stowage, not on a seat, and must not block doorways. Companion, therapy, facility and emotional support animals are not service animals and must qualify for an Assistance Animal Pass. Guide dogs, hearing dogs, animals in training and animals with an Assistance Animal Pass are allowed on both trains and coaches.",
+    "zh": "包括猫和狗在内的家养宠物可以上所有 V/Line 火车，不能上长途客车。在火车上，动物必须放在一个合适的封闭容器里，这个容器要能用一只手拎起来，有活动空间和通风，途中拿得到食物或水，并且干净、关得住；容器放在指定的宠物存放处，不能放在座位上，也不能挡住车门。陪伴、治疗、机构照料和情绪支持动物不算服务动物，必须符合 Assistance Animal Pass 的条件。导盲犬、助听犬、正在受训的动物，以及持有 Assistance Animal Pass 的动物，火车和长途客车都可以上。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vline.com.au/Fares-general-info/Bikes-Luggage-Animals",
+     "quote": "Domestic pets (including cats and dogs) are permitted to travel on all V/Line train services, but are not allowed on coaches."
+    },
+    {
+     "url": "https://www.vline.com.au/Fares-general-info/Bikes-Luggage-Animals",
+     "quote": "they must be carried in a suitable enclosed pet container that can be carried in one hand and meets the following guidelines: Provides sufficient space for the animal to move around Provides suitable ventilation for the animal Can be easily accessed during the journey to provide any food or water to the animal Is clean Is enclosed and secure to contain the animal for the duration of the journey."
+    },
+    {
+     "url": "https://www.vline.com.au/Fares-general-info/Bikes-Luggage-Animals",
+     "quote": "Suitable pet containers must be stored in the designated pet stowage location on board each train, and are not allowed on seats or to block doorways"
+    },
+    {
+     "url": "https://www.vline.com.au/Fares-general-info/Bikes-Luggage-Animals",
+     "quote": "Companion, therapy, facility and emotional support animals are not considered service animals and your animal must qualify for an Assistance Animal Pass."
+    },
+    {
+     "url": "https://www.vline.com.au/Fares-general-info/Bikes-Luggage-Animals",
+     "quote": "Animal type Allowed on trains? Allowed on coaches? Service animal (Guide dogs, Hearing dogs, animals in training and animals identified by an Assistance Animal Pass) Yes Yes"
+    }
+   ],
+   "tags": [
+    "transport",
+    "vline"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "alcohol-on-vline-services",
+   "question": {
+    "en": "Can I drink alcohol on a V/Line train or coach?",
+    "zh": "在 V/Line 火车或大巴上可以喝酒吗？"
+   },
+   "aliases": [
+    "Is alcohol served on V/Line?",
+    "BYO alcohol on a regional train",
+    "V/Line 上能自带酒吗",
+    "区域列车卖不卖酒"
+   ],
+   "answer": {
+    "en": "Alcohol is not served on any V/Line service. Customers are not permitted to drink alcohol on board any V/Line service.",
+    "zh": "所有 V/Line 服务都不供应酒精饮料。乘客也不可以在任何 V/Line 车上饮用酒精饮料。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vline.com.au/Fares-general-info/On-board",
+     "quote": "Alcohol is not served and customers are not permitted to drink it on board any V/Line services."
+    }
+   ],
+   "tags": [
+    "transport",
+    "vline"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "vline-quiet-carriage",
+   "question": {
+    "en": "What is a V/Line quiet carriage, and do staff enforce it?",
+    "zh": "V/Line 的安静车厢是什么，工作人员会管理吗？"
+   },
+   "aliases": [
+    "Where is the VLocity quiet carriage?",
+    "Quiet carriage rules on V/Line",
+    "V/Line 安静车厢在车头还是车尾",
+    "安静车厢有人管吗"
+   ],
+   "answer": {
+    "en": "A quiet carriage is a dedicated zone on VLocity trains for passengers who want a quieter trip. It is usually the leading or rear carriage. V/Line staff do not enforce quiet-carriage courtesy.",
+    "zh": "安静车厢是 VLocity 列车上给想安静乘车的乘客设的专门区域。它通常是列车最前面或最后面的一节车厢。V/Line 工作人员不执行安静车厢的礼貌约定。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vline.com.au/Fares-general-info/On-board",
+     "quote": "A quiet carriage is a dedicated zone on VLocity trains for customers who want to travel in a quieter environment."
+    },
+    {
+     "url": "https://www.vline.com.au/Fares-general-info/On-board",
+     "quote": "The quiet carriage is usually the leading or rear carriage of the train."
+    },
+    {
+     "url": "https://www.vline.com.au/Fares-general-info/On-board",
+     "quote": "V/Line staff do not enforce quiet carriage courtesy."
+    }
+   ],
+   "tags": [
+    "transport",
+    "vline"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "children-alone-on-vline",
+   "question": {
+    "en": "At what age can a child travel alone on V/Line?",
+    "zh": "孩子几岁可以独自坐 V/Line？"
+   },
+   "aliases": [
+    "Can a 9 year old ride V/Line alone?",
+    "Children 10 to 15 on regional trains",
+    "10 岁以下能自己坐 V/Line 吗",
+    "上学的孩子可以一起坐区域列车吗"
+   ],
+   "answer": {
+    "en": "On V/Line services, children under 10 years old cannot travel alone and must travel with a responsible person, except when travelling with other children to and from school. Children aged 10 - 15 years may travel alone. The parent or guardian who cares for the child remains solely responsible for the child's safety.",
+    "zh": "在 V/Line 上，10 岁以下的儿童不能单独乘车，必须由一名负责的人陪同，除非是和其他孩子一起上下学。10 至 15 岁的儿童可以单独乘车。对孩子负有照顾责任的父母或监护人，仍然独自承担孩子的安全责任。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vline.com.au/Fares-general-info/On-board",
+     "quote": "On V/Line services, children under 10 years old cannot travel alone. They must travel with a responsible person, except when travelling with other children to and from school."
+    },
+    {
+     "url": "https://www.vline.com.au/Fares-general-info/On-board",
+     "quote": "Children aged 10 - 15 years may travel alone on V/Line services but the sole responsibility for the safety of the child remains with the parent or guardian who has care of the child."
+    }
+   ],
+   "tags": [
+    "transport",
+    "vline"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "bicycles-on-vline-trains",
+   "question": {
+    "en": "Can I take a bicycle on a V/Line train?",
+    "zh": "自行车可以上 V/Line 火车吗？"
+   },
+   "aliases": [
+    "Which bikes are allowed on V/Line?",
+    "Are converted e-bikes allowed on Victorian trains?",
+    "V/Line 能带山地车吗",
+    "改装电动自行车能上火车吗"
+   ],
+   "answer": {
+    "en": "Bicycles can be carried on V/Line trains if there is space, and the conductor decides whether there is enough space to carry them safely on that service. All bicycles are carried first-come, first-served, subject to space. V/Line only allows Road, Mountain, Hybrid, BMX, Electric, Folding, or bicycles used as mobility aids, and bicycles on V/Line must be propelled by pedals. Converted e-bikes are not allowed on metropolitan or regional trains in Victoria or in ticketed areas.",
+    "zh": "如果有空位，自行车可以上 V/Line 火车，由列车员决定该班车是否有足够空间安全运载。所有自行车都视空位、按先到先得承运。V/Line 只允许公路车、山地车、混合车、BMX、电动自行车、折叠车，或用作行动辅具的自行车，而且车上的自行车必须靠脚踏驱动。改装电动自行车不得进入维多利亚州的都市或区域火车，也不得进入已检票区域。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vline.com.au/Fares-general-info/Bikes-Luggage-Animals",
+     "quote": "Bicycles can be carried on V/Line trains, if there is space available. V/Line conductors will determine whether there is enough space for bicycles to be carried safely on each service."
+    },
+    {
+     "url": "https://www.vline.com.au/Fares-general-info/Bikes-Luggage-Animals",
+     "quote": "All bicycles are carried subject to available space on a first-come, first-served basis."
+    },
+    {
+     "url": "https://www.vline.com.au/Fares-general-info/Bikes-Luggage-Animals",
+     "quote": "V/Line will only allow travel with bikes classified as Road, Mountain, Hybrid, BMX, Electric, Folding, or bicycles used as mobility aids. Bicycles on V/Line services must be propelled by pedals."
+    },
+    {
+     "url": "https://www.vline.com.au/Fares-general-info/Bikes-Luggage-Animals",
+     "quote": "Converted e-bikes are not allowed on metropolitan or regional trains in Victoria or in ticketed areas."
+    }
+   ],
+   "tags": [
+    "transport",
+    "vline",
+    "bicycle"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "folding-bicycles-on-vline",
+   "question": {
+    "en": "Can I take a folding bicycle on V/Line for free, and what size is allowed?",
+    "zh": "折叠自行车上 V/Line 要钱吗，尺寸限制是多少？"
+   },
+   "aliases": [
+    "Folding bike dimensions on a V/Line coach",
+    "Which V/Line coaches take a normal bike?",
+    "折叠车能免费上 V/Line 大巴吗",
+    "非折叠自行车哪些客车能带"
+   ],
+   "answer": {
+    "en": "Folding bicycles are carried free on V/Line trains if they do not exceed 82cm long x 69cm high x 39cm wide and have wheel rims no more than 20 inches (51 cm) in diameter, and they cannot go in overhead luggage racks. They are also carried free on all V/Line coaches if they stay within those dimensions and rim size, are folded, and are placed in a bag or cover. Non-folding bicycles are carried free, if there is space and first-come first-served, on the Beechworth - Wangaratta, Bright - Wangaratta, Corowa/Rutherglen - Wangaratta, Mulwala/Yarrawonga - Benalla and Wangaratta - Bendigo coach services. They are not permitted on any other timetabled V/Line coach service, except folding bicycles.",
+    "zh": "折叠自行车若不超过长 82 厘米、高 69 厘米、宽 39 厘米，且轮圈直径不超过 20 英寸（51 厘米），可以免费上 V/Line 火车，但不能放进行李架。在所有 V/Line 长途客车上，只要符合同样的尺寸和轮圈限制、折叠起来并放进包或套子里，也可以免费携带。非折叠自行车在有空位且先到先得的情况下，可以免费上 Beechworth - Wangaratta、Bright - Wangaratta、Corowa/Rutherglen - Wangaratta、Mulwala/Yarrawonga - Benalla 和 Wangaratta - Bendigo 这些客车。其他固定班次的 V/Line 客车不允许带自行车，折叠自行车除外。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vline.com.au/Fares-general-info/Bikes-Luggage-Animals",
+     "quote": "Folding bicycles can be carried for free on V/Line trains as long as they: do not exceed the dimensions of 82cm long x 69cm high x 39cm wide; and have wheel rims no more than 20 inches (51 cm) in diameter."
+    },
+    {
+     "url": "https://www.vline.com.au/Fares-general-info/Bikes-Luggage-Animals",
+     "quote": "Folding bicycles cannot be stored in overhead luggage racks."
+    },
+    {
+     "url": "https://www.vline.com.au/Fares-general-info/Bikes-Luggage-Animals",
+     "quote": "Folding bicycles can be carried for free on all V/Line coaches as long as they: do not exceed the dimensions of 82cm long x 69cm high x 39cm wide have wheel rims no more than 20 inches (51 cm) in diameter can be folded up and must be placed in a bag or appropriately sized cover"
+    },
+    {
+     "url": "https://www.vline.com.au/Fares-general-info/Bikes-Luggage-Animals",
+     "quote": "Bicycles can be carried for free on the following V/Line scheduled coach services, if there is space available. They will be accepted on a first-come, first-served basis only. Beechworth - Wangaratta Bright - Wangaratta Corowa/Rutherglen - Wangaratta Mulwala/Yarrawonga - Benalla Wangaratta - Bendigo"
+    },
+    {
+     "url": "https://www.vline.com.au/Fares-general-info/Bikes-Luggage-Animals",
+     "quote": "Bicycles are not permitted on any other timetabled V/Line coach services, with the exception of folding bicycles."
+    }
+   ],
+   "tags": [
+    "transport",
+    "vline",
+    "bicycle"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "folding-bikes-on-trams",
+   "question": {
+    "en": "Can I take a bicycle on a Melbourne tram?",
+    "zh": "墨尔本电车可以带自行车吗？"
+   },
+   "aliases": [
+    "Folding bike size limit on a tram",
+    "Are full-size bikes allowed on Yarra Trams?",
+    "电车能带普通自行车吗",
+    "折叠自行车上电车要装包吗"
+   ],
+   "answer": {
+    "en": "Only folding bicycles can be carried on Yarra Trams services. They must be stored in a bag, and must not exceed 82cm long x 69cm high x 39cm wide or have wheel rims larger than 51cm in diameter.",
+    "zh": "Yarra Trams 的电车只允许携带折叠自行车。折叠车必须放在包里，并且不得超过长 82 厘米、高 69 厘米、宽 39 厘米，轮圈直径也不得超过 51 厘米。"
+   },
+   "sources": [
+    {
+     "url": "https://yarratrams.com.au/animals-carry-on-items",
+     "quote": "Only folding bicycles can be carried on board trams. However, they must be stored in a bag and must not exceed 82cm long x 69cm high x 39cm wide, or have wheel rims larger than 51cm in diameter."
+    }
+   ],
+   "tags": [
+    "transport",
+    "tram",
+    "bicycle"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "animals-on-trams",
+   "question": {
+    "en": "Can I take a dog on a Melbourne tram?",
+    "zh": "狗可以上墨尔本电车吗？"
+   },
+   "aliases": [
+    "Assistance dogs on trams",
+    "Pets in a carrier on Yarra Trams",
+    "电车能牵着狗上去吗",
+    "导盲犬上电车要装箱子吗"
+   ],
+   "answer": {
+    "en": "Passengers can travel on Yarra Trams services, and on all public transport, with a trained assistance animal, including guide dogs, guide dogs in training, hearing dogs, hearing dogs in training, and other animals identified by an Assistance Animal Pass. Small non-assistance animals can travel on trams in a suitable container of a reasonable size that does not obstruct other passengers. Other non-assistance animals are not permitted on trams, even on a lead.",
+    "zh": "乘客可以带着经过训练的辅助动物乘坐 Yarra Trams 的电车，也可以带上所有公共交通，包括导盲犬、正在受训的导盲犬、助听犬、正在受训的助听犬，以及其他持有 Assistance Animal Pass 的动物。小型非辅助动物可以上电车，但必须放在尺寸合理、不妨碍其他乘客的合适容器里。其他非辅助动物即使牵着绳子，也不能上电车。"
+   },
+   "sources": [
+    {
+     "url": "https://yarratrams.com.au/animals-carry-on-items",
+     "quote": "Passengers can travel on our trams, and on all public transport, with their trained assistance animal."
+    },
+    {
+     "url": "https://yarratrams.com.au/animals-carry-on-items",
+     "quote": "Assistance animals include guide dogs, guide dogs in training, hearing dogs, hearing dogs in training and other animals identified by an Assistance Animal Pass."
+    },
+    {
+     "url": "https://yarratrams.com.au/animals-carry-on-items",
+     "quote": "Small, non-assistance animals can travel on trams provided they are in a suitable container of a reasonable size and not obstructing other passengers. Other non-assistance animals are not permitted on trams, even on a lead."
+    }
+   ],
+   "tags": [
+    "transport",
+    "tram"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "prams-on-trams",
+   "question": {
+    "en": "Can I take a pram on a Melbourne tram?",
+    "zh": "婴儿车可以上墨尔本电车吗？"
+   },
+   "aliases": [
+    "Large pram on a high-floor tram",
+    "Pushers and shopping jeeps on trams",
+    "电车带婴儿车有限制吗",
+    "有台阶的电车婴儿车进得去吗"
+   ],
+   "answer": {
+    "en": "Prams, pushers, shopping jeeps, golf buggies and similar items can be carried on trams, as long as the comfort, access and safety of other passengers are not affected. Some large prams may not fit through the doors of all trams, particularly those with steps.",
+    "zh": "婴儿车、推车、购物小车、高尔夫球车和类似物品可以上电车，只要不影响其他乘客的舒适、通行和安全。有些大型婴儿车可能进不了所有电车的车门，尤其是有台阶的电车。"
+   },
+   "sources": [
+    {
+     "url": "https://yarratrams.com.au/animals-carry-on-items",
+     "quote": "Prams, pushers, shopping jeeps, golf buggies and similar items can be carried on trams, as long as the comfort, access and safety of other passengers are not affected. Some large prams may not fit through the doors of all trams, particularly those with steps."
+    }
+   ],
+   "tags": [
+    "transport",
+    "tram",
+    "accessibility"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "melbourne-tram-low-floor-routes",
+   "question": {
+    "en": "Which Melbourne tram routes use low-floor trams?",
+    "zh": "墨尔本哪些电车路线是低地板电车？"
+   },
+   "aliases": [
+    "Are route 96 trams wheelchair accessible?",
+    "Which tram routes are high floor?",
+    "96 路是低地板电车吗",
+    "哪些路是高低地板混跑"
+   ],
+   "answer": {
+    "en": "Routes 11, 19, 30, 96 and 109 are operated by low-floor trams, though a low-floor tram may be replaced by a high-floor tram if something unexpected happens. Routes 5, 6, 16, 48, 58, 72 and 86 use a mix of low-floor and high-floor trams. Routes 1, 3, 12, 35, 57, 59, 64, 67, 70, 75, 78 and 82 are operated by high-floor trams.",
+    "zh": "11、19、30、96 和 109 路使用低地板电车；如果发生意外情况，低地板电车可能被高地板电车替换。5、6、16、48、58、72 和 86 路是低地板和高地板混跑。1、3、12、35、57、59、64、67、70、75、78 和 82 路使用高地板电车。"
+   },
+   "sources": [
+    {
+     "url": "https://yarratrams.com.au/accessibility",
+     "quote": "Routes 11, 19, 30, 96, and 109 are operated by low-floor trams. Sometimes if something unexpected happens we may need to substitute a low-floor tram with a high-floor tram."
+    },
+    {
+     "url": "https://yarratrams.com.au/accessibility",
+     "quote": "Routes 5, 6, 16, 48, 58, 72, and 86 are operated by a mix of low-floor and high-floor trams."
+    },
+    {
+     "url": "https://yarratrams.com.au/accessibility",
+     "quote": "Routes 1, 3, 12, 35, 57, 59, 64, 67, 70, 75, 78, and 82 are operated by high-floor trams."
+    }
+   ],
+   "tags": [
+    "transport",
+    "tram",
+    "accessibility"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "tram-priority-and-wheelchair-spaces",
+   "question": {
+    "en": "Who are tram priority seats for, and where is the wheelchair space?",
+    "zh": "电车优先座给谁坐，轮椅位在哪里？"
+   },
+   "aliases": [
+    "Can I be fined for refusing a priority seat?",
+    "Wheelchair space on a low-floor tram",
+    "电车优先座不让会罚款吗",
+    "低地板电车轮椅标志在哪"
+   ],
+   "answer": {
+    "en": "Priority seats are for passengers who may have accessibility needs, such as a person with a disability, illness or injury, an elderly person, and people who are pregnant. A priority seat should be made available when a passenger who needs it asks, and the reason may not be visible. Refusing a priority seat when requested can result in a fine from an Authorised Officer. Some tram stops and low-floor trams have allocated spaces for passengers using wheelchairs or mobility aids, marked with a wheelchair symbol on the floor.",
+    "zh": "优先座是给可能有无障碍需要的乘客，例如有残疾、疾病或受伤的人、老年人和孕妇。需要优先座的乘客提出时，应当把座位让出来，需要的原因不一定看得出来。被要求后仍拒绝让出优先座，授权检查员（Authorised Officer）可以因此开出罚款。部分电车站和低地板电车为使用轮椅或行动辅具的乘客设有专用空间，地面上有轮椅标志。"
+   },
+   "sources": [
+    {
+     "url": "https://yarratrams.com.au/accessibility",
+     "quote": "Priority Seats are seats allocated for passengers who may have accessibility needs, such as: a person with a disability, illness, or injury an elderly person people who are pregnant"
+    },
+    {
+     "url": "https://yarratrams.com.au/accessibility",
+     "quote": "Sometimes a person's reason for needing the priority seat may not be visible. A priority seat should be made available when requested by a passenger who needs it."
+    },
+    {
+     "url": "https://yarratrams.com.au/accessibility",
+     "quote": "Refusing a priority seat when requested can result in a fine being issued by an Authorised Officer."
+    },
+    {
+     "url": "https://yarratrams.com.au/accessibility",
+     "quote": "Some tram stops and low-floor trams have allocated spaces for passengers using wheelchairs or mobility aids."
+    },
+    {
+     "url": "https://yarratrams.com.au/accessibility",
+     "quote": "The area is marked with a wheelchair symbol on the floor."
+    }
+   ],
+   "tags": [
+    "transport",
+    "tram",
+    "accessibility"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "damaged-or-lost-myki-replacement",
+   "question": {
+    "en": "How do I replace a damaged or lost myki at Metro?",
+    "zh": "myki 坏了或丢了，在 Metro 怎么补？"
+   },
+   "aliases": [
+    "Does a damaged myki balance transfer at a premium station?",
+    "Lost myki replacement form",
+    "myki 消磁了去哪个站换",
+    "myki 丢了余额会自动转吗"
+   ],
+   "answer": {
+    "en": "If a myki is damaged or defective, Metro Trains says you can go to any premium station and receive a replacement card, and the existing balance on the old card is transferred to the new one as part of that process. A lost or stolen myki requires a myki replacement form, available from the Transport Victoria website, to be completed and submitted.",
+    "zh": "Metro Trains 表示，myki 损坏或有故障时，可以到任何 premium 车站领取一张补办卡，旧卡上的余额会在补办过程中转到新卡。myki 丢失或被盗时，需要填写并提交 myki 补办表，表格可在 Transport Victoria 网站获取。"
+   },
+   "sources": [
+    {
+     "url": "https://www.metrotrains.com.au/compensation-and-refunds/",
+     "quote": "In the case of a damaged or defective myki you can visit any premium station and receive a replacement card. Any existing balance on your old card will be transferred to the new one as part of the replacement process."
+    },
+    {
+     "url": "https://www.metrotrains.com.au/compensation-and-refunds/",
+     "quote": "In the case of a lost or stolen myki you will need to complete and submit a myki replacement form, available from the Transport Victoria website."
+    }
+   ],
+   "tags": [
+    "transport",
+    "myki",
+    "train"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "how-many-people-on-a-bicycle",
+   "question": {
+    "en": "How many people can one bicycle carry in Victoria?",
+    "zh": "在维州，一辆自行车可以载几个人？"
+   },
+   "aliases": [
+    "Child seat on a bicycle how many passengers",
+    "Penalty for carrying too many people on a bike",
+    "自行车装儿童座能坐几个人",
+    "超载骑车罚几个 penalty unit"
+   ],
+   "answer": {
+    "en": "The rider of a bicycle must not carry more people than the bicycle is designed to carry. The penalty is 3 penalty units. A single-seat bicycle with a child's seat attached is designed to carry 2 people, one on the bicycle seat and one on the child's seat.",
+    "zh": "骑自行车的人载的人数不得超过这辆自行车设计允许的人数。罚则是 3 个罚款单位（penalty unit）。装了儿童座的单人座自行车，设计上可以载 2 人，一人坐在自行车座上，一人坐在儿童座上。"
+   },
+   "sources": [
+    {
+     "url": "https://content.legislation.vic.gov.au/sites/default/files/2026-10/17-41sra027-authorised.pdf",
+     "quote": "The rider of a bicycle must not carry more persons on the bicycle than the bicycle is designed to carry. Penalty: 3 penalty units."
+    },
+    {
+     "url": "https://content.legislation.vic.gov.au/sites/default/files/2026-10/17-41sra027-authorised.pdf",
+     "quote": "A single-seat bicycle with a child's seat attached is designed to carry 2 people, one on the bicycle seat and one on the attached child's seat."
+    }
+   ],
+   "tags": [
+    "transport",
+    "bicycle"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "city-of-melbourne-shared-escooter-hire",
+   "question": {
+    "en": "Can I still hire an e-scooter in the City of Melbourne?",
+    "zh": "现在还能在墨尔本市政府范围内租共享电动滑板车吗？"
+   },
+   "aliases": [
+    "When did shared e-scooters stop in the CBD?",
+    "Do hired e-scooters work inside the City of Melbourne?",
+    "市中心共享电动滑板车还在吗",
+    "共享电动自行车还有多少辆"
+   ],
+   "answer": {
+    "en": "From 11.59pm on Tuesday 24 September 2024, shared e-scooters no longer operate in the City of Melbourne. An e-scooter hired in another council area powers down if ridden into the City of Melbourne, because that is outside the service zone. Shared e-bikes are unchanged, with up to 500 available across the municipality.",
+    "zh": "从 2024 年 9 月 24 日星期二 11.59pm 起，共享电动滑板车不再在墨尔本市政府范围内运营。在其他市政府租的电动滑板车如果骑进墨尔本市政府范围，会断电，因为这里在服务区之外。共享电动自行车没有变化，全市最多仍有 500 辆可用。"
+   },
+   "sources": [
+    {
+     "url": "https://www.melbourne.vic.gov.au/e-scooters",
+     "quote": "From 11.59pm, Tuesday 24 September 2024 shared e-scooters no longer operate in the municipality."
+    },
+    {
+     "url": "https://www.melbourne.vic.gov.au/e-scooters",
+     "quote": "The e-scooter will power down if you attempt to ride it into the City of Melbourne, as this is outside the service zone."
+    },
+    {
+     "url": "https://www.melbourne.vic.gov.au/e-scooters",
+     "quote": "There have been no changes to shared e-bikes, with up to 500 available for use across the municipality."
+    }
+   ],
+   "tags": [
+    "transport",
+    "escooter"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "escooter-licence-alcohol-and-passengers",
+   "question": {
+    "en": "Do I need a licence to ride an e-scooter in the City of Melbourne, and can I carry a passenger?",
+    "zh": "在墨尔本市政府范围内骑电动滑板车要驾照吗，能载人吗？"
+   },
+   "aliases": [
+    "E-scooter BAC limit Melbourne",
+    "No passengers on a private e-scooter",
+    "电动滑板车要不要驾照",
+    "电动滑板车血液酒精浓度"
+   ],
+   "answer": {
+    "en": "A licence is not necessary to ride an e-scooter. Everyone riding an e-scooter must have a blood alcohol concentration under 0.05. The City of Melbourne's listed rules include no passengers.",
+    "zh": "骑电动滑板车不需要驾照。所有骑电动滑板车的人，血液酒精浓度必须低于 0.05。墨尔本市政府列出的规则包括不得载客。"
+   },
+   "sources": [
+    {
+     "url": "https://www.melbourne.vic.gov.au/e-scooters",
+     "quote": "It's not necessary to have a licence to ride an e-scooter"
+    },
+    {
+     "url": "https://www.melbourne.vic.gov.au/e-scooters",
+     "quote": "Everyone riding an e-scooter must have a blood alcohol concentration (BAC) of under 0.05."
+    },
+    {
+     "url": "https://www.melbourne.vic.gov.au/e-scooters",
+     "quote": "No passengers."
+    }
+   ],
+   "tags": [
+    "transport",
+    "escooter"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "parking-a-private-escooter-melbourne",
+   "question": {
+    "en": "Where does the City of Melbourne say to park a private e-scooter?",
+    "zh": "墨尔本市政府让私人电动滑板车停在哪里？"
+   },
+   "aliases": [
+    "E-scooter parking distance from a building",
+    "Can I leave an e-scooter on the footpath?",
+    "电动滑板车能锁在自行车架上吗",
+    "停滑板车要离楼多远"
+   ],
+   "answer": {
+    "en": "The City of Melbourne says it is best to lock an e-scooter to a public bike rack. If none is available, park it upright on the kerbside at least 1.5 metres from any building, and do not block tactile surface ground indicators or pedestrian crossings.",
+    "zh": "墨尔本市政府表示，最好把电动滑板车锁在公共自行车架上。如果没有车架，就把它竖着停在路缘，离任何建筑物至少 1.5 米，并且不要挡住触觉地面指示或人行横道。"
+   },
+   "sources": [
+    {
+     "url": "https://www.melbourne.vic.gov.au/e-scooters",
+     "quote": "It's best to lock your e-scooter to a public bike rack, but if none are available then park it in an upright position on the kerbside leaving at least 1.5 metres from any building. Do not block tactile surface ground indicators or pedestrian crossings."
+    }
+   ],
+   "tags": [
+    "transport",
+    "escooter"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "authorised-officers-public-transport",
+   "question": {
+    "en": "What can public transport Authorised Officers do, and do they issue fines?",
+    "zh": "公共交通授权检查员能做什么，他们开罚款吗？"
+   },
+   "aliases": [
+    "Can an Authorised Officer ask for ID off the tram?",
+    "Do transport inspectors issue the fine themselves?",
+    "电车上的查票员能要证件吗",
+    "授权检查员自己开罚单吗"
+   ],
+   "answer": {
+    "en": "Authorised Officers can be seen on trains, trams and buses, and at stations and stops. They are employed by public transport operators to check tickets and are authorised by the Victorian Government. They can check a ticket and concession entitlement even after the passenger has left the vehicle or station, ask for a name, address and proof of identity, report the person to the Department of Transport and Planning, and arrest the person until the police arrive if the person does not comply. Authorised Officers do not issue warnings or fines.",
+    "zh": "在火车、电车、巴士上，以及车站和站点，都能看到授权检查员（Authorised Officers）。他们受公共交通运营商雇用，负责查票，并经维多利亚州政府授权。即使乘客已经离开车辆或车站，他们仍可以检查车票和优惠资格，可以要求提供姓名、地址和身份证明，可以把人报告给交通与规划部（Department of Transport and Planning），如果不配合，可以把人拘留到警察到来。授权检查员不开出警告或罚款。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vic.gov.au/authorised-officers",
+     "quote": "You can see them on trains, trams and buses. You may also see them at stations and stops."
+    },
+    {
+     "url": "https://www.vic.gov.au/authorised-officers",
+     "quote": "They're employed by public transport operators to check tickets, provide passenger information, improve safety and help during special events and disruptions. They receive ongoing training and are authorised by the Victorian Government."
+    },
+    {
+     "url": "https://www.vic.gov.au/authorised-officers",
+     "quote": "check your ticket and concession entitlement, even after you've left the vehicle or station ask to take your ticket for use as evidence ask for your name, address and proof of identity report you to the Department of Transport and Planning arrest you until the police arrive, if you don't comply"
+    },
+    {
+     "url": "https://www.vic.gov.au/authorised-officers",
+     "quote": "Authorised Officers don't issue warnings or fines."
+    }
+   ],
+   "tags": [
+    "transport"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "vline-daily-cap-and-long-distance-ticket",
+   "question": {
+    "en": "If I have already hit the daily fare cap, do I still need a ticket on a long-distance V/Line service?",
+    "zh": "当天票价已经封顶之后，坐长途 V/Line 还要车票吗？"
+   },
+   "aliases": [
+    "Daily cap and a separate V/Line journey",
+    "Unlimited travel after the fare cap",
+    "封顶之后长途火车还要票吗",
+    "同一天另一段 V/Line 要再买票吗"
+   ],
+   "answer": {
+    "en": "Once the daily fare cap is reached on a myki, eTicket or paper ticket anywhere on Victorian public transport, the passenger is entitled to unlimited travel for the rest of that calendar day. A valid ticket is still required on all long-distance V/Line services. A valid ticket is also required for a V/Line journey even if the fare cap was already reached on a different journey the same day.",
+    "zh": "在维多利亚州任何公共交通上，用 myki、电子票或纸质票达到当日票价上限后，乘客在该公历日剩下的时间里可以无限次乘车。所有长途 V/Line 服务仍然需要有效车票。即使当天另一次行程已经达到票价上限，这段 V/Line 行程也仍然需要有效车票。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vline.com.au/ticketing",
+     "quote": "If you have reached the daily fare cap while using any form of public transport in Victoria, on either a myki, eTicket or a paper ticket, you are entitled to unlimited travel for the remainder of that calendar day. You will still need a valid ticket on all long distance V/Line services."
+    },
+    {
+     "url": "https://www.vline.com.au/ticketing",
+     "quote": "Despite where you are travelling across the V/Line network, you will need a valid ticket for your journey, even if you have previously reached the fare cap on a different journey on the same day."
+    }
+   ],
+   "tags": [
+    "transport",
+    "vline",
+    "fare"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "vline-interstate-border-fare",
+   "question": {
+    "en": "Do V/Line trips across the Victorian border stay inside the regional fare cap?",
+    "zh": "V/Line 跨出维州边境还算在区域票价上限里吗？"
+   },
+   "aliases": [
+    "Albury and Mount Gambier regional fare cap",
+    "Extra fee for interstate V/Line over 60 kilometres",
+    "去 Albury 要加跨州费吗",
+    "离边境 60 公里以外的城镇"
+   ],
+   "answer": {
+    "en": "If an interstate destination is within 60 kilometres of the Victorian border, travel to that destination is covered as part of the regional fare cap. Destinations listed include Albury, Bombala, Bordertown, Deniliquin, Eden, Holbrook, Jerilderie, Keith, Lameroo, Merimbula, Mount Gambier and Woomargama. For destinations more than 60 kilometres from the Victorian border, an additional daily interstate travel fee applies.",
+    "zh": "如果州际目的地在维多利亚州边境 60 公里以内，前往该地的行程算在区域票价上限之内。页面列出的目的地包括 Albury、Bombala、Bordertown、Deniliquin、Eden、Holbrook、Jerilderie、Keith、Lameroo、Merimbula、Mount Gambier 和 Woomargama。距离维多利亚州边境超过 60 公里的目的地，要另收每日州际行程费。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vline.com.au/ticketing",
+     "quote": "If your interstate destination is within 60 kilometres of the Victorian border, your travel to that destination is covered as a part of the regional fare cap. These destinations include: Albury Bombala Bordertown Deniliquin Eden Holbrook Jerilderie Keith Lameroo Merimbula Mount Gambier Woomargama"
+    },
+    {
+     "url": "https://www.vline.com.au/ticketing",
+     "quote": "For travel to destinations greater than 60 kilometres from the Victorian border, an additional daily interstate travel fee will apply."
+    }
+   ],
+   "tags": [
+    "transport",
+    "vline",
+    "fare"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "vline-seat-reservations-half-price",
+   "question": {
+    "en": "Are V/Line seat reservations included in the half-price fares?",
+    "zh": "V/Line 的座位预订也按半价算吗？"
+   },
+   "aliases": [
+    "Half-price V/Line bookings from 1 June 2026",
+    "Group travel at the discounted V/Line fare",
+    "V/Line 订座是不是半价",
+    "团体票能按折扣价订吗"
+   ],
+   "answer": {
+    "en": "Public transport is half price for everyone, every day, from Monday 1 June 2026 until 1 January 2027. V/Line bookings and seat reservations recommenced from Monday 1 June 2026 at half price. Group travel bookings can also be made at the discounted price.",
+    "zh": "2026 年 6 月 1 日星期一至 2027 年 1 月 1 日，公共交通每天对所有人半价。V/Line 的订票和座位预订从 2026 年 6 月 1 日星期一起按半价恢复。团体出行也可以按折扣价预订。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vic.gov.au/half-price-travel",
+     "quote": "Public transport is half price across the state for everyone, every day, from Monday 1 June 2026 until 1 January 2027."
+    },
+    {
+     "url": "https://www.vic.gov.au/half-price-travel",
+     "quote": "Bookings and seat reservations will recommence from Monday 1 June 2026, at half price."
+    },
+    {
+     "url": "https://www.vic.gov.au/half-price-travel",
+     "quote": "Group travel bookings can also be made at the discounted price."
+    }
+   ],
+   "tags": [
+    "transport",
+    "vline",
+    "fare"
+   ],
+   "checked": "2026-11-01",
+   "valid_until": "2027-01-01",
+   "note": {
+    "en": "valid_until is 1 January 2027, the end date the half-price page gives for this discount.",
+    "zh": "valid_until 是 2027 年 1 月 1 日，即半价页面为这项折扣写明的结束日期。"
+   }
+  },
+  {
+   "id": "vline-paper-ticket-local-buses",
+   "question": {
+    "en": "Does a V/Line paper ticket include local bus travel at each end?",
+    "zh": "V/Line 纸质票包含两端的本地巴士吗？"
+   },
+   "aliases": [
+    "Two hours of local bus travel with a V/Line eTicket",
+    "Paper ticket before the daily cap local buses",
+    "V/Line 车票含不含当地巴士",
+    "没到每日封顶时纸质票能坐几小时巴士"
+   ],
+   "answer": {
+    "en": "If a paper ticket or eTicket has not reached the daily fare cap, it includes two hours of free travel on the local bus networks at the origin and destination, on either side of the V/Line journey. This is the inclusion stated for a ticket that has not reached the cap.",
+    "zh": "如果纸质票或电子票还没有达到当日票价上限，票里包含 V/Line 行程两端、出发地和目的地当地巴士网络上两小时的免费乘车。这是针对尚未达到上限的车票写明的包含内容。"
+   },
+   "sources": [
+    {
+     "url": "https://www.vline.com.au/ticketing",
+     "quote": "If you are travelling using a paper ticket or eTicket, and have not reached the daily fare cap, your ticket includes two-hours of free travel on the local bus networks at your origin and destination, either side of your V/Line journey."
+    }
+   ],
+   "tags": [
+    "transport",
+    "vline",
+    "bus"
+   ],
+   "checked": "2026-11-01"
+  }
+ ]
+}
