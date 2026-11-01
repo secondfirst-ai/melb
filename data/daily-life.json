@@ -4,7 +4,7 @@
   "en": "Daily life in Melbourne and Victoria, answered from official sources",
   "zh": "墨尔本和维州日常生活问答（答案来自官方出处）"
  },
- "updated": "2026-10-30",
+ "updated": "2026-11-01",
  "notes": [
   {
    "en": "Each answer is limited to what the cited official page says, with a verbatim quote and the date we checked it. If a question isn't here, we don't have a checked answer.",
@@ -1811,6 +1811,127 @@
     "en": "This page is about retail sale rules; national vape import and supply reforms are covered separately by the Therapeutic Goods Administration.",
     "zh": "本页说明零售销售规则；全国性的电子烟进口和供应改革由药品管理局（TGA）另行说明。"
    }
+  },
+  {
+   "id": "city-of-melbourne-hard-waste-collection",
+   "question": {
+    "en": "How much hard waste can City of Melbourne residents have collected for free?",
+    "zh": "墨尔本市居民可以免费收走多少硬垃圾？"
+   },
+   "aliases": [
+    "City of Melbourne hard rubbish collection allowance",
+    "Melbourne council free hard waste apartment",
+    "墨尔本市政厅免费收硬垃圾",
+    "墨尔本公寓怎么预约硬垃圾"
+   ],
+   "answer": {
+    "en": "City of Melbourne residents get one free hard waste collection of one cubic metre per financial year. People living in a high-rise building can ask their building manager to book a collection for them.",
+    "zh": "墨尔本市居民每个财政年度可以享受一次免费硬垃圾收集，限一立方米。住在高层建筑的居民可以请楼宇管理员代为预约。"
+   },
+   "sources": [
+    {
+     "url": "https://www.melbourne.vic.gov.au/hard-waste",
+     "quote": "We offer City of Melbourne residents one free hard waste collection of one cubic metre per financial year. If you live in a high rise building, you can ask your building manager to book a collection for you."
+    }
+   ],
+   "tags": [
+    "hard-waste",
+    "city-of-melbourne"
+   ],
+   "checked": "2026-11-01",
+   "valid_until": "2027-06-30"
+  },
+  {
+   "id": "victoria-pet-registration-renewal",
+   "question": {
+    "en": "When is dog or cat registration renewed in Victoria?",
+    "zh": "维州的狗或猫登记什么时候续期？"
+   },
+   "aliases": [
+    "When do I renew my pet registration?",
+    "Victorian cat and dog registration renewal date",
+    "维州宠物登记续期日期",
+    "狗猫注册每年什么时候续"
+   ],
+   "answer": {
+    "en": "Pet registration is renewed each year by 10 April. Registration fees are set by the local council and vary depending on several factors.",
+    "zh": "宠物登记每年须在 4 月 10 日前续期。登记费用由当地 council 制定，并因多种因素而异。"
+   },
+   "sources": [
+    {
+     "url": "https://agriculture.vic.gov.au/livestock-and-animals/animal-welfare-victoria/domestic-animals-act/registration-legislation-and-permits/dog-and-cat-registration/dog-and-cat-registration-fees",
+     "quote": "Don't forget to renew your pet's registration each year by 10 April."
+    },
+    {
+     "url": "https://agriculture.vic.gov.au/livestock-and-animals/animal-welfare-victoria/domestic-animals-act/registration-legislation-and-permits/dog-and-cat-registration/dog-and-cat-registration-fees",
+     "quote": "Registration fees are set by your local council, and vary depending on a number of factors."
+    }
+   ],
+   "tags": [
+    "pets",
+    "registration"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "bom-heatwave-warning-when-issued",
+   "question": {
+    "en": "When does the Bureau of Meteorology issue heatwave warnings?",
+    "zh": "澳大利亚气象局什么时候发布热浪预警？"
+   },
+   "aliases": [
+    "BOM severe extreme heatwave warnings",
+    "When are heatwave warnings issued?",
+    "气象局热浪预警什么时候发布",
+    "什么情况会有热浪警报"
+   ],
+   "answer": {
+    "en": "The Bureau of Meteorology issues heatwave warnings for severe or extreme heatwave conditions. These warnings alert people that a heat hazard is forecast within the next 4 days.",
+    "zh": "澳大利亚气象局会针对严重或极端热浪发布预警。这些预警提示未来 4 天内预计有高温危险。"
+   },
+   "sources": [
+    {
+     "url": "https://www.bom.gov.au/resources/learn-and-explore/heatwave-knowledge-centre/heatwave-services",
+     "quote": "We issue a heatwave warning for severe or extreme heatwave conditions. These warnings alert Australians that a heat hazard is forecast within the next 4 days."
+    }
+   ],
+   "tags": [
+    "weather",
+    "heatwave"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "australia-what-is-rip-current",
+   "question": {
+    "en": "What is a rip current at an Australian beach?",
+    "zh": "澳大利亚海滩的离岸流是什么？"
+   },
+   "aliases": [
+    "What is a rip at the beach?",
+    "How do rip currents move?",
+    "海滩离岸流是什么",
+    "裂流会往哪里流"
+   ],
+   "answer": {
+    "en": "Rip currents are strong currents that begin near the shore and run away from the beach. Some run parallel to the beach before heading out to sea.",
+    "zh": "离岸流是从海岸附近开始、流离海滩的强水流。有些离岸流会先沿着海滩平行流动，再流向大海。"
+   },
+   "sources": [
+    {
+     "url": "https://www.healthdirect.gov.au/healthy-living/weather-and-environment/beach-safety",
+     "quote": "Rips are strong currents that begin near the shore and run away from the beach."
+    },
+    {
+     "url": "https://www.healthdirect.gov.au/healthy-living/weather-and-environment/beach-safety",
+     "quote": "Some may run parallel to the beach before heading out to sea."
+    }
+   ],
+   "tags": [
+    "beach",
+    "water-safety"
+   ],
+   "checked": "2026-11-01"
   }
  ]
 }

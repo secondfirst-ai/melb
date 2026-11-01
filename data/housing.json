@@ -4,7 +4,7 @@
   "en": "Housing in Melbourne and Victoria: renting, bonds, utilities and buying, answered from official sources",
   "zh": "墨尔本与维州住房问答：租房、押金、水电气与买房（答案来自官方出处）"
  },
- "updated": "2026-10-30",
+ "updated": "2026-11-01",
  "notes": [
   {
    "en": "Each answer is limited to what the cited official page says, with a verbatim quote and the date we checked it. If a question isn't here, we don't have a checked answer.",
@@ -1592,6 +1592,163 @@
     "esc"
    ],
    "checked": "2026-10-30"
+  },
+  {
+   "id": "victoria-switch-energy-retailer",
+   "question": {
+    "en": "What happens when I switch electricity or gas retailers in Victoria?",
+    "zh": "在维州更换电力或燃气零售商会发生什么？"
+   },
+   "aliases": [
+    "How do I change energy retailers in Victoria?",
+    "Does power get disconnected when switching energy companies?",
+    "维州换电力公司会断电吗",
+    "更换燃气供应商怎么办"
+   ],
+   "answer": {
+    "en": "After a customer chooses to switch, the new retailer handles the change, including notifying the current retailer. Electricity or gas supply is not interrupted when changing contracts or moving to a different retailer.",
+    "zh": "客户决定更换后，新零售商会处理转换事宜，包括通知现有零售商。更换合同或转到其他零售商时，电力或燃气供应不会中断。"
+   },
+   "sources": [
+    {
+     "url": "https://www.energy.vic.gov.au/households/save-energy-and-money/compare-energy-offers?rcCode=4597",
+     "quote": "After choosing to switch, your new retailer will take care of everything for you, including notifying your current retailer."
+    },
+    {
+     "url": "https://www.energy.vic.gov.au/households/save-energy-and-money/compare-energy-offers?rcCode=4597",
+     "quote": "Your electricity or gas supply will not be interrupted when you change contracts or move to a different retailer."
+    }
+   ],
+   "tags": [
+    "electricity",
+    "gas",
+    "retailer"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "victoria-energy-contract-cooling-off",
+   "question": {
+    "en": "Can I change my mind after signing a new energy contract in Victoria?",
+    "zh": "在维州签了新的能源合同后还能反悔吗？"
+   },
+   "aliases": [
+    "Energy contract cooling off period Victoria",
+    "Cancel new electricity contract cooling off",
+    "维州电力合同冷静期",
+    "能源合同签完可以取消吗"
+   ],
+   "answer": {
+    "en": "There are 10 business days to change your mind after receiving the signed contract. This is called the cooling off period.",
+    "zh": "收到签好的合同后，有 10 个工作日可以改变主意。这段时间称为冷静期。"
+   },
+   "sources": [
+    {
+     "url": "https://www.energy.vic.gov.au/households/save-energy-and-money/compare-energy-offers?rcCode=4597",
+     "quote": "You have 10 business days to change your mind after receiving the signed contract. This is known as the 'cooling off' period."
+    }
+   ],
+   "tags": [
+    "electricity",
+    "gas",
+    "cooling-off"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "victoria-energy-assistance-program",
+   "question": {
+    "en": "What is Victoria’s Energy Assistance Program?",
+    "zh": "维州的 Energy Assistance Program 是什么？"
+   },
+   "aliases": [
+    "Is the Energy Assistance Program free?",
+    "Help with Victorian energy bills",
+    "维州能源账单援助计划",
+    "电费账单援助服务是否免费"
+   ],
+   "answer": {
+    "en": "The Energy Assistance Program is a free Victorian Government service. It can help with energy bills by checking whether customers are paying more than they need to and sorting out issues.",
+    "zh": "Energy Assistance Program 是维州政府的一项免费服务。它可以帮助检查用户的能源账单是否付得过多，并协助解决问题。"
+   },
+   "sources": [
+    {
+     "url": "https://www.energy.vic.gov.au/households/help-paying-your-energy-bills/energy-assistance-program",
+     "quote": "The Energy Assistance Program is a free Victorian Government service. It can help you save money on your energy bills by checking you’re not paying more than you need to and sorting out any issues you may have."
+    }
+   ],
+   "tags": [
+    "energy",
+    "bills",
+    "assistance"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "victoria-annual-electricity-concession-apply",
+   "question": {
+    "en": "How do I apply for the Victorian Annual Electricity Concession?",
+    "zh": "维州年度电费优惠怎么申请？"
+   },
+   "aliases": [
+    "Apply for annual electricity concession",
+    "How to give concession card details for electricity bills",
+    "维州电费优惠如何申请",
+    "电费减免怎么提供优惠卡"
+   ],
+   "answer": {
+    "en": "Concession card details must be provided to the electricity retailer to receive the Annual Electricity Concession. The retailer checks the card details with Centrelink and applies the concession to the bill.",
+    "zh": "要领取年度电费优惠，需要向电力零售商提供优惠卡资料。零售商会向 Centrelink 核对卡片资料，并将优惠应用到账单。"
+   },
+   "sources": [
+    {
+     "url": "https://services.dffh.vic.gov.au/annual-electricity-concession",
+     "quote": "You must provide your concession card details to your electricity retailer in order to receive the Annual electricity concession."
+    },
+    {
+     "url": "https://services.dffh.vic.gov.au/annual-electricity-concession",
+     "quote": "Your retailer will check your card details with Centrelink and apply the concession to your bill."
+    }
+   ],
+   "tags": [
+    "electricity",
+    "concession"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "victoria-utility-relief-grant",
+   "question": {
+    "en": "What is Victoria’s Utility Relief Grant Scheme?",
+    "zh": "维州的 Utility Relief Grant Scheme 是什么？"
+   },
+   "aliases": [
+    "Help with overdue water or energy bills in Victoria",
+    "Can renters get a utility relief grant?",
+    "维州水电燃气账单救助金",
+    "租房的人能申请水电救助吗"
+   ],
+   "answer": {
+    "en": "The grant helps pay a mains electricity, gas or water bill overdue because of a temporary financial crisis. It is available to renters and homeowners.",
+    "zh": "这项救助金帮助支付因暂时经济危机而逾期的市政供电、燃气或水费账单。租房者和房主都可以申请。"
+   },
+   "sources": [
+    {
+     "url": "https://services.dffh.vic.gov.au/utility-relief-grant-scheme",
+     "quote": "The grant provides help to pay a mains electricity, gas or water bill that is overdue due to a temporary financial crisis."
+    },
+    {
+     "url": "https://services.dffh.vic.gov.au/utility-relief-grant-scheme",
+     "quote": "The grant is available to renters and homeowners."
+    }
+   ],
+   "tags": [
+    "electricity",
+    "water",
+    "gas",
+    "hardship"
+   ],
+   "checked": "2026-11-01"
   }
  ]
 }

@@ -4,7 +4,7 @@
   "en": "Councils, government services and documents in Melbourne and Victoria, answered from official sources",
   "zh": "墨尔本与维州的市政府、政府服务和证件问答（答案来自官方出处）"
  },
- "updated": "2026-10-30",
+ "updated": "2026-11-01",
  "notes": [
   {
    "en": "Each answer is limited to what the cited official page says, with a verbatim quote and the date we checked it. If a question isn't here, we don't have a checked answer.",
@@ -1930,6 +1930,67 @@
     "boroondara"
    ],
    "checked": "2026-10-30"
+  },
+  {
+   "id": "yarra-pensioner-rates-rebate",
+   "question": {
+    "en": "Does Yarra City Council offer pensioner rates rebates?",
+    "zh": "Yarra 市政厅有养老金领取者的市政费减免吗？"
+   },
+   "aliases": [
+    "Yarra pensioner rate concession",
+    "Yarra council rates rebate primary residence",
+    "Yarra 市政费养老金优惠",
+    "Yarra pensioner rates 减免"
+   ],
+   "answer": {
+    "en": "Yarra City Council has pensioner rebates. If an application is accepted, all three listed rebates are applied, and rebates apply only to the primary place of residence.",
+    "zh": "Yarra 市政厅提供养老金领取者减免。申请获批后，列出的三项减免都会应用，而且减免仅适用于主要居所。"
+   },
+   "sources": [
+    {
+     "url": "https://www.yarracity.vic.gov.au/residents/rates-and-valuations/pensioner-rebates",
+     "quote": "If your application is accepted, all three rebates will be applied. Rebates are only applied to your primary place of residence."
+    }
+   ],
+   "tags": [
+    "rates",
+    "concession",
+    "yarra"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "city-of-melbourne-residential-parking-permit",
+   "question": {
+    "en": "Who can apply for a City of Melbourne residential parking permit?",
+    "zh": "谁可以申请墨尔本市居民停车许可？"
+   },
+   "aliases": [
+    "Melbourne council residential parking permit eligibility",
+    "Can CBD residents get a City of Melbourne parking permit?",
+    "墨尔本市居民停车许可资格",
+    "CBD 住宅可以申请市政停车证吗"
+   ],
+   "answer": {
+    "en": "City of Melbourne residents at eligible addresses can apply for a residential parking permit. Residential parking permits are not available in the central city (CBD) or Docklands.",
+    "zh": "住在符合条件地址的墨尔本市居民可以申请居民停车许可。市中心（CBD）和 Docklands 不提供居民停车许可。"
+   },
+   "sources": [
+    {
+     "url": "https://www.melbourne.vic.gov.au/residential-parking-permits",
+     "quote": "If you're a resident of the City of Melbourne living at an eligible address, you can apply for a residential parking permit."
+    },
+    {
+     "url": "https://www.melbourne.vic.gov.au/residential-parking-permits",
+     "quote": "Residential parking permits are not available in the central city (CBD) or Docklands."
+    }
+   ],
+   "tags": [
+    "parking",
+    "city-of-melbourne"
+   ],
+   "checked": "2026-11-01"
   }
  ]
 }

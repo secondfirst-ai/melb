@@ -4,7 +4,7 @@
   "en": "Official services and information in Chinese",
   "zh": "中文官方服务与信息"
  },
- "updated": "2026-10-30",
+ "updated": "2026-11-01",
  "notes": [
   {
    "en": "Each answer is limited to what the cited official page says, with a verbatim quote and the date we checked it. If a question isn't here, we don't have a checked answer.",
@@ -1888,6 +1888,101 @@
     "chinese-website"
    ],
    "checked": "2026-10-30"
+  },
+  {
+   "id": "services-australia-centrelink-chinese-phone",
+   "question": {
+    "en": "How can I speak to Centrelink in Chinese?",
+    "zh": "怎样用中文咨询 Centrelink 福利金？"
+   },
+   "aliases": [
+    "Centrelink Chinese language phone number",
+    "When can I call Centrelink in Chinese?",
+    "Centrelink 中文热线号码",
+    "用中文打 Centrelink 电话"
+   ],
+   "answer": {
+    "en": "To discuss Centrelink payments in Chinese, call 131 202 between 8 am and 5 pm, Monday to Friday. Services Australia provides services and information in Chinese.",
+    "zh": "用中文咨询 Centrelink 福利金，可以在周一至周五上午 8 点至下午 5 点拨打 131 202。Services Australia 提供中文服务与信息。"
+   },
+   "sources": [
+    {
+     "url": "https://www.servicesaustralia.gov.au/sites/default/files/2026-03/16532-2602zh.pdf",
+     "quote": "我们可用中文为您提供服务与信息。"
+    },
+    {
+     "url": "https://www.servicesaustralia.gov.au/sites/default/files/2026-03/16532-2602zh.pdf",
+     "quote": "如需用中文咨询 Centrelink 福利金事宜，请在周一至周五上午 8 点至下午 5 点拨打 131 202。"
+    }
+   ],
+   "tags": [
+    "centrelink",
+    "chinese",
+    "phone"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "services-australia-medicare-free-interpreter",
+   "question": {
+    "en": "Can I get an interpreter when calling Medicare?",
+    "zh": "打 Medicare 电话时可以要求口译员吗？"
+   },
+   "aliases": [
+    "Medicare telephone interpreter free",
+    "How to get an interpreter for a Medicare call",
+    "Medicare 电话免费口译",
+    "打医保电话需要翻译"
+   ],
+   "answer": {
+    "en": "When calling Medicare on 132 011, a caller can ask for an interpreter. Services Australia will arrange an interpreter for free when told.",
+    "zh": "拨打 Medicare 电话 132 011 时，可以要求口译服务。告知工作人员后，Services Australia 会免费安排口译员。"
+   },
+   "sources": [
+    {
+     "url": "https://www.servicesaustralia.gov.au/sites/default/files/2026-03/16532-2602zh.pdf",
+     "quote": "致电 Medicare（132 011） 或 Child Support （131 272） 时，也可要求口译服务。 请告知工作人员，我们会为您免费安排口译员。"
+    }
+   ],
+   "tags": [
+    "medicare",
+    "interpreter",
+    "chinese"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "fair-work-anonymous-report-chinese",
+   "question": {
+    "en": "Can I report a workplace issue anonymously to the Fair Work Ombudsman?",
+    "zh": "可以向 Fair Work Ombudsman 匿名举报工作场所问题吗？"
+   },
+   "aliases": [
+    "Can I anonymously report a workplace law breach to Fair Work?",
+    "Fair Work workplace complaint in Chinese",
+    "怎么匿名举报违反工作法规",
+    "中文举报职场问题会被联系吗"
+   ],
+   "answer": {
+    "en": "A person concerned that someone is not following workplace laws can report it anonymously to the Fair Work Ombudsman. The agency says it will not contact the person, but the information may be shared with other federal, state or territory agencies.",
+    "zh": "担心有人没有遵守工作场所法规的人可以向 Fair Work Ombudsman 匿名举报。该机构表示不会联系举报人，但举报信息可能与其他联邦、州或领地机构共享。"
+   },
+   "sources": [
+    {
+     "url": "https://www.fairwork.gov.au/tools-and-resources/language-help/simplified-chinese/issues-in-the-workplace",
+     "quote": "如果你担心有人没有遵守工作场所法规，但是不希望牵涉自己，你可以向我们匿名举报。"
+    },
+    {
+     "url": "https://www.fairwork.gov.au/tools-and-resources/language-help/simplified-chinese/issues-in-the-workplace",
+     "quote": "我们不会联络你，但是你提供的信息： 将能帮助我们规划当前与未来如何采取行动 可能与其他联邦、州或领地部门机构共享。"
+    }
+   ],
+   "tags": [
+    "fair-work",
+    "chinese",
+    "workplace"
+   ],
+   "checked": "2026-11-01"
   }
  ]
 }
