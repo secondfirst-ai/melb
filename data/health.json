@@ -4,7 +4,7 @@
     "en": "Health in Melbourne and Victoria, answered from official sources",
     "zh": "墨尔本与维州健康问答（答案来自官方出处）"
   },
-  "updated": "2026-10-30",
+  "updated": "2026-11-01",
   "notes": [
     {
       "en": "Each answer is limited to what the cited official page says, with a verbatim quote and the date we checked it. This is a public reference, not personal medical advice.",
@@ -1304,6 +1304,94 @@
         "cost"
       ],
       "checked": "2026-10-30"
+    },
+    {
+      "id": "medicare-mental-health-treatment-plan-sessions",
+      "question": {
+        "en": "How many mental health sessions can a Medicare mental health treatment plan cover?",
+        "zh": "Medicare 心理健康治疗计划每年可以报销多少次？"
+      },
+      "aliases": [
+        "How many mental health sessions can I claim?",
+        "Medicare mental health plan yearly session limit",
+        "心理健康计划每年几次",
+        "Medicare 心理咨询报销次数"
+      ],
+      "answer": {
+        "en": "With a mental health treatment plan and a doctor’s referral, a person can claim a Medicare rebate for up to 10 individual and 10 group sessions with a mental health professional each calendar year. Health professionals set their own fees, so Medicare may cover only part of the cost.",
+        "zh": "有心理健康治疗计划和医生转诊时，每个日历年可申请 Medicare 报销最多 10 次个人和 10 次团体心理健康专业人员的治疗。医疗专业人员自行定价，因此 Medicare 可能只承担部分费用。"
+      },
+      "sources": [
+        {
+          "url": "https://www.healthdirect.gov.au/healthcare-and-services/costs-and-financial-support/how-do-i-pay-for-healthcare",
+          "quote": "You can claim a Medicare rebate for up to 10 individual sessions and 10 group sessions (Opens in new tab) each calendar year with a mental health professional. To do this, you need a mental health treatment plan and referral from your doctor."
+        },
+        {
+          "url": "https://www.healthdirect.gov.au/healthcare-and-services/costs-and-financial-support/how-do-i-pay-for-healthcare",
+          "quote": "Medicare may only cover part of the cost, as health professionals set their own fees."
+        }
+      ],
+      "tags": [
+        "medicare",
+        "mental-health"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "national-immunisation-schedule-cost",
+      "question": {
+        "en": "Are National Immunisation Program vaccines free in Victoria?",
+        "zh": "维州的国家免疫计划疫苗免费吗？"
+      },
+      "aliases": [
+        "Are NIP vaccines free?",
+        "Can vaccination providers charge a consultation fee for NIP vaccines?",
+        "国家免疫计划疫苗要付费吗",
+        "免费疫苗是否要付诊费"
+      ],
+      "answer": {
+        "en": "National Immunisation Program and Victorian Government funded vaccines are free for eligible age groups. The immunisation provider may charge a consultation fee for the visit.",
+        "zh": "国家免疫计划和维州政府资助的疫苗对符合年龄条件的人免费。疫苗接种服务人员可能收取就诊的诊费。"
+      },
+      "sources": [
+        {
+          "url": "https://www.betterhealth.vic.gov.au/health/healthyliving/Immunisation-common-questions",
+          "quote": "All National Immunisation Program (NIP) and Victorian Government funded vaccines are provided free of charge for eligible age groups. While the routine vaccines are free, your immunisation provider may charge a consultation fee for the visit."
+        }
+      ],
+      "tags": [
+        "vaccination",
+        "immunisation"
+      ],
+      "checked": "2026-11-01"
+    },
+    {
+      "id": "national-immunisation-free-pregnancy-vaccines",
+      "question": {
+        "en": "Which vaccines are free during pregnancy in Victoria?",
+        "zh": "在维州怀孕期间有哪些免费疫苗？"
+      },
+      "aliases": [
+        "Free vaccines for pregnant women in Australia",
+        "NIP pregnancy influenza pertussis RSV vaccines",
+        "孕期免费疫苗有哪些",
+        "怀孕能免费打哪些疫苗"
+      ],
+      "answer": {
+        "en": "Influenza and whooping cough vaccines are free during every pregnancy. A free respiratory syncytial virus (RSV) vaccine is available to pregnant women under the National Immunisation Program.",
+        "zh": "每次怀孕期间都可以免费接种流感和百日咳疫苗。国家免疫计划也向孕妇提供免费的呼吸道合胞病毒（RSV）疫苗。"
+      },
+      "sources": [
+        {
+          "url": "https://www.betterhealth.vic.gov.au/health/healthyliving/immunisation-and-pregnancy",
+          "quote": "All women should receive free influenza and whooping cough vaccines during every pregnancy. A free respiratory syncytial virus (RSV) vaccine is now available to pregnant women under the National Immunisation Program (NIP)."
+        }
+      ],
+      "tags": [
+        "vaccination",
+        "pregnancy"
+      ],
+      "checked": "2026-11-01"
     }
   ]
 }
