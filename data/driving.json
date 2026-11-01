@@ -464,37 +464,6 @@
    "checked": "2026-11-01"
   },
   {
-   "id": "victoria-lost-fine-find-details",
-   "question": {
-    "en": "How can I find a lost fine in Victoria?",
-    "zh": "在维州把罚单弄丢了，怎么查找？"
-   },
-   "aliases": [
-    "Lost infringement notice Victoria",
-    "Find a lost traffic fine Fines Victoria",
-    "维州罚单丢了怎么查",
-    "找不到交通罚单怎么办"
-   ],
-   "answer": {
-    "en": "If you have another open fine in your name, you can use the obligation number, infringement number or court case number on its notice to log in to Your fines and view your current fines. If you have no other fines and need help with a lost fine, contact Fines Victoria.",
-    "zh": "如果你名下还有其他未结罚单，可以用该通知上的 obligation number、infringement number 或 court case number 登录 Your fines，查看当前罚单。如果没有其他罚单，又需要帮助查找遗失的罚单，可以联系 Fines Victoria。"
-   },
-   "sources": [
-    {
-     "url": "https://online.fines.vic.gov.au/Infringement-fines/Infringement-fine-FAQs",
-     "quote": "If you have another open fine in your name, you can go to Your fines and use the obligation number, infringement number or court case number on your notice to log in. Once logged in, you will be able to view a full list of your current fines."
-    },
-    {
-     "url": "https://online.fines.vic.gov.au/Infringement-fines/Infringement-fine-FAQs",
-     "quote": "If you don’t have any other fines and need help regarding a lost fine, contact us."
-    }
-   ],
-   "tags": [
-    "fines"
-   ],
-   "checked": "2026-11-01"
-  },
-  {
    "id": "victoria-fine-review-how-many",
    "question": {
     "en": "How many times can I request a review of a Victorian fine?",
