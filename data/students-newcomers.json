@@ -1,0 +1,1169 @@
+{
+ "dataset": "melb-students-newcomers",
+ "title": {
+  "en": "Students and newcomers in Melbourne: questions answered from official sources",
+  "zh": "墨尔本留学生与新来者问答（答案来自官方出处）"
+ },
+ "updated": "2026-11-01",
+ "notes": [],
+ "records": [
+  {
+   "id": "oshc-what-is-it",
+   "question": {
+    "en": "What is OSHC for international students?",
+    "zh": "留学生的 OSHC 是什么？"
+   },
+   "aliases": [
+    "What does OSHC mean for students?",
+    "留学生医疗保险 OSHC 是什么"
+   ],
+   "answer": {
+    "en": "OSHC is health insurance for international students living and studying in Australia. It helps meet medical and hospital care costs they may need while in Australia.",
+    "zh": "OSHC 是供在澳大利亚生活和学习的留学生使用的医疗保险。它帮助支付留学生在澳期间可能需要的医疗和住院费用。"
+   },
+   "sources": [
+    {
+     "url": "https://www.studyaustralia.gov.au/en/tools-and-resources/tips-and-advice-for-students/oshc-what-international-students-need-to-know",
+     "quote": "OSHC is health insurance cover for international students living and studying in Australia."
+    },
+    {
+     "url": "https://www.privatehealth.gov.au/health_insurance/overseas/overseas_student_health_cover.htm",
+     "quote": "OSHC assists international students to meet the costs of medical and hospital care they may need while in Australia."
+    }
+   ],
+   "tags": [
+    "oshc",
+    "health"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "oshc-student-visa-duration",
+   "question": {
+    "en": "How long must a temporary student visa holder keep OSHC?",
+    "zh": "持临时学生签证需要一直保留 OSHC 吗？"
+   },
+   "aliases": [
+    "When can I stop my student health cover?",
+    "学生签证的医疗保险要保多久"
+   ],
+   "answer": {
+    "en": "A student from overseas on a temporary student visa must maintain OSHC for the duration of the visa as a visa condition. The policy needs to be kept up to date while the student is in Australia and holds a student visa.",
+    "zh": "持临时学生签证的海外学生须按照签证条件在签证有效期内维持 OSHC。学生在澳大利亚持学生签证期间，需要保持保单有效。"
+   },
+   "sources": [
+    {
+     "url": "https://www.privatehealth.gov.au/health_insurance/overseas/overseas_student_health_cover.htm",
+     "quote": "If you are a student from overseas on a temporary student visa, it is a condition of your visa to maintain Overseas Student Health Cover (OSHC) for the duration of your visa."
+    },
+    {
+     "url": "https://www.privatehealth.gov.au/health_insurance/overseas/overseas_student_health_cover.htm",
+     "quote": "This means you need to purchase Overseas Student Health Cover (OSHC) and keep your policy up to date whilst you are in Australia and holding a student visa."
+    }
+   ],
+   "tags": [
+    "oshc",
+    "visa"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "oshc-dependants-cover",
+   "question": {
+    "en": "Do dependants of international students need OSHC?",
+    "zh": "留学生的家属也需要 OSHC 吗？"
+   },
+   "aliases": [
+    "Does my spouse need student health cover?",
+    "留学生配偶和孩子需要医疗保险吗"
+   ],
+   "answer": {
+    "en": "International students undertaking formal studies in Australia and their dependants must have OSHC. Dependants include spouses and children under 18.",
+    "zh": "在澳大利亚接受正规教育的留学生及其受抚养家属都必须有 OSHC。受抚养家属包括配偶和未满 18 岁的子女。"
+   },
+   "sources": [
+    {
+     "url": "https://www.studyaustralia.gov.au/en/plan-your-move/overseas-student-health-cover-oshc",
+     "quote": "International students undertaking formal studies in Australia and their dependents (including spouses and children under 18) must have OSHC."
+    }
+   ],
+   "tags": [
+    "oshc",
+    "family"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "oshc-expired-student-visa",
+   "question": {
+    "en": "Can I keep OSHC after my student visa expires?",
+    "zh": "学生签证过期后还能保留 OSHC 吗？"
+   },
+   "aliases": [
+    "Does OSHC continue after my visa expires?",
+    "学生签证到期后 OSHC 怎么办"
+   ],
+   "answer": {
+    "en": "When a student visa expires, the holder is no longer eligible for OSHC. PrivateHealth.gov.au says they can then switch to residents’ cover or Overseas Visitors Health Cover.",
+    "zh": "学生签证到期后，持有人不再符合 OSHC 的投保资格。PrivateHealth.gov.au 表示，此后可以转为居民医疗保险或海外访客医疗保险。"
+   },
+   "sources": [
+    {
+     "url": "https://www.privatehealth.gov.au/health_insurance/overseas/overseas_student_health_cover.htm",
+     "quote": "When your student visa expires, then you are no longer eligible to hold OSHC."
+    },
+    {
+     "url": "https://www.privatehealth.gov.au/health_insurance/overseas/overseas_student_health_cover.htm",
+     "quote": "You can then swap over to a residents' cover or to an Overseas Visitors Health Cover plan."
+    }
+   ],
+   "tags": [
+    "oshc",
+    "visa"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "oshc-arrears-claims",
+   "question": {
+    "en": "Can I claim OSHC for treatment while my premiums were overdue?",
+    "zh": "OSHC 欠费期间看病还能报销吗？"
+   },
+   "aliases": [
+    "Will OSHC pay for treatment during a payment gap?",
+    "学生保险欠费时的医疗费能报吗"
+   ],
+   "answer": {
+    "en": "If payments or renewal fall behind, cover can be continued. However, services received while in arrears may not be claimable.",
+    "zh": "如果保费或续保逾期，保险仍可继续。但欠费期间接受的服务可能无法申请报销。"
+   },
+   "sources": [
+    {
+     "url": "https://www.privatehealth.gov.au/health_insurance/overseas/overseas_student_health_cover.htm",
+     "quote": "If you do fall behind in payments or renewing your cover, you will be able to continue your cover but you may not be able to claim for services you received while you were in arrears."
+    }
+   ],
+   "tags": [
+    "oshc",
+    "claims"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "oshc-dental-optical-physio",
+   "question": {
+    "en": "Does basic OSHC cover dental, glasses and physiotherapy?",
+    "zh": "基础 OSHC 包牙科、眼镜和物理治疗吗？"
+   },
+   "aliases": [
+    "Does student health insurance cover a dentist?",
+    "留学生保险报销牙医和配镜吗"
+   ],
+   "answer": {
+    "en": "OSHC does not cover general treatment such as dental, optical or physiotherapy. Extras OSHC or general treatment cover from an Australian private health insurer can cover these treatments.",
+    "zh": "OSHC 不涵盖牙科、眼科及配镜或物理治疗等一般治疗项目。OSHC 附加保险或澳大利亚私人医疗保险公司的普通治疗保险可以涵盖这些治疗。"
+   },
+   "sources": [
+    {
+     "url": "https://www.privatehealth.gov.au/health_insurance/overseas/overseas_student_health_cover.htm",
+     "quote": "OSHC does not pay for general treatment (ancillary, or extras cover) such as dental, optical or physiotherapy."
+    },
+    {
+     "url": "https://www.privatehealth.gov.au/health_insurance/overseas/overseas_student_health_cover.htm",
+     "quote": "If you require cover for these treatments, you may take Extras OSHC provided by an OSHC provider or general treatment cover with any Australian private health insurer."
+    }
+   ],
+   "tags": [
+    "oshc",
+    "dental"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "oshc-gap-fees",
+   "question": {
+    "en": "Why might I have to pay a gap fee with OSHC?",
+    "zh": "有 OSHC 为什么看病还要付差额？"
+   },
+   "aliases": [
+    "What is an OSHC gap payment?",
+    "OSHC 的 gap fee 是什么意思"
+   ],
+   "answer": {
+    "en": "OSHC usually covers a set amount for medical treatment or services. If the medical service charges more than that amount, the difference is a gap fee.",
+    "zh": "OSHC 通常为医疗或服务承担一个固定金额。如果医疗服务收费超过这个金额，差额就是 gap fee。"
+   },
+   "sources": [
+    {
+     "url": "https://www.studyaustralia.gov.au/en/tools-and-resources/tips-and-advice-for-students/oshc-what-international-students-need-to-know",
+     "quote": "Your OSHC will usually cover a set amount for medical treatment or services."
+    },
+    {
+     "url": "https://www.studyaustralia.gov.au/en/tools-and-resources/tips-and-advice-for-students/oshc-what-international-students-need-to-know",
+     "quote": "If the medical service charges more than the set amount, you will need to pay the difference. This is called a gap fee."
+    }
+   ],
+   "tags": [
+    "oshc",
+    "costs"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "oshc-gp-coverage",
+   "question": {
+    "en": "Are GP appointments covered by OSHC?",
+    "zh": "OSHC 报销看 GP 的费用吗？"
+   },
+   "aliases": [
+    "Can I use OSHC at a GP?",
+    "留学生保险可以报销全科医生吗"
+   ],
+   "answer": {
+    "en": "GP visits are usually covered by OSHC. The cover may be full or partial.",
+    "zh": "OSHC 通常涵盖看 GP 的费用。保险可能全额或部分承担。"
+   },
+   "sources": [
+    {
+     "url": "https://www.studyaustralia.gov.au/en/tools-and-resources/tips-and-advice-for-students/oshc-what-international-students-need-to-know",
+     "quote": "GP visits are usually covered by OSHC, either fully or partially."
+    }
+   ],
+   "tags": [
+    "oshc",
+    "gp"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "oshc-public-hospital-treatment",
+   "question": {
+    "en": "Does OSHC cover treatment as a public hospital patient?",
+    "zh": "OSHC 报销公立医院病人接受的治疗吗？"
+   },
+   "aliases": [
+    "Will OSHC pay for a public hospital stay?",
+    "留学生保险在公立医院能用吗"
+   ],
+   "answer": {
+    "en": "Treatment as a public hospital patient is generally covered by OSHC. Gap fees may still apply depending on the services or specialists involved.",
+    "zh": "OSHC 通常涵盖以公立医院病人身份接受的治疗。不过，可能需要支付差额，具体取决于涉及的服务或专科医生。"
+   },
+   "sources": [
+    {
+     "url": "https://www.studyaustralia.gov.au/en/tools-and-resources/tips-and-advice-for-students/oshc-what-international-students-need-to-know",
+     "quote": "Treatment as a public hospital patient is generally covered by your OSHC."
+    },
+    {
+     "url": "https://www.studyaustralia.gov.au/en/tools-and-resources/tips-and-advice-for-students/oshc-what-international-students-need-to-know",
+     "quote": "However, some gap fees may apply depending on the services or specialists involved."
+    }
+   ],
+   "tags": [
+    "oshc",
+    "hospital"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "oshc-psychologist-referral",
+   "question": {
+    "en": "Do I need a GP referral to claim OSHC benefits for a psychologist?",
+    "zh": "用 OSHC 报销心理医生需要 GP 转诊吗？"
+   },
+   "aliases": [
+    "Can I claim psychology on OSHC without a referral?",
+    "学生保险报销心理咨询要转诊吗"
+   ],
+   "answer": {
+    "en": "OSHC benefits for psychology services require a GP referral or a mental health treatment plan. Psychologists help manage thoughts, feelings and behaviours through talking therapy.",
+    "zh": "申请 OSHC 心理服务报销需要 GP 转诊或心理健康治疗计划。心理学家通过谈话治疗帮助处理想法、情绪和行为。"
+   },
+   "sources": [
+    {
+     "url": "https://www.studyaustralia.gov.au/en/tools-and-resources/tips-and-advice-for-students/oshc-what-international-students-need-to-know",
+     "quote": "Psychologists help manage thoughts, feelings and behaviours through talking therapy."
+    },
+    {
+     "url": "https://www.studyaustralia.gov.au/en/tools-and-resources/tips-and-advice-for-students/oshc-what-international-students-need-to-know",
+     "quote": "You will need a GP referral or a mental health treatment plan to claim OSHC benefits on psychology services."
+    }
+   ],
+   "tags": [
+    "oshc",
+    "mental-health"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "oshc-hospital-upfront-reimbursement",
+   "question": {
+    "en": "Can a hospital ask me to pay upfront with OSHC?",
+    "zh": "有 OSHC 去医院还可能要先付钱吗？"
+   },
+   "aliases": [
+    "Do I pay first and claim hospital costs on OSHC?",
+    "留学生住院费用要先垫付吗"
+   ],
+   "answer": {
+    "en": "A patient may need to pay for hospital treatment upfront. They can then claim reimbursement from their OSHC provider.",
+    "zh": "病人可能需要先支付医院治疗费用。之后可以向 OSHC 保险公司申请报销。"
+   },
+   "sources": [
+    {
+     "url": "https://www.studyaustralia.gov.au/en/tools-and-resources/tips-and-advice-for-students/oshc-what-international-students-need-to-know",
+     "quote": "You may need to pay for treatment upfront and then claim a reimbursement from your OSHC provider."
+    }
+   ],
+   "tags": [
+    "oshc",
+    "hospital"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "oshc-overseas-travel-insurance",
+   "question": {
+    "en": "Can I have travel insurance as well as OSHC?",
+    "zh": "买了 OSHC 还能买旅行保险吗？"
+   },
+   "aliases": [
+    "Can travel insurance be added to OSHC?",
+    "留学生保险之外可以再买旅游保险吗"
+   ],
+   "answer": {
+    "en": "OSHC can be supplemented with other insurance, such as international travel insurance. Travel insurance can cover various health treatments.",
+    "zh": "可以在 OSHC 之外购买其他保险，例如国际旅行保险。旅行保险可以涵盖各种医疗项目。"
+   },
+   "sources": [
+    {
+     "url": "https://www.privatehealth.gov.au/health_insurance/overseas/overseas_student_health_cover.htm",
+     "quote": "You can also choose to supplement OSHC with other insurance such as international travel insurance."
+    },
+    {
+     "url": "https://www.studyaustralia.gov.au/en/plan-your-move/overseas-student-health-cover-oshc",
+     "quote": "You can also purchase travel insurance in addition to your OSHC, which can cover various health treatments."
+    }
+   ],
+   "tags": [
+    "oshc",
+    "insurance"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "student-bank-account-without-tfn",
+   "question": {
+    "en": "Do I need a TFN to open a bank account as an international student?",
+    "zh": "留学生开户时一定要有 TFN 吗？"
+   },
+   "aliases": [
+    "Can I open a bank account before getting a TFN?",
+    "没税号能开澳洲银行账户吗"
+   ],
+   "answer": {
+    "en": "Study Australia says a TFN is not needed to open a bank account. Without one, tax will be charged at a higher rate.",
+    "zh": "Study Australia 表示，开银行账户不需要 TFN。如果没有 TFN，适用的税率会更高。"
+   },
+   "sources": [
+    {
+     "url": "https://www.studyaustralia.gov.au/en/plan-your-move/your-first-week-in-australia",
+     "quote": "You don’t need it to open your account, but without one, you will be taxed at a higher rate."
+    },
+    {
+     "url": "https://www.studyaustralia.gov.au/en/plan-your-move/your-first-week-in-australia",
+     "quote": "You should get a Tax File Number (TFN) and submit it to the bank."
+    }
+   ],
+   "tags": [
+    "bank",
+    "tfn"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "student-bank-account-documents",
+   "question": {
+    "en": "What documents does an international student need to open a bank account?",
+    "zh": "留学生开银行账户要准备什么证件？"
+   },
+   "aliases": [
+    "What ID does a student need for an Australian bank account?",
+    "留学生开户需要护照和地址证明吗"
+   ],
+   "answer": {
+    "en": "Study Australia lists an electronic Confirmation of Enrolment, passport and proof of an Australian address. Examples of address proof include a phone bill or lease agreement.",
+    "zh": "Study Australia 列出的材料包括电子入学确认书、护照和澳大利亚地址证明。地址证明例如电话账单或租约。"
+   },
+   "sources": [
+    {
+     "url": "https://www.studyaustralia.gov.au/en/plan-your-move/your-first-week-in-australia",
+     "quote": "To open an account, you will need: electronic Confirmation of Enrolment (eCoE) passport, and proof of your address in Australia (such as a phone bill or lease agreement)."
+    }
+   ],
+   "tags": [
+    "bank",
+    "arrival"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "newcomer-unlocked-phone-plans",
+   "question": {
+    "en": "Can I use my unlocked overseas phone with an Australian SIM?",
+    "zh": "带解锁的海外手机来澳洲可以用本地 SIM 卡吗？"
+   },
+   "aliases": [
+    "Where can I get a prepaid SIM after arriving?",
+    "刚到澳洲哪里买预付费手机卡"
+   ],
+   "answer": {
+    "en": "Someone bringing an unlocked phone to Australia can choose a prepaid service or a SIM-only plan. Prepaid SIM cards are sold in many shops, supermarkets and mobile phone provider stores.",
+    "zh": "带解锁手机来澳大利亚的人可以选择预付费服务或仅含 SIM 卡的套餐。许多商店、超市和手机运营商门店都有预付费 SIM 卡出售。"
+   },
+   "sources": [
+    {
+     "url": "https://www.studyaustralia.gov.au/en/plan-your-move/your-first-week-in-australia",
+     "quote": "If you bring an unlocked phone to Australia, you can choose between a pre-paid service or a SIM-only plan."
+    },
+    {
+     "url": "https://www.studyaustralia.gov.au/en/plan-your-move/your-first-week-in-australia",
+     "quote": "Pre-paid SIM cards are sold in many shops and supermarkets as well as mobile phone provider stores."
+    }
+   ],
+   "tags": [
+    "phone",
+    "arrival"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "newcomer-locked-phone",
+   "question": {
+    "en": "What if my phone is locked to my overseas provider?",
+    "zh": "手机被海外运营商锁定了，来澳洲怎么办？"
+   },
+   "aliases": [
+    "Will a carrier-locked phone work in Australia?",
+    "国外运营商锁机到澳洲怎么办"
+   ],
+   "answer": {
+    "en": "If a phone is locked to its home provider, its owner may need to buy a new phone in Australia. Study Australia says most providers allow the phone to be paid off as part of a monthly contract.",
+    "zh": "如果手机被原运营商锁定，机主可能需要在澳大利亚购买新手机。Study Australia 表示，大多数运营商允许在月度合约中分期支付手机费用。"
+   },
+   "sources": [
+    {
+     "url": "https://www.studyaustralia.gov.au/en/plan-your-move/your-first-week-in-australia",
+     "quote": "If your phone is locked to your home provider, you may need to buy a new phone in Australia."
+    },
+    {
+     "url": "https://www.studyaustralia.gov.au/en/plan-your-move/your-first-week-in-australia",
+     "quote": "Most providers will allow you to pay off your phone as part of your monthly contract."
+    }
+   ],
+   "tags": [
+    "phone",
+    "arrival"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "student-visa-address-provider",
+   "question": {
+    "en": "When must a student tell their education provider their Australian address?",
+    "zh": "留学生到澳洲后多久要告诉学校住址？"
+   },
+   "aliases": [
+    "How soon do I give my school my address?",
+    "留学生到澳洲后多久向学校报地址"
+   ],
+   "answer": {
+    "en": "Under visa condition 8533, a student must inform their education provider of their residential address within seven days of arriving in Australia. This is the timeframe stated by Study Australia.",
+    "zh": "根据签证条件 8533，学生必须在抵达澳大利亚后七天内将住址告知教育机构。这是 Study Australia 列出的期限。"
+   },
+   "sources": [
+    {
+     "url": "https://www.studyaustralia.gov.au/en/plan-your-move/your-first-week-in-australia",
+     "quote": "As per visa condition 8533, you must inform your education provider of your residential address within seven (7) days of arriving in Australia."
+    }
+   ],
+   "tags": [
+    "visa",
+    "arrival"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "student-usi-before-arrival",
+   "question": {
+    "en": "Can an international student create a USI before arriving in Australia?",
+    "zh": "留学生可以在抵达澳洲前创建 USI 吗？"
+   },
+   "aliases": [
+    "Can I get a USI while still overseas?",
+    "留学生还没入境能申请 USI 吗"
+   ],
+   "answer": {
+    "en": "International students can only create a USI once they have arrived in Australia. They are not required to provide one at enrolment because they cannot create it until they enter Australia.",
+    "zh": "留学生只能在抵达澳大利亚后创建 USI。由于入境前无法创建，注册入学时不需要提供 USI。"
+   },
+   "sources": [
+    {
+     "url": "https://www.usi.gov.au/students/international-students-and-students-studying-overseas",
+     "quote": "You can only create a USI once you have arrived in Australia."
+    },
+    {
+     "url": "https://www.usi.gov.au/students/international-students-and-students-studying-overseas",
+     "quote": "You are not required to provide a USI at enrolment because you cannot create one until you enter Australia."
+    }
+   ],
+   "tags": [
+    "usi",
+    "arrival"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "student-usi-passport-visa",
+   "question": {
+    "en": "What ID can an international student use to create a USI?",
+    "zh": "留学生创建 USI 可以用什么身份证件？"
+   },
+   "aliases": [
+    "Which passport and visa do I use for my USI?",
+    "留学生申请 USI 要用护照和签证吗"
+   ],
+   "answer": {
+    "en": "After arriving in Australia, an international student can use an Australian visa and a non-Australian passport to create a USI. Both documents are required for this method.",
+    "zh": "抵达澳大利亚后，留学生可以用澳大利亚签证和非澳大利亚护照创建 USI。使用这种方式时两份证件都需要。"
+   },
+   "sources": [
+    {
+     "url": "https://www.usi.gov.au/students/international-students-and-students-studying-overseas",
+     "quote": "use your Australian visa and non-Australian passport to create a USI"
+    },
+    {
+     "url": "https://www.usi.gov.au/students/international-students-and-students-studying-overseas/international-student-requirements",
+     "quote": "Both documents are required to create your USI."
+    }
+   ],
+   "tags": [
+    "usi",
+    "documents"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "student-usi-qualification",
+   "question": {
+    "en": "Does an international student need a USI to receive a qualification in Australia?",
+    "zh": "留学生在澳大利亚拿学历证书需要 USI 吗？"
+   },
+   "aliases": [
+    "Do overseas students need a USI to graduate?",
+    "留学生毕业拿证需要 USI 吗"
+   ],
+   "answer": {
+    "en": "An international student studying in Australia with an Australian education or training provider must have a USI to receive their qualification. A USI can only be created after arrival in Australia.",
+    "zh": "在澳大利亚的澳洲教育或培训机构学习的留学生，领取学历证书时必须有 USI。USI 只能在抵达澳大利亚后创建。"
+   },
+   "sources": [
+    {
+     "url": "https://www.usi.gov.au/students/international-students-and-students-studying-overseas/international-student-requirements",
+     "quote": "If you are an international student studying in Australia with an Australian education or training provider, you must have a USI to receive your qualification."
+    },
+    {
+     "url": "https://www.usi.gov.au/students/international-students-and-students-studying-overseas/international-student-requirements",
+     "quote": "You cannot create a USI until you have arrived in Australia."
+    }
+   ],
+   "tags": [
+    "usi",
+    "study"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "student-usi-after-departure",
+   "question": {
+    "en": "Can an international student create a USI after leaving Australia?",
+    "zh": "留学生离开澳洲后还能创建 USI 吗？"
+   },
+   "aliases": [
+    "I left Australia without a USI; can I create one now?",
+    "留学生回国后还能办 USI 吗"
+   ],
+   "answer": {
+    "en": "A USI cannot be created after departure from Australia. An international student who leaves without one may not be able to graduate or receive a statement of attainment.",
+    "zh": "离开澳大利亚后不能创建 USI。留学生如果没有创建 USI 就离境，可能无法毕业或领取学习成果证明。"
+   },
+   "sources": [
+    {
+     "url": "https://www.usi.gov.au/students/international-students-and-students-studying-overseas",
+     "quote": "A USI cannot be created after you depart Australia."
+    },
+    {
+     "url": "https://www.usi.gov.au/students/international-students-and-students-studying-overseas",
+     "quote": "you may not be able to graduate or receive a statement of attainment if you leave Australia and have not created a USI"
+    }
+   ],
+   "tags": [
+    "usi",
+    "departure"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "student-usi-interpreter",
+   "question": {
+    "en": "Can I get an interpreter when contacting the USI service?",
+    "zh": "联系 USI 服务时可以请口译吗？"
+   },
+   "aliases": [
+    "Is language help available from the USI office?",
+    "咨询 USI 可以用中文口译吗"
+   ],
+   "answer": {
+    "en": "The USI service can arrange a translating and interpreting service when contacted. This allows a person to speak in their preferred language.",
+    "zh": "联系 USI 服务时，可以安排翻译和口译服务。这样联系者可以使用自己首选的语言沟通。"
+   },
+   "sources": [
+    {
+     "url": "https://www.usi.gov.au/students/international-students-and-students-studying-overseas",
+     "quote": "To speak to us in your preferred language, we can arrange a translating and interpreting service when you contact us."
+    }
+   ],
+   "tags": [
+    "usi",
+    "language"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "student-rental-scam-warning-signs",
+   "question": {
+    "en": "What are warning signs that a student accommodation offer might be a scam?",
+    "zh": "留学生找房时哪些迹象可能是骗局？"
+   },
+   "aliases": [
+    "Is it suspicious if a landlord rushes me to pay?",
+    "房东催我马上付款不让看房是骗局吗"
+   ],
+   "answer": {
+    "en": "Study Australia flags pressure to pay quickly, refusal to give clear information and refusal to allow an inspection as reasons for caution. These can arise when checking whether an accommodation offer is genuine.",
+    "zh": "Study Australia 提醒，对方催促尽快付款、拒绝提供清楚信息或不允许看房，都是需要警惕的迹象。核实住宿房源是否真实时可能遇到这些情况。"
+   },
+   "sources": [
+    {
+     "url": "https://www.studyaustralia.gov.au/en/life-in-australia/accommodation",
+     "quote": "Be cautious if someone pressures you to pay quickly, refuses to provide clear information or will not allow the property to be inspected."
+    }
+   ],
+   "tags": [
+    "housing",
+    "scam"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "student-rental-records",
+   "question": {
+    "en": "What records should a student keep when renting accommodation?",
+    "zh": "留学生租房要保存哪些记录？"
+   },
+   "aliases": [
+    "Should I keep receipts and messages when renting?",
+    "租房付款记录和与中介的聊天要保存吗"
+   ],
+   "answer": {
+    "en": "Study Australia says to keep copies of signed documents, payment records and communications with the property owner or real estate agent. Rental laws differ between states and territories.",
+    "zh": "Study Australia 表示，应保留已签署文件、付款记录以及与房东或房地产中介往来的记录副本。各州和领地的租赁法律不同。"
+   },
+   "sources": [
+    {
+     "url": "https://www.studyaustralia.gov.au/en/life-in-australia/accommodation",
+     "quote": "Read the agreement carefully and keep copies of signed documents, payment records and communication with the property owner or real estate agent."
+    },
+    {
+     "url": "https://www.studyaustralia.gov.au/en/life-in-australia/accommodation",
+     "quote": "Rental laws differ between Australia's states and territories."
+    }
+   ],
+   "tags": [
+    "housing",
+    "documents"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "student-accommodation-study-offer-guarantee",
+   "question": {
+    "en": "Does a university study offer guarantee student accommodation?",
+    "zh": "拿到大学录取通知就一定有学生宿舍吗？"
+   },
+   "aliases": [
+    "Does accepting my course offer secure a room?",
+    "收到录取通知书学校就会安排宿舍吗"
+   ],
+   "answer": {
+    "en": "A study offer does not guarantee accommodation. Accommodation managed by an education provider may be limited.",
+    "zh": "获得录取并不保证有住宿。教育机构管理的住宿可能数量有限。"
+   },
+   "sources": [
+    {
+     "url": "https://www.studyaustralia.gov.au/en/life-in-australia/accommodation",
+     "quote": "Places may be limited, and receiving an offer to study does not guarantee accommodation."
+    }
+   ],
+   "tags": [
+    "housing",
+    "study"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "student-purpose-built-accommodation",
+   "question": {
+    "en": "What is purpose-built student accommodation?",
+    "zh": "什么是专为学生建造的住宿？"
+   },
+   "aliases": [
+    "What does purpose-built student housing mean?",
+    "PBSA 学生公寓是什么"
+   ],
+   "answer": {
+    "en": "Purpose-built student accommodation is housing designed specifically for students. It may be open to students from different education providers.",
+    "zh": "专为学生建造的住宿是专门为学生设计的住房。它可能向不同教育机构的学生开放。"
+   },
+   "sources": [
+    {
+     "url": "https://www.studyaustralia.gov.au/en/life-in-australia/accommodation",
+     "quote": "Purpose-built student accommodation is housing designed specifically for students."
+    },
+    {
+     "url": "https://www.studyaustralia.gov.au/en/life-in-australia/accommodation",
+     "quote": "It may be open to students from different education providers."
+    }
+   ],
+   "tags": [
+    "housing",
+    "study"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "student-homestay-meaning",
+   "question": {
+    "en": "What is a homestay for an international student?",
+    "zh": "留学生的 homestay 是什么？"
+   },
+   "aliases": [
+    "What is living with a host family?",
+    "寄宿家庭住宿是怎么回事"
+   ],
+   "answer": {
+    "en": "Homestay involves living with a local family in their home. Meals, cleaning and other services may be included.",
+    "zh": "Homestay 指住在当地家庭的家里。住宿可能包括餐食、清洁和其他服务。"
+   },
+   "sources": [
+    {
+     "url": "https://www.studyaustralia.gov.au/en/life-in-australia/accommodation",
+     "quote": "Homestay involves living with a local family in their home."
+    },
+    {
+     "url": "https://www.studyaustralia.gov.au/en/life-in-australia/accommodation",
+     "quote": "Meals, cleaning and other services may be included."
+    }
+   ],
+   "tags": [
+    "housing",
+    "homestay"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "student-housing-under-18",
+   "question": {
+    "en": "Who approves accommodation for an under-18 student without a parent or approved welfare arrangement?",
+    "zh": "未满 18 岁且没有父母或获批福利安排的学生，住宿由谁批准？"
+   },
+   "aliases": [
+    "Who approves housing for a minor international student?",
+    "未成年留学生住宿需要学校批准吗"
+   ],
+   "answer": {
+    "en": "If a student under 18 studies in Australia without a parent, legal guardian or approved welfare arrangement, their education provider must approve accommodation and welfare arrangements that meet applicable requirements. This applies to students studying in Australia.",
+    "zh": "未满 18 岁的学生在澳大利亚学习时，如果没有父母、法定监护人或获批准的福利安排，其教育机构必须批准符合适用要求的住宿和福利安排。这适用于在澳大利亚学习的学生。"
+   },
+   "sources": [
+    {
+     "url": "https://www.studyaustralia.gov.au/en/life-in-australia/accommodation",
+     "quote": "If you are under 18 and studying in Australia without a parent, legal guardian or approved welfare arrangement, your education provider must approve accommodation and welfare arrangements that meet applicable requirements."
+    }
+   ],
+   "tags": [
+    "housing",
+    "welfare"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "student-housing-rental-agreement",
+   "question": {
+    "en": "What is a lease when renting student accommodation?",
+    "zh": "留学生租房时说的 lease 是什么？"
+   },
+   "aliases": [
+    "What does a rental lease mean for a student?",
+    "租房合同 lease 是什么意思"
+   ],
+   "answer": {
+    "en": "A rental agreement is sometimes called a lease. A person renting a home or room will usually enter into a rental agreement and may need to pay a bond and rent in advance.",
+    "zh": "租赁协议有时称为 lease。租房或租房间的人通常会签订租赁协议，并可能需要支付押金和预付租金。"
+   },
+   "sources": [
+    {
+     "url": "https://www.studyaustralia.gov.au/en/life-in-australia/accommodation",
+     "quote": "Before signing a rental agreement, sometimes called a lease, check the rent, bond, length of the agreement and any additional costs."
+    },
+    {
+     "url": "https://www.studyaustralia.gov.au/en/life-in-australia/accommodation",
+     "quote": "If you rent a home or room, you will usually enter into a rental agreement and may need to pay a bond and rent in advance."
+    }
+   ],
+   "tags": [
+    "housing",
+    "rental"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "student-visa-work-hours-study-break",
+   "question": {
+    "en": "How many hours can most student visa holders work during study and course breaks?",
+    "zh": "大多数学生签证持有人上课和放假期间能工作多久？"
+   },
+   "aliases": [
+    "What is the student visa work limit during term and holidays?",
+    "留学生上课和假期打工时限是多少"
+   ],
+   "answer": {
+    "en": "Home Affairs says that, once the course has commenced, a student visa condition allows most students to work up to 48 hours per fortnight while the course is in session. It allows unlimited hours during course breaks.",
+    "zh": "Home Affairs 表示，课程开始后，一项学生签证条件允许大多数学生在课程进行期间每两周工作最多 48 小时。课程假期期间可不限时工作。"
+   },
+   "sources": [
+    {
+     "url": "https://www.homeaffairs.gov.au/foi/files/2025/fa-250601036-document-released.PDF",
+     "quote": "Student visas include a visa condition that, once the course has commenced, allows most students to work for up to 48 hours per fortnight while their course is in session and for unlimited hours during course breaks."
+    }
+   ],
+   "tags": [
+    "visa",
+    "work"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "postgraduate-research-visa-work",
+   "question": {
+    "en": "Can a Postgraduate Research Sector visa holder work unlimited hours?",
+    "zh": "Postgraduate Research Sector 签证持有人可以不限时工作吗？"
+   },
+   "aliases": [
+    "Are research postgraduate visa work hours capped?",
+    "研究型研究生签证有打工时数上限吗"
+   ],
+   "answer": {
+    "en": "Home Affairs says higher degree by research students on a Postgraduate Research Sector visa may work unlimited hours once their Masters or PhD course has commenced. Dependants of students studying a Masters or PhD research course have no limitation on their work hours.",
+    "zh": "Home Affairs 表示，持 Postgraduate Research Sector 签证的高等研究学位学生，在硕士或博士课程开始后可以不限时工作。攻读研究型硕士或博士课程的学生的家属没有工作时数限制。"
+   },
+   "sources": [
+    {
+     "url": "https://www.homeaffairs.gov.au/foi/files/2025/fa-250601036-document-released.PDF",
+     "quote": "Higher degree by research students on a Postgraduate Research Sector visa may work unlimited hours once their Masters or PhD course has commenced."
+    },
+    {
+     "url": "https://www.homeaffairs.gov.au/foi/files/2025/fa-250601036-document-released.PDF",
+     "quote": "Dependants of students studying a Masters or PhD research course have no limitation on their work hours."
+    }
+   ],
+   "tags": [
+    "visa",
+    "work",
+    "research"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "student-scholarship-work",
+   "question": {
+    "en": "Is a scholarship generally treated as work for a student visa?",
+    "zh": "奖学金一般算学生签证的工作吗？"
+   },
+   "aliases": [
+    "Does a scholarship count as employment?",
+    "学生奖学金一般算打工吗"
+   ],
+   "answer": {
+    "en": "Home Affairs describes a scholarship as generally a form of financial assistance to support a student’s education. It says scholarships are generally not considered employment or a form of work.",
+    "zh": "Home Affairs 表示，奖学金一般是支持学生接受教育的经济资助。该部门称，奖学金一般不被视为受雇或工作。"
+   },
+   "sources": [
+    {
+     "url": "https://www.homeaffairs.gov.au/foi/files/2025/fa-250601036-document-released.PDF",
+     "quote": "A scholarship is generally considered a form of financial assistance given to a student to support their education."
+    },
+    {
+     "url": "https://www.homeaffairs.gov.au/foi/files/2025/fa-250601036-document-released.PDF",
+     "quote": "Generally, scholarships are not considered employment or a form of work."
+    }
+   ],
+   "tags": [
+    "visa",
+    "work",
+    "scholarship"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "international-student-travel-pass-existence",
+   "question": {
+    "en": "Can international students get a discounted public transport pass in Victoria?",
+    "zh": "留学生在维州可以申请公共交通优惠卡吗？"
+   },
+   "aliases": [
+    "Is there a student travel pass for overseas students?",
+    "维州留学生有公共交通优惠票吗"
+   ],
+   "answer": {
+    "en": "Some full-time international students may be eligible for an International Student Travel Pass. YouthNav lists it among concessions available to young people in Victoria.",
+    "zh": "部分全日制留学生可能符合 International Student Travel Pass 的申请资格。YouthNav 将它列为维州年轻人可以使用的优惠之一。"
+   },
+   "sources": [
+    {
+     "url": "https://www.youthcentral.vic.gov.au/youthnav/getting-around/public-transport-ticket-options",
+     "quote": "Some full-time international students can be eligible for an International Student Travel Pass."
+    },
+    {
+     "url": "https://www.youthcentral.vic.gov.au/youthnav/getting-around/public-transport-ticket-options",
+     "quote": "Six concessions are available to young people in Victoria: the Transport Victoria secondary/tertiary student ID, international student pass, health care card, asylum seeker ID, Pensioner Concession Card printed with Code DSP, and Victorian Carer Card."
+    }
+   ],
+   "tags": [
+    "transport",
+    "student"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "student-tfn-lifetime",
+   "question": {
+    "en": "Do I need a new TFN if I change jobs or leave Australia?",
+    "zh": "换工作或离开澳洲后要重新申请 TFN 吗？"
+   },
+   "aliases": [
+    "Does my tax file number change when I move overseas?",
+    "回国或换工作后税号会变吗"
+   ],
+   "answer": {
+    "en": "A TFN is a personal reference number in the tax and superannuation systems. It is yours for life, even if you change jobs or name, move interstate or go overseas.",
+    "zh": "TFN 是税务和养老金体系中的个人参考号码。这个号码终身属于本人，即使换工作或改名、搬到其他州或去海外也不变。"
+   },
+   "sources": [
+    {
+     "url": "https://www.ato.gov.au/individuals-and-families/tax-file-number/what-is-a-tax-file-number",
+     "quote": "A tax file number (TFN) is your personal reference number in the tax and superannuation systems."
+    },
+    {
+     "url": "https://www.ato.gov.au/individuals-and-families/tax-file-number/what-is-a-tax-file-number",
+     "quote": "yours for life – you keep your TFN even if you change jobs or name, move interstate or go overseas."
+    }
+   ],
+   "tags": [
+    "tfn",
+    "arrival"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "student-tfn-lost-where",
+   "question": {
+    "en": "Where can I find my TFN if I have forgotten it?",
+    "zh": "忘记 TFN 了，可以在哪里找？"
+   },
+   "aliases": [
+    "Where do I look up my existing tax file number?",
+    "忘了税号从哪里查"
+   ],
+   "answer": {
+    "en": "The ATO lists the ATO app or ATO online account, if linked to myGov, as places to find an existing TFN. It also lists an income tax notice of assessment.",
+    "zh": "ATO 表示，如果 myGov 已关联 ATO，可以在 ATO app 或 ATO 在线账户中找到已有的 TFN。所得税评税通知书上也可能有。"
+   },
+   "sources": [
+    {
+     "url": "https://www.ato.gov.au/individuals-and-families/tax-file-number/what-is-a-tax-file-number",
+     "quote": "in the ATO app or your ATO online account if you have a myGov account linked to the ATO"
+    },
+    {
+     "url": "https://www.ato.gov.au/individuals-and-families/tax-file-number/what-is-a-tax-file-number",
+     "quote": "on your income tax notice of assessment"
+    }
+   ],
+   "tags": [
+    "tfn",
+    "arrival"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "student-worker-payslip",
+   "question": {
+    "en": "When should an international student receive a payslip after being paid?",
+    "zh": "留学生领工资后多久应该收到工资单？"
+   },
+   "aliases": [
+    "How soon after payday should I get a payslip?",
+    "发工资后什么时候给工资单"
+   ],
+   "answer": {
+    "en": "In Australia, a worker must receive a payslip within one working day of being paid. The payslip records earnings and the tax taken from pay.",
+    "zh": "在澳大利亚，劳动者必须在收到工资后的一个工作日内收到工资单。工资单记录收入以及从工资中扣除的税款。"
+   },
+   "sources": [
+    {
+     "url": "https://www.studyaustralia.gov.au/en/work-in-australia/work-rights-and-responsibilities/your-work-rights-explained",
+     "quote": "In Australia, you must get a payslip within one working day of getting paid."
+    },
+    {
+     "url": "https://www.studyaustralia.gov.au/en/work-in-australia/work-rights-and-responsibilities/your-work-rights-explained",
+     "quote": "The payslip is an important document - it is a record of how much you have earned and how much tax has been taken from your pay."
+    }
+   ],
+   "tags": [
+    "work",
+    "payslip"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "student-worker-super",
+   "question": {
+    "en": "Can a temporary resident get employer superannuation contributions?",
+    "zh": "临时居民可以获得雇主的养老金缴款吗？"
+   },
+   "aliases": [
+    "Do employers pay super for temporary visa holders?",
+    "临时签证打工有 super 吗"
+   ],
+   "answer": {
+    "en": "An employer must make superannuation contributions for a temporary resident working in Australia if they are eligible. On leaving Australia, they may be able to claim their superannuation payments if they meet the requirements.",
+    "zh": "在澳大利亚工作的临时居民如果符合资格，雇主必须为其缴纳养老金。离开澳大利亚时，符合要求的人可能可以申请领取养老金。"
+   },
+   "sources": [
+    {
+     "url": "https://www.studyaustralia.gov.au/en/work-in-australia/work-rights-and-responsibilities/your-work-rights-explained",
+     "quote": "As a temporary resident working in Australia, your employer must, by law, make superannuation contributions for you if you are eligible."
+    },
+    {
+     "url": "https://www.studyaustralia.gov.au/en/work-in-australia/work-rights-and-responsibilities/your-work-rights-explained",
+     "quote": "When leaving Australia, you may be able to get back your superannuation payments (DASP) if you meet the requirements."
+    }
+   ],
+   "tags": [
+    "work",
+    "superannuation"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "international-student-provider-closure-tps",
+   "question": {
+    "en": "What happens if my education provider cannot deliver a course I paid for?",
+    "zh": "付了学费后学校不能开课，留学生怎么办？"
+   },
+   "aliases": [
+    "Can I get help if my college closes before my course ends?",
+    "学校无法提供已付费课程时能找谁"
+   ],
+   "answer": {
+    "en": "The Tuition Protection Service can help if a university, TAFE, RTO or school cannot deliver a paid course or part of it. It can help with tuition fee refunds and finding another provider to finish the studies.",
+    "zh": "如果大学、TAFE、RTO 或学校不能提供已付费的课程或课程的一部分，Tuition Protection Service 可以提供帮助。它可以协助退还学费并寻找其他教育机构完成学业。"
+   },
+   "sources": [
+    {
+     "url": "https://www.studyaustralia.gov.au/en/life-in-australia/student-support-services/legal-rights-and-protections.html",
+     "quote": "If you have paid for your course, but your university, TAFE, RTO or school can’t deliver your course or part of the course, the Tuition Protection Service (TPS) can help!"
+    },
+    {
+     "url": "https://www.studyaustralia.gov.au/en/life-in-australia/student-support-services/legal-rights-and-protections.html",
+     "quote": "The TPS can help you with tuition fee refunds and find you a different education provider to finish your studies."
+    }
+   ],
+   "tags": [
+    "study",
+    "tuition"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "international-student-university-complaints",
+   "question": {
+    "en": "Who can help with an unresolved complaint about a higher education provider?",
+    "zh": "对高等教育机构的投诉没解决，可以找谁？"
+   },
+   "aliases": [
+    "Where can a university student take an unresolved complaint?",
+    "大学投诉没有结果可以找谁"
+   ],
+   "answer": {
+    "en": "The National Student Ombudsman is an independent service that helps students with complaints about their higher education provider. It can help if a university complaint has not been resolved or the student does not feel safe speaking up.",
+    "zh": "National Student Ombudsman 是协助学生处理高等教育机构投诉的独立服务。如果向大学提出的投诉没有解决，或者学生觉得发声不安全，它可以提供帮助。"
+   },
+   "sources": [
+    {
+     "url": "https://www.studyaustralia.gov.au/en/life-in-australia/student-support-services/legal-rights-and-protections.html",
+     "quote": "The National Student Ombudsman (NSO) is an independent service that helps students with complaints about their higher education provider."
+    },
+    {
+     "url": "https://www.studyaustralia.gov.au/en/life-in-australia/student-support-services/legal-rights-and-protections.html",
+     "quote": "If you’ve raised a complaint with your university but it hasn’t been resolved or you don’t feel safe speaking up, the NSO can help."
+    }
+   ],
+   "tags": [
+    "study",
+    "complaints"
+   ],
+   "checked": "2026-11-01"
+  },
+  {
+   "id": "student-visa-registered-courses",
+   "question": {
+    "en": "Can a student visa holder study any course in Australia?",
+    "zh": "持学生签证可以在澳洲读任何课程吗？"
+   },
+   "aliases": [
+    "Does a student visa course need CRICOS registration?",
+    "学生签证课程必须是 CRICOS 注册的吗"
+   ],
+   "answer": {
+    "en": "Students in Australia on a student visa can only study government-registered courses that meet national quality standards. CRICOS lists these courses.",
+    "zh": "持学生签证在澳大利亚学习的学生，只能就读符合国家质量标准的政府注册课程。CRICOS 列出了这些课程。"
+   },
+   "sources": [
+    {
+     "url": "https://www.studyaustralia.gov.au/en/life-in-australia/student-support-services/legal-rights-and-protections.html",
+     "quote": "Students studying in Australia on a student visa can only study government-registered courses that meet national quality standards."
+    },
+    {
+     "url": "https://www.studyaustralia.gov.au/en/life-in-australia/student-support-services/legal-rights-and-protections.html",
+     "quote": "Visit Commonwealth Register of Institutions and Courses Overseas Students (CRICOS) for a list of these courses."
+    }
+   ],
+   "tags": [
+    "visa",
+    "study"
+   ],
+   "checked": "2026-11-01"
+  }
+ ]
+}
