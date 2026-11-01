@@ -1306,38 +1306,6 @@
       "checked": "2026-10-30"
     },
     {
-      "id": "medicare-safety-net-family-registration",
-      "question": {
-        "en": "Does a family need to register for Medicare Safety Nets if everyone is on the same card?",
-        "zh": "全家共用一张 Medicare 卡，还需要登记 Medicare Safety Nets 吗？"
-      },
-      "aliases": [
-        "Register family for Medicare Safety Net",
-        "Do couples need Safety Net registration?",
-        "Medicare 安全网家庭登记",
-        "同一张医保卡需要登记安全网吗"
-      ],
-      "answer": {
-        "en": "Families and couples can register as a family to combine their costs. They still need to register even if all family members are on the same Medicare card.",
-        "zh": "家庭和伴侣可以以家庭为单位登记，将费用合并计算。即使全家都在同一张 Medicare 卡上，仍需要登记。"
-      },
-      "sources": [
-        {
-          "url": "https://www.healthdirect.gov.au/healthcare-and-services/costs-and-financial-support/medicare-safety-net",
-          "quote": "If you are in a couple or family, you need to register for the Medicare Safety Nets. This will combine the costs of everyone in your family."
-        },
-        {
-          "url": "https://www.healthdirect.gov.au/healthcare-and-services/costs-and-financial-support/medicare-safety-net",
-          "quote": "You need to register even if your family members are on the same Medicare card."
-        }
-      ],
-      "tags": [
-        "medicare",
-        "safety-net"
-      ],
-      "checked": "2026-11-01"
-    },
-    {
       "id": "medicare-mental-health-treatment-plan-sessions",
       "question": {
         "en": "How many mental health sessions can a Medicare mental health treatment plan cover?",
