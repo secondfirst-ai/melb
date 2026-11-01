@@ -1813,35 +1813,6 @@
    }
   },
   {
-   "id": "city-of-melbourne-hard-waste-collection",
-   "question": {
-    "en": "How much hard waste can City of Melbourne residents have collected for free?",
-    "zh": "墨尔本市居民可以免费收走多少硬垃圾？"
-   },
-   "aliases": [
-    "City of Melbourne hard rubbish collection allowance",
-    "Melbourne council free hard waste apartment",
-    "墨尔本市政厅免费收硬垃圾",
-    "墨尔本公寓怎么预约硬垃圾"
-   ],
-   "answer": {
-    "en": "City of Melbourne residents get one free hard waste collection of one cubic metre per financial year. People living in a high-rise building can ask their building manager to book a collection for them.",
-    "zh": "墨尔本市居民每个财政年度可以享受一次免费硬垃圾收集，限一立方米。住在高层建筑的居民可以请楼宇管理员代为预约。"
-   },
-   "sources": [
-    {
-     "url": "https://www.melbourne.vic.gov.au/hard-waste",
-     "quote": "We offer City of Melbourne residents one free hard waste collection of one cubic metre per financial year. If you live in a high rise building, you can ask your building manager to book a collection for you."
-    }
-   ],
-   "tags": [
-    "hard-waste",
-    "city-of-melbourne"
-   ],
-   "checked": "2026-11-01",
-   "valid_until": "2027-06-30"
-  },
-  {
    "id": "victoria-pet-registration-renewal",
    "question": {
     "en": "When is dog or cat registration renewed in Victoria?",
