@@ -4,7 +4,7 @@
   "en": "Everyday questions about Melbourne, answered from official sources",
   "zh": "墨尔本日常问答（答案来自官方出处）"
  },
- "updated": "2026-10-28",
+ "updated": "2026-11-03",
  "notes": [
   {
    "en": "Each answer is limited to what the cited official page says, with a verbatim quote and the date we checked it. If a question isn't here, we don't have a checked answer.",
@@ -696,23 +696,31 @@
     "墨尔本住宅区街道没有标志时限速是多少？"
    ],
    "answer": {
-    "en": "The default speed limit in built-up areas in Victoria is 50 km/h. It applies on roads where no speed limit sign applies and the road is not in a speed-limited area or shared zone. Outside built-up areas, the default on country roads is 100 km/h.",
-    "zh": "维多利亚州建成区（市区）的默认限速是50公里/小时。当某段道路没有适用的限速标志，且不属于限速区域或共享区域时，就适用这个默认限速。建成区以外的乡村道路默认限速则是100公里/小时。"
+    "en": "Under Victoria's road rules, if a speed-limit sign does not apply to a length of road, and the length of road is not in a speed-limited area or shared zone, the default speed-limit applies. The default speed-limit for a length of road in a built-up area is 50 kilometres per hour. For any other length of road, the default speed-limit is 100 kilometres per hour.",
+    "zh": "根据维多利亚州的道路规则，如果某段道路没有适用的限速标志，而且这段路不在限速区域或共享区域内，就适用默认限速。建成区路段的默认限速是每小时50公里。其他路段的默认限速是每小时100公里。"
    },
    "sources": [
     {
-     "url": "https://transport.vic.gov.au/road-and-active-transport/road-rules-and-safety/speed-limits",
-     "quote": "This applies to all roads in suburban areas where there are no speed limit signs displayed."
+     "url": "https://content.legislation.vic.gov.au/sites/default/files/2026-10/17-41sra027-authorised.pdf",
+     "quote": "The main objectives of these Rules are— (a) to provide road rules in Victoria that are substantially consistent with road rules across Australia, based on the current version of the Australian Road Rules approved by the Transport and Infrastructure Council under the National Transport Commission Act 2003 of the Commonwealth; and (b) to establish rules to be observed by road users in Victoria in matters not otherwise dealt with in the Australian Road Rules; and (c) to specify behaviour for all road users that supports the safe and efficient use of roads in Victoria."
     },
     {
-     "url": "https://classic.austlii.edu.au/au/legis/vic/consol_reg/rsrr2017208/s25.html",
+     "url": "https://content.legislation.vic.gov.au/sites/default/files/2026-10/17-41sra027-authorised.pdf",
+     "quote": "If a speed-limit sign does not apply to a length of road and the length of road is not in a speed-limited area or shared zone, the speed-limit applying to a driver for the length of road is the default speed-limit."
+    },
+    {
+     "url": "https://content.legislation.vic.gov.au/sites/default/files/2026-10/17-41sra027-authorised.pdf",
      "quote": "The default speed-limit applying to a driver for a length of road in a built-up area is 50 kilometres per hour."
+    },
+    {
+     "url": "https://content.legislation.vic.gov.au/sites/default/files/2026-10/17-41sra027-authorised.pdf",
+     "quote": "The default speed-limit applying to a driver for any other length of road is 100 kilometres per hour."
     }
    ],
    "tags": [
     "driving"
    ],
-   "checked": "2026-10-22"
+   "checked": "2026-11-03"
   },
   {
    "id": "drinking-alcohol-st-kilda-beach",
@@ -1021,27 +1029,43 @@
     "在维州乱穿马路会被罚款吗?"
    ],
    "answer": {
-    "en": "Pedestrians in Victoria are not allowed to cross the road within 20 metres of a pedestrian crossing, and must use the crossing instead. The Road Safety Road Rules 2017 list some exceptions, such as crossing in a shared zone or at an intersection with a 'pedestrians may cross diagonally' sign. Pedestrians also must not cross while facing an amber or red traffic or pedestrian light. They must use the shortest or most direct way to cross a road.",
-    "zh": "在维多利亚州，行人不得在距离行人过街处20米范围内过马路，而必须使用该过街处。《2017年道路安全道路规则》列出了一些例外情况，例如在共享区域过马路，或在设有“行人可斜穿”标志的路口过马路。行人面对黄灯或红灯（交通灯或行人灯）时也不得过马路。过马路必须走最短或最直接的路线。"
+    "en": "Under Victoria's road rules, a pedestrian must not cross a road, or part of a road, within 20 metres of a crossing on the road, except at the crossing or another crossing, unless an exception in the rule applies. The exceptions include crossing at an intersection with traffic lights and a pedestrians may cross diagonally sign, and crossing in a shared zone. At an intersection or another place on a road with pedestrian lights and traffic lights, if the pedestrian lights show a red pedestrian light and the pedestrian has not already started crossing the intersection or road, the pedestrian must not start until the pedestrian lights change to green; at an intersection or another place on a road with traffic lights but without pedestrian lights, if the traffic lights show a red or yellow traffic light and the pedestrian has not already started crossing the intersection or road, the pedestrian must not start until the traffic lights change to green or flashing yellow, or there is no red traffic light showing. A pedestrian crossing a road must cross by the shortest safe route.",
+    "zh": "根据维多利亚州的道路规则，行人不得在道路上的过街处20米范围内横穿该道路或道路的一部分，除非是在该过街处或另一处过街处横穿，或者属于该规则的例外。例外包括：在设有交通灯和 pedestrians may cross diagonally（行人可斜穿）标志的路口横穿，以及在共享区域内横穿。在设有行人灯和交通灯的路口或其他地点，如果行人灯显示红色行人灯，且行人尚未开始穿越该路口或道路，就必须等到行人灯变为绿色才能开始；在有交通灯但没有行人灯的路口或其他地点，如果交通灯显示红色或黄色交通灯，且行人尚未开始穿越该路口或道路，就必须等到交通灯变为绿色或闪烁的黄色，或者不再显示红色交通灯，才能开始。行人横穿道路必须走最短的安全路线。"
    },
    "sources": [
     {
-     "url": "https://transport.vic.gov.au/road-and-active-transport/active-transport/pedestrians-and-walking/road-rules-for-pedestrians",
-     "quote": "cross the road within 20 metres of a pedestrian crossing - they must use the crossing"
+     "url": "https://content.legislation.vic.gov.au/sites/default/files/2026-10/17-41sra027-authorised.pdf",
+     "quote": "The main objectives of these Rules are— (a) to provide road rules in Victoria that are substantially consistent with road rules across Australia, based on the current version of the Australian Road Rules approved by the Transport and Infrastructure Council under the National Transport Commission Act 2003 of the Commonwealth; and (b) to establish rules to be observed by road users in Victoria in matters not otherwise dealt with in the Australian Road Rules; and (c) to specify behaviour for all road users that supports the safe and efficient use of roads in Victoria."
     },
     {
-     "url": "https://transport.vic.gov.au/road-and-active-transport/active-transport/pedestrians-and-walking/road-rules-for-pedestrians",
-     "quote": "use the shortest or most direct way to cross a road"
+     "url": "https://content.legislation.vic.gov.au/sites/default/files/2026-10/17-41sra027-authorised.pdf",
+     "quote": "A pedestrian must not cross a road, or part of a road, within 20 metres of a crossing on the road, except at the crossing or another crossing, unless the pedestrian is— (a) crossing, or helping another pedestrian to cross, an area of the road between tram tracks and the far left side of the road to get on, or after getting off, a tram or public bus; or (b) crossing to or from a safety zone; or (c) crossing at an intersection with traffic lights and a pedestrians may cross diagonally sign; or (d) crossing in a shared zone; or (e) crossing a road, or a part of a road, from which vehicles are excluded, either permanently or temporarily."
     },
     {
-     "url": "https://classic.austlii.edu.au/au/legis/vic/consol_reg/rsrr2017208//s234.html",
-     "quote": "A pedestrian must not cross a road, or part of a road, within 20 metres of a crossing on the road, except at the crossing or another crossing"
+     "url": "https://content.legislation.vic.gov.au/sites/default/files/2026-10/17-41sra027-authorised.pdf",
+     "quote": "A pedestrian approaching or at an intersection, or another place on a road, with pedestrian lights and traffic lights must comply with this rule."
+    },
+    {
+     "url": "https://content.legislation.vic.gov.au/sites/default/files/2026-10/17-41sra027-authorised.pdf",
+     "quote": "If the pedestrian lights show a red pedestrian light and the pedestrian has not already started crossing the intersection or road, the pedestrian must not start to cross until the pedestrian lights change to green."
+    },
+    {
+     "url": "https://content.legislation.vic.gov.au/sites/default/files/2026-10/17-41sra027-authorised.pdf",
+     "quote": "A pedestrian approaching or at an intersection, or another place on a road, with traffic lights, but without pedestrian lights, must comply with this rule."
+    },
+    {
+     "url": "https://content.legislation.vic.gov.au/sites/default/files/2026-10/17-41sra027-authorised.pdf",
+     "quote": "If the traffic lights show a red or yellow traffic light and the pedestrian has not already started crossing the intersection or road, the pedestrian must not start to cross until the traffic lights change to green or flashing yellow, or there is no red traffic light showing."
+    },
+    {
+     "url": "https://content.legislation.vic.gov.au/sites/default/files/2026-10/17-41sra027-authorised.pdf",
+     "quote": "A pedestrian crossing a road— (a) must cross by the shortest safe route; and (b) must not stay on the road longer than necessary to cross the road safely."
     }
    ],
    "tags": [
     "safety"
    ],
-   "checked": "2026-10-22"
+   "checked": "2026-11-03"
   },
   {
    "id": "bicycle-helmet-required-victoria",
