@@ -4,7 +4,7 @@
   "en": "Daily life in Melbourne and Victoria, answered from official sources",
   "zh": "墨尔本和维州日常生活问答（答案来自官方出处）"
  },
- "updated": "2026-11-01",
+ "updated": "2026-11-03",
  "notes": [
   {
    "en": "Each answer is limited to what the cited official page says, with a verbatim quote and the date we checked it. If a question isn't here, we don't have a checked answer.",
@@ -1825,24 +1825,32 @@
     "狗猫注册每年什么时候续"
    ],
    "answer": {
-    "en": "Pet registration is renewed each year by 10 April. Registration fees are set by the local council and vary depending on several factors.",
-    "zh": "宠物登记每年须在 4 月 10 日前续期。登记费用由当地 council 制定，并因多种因素而异。"
+    "en": "In Victoria, the registration of a dog or cat, or a renewal of that registration, remains in force until 10 April of the year following the registration or renewal. A council must, by resolution, fix the fees to be paid for registration or renewal. In fixing a maximum fee for registration of dogs or cats, the council must fix a fee which is at least 3 times greater than the reduced fee.",
+    "zh": "在维多利亚州，狗或猫的登记以及登记的续期，有效期持续到该次登记或续期之后那一年的4月10日。地方议会（council）必须以决议确定登记或续期应缴的费用。在确定狗或猫登记的最高费用时，该费用必须至少比减免费用大3倍。"
    },
    "sources": [
     {
-     "url": "https://agriculture.vic.gov.au/livestock-and-animals/animal-welfare-victoria/domestic-animals-act/registration-legislation-and-permits/dog-and-cat-registration/dog-and-cat-registration-fees",
-     "quote": "Don't forget to renew your pet's registration each year by 10 April."
+     "url": "https://content.legislation.vic.gov.au/sites/default/files/2026-10/94-81aa093-authorised.pdf",
+     "quote": "The Parliament of Victoria enacts as follows:"
     },
     {
-     "url": "https://agriculture.vic.gov.au/livestock-and-animals/animal-welfare-victoria/domestic-animals-act/registration-legislation-and-permits/dog-and-cat-registration/dog-and-cat-registration-fees",
-     "quote": "Registration fees are set by your local council, and vary depending on a number of factors."
+     "url": "https://content.legislation.vic.gov.au/sites/default/files/2026-10/94-81aa093-authorised.pdf",
+     "quote": "The registration of a dog or cat or renewal of such registration remains in force until 10 April of the year following the registration or renewal."
+    },
+    {
+     "url": "https://content.legislation.vic.gov.au/sites/default/files/2026-10/94-81aa093-authorised.pdf",
+     "quote": "A Council must, by resolution, fix fees to be paid for registration or renewal of registration under this Part."
+    },
+    {
+     "url": "https://content.legislation.vic.gov.au/sites/default/files/2026-10/94-81aa093-authorised.pdf",
+     "quote": "In fixing a maximum fee for registration of dogs or cats, the Council must fix a fee which is at least 3 times greater than the reduced fee."
     }
    ],
    "tags": [
     "pets",
     "registration"
    ],
-   "checked": "2026-11-01"
+   "checked": "2026-11-03"
   },
   {
    "id": "bom-heatwave-warning-when-issued",
