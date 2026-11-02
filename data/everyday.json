@@ -404,44 +404,32 @@
     "澳洲旅客退税最低消费"
    ],
    "answer": {
-    "en": "Travellers departing Australia can get a GST refund under the tourist refund scheme if the purchases are from a single business with the same Australian business number (ABN) and total AUD$300 (GST inclusive) or more, and the goods were purchased within 60 days of departure. The traveller needs the original tax invoices, and presents those invoices in English, together with the goods, passport and boarding pass, at the TRS facility when departing. At an airport, the claim must be made at least 30 minutes prior to the scheduled departure time. Carry or wear the goods on board the aircraft or ship as cabin baggage, unless they are oversized or subject to aviation security measures and the airline requires them to be checked in as hold luggage.",
-    "zh": "离开澳大利亚的旅客，如果所购商品来自同一家企业且使用同一个澳大利亚商业号（ABN），合计达到 AUD$300（含 GST）或以上，并且是在离境前 60 天内购买的，就可以通过旅客退税计划退还 GST。旅客需要原始税务发票，离境时在 TRS 柜台出示英文发票，以及商品、护照和登机牌。在机场办理时，必须在计划起飞时间至少 30 分钟之前。商品要随身携带或穿在身上，作为客舱行李带上飞机或船舶，除非商品过大，或者因航空安保措施而航空公司要求把商品作为托运行李托运。"
+    "en": "If you are leaving Australia, you can claim back GST on goods you take with you if you spent at least A$300 (including GST) in total from one supplier with the same ABN, bought within 60 days of leaving. You need a valid paper tax invoice in English (originals only, no photos or copies), and you claim in person at the TRS Facility on your departure day, showing your passport, boarding pass, goods and invoices, at least 30 minutes before your flight. Be ready to take the goods on board as carry-on if asked.",
+    "zh": "离开澳洲时，带走的商品可以退 GST：在同一个商家（同一个 ABN）一共花满 A$300（含 GST），而且是离境前 60 天内买的。要有英文的纸质税务发票（只收原件，不收照片和复印件）。离境当天，在航班起飞至少 30 分钟前，到机场的 TRS 柜台本人办理，出示护照、登机牌、商品和发票。被要求时，商品要能作为随身行李带上飞机。"
    },
    "sources": [
     {
-     "url": "https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/in-detail/rules-for-specific-transactions/international-transactions/gst-free-sales-to-travellers-departing-australia/tourist-refund-scheme",
-     "quote": "Travellers departing Australia can get a GST or WET refund under the tourist refund scheme (TRS), administered by the Department of Home Affairs and its operational arm the Australian Border Force (ABF)."
+     "url": "https://www.abf.gov.au/entering-and-leaving-australia/tourist-refund-scheme",
+     "quote": "spend at least AUD300, including GST, in total from a supplier with the same Australian Business Number (ABN) registered to collect GST"
     },
     {
-     "url": "https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/in-detail/rules-for-specific-transactions/international-transactions/gst-free-sales-to-travellers-departing-australia/tourist-refund-scheme",
-     "quote": "The purchases are from a single business with the same Australian business number (ABN) and total AUD$300 (GST inclusive) or more."
+     "url": "https://www.abf.gov.au/entering-and-leaving-australia/tourist-refund-scheme",
+     "quote": "buy the goods within 60 days of leaving Australia"
     },
     {
-     "url": "https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/in-detail/rules-for-specific-transactions/international-transactions/gst-free-sales-to-travellers-departing-australia/tourist-refund-scheme",
-     "quote": "the goods were purchased within 60 days of departure from Australia."
+     "url": "https://www.abf.gov.au/entering-and-leaving-australia/tourist-refund-scheme",
+     "quote": "at least 30 minutes before the scheduled departure of your flight at an airport"
     },
     {
-     "url": "https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/in-detail/rules-for-specific-transactions/international-transactions/gst-free-sales-to-travellers-departing-australia/tourist-refund-scheme",
-     "quote": "The traveller has original tax invoice/s for the goods."
-    },
-    {
-     "url": "https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/in-detail/rules-for-specific-transactions/international-transactions/gst-free-sales-to-travellers-departing-australia/tourist-refund-scheme",
-     "quote": "Present their tax invoices (in English), goods, passport and boarding pass to the TRS facility when departing Australia."
-    },
-    {
-     "url": "https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/in-detail/rules-for-specific-transactions/international-transactions/gst-free-sales-to-travellers-departing-australia/tourist-refund-scheme",
-     "quote": "Make the claim at the TRS facility at an airport at least 30 minutes prior to the scheduled departure time or 60 minutes if travelling on a cruise."
-    },
-    {
-     "url": "https://www.ato.gov.au/businesses-and-organisations/gst-excise-and-indirect-taxes/gst/in-detail/rules-for-specific-transactions/international-transactions/gst-free-sales-to-travellers-departing-australia/tourist-refund-scheme",
-     "quote": "Carry or wear the goods on board the aircraft or ship as cabin baggage unless they are oversized or subject to aviation security measures and the airline requires them to be checked in as hold luggage."
+     "url": "https://www.abf.gov.au/entering-and-leaving-australia/tourist-refund-scheme",
+     "quote": "be prepared to take all your goods on board as carry-on luggage if asked"
     }
    ],
    "tags": [
     "money",
     "shopping"
    ],
-   "checked": "2026-11-03"
+   "checked": "2026-10-22"
   },
   {
    "id": "free-interpreter-at-gp",
