@@ -5,6 +5,7 @@ import { isDeepStrictEqual } from 'node:util';
 import { pathToFileURL } from 'node:url';
 import { gitData } from './format.mjs';
 import { trustedAuthor } from './trusted.mjs';
+import { EVIDENCE_PATH } from './office-evidence.mjs';
 
 export const QUESTION_FILES = new Set(['everyday', 'transport', 'driving', 'health', 'housing', 'money-work', 'daily-life', 'government', 'students-newcomers', 'chinese-services'].map(x => `data/${x}.json`));
 export function changedPaths(cwd, base, head) {
@@ -30,11 +31,12 @@ export async function prepare({ cwd, base, head, destination, baseDestination, a
   const fork = execFileSync('git', ['merge-base', base, head], { cwd, encoding: 'utf8' }).trim();
   if (!/^[a-f0-9]{40}$/.test(fork)) throw Error('找不到 PR 和 main 的共同基线');
   const files = changedPaths(cwd, fork, head);
-  if (!files.length || files.some(p => !QUESTION_FILES.has(p))) return reject('改了允许的十个问答 JSON 以外的文件，或没有改动');
+  if (!files.some(p => QUESTION_FILES.has(p)) || files.some(p => !QUESTION_FILES.has(p) && p !== EVIDENCE_PATH)) return reject('改了允许的问答 JSON 和办公室证据以外的文件，或没有问答改动');
+  const dataFiles = files.filter(p => QUESTION_FILES.has(p));
   const mainChanges = new Set(changedPaths(cwd, fork, base));
-  if (files.some(p => mainChanges.has(p))) return reject('main 和 PR 改了同一文件，需人工处理冲突（不重付逐句核对）');
+  if (dataFiles.some(p => mainChanges.has(p))) return reject('main 和 PR 改了同一文件，需人工处理冲突（不重付逐句核对）');
   const original = gitData(fork, cwd), proposed = gitData(head, cwd), current = gitData(base, cwd);
-  for (const p of files) {
+  for (const p of dataFiles) {
     const name = p.slice(5);
     if (!proposed.has(name)) return reject('删除了问答文件');
     let before, after;

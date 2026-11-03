@@ -6,6 +6,7 @@ import { prepare } from './prepare-pr.mjs';
 import { inspect, gitData, readDirectory, selectChanged, similar } from './format.mjs';
 import { collectLiteral, judge, report } from './verify.mjs';
 import { normalize, safeError } from './source.mjs';
+import { authenticatedChange, trustedEvidence } from './office-evidence.mjs';
 import { MODEL } from './model.mjs';
 import { CACHE_VERSION, recordHash, sha256 } from './verdict-cache.mjs';
 import { boundedJSON, loadCache } from './artifact-cache.mjs';
@@ -74,7 +75,12 @@ async function literalStage() {
   if (!plan.autoEligible) {
     await fs.writeFile(reportFile, failure(plan.reason)); return 1;
   }
-  const r = await collectLiteral({ dataDir: '../candidate', baseDir: '../main-data' });
+  let evidencePromise;
+  const officeEvidence = () => evidencePromise ??= trustedEvidence({ cwd, head: pr.head.sha, repository: process.env.GITHUB_REPOSITORY, trustedPR: plan.trusted });
+  if (!(await authenticatedChange(plan, officeEvidence))) {
+    await fs.writeFile(reportFile, failure('办公室证据提交未通过可信签名核验')); return 1;
+  }
+  const r = await collectLiteral({ dataDir: '../candidate', baseDir: '../main-data' }, { officeEvidence });
   r.meta = { base, head: pr.head.sha, number: String(pr.number) };
   await fs.writeFile('../literal.json', JSON.stringify(r)); await writeReport(r);
   return r.exitCode;
