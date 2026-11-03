@@ -55,7 +55,7 @@ jobs:
           // 三点比较取 PR 自身的改动；禁用 rename 合并，两端及删除都算，NUL 分隔保留特殊文件名。
           const files = execFileSync('git', ['diff', '--no-renames', '--name-only', '-z', `${base}...${head}`], { maxBuffer: 16 * 1024 * 1024 });
           if (files.length && files.at(-1) !== 0) throw Error('git diff 文件列表格式不对');
-          const changed = files.toString('utf8').split('\0').some(file => file.startsWith('data/') && file.endsWith('.json'));
+          const changed = files.toString('utf8').split('\0').some(file => (file.startsWith('data/') && file.endsWith('.json')) || file === 'office-evidence.json');
           fs.appendFileSync(output, `data_changed=${changed}\n`);
           NODE
       - name: No question data changes

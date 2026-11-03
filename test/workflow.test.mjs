@@ -29,6 +29,7 @@ async function changed(cwd, base, head) {
 }
 
 for (const [name, expected, mutate] of [
+  ['只改办公室证据', true, cwd => fs.writeFile(path.join(cwd, 'office-evidence.json'), '{}')],
   ['只改README', false, cwd => fs.appendFile(path.join(cwd, 'README.md'), '\nchanged')],
   ['只改scripts', false, cwd => fs.appendFile(path.join(cwd, 'scripts/a.mjs'), '\nchanged')],
   ['改问答JSON', true, cwd => fs.writeFile(path.join(cwd, 'data/a.json'), '{"new":true}')],

@@ -3,6 +3,7 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { inspect, readDirectory, gitData, selectChanged, similar, LEGACY } from './format.mjs';
 import { Sources, literal } from './source.mjs';
+import { applyOfficeEvidence } from './office-evidence.mjs';
 import { Claude, MODEL, INPUT_USD_PER_M, OUTPUT_USD_PER_M } from './model.mjs';
 import { emptyCache, recordHash, readVerdict } from './verdict-cache.mjs';
 
@@ -45,7 +46,11 @@ export async function collectLiteral(options = {}, dependencies = {}) {
       const quotes = new Map();
       for (const { record } of chosen) for (const s of record.sources) quotes.set(s.url, [...(quotes.get(s.url) ?? []), s.quote]);
       const pages = new Map(await mapLimit([...quotes], async ([url, q]) => [url, await sources.read(url, q)]));
-      result.items = chosen.map(({ file, record }) => ({ file, record, hash: recordHash(record), ...literal(record, pages) }));
+      result.items = await Promise.all(chosen.map(async ({ file, record }) => {
+        const recordPages = new Map(pages);
+        if (dependencies.officeEvidence) await applyOfficeEvidence(recordPages, record, dependencies.officeEvidence);
+        return { file, record, hash: recordHash(record), ...literal(record, recordPages) };
+      }));
     } finally { await sources.close(); }
     result.results = result.items.map(i => ({ file: i.file, id: i.record.id, literal: i.status, semantic: 'skipped', status: i.status, issues: i.issues, quotes: i.record.sources, ...(i.notes ? { notes: i.notes } : {}) }));
   }
